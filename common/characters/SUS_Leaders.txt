@@ -1,0 +1,90 @@
+characters={
+	# Prime Ministers
+	LUC_SUS_JosefHoop ={
+		name = LUC_SUS_JosefHoop
+		portraits={
+			civilian={
+				large="GFX_LUC_JosefHoop"
+			}
+		}
+		country_leader={
+			ideology = conservatism
+			traits={  
+				SUS_LUC_Neutrality_Advocate
+				SUS_LUC_Silver_Tongued_Pragmatist
+			}
+		}
+	}
+	LUC_SUS_OttoSchaedler = {
+		name = LUC_SUS_OttoSchaedler
+		portraits={
+			civilian={
+				large="GFX_LUC_OttoSchaedler"
+			}
+		}
+		country_leader={
+			ideology = moderatism
+			traits={  
+				SUS_LUC_Dubious_Figure
+			}
+		}
+	}
+	LUC_SUS_AlfonsGoop = {
+		name = LUC_SUS_AlfonsGoop
+		portraits={
+			civilian={
+				large="GFX_LUC_AlfonsGoop"
+			}
+		}
+		country_leader={
+			ideology = rexism
+			traits={  
+				SUS_LUC_Old_School_Hawk
+			}
+		}
+	}
+	LUC_SUS_RudolfSchaedler = {
+		name = LUC_SUS_RudolfSchaedler
+		portraits={
+			civilian={
+				large="GFX_LUC_RudolfSchaedler"
+			}
+		}
+		country_leader={
+			ideology = gen_nazism
+			traits={  
+				SUS_LUC_Fervent_Nationalist
+			}
+		}
+	}
+	# Princes
+	LUC_SUS_FranzII = {
+		name = LUC_SUS_FranzII
+		portraits={
+			civilian={
+				large="GFX_LUC_FRANZ_II_LEADER"
+			}
+		}
+		country_leader={
+			ideology = despotism
+			traits={  
+				SUS_LUC_Lichtenstein_Prince
+			}
+		}
+	}
+	# Communsit council 
+	LUC_SUS_WorkerCouncil = {
+		name = LUC_SUS_WorkerCouncil
+		portraits={
+			civilian={
+				large="GFX_LUC_WorkersCouncil"
+			}
+		}
+		country_leader={
+			ideology = anarchist_communism
+			traits={  
+				SUS_LUC_Workers_Council
+			}
+		}
+	}
+}

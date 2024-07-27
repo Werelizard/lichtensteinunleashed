@@ -1,0 +1,93 @@
+# General things
+
+capital = 970
+oob = "SUS_1936"
+
+# Technology
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_engineers = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	basic_train = 1
+	tech_military_police = 1
+}
+
+# Internal Politics, setup and basics
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.3.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 40
+	democratic = 50
+	fascism = 10
+	communism = 0
+}
+
+set_party_name = {
+	ideology = democratic
+	long_name = SUS_FBP_LONG
+	name = SUS_FBP
+}
+
+set_party_name = {
+	ideology = neutrality
+	long_name = SUS_VPU_LONG
+	name = SUS_VPU
+}
+
+set_party_name = {
+	ideology = fascism
+	long_name = SUS_NAT_LONG
+	name = SUS_NAT
+}
+
+set_party_name = {
+	ideology = communism
+	long_name = SUS_tradeunions_Long
+	name = SUS_tradeunions
+}
+
+set_stability = 0.5
+set_war_support = 0.1
+
+# Country Leaders
+
+recruit_character = LUC_SUS_JosefHoop
+recruit_character = LUC_SUS_OttoSchaedler
+recruit_character = LUC_SUS_RudolfSchaedler
+recruit_character = LUC_SUS_AlfonsGoop
+recruit_character = LUC_SUS_WorkerCouncil
+
+# Relationships
+
+AUS = {
+	give_guarantee = SUS
+}
+
+SWI = {
+	give_guarantee = SUS
+}
+
+# Ideas
+
+add_ideas = {
+	disarmed_nation
+	LUC_Franz_I_idea
+	LUC_Lichtenstein_Neutrality_idea
+	LUC_Lichtensteiner_Economy_idea
+	LUC_CustomsUnion_idea
+}
+
+# Special effects
+luc_setup_customs_union = yes
+add_manpower = 12000

@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_LUC_Lichtensteiner_Economy_idea"
+		textureFile = "/gfx/interface/ideas/SUS/LUC_LichtensteinerEconomy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Lichtenstein_Neutrality_idea"
+		textureFile = "/gfx/interface/ideas/SUS/LUC_Lichtenstein_Neutrality_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_CustomsUnion_idea"
+		textureFile = "/gfx/interface/ideas/SUS/LUC_CustomsUnion_idea.dds"
+	}
+}

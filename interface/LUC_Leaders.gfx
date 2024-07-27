@@ -1,0 +1,43 @@
+spriteTypes = {
+	# Princes of Lichtenstein
+	spriteType = {
+		name = "GFX_idea_LUC_Franz_I_idea"
+		textureFile = "/gfx/interface/ideas/SUS/LUC_FRANZ_I_SMALL.tga"
+	}
+	spriteType = {
+		name = "GFX_LUC_FRANZ_I_LEADER"
+		textureFile = "gfx/characters/SUS/LUC_FRANZ_I.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Franz_II_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_FRANZ_II_SMALL.tga"
+	}
+	spriteType = {
+		name = "GFX_LUC_FRANZ_II_LEADER"
+		textureFile = "gfx/characters/SUS/LUC_FRANZ_II.tga"
+	}
+
+	#Prime Ministers
+	spriteType = {
+		name = "GFX_LUC_AlfonsGoop"
+		textureFile = "gfx/characters/SUS/LUC_AlfonsGoop.tga"
+	}
+	spriteType = {
+		name = "GFX_LUC_JosefHoop"
+		textureFile = "gfx/characters/SUS/LUC_JosefHoop.tga"
+	}
+	spriteType = {
+		name = "GFX_LUC_OttoSchaedler"
+		textureFile = "gfx/characters/SUS/LUC_OttoSchaedler.tga"
+	}
+	spriteType = {
+		name = "GFX_LUC_RudolfSchaedler"
+		textureFile = "gfx/characters/SUS/LUC_RudolfSchaedler.tga"
+	}
+
+	# Workers council
+	spriteType = {
+		name = "GFX_LUC_WorkersCouncil"
+		textureFile = "gfx/characters/SUS/LUC_WorkersCouncil.tga"
+	}
+}

@@ -1,0 +1,65 @@
+leader_traits = {
+
+	#################
+	# LEADER TRAITS #
+	#################
+
+	#Traits for Hoop
+	SUS_LUC_Neutrality_Advocate = {
+		war_support_factor = -0.1
+		improve_relations_maintain_cost_factor = -0.1
+	}
+	SUS_LUC_Silver_Tongued_Pragmatist = {
+		political_power_factor = 0.05
+		party_popularity_stability_factor = 0.15
+	}
+	#Traits for Otto Schaedler
+	SUS_LUC_Dubious_Figure = {
+		fascism_acceptance = 15
+		stability_factor = -0.05
+		war_support_factor = 0.02
+	}
+	# Traits for Rudolf
+	SUS_LUC_Fervent_Nationalist = {
+		war_support_factor = 0.05
+		army_core_defence_factor = 0.1
+		political_power_gain = -0.1
+	}
+	# Traits for Goop
+	SUS_LUC_Old_School_Hawk = {
+		stability_factor = 0.05
+		political_advisor_cost_factor = -0.2
+	}
+	# Puppet Traits
+	SUS_LUC_Germanic_Puppet = {
+		fascism_drift = 0.01
+		political_power_factor = -0.1
+	}
+	# Traits for Council
+	SUS_LUC_Workers_Council = {
+		political_power_gain = -0.15
+		war_support_factor = 0.1
+		production_factory_max_efficiency_factor = 0.1
+		industrial_capacity_dockyard = 0.15
+	}
+	# Traits for Princes
+	SUS_LUC_Lichtenstein_Prince = {
+		political_power_cost = 0.25
+		stability_factor = 0.15
+	}
+	# Trait for Kaiser
+	SUS_LUC_Deutshes_Kaiser = {
+		war_support_factor = 0.15
+		army_attack_factor = 0.1
+	}
+
+	##################
+	# ADVISOR TRAITS #
+	##################
+
+	#
+
+	#
+
+	#
+}

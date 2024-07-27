@@ -1,0 +1,1 @@
+SUS = "countries/Lichtenstein.txt"

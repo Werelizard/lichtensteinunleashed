@@ -1,0 +1,63 @@
+﻿l_english:
+ # New state
+ STATE_970:0 "Vaduz"
+
+ #History
+ SUS_BLITZKRIEG_DESC:0 ""
+
+ #Country names - without comsetics
+ SUS:0 "Lichtenstein"
+ SUS_DEF:0 "The Principality of Lichtenstein"
+ SUS_ADJ:0 "Lichtensteiner"
+ SUS_neutrality:0 "Lichtenstein"
+ SUS_neutrality_DEF:0 "The Principality of Lichtenstein"
+ SUS_democratic:0 "Lichtenstein"
+ SUS_democratic_DEF:0 "The Principality of Lichtenstein"
+ SUS_fascism:0 "National State of Lichtenstein"
+ SUS_fascism_DEF:0 "The National State of Lichtenstein"
+ SUS_gen_nazism:0 "German State of Lichtenstein"
+ SUS_gen_nazism_DEF:0 "The German State of Lichtenstein"
+ SUS_communism:0 "Worker's Republic of Lichtenstein"
+ SUS_communism_DEF:0 "The Worker's Republic of Lichtenstein"
+ 
+ # Political Parties - Start
+ SUS_FBP_LONG:0 "Fortschrittliche Bürgerpartei"
+ SUS_FBP:0 "FBP"
+ SUS_VPU_LONG:0 "Vaterländische Union "
+ SUS_VPU:0 "VU"
+ SUS_NAT_LONG:0 "Nationalists"
+ SUS_NAT:0 "Nationalists"
+ SUS_tradeunions_Long:0 "Trade Unions"
+ SUS_tradeunions:0 "Trade Unions"
+
+ # Characters - Start
+ LUC_SUS_JosefHoop:0 "Josef Hoop"
+ LUC_SUS_OttoSchaedler:0 "Otto Schaedler"
+ LUC_SUS_AlfonsGoop:0 "Alfons Goop"
+ LUC_SUS_RudolfSchaedler:0 "Rudolf Shaedler"
+ LUC_SUS_FranzII:0 "Franz II"
+ LUC_SUS_WorkerCouncil:0 "Worker's Council"
+ 
+ # Character traits
+ SUS_LUC_Neutrality_Advocate:0 "Neutrality Advocate"
+ SUS_LUC_Silver_Tongued_Pragmatist:0 "Silver-Tongued Pragmatist"
+ SUS_LUC_Dubious_Figure:0 "Dubious Figure"
+ SUS_LUC_Fervent_Nationalist:0 "Fervent Nationalist"
+ SUS_LUC_Old_School_Hawk:0 "Political Hawk"
+ SUS_LUC_Germanic_Puppet:0 "Germany's Puppet"
+ SUS_LUC_Workers_Council:0 "Unorganised Council"
+ SUS_LUC_Lichtenstein_Prince:0 "Prince of Lichtenstein"
+ SUS_LUC_Deutshes_Kaiser:0 "The Mountain Kaiser"
+
+ # Ideas
+ LUC_Lichtenstein_Neutrality_idea:0 "Lichtensteiner Neutrality"
+ LUC_Lichtenstein_Neutrality_idea_desc:0 "Lichtenstein, not unlike its fellow Alpine neighbour, has enjoyed a period of relatively undisturbed isolation and peace throughout the last century. It has stood as a spectator to the unfolding devastation of the Great War - leading its population and leadership to adopt an isolationist and neutral diplomacy."
+ LUC_Lichtensteiner_Economy_idea:0 "Lichtensteiner Economy"
+ LUC_Lichtensteiner_Economy_idea_desc:0 "The Lichtensteiner Economy, whilst somewhat existant, is primarly agrarian with small factories here and there. This sluggish apparatus can hardly be mobilised, let alone expected to serve well in the case the country would find itself at war."
+ LUC_Franz_I_idea:0 "Franz I, Prince of Lichtenstein"
+ LUC_Franz_I_idea_desc:0 "Born in 1853 and having ruled since 1929, Franz de Paula Maria Karl August has ruled Lichtenstein as his own personal fiefdom - steering it away from the chaos of the Great War, but keeping it under his thumb. In effect this has made of Lichtenstein a relic of an era long gone with all the trappings of a backward agrarian state. Whilst having permitted limited elections and even appointing his son Franz Joseph as regent, rumour has it that the the aging Prince has already made plans for an abdication and an early retirement."
+ LUC_Franz_II_idea:0 "Franz II, Prince of Lichtenstein"
+ LUC_Franz_II_idea_desc:0 ""
+ LUC_CustomsUnion_idea:0 "[SWI.GetAdjectiveCap]-[SUS.GetAdjectiveCap] Customs Union"
+ LUC_CustomsUnion_idea_desc:0 "The Customs Union between [SWI.GetName] and [SUS.GetName] provides economic benefits to both parties and facilitates the exchange of goods and people across the border. However, some critics have decried it as a means of economic control, whilst its more vocal supporters vehemently defend it on the grounds of it being a lifeline for two nations caught in an increasingly more volatile Europe."
+ LUC_CustomsUnion_idea_tt:0 "Off-Map Civilian Factories: §Y[?ROOT.luc_customsUnionFactories_var]§!"
