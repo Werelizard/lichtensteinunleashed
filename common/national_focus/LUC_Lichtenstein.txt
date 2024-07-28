@@ -1,0 +1,92 @@
+focus_tree = {
+	id = LUC_LIchtenstein_Focus_Tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SUS
+		} 
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 200 y = 2300 }
+
+	initial_show_position = {
+		focus = LUC_Landtag
+	}
+
+	focus = {
+		id = LUC_Landtag
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 0
+		y = 0
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LUC_LandtagCompleted_tt
+				always = no
+			}
+		}
+		completion_reward = { }
+	}
+
+	#####################
+	# HOOP'S GOVERNMENT #
+	#####################
+
+	focus = {
+		id = LUC_LiberalVictory
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_Landtag
+		x = -8
+		y = 1
+		prerequisite = {
+			focus = LUC_Landtag
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LUC_LiberalVictory_unlocked_tt
+				has_country_flag = LUC_HoopPath_Flag
+			}
+			has_government = democratic
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_ConservativeVictory
+		}
+	}
+
+	#####################
+	# HOOP'S GOVERNMENT #
+	#####################
+
+	focus = {
+		id = LUC_ConservativeVictory
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_Landtag
+		x = 8
+		y = 1
+		prerequisite = {
+			focus = LUC_Landtag
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LUC_ConservativeVictory_unlocked_tt
+				has_country_flag = LUC_SchaedlerPath_Flag
+			}
+			has_government = neutrality
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_LiberalVictory
+		}
+	}
+}

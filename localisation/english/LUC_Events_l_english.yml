@@ -1,0 +1,9 @@
+﻿l_english:
+ election.1000.title:0 "The Landtag Elections of [GetYear]"
+ election.1000.desc:0 ""
+ election.1000.a:0 "Josef Hoop has the people's full confidence."
+ election.1000.b:0 "In a surprise move, Otto Schaedler secures the Landtag's vote!"
+ election.1000.c:0 "No party secures a majority."
+ LUC_unlockLiberalMandate_tt:0 "Unlocks the \"§Y$LUC_LiberalVictory$§!\" focus."
+ LUC_unlockConservativeMandate_tt:0 "Unlocks the \"§Y$LUC_ConservativeVictory$§!\" focus."
+ LUC_politicalInstability_tt:0 "§RGiven the current geopolitical climate, such an outcome is likely to lead to political upheaval!§!"

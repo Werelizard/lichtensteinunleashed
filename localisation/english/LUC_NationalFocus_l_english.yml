@@ -1,0 +1,14 @@
+﻿l_english:
+ # Democratic Branch
+ LUC_Landtag:0 "The 1936 Landtag"
+ LUC_Landtag_desc:0 ""
+ LUC_LandtagCompleted_tt:0 "§LThis focus will be automatically completed once the 1936 elections have been held.§!"
+
+ LUC_LiberalVictory:0 "A Liberal-Conservative Government"
+ LUC_LiberalVictory_decs:0 ""
+ LUC_LiberalVictory_unlocked_tt:0 "Josef Hoop has retained the Landtag's confidence in the 1936 election."
+
+ #Authoritarian Branch
+ LUC_ConservativeVictory:0 "The Schaedler Cabinet"
+ LUC_ConservativeVictory_desc:0 ""
+ LUC_ConservativeVictory_unlocked_tt:0 "Otto Schaedler was appointed as prime minister by the Landtag."

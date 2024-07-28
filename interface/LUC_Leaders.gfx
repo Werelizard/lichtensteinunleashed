@@ -2,7 +2,7 @@ spriteTypes = {
 	# Princes of Lichtenstein
 	spriteType = {
 		name = "GFX_idea_LUC_Franz_I_idea"
-		textureFile = "/gfx/interface/ideas/SUS/LUC_FRANZ_I_SMALL.tga"
+		textureFile = "gfx/interface/ideas/SUS/LUC_FRANZ_I_SMALL.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_FRANZ_I_LEADER"

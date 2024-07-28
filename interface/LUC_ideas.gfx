@@ -1,14 +1,18 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_LUC_Lichtensteiner_Economy_idea"
-		textureFile = "/gfx/interface/ideas/SUS/LUC_LichtensteinerEconomy.dds"
+		textureFile = "gfx/interface/ideas/SUS/LUC_LichtensteinerEconomy.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Lichtenstein_Neutrality_idea"
-		textureFile = "/gfx/interface/ideas/SUS/LUC_Lichtenstein_Neutrality_idea.dds"
+		textureFile = "gfx/interface/ideas/SUS/LUC_Lichtenstein_Neutrality_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_CustomsUnion_idea"
-		textureFile = "/gfx/interface/ideas/SUS/LUC_CustomsUnion_idea.dds"
+		textureFile = "gfx/interface/ideas/SUS/LUC_CustomsUnion_idea.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_LUC_Fascist_Agitators_idea"
+		texturefile = "gfx/interface/ideas/generic_fascism_drift_bonus.dds"
 	}
 }

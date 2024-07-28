@@ -71,4 +71,14 @@ ideas = {
 			}
 		}
 	}
+
+	#Event-Related Idas
+	country = {
+		LUC_Fascist_Agitators_idea = {
+			modifier = {
+				fascism_drift = 0.015
+				stability_weekly_factor = -0.01
+			}
+		}
+	}
 }

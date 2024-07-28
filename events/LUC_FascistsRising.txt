@@ -1,0 +1,35 @@
+###########################
+# Fascists Agitators Events
+###########################
+
+add_namespace = LUC_Fascists
+
+#Fasict Acitivity Increases
+country_event = {
+	id = LUC_Fascists.1
+	title = LUC_Fascists.title
+	desc = LUC_Fascists.desc
+
+	trigger = {
+		original_tag = SUS
+		NOT = {
+			has_government = fascism
+		}
+		NOT = {
+			has_government = communism
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = LUC_Fascists.a
+
+		add_stability = -0.02
+		add_ideas = LUC_Fascist_Agitators_idea
+	}
+}

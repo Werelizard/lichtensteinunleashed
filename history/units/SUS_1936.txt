@@ -14,6 +14,7 @@
 			y = 0
 		}
 	}
+	priority = 2
 }
 
 division_template = {
@@ -34,7 +35,7 @@ division_template = {
 }
 
 units = {
-	##### Lichtensteiner Bundesheer #####
+	##### Lichtensteiner Militia #####
 	division= {	
 		location = 6680
 		division_template = "Grenadier Division"
