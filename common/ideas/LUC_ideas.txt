@@ -44,27 +44,11 @@ ideas = {
 				luc_remove_customs_union = yes
 			}
 			allowed ={
-				if = {
-					limit = {
-						original_tag = SUS
-					}
-					NOT = {
-						has_war_with = SWI
-					}
-					SWI = {
-						exists = yes
-						has_idea = LUC_CustomsUnion_idea
-					}
+				any_other_country = {
+					has_idea = LUC_CustomsUnion_idea
 				}
-				if = {
-					limit = {
-						original_tag = SWI
-					}
-					NOT = {
-						has_war_with = SUS
-					}
-					SUS = {
-						exists = yes
+				NOT = {
+					any_other_country = {
 						has_idea = LUC_CustomsUnion_idea
 					}
 				}

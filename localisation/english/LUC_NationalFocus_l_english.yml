@@ -8,7 +8,165 @@
  LUC_LiberalVictory_decs:0 ""
  LUC_LiberalVictory_unlocked_tt:0 "Josef Hoop has retained the Landtag's confidence in the 1936 election."
 
+ LUC_InvestigateFascists:0 "Investigate the Military Movement"
+ LUC_InvestigateFascists_desc:0 ""
+
+ LUC_ArmedVigilance:0 "Armed Vigilance"
+ LUC_ArmedVigilance_desc:0 ""
+
+ LUC_BordergGuardReform:0 "Expand the Grenzwachtkorps"
+ LUC_BordergGuardReform_desc:0 ""
+
+ LUC_FortressVaduz:0 "Fortress Vaduz"
+ LUC_FortressVaduz_desc:0 ""
+
+ LUC_LimitedRearmement:0 "Limited Rearmement"
+ LUC_LimitedRearmement_desc:0 ""
+
+ LUC_abolishNeutrality:0 "Abolish Neutrality"
+ LUC_abolishNeutrality_desc:0 ""
+
+ LUC_SpecialResearchDepartment:0 "Expand the   Military Budget"
+ LUC_SpecialResearchDepartment_desc:0 ""
+
+ LUC_AlpineBeacon:0 "The Alpine Beacon"
+ LUC_AlpineBeacon_desc:0 ""
+
+ LUC_AustrianTies:0 "Austrian Economic Ties"
+ LUC_AustrianTies_desc:0 ""
+
+ LUC_AustrianAssets:0 "Repatriat Lichtensteiner Assets"
+ LUC_AustrianAssets_desc:0 ""
+
+ LUC_GermanIndustrialInvestments:0 "German Investments"
+ LUC_GermanIndustrialInvestments_desc:0 ""
+
+ LUC_offerPoliticalAsylum:0 "Political Asylum for Victims of Fascism"
+ LUC_offerPoliticalAsylum_desc:0 ""
+
+ LUC_CivilianGovernment:0 "Emphasise Civilian Governance"
+ LUC_CivilianGovernment_desc:0 ""
+
+ LUC_supremacyOfStatusQuo:0 "Maintain the Coalition"
+ LUC_supremacyOfStatusQuo_desc:0 ""
+
+ LUC_banExtremism:0 "Crack Down on Extremists"
+ LUC_banExtremism_desc:0 ""
+
+ LUC_openPoliticalSphere:0 "Open up the Political Sphere"
+ LUC_openPoliticalSphere_desc:0 ""
+
+ LUC_monarchialReferendum:0 "Referendum on the Monarchy"
+ LUC_monarchialReferendum_desc:0 ""
+
+ LUC_triumphOfLiberalism:0 "Triumph of Liberalism"
+ LUC_triumphOfLiberalism_desc:0 ""
+
+ LUC_franzJosefAcademy:0 "Franz Joseph Academy"
+ LUC_franzJosefAcademy_desc:0 ""
+
  #Authoritarian Branch
  LUC_ConservativeVictory:0 "The Schaedler Cabinet"
  LUC_ConservativeVictory_desc:0 ""
  LUC_ConservativeVictory_unlocked_tt:0 "Otto Schaedler was appointed as prime minister by the Landtag."
+
+ LUC_NationallistCollaboration:0 "Collaborate with the Nationalists"
+ LUC_NationallistCollaboration_desc:0 ""
+
+ #Alpine Confederacy
+ LUC_AlpineSolidarity:0 "Alpine Solidarity"
+ LUC_AlpineSolidarity_desc:0 ""
+
+ LUC_IntegratedResearch:0 "Joint Research Programs"
+ LUC_IntegratedResearch_desc:0 ""
+
+ LUC_InterLinkedRail:0 "Inter-Linked Rail"
+ LUC_InterLinkedRail_desc:0 ""
+
+ LUC_SharedPostalService:0 "Merge Postal Services"
+ LUC_SharedPostalService_desc:0 ""
+
+ LUC_UnifiedCurrency:0 "Propose a Unified Currency"
+ LUC_UnifiedCurrency_desc:0 ""
+
+ LUC_InviteAustria:0 "Invite Austria"
+ LUC_InviteAustria_desc:0 ""
+
+ LUC_SharedIntelligence:0 "Shared Strategic Intelligence"
+ LUC_SharedIntelligence_desc:0 ""
+
+ LUC_DeepenEconomicCooperation:0 "Deepen Economic Cooperation"
+ LUC_DeepenEconomicCooperation_desc:0 ""
+
+ LUC_JointExcercises:0 "Joint Military Excercises"
+ LUC_JointExcercises_desc:0 ""
+
+ LUC_FormaliseConfederacy:0 "Formalise the Confederacy"
+ LUC_FormaliseConfederacy_desc:0 ""
+
+ LUC_AlpineMilitary:0 "An Alpine Military"
+ LUC_AlpineMilitary_desc:0 ""
+ 
+ LUC_AssimilateSwissIndustry:0 "Assimilate Swiss Industry"
+ LUC_AssimilateSwissIndustry_desc:0 ""
+
+ LUC_DamTheRhone:0 "Dam the Rhone"
+ LUC_DamTheRhone_desc:0 ""
+
+ LUC_DamTheRhine:0 "Dam the Rhine"
+ LUC_DamTheRhine_desc:0 ""
+
+ LUC_IntegrateVienna:0 "Continue Viennese Urbanisation"
+ LUC_IntegrateVienna_desc:0 ""
+
+ LUC_UrbaniseTheAlps:0 "The Alpine Factorium"
+ LUC_UrbaniseTheAlps_desc:0 ""
+
+ LUC_UnleaseTheAvalanche:0 "Unleash the Avalanche"
+ LUC_UnleaseTheAvalanche_desc:0 ""
+
+ LUC_AdoptRedoubtTactics:0 "Adopt Redoubt Tactics"
+ LUC_AdoptRedoubtTactics_desc:0 ""
+
+ #The economy
+ LUC_reviewBudget:0 "Review the National Budget"
+ LUC_reviewBudget_desc:0 ""
+ 
+ LUC_openBank:0 "Open the Liechtensteinische Landesbank"
+ LUC_openBank_desc:0 ""
+
+ LUC_germanMoney:0 "Offer Germany Moneraty Security"
+ LUC_germanMoney_desc:0 ""
+
+ LUC_alliedMoney:0 "Invite Allied Wealth"
+ LUC_alliedMoney_desc:0 ""
+
+ LUC_germanInvestments:0 "German Investments"
+ LUC_germanInvestments_desc:0 ""
+
+ LUC_alliedInvestment:0 "Allied Investments"
+ LUC_alliedInvestment_desc:0 ""
+
+ LUC_goldTraders:0 "Harbour of European Gold"
+ LUC_goldTraders_desc:0 ""
+
+ LUC_economicRecalibration:0 "Economic Recalibration"
+ LUC_economicRecalibration_desc:0 ""
+
+ LUC_ecoPrivatisation:0 "Total Privatisation"
+ LUC_ecoPrivatisation_desc:0 ""
+
+ LUC_ecoNationalisaiton:0 "Partial Nationalisation"
+ LUC_ecoNationalisaiton_desc:0 ""
+
+ LUC_urbaniseVaduz:0 "Modernise Old Vaduz"
+ LUC_urbaniseVaduz_desc:0 ""
+
+ LUC_agrarianDevelopments:0 "Mass Electrification"
+ LUC_agrarianDevelopments_desc:0 ""
+
+ LUC_massElectrification:0 "Healthcare Investments"
+ LUC_massElectrification_desc:0 ""
+
+ LUC_alaskanPurchase:0 "Purchase Alaska"
+ LUC_alaskanPurchase_desc:0 ""

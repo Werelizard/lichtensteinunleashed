@@ -61,8 +61,418 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = LUC_InvestigateFascists
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 11
+		y = 1
+		prerequisite = {
+			focus = LUC_LiberalVictory
+			focus = LUC_ConservativeVictory
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_NationallistCollaboration
+		}
+	}
+
+	focus = {
+		id = LUC_ArmedVigilance
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LUC_LiberalVictory
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_BordergGuardReform
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = LUC_ArmedVigilance
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_FortressVaduz
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = LUC_ArmedVigilance
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_LimitedRearmement
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = LUC_ArmedVigilance
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_abolishNeutrality
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = LUC_LimitedRearmement
+		}
+		prerequisite = {
+			focus = LUC_FortressVaduz
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_SpecialResearchDepartment
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = LUC_LimitedRearmement
+		}
+		prerequisite = {
+			focus = LUC_IntegratedResearch
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_AlpineBeacon
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -6
+		y = 1
+		prerequisite = {
+			focus = LUC_LiberalVictory
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_AustrianTies
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineBeacon
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LUC_AlpineBeacon
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_AustrianAssets
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineBeacon
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = LUC_AustrianTies
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_GermanIndustrialInvestments
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineBeacon
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = LUC_AustrianAssets
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_offerPoliticalAsylum
+		}
+	}
+
+	focus = {
+		id = LUC_offerPoliticalAsylum
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineBeacon
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = LUC_AustrianTies
+		}
+		prerequisite = {
+			focus = LUC_FortressVaduz
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_GermanInvestments
+		}
+	}
+
+	focus = {
+		id = LUC_CivilianGovernment
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineBeacon
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LUC_AlpineBeacon
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_supremacyOfStatusQuo
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_CivilianGovernment
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LUC_CivilianGovernment
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_openPoliticalSphere
+		}
+	}
+
+	focus = {
+		id = LUC_banExtremism
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_CivilianGovernment
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = LUC_supremacyOfStatusQuo
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_openPoliticalSphere
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_CivilianGovernment
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LUC_CivilianGovernment
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_supremacyOfStatusQuo
+		}
+	}
+
+	focus = {
+		id = LUC_monarchialReferendum
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_CivilianGovernment
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = LUC_openPoliticalSphere
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_triumphOfLiberalism
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_CivilianGovernment
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = LUC_monarchialReferendum
+			focus = LUC_banExtremism
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_franzJosefAcademy
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineBeacon
+		x = -6
+		y = 1
+		prerequisite = {
+			focus = LUC_AlpineBeacon
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
 	#####################
-	# HOOP'S GOVERNMENT #
+	# SCHAREDER GOVERNMENT #
 	#####################
 
 	focus = {
@@ -87,6 +497,680 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = LUC_LiberalVictory
+		}
+	}
+
+	focus = {
+		id = LUC_NationallistCollaboration
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_InvestigateFascists
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = LUC_ConservativeVictory
+		}
+		available = {
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_InvestigateFascists
+		}
+	}
+ 
+	#####################
+	# ALPINE CONFEDERACY #
+	#####################
+
+	focus = {
+		id = LUC_AlpineSolidarity
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_Landtag
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = LUC_LiberalVictory
+			focus = LUC_ConservativeVictory
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_IntegratedResearch
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LUC_AlpineSolidarity
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_InterLinkedRail
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LUC_AlpineSolidarity
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_SharedPostalService
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = LUC_AlpineSolidarity
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_UnifiedCurrency
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = LUC_AlpineSolidarity
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_InviteAustria
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = LUC_AlpineSolidarity
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_SharedIntelligence
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = LUC_InterLinkedRail
+			focus = LUC_SharedPostalService
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_DeepenEconomicCooperation
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LUC_AlpineSolidarity
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_JointExcercises
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = LUC_DeepenEconomicCooperation
+			focus = LUC_SharedIntelligence
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_FormaliseConfederacy
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = LUC_DeepenEconomicCooperation
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_AlpineMilitary
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = -2
+		y = 4
+		prerequisite = {
+			focus = LUC_FormaliseConfederacy
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_AssimilateSwissIndustry
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = LUC_FormaliseConfederacy
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_DamTheRhone
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 2
+		y = 5
+		prerequisite = {
+			focus = LUC_AssimilateSwissIndustry
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_DamTheRhine
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 4
+		y = 5
+		prerequisite = {
+			focus = LUC_AssimilateSwissIndustry
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_IntegrateVienna
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = LUC_FormaliseConfederacy
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_UrbaniseTheAlps
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = 2
+		y = 6
+		prerequisite = {
+			focus = LUC_DamTheRhone
+			focus = LUC_DamTheRhine
+			focus = LUC_IntegrateVienna
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_UnleaseTheAvalanche
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = -2
+		y = 6
+		prerequisite = {
+			focus = LUC_AlpineMilitary
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_AdoptRedoubtTactics
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_AlpineSolidarity
+		x = -4
+		y = 5
+		prerequisite = {
+			focus = LUC_AlpineMilitary
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	#####################
+	# LICHTENSTEINER ECONOMY
+	#####################
+
+	focus = {
+		id = LUC_reviewBudget
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_Landtag
+		x = -11
+		y = 7
+		prerequisite = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_openBank
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = LUC_reviewBudget
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_germanMoney
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = -6
+		y = 2
+		prerequisite = {
+			focus = LUC_openBank
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_alliedMoney
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = LUC_openBank
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_germanInvestments
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = -6
+		y = 3
+		prerequisite = {
+			focus = LUC_germanMoney
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_alliedInvestment
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = -2
+		y = 3
+		prerequisite = {
+			focus = LUC_alliedMoney
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_goldTraders
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = -4
+		y = 4
+		prerequisite = {
+			focus = LUC_germanInvestments
+			focus = LUC_alliedInvestment
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_alaskanPurchase
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = -4
+		y = 5
+		prerequisite = {
+			focus = LUC_goldTraders
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_economicRecalibration
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LUC_reviewBudget
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ecoPrivatisation
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = LUC_economicRecalibration
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_ecoNationalisaiton
+		}
+	}
+
+	focus = {
+		id = LUC_ecoNationalisaiton
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = LUC_economicRecalibration
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_ecoPrivatisation
+		}
+	}
+
+	focus = {
+		id = LUC_urbaniseVaduz
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = 2
+		y = 4
+		prerequisite = {
+			focus = LUC_ecoNationalisaiton
+			focus = LUC_ecoPrivatisation
+		}
+		prerequisite = {
+			focus = LUC_germanInvestments
+			focus = LUC_alliedInvestment
+		}
+		prerequisite = {
+			focus = LUC_massElectrification
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_agrarianDevelopments
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = LUC_economicRecalibration
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_massElectrification
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_reviewBudget
+		x = 5
+		y = 3
+		prerequisite = {
+			focus = LUC_agrarianDevelopments
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
 		}
 	}
 }
