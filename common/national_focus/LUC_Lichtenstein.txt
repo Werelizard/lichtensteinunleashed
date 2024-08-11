@@ -236,21 +236,22 @@ focus_tree = {
 				custom_effect_tooltip = LUC_newline_tt
 				custom_effect_tooltip = LUC_Lichtenstein_Neutrality_idea_Debuff_tt
 				remove_ideas = LUC_Lichtenstein_Neutrality_idea
-				add_stability = -0.1
+				add_stability = -0.2
 				add_popularity = {
-					popularity = -0.1
+					popularity = -0.2
 					ideology = democratic
 				}
 				custom_effect_tooltip = LUC_newline_tt
 			}
 		}
 		mutually_exclusive = {
-			focus = LUC_ExpandMIlitaryBudget
+			focus = LUC_IsolationistStance
+			focus = LUC_RealisticGovToppleFascism
 		}
 	}
 
 	focus = {
-		id = LUC_ExpandMIlitaryBudget
+		id = LUC_IsolationistStance
 		icon = GFX_goal_unknown
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
@@ -261,40 +262,21 @@ focus_tree = {
 		}
 		available = {
 			has_government = democratic
-			custom_trigger_tooltip = {
-				tooltip = LUC_atleastfifteenwarsupport_tt
-				has_war_support > 0.49
+			threat > 0.35
+			OR = {
+				threat > 0.75
+				has_defensive_war = yes
 			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = LUC_ExpandMIlitaryBudget_tt
-			capital_scope = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
-
-			every_neighbor_country = {
-				limit = {
-					NOT = {
-						tag = SWI
-					}
-				}
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = SWI_mild_breach_of_neutrality
-				}
+			swap_ideas = {
+				remove_idea = LUC_Lichtenstein_Neutrality_idea
+				add_idea = LUC_Lichtenstein_Neutrality_Partial_idea
 			}
 		}
 		mutually_exclusive = {
 			focus = LUC_NationalMobilisation
+			focus = LUC_RealisticGovToppleFascism
 		}
 	}
 
@@ -392,12 +374,12 @@ focus_tree = {
 		id = LUC_BuildupMilitaryReserves
 		icon = GFX_goal_unknown
 		cost = 5
-		relative_position_id = LUC_ExpandMIlitaryBudget
+		relative_position_id = LUC_IsolationistStance
 		x = -2
 		y = 1
 		prerequisite = {
 			focus = LUC_NationalMobilisation
-			focus = LUC_ExpandMIlitaryBudget
+			focus = LUC_IsolationistStance
 		}
 		available = {
 			has_government = democratic
@@ -424,7 +406,7 @@ focus_tree = {
 		id = LUC_IncreaseConscription
 		icon = GFX_goal_unknown
 		cost = 4
-		relative_position_id = LUC_ExpandMIlitaryBudget
+		relative_position_id = LUC_IsolationistStance
 		x = -3
 		y = 2
 		prerequisite = {
@@ -432,12 +414,17 @@ focus_tree = {
 		}
 		available = {
 			has_government = democratic
+			any_country = {
+				has_war_with = ROOT
+				strength_ratio = {
+					tag = SUS
+					ratio = 1.5
+				}
+			}
 		}
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
+			upgrade_economy_law = yes
+			custom_effect_tooltip = LUC_newline_tt
 			add_ideas = LUC_Desperate_Conscription_idea
 		}
 		mutually_exclusive = {
@@ -448,54 +435,21 @@ focus_tree = {
 		id = LUC_FortressVaduz
 		icon = GFX_goal_unknown
 		cost = 3
-		relative_position_id = LUC_ExpandMIlitaryBudget
+		relative_position_id = LUC_IsolationistStance
 		x = 0
 		y = 2
 		prerequisite = {
 			focus = LUC_BuildupMilitaryReserves
 		}
 		prerequisite = {
-			focus = LUC_ExpandMIlitaryBudget
+			focus = LUC_IsolationistStance
 		}
 		available = {
 			has_government = democratic
 			controls_state = 970
 		}
 		completion_reward = {
-			add_stability = 0.15
-			division_template = {
-				name = "Civilian Militia"
-				division_names_group = SWI_INF_01
-
-				regiments = {
-					militia = {
-						x = 0
-						y = 0
-					} 
-					militia = {
-						x = 1
-						y = 0
-					}
-					militia = {
-						x = 0
-						y = 1
-					} 
-					militia = {
-						x = 1
-						y = 1
-					}
-					anti_air = {
-						x = 2
-						y = 0
-					} 
-				}
-				support = {
-					engineer = {
-						x = 0
-						y = 0
-					}
-				}
-			}
+			add_ideas = LUC_Fortress_in_Mountains
 			970 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -513,25 +467,6 @@ focus_tree = {
 				add_building_construction = {
 					type = air_base
 					level = 2
-				}
-				custom_effect_tooltip = LUC_Militias_deployed_tt
-				custom_effect_tooltip = LUC_newline_tt
-				custom_effect_tooltip = LUC_Militias_deployed_tt
-				custom_effect_tooltip = LUC_newline_tt
-				custom_effect_tooltip = LUC_Militias_deployed_tt
-				hidden_effect = {
-					create_unit = {
-						division = "name = \"1. Civilian Militia\" division_template = \"Civilian Militia\" start_experience_factor = 0.25"
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"2. Civilian Militia\" division_template = \"Civilian Militia\" start_experience_factor = 0.25"	
-						owner = ROOT	
-					}
-					create_unit = {
-						division = "name = \"3. Civilian Militia\" division_template = \"Civilian Militia\" start_experience_factor = 0.25"	
-						owner = ROOT	
-					}
 				}
 			}
 		}
@@ -573,6 +508,16 @@ focus_tree = {
 					neutrality = 0
 				}
 			}
+			set_party_name = {
+				ideology = democratic
+				long_name = SUS_FBP_LONG_Coalition
+				name = SUS_FBP_Coalition
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = SUS_VPU_LONG_Coalition
+				name = SUS_VPU_Coalition
+			}
 		}
 		mutually_exclusive = {
 			focus = LUC_ARealisticGovernment
@@ -604,11 +549,11 @@ focus_tree = {
 					type = infrastructure
 					level = 1
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
-				}
+					level = 2
+				} 
 			}
 		}
 		mutually_exclusive = {
@@ -962,10 +907,7 @@ focus_tree = {
 				character = LUC_SUS_Ludwig_Marxer
 			}
 			any_country = {
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
+				has_government = fascism
 			}
 		}
 		completion_reward = {
@@ -976,19 +918,181 @@ focus_tree = {
 			}
 			every_country = {
 				limit = {
-					OR = {
-						has_government = fascism
-						has_government = communism
-					}
+					has_government = fascism
 				}
-				send_embargo = ROOT
 				add_opinion_modifier = {
 					target = ROOT
-					modifier = NOR_denounced_us
+					modifier = hostile_status
 				}
 			}
 		}
 		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_RealisticGovToppleFascism
+		icon = GFX_goal_unknown
+		cost = 5
+		relative_position_id = LUC_LiberalVictory
+		x = -12
+		y = 5
+		prerequisite = {
+			focus = LUC_RealisticGovDenounceTyranny
+		}
+		available = {
+			has_government = democratic
+			has_country_leader = {
+				ruling_only = yes
+				character = LUC_SUS_Ludwig_Marxer
+			}
+			OR = {
+				GER = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				AUS = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				ITA = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					GER = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				add_ideas = LUC_LichtensteinCrusade_GER
+			}
+			if = {
+				limit = {
+					ITA = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				add_ideas = LUC_LichtensteinCrusade_ITA
+			}
+			if = {
+				limit = {
+					AUS = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				add_ideas = LUC_LichtensteinCrusade_AUS
+			}
+			if = {
+				limit = {
+					GER = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				create_wargoal = {
+					target = GER
+					type = topple_government
+				}
+			}
+			if = {
+				limit = {
+					ITA = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				create_wargoal = {
+					target = ITA
+					type = topple_government
+				}
+			}
+			if = {
+				limit = {
+					AUS = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				create_wargoal = {
+					target = AUS
+					type = topple_government
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = LUC_NationalMobilisation
+			focus = LUC_IsolationistStance
+		}
+	}
+
+	focus = {
+		id = LUC_peoplesMilitias
+		icon = GFX_goal_unknown
+		cost = 4
+		relative_position_id = LUC_NationalMobilisation
+		x = -6
+		y = 1
+		prerequisite = {
+			focus = LUC_RealisticGovToppleFascism
+		}
+		available = {
+			has_government = democratic
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_ideas = LUC_PeopleMilitia
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_LiberateEurope
+		icon = GFX_goal_unknown
+		cost = 4
+		relative_position_id = LUC_NationalMobilisation
+		x = -4
+		y = 3
+		prerequisite = {
+			focus = LUC_RealisticGovToppleFascism
+		}
+		prerequisite = {
+			focus = LUC_DemocraticPangermanism
+		}
+		available = {
+			has_government = democratic
+		}
+		completion_reward = {
+			set_rule = {
+				can_only_justify_war_on_threat_country = no
+			}
+			swap_ideas = {
+				remove_idea = LUC_Alpine_Faction_Leader_idea
+				add_idea = LUC_Alpine_Faction_Leader_idea_Upgraded
+			}
+		}
+		mutually_exclusive = {
+			
 		}
 	}
 
@@ -1001,6 +1105,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = LUC_NationalMobilisation
+			focus = LUC_RealisticGovToppleFascism
 		}
 		available = {
 			has_government = democratic
@@ -1011,7 +1116,7 @@ focus_tree = {
 		completion_reward = {
 			create_faction = "Alpine League"
 			custom_effect_tooltip = LUC_OnOurOwn_tt
-			add_ideas = LUC_Alpine_Faction_Leader
+			add_ideas = LUC_Alpine_Faction_Leader_idea
 		}
 		mutually_exclusive = {
 			focus = LUC_StandWithAllies
@@ -1140,6 +1245,7 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = LUC_NationalMobilisation
+			focus = LUC_RealisticGovToppleFascism
 		}
 		available = {
 			has_government = democratic

@@ -29,6 +29,10 @@
  SUS_NAT:0 "Nationalists"
  SUS_tradeunions_Long:0 "Trade Unions"
  SUS_tradeunions:0 "Trade Unions"
+ SUS_FBP_LONG_Coalition:0 "Fortschrittliche Bürgerpartei / Vaterländische Union""
+ SUS_FBP_Coalition:0 "FBP-VU"
+ SUS_VPU_LONG_Coalition:0 "Independents"
+ SUS_VPU_Coalition:0 "Independents"
 
  # Characters - Leaders
  LUC_SUS_JosefHoop:0 "Josef Hoop"
@@ -95,7 +99,20 @@
  LUC_Realistic_Government_Upgraded_again_desc:0 ""
  LUC_ShootingClubs:0 "National Rifle Platoons"
  LUC_ShootingClubs_desc:0 ""
- LUC_Alpine_Faction_Leader:0 "Alpine Beacon"
- LUC_Alpine_Faction_Leader_desc:0 ""
+ LUC_Alpine_Faction_Leader_idea:0 "Alpine Beacon"
+ LUC_Alpine_Faction_Leader_idea_desc:0 ""
+ LUC_Fortress_in_Mountains:0 "Mountain Fortress Strategy"
+ LUC_Fortress_in_Mountains_desc:0 ""
+ LUC_LichtensteinCrusade_GER:0 "Crusade Against [GER.GetAdjective] Tyranny"
+ LUC_LichtensteinCrusade_GER_decs:0 ""
+ LUC_LichtensteinCrusade_ITA:0 "Crusade Against [ITA.GetAdjective] Tyranny"
+ LUC_LichtensteinCrusade_ITA_decs:0 ""
+ LUC_LichtensteinCrusade_AUS:0 "Crusade Against [AUS.GetAdjective] Tyranny"
+ LUC_LichtensteinCrusade_AUS_decs:0 ""
+ LUC_Alpine_Faction_Leader_idea_Upgraded:0 "Beacon of European Democracy"
+ LUC_Alpine_Faction_Leader_idea_Upgraded_desc:0 ""
+ LUC_PeopleMilitia:0 "Worker Militias"
+ LUC_PeopleMilitia_desc:0 ""
+ 
 
  LUC_Vaduz_Arsenal:0 "Vaduz Arsenal"

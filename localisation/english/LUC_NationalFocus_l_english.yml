@@ -23,10 +23,9 @@
  LUC_NationalMobilisation_desc:0 ""
  LUC_Lichtenstein_Neutrality_idea_Debuff_tt:0 "§RSince we have the §!§Y$LUC_Lichtenstein_Neutrality_idea$§!§R national spirit, we will get the following additional effects:§!\n\n"
 
- LUC_ExpandMIlitaryBudget:0 "Emergency Military Budget"
- LUC_ExpandMIlitaryBudget_desc:0 ""
+ LUC_IsolationistStance:0 "Alone in the Darkness"
+ LUC_IsolationistStance_desc:0 ""
  LUC_atleastfifteenwarsupport_tt:0 "At least §Y15%§! War Support"
- LUC_ExpandMIlitaryBudget_tt:0 "Unlocks a £decision_icon_small §Ydecision§! allowing us to partially repeal our neutrality, broadening our diplomatic options."
  
  LUC_InternationalBrigades:0 "Form Volunteer Brigades"
  LUC_InternationalBrigades_desc:0 ""
@@ -115,6 +114,15 @@
 
  LUC_RealisticGovShootingCLubs:0 "Endorse National Shooting Clubs"
  LUC_RealisticGovShootingCLubs_desc:0 ""
+
+ LUC_RealisticGovToppleFascism:0 "Take a Stance"
+ LUC_RealisticGovToppleFascism_desc:0 ""
+
+ LUC_peoplesMilitias:0 "Authorise Worker Militias"
+ LUC_peoplesMilitias_desc:0 ""
+
+ LUC_LiberateEurope:0 "Liberate Europe"
+ LUC_LiberateEurope_desc:0 ""
 
  #Authoritarian Branch
  LUC_ConservativeVictory:0 "The Schaedler Cabinet"
