@@ -1,69 +1,120 @@
 ﻿l_english:
+ LUC_newline_tt:0 " \n"
  # Democratic Branch
  LUC_Landtag:0 "The 1936 Landtag"
  LUC_Landtag_desc:0 ""
  LUC_LandtagCompleted_tt:0 "§LThis focus will be automatically completed once the 1936 elections have been held.§!"
 
- LUC_LiberalVictory:0 "A Liberal-Conservative Government"
+ LUC_LiberalVictory:0 "Fate of the Coalition Cabinet"
  LUC_LiberalVictory_decs:0 ""
  LUC_LiberalVictory_unlocked_tt:0 "Josef Hoop has retained the Landtag's confidence in the 1936 election."
 
  LUC_InvestigateFascists:0 "Investigate the Military Movement"
  LUC_InvestigateFascists_desc:0 ""
 
- LUC_ArmedVigilance:0 "Armed Vigilance"
- LUC_ArmedVigilance_desc:0 ""
+ LUC_LichtensteinerRedCross:0 "The Lichtensteiner Red Cross"
+ LUC_LichtensteinerRedCross_desc:0 ""
 
- LUC_BordergGuardReform:0 "Expand the Grenzwachtkorps"
- LUC_BordergGuardReform_desc:0 ""
+ LUC_WelcomeRefugees:0 "Welcome Refugees of War"
+ LUC_WelcomeRefugees_desc:0 ""
+ LUC_WelcomeRefugees_tt:0 "War has broken out in §YEurope§!"
+
+ LUC_NationalMobilisation:0 "National Mobilisation"
+ LUC_NationalMobilisation_desc:0 ""
+ LUC_Lichtenstein_Neutrality_idea_Debuff_tt:0 "§RSince we have the §!§Y$LUC_Lichtenstein_Neutrality_idea$§!§R national spirit, we will get the following additional effects:§!\n\n"
+
+ LUC_ExpandMIlitaryBudget:0 "Emergency Military Budget"
+ LUC_ExpandMIlitaryBudget_desc:0 ""
+ LUC_atleastfifteenwarsupport_tt:0 "At least §Y15%§! War Support"
+ LUC_ExpandMIlitaryBudget_tt:0 "Unlocks a £decision_icon_small §Ydecision§! allowing us to partially repeal our neutrality, broadening our diplomatic options."
+ 
+ LUC_InternationalBrigades:0 "Form Volunteer Brigades"
+ LUC_InternationalBrigades_desc:0 ""
+ LUC_InternationalBrigades_tt:0 "Creates a new §YDivision template§! with §Y6§! infantry, §Y2§! artillery and §Y1§! support hospital battalion\n§RThis is a locked template§!"
+ LUC_InternationalBrigades_deployed_tt:0 "Create §YVolunteer§! unit in Vaduz"
+
+ LUC_BuildupMilitaryReserves:0 "Buildup Military Reserves"
+ LUC_BuildupMilitaryReserves_desc:0 ""
+
+ LUC_IncreaseConscription:0 "To Every Man, a Rifle"
+ LUC_IncreaseConscription_desc:0 ""
 
  LUC_FortressVaduz:0 "Fortress Vaduz"
  LUC_FortressVaduz_desc:0 ""
+ LUC_Militias_deployed_tt:0 "Create §YMilitia§! unit in Vaduz"
 
- LUC_LimitedRearmement:0 "Limited Rearmement"
- LUC_LimitedRearmement_desc:0 ""
+ LUC_RealisticGovMilitianCivicism:0 "Militant Civilianism"
+ LUC_RealisticGovMilitianCivicism_desc:0 ""
 
- LUC_abolishNeutrality:0 "Abolish Neutrality"
- LUC_abolishNeutrality_desc:0 ""
+ LUC_RealisticGovDenounceTyranny:0 "Denounce Tyranny"
+ LUC_RealisticGovDenounceTyranny_desc:0 ""
 
- LUC_SpecialResearchDepartment:0 "Expand the   Military Budget"
- LUC_SpecialResearchDepartment_desc:0 ""
+ LUC_OnOurOwn:0 "On our Own"
+ LUC_OnOurOwn_desc:0 ""
+ LUC_OnOurOwn_tt:0 "Unlocks the Alpine League £decision_icon_small §Ydecision§! category, allowing us to invite neighbouring countries to our alliance."
 
- LUC_AlpineBeacon:0 "The Alpine Beacon"
- LUC_AlpineBeacon_desc:0 ""
+ LUC_DemocraticPangermanism:0 "Dreams of Democratic Pan-Germanism"
+ LUC_DemocraticPangermanism_desc:0 ""
+ LUC_DemocraticPangermanism_tt:0 "We will gain §gcores§! on all Germanic states in Europe as well as unlock £decision_icon_small §Ydecisions§! to persuade other countries to join us peacefully."
+ LUC_DemocraticPangermanism_Formable_tt:0 "Unlocks the £decision_icon_small §YRealise the German Confederacy Dream§! decision."
 
- LUC_AustrianTies:0 "Austrian Economic Ties"
- LUC_AustrianTies_desc:0 ""
+ LUC_StandWithAllies:0 "In the Arms of Giants"
+ LUC_StandWithAllies_desc:0 ""
+ LUC_StandWithAllies_tt:0 "Unlocks £decision_icon_small §Ydecisions§! to join §2democratic§! factions."
 
- LUC_AustrianAssets:0 "Repatriat Lichtensteiner Assets"
- LUC_AustrianAssets_desc:0 ""
+ LUC_SecureLendLeases:0 "Cooperative Military Research"
+ LUC_SecureLendLeases_desc:0 ""
 
- LUC_GermanIndustrialInvestments:0 "German Investments"
- LUC_GermanIndustrialInvestments_desc:0 ""
+ LUC_NationaliseIndustrialAssets:0 "Nationalise Industrial Assets"
+ LUC_NationaliseIndustrialAssets_desc:0 ""
 
- LUC_offerPoliticalAsylum:0 "Political Asylum for Victims of Fascism"
- LUC_offerPoliticalAsylum_desc:0 ""
+ LUC_OnTheOffensive:0 "Lichtenstein on the Offensive"
+ LUC_OnTheOffensive_desc:0 ""
 
- LUC_CivilianGovernment:0 "Emphasise Civilian Governance"
- LUC_CivilianGovernment_desc:0 ""
+ LUC_MobilisePopulation:0 "Fight to the Last"
+ LUC_MobilisePopulation_desc:0 ""
 
- LUC_supremacyOfStatusQuo:0 "Maintain the Coalition"
- LUC_supremacyOfStatusQuo_desc:0 ""
+ # Coalition Government
 
- LUC_banExtremism:0 "Crack Down on Extremists"
- LUC_banExtremism_desc:0 ""
+ LUC_ACoalitionGovernment:0 "A Government By Coalition"
+ LUC_ACoalitionGovernment_desc:0 ""
+ LUC_Coalition_tt:0 "All current §g[ROOT.GetNeutralParty]§! popularity will be transferred to the §2[ROOT.GetDemocraticParty]§! party"
 
- LUC_openPoliticalSphere:0 "Open up the Political Sphere"
- LUC_openPoliticalSphere_desc:0 ""
+ LUC_CoalitionInternalStability:0 "Develop Civilian Industry"
+ LUC_CoalitionInternalStability_desc:0 ""
 
- LUC_monarchialReferendum:0 "Referendum on the Monarchy"
- LUC_monarchialReferendum_desc:0 ""
+ LUC_CoalitionExpandPolice:0 "Expand the Landespolizei"
+ LUC_CoalitionExpandPolice_desc:0 ""
 
- LUC_triumphOfLiberalism:0 "Triumph of Liberalism"
- LUC_triumphOfLiberalism_desc:0 ""
+ LUC_CoalitionEmergencyReserves:0 "Setup Emergency Reserves"
+ LUC_CoalitionEmergencyReserves_desc:0 ""
 
- LUC_franzJosefAcademy:0 "Franz Joseph Academy"
- LUC_franzJosefAcademy_desc:0 ""
+ LUC_CoalitionSecureGuarantees:0 "Secure Political Guarantees"
+ LUC_CoalitionSecureGuarantees_desc:0 ""
+ LUC_CoalitionSecureGuarantees_tt:0 "Unlocks £decision_icon_small §Ydecisions§! allowing us to pursue guarantees from major European powers."
+
+ LUC_CoalitionStandFast:0 "Stand Fast Amidst the Storm"
+ LUC_CoalitionStandFast_Desc:0 ""
+
+ # Democratic-Realism
+
+ LUC_ARealisticGovernment:0 "A Realistic Government"
+ LUC_ARealisticGovernment_desc:0 ""
+ 
+ LUC_RealisticGovRearmement:0 "Begin Rearmement"
+ LUC_RealisticGovRearmement_desc:0 ""
+ LUC_RealisticGovRearmement_factories_tt:0 "Unlocks £decision_icon_small §Ydecisions§! allowing us to convert civlian factories to military ones."
+ LUC_RealisticGovRearmement_emergencyguns_tt:0 "Unlocks £decision_icon_small §Ydecisions§! allowing us to produce military equipment."
+ LUC_RealisticGovRearmement_warSupport_tt:0 "Unlocks £decision_icon_small §Ydecisions§! allowing us to increase §YWar Support§!."
+
+ LUC_RealisticgovRepealNeutrality:0 "Repeal Neutrality"
+ LUC_RealisticgovRepealNeutrality_desc:0 ""
+ LUC_RealisticgovRepealNeutrality_warsupport_tt:0 "At least §Y50%§! War Support"
+ LUC_RealisticgovRepealNeutrality_bypass_tt:0 "Does not have the national spirit §Y$LUC_Lichtenstein_Neutrality_idea$§!"
+ LUC_RealisticgovRepealNeutrality_reaction_tt:0 "§REvery major country with its capital in Europe that does not have an opinion of at least §Y25§! of [ROOT.GetName] will gain a wargoal against us!§!"
+
+ LUC_RealisticGovShootingCLubs:0 "Endorse National Shooting Clubs"
+ LUC_RealisticGovShootingCLubs_desc:0 ""
 
  #Authoritarian Branch
  LUC_ConservativeVictory:0 "The Schaedler Cabinet"
@@ -77,8 +128,11 @@
  LUC_AlpineSolidarity:0 "Alpine Solidarity"
  LUC_AlpineSolidarity_desc:0 ""
 
- LUC_IntegratedResearch:0 "Joint Research Programs"
+ LUC_IntegratedResearch:0 "Joint Scientific Endeavours"
  LUC_IntegratedResearch_desc:0 ""
+
+ LUC_JointScientificFunding:0 "The Zürich Research Agreement"
+ LUC_JointScientificFunding_desc:0 ""
 
  LUC_InterLinkedRail:0 "Inter-Linked Rail"
  LUC_InterLinkedRail_desc:0 ""
@@ -86,8 +140,8 @@
  LUC_SharedPostalService:0 "Merge Postal Services"
  LUC_SharedPostalService_desc:0 ""
 
- LUC_UnifiedCurrency:0 "Propose a Unified Currency"
- LUC_UnifiedCurrency_desc:0 ""
+ LUC_JointInvestments:0 "Unified Investment Scheme"
+ LUC_JointInvestments_desc:0 ""
 
  LUC_InviteAustria:0 "Invite Austria"
  LUC_InviteAustria_desc:0 ""
@@ -97,10 +151,6 @@
 
  LUC_DeepenEconomicCooperation:0 "Deepen Economic Cooperation"
  LUC_DeepenEconomicCooperation_desc:0 ""
-
- LUC_JointExcercises:0 "Joint Military Excercises"
- LUC_JointExcercises_desc:0 ""
-
  LUC_FormaliseConfederacy:0 "Formalise the Confederacy"
  LUC_FormaliseConfederacy_desc:0 ""
 
@@ -129,44 +179,38 @@
  LUC_AdoptRedoubtTactics_desc:0 ""
 
  #The economy
- LUC_reviewBudget:0 "Review the National Budget"
- LUC_reviewBudget_desc:0 ""
+ LUC_ContinueIndustrialisation:0 "Revise the National Budget"
+ LUC_ContinueIndustrialisation_desc:0 ""
+
+ LUC_MechanicalIndustryFocusing:0 "Focus on the Tooling Industry"
+ LUC_MechanicalIndustryFocusing_desc:0 ""
+
+ LUC_AgriculturalIndustryFocusing:0 "Focus on Traditional Industries"
+ LUC_AgriculturalIndustryFocusing_desc:0 ""
+
+ LUC_BankOfLichtenstein:0 "The Bank of Lichtenstein"
+ LUC_BankOfLichtenstein_desc:0 ""
+
+ LUC_RePatriateAustrianAssets:0 "Secure Austrian Economic Ties"
+ LUC_RePatriateAustrianAssets_desc:0 ""
+
+ LUC_SwissBanks:0 "Integrate the Union Bank of Switzerland"
+ LUC_SwissBanks_desc:0 ""
+
+ LUC_FranzJosephAcademy:0 "Franz Joseph Academy of Natural Sciences"
+ LUC_FranzJosephAcademy_desc:0 ""
  
- LUC_openBank:0 "Open the Liechtensteinische Landesbank"
- LUC_openBank_desc:0 ""
+ LUC_AttractInvestors:0 "Attract Investors"
+ LUC_AttractInvestors_desc:0 ""
 
- LUC_germanMoney:0 "Offer Germany Moneraty Security"
- LUC_germanMoney_desc:0 ""
+ LUC_IndustryState:0 "Exploit the Rhine"
+ LUC_IndustryState_desc:0 ""
+ 
+ LUC_DevelopVaduz:0 "Develop Vaduz"
+ LUC_DevelopVaduz_desc:0 ""
 
- LUC_alliedMoney:0 "Invite Allied Wealth"
- LUC_alliedMoney_desc:0 ""
+ LUC_AgrarianState:0 "An Agrarian Ideal"
+ LUC_AgrarianState_desc:0 ""
 
- LUC_germanInvestments:0 "German Investments"
- LUC_germanInvestments_desc:0 ""
-
- LUC_alliedInvestment:0 "Allied Investments"
- LUC_alliedInvestment_desc:0 ""
-
- LUC_goldTraders:0 "Harbour of European Gold"
- LUC_goldTraders_desc:0 ""
-
- LUC_economicRecalibration:0 "Economic Recalibration"
- LUC_economicRecalibration_desc:0 ""
-
- LUC_ecoPrivatisation:0 "Total Privatisation"
- LUC_ecoPrivatisation_desc:0 ""
-
- LUC_ecoNationalisaiton:0 "Partial Nationalisation"
- LUC_ecoNationalisaiton_desc:0 ""
-
- LUC_urbaniseVaduz:0 "Modernise Old Vaduz"
- LUC_urbaniseVaduz_desc:0 ""
-
- LUC_agrarianDevelopments:0 "Mass Electrification"
- LUC_agrarianDevelopments_desc:0 ""
-
- LUC_massElectrification:0 "Healthcare Investments"
- LUC_massElectrification_desc:0 ""
-
- LUC_alaskanPurchase:0 "Purchase Alaska"
- LUC_alaskanPurchase_desc:0 ""
+ LUC_PurchaseAlaska:0 "Purchase Alaska"
+ LUC_PurchaseAlaska_desc:0 ""

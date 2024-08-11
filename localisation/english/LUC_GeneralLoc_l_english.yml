@@ -30,14 +30,15 @@
  SUS_tradeunions_Long:0 "Trade Unions"
  SUS_tradeunions:0 "Trade Unions"
 
- # Characters - Start
+ # Characters - Leaders
  LUC_SUS_JosefHoop:0 "Josef Hoop"
  LUC_SUS_OttoSchaedler:0 "Otto Schaedler"
  LUC_SUS_AlfonsGoop:0 "Alfons Goop"
  LUC_SUS_RudolfSchaedler:0 "Rudolf Shaedler"
  LUC_SUS_FranzII:0 "Franz II"
  LUC_SUS_WorkerCouncil:0 "Worker's Council"
- 
+ LUC_SUS_Ludwig_Marxer:0 "Ludwig Marxer"
+
  # Character traits
  SUS_LUC_Neutrality_Advocate:0 "Neutrality Advocate"
  SUS_LUC_Silver_Tongued_Pragmatist:0 "Silver-Tongued Pragmatist"
@@ -48,6 +49,7 @@
  SUS_LUC_Workers_Council:0 "Unorganised Council"
  SUS_LUC_Lichtenstein_Prince:0 "Prince of Lichtenstein"
  SUS_LUC_Deutshes_Kaiser:0 "The Mountain Kaiser"
+ SUS_LiberalLawyer:0 "Liberal Lawyer"
 
  # Ideas
  LUC_Lichtenstein_Neutrality_idea:0 "Lichtensteiner Neutrality"
@@ -64,3 +66,36 @@
 
  LUC_Fascist_Agitators_idea:0 "Nascent Fascism Movement"
  LUC_Fascist_Agitators_idea_desc:0 ""
+
+ LUC_Coalition_government_idea:0 "Broad Democratic Coalition"
+ LUC_Coalition_government_idea_desc:0 ""
+ LUC_Police_idea:0 "Landespolizei Reform"
+ LUC_Police_idea_desc:0 ""
+ LUC_Anxious_Preparations:0 "Partial Mobilisation of Society"
+ LUC_Anxious_Preparations_desc:0 ""
+ LUC_RedCross:0 "The Lichtensteiner Red Cross"
+ LUC_RedCross_desc:0 ""
+ LUC_RedCross_Upgraded:0 "Haven for Refugees"
+ LUC_RedCross_Upgraded_desc:0 ""
+ LUC_Lichtenstein_Neutrality_Partial_idea:0 "$LUC_Lichtenstein_Neutrality_idea$"
+ LUC_Lichtenstein_Neutrality_Partial_idea_desc:0 ""
+ LUC_Desperate_Conscription_idea:0 "The [ROOT.GetAdjective] Last Stand"
+ LUC_Desperate_Conscription_idea_desc:0 ""
+ LUC_National_Mobilisation_idea:0 "National Mobilisation"
+ LUC_National_Mobilisation_idea_Desc:0 ""
+ LUC_National_Mobilisation_idea_upgraded:0 "$LUC_National_Mobilisation_idea$"
+ LUC_National_Mobilisation_idea_upgraded_desc:0 ""
+ LUC_National_Mobilisation_idea_upgraded_alt:0 "$LUC_National_Mobilisation_idea$"
+ LUC_National_Mobilisation_idea_upgraded_alt_desc:0 ""
+ LUC_Realistic_Government:0 "A Liberal Government" 
+ LUC_Realistic_Government_desc:0 ""
+ LUC_Realistic_Government_Upgraded:0 "$LUC_Realistic_Government$"
+ LUC_Realistic_Government_Upgraded_desc:0 ""
+ LUC_Realistic_Government_Upgraded_again:0 "$LUC_Realistic_Government$"
+ LUC_Realistic_Government_Upgraded_again_desc:0 ""
+ LUC_ShootingClubs:0 "National Rifle Platoons"
+ LUC_ShootingClubs_desc:0 ""
+ LUC_Alpine_Faction_Leader:0 "Alpine Beacon"
+ LUC_Alpine_Faction_Leader_desc:0 ""
+
+ LUC_Vaduz_Arsenal:0 "Vaduz Arsenal"

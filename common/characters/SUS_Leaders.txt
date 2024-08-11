@@ -57,6 +57,19 @@ characters={
 			}
 		}
 	}
+	LUC_SUS_Ludwig_Marxer = {
+		portraits = {
+			civilian = {
+				large = "GFX_LUC_LudwigMarxer"
+			}
+		}
+		# country_leader = {
+		# 	# ideology = liberalism
+		# 	# traits = {
+		# 	# 	SUS_LiberalLawyer
+		# 	# }
+		# }
+	}
 	# Princes
 	LUC_SUS_FranzII = {
 		name = LUC_SUS_FranzII

@@ -15,6 +15,7 @@ set_technology = {
 	tech_mountaineers = 1
 	basic_train = 1
 	tech_military_police = 1
+	tech_trucks = 1
 }
 
 # Internal Politics, setup and basics
@@ -67,6 +68,7 @@ recruit_character = LUC_SUS_OttoSchaedler
 recruit_character = LUC_SUS_RudolfSchaedler
 recruit_character = LUC_SUS_AlfonsGoop
 recruit_character = LUC_SUS_WorkerCouncil
+recruit_character = LUC_SUS_Ludwig_Marxer
 
 # Relationships
 

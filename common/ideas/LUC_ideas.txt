@@ -2,23 +2,21 @@ ideas = {
 	country = {
 		LUC_Franz_I_idea = {
 			modifier = {
-				political_power_cost = 0.25
+				political_power_gain = 0.2
 				stability_factor = 0.15
 			}
 		}
 		LUC_Franz_II_idea = {
 			modifier = {
-				political_power_cost = 0.25
+				political_power_gain = 0.2
 				stability_factor = 0.15
 			}
 		}
 		LUC_Lichtenstein_Neutrality_idea = {
 			modifier = {
 				enemy_justify_war_goal_time =2.5
-				join_faction_tension = 1
-				mobilization_laws_cost_factor = 1
 				stability_factor = 0.15
-				ai_get_ally_desire_factor = -100
+				ai_get_ally_desire_factor = -200
 				embargo_threshold_factor = 1
 				send_volunteers_tension = 2
 				guarantee_cost = 0.5
@@ -27,11 +25,13 @@ ideas = {
 			rule = {
 				can_not_declare_war = yes
 				can_create_factions = no
+				can_join_factions = no
 			}
 		}
 		LUC_Lichtensteiner_Economy_idea = {
 			modifier = {
-				economy_cost_factor = 0.5
+				economy_cost_factor = 0.15
+				trade_opinion_factor = -0.5
 			}
 		}
 		LUC_CustomsUnion_idea = {
@@ -62,6 +62,221 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.015
 				stability_weekly_factor = -0.01
+			}
+		}
+	}
+
+
+	# Focus Ideas
+	country = {
+		LUC_Coalition_government_idea = {
+			modifier = {
+				democratic_drift = 0.02
+				stability_factor = 0.1
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_Police_idea = {
+			modifier = {
+				intelligence_agency_defense = 0.2
+				stability_weekly_factor = 0.01
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_Anxious_Preparations = {
+			modifier = {
+				war_support_weekly = 0.01
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.07
+				training_time_army_factor = -0.15
+			}
+		}
+		LUC_RedCross = {
+			modifier = {
+				experience_loss_factor = -0.1
+				army_org_regain = 0.02
+			}
+			equipment_bonus = {
+				support_equipment = {
+					reliability = 0.1
+				}
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_RedCross_Upgraded = {
+			modifier = {
+				experience_loss_factor = -0.1
+				army_org_regain = 0.02
+				weekly_manpower = 350
+				monthly_population = 0.2
+				stability_factor = -0.1
+				drift_defence_factor = -0.15
+				army_intel_to_others = 10
+			}
+			equipment_bonus = {
+				support_equipment = {
+					reliability = 0.1
+				}
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_Realistic_Government = {
+			modifier = {
+				democratic_drift = 0.025
+				consumer_goods_factor = 0.05
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_Realistic_Government_Upgraded = {
+			modifier = {
+				democratic_drift = 0.025
+				consumer_goods_factor = 0.03
+				war_support_factor = 0.05
+				political_power_gain = 0.1
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_Realistic_Government_Upgraded_again = {
+			modifier = {
+				democratic_drift = 0.025
+				consumer_goods_factor = 0.03
+				war_support_factor = 0.05
+				political_power_gain = 0.1
+				army_attack_against_major_factor = 0.1
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_ShootingClubs = {
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.25
+				minimum_training_level = -0.1
+				conscription = 0.005
+				experience_gain_army_unit_factor = 0.1
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_Lichtenstein_Neutrality_Partial_idea = {
+			modifier = {
+				enemy_justify_war_goal_time = 0.5
+				ai_get_ally_desire_factor = -200
+				embargo_threshold_factor = 0.5
+				send_volunteers_tension = 1
+				guarantee_cost = 0.5
+				guarantee_tension = 1
+				join_faction_tension = 0.5
+				army_core_defence_factor = 0.1
+			}
+			rule = {
+				can_not_declare_war = yes
+			}
+		}
+		LUC_Desperate_Conscription_idea = {
+			modifier = {
+				army_core_defence_factor = 0.05
+				max_surrender_limit_offset = 0.1
+				recruitable_population_factor = 0.1
+				war_support_factor = -0.1
+			}
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_National_Mobilisation_idea = {
+			modifier = {
+				industrial_capacity_factory = 0.1
+				state_production_speed_arms_factory_factor = 0.1
+				state_production_speed_industrial_complex_factor = -0.1
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.1
+			}
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_National_Mobilisation_idea_upgraded = {
+			modifier = {
+				industrial_capacity_factory = 0.1
+				state_production_speed_arms_factory_factor = 0.15
+				state_production_speed_industrial_complex_factor = -0.1
+				consumer_goods_factor = 0.2
+				max_dig_in_factor = 0.1
+				recruitable_population_factor = 0.15
+			}
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_National_Mobilisation_idea_upgraded_alt = {
+			modifier = {
+				industrial_capacity_factory = 0.1
+				state_production_speed_industrial_complex_factor = -0.15
+				war_support_factor = 0.1
+				consumer_goods_factor = 0.15
+				army_org_factor = 0.1
+			}
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_Alpine_Faction_Leader = {
+			modifier = {
+				democratic_drift = 0.02
+				consumer_goods_factor = -0.05
+				non_core_manpower = 0.1
+			}
+			allowed = {
+				has_government = democratic
+				OR = {
+					is_faction_leader = yes
+					NOT = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Concerns
+	industrial_concern = {
+		LUC_Vaduz_Arsenal = {
+			modifier = {
+				equipment_conversion_speed = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					reliability_factor = 0.1
+				}
+			}
+			allowed = {
+				original_tag = SUS
+				has_completed_focus = LUC_NationaliseIndustrialAssets
 			}
 		}
 	}
