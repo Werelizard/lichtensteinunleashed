@@ -21,11 +21,61 @@ ideas = {
 				send_volunteers_tension = 2
 				guarantee_cost = 0.5
 				guarantee_tension = 1
+				custom_modifier_tooltip = LUC_newline_tt
+				custom_modifier_tooltip = LUC_Lichtenstein_Neutrality_idea_tt
 			}
 			rule = {
 				can_not_declare_war = yes
 				can_create_factions = no
 				can_join_factions = no
+			}
+			allowed = {
+				NOT = {
+					has_war = yes
+				}
+				NOT = {
+					has_country_flag = LUC_NeuralityRepealed_flag
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = LUC_NeuralityRepealed_flag
+						}
+					}
+					add_ideas = LUC_Lichtenstein_Neutrality_defensive_idea
+				}
+			}
+		}
+		LUC_Lichtenstein_Neutrality_defensive_idea = {
+			modifier = {
+				embargo_threshold_factor = 1
+				send_volunteers_tension = 2
+				guarantee_cost = 0.5
+				guarantee_tension = 1
+				army_core_defence_factor = 0.2
+				custom_modifier_tooltip = LUC_newline_tt
+				custom_modifier_tooltip = LUC_Lichtenstein_Neutrality_defensive_idea_tt
+			}
+			rule = {
+				can_not_declare_war = yes
+			}
+			allowed = {
+				has_war = yes
+				NOT = {
+					has_country_flag = LUC_NeuralityRepealed_flag
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = LUC_NeuralityRepealed_flag
+						}
+					}
+					add_ideas = LUC_Lichtenstein_Neutrality_idea
+				}
 			}
 		}
 		LUC_Lichtensteiner_Economy_idea = {
@@ -46,32 +96,23 @@ ideas = {
 			allowed ={
 				any_other_country = {
 					has_idea = LUC_CustomsUnion_idea
-				}
-				NOT = {
-					any_other_country = {
-						has_idea = LUC_CustomsUnion_idea
-					}
+					exists = yes
 				}
 			}
 		}
-	}
 
-	#Event-Related Idas
-	country = {
+		#Event-Related
 		LUC_Fascist_Agitators_idea = {
 			modifier = {
 				fascism_drift = 0.015
 				stability_weekly_factor = -0.01
 			}
 		}
-	}
 
-
-	# Focus Ideas
-	country = {
-		LUC_Coalition_government_idea = {
+		# Focus Ideas
+		LUC_DemocraticConservative_government_idea = {
 			modifier = {
-				democratic_drift = 0.02
+				democratic_drift = 0.1
 				stability_factor = 0.1
 			}
 
@@ -79,290 +120,15 @@ ideas = {
 				has_government = democratic
 			}
 		}
-		LUC_Police_idea = {
+		LUC_DemocraticLiberal_government_idea = {
 			modifier = {
-				intelligence_agency_defense = 0.2
-				stability_weekly_factor = 0.01
-			}
-
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_Anxious_Preparations = {
-			modifier = {
-				industrial_capacity_factory = 0.1
-				mobilization_speed = 0.2
-				consumer_goods_factor = 0.07
-				training_time_army_factor = -0.1
-			}
-		}
-		LUC_RedCross = {
-			modifier = {
-				experience_loss_factor = -0.1
-				army_org_regain = 0.02
-			}
-			equipment_bonus = {
-				support_equipment = {
-					reliability = 0.1
-				}
-			}
-
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_RedCross_Upgraded = {
-			modifier = {
-				experience_loss_factor = -0.1
-				army_org_regain = 0.02
-				weekly_manpower = 350
-				monthly_population = 0.2
-				stability_factor = -0.1
-				drift_defence_factor = -0.15
-				army_intel_to_others = 10
-			}
-			equipment_bonus = {
-				support_equipment = {
-					reliability = 0.1
-				}
-			}
-
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_Realistic_Government = {
-			modifier = {
-				democratic_drift = 0.025
-				consumer_goods_factor = 0.05
-			}
-
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_Realistic_Government_Upgraded = {
-			modifier = {
-				democratic_drift = 0.025
 				consumer_goods_factor = 0.03
-				war_support_factor = 0.05
-				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.15
 			}
 
 			allowed = {
 				has_government = democratic
-			}
-		}
-		LUC_Realistic_Government_Upgraded_again = {
-			modifier = {
-				democratic_drift = 0.025
-				consumer_goods_factor = 0.03
-				war_support_factor = 0.05
-				political_power_gain = 0.1
-				army_attack_against_major_factor = 0.1
-			}
-
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_ShootingClubs = {
-			modifier = {
-				resistance_growth_on_our_occupied_states = 0.25
-				minimum_training_level = -0.1
-				conscription = 0.005
-				experience_gain_army_unit_factor = 0.1
-			}
-
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_Lichtenstein_Neutrality_Partial_idea = {
-			modifier = {
-				enemy_justify_war_goal_time = 3
-				army_defence_factor = 0.1
-				war_support_factor = 0.1
-				consumer_goods_factor = -0.15
-				conscription = 0.015
-				ai_get_ally_desire_factor = -200
-				embargo_threshold_factor = 1
-				send_volunteers_tension = 2.5
-				guarantee_cost = 1.5
-				guarantee_tension = 1
-			}
-			rule = {
-				can_join_factions = no
-				can_not_declare_war = yes
-			}
-		}
-		LUC_Desperate_Conscription_idea = {
-			modifier = {
-				max_dig_in = 10
-				recruitable_population_factor = 0.15
-				war_support_factor = 0.1
-				production_speed_buildings_factor = -0.1
-				weekly_casualties_war_support = -0.01
-			}
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_National_Mobilisation_idea = {
-			modifier = {
-				industrial_capacity_factory = 0.1
-				state_production_speed_arms_factory_factor = 0.1
-				state_production_speed_industrial_complex_factor = -0.1
-				war_support_factor = 0.05
-				consumer_goods_factor = 0.1
-			}
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_National_Mobilisation_idea_upgraded = {
-			modifier = {
-				industrial_capacity_factory = 0.1
-				state_production_speed_arms_factory_factor = 0.15
-				state_production_speed_industrial_complex_factor = -0.1
-				consumer_goods_factor = 0.2
-				max_dig_in_factor = 0.1
-				recruitable_population_factor = 0.15
-			}
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_National_Mobilisation_idea_upgraded_alt = {
-			modifier = {
-				industrial_capacity_factory = 0.1
-				state_production_speed_industrial_complex_factor = -0.15
-				war_support_factor = 0.1
-				consumer_goods_factor = 0.15
-				army_org_factor = 0.1
-			}
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_Fortress_in_Mountains = {
-			modifier = {
-				max_dig_in_factor = 0.2
-				static_anti_air_damage_factor = 0.2
-				land_bunker_effectiveness_factor = 0.2
-				production_speed_bunker_factor = 0.25
-				org_loss_at_low_org_factor = -0.1
-				consumer_goods_factor = -0.15
-				army_attack_factor = -0.15
-			}
-			allowed = {
-				has_government = democratic
-			}
-		}
-		LUC_Alpine_Faction_Leader_idea = {
-			modifier = {
-				democratic_drift = 0.02
-				consumer_goods_factor = -0.025
-			}
-			allowed = {
-				has_government = democratic
-				OR = {
-					is_faction_leader = yes
-					NOT = {
-						is_in_faction = yes
-					}
-				}
-			}
-		}
-		LUC_LichtensteinCrusade_GER = {
-			targeted_modifier = {
-				tag = GER
-				army_attack_factor = 0.15
-				army_defence_factor = 0.1
-			}
-			allowed = {
-				has_government = democratic
-				GER = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-			}
-		}
-		LUC_LichtensteinCrusade_ITA = {
-			targeted_modifier = {
-				tag = ITA
-				army_attack_factor = 0.15
-				army_defence_factor = 0.1
-			}
-			allowed = {
-				has_government = democratic
-				ITA = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-			}
-		}
-		LUC_LichtensteinCrusade_AUS = {
-			targeted_modifier = {
-				tag = AUS
-				army_attack_factor = 0.15
-				army_defence_factor = 0.1
-			}
-			allowed = {
-				has_government = democratic
-				AUS = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-			}
-		}
-		LUC_PeopleMilitia = {
-			modifier = {
-				compliance_growth = 0.1
-				non_core_manpower = 0.025
-				resistance_growth_on_our_occupied_states = 0.15
-				communism_drift = 0.02
-			}
-		}
-		LUC_Alpine_Faction_Leader_idea_Upgraded = {
-			modifier = {
-				democratic_drift = 0.02
-				consumer_goods_factor = -0.025
-				justify_war_goal_time = -0.25
-				guarantee_tension = -0.5
-			}
-			allowed = {
-				has_government = democratic
-				OR = {
-					is_faction_leader = yes
-					NOT = {
-						is_in_faction = yes
-					}
-				}
-			}
-		}
-	}
-
-	#Concerns
-	industrial_concern = {
-		LUC_Vaduz_Arsenal = {
-			modifier = {
-				equipment_conversion_speed = 0.1
-				production_factory_max_efficiency_factor = 0.1
-			}
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.1
-					reliability_factor = 0.05
-				}
-			}
-			allowed = {
-				original_tag = SUS
-				has_completed_focus = LUC_NationaliseIndustrialAssets
 			}
 		}
 	}

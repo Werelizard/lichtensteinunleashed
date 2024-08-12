@@ -6,18 +6,20 @@ leader_traits = {
 
 	#Traits for Hoop
 	SUS_LUC_Neutrality_Advocate = {
-		war_support_factor = -0.10
+		war_support_factor = -0.15
 		improve_relations_maintain_cost_factor = -0.2
+		ai_get_ally_desire_factor = -100
+		ai_join_ally_desire_factor = -100
 	}
 	SUS_LUC_Silver_Tongued_Pragmatist = {
-		political_power_factor = 0.05
-		party_popularity_stability_factor = 0.2
+		political_power_cost = -0.1
+		party_popularity_stability_factor = 0.1
 	}
 	#Traits for Otto Schaedler
 	SUS_LUC_Dubious_Figure = {
-		fascism_acceptance = 15
+		fascism_acceptance = 10
 		stability_factor = -0.05
-		war_support_factor = 0.02
+		war_support_factor = 0.025
 	}
 	# Traits for Rudolf
 	SUS_LUC_Fervent_Nationalist = {
@@ -54,8 +56,10 @@ leader_traits = {
 	}
 	# Trait for Ludwig Marxer
 	SUS_LiberalLawyer = {
-		political_power_cost = -0.2
-		fascism_drift = -0.02
+		political_power_factor = 0.03
+		trade_laws_cost_factor = -0.15
+		mobilization_laws_cost_factor = -0.15
+		economy_cost_factor = -0.15
 	}
 
 	##################

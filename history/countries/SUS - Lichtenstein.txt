@@ -72,11 +72,6 @@ recruit_character = LUC_SUS_Ludwig_Marxer
 
 # Relationships
 
-give_guarantee = SWI
-SWI = {
-	give_guarantee = SUS
-}
-
 # Ideas
 
 add_ideas = {

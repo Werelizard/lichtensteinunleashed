@@ -1,77 +1,72 @@
 ﻿l_english:
- LUC_newline_tt:0 " \n"
- # Democratic Branch
  LUC_Landtag:0 "The 1936 Landtag"
  LUC_Landtag_desc:0 ""
  LUC_LandtagCompleted_tt:0 "§LThis focus will be automatically completed once the 1936 elections have been held.§!"
 
- LUC_LiberalVictory:0 "Fate of the Coalition Cabinet"
+ # Democratic Branches - Common
+ LUC_LiberalVictory:0 "Fate of the Hoop Cabinet"
  LUC_LiberalVictory_decs:0 ""
  LUC_LiberalVictory_unlocked_tt:0 "Josef Hoop has retained the Landtag's confidence in the 1936 election."
 
  LUC_InvestigateFascists:0 "Investigate the Military Movement"
  LUC_InvestigateFascists_desc:0 ""
 
- LUC_LichtensteinerRedCross:0 "The Lichtensteiner Red Cross"
- LUC_LichtensteinerRedCross_desc:0 ""
-
- LUC_WelcomeRefugees:0 "Welcome Refugees of War"
+ LUC_WelcomeRefugees:0 "Welcome Refugees"
  LUC_WelcomeRefugees_desc:0 ""
- LUC_WelcomeRefugees_tt:0 "War has broken out in §YEurope§!"
-
- LUC_NationalMobilisation:0 "National Mobilisation"
- LUC_NationalMobilisation_desc:0 ""
- LUC_Lichtenstein_Neutrality_idea_Debuff_tt:0 "§RSince we have the §!§Y$LUC_Lichtenstein_Neutrality_idea$§!§R national spirit, we will get the following additional effects:§!\n\n"
-
- LUC_IsolationistStance:0 "Alone in the Darkness"
- LUC_IsolationistStance_desc:0 ""
- LUC_atleastfifteenwarsupport_tt:0 "At least §Y15%§! War Support"
  
- LUC_InternationalBrigades:0 "Form Volunteer Brigades"
- LUC_InternationalBrigades_desc:0 ""
- LUC_InternationalBrigades_tt:0 "Creates a new §YDivision template§! with §Y6§! infantry, §Y2§! artillery and §Y1§! support hospital battalion\n§RThis is a locked template§!"
- LUC_InternationalBrigades_deployed_tt:0 "Create §YVolunteer§! unit in Vaduz"
+ LUC_PoliceExpansion:0 "Expand the Landespolizei"
+ LUC_PoliceExpansion_desc:0 ""
 
- LUC_BuildupMilitaryReserves:0 "Buildup Military Reserves"
- LUC_BuildupMilitaryReserves_desc:0 ""
+ LUC_EmergencyReserves:0 "Build Up National Supply"
+ LUC_EmergencyReserves_desc:0 ""
 
- LUC_IncreaseConscription:0 "To Every Man, a Rifle"
- LUC_IncreaseConscription_desc:0 ""
+ LUC_SwissMiliaryGuarantees:0 "Request Swiss Military Guarantees"
+ LUC_SwissMiliaryGuarantees_desc:0 ""
+
+ LUC_PurchaseSwissWeapons:0 "Purchase Swiss Weapons"
+ LUC_PurchaseSwissWeapons_desc:0 ""
+
+ LUC_ALichtensteinerMilitia:0 "A [ROOT.GetAdjective] Militia"
+ LUC_ALichtensteinerMilitia_desc:0 ""
+
+ LUC_BeginRearmement:0 "Emergency Military Budget"
+ LUC_BeginRearmement_desc:0 ""
+
+ LUC_PopularMobilisation:0 "Use the Shooting Clubs"
+ LUC_PopularMobilisation_decs:0 ""
+
+ LUC_AssetsNationalisation:0 "Industrial Nationalisation"
+ LUC_AssetsNationalisation_desc:0 ""
+
+ LUC_RepealNeutrality:0 "Abandon Neutrality"
+ LUC_RepealNeutrality_desc:0 ""
+
+ LUC_BideOurTime:0 "Bide our Time"
+ LUC_BideOurTime_desc:0 ""
 
  LUC_FortressVaduz:0 "Fortress Vaduz"
  LUC_FortressVaduz_desc:0 ""
- LUC_Militias_deployed_tt:0 "Create §YMilitia§! unit in Vaduz"
 
- LUC_RealisticGovMilitianCivicism:0 "Militant Civilianism"
- LUC_RealisticGovMilitianCivicism_desc:0 ""
+ LUC_GreaterRedoubt:0 "The Greater Redoubt"
+ LUC_GreaterRedoubt_desc:0 ""
 
- LUC_RealisticGovDenounceTyranny:0 "Denounce Tyranny"
- LUC_RealisticGovDenounceTyranny_desc:0 ""
+ LUC_FromGroundToSky:0 "Clear Our Skies"
+ LUC_FromGroundToSky_desc:0 ""
 
- LUC_OnOurOwn:0 "On our Own"
- LUC_OnOurOwn_desc:0 ""
- LUC_OnOurOwn_tt:0 "Unlocks the Alpine League £decision_icon_small §Ydecision§! category, allowing us to invite neighbouring countries to our alliance."
+ LUC_TogetherWeAreStronger:0 "Stand By Other Democracies"
+ LUC_TogetherWeAreStronger_desc:0 ""
 
- LUC_DemocraticPangermanism:0 "Dreams of Democratic Pan-Germanism"
- LUC_DemocraticPangermanism_desc:0 ""
- LUC_DemocraticPangermanism_tt:0 "We will gain §gcores§! on all Germanic states in Europe as well as unlock £decision_icon_small §Ydecisions§! to persuade other countries to join us peacefully."
- LUC_DemocraticPangermanism_Formable_tt:0 "Unlocks the £decision_icon_small §YRealise the German Confederacy Dream§! decision."
+ LUC_BearingTheDemocraticTorch:0 "Bearing the Democratic Torch"
+ LUC_BearingTheDemocraticTorch_desc:0 ""
 
- LUC_StandWithAllies:0 "In the Arms of Giants"
- LUC_StandWithAllies_desc:0 ""
- LUC_StandWithAllies_tt:0 "Unlocks £decision_icon_small §Ydecisions§! to join §2democratic§! factions."
+ LUC_ArmDemocraticResistance:0 "Arm Democratic Partisans"
+ LUC_ArmDemocraticResistance_desc:0 ""
 
- LUC_SecureLendLeases:0 "Cooperative Military Research"
- LUC_SecureLendLeases_desc:0 ""
+ LUC_DemocratiPanGermanism:0 "Dreams of Democratic Pan-Germanism"
+ LUC_DemocratiPanGermanism_desc:0 ""
 
- LUC_NationaliseIndustrialAssets:0 "Nationalise Industrial Assets"
- LUC_NationaliseIndustrialAssets_desc:0 ""
-
- LUC_OnTheOffensive:0 "Lichtenstein on the Offensive"
- LUC_OnTheOffensive_desc:0 ""
-
- LUC_MobilisePopulation:0 "Fight to the Last"
- LUC_MobilisePopulation_desc:0 ""
+ LUC_CollaborativeResearch:0 "Collaborative Research"
+ LUC_CollaborativeResearch_desc:0 ""
 
  # Coalition Government
 
@@ -79,53 +74,66 @@
  LUC_ACoalitionGovernment_desc:0 ""
  LUC_Coalition_tt:0 "All current §g[ROOT.GetNeutralParty]§! popularity will be transferred to the §2[ROOT.GetDemocraticParty]§! party"
 
- LUC_CoalitionInternalStability:0 "Develop Civilian Industry"
- LUC_CoalitionInternalStability_desc:0 ""
+ LUC_DiplomaticMissionToGermany:0 "Diplomatic Mission to Germany"
+ LUC_DiplomaticMissionToGermany_desc:0 ""
 
- LUC_CoalitionExpandPolice:0 "Expand the Landespolizei"
- LUC_CoalitionExpandPolice_desc:0 ""
+ LUC_GermanTradeAgreement:0 "German Trade Agreement"
+ LUC_GermanTradeAgreement_desc:0 ""
 
- LUC_CoalitionEmergencyReserves:0 "Setup Emergency Reserves"
- LUC_CoalitionEmergencyReserves_desc:0 ""
+ LUC_EmphasiseTradition:0 "Emphasise Tradition"
+ LUC_EmphasiseTradition_desc:0 ""
 
- LUC_CoalitionSecureGuarantees:0 "Secure Political Guarantees"
- LUC_CoalitionSecureGuarantees_desc:0 ""
- LUC_CoalitionSecureGuarantees_tt:0 "Unlocks £decision_icon_small §Ydecisions§! allowing us to pursue guarantees from major European powers."
+ LUC_ContinuePrivatisation:0 "Towards Privatisation"
+ LUC_ContinuePrivatisation_desc:0 ""
 
- LUC_CoalitionStandFast:0 "Stand Fast Amidst the Storm"
- LUC_CoalitionStandFast_Desc:0 ""
+ LUC_LowerTaxes:0 "Lower Taxes"
+ LUC_LowerTaxes_desc:0 ""
 
- # Democratic-Realism
+ LUC_TaxHaven:0 "Welcome Foreign Capital"
+ LUC_TaxHaven_desc:0 ""
+
+ LUC_GermanIndustry:0 "German-[ROOT.GetAdjective] Industrial Collaboration"
+ LUC_GermanIndustry_desc:0 ""
+
+ LUC_BanUnions:0 "Ban Trade Unions"
+
+ # Liberal Government
 
  LUC_ARealisticGovernment:0 "A Realistic Government"
  LUC_ARealisticGovernment_desc:0 ""
- 
- LUC_RealisticGovRearmement:0 "Begin Rearmement"
- LUC_RealisticGovRearmement_desc:0 ""
- LUC_RealisticGovRearmement_factories_tt:0 "Unlocks £decision_icon_small §Ydecisions§! allowing us to convert civlian factories to military ones."
- LUC_RealisticGovRearmement_emergencyguns_tt:0 "Unlocks £decision_icon_small §Ydecisions§! allowing us to produce military equipment."
- LUC_RealisticGovRearmement_warSupport_tt:0 "Unlocks £decision_icon_small §Ydecisions§! allowing us to increase §YWar Support§!."
 
- LUC_RealisticgovRepealNeutrality:0 "Repeal Neutrality"
- LUC_RealisticgovRepealNeutrality_desc:0 ""
- LUC_RealisticgovRepealNeutrality_warsupport_tt:0 "At least §Y50%§! War Support"
- LUC_RealisticgovRepealNeutrality_bypass_tt:0 "Does not have the national spirit §Y$LUC_Lichtenstein_Neutrality_idea$§!"
- LUC_RealisticgovRepealNeutrality_reaction_tt:0 "§REvery major country with its capital in Europe that does not have an opinion of at least §Y25§! of [ROOT.GetName] will gain a wargoal against us!§!"
+ LUC_DenounceRedTyranny:0 "Denounce Red Tyranny"
+ LUC_DenounceRedTyranny_desc:0 ""
 
- LUC_RealisticGovShootingCLubs:0 "Endorse National Shooting Clubs"
- LUC_RealisticGovShootingCLubs_desc:0 ""
+ LUC_CrackDownOnFacism:0 "Crack Down on Fascism"
+ LUC_CrackDownOnFacism_desc:0 ""
 
- LUC_RealisticGovToppleFascism:0 "Take a Stance"
- LUC_RealisticGovToppleFascism_desc:0 ""
+ LUC_AllowTradeUnions:0 "Allow Trade Unions"
+ LUC_AllowTradeUnions_desc:0 ""
 
- LUC_peoplesMilitias:0 "Authorise Worker Militias"
- LUC_peoplesMilitias_desc:0 ""
+ LUC_MissionToSovietUnion:0 "Mission to the Soviet Union"
+ LUC_MissionToSovietUnion_desc:0 ""
 
- LUC_LiberateEurope:0 "Liberate Europe"
- LUC_LiberateEurope_desc:0 ""
+ LUC_TurnTowardsDemocracies:0 "Seek Western Guarantees"
+ LUC_TurnTowardsDemocracies_desc:0 ""
+
+ LUC_GuaranteeIndividualRights:0 "Guarantee Liberties"
+ LUC_GuaranteeIndividualRights_desc:0 ""
+
+ LUC_CivicReform:0 "Civic Reform"
+ LUC_CivicReform_desc:0 ""
+
+ LUC_IncreaseRegulation:0 "Increased Regulation"
+ LUC_IncreaseRegulation_desc:0 ""
+
+ LUC_AppealToFarmers:0 "Reaching out to the Fields"
+ LUC_AppealToFarmers_desc:0 ""
+
+ LUC_AMoralPrincipality:0 "A Moral Principality"
+ LUC_AMoralPrincipality_desc:0 ""
 
  #Authoritarian Branch
- LUC_ConservativeVictory:0 "The Schaedler Cabinet"
+ LUC_ConservativeVictory:0 "The Schaedler Government"
  LUC_ConservativeVictory_desc:0 ""
  LUC_ConservativeVictory_unlocked_tt:0 "Otto Schaedler was appointed as prime minister by the Landtag."
 
@@ -139,7 +147,7 @@
  LUC_IntegratedResearch:0 "Joint Scientific Endeavours"
  LUC_IntegratedResearch_desc:0 ""
 
- LUC_JointScientificFunding:0 "The Zürich Research Agreement"
+ LUC_JointScientificFunding:0 "The Bern-Vaduz Research Agreement"
  LUC_JointScientificFunding_desc:0 ""
 
  LUC_InterLinkedRail:0 "Inter-Linked Rail"

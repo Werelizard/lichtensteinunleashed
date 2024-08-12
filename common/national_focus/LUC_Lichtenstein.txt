@@ -33,7 +33,7 @@ focus_tree = {
 	}
 
 	#####################
-	# HOOP'S GOVERNMENT #
+	# DEMOCRATIC GOVERNMENT #
 	#####################
 
 	focus = {
@@ -41,7 +41,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 1
 		relative_position_id = LUC_Landtag
-		x = -8
+		x = -12
 		y = 1
 		prerequisite = {
 			focus = LUC_Landtag
@@ -59,15 +59,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = LUC_ConservativeVictory
 		}
-	}
+	}	
 
 	focus = {
 		id = LUC_InvestigateFascists
 		icon = GFX_goal_unknown
 		cost = 1
-		relative_position_id = LUC_LiberalVictory
-		x = 11
-		y = 1
+		relative_position_id = LUC_Landtag
+		x = 2
+		y = 2
 		prerequisite = {
 			focus = LUC_LiberalVictory
 			focus = LUC_ConservativeVictory
@@ -84,286 +84,21 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LUC_LichtensteinerRedCross
-		icon = GFX_goal_unknown
-		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -4
-		y = 2
-		prerequisite = {
-			focus = LUC_ACoalitionGovernment
-			focus = LUC_ARealisticGovernment
-		}
-		available = {
-			has_government = democratic
-		}
-		completion_reward = {
-			add_ideas = LUC_RedCross
-			if = {
-				limit = {
-					NOT = {
-						has_tech = tech_field_hospital
-					}
-				}
-				set_technology = {
-					tech_field_hospital = 1
-				}
-			}
-			else_if = {
-				limit = {
-					has_tech = tech_field_hospital
-					NOT = {
-						has_tech = tech_field_hospital2
-					}
-				}
-				set_technology = {
-					tech_field_hospital2 = 1
-				}
-			}
-			else_if = {
-				limit = {
-					has_tech = tech_field_hospital2
-					NOT = {
-						has_tech = tech_field_hospital3
-					}
-				}
-				set_technology = {
-					tech_field_hospital3 = 1
-				}
-			}
-			else = {
-				set_technology = {
-					tech_field_hospital4 = 1
-				}
-			}
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
 		id = LUC_WelcomeRefugees
 		icon = GFX_goal_unknown
-		cost = 4
-		relative_position_id = LUC_ACoalitionGovernment
-		x = -4
+		cost = 1
+		relative_position_id = LUC_Landtag
+		x = -5
 		y = 2
 		prerequisite = {
-			focus = LUC_LichtensteinerRedCross
+			focus = LUC_LiberalVictory
+			focus = LUC_ConservativeVictory
 		}
 		available = {
-			has_government = democratic
-			NOT = {
-				has_war = yes
-			}
-			any_country = {
-				is_major = yes
-				OR = {
-					has_war_with = GER
-					has_war_with = SOV
-					has_war_with = FRA
-					has_war_with = ITA
-					has_war_with = AUS
-					has_war_with = ENG
-				}
-			}		
+			
 		}
 		completion_reward = {
-			add_manpower = 5000
-			swap_ideas = {
-				remove_idea = LUC_RedCross
-				add_idea = LUC_RedCross_Upgraded
-			}
-		}
-		mutually_exclusive = {
-		}
-	}
 
-	focus = {
-		id = LUC_NationalMobilisation
-		icon = GFX_goal_unknown
-		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -8
-		y = 5
-		prerequisite = {
-			focus = LUC_RealisticgovRepealNeutrality
-			focus = LUC_CoalitionStandFast
-		}
-		available = {
-			OR = {
-				any_neighbor_country = {
-					has_war = yes
-				}
-				threat > 0.5
-			}
-			has_government = democratic
-			OR = {
-				NOT = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_SUS_JosefHoop
-					}
-				}
-				AND = {
-					OR = {
-						any_country = {
-							is_justifying_wargoal_against = ROOT
-						}
-						any_country = {
-							has_wargoal_against = ROOT
-						}
-						any_country = {
-							has_war_with = ROOT
-						}
-					}
-				}
-			}
-		}
-		completion_reward = {
-			add_ideas = LUC_National_Mobilisation_idea
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			if = {
-				limit = {
-					has_idea = LUC_Lichtenstein_Neutrality_idea
-				}
-				custom_effect_tooltip = LUC_newline_tt
-				custom_effect_tooltip = LUC_Lichtenstein_Neutrality_idea_Debuff_tt
-				remove_ideas = LUC_Lichtenstein_Neutrality_idea
-				add_stability = -0.2
-				add_popularity = {
-					popularity = -0.2
-					ideology = democratic
-				}
-				custom_effect_tooltip = LUC_newline_tt
-			}
-		}
-		mutually_exclusive = {
-			focus = LUC_IsolationistStance
-			focus = LUC_RealisticGovToppleFascism
-		}
-	}
-
-	focus = {
-		id = LUC_IsolationistStance
-		icon = GFX_goal_unknown
-		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = 0
-		y = 5
-		prerequisite = {
-			focus = LUC_CoalitionStandFast
-		}
-		available = {
-			has_government = democratic
-			threat > 0.35
-			OR = {
-				threat > 0.75
-				has_defensive_war = yes
-			}
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = LUC_Lichtenstein_Neutrality_idea
-				add_idea = LUC_Lichtenstein_Neutrality_Partial_idea
-			}
-		}
-		mutually_exclusive = {
-			focus = LUC_NationalMobilisation
-			focus = LUC_RealisticGovToppleFascism
-		}
-	}
-
-	focus = {
-		id = LUC_InternationalBrigades
-		icon = GFX_goal_unknown
-		cost = 3
-		relative_position_id = LUC_LiberalVictory
-		x = -4
-		y = 4
-		prerequisite = {
-			focus = LUC_CoalitionStandFast
-			focus = LUC_RealisticgovRepealNeutrality
-		}
-		prerequisite = {
-			focus = LUC_WelcomeRefugees
-		}
-		available = {
-			has_government = democratic
-			NOT = {
-				has_war = yes
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_InternationalBrigades_tt
-			# division_template = {
-			# 	name = "Volunteer Brigades"
-			# 	division_names_group = SWI_INF_01
-
-			# 	regiments = {
-			# 		infantry = {
-			# 			x = 0
-			# 			y = 0
-			# 		}
-			# 		infantry = {
-			# 			x = 0
-			# 			y = 1
-			# 		}
-			# 		infantry = {
-			# 			x = 0
-			# 			y = 2
-			# 		}
-			# 		infantry = {
-			# 			x = 1
-			# 			y = 0
-			# 		}
-			# 		infantry = {
-			# 			x = 1
-			# 			y = 1
-			# 		}
-			# 		infantry = {
-			# 			x = 1
-			# 			y = 2
-			# 		}
-			# 		artillery = {
-			# 			x = 2
-			# 			y = 0
-			# 		}
-			# 		artillery = {
-			# 			x = 2
-			# 			y = 1
-			# 		}
-			# 	}
-			# 	support = {
-			# 		field_hospital = {
-			# 			x = 0
-			# 			y = 0
-			# 		}
-			# 	}
-			# 	is_locked = yes
-			# 	division_cap = 2
-			# }
-			# 970 = {
-			# 	custom_effect_tooltip = LUC_InternationalBrigades_deployed_tt
-			# 	custom_effect_tooltip = LUC_newline_tt
-			# 	custom_effect_tooltip = LUC_InternationalBrigades_deployed_tt
-			# 	hidden_effect = {
-			# 		create_unit = {
-			# 			division = "name = \"1. Volunteer Brigade\" division_template = \"Volunteer Brigades\" start_experience_factor = 0.5"
-			# 			owner = ROOT
-			# 		}
-			# 		create_unit = {
-			# 			division = "name = \"2. Volunteer Brigade\" division_template = \"Volunteer Brigades\" start_experience_factor = 0.5"	
-			# 			owner = ROOT	
-			# 		}
-			# 	}
-			# }
 		}
 		mutually_exclusive = {
 		}
@@ -371,112 +106,383 @@ focus_tree = {
 
 	
 	focus = {
-		id = LUC_BuildupMilitaryReserves
+		id = LUC_PoliceExpansion
 		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LUC_IsolationistStance
-		x = -2
-		y = 1
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 0
+		y = 2
 		prerequisite = {
-			focus = LUC_NationalMobilisation
-			focus = LUC_IsolationistStance
+			focus = LUC_ACoalitionGovernment
+			focus = LUC_ARealisticGovernment
 		}
 		available = {
-			has_government = democratic
+			
 		}
 		completion_reward = {
-			add_war_support = 0.05
-			970 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 2000
-			}
+
 		}
 		mutually_exclusive = {
 		}
 	}
 
 	focus = {
-		id = LUC_IncreaseConscription
+		id = LUC_EmergencyReserves
 		icon = GFX_goal_unknown
-		cost = 4
-		relative_position_id = LUC_IsolationistStance
-		x = -3
-		y = 2
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -2
+		y = 3
 		prerequisite = {
-			focus = LUC_BuildupMilitaryReserves
+			focus = LUC_ACoalitionGovernment
+			focus = LUC_ARealisticGovernment
 		}
 		available = {
-			has_government = democratic
-			any_country = {
-				has_war_with = ROOT
-				strength_ratio = {
-					tag = SUS
-					ratio = 1.5
-				}
-			}
+			
 		}
 		completion_reward = {
-			upgrade_economy_law = yes
-			custom_effect_tooltip = LUC_newline_tt
-			add_ideas = LUC_Desperate_Conscription_idea
+
 		}
 		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_SwissMiliaryGuarantees
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = LUC_ACoalitionGovernment
+			focus = LUC_ARealisticGovernment
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_PurchaseSwissWeapons
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = LUC_SwissMiliaryGuarantees
+		}
+		prerequisite = {
+			focus = LUC_EmergencyReserves
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ALichtensteinerMilitia
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = LUC_PurchaseSwissWeapons
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_BeginRearmement
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -12
+		y = 2
+		prerequisite = {
+			focus = LUC_ARealisticGovernment
+			focus = LUC_ACoalitionGovernment
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_PopularMobilisation
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -15
+		y = 3
+		prerequisite = {
+			focus = LUC_BeginRearmement
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_AssetsNationalisation
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -12
+		y = 3
+		prerequisite = {
+			focus = LUC_BeginRearmement
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_RepealNeutrality
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -14
+		y = 4
+		prerequisite = {
+			focus = LUC_BeginRearmement
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_BideOurTime
+		}
+	}
+
+	focus = {
+		id = LUC_BideOurTime
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -10
+		y = 4
+		prerequisite = {
+			focus = LUC_BeginRearmement
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_RepealNeutrality
 		}
 	}
 
 	focus = {
 		id = LUC_FortressVaduz
 		icon = GFX_goal_unknown
-		cost = 3
-		relative_position_id = LUC_IsolationistStance
-		x = 0
-		y = 2
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -11
+		y = 5
 		prerequisite = {
-			focus = LUC_BuildupMilitaryReserves
-		}
-		prerequisite = {
-			focus = LUC_IsolationistStance
+			focus = LUC_BideOurTime
+			focus = LUC_RepealNeutrality
 		}
 		available = {
-			has_government = democratic
-			controls_state = 970
+			
 		}
 		completion_reward = {
-			add_ideas = LUC_Fortress_in_Mountains
-			970 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = bunker
-					level = 4
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-				}
-				add_building_construction = {
-					type = radar_station
-					level = 1
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-				}
-			}
+
 		}
 		mutually_exclusive = {
-			focus = LUC_UnleaseTheAvalanche
+		}
+	}
+	
+	focus = {
+		id = LUC_GreaterRedoubt
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -8
+		y = 5
+		prerequisite = {
+			focus = LUC_BideOurTime
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_FromGroundToSky
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -10
+		y = 6
+		prerequisite = {
+			focus = LUC_FortressVaduz
+		}
+		prerequisite = {
+			focus = LUC_BideOurTime
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_TogetherWeAreStronger
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -15
+		y = 5
+		prerequisite = {
+			focus = LUC_RepealNeutrality
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_BearingTheDemocraticTorch
+		}
+	}
+
+	focus = {
+		id = LUC_BearingTheDemocraticTorch
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -13
+		y = 5
+		prerequisite = {
+			focus = LUC_RepealNeutrality
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+			focus = LUC_TogetherWeAreStronger
+		}
+	}
+
+	focus = {
+		id = LUC_ArmDemocraticResistance
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -12
+		y = 6
+		prerequisite = {
+			focus = LUC_BearingTheDemocraticTorch
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_DemocratiPanGermanism
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -13
+		y = 7
+		prerequisite = {
+			focus = LUC_BearingTheDemocraticTorch
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_CollaborativeResearch
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -14
+		y = 6
+		prerequisite = {
+			focus = LUC_BearingTheDemocraticTorch
+			focus = LUC_TogetherWeAreStronger
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
 		}
 	}
 
 	#####################
-	# DEMOCRATIC COALITION GOVERNMENT #
+	# HOOP GOVERNMENT #
 	#####################
 
 	focus = {
@@ -484,7 +490,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = 0
+		x = 4
 		y = 1
 		prerequisite = {
 			focus = LUC_LiberalVictory
@@ -494,10 +500,9 @@ focus_tree = {
 				ruling_only = yes
 				character = LUC_SUS_JosefHoop
 			}
-			has_government = democratic
 		}
 		completion_reward = {
-			add_ideas = LUC_Coalition_government_idea
+			add_ideas = LUC_DemocraticConservative_government_idea
 			custom_effect_tooltip = LUC_Coalition_tt
 			hidden_effect = {
 				add_popularity = {
@@ -525,187 +530,171 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LUC_CoalitionInternalStability
+		id = LUC_DiplomaticMissionToGermany
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = 2
+		x = 6
 		y = 2
 		prerequisite = {
 			focus = LUC_ACoalitionGovernment
 		}
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_JosefHoop
-			}
-			has_government = democratic
+			
 		}
 		completion_reward = {
-			add_stability = 0.1
-			add_research_slot = 1
-			970 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				} 
-			}
+
 		}
 		mutually_exclusive = {
 		}
 	}
 
 	focus = {
-		id = LUC_CoalitionExpandPolice
+		id = LUC_GermanTradeAgreement
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = 3
+		x = 6
 		y = 3
 		prerequisite = {
-			focus = LUC_CoalitionInternalStability
-
+			focus = LUC_DiplomaticMissionToGermany
 		}
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_JosefHoop
-			}
-			has_government = democratic
+			
 		}
 		completion_reward = {
-			add_war_support = 0.05
-			add_ideas = LUC_Police_idea
+
 		}
 		mutually_exclusive = {
 		}
-	}	
+	}
 
 	focus = {
-		id = LUC_CoalitionEmergencyReserves
+		id = LUC_EmphasiseTradition
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = 2
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = LUC_ACoalitionGovernment
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ContinuePrivatisation
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 5
 		y = 4
 		prerequisite = {
-			focus = LUC_CoalitionInternalStability
-		}
-		prerequisite = {
-			focus = LUC_CoalitionStandFast
+			focus = LUC_EmphasiseTradition
 		}
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_JosefHoop
-			}
-			has_government = democratic
+			
 		}
 		completion_reward = {
-			add_war_support = 0.025
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 500
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = 200
-			}
-			add_offsite_building = {
-				type = synthetic_refinery
-				level = 2
-			}
-			add_offsite_building = {
-				type = fuel_silo
-				level = 1
-			}
+
 		}
 		mutually_exclusive = {
 		}
 	}
 
 	focus = {
-		id = LUC_CoalitionSecureGuarantees
+		id = LUC_LowerTaxes
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = 0
-		y = 2
+		x = 3
+		y = 4
 		prerequisite = {
-			focus = LUC_ACoalitionGovernment
+			focus = LUC_EmphasiseTradition
 		}
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_JosefHoop
-			}
-			has_government = democratic
+			
 		}
 		completion_reward = {
-			custom_effect_tooltip = LUC_CoalitionSecureGuarantees_tt
 
-			every_neighbor_country = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = SWI_diplomatic_visit
-				}
-			}
 		}
 		mutually_exclusive = {
 		}
 	}
 
 	focus = {
-		id = LUC_CoalitionStandFast
+		id = LUC_TaxHaven
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = 0
-		y = 3
+		x = 3
+		y = 6
 		prerequisite = {
-			focus = LUC_CoalitionSecureGuarantees
+			focus = LUC_LowerTaxes
 		}
 		available = {
-			OR = {
-				any_country = {
-					capital_scope = {
-						is_on_continent = europe
-					}
-					has_added_tension_amount > 10
-				}
-				GER = {
-					has_completed_focus = GER_anschluss
-				}
-			}
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_JosefHoop
-			}
-			has_government = democratic
+			
 		}
 		completion_reward = {
-			add_timed_idea = {
-				idea = LUC_Anxious_Preparations
-				days = 365
-			}
-			capital_scope = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-				}
-			}
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_GermanIndustry
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 6
+		y = 5
+		prerequisite = {
+			focus = LUC_ContinuePrivatisation
+		}
+		prerequisite = {
+			focus = LUC_GermanTradeAgreement
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_BanUnions
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = 4
+		y = 5
+		prerequisite = {
+			focus = LUC_ContinuePrivatisation
+			focus = LUC_LowerTaxes
+		}
+		available = {
+			
+		}
+		completion_reward = {
+
 		}
 		mutually_exclusive = {
 		}
 	}
 
 	#####################
-	# DEMOCRATIC STANDALONE GOVERNMENT #
+	# MARXER GOVERNMENT #
 	#####################
 
 	focus = {
@@ -713,20 +702,19 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = -8
+		x = -4
 		y = 1
 		prerequisite = {
 			focus = LUC_LiberalVictory
 		}
 		available = {
-			has_government = democratic
 			has_country_leader = {
 				ruling_only = yes
 				character = LUC_SUS_Ludwig_Marxer
 			}
 		}
 		completion_reward = {
-			add_ideas = LUC_Realistic_Government
+			add_ideas = LUC_DemocraticLiberal_government_idea
 		}
 		mutually_exclusive = {
 			focus = LUC_ACoalitionGovernment
@@ -734,9 +722,51 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LUC_RealisticGovRearmement
+		id = LUC_DenounceRedTyranny
 		icon = GFX_goal_unknown
-		cost = 7
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -6
+		y = 3
+		prerequisite = {
+			focus = LUC_ARealisticGovernment
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		mutually_exclusive = {
+			focus = LUC_MissionToSovietUnion	
+		}
+	}
+
+	focus = {
+		id = LUC_CrackDownOnFacism
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -5
+		y = 2
+		prerequisite = {
+			focus = LUC_ARealisticGovernment
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_AllowTradeUnions
+		icon = GFX_goal_unknown
+		cost = 1
 		relative_position_id = LUC_LiberalVictory
 		x = -8
 		y = 2
@@ -744,322 +774,116 @@ focus_tree = {
 			focus = LUC_ARealisticGovernment
 		}
 		available = {
-			has_government = democratic
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
-			}
+			
 		}
 		completion_reward = {
-			custom_effect_tooltip = LUC_RealisticGovRearmement_factories_tt
-			custom_effect_tooltip = LUC_RealisticGovRearmement_emergencyguns_tt
-			custom_effect_tooltip = LUC_RealisticGovRearmement_warSupport_tt
+			
 		}
 		mutually_exclusive = {
+			
 		}
 	}
 
 	focus = {
-		id = LUC_RealisticgovRepealNeutrality
+		id = LUC_MissionToSovietUnion
 		icon = GFX_goal_unknown
-		cost = 7
+		cost = 1
 		relative_position_id = LUC_LiberalVictory
 		x = -8
 		y = 3
 		prerequisite = {
-			focus = LUC_RealisticGovRearmement
+			focus = LUC_AllowTradeUnions
 		}
 		available = {
-			has_government = democratic
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
-			}
-			custom_trigger_tooltip = {
-				tooltip = LUC_RealisticgovRepealNeutrality_warsupport_tt
-				OR = {
-					has_war_support = 40
-					has_war_support > 39
-				}
-			}
+			
 		}
 		completion_reward = {
-			add_political_power = 200
-			if = {
-				limit = {
-					has_idea = LUC_Lichtenstein_Neutrality_idea
-				}
-				remove_ideas = LUC_Lichtenstein_Neutrality_idea
-			}
-			else_if = {
-				limit = {
-					has_idea = LUC_Lichtenstein_Neutrality_Partial_idea
-				}
-				remove_ideas = LUC_Lichtenstein_Neutrality_Partial_idea
-			}
-			custom_effect_tooltip = LUC_newline_tt
-			upgrade_economy_law = yes
-			custom_effect_tooltip = LUC_newline_tt
-			custom_effect_tooltip = LUC_RealisticgovRepealNeutrality_reaction_tt
-			custom_effect_tooltip = LUC_newline_tt
-			every_country = {
-				limit = {
-					capital_scope = {
-						is_on_continent = europe
-					}
-					is_major = yes
-					has_opinion = {
-						target = ROOT
-						value < 25
-					}
-				}
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = ROOT
-				}
-			}
-		}
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = LUC_RealisticgovRepealNeutrality_bypass_tt
-				NOT = {
-					has_idea = LUC_Lichtenstein_Neutrality_idea
-				}
-				NOT = {
-					has_idea = LUC_Lichtenstein_Neutrality_Partial_idea
-				}
-			}
+			
 		}
 		mutually_exclusive = {
+			focus = LUC_DenounceRedTyranny
 		}
-	}
+	}	
 
 	focus = {
-		id = LUC_RealisticGovShootingCLubs
+		id = LUC_TurnTowardsDemocracies
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = -10
-		y = 3
-		prerequisite = {
-			focus = LUC_RealisticGovRearmement
-		}
-		available = {
-			has_government = democratic
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
-			}
-		}
-		completion_reward = {
-			army_experience = 50
-			add_ideas = LUC_ShootingClubs
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_RealisticGovMilitianCivicism
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LUC_LiberalVictory
-		x = -12
-		y = 2
-		prerequisite = {
-			focus = LUC_ARealisticGovernment
-		}
-		available = {
-			has_government = democratic
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
-			}
-		}
-		completion_reward = {
-			add_political_power = 50
-			swap_ideas = {
-				remove_idea = LUC_Realistic_Government
-				add_idea = LUC_Realistic_Government_Upgraded
-			}
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_RealisticGovDenounceTyranny
-		icon = GFX_goal_unknown
-		cost = 7
-		relative_position_id = LUC_LiberalVictory
-		x = -12
+		x = -5
 		y = 4
 		prerequisite = {
-			focus = LUC_RealisticGovMilitianCivicism
-		}
-		prerequisite = {
-			focus = LUC_RealisticgovRepealNeutrality
+			focus = LUC_DenounceRedTyranny
+			focus = LUC_CrackDownOnFacism
 		}
 		available = {
-			has_government = democratic
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
-			}
-			any_country = {
-				has_government = fascism
-			}
+			
 		}
 		completion_reward = {
-			add_war_support = 0.1
-			swap_ideas = {
-				remove_idea = LUC_Realistic_Government_Upgraded
-				add_idea = LUC_Realistic_Government_Upgraded_again
-			}
-			every_country = {
-				limit = {
-					has_government = fascism
-				}
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = hostile_status
-				}
-			}
+			
 		}
 		mutually_exclusive = {
+			
 		}
 	}
 
 	focus = {
-		id = LUC_RealisticGovToppleFascism
+		id = LUC_GuaranteeIndividualRights
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = -12
+		x = -3
+		y = 2
+		prerequisite = {
+			focus = LUC_ARealisticGovernment
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_CivicReform
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -3
+		y = 4
+		prerequisite = {
+			focus = LUC_GuaranteeIndividualRights
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_IncreaseRegulation
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -3
 		y = 5
 		prerequisite = {
-			focus = LUC_RealisticGovDenounceTyranny
+			focus = LUC_CivicReform
 		}
 		available = {
-			has_government = democratic
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
-			}
-			OR = {
-				GER = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				AUS = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-				ITA = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-			}
+			
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					GER = {
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}
-				add_ideas = LUC_LichtensteinCrusade_GER
-			}
-			if = {
-				limit = {
-					ITA = {
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}
-				add_ideas = LUC_LichtensteinCrusade_ITA
-			}
-			if = {
-				limit = {
-					AUS = {
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}
-				add_ideas = LUC_LichtensteinCrusade_AUS
-			}
-			if = {
-				limit = {
-					GER = {
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}
-				create_wargoal = {
-					target = GER
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					ITA = {
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}
-				create_wargoal = {
-					target = ITA
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					AUS = {
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}
-				create_wargoal = {
-					target = AUS
-					type = topple_government
-				}
-			}
-		}
-		mutually_exclusive = {
-			focus = LUC_NationalMobilisation
-			focus = LUC_IsolationistStance
-		}
-	}
-
-	focus = {
-		id = LUC_peoplesMilitias
-		icon = GFX_goal_unknown
-		cost = 4
-		relative_position_id = LUC_NationalMobilisation
-		x = -6
-		y = 1
-		prerequisite = {
-			focus = LUC_RealisticGovToppleFascism
-		}
-		available = {
-			has_government = democratic
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
-			add_ideas = LUC_PeopleMilitia
+			
 		}
 		mutually_exclusive = {
 			
@@ -1067,285 +891,47 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LUC_LiberateEurope
+		id = LUC_AppealToFarmers
 		icon = GFX_goal_unknown
-		cost = 4
-		relative_position_id = LUC_NationalMobilisation
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
+		x = -5
+		y = 5
+		prerequisite = {
+			focus = LUC_CivicReform
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+
+	focus = {
+		id = LUC_AMoralPrincipality
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_LiberalVictory
 		x = -4
-		y = 3
+		y = 6
 		prerequisite = {
-			focus = LUC_RealisticGovToppleFascism
+			focus = LUC_AppealToFarmers
 		}
 		prerequisite = {
-			focus = LUC_DemocraticPangermanism
+			focus = LUC_IncreaseRegulation
 		}
 		available = {
-			has_government = democratic
+			
 		}
 		completion_reward = {
-			set_rule = {
-				can_only_justify_war_on_threat_country = no
-			}
-			swap_ideas = {
-				remove_idea = LUC_Alpine_Faction_Leader_idea
-				add_idea = LUC_Alpine_Faction_Leader_idea_Upgraded
-			}
+			
 		}
 		mutually_exclusive = {
 			
-		}
-	}
-
-	focus = {
-		id = LUC_OnOurOwn
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LUC_NationalMobilisation
-		x = -2
-		y = 1
-		prerequisite = {
-			focus = LUC_NationalMobilisation
-			focus = LUC_RealisticGovToppleFascism
-		}
-		available = {
-			has_government = democratic
-			NOT = {
-				is_in_faction = yes
-			}
-		}
-		completion_reward = {
-			create_faction = "Alpine League"
-			custom_effect_tooltip = LUC_OnOurOwn_tt
-			add_ideas = LUC_Alpine_Faction_Leader_idea
-		}
-		mutually_exclusive = {
-			focus = LUC_StandWithAllies
-		}
-	}
-
-	focus = {
-		id = LUC_DemocraticPangermanism
-		icon = GFX_goal_unknown
-		cost = 10
-		relative_position_id = LUC_NationalMobilisation
-		x = -2
-		y = 2
-		prerequisite = {
-			focus = LUC_OnOurOwn
-		}
-		available = {
-			has_government = democratic
-			OR = {
-				is_faction_leader = yes
-				is_major = yes
-			}
-			OR = {
-				GER = {
-					exists = no
-				}
-				AND = {
-					has_war_with = GER
-					GER = {
-						has_capitulated = yes
-					}
-				}
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_DemocraticPangermanism_tt
-			custom_effect_tooltip = LUC_DemocraticPangermanism_Formable_tt
-			custom_effect_tooltip = LUC_newline_tt
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = GER
-						is_core_of = SWI
-						is_core_of = AUS
-						is_core_of = HOL
-						is_core_of = LUX
-						state = 69
-						state = 807
-						state = 28
-						state = 39
-						state = 74
-						state = 86
-						state = 762
-					}
-				}
-				add_core_of = ROOT
-			}
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_StandWithAllies
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LUC_NationalMobilisation
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = LUC_NationalMobilisation
-		}
-		available = {
-			has_government = democratic
-			NOT = {
-				is_faction_leader = yes
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_StandWithAllies_tt
-		}
-		mutually_exclusive = {
-			focus = LUC_OnOurOwn
-		}
-	}
-
-	focus = {
-		id = LUC_SecureLendLeases
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LUC_NationalMobilisation
-		x = 0
-		y = 3
-		prerequisite = {
-			focus = LUC_StandWithAllies
-		}
-		available = {
-			has_government = democratic
-			any_country = {
-				is_in_faction_with = ROOT
-			}
-		}
-		completion_reward = {
-			add_research_slot = 1
-			add_tech_bonus = {
-				category = electronics
-				bonus = 1
-				ahead_reduction = 1
-			}
-			add_tech_bonus = {
-				category = nuclear
-				bonus = 1
-				ahead_reduction = 1
-			}
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_NationaliseIndustrialAssets
-		icon = GFX_goal_unknown
-		cost = 5
-		relative_position_id = LUC_NationalMobilisation
-		x = 3
-		y = 1
-		prerequisite = {
-			focus = LUC_NationalMobilisation
-			focus = LUC_RealisticGovToppleFascism
-		}
-		available = {
-			has_government = democratic
-		}
-		completion_reward = {
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = LUC_Vaduz_Arsenal
-			970 = {
-				remove_building = {
-					type = industrial_complex
-					level = 1
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-				add_resource = {
-					type = oil
-					amount = 10
-				}
-				add_resource = {
-					type = steel
-					amount = 10
-				}
-			}
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_OnTheOffensive
-		icon = GFX_goal_unknown
-		cost = 4
-		relative_position_id = LUC_NationalMobilisation
-		x = 2
-		y = 2
-		prerequisite = {
-			focus = LUC_NationaliseIndustrialAssets
-		}
-		available = {
-			has_government = democratic
-			has_war = yes
-			NOT = {
-				has_completed_focus = LUC_MobilisePopulation
-			}
-		}
-		completion_reward = {
-			every_character = {
-				limit = {
-					OR = {
-						is_army_chief = yes
-						is_army_leader = yes
-					}
-				}
-				add_attack = 1
-			}
-			swap_ideas = {
-				remove_idea = LUC_National_Mobilisation_idea
-				add_idea = LUC_National_Mobilisation_idea_upgraded_alt
-			}
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_MobilisePopulation
-		icon = GFX_goal_unknown
-		cost = 4
-		relative_position_id = LUC_NationalMobilisation
-		x = 3
-		y = 3
-		prerequisite = {
-			focus = LUC_NationaliseIndustrialAssets
-		}
-		available = {
-			has_government = democratic
-			has_war = yes
-			NOT = {
-				has_completed_focus = LUC_OnTheOffensive
-			}
-		}
-		completion_reward = {
-			every_character = {
-				limit = {
-					OR = {
-						is_army_chief = yes
-						is_army_leader = yes
-					}
-				}
-				add_defense = 1
-				add_planning = 1
-			}
-			swap_ideas = {
-				remove_idea = LUC_National_Mobilisation_idea
-				add_idea = LUC_National_Mobilisation_idea_upgraded
-			}
-		}
-		mutually_exclusive = {
 		}
 	}
 
@@ -1739,7 +1325,7 @@ focus_tree = {
 
 		}
 		mutually_exclusive = {
-			focus = LUC_FortressVaduz
+			
 		}
 	}
 	focus = {

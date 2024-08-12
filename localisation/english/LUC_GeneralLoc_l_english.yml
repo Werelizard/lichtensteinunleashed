@@ -1,4 +1,6 @@
 ﻿l_english:
+ LUC_newline_tt:0 "\n"
+
  # New state
  STATE_970:0 "Vaduz"
 
@@ -55,11 +57,15 @@
  SUS_LUC_Deutshes_Kaiser:0 "The Mountain Kaiser"
  SUS_LiberalLawyer:0 "Liberal Lawyer"
 
- # Ideas
- LUC_Lichtenstein_Neutrality_idea:0 "Lichtensteiner Neutrality"
+ # Ideas - Base
+ LUC_Lichtenstein_Neutrality_idea:0 "[ROOT.GetAdjective] Neutrality"
  LUC_Lichtenstein_Neutrality_idea_desc:0 "Lichtenstein, not unlike its fellow Alpine neighbour, has enjoyed a period of relatively undisturbed isolation and peace throughout the last century. It has stood as a spectator to the unfolding devastation of the Great War - leading its population and leadership to adopt an isolationist and neutral diplomacy."
- LUC_Lichtensteiner_Economy_idea:0 "Lichtensteiner Economy"
- LUC_Lichtensteiner_Economy_idea_desc:0 "The Lichtensteiner Economy, whilst somewhat existant, is primarly agrarian with small factories here and there. This sluggish apparatus can hardly be mobilised, let alone expected to serve well in the case the country would find itself at war."
+ LUC_Lichtenstein_Neutrality_defensive_idea:0 "$LUC_Lichtenstein_Neutrality_idea$"
+ LUC_Lichtenstein_Neutrality_defensive_idea_desc:0 "$LUC_Lichtenstein_Neutrality_idea_desc$"
+ LUC_Lichtenstein_Neutrality_idea_tt:0 "\n§LShould §!§Y[ROOT.GetName]§!§L's neutrality be breached by a third party, the clause on joining an international alliance shall be lifted immediately, allowing us to - at least - find ourselves some allies to fall back upon.§!"
+ LUC_Lichtenstein_Neutrality_defensive_idea_tt:0 "\n§LShould §!§Y[ROOT.GetName]§!§L find itself once more at peace, we will return to a neutral stance - abandoning any allies we previously relied upon.§!"
+ LUC_Lichtensteiner_Economy_idea:0 "The [ROOT.GetAdjective] Economy"
+ LUC_Lichtensteiner_Economy_idea_desc:0 "The [ROOT.GetAdjective] Economy, whilst somewhat existant, is primarly agrarian with small factories sparsely dotting our vales and hills. This sluggish apparatus can hardly be mobilised, let alone expected to serve well in the case the country would find itself at war."
  LUC_Franz_I_idea:0 "Franz I, Prince of Lichtenstein"
  LUC_Franz_I_idea_desc:0 "Born in 1853 and having ruled since 1929, Franz de Paula Maria Karl August has ruled Lichtenstein as his own personal fiefdom from his estate in Vienna - steering it away from the chaos of the Great War, but keeping it under his thumb. In effect this has made of Lichtenstein a relic of an era long gone with all the trappings of a backward agrarian state. Whilst having permitted limited elections and even appointing his son Franz Joseph as regent, rumour has it that the the aging Prince has already made plans for an abdication and an early retirement."
  LUC_Franz_II_idea:0 "Franz II, Prince of Lichtenstein"
@@ -68,51 +74,16 @@
  LUC_CustomsUnion_idea_desc:0 "The Customs Union between [SWI.GetName] and [SUS.GetName] provides economic benefits to both parties and facilitates the exchange of goods and people across the border. However, some critics have decried it as a means of economic control, whilst its more vocal supporters vehemently defend it on the grounds of it being a lifeline for two nations caught in an increasingly more volatile Europe."
  LUC_CustomsUnion_idea_tt:0 "Off-Map Civilian Factories: §Y[?ROOT.luc_customsUnionFactories_var]§!"
 
+ # Ideas - Events
+
  LUC_Fascist_Agitators_idea:0 "Nascent Fascism Movement"
  LUC_Fascist_Agitators_idea_desc:0 ""
 
- LUC_Coalition_government_idea:0 "Broad Democratic Coalition"
- LUC_Coalition_government_idea_desc:0 ""
- LUC_Police_idea:0 "Landespolizei Reform"
- LUC_Police_idea_desc:0 ""
- LUC_Anxious_Preparations:0 "Partial Mobilisation of Society"
- LUC_Anxious_Preparations_desc:0 ""
- LUC_RedCross:0 "The Lichtensteiner Red Cross"
- LUC_RedCross_desc:0 ""
- LUC_RedCross_Upgraded:0 "Haven for Refugees"
- LUC_RedCross_Upgraded_desc:0 ""
- LUC_Lichtenstein_Neutrality_Partial_idea:0 "$LUC_Lichtenstein_Neutrality_idea$"
- LUC_Lichtenstein_Neutrality_Partial_idea_desc:0 ""
- LUC_Desperate_Conscription_idea:0 "The [ROOT.GetAdjective] Last Stand"
- LUC_Desperate_Conscription_idea_desc:0 ""
- LUC_National_Mobilisation_idea:0 "National Mobilisation"
- LUC_National_Mobilisation_idea_Desc:0 ""
- LUC_National_Mobilisation_idea_upgraded:0 "$LUC_National_Mobilisation_idea$"
- LUC_National_Mobilisation_idea_upgraded_desc:0 ""
- LUC_National_Mobilisation_idea_upgraded_alt:0 "$LUC_National_Mobilisation_idea$"
- LUC_National_Mobilisation_idea_upgraded_alt_desc:0 ""
- LUC_Realistic_Government:0 "A Liberal Government" 
- LUC_Realistic_Government_desc:0 ""
- LUC_Realistic_Government_Upgraded:0 "$LUC_Realistic_Government$"
- LUC_Realistic_Government_Upgraded_desc:0 ""
- LUC_Realistic_Government_Upgraded_again:0 "$LUC_Realistic_Government$"
- LUC_Realistic_Government_Upgraded_again_desc:0 ""
- LUC_ShootingClubs:0 "National Rifle Platoons"
- LUC_ShootingClubs_desc:0 ""
- LUC_Alpine_Faction_Leader_idea:0 "Alpine Beacon"
- LUC_Alpine_Faction_Leader_idea_desc:0 ""
- LUC_Fortress_in_Mountains:0 "Mountain Fortress Strategy"
- LUC_Fortress_in_Mountains_desc:0 ""
- LUC_LichtensteinCrusade_GER:0 "Crusade Against [GER.GetAdjective] Tyranny"
- LUC_LichtensteinCrusade_GER_decs:0 ""
- LUC_LichtensteinCrusade_ITA:0 "Crusade Against [ITA.GetAdjective] Tyranny"
- LUC_LichtensteinCrusade_ITA_decs:0 ""
- LUC_LichtensteinCrusade_AUS:0 "Crusade Against [AUS.GetAdjective] Tyranny"
- LUC_LichtensteinCrusade_AUS_decs:0 ""
- LUC_Alpine_Faction_Leader_idea_Upgraded:0 "Beacon of European Democracy"
- LUC_Alpine_Faction_Leader_idea_Upgraded_desc:0 ""
- LUC_PeopleMilitia:0 "Worker Militias"
- LUC_PeopleMilitia_desc:0 ""
- 
+ # Ideas - Democratic Focus Tree
+
+ LUC_DemocraticConservative_government_idea:0 "A Conservative Coalition"
+ LUC_DemocraticConservative_government_idea_desc:0 ""
+ LUC_DemocraticLiberal_government_idea:0 "A Liberal Government"
+ LUC_DemocraticLiberal_government_idea_decs:0 ""
 
  LUC_Vaduz_Arsenal:0 "Vaduz Arsenal"
