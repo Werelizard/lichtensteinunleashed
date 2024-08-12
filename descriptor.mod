@@ -7,5 +7,5 @@ tags={
 	"Ideologies"
 }
 name="Lichteinstein Unleashed"
-supported_version="1.14.7"
+supported_version="1.14.*"
 path="C:/Users/lyral/Documents/Paradox Interactive/Hearts of Iron IV/mod/LichtensteinUnleashed"
