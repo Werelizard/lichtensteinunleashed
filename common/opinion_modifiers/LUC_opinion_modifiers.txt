@@ -1,0 +1,22 @@
+# Focus-related modifiers
+opinion_modifiers = {
+	LUC_CLOSE_PARTNERS = {
+		value = 25
+	}
+	LUC_GERMANFRIENDSHIP = {
+		value = 20
+	}
+	LUC_TRADE_PARTNERS = {
+		value = 30
+		trade = yes
+	}
+	LUC_ANGEREDOVERIDEOLOGY = {
+		value = -50
+	}
+	LUC_DENOUNCEDCOMMUNISM = {
+		value = 10
+	}
+	LUC_DENOUNCEDFASCISM = {
+		value = 10
+	}
+}

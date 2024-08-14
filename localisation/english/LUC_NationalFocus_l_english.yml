@@ -17,7 +17,7 @@
  LUC_PoliceExpansion:0 "Expand the Landespolizei"
  LUC_PoliceExpansion_desc:0 ""
 
- LUC_EmergencyReserves:0 "Build Up National Supply"
+ LUC_EmergencyReserves:0 "Build Up National Stockpiles"
  LUC_EmergencyReserves_desc:0 ""
 
  LUC_SwissMiliaryGuarantees:0 "Request Swiss Military Guarantees"
@@ -25,6 +25,7 @@
 
  LUC_PurchaseSwissWeapons:0 "Purchase Swiss Weapons"
  LUC_PurchaseSwissWeapons_desc:0 ""
+ LUC_PurchaseSwissWeapons_tt:0 "A total of §R2§! §YCivilian Factories§! will be used while this focus is active"
 
  LUC_ALichtensteinerMilitia:0 "A [ROOT.GetAdjective] Militia"
  LUC_ALichtensteinerMilitia_desc:0 ""
@@ -47,10 +48,10 @@
  LUC_FortressVaduz:0 "Fortress Vaduz"
  LUC_FortressVaduz_desc:0 ""
 
- LUC_GreaterRedoubt:0 "The Greater Redoubt"
+ LUC_GreaterRedoubt:0 "The Greater Redoubt Strategy"
  LUC_GreaterRedoubt_desc:0 ""
 
- LUC_FromGroundToSky:0 "Clear Our Skies"
+ LUC_FromGroundToSky:0 "Ein Wahres Hornissennest"
  LUC_FromGroundToSky_desc:0 ""
 
  LUC_TogetherWeAreStronger:0 "Stand By Other Democracies"
@@ -62,7 +63,7 @@
  LUC_ArmDemocraticResistance:0 "Arm Democratic Partisans"
  LUC_ArmDemocraticResistance_desc:0 ""
 
- LUC_DemocratiPanGermanism:0 "Dreams of Democratic Pan-Germanism"
+ LUC_DemocratiPanGermanism:0 "Träume von Einer Konföderation"
  LUC_DemocratiPanGermanism_desc:0 ""
 
  LUC_CollaborativeResearch:0 "Collaborative Research"
@@ -72,18 +73,22 @@
 
  LUC_ACoalitionGovernment:0 "A Government By Coalition"
  LUC_ACoalitionGovernment_desc:0 ""
- LUC_Coalition_tt:0 "All current §g[ROOT.GetNeutralParty]§! popularity will be transferred to the §2[ROOT.GetDemocraticParty]§! party"
+ LUC_Coalition_tt:0 "All current §N[ROOT.GetNeutralParty]§! popularity will be transferred to the §D[ROOT.GetDemocraticParty]§! party"
 
  LUC_DiplomaticMissionToGermany:0 "Diplomatic Mission to Germany"
  LUC_DiplomaticMissionToGermany_desc:0 ""
+ LUC_DiplomaticMissionToGermany_effect_tt:0 "Our diplomatic overtures have a higher chance to succeed if:\n- [GER.GetNameDefCap] has a high opinion of us\n- We have not completed the §Y'$LUC_InvestigateFascists$'§! focus\n- The §Y[GER.GetRulingIdeology]§!'s party popularity in [ROOT.GetName]\n- [GER.GetNameDefCap] is at peace"
+ LUC_DiplomaticMissionToGermany_effect_acepted_tt:0 "\nIf they §Gaccept§!:"
+ LUC_DiplomaticMissionToGermany_effect_refusal_tt:0 "\nIf they §trefuse§!:"
 
  LUC_GermanTradeAgreement:0 "German Trade Agreement"
  LUC_GermanTradeAgreement_desc:0 ""
+ LUC_GermanTradeAgreement_tt:0 "Our diplomatic mission to [GER.GetNameDef] was a success"
 
- LUC_EmphasiseTradition:0 "Emphasise Tradition"
+ LUC_EmphasiseTradition:0 "Die Bequeme Regierung"
  LUC_EmphasiseTradition_desc:0 ""
 
- LUC_ContinuePrivatisation:0 "Towards Privatisation"
+ LUC_ContinuePrivatisation:0 "Privatisierung Fortsetzen"
  LUC_ContinuePrivatisation_desc:0 ""
 
  LUC_LowerTaxes:0 "Lower Taxes"
@@ -91,6 +96,8 @@
 
  LUC_TaxHaven:0 "Welcome Foreign Capital"
  LUC_TaxHaven_desc:0 ""
+ LUC_TaxHaven_tt:0 "At least §Y1§! country which is not at war with Lichtenstein has agreed to use our £LUC_BankIcon §Ybanking services§!"
+ LUC_TaxHaven_effect_tt:0 "For every country which agreed to use our £LUC_BankIcon §Ybanking services§!, we will get one additional off-map civilian factory (currently we will get §Y[?ROOT.Investments]§!)."
 
  LUC_GermanIndustry:0 "German-[ROOT.GetAdjective] Industrial Collaboration"
  LUC_GermanIndustry_desc:0 ""
@@ -111,25 +118,32 @@
  LUC_AllowTradeUnions:0 "Allow Trade Unions"
  LUC_AllowTradeUnions_desc:0 ""
 
- LUC_MissionToSovietUnion:0 "Mission to the Soviet Union"
+ LUC_MissionToSovietUnion:0 "Mission to the Workers' Republics"
  LUC_MissionToSovietUnion_desc:0 ""
+ LUC_MissionToSovietUnion_tt:0 "We shall seek help from §Scommunist§! countries in Europe"
+ LUC_MissionToSovietUnion_descisions_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to petition major communist European powers for economic, military and diplomatic assistance"
 
  LUC_TurnTowardsDemocracies:0 "Seek Western Guarantees"
  LUC_TurnTowardsDemocracies_desc:0 ""
+ LUC_TurnTowardsDemocracies_tt:0 "We shall seek assistance from European §Ddemocracies§!"
+ LUC_TurnTowardsDemocracies_decisions_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to petition major democratic European powers for economic, military and diplomatic assistance"
 
- LUC_GuaranteeIndividualRights:0 "Guarantee Liberties"
+ LUC_GuaranteeIndividualRights:0 "Freiheit, Land, Wohlstand!"
  LUC_GuaranteeIndividualRights_desc:0 ""
 
- LUC_CivicReform:0 "Civic Reform"
+ LUC_CivicReform:0 "A Woman's Right to Vote"
  LUC_CivicReform_desc:0 ""
 
- LUC_IncreaseRegulation:0 "Increased Regulation"
+ LUC_IncreaseRegulation:0 "Increased Industrial Regulation"
  LUC_IncreaseRegulation_desc:0 ""
 
- LUC_AppealToFarmers:0 "Reaching out to the Fields"
+ LUC_AppealToFarmers:0 "Urbanise the Villages"
  LUC_AppealToFarmers_desc:0 ""
 
- LUC_AMoralPrincipality:0 "A Moral Principality"
+ LUC_SecularEducation:0 "Secularise Public Education"
+ LUC_SecularEducation_desc:0 ""
+
+ LUC_AMoralPrincipality:0 "National Liberalism"
  LUC_AMoralPrincipality_desc:0 ""
 
  #Authoritarian Branch

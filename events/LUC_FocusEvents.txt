@@ -1,0 +1,53 @@
+add_namespace = LUC_FocusTree
+
+#########################
+# DEMOCRATIC/AUTHORITARIAN EVENTS
+#########################
+
+# Vaterland Union Scandal when investigating military movement
+
+# Refugees
+
+#########################
+# DEMOCRATIC TREE EVENTS
+#########################
+
+# Fate of the Coalition 
+
+# Hoop: Hoop's Cabinet
+
+# Marxer: German Reich Concerned about Anti-German position (if Germany fascist)
+
+# Marxer: Germany welcomes Marxer (if Germany not fascist)
+
+# Hoop: Diplomatic Mission to Germany (Licihtensteiner side)
+
+# Hoop: Diplomatic Mission to Germany (German side)
+
+# Hoop: German Refuses
+
+# Hoop: German Agrees
+
+# Marxer: opposition to women serving
+
+# Farmers Complain about Trucks
+
+# Citizens Protest Re-Armement
+
+# Hoop: workers oppose trade union ban
+
+# Marxer: Mission to <country> - success
+
+# Marxer: Misison to <country> - failure
+
+# Marxer: Women push for more feminst policies
+
+# Marxer: Conservatives upset (Stab < 50%)
+
+# Marxer: Liberal policies foster innovation (if either academy or secular organistion passed)
+
+# Hoop: Stability brings peace (Stab > 50%)
+
+# Hoop: People worried about war (if not at war,a dn war happening)
+
+# Hoop: Conservative policies foster stability

@@ -2,14 +2,14 @@ ideas = {
 	country = {
 		LUC_Franz_I_idea = {
 			modifier = {
-				political_power_gain = 0.2
+				political_power_gain = 0.1
 				stability_factor = 0.15
 			}
 		}
 		LUC_Franz_II_idea = {
 			modifier = {
-				political_power_gain = 0.2
-				stability_factor = 0.15
+				consumer_goods_factor = 0.02
+				political_power_factor = 0.05
 			}
 		}
 		LUC_Lichtenstein_Neutrality_idea = {
@@ -108,27 +108,269 @@ ideas = {
 				stability_weekly_factor = -0.01
 			}
 		}
+		# Focus Ideas - Democratic, common, internal
+		LUC_expanded_police_idea = {
+			modifier = {
+				stability_factor = 0.02
+				intelligence_agency_defense = 1
+			}
+		}
+		LUC_PurchasingSwissWeapons_idea = {
+			modifier = {
+				civilian_factory_use = 2
+			}
+			allowed = {
+				SWI = {
+					exists = yes
+				}
+			}
+		}
+		LUC_LichtensteinerMilitia = {
+			modifier = {
+				conscription = 0.01
+				army_infantry_attack_factor = -0.04
+				army_infantry_defence_factor = 0.06
+			}
+			allowed = {
+				SWI = {
+					exists = yes
+				}
+			}
+		}
 
-		# Focus Ideas
+		# Democratic - militarisation
+		LUC_AssetsNationalisation_idea = {
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				equipment_conversion_speed = 0.1
+				production_lack_of_resource_penalty_factor = -0.2
+			}
+		}
+		LUC_ShootingClubs_idea = {
+			modifier = {
+				recruitable_population_factor = 0.15
+				fascism_drift = 0.015
+				experience_gain_infantry_combat_factor = 0.2
+			}
+
+			allowed = {
+				NOT = {
+					has_completed_focus = LUC_InvestigateFascists
+				}
+			}
+		}
+
+		# Focus Ideas - Conservative Democracy
 		LUC_DemocraticConservative_government_idea = {
 			modifier = {
-				democratic_drift = 0.1
-				stability_factor = 0.1
+				democratic_drift = 0.02
+				stability_factor = 0.05
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}	
+		LUC_DemocraticConservative_privatisation_idea = {
+			modifier = {
+				democratic_drift = 0.02
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
 			}
 
 			allowed = {
 				has_government = democratic
 			}
 		}
-		LUC_DemocraticLiberal_government_idea = {
+		LUC_DemocraticConservative_taxes_idea = {
 			modifier = {
-				consumer_goods_factor = 0.03
-				production_speed_buildings_factor = 0.05
-				political_power_gain = 0.15
+				democratic_drift = 0.02
+				stability_factor = 0.05
+				consumer_goods_factor = -0.1
 			}
 
 			allowed = {
 				has_government = democratic
+			}
+		}
+		LUC_DemocraticConservative_taxesAndtaxHaven_idea = {
+			modifier = {
+				democratic_drift = 0.02
+				stability_factor = 0.05
+				consumer_goods_factor = -0.1
+				political_power_gain = 0.1
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_DemocraticConservative_taxesAndPrivatisation_idea = {
+			modifier = {
+				democratic_drift = 0.02
+				stability_factor = 0.05
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_DemocraticConservative_reforms_idea = {
+			modifier = {
+				democratic_drift = 0.02
+				stability_factor = 0.05
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.1
+				political_power_gain = 0.1
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+		LUC_banned_trade_unions_idea = {
+			modifier = {
+				communism_drift = -0.03
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = -0.1
+			}
+			allowed = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		LUC_GERTrade_idea = {
+			modifier = {
+				consumer_goods_factor = -0.02
+				trade_opinion_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = 0.25
+			}
+			allowed = {
+				NOT = {
+					has_war_with = GER
+				}
+				GER = {
+					exists = yes
+				}
+			}
+		}
+		# Focus - liberal ideas
+		LUC_DemocraticLiberal_government_idea = {
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_speed_buildings_factor = 0.05
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}	
+
+		LUC_DemocraticLiberal_liberties_idea = {
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}	
+
+		LUC_DemocraticLiberal_womensuffrage_idea = {
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+				recruitable_population_factor = 0.1
+				industrial_capacity_factory = 0.15
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}	
+
+		LUC_DemocraticLiberal_regulation_idea = {
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+				recruitable_population_factor = 0.1
+				production_factory_start_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}	
+
+		LUC_DemocraticLiberal_reform_idea = {
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+				recruitable_population_factor = 0.1
+				production_factory_start_efficiency_factor = 0.15
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.15
+			}
+
+			allowed = {
+				has_government = democratic
+			}
+		}
+
+		LUC_DemocraticLiberal_secularisation_idea = {
+			modifier = {
+				research_speed_factor = 0.025
+				production_factory_start_efficiency_factor = 0.05	
+			}
+
+			allowed = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+		}
+		LUC_CrackDownOnFacism_idea = {
+			modifier = {
+				fascism_drift = -0.025
+				recruitable_population_factor = -0.02
+			}
+			allowed = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
+		LUC_DenounceRedTyranny_idea = {
+			modifier = {
+				communism_drift = -0.025
+				industrial_capacity_factory = -0.02
+			}
+			allowed = {
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+		LUC_AllowTradeUnions_idea = {
+			modifier = {
+				consumer_goods_factor = 0.03
+				line_change_production_efficiency_factor = 0.025
+				production_factory_start_efficiency_factor = 0.05
+				industry_free_repair_factor = 0.1
 			}
 		}
 	}

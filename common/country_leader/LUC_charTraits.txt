@@ -46,8 +46,8 @@ leader_traits = {
 	}
 	# Traits for Princes
 	SUS_LUC_Lichtenstein_Prince = {
-		political_power_cost = 0.25
-		stability_factor = 0.15
+		consumer_goods_factor = 0.02
+		political_power_factor = 0.05
 	}
 	# Trait for Kaiser
 	SUS_LUC_Deutshes_Kaiser = {

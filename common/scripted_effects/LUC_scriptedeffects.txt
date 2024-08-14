@@ -32,3 +32,74 @@ luc_customs_union_update_factory = {
 		luc_customsUnionFactories_var = 1
 	}
 }
+
+# BREACH OF NEUTRALTIY WARNING / EFFECT - For Focuses and other one time uses
+luc_break_of_neutrality_warning = {
+	if = {
+		limit = {
+			OR = {
+				has_idea = LUC_Lichtenstein_Neutrality_idea
+				has_idea = LUC_Lichtenstein_Neutrality_defensive_idea
+			}
+			NOT = {
+				has_country_flag = LUC_NeuralityRepealed_flag
+			}
+		}
+		custom_effect_tooltip = luc_break_of_neutrality_warning_tt
+		if = {
+			limit = {
+				any_other_country = {
+					NOT = {
+						is_in_faction_with = ROOT
+					}
+					is_major = yes
+					capital_scope = {
+						is_on_continent = europe
+					}
+					has_opinion = {
+						target = ROOT
+						value < 35
+					}
+					OR = {
+						NOT = {
+							tag = SOV
+						}
+						AND = {
+							tag = SOV
+							is_neighbor_of = ROOT
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = luc_break_of_neutrality_effect_tt
+			every_other_country = {
+				limit = {
+					NOT = {
+						is_in_faction_with = ROOT
+					}
+					is_major = yes
+					capital_scope = {
+						is_on_continent = europe
+					}
+					has_opinion = {
+						target = ROOT
+						value < 35
+					}
+					OR = {
+						NOT = {
+							tag = SOV
+						}
+						AND = {
+							tag = SOV
+							is_neighbor_of = ROOT
+						}
+					}
+				}
+				create_wargoal = {
+					target = ROOT
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+}

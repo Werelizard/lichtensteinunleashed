@@ -1,0 +1,8 @@
+spriteTypes = {
+	# Texticon - Bank of Lichtenstein
+	spriteType = {
+		name = "GFX_LUC_BankIcon"
+		textureFile = "gfx/texticons/SUS/LUC_BankTextIcon.dds"
+		legacy_lazy_load = no
+	}
+}

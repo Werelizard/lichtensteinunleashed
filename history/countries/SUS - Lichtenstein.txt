@@ -85,7 +85,7 @@ add_ideas = {
 
 # Special effects
 luc_setup_customs_union = yes
-add_manpower = 12000
+add_manpower = 9000
 
 # Events
 
