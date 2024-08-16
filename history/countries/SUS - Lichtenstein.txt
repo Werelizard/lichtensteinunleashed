@@ -63,17 +63,42 @@ set_war_support = 0.1
 
 # Country Leaders
 
-recruit_character = LUC_SUS_JosefHoop
-recruit_character = LUC_SUS_OttoSchaedler
-recruit_character = LUC_SUS_RudolfSchaedler
-recruit_character = LUC_SUS_AlfonsGoop
-recruit_character = LUC_SUS_WorkerCouncil
-recruit_character = LUC_SUS_Ludwig_Marxer
+recruit_character = LUC_JosefHoop
+recruit_character = LUC_OttoSchaedler
+recruit_character = LUC_RudolfSchaedler
+recruit_character = LUC_AlfonsGoop
+recruit_character = LUC_WorkerCouncil
+recruit_character = LUC_Ludwig_Marxer
 recruit_character = LUC_InterimGovernment_DEM
 recruit_character = LUC_InterimGovernment_FAS
 recruit_character = LUC_InterimGovernment_NEU
 
-# Relationships
+# Advisors
+recruit_character = LUC_Anton_Frommelt
+recruit_character = LUC_RichardMeier
+recruit_character = LUC_AloisVogt
+recruit_character = LUC_EugenSchafhause
+recruit_character = LUC_GustavSchadler
+recruit_character = LUC_CarlVogelsang
+recruit_character = LUC_PeterBuchel
+recruit_character = LUC_GustavVogt
+recruit_character = LUC_JosefLienhardt
+recruit_character = LUC_PeterZund
+recruit_character = LUC_DanielaHilzinger
+recruit_character = LUC_JosefSteger
+recruit_character = LUC_JohannGeorgHasler
+recruit_character = LUC_KarlTrauttmanssdorf
+recruit_character = LUC_ThomasZwinger
+recruit_character = LUC_MarkusLedswher
+recruit_character = LUC_RupertMette
+recruit_character = LUC_MartinLanter
+
+# Generals
+
+recruit_character = LUC_Alois_Gonzaga_Maria_Adolf
+recruit_character = LUC_Heinrich_Aloys_Maria_Joseph
+recruit_character = LUC_Johannes_Franz_Maria_Balthasar
+recruit_character = LUC_Rene_Batliner
 
 # Ideas
 

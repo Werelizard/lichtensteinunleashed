@@ -87,7 +87,7 @@ ideas = {
 		LUC_CustomsUnion_idea = {
 			modifier = {
 				custom_modifier_tooltip = LUC_CustomsUnion_idea_tt
-				political_power_gain = -0.1
+				production_factory_start_efficiency_factor = 0.02
 				civilian_intel_to_others = 10
 				army_intel_to_others = 10
 			}

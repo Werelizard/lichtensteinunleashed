@@ -38,6 +38,10 @@ spriteTypes = {
 		name = "GFX_LUC_LudwigMarxer"
 		textureFile = "gfx/leaders/SUS/LUC_LudwigMarxer.tga"
 	}
+	spriteType = {
+		name = "GFX_LUC_RichardMeier"
+		texturefile = "gfx/leaders/SUS/LUC_RichardMeier.tga"
+	}
 
 	# Workers council
 	spriteType = {
@@ -173,19 +177,35 @@ spriteTypes = {
 		name = "GFX_LUC_Alois_Gonzaga_Maria_Adolf"
 		texturefile = "gfx/leaders/SUS/LUC_Alois_Gonzaga_Maria_Adolf.tga"
 	}
+	spriteType = {
+		name = "GFX_LUC_Alois_Gonzaga_Maria_Adolf_small"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Alois_Gonzaga_Maria_Adolf_Small.dds"
+	}
 
 	spriteType = {
 		name = "GFX_LUC_Heinrich_Aloys_Maria_Joseph"
 		texturefile = "gfx/leaders/SUS/LUC_Heinrich_Aloys_Maria_Joseph.tga"
+	}
+	spriteType = {
+		name = "GFX_LUC_Heinrich_Aloys_Maria_Joseph_small"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Heinrich_Aloys_Maria_Joseph_Small.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_Johannes_Franz_Maria_Balthasar"
 		texturefile = "gfx/leaders/SUS/LUC_Johannes_Franz_Maria_Balthasar.tga"
 	}
+	spriteType = {
+		name = "GFX_LUC_Johannes_Franz_Maria_Balthasar_small"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Johannes_Franz_Maria_Balthasar_Small.dds"
+	}
 
 	spriteType = {
 		name = "GFX_LUC_Rene_Batliner"
 		texturefile = "gfx/leaders/SUS/LUC_Rene_Batliner.tga"
+	}
+	spriteType = {
+		name = "GFX_LUC_Rene_Batliner_small"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Rene_Batliner_Small.dds"
 	}
 }

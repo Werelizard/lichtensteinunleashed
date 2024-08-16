@@ -114,11 +114,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -152,11 +152,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 			any_other_country = {
@@ -199,11 +199,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 			any_other_country = {
@@ -262,11 +262,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 			num_of_civilian_factories > 2
@@ -325,11 +325,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 			any_neighbor_country = {
@@ -364,11 +364,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 			any_owned_state = {
@@ -412,7 +412,7 @@ focus_tree = {
 				AND = {
 					has_country_leader = {
 						ruling_only = yes
-						character = LUC_SUS_JosefHoop
+						character = LUC_JosefHoop
 					}
 					any_other_country = {
 						capital_scope = {
@@ -425,7 +425,7 @@ focus_tree = {
 				AND = {
 					has_country_leader = {
 						ruling_only = yes
-						character = LUC_SUS_Ludwig_Marxer
+						character = LUC_Ludwig_Marxer
 					}
 					OR = {
 						has_completed_focus = LUC_TurnTowardsDemocracies
@@ -448,13 +448,8 @@ focus_tree = {
 			else = {
 				add_war_support = 0.1
 			}
-			capital_scope = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
+			custom_effect_tooltip = LUC_unlockADvisor
+			show_ideas_tooltip = LUC_MartinLanter
 			custom_effect_tooltip = LUC_newline_tt
 			luc_break_of_neutrality_warning = yes
 		}
@@ -477,11 +472,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -506,11 +501,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -536,11 +531,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -563,11 +558,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -591,11 +586,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -618,11 +613,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -646,11 +641,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -673,11 +668,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -700,11 +695,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -727,11 +722,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -756,11 +751,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 			NOT = {
@@ -797,11 +792,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -830,11 +825,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -859,11 +854,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -891,11 +886,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 			count_triggers = {
@@ -927,11 +922,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -983,11 +978,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -1011,11 +1006,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -1040,11 +1035,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 		}
@@ -1070,7 +1065,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_JosefHoop
+				character = LUC_JosefHoop
 			}
 		}
 		completion_reward = {
@@ -1103,7 +1098,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_JosefHoop
+				character = LUC_JosefHoop
 			}
 			GER = {
 				exists = yes
@@ -1160,7 +1155,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_JosefHoop
+				character = LUC_JosefHoop
 			}
 			custom_trigger_tooltip = {
 				tooltip = LUC_GermanTradeAgreement_tt
@@ -1203,13 +1198,15 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_JosefHoop
+				character = LUC_JosefHoop
 			}
 		}
 		completion_reward = {
 			add_political_power = 100
-			#TBD ADD ADVISOR 1
-			#TBD ADD ADVISOR 2
+			custom_effect_tooltip = LUC_unlockADvisor
+			show_ideas_tooltip = LUC_OttoSchaedler
+			show_ideas_tooltip = LUC_AloisVogt
+			show_ideas_tooltip = LUC_RichardMeier
 		}
 		mutually_exclusive = {
 		}
@@ -1227,7 +1224,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_JosefHoop
+				character = LUC_JosefHoop
 			}
 		}
 		completion_reward = {
@@ -1280,7 +1277,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_JosefHoop
+				character = LUC_JosefHoop
 			}
 		}
 		completion_reward = {
@@ -1318,7 +1315,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_JosefHoop
+				character = LUC_JosefHoop
 			}
 			has_completed_focus = LUC_BankOfLichtenstein
 			custom_trigger_tooltip = {
@@ -1368,7 +1365,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_JosefHoop
+				character = LUC_JosefHoop
 			}
 			GER = {
 				exists = yes
@@ -1424,7 +1421,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_JosefHoop
+				character = LUC_JosefHoop
 			}
 		}
 		completion_reward = {
@@ -1450,7 +1447,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 		}
 		completion_reward = {
@@ -1473,7 +1470,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 			communism < 0.1
 			democratic > 0.5
@@ -1526,7 +1523,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 			fascism < 0.1
 			democratic > 0.5
@@ -1578,10 +1575,12 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = LUC_unlockADvisor
+			show_ideas_tooltip = LUC_DanielaHilzinger
 			add_popularity = {
 				ideology = communism
 				popularity = 0.06
@@ -1604,7 +1603,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 			any_other_country = {
 				is_major = yes
@@ -1636,7 +1635,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 			any_other_country = {
 				is_major = yes
@@ -1666,7 +1665,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 		}
 		completion_reward = {
@@ -1692,7 +1691,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 		}
 		completion_reward = {
@@ -1718,7 +1717,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 		}
 		completion_reward = {
@@ -1743,7 +1742,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 		}
 		completion_reward = {
@@ -1777,7 +1776,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 		}
 		completion_reward = {
@@ -1803,7 +1802,7 @@ focus_tree = {
 		available = {
 			has_country_leader = {
 				ruling_only = yes
-				character = LUC_SUS_Ludwig_Marxer
+				character = LUC_Ludwig_Marxer
 			}
 		}
 		completion_reward = {
@@ -2034,11 +2033,11 @@ focus_tree = {
 			OR = {
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_JosefHoop
+					character = LUC_JosefHoop
 				}
 				has_country_leader = {
 					ruling_only = yes
-					character = LUC_SUS_Ludwig_Marxer
+					character = LUC_Ludwig_Marxer
 				}
 			}
 			count_triggers = {

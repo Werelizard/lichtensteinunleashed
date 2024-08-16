@@ -272,3 +272,6 @@
 
  LUC_PurchaseAlaska:0 "Purchase Alaska"
  LUC_PurchaseAlaska_desc:0 ""
+
+ #General Tooltip
+ LUC_unlockADvisor:0 "Will be available as a political advisor:\n"
