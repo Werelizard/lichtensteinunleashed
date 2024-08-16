@@ -28,8 +28,8 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 40
-	democratic = 50
+	neutrality = 44
+	democratic = 46
 	fascism = 10
 	communism = 0
 }
@@ -69,6 +69,9 @@ recruit_character = LUC_SUS_RudolfSchaedler
 recruit_character = LUC_SUS_AlfonsGoop
 recruit_character = LUC_SUS_WorkerCouncil
 recruit_character = LUC_SUS_Ludwig_Marxer
+recruit_character = LUC_InterimGovernment_DEM
+recruit_character = LUC_InterimGovernment_FAS
+recruit_character = LUC_InterimGovernment_NEU
 
 # Relationships
 

@@ -19,4 +19,12 @@ opinion_modifiers = {
 	LUC_DENOUNCEDFASCISM = {
 		value = 10
 	}
+	LUC_ANGEREDOVERNEUTRALITY = {
+		value = -25
+		decay = 1
+	}
+	LUC_PLEASEDBYNEUTRALITY = {
+		value = 20
+		decay = 1
+	}
 }

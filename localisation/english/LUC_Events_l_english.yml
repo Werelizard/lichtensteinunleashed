@@ -1,4 +1,5 @@
 ﻿l_english:
+ # Election Events
  election.1000.title:0 "The Landtag Elections of [GetYear]"
  election.1000.desc:0 ""
  election.1000.a:0 "Josef Hoop has the peoples' full confidence."
@@ -7,3 +8,7 @@
  LUC_unlockLiberalMandate_tt:0 "Unlocks the \"§Y$LUC_LiberalVictory$§!\" focus."
  LUC_unlockConservativeMandate_tt:0 "Unlocks the \"§Y$LUC_ConservativeVictory$§!\" focus."
  LUC_politicalInstability_tt:0 "§RGiven the current geopolitical climate, such an outcome is likely to lead to political upheaval!§!"
+
+ # Democratic Focus Related Events
+ 
+ 

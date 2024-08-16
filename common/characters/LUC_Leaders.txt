@@ -1,0 +1,261 @@
+characters={
+	# Prime Ministers
+	LUC_SUS_JosefHoop ={
+		name = LUC_SUS_JosefHoop
+		portraits={
+			civilian={
+				large="GFX_LUC_JosefHoop"
+				small = "GFX_LUC_JosefHoop_Advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LUC_SUS_JosefHoop
+			traits = {
+				LUC_Pragmatic_Pacifist
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = LUC_DemocraticOrFascistGov_tt
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+		country_leader={
+			ideology = conservatism
+			traits={  
+				LUC_Neutrality_Advocate
+				LUC_Silver_Tongued_Pragmatist
+			}
+		}
+	}
+	LUC_SUS_OttoSchaedler = {
+		name = LUC_SUS_OttoSchaedler
+		portraits={
+			civilian={
+				large="GFX_LUC_OttoSchaedler"
+				small = "GFX_LUC_OttoSchaedler_Advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LUC_SUS_OttoSchaedler
+			traits = {
+				LUC_SavvyPolitician
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = LUC_NOTarrestedadvisor_tt
+					NOT = {
+						has_character_flag = LUC_ArrestedAdvisor_flag
+					}
+				}
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = LUC_neutralityOrFascistGov_tt
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+					}
+					has_completed_focus = LUC_EmphasiseTradition
+				}
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+		country_leader={
+			ideology = moderatism
+			traits={  
+				LUC_Germanophile
+			}
+		}
+	}
+	LUC_SUS_AlfonsGoop = {
+		name = LUC_SUS_AlfonsGoop
+		portraits={
+			civilian={
+				large="GFX_LUC_AlfonsGoop"
+				small = "GFX_LUC_AlfonsGoop_Advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LUC_SUS_AlfonsGoop
+			traits = {
+				LUC_GermanSympathiser
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = LUC_NOTarrestedadvisor_tt
+					NOT = {
+						has_character_flag = LUC_ArrestedAdvisor_flag
+					}
+				}
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+		country_leader={
+			ideology = rexism
+			traits={  
+				LUC_PopulistFigure
+			}
+		}
+	}
+	LUC_SUS_RudolfSchaedler = {
+		name = LUC_SUS_RudolfSchaedler
+		portraits={
+			civilian={
+				large="GFX_LUC_RudolfSchaedler"
+				small = "GFX_LUC_RudolfSchaedler_Advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LUC_SUS_RudolfSchaedler
+			traits = {
+				LUC_nationalistic_agitator
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = LUC_NOTarrestedadvisor_tt
+					NOT = {
+						has_character_flag = LUC_ArrestedAdvisor_flag
+					}
+				}
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+		country_leader={
+			ideology = gen_nazism
+			traits={  
+				LUC_Fervent_Nationalist
+			}
+		}
+	}
+	LUC_SUS_Ludwig_Marxer = {
+		portraits = {
+			civilian = {
+				large = "GFX_LUC_LudwigMarxer"
+				small = "GFX_LUC_LudwigMarxer_Advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LUC_SUS_Ludwig_Marxer
+			traits = {
+				LUC_LiberalReformer
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = LUC_DemocraticOrFascistGov_tt
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				LUC_LiberalLawyer
+			}
+		}
+	}
+	# Princes
+	LUC_SUS_FranzII = {
+		name = LUC_SUS_FranzII
+		portraits={
+			civilian={
+				large="GFX_LUC_FRANZ_II_LEADER"
+			}
+		}
+		country_leader={
+			ideology = despotism
+			traits={  
+				LUC_Lichtenstein_Prince
+			}
+		}
+	}
+	# Communsit council 
+	LUC_SUS_WorkerCouncil = {
+		name = LUC_SUS_WorkerCouncil
+		portraits={
+			civilian={
+				large="GFX_LUC_WorkersCouncil"
+			}
+		}
+		country_leader={
+			ideology = anarchist_communism
+			traits={  
+				LUC_Workers_Council
+			}
+		}
+	}
+	# Interim Government
+	LUC_InterimGovernment_DEM = {
+		name = LUC_InterimGovernment
+		portraits = {
+			civilian = {
+				large = "GFX_LUC_InterimGovernment"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {
+				LUC_Interim_Government
+			}
+		}
+	}
+	LUC_InterimGovernment_FAS = {
+		name = LUC_InterimGovernment
+		portraits = {
+			civilian = {
+				large = "GFX_LUC_InterimGovernment"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				LUC_Interim_Government
+			}
+		}
+	}
+	LUC_InterimGovernment_NEU = {
+		name = LUC_InterimGovernment
+		portraits = {
+			civilian = {
+				large = "GFX_LUC_InterimGovernment"
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			traits = {
+				LUC_Interim_Government
+			}
+		}
+	}
+
+	# Advisors
+}

@@ -1,8 +1,14 @@
 spriteTypes = {
-	# Texticon - Bank of Lichtenstein
+	# Texticon - National Investment Bank
 	spriteType = {
 		name = "GFX_LUC_BankIcon"
 		textureFile = "gfx/texticons/SUS/LUC_BankTextIcon.dds"
 		legacy_lazy_load = no
+	}
+	# Agency
+	spriteType = {	
+		name = "GFX_LUC_intelligence_agency_logo_Lichtenstein"
+		texturefile = "gfx/interface/operatives/agencies/LUC_agency_logo_security_corps.dds"
+		noOfFrames = 2
 	}
 }

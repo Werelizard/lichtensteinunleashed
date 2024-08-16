@@ -4,7 +4,7 @@
  LUC_LandtagCompleted_tt:0 "§LThis focus will be automatically completed once the 1936 elections have been held.§!"
 
  # Democratic Branches - Common
- LUC_LiberalVictory:0 "Fate of the Hoop Cabinet"
+ LUC_LiberalVictory:0 "The Hoop Cabinet"
  LUC_LiberalVictory_decs:0 ""
  LUC_LiberalVictory_unlocked_tt:0 "Josef Hoop has retained the Landtag's confidence in the 1936 election."
 
@@ -27,53 +27,81 @@
  LUC_PurchaseSwissWeapons_desc:0 ""
  LUC_PurchaseSwissWeapons_tt:0 "A total of §R2§! §YCivilian Factories§! will be used while this focus is active"
 
- LUC_ALichtensteinerMilitia:0 "A [ROOT.GetAdjective] Militia"
+ LUC_ALichtensteinerMilitia:0 "Expanded Security Corps"
  LUC_ALichtensteinerMilitia_desc:0 ""
 
  LUC_BeginRearmement:0 "Emergency Military Budget"
  LUC_BeginRearmement_desc:0 ""
+ LUC_BeginRearmement_tt:0 "At least §Y15%§! War Support"
 
- LUC_PopularMobilisation:0 "Use the Shooting Clubs"
+ LUC_PopularMobilisation:0 "Regularised Para-Military Groups"
  LUC_PopularMobilisation_decs:0 ""
 
  LUC_AssetsNationalisation:0 "Industrial Nationalisation"
  LUC_AssetsNationalisation_desc:0 ""
 
- LUC_RepealNeutrality:0 "Abandon Neutrality"
- LUC_RepealNeutrality_desc:0 ""
+ LUC_BeginMilitarySpending:0 "Emergency Military Budget"
+ LUC_BeginMilitarySpending_desc:0 ""
 
- LUC_BideOurTime:0 "Bide our Time"
+ LUC_BideOurTime:0 "Re-Assert Neutrality"
  LUC_BideOurTime_desc:0 ""
 
- LUC_FortressVaduz:0 "Fortress Vaduz"
- LUC_FortressVaduz_desc:0 ""
+ LUC_CommitToPacifism:0 "Commit to Disarmement"
+ LUC_CommitToPacifism_desc:0 ""
 
- LUC_GreaterRedoubt:0 "The Greater Redoubt Strategy"
- LUC_GreaterRedoubt_desc:0 ""
+ LUC_DefenseOfVaduz:0 "Defence of Vaduz"
+ LUC_DefenseOfVaduz_desc:0 ""
 
- LUC_FromGroundToSky:0 "Ein Wahres Hornissennest"
- LUC_FromGroundToSky_desc:0 ""
+ LUC_PursueTechnologicalExchanges:0 "Encourage Technological Exchanges"
+ LUC_PursueTechnologicalExchanges_desc:0 ""
 
- LUC_TogetherWeAreStronger:0 "Stand By Other Democracies"
- LUC_TogetherWeAreStronger_desc:0 ""
+ LUC_FurtherGermanCollaboration:0 "Further German Collaboration"
+ LUC_FurtherGermanCollaboration_desc:0 ""
 
- LUC_BearingTheDemocraticTorch:0 "Bearing the Democratic Torch"
- LUC_BearingTheDemocraticTorch_desc:0 ""
+ LUC_LuxuryIndustry:0 "Precision Engineering"
+ LUC_LuxuryIndustry_desc:0 ""
 
- LUC_ArmDemocraticResistance:0 "Arm Democratic Partisans"
- LUC_ArmDemocraticResistance_desc:0 ""
+ LUC_LicthenSteinerAutomobileIndustry:0 "Invest in the Automobile Industry"
+ LUC_LicthenSteinerAutomobileIndustry_desc:0 ""
 
- LUC_DemocratiPanGermanism:0 "Träume von Einer Konföderation"
- LUC_DemocratiPanGermanism_desc:0 ""
+ LUC_InvestInTourism:0 "Alpine Resorts"
+ LUC_InvestInTourism_desc:0 ""
 
- LUC_CollaborativeResearch:0 "Collaborative Research"
- LUC_CollaborativeResearch_desc:0 ""
+ LUC_SelfReliance:0 "Embrace Autarkie"
+ LUC_SelfReliance_desc:0 ""
+
+ LUC_BeautifulLand:0 "A Land of Mountains and Rivers"
+ LUC_BeautifulLand_desc:0 ""
+
+ LUC_PanGermany:0 "Dreams of Democracy"
+ LUC_PanGermany_desc:0 ""
+
+ LUC_TackleFascism:0 "Destroy European Fascism"
+ LUC_TackleFascism_desc:0 ""
+
+ LUC_DemocraticSecurity:0 "Democratic Security"
+ LUC_DemocraticSecurity_desc:0 ""
+
+ LUC_RepealNeutrality:0 "Repeal Neutrality"
+ LUC_RepealNeutrality_desc:0 ""
+ LUC_noNeutralityidea_tt:0 "Does not have the §Y$LUC_Lichtenstein_Neutrality_idea$§! national spirit"
+
+ LUC_MiltiaryReadiness:0 "Complete Re-Aremement Program"
+ LUC_MiltiaryReadiness_desc:0 ""
+
+ LUC_FundMilitaryContractors:0 "Siphon funds to the Military Industry"
+ LUC_FundMilitaryContractors_desc:0 ""
+
+ LUC_AppointChiefOfStaff:0 "Re-Organise Military Command"
+ LUC_AppointChiefOfStaff_desc:0 ""
+
+ LUC_RallyThePopulation:0 "Rally the Populace"
+ LUC_RallyThePopulation_desc:0 ""
 
  # Coalition Government
 
  LUC_ACoalitionGovernment:0 "A Government By Coalition"
  LUC_ACoalitionGovernment_desc:0 ""
- LUC_Coalition_tt:0 "All current §N[ROOT.GetNeutralParty]§! popularity will be transferred to the §D[ROOT.GetDemocraticParty]§! party"
 
  LUC_DiplomaticMissionToGermany:0 "Diplomatic Mission to Germany"
  LUC_DiplomaticMissionToGermany_desc:0 ""
@@ -170,7 +198,7 @@
  LUC_SharedPostalService:0 "Merge Postal Services"
  LUC_SharedPostalService_desc:0 ""
 
- LUC_JointInvestments:0 "Unified Investment Scheme"
+ LUC_JointInvestments:0 "Unified Infrastructure Scheme"
  LUC_JointInvestments_desc:0 ""
 
  LUC_InviteAustria:0 "Invite Austria"
@@ -187,16 +215,16 @@
  LUC_AlpineMilitary:0 "An Alpine Military"
  LUC_AlpineMilitary_desc:0 ""
  
- LUC_AssimilateSwissIndustry:0 "Assimilate Swiss Industry"
+ LUC_AssimilateSwissIndustry:0 "Economic Restructuring"
  LUC_AssimilateSwissIndustry_desc:0 ""
 
- LUC_DamTheRhone:0 "Dam the Rhone"
+ LUC_DamTheRhone:0 "Develop the Western Alps"
  LUC_DamTheRhone_desc:0 ""
 
- LUC_DamTheRhine:0 "Dam the Rhine"
+ LUC_DamTheRhine:0 "Develop the Central Alps"
  LUC_DamTheRhine_desc:0 ""
 
- LUC_IntegrateVienna:0 "Continue Viennese Urbanisation"
+ LUC_IntegrateVienna:0 "Develop the Austrian Alps"
  LUC_IntegrateVienna_desc:0 ""
 
  LUC_UrbaniseTheAlps:0 "The Alpine Factorium"

@@ -14,6 +14,24 @@ add_namespace = LUC_FocusTree
 
 # Fate of the Coalition 
 
+country_event = {
+	id = LUC_FocusTree.200
+	title = LUC_FocusTree.200.title
+	desc = LUC_FocusTree.200.desc
+
+	is_triggered_only = yes
+
+	option = { # Hoop succeeds in keeping a coalition
+		name = LUC_FocusTree.200.a
+	}
+
+	option = { # Hoop fails - cabinet temporarily resigns
+		name = LUC_FocusTree.200.b
+
+		promote_character = LUC_InterimGovernment_DEM
+	}
+}
+
 # Hoop: Hoop's Cabinet
 
 # Marxer: German Reich Concerned about Anti-German position (if Germany fascist)

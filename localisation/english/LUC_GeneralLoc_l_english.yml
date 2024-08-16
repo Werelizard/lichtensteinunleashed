@@ -44,18 +44,48 @@
  LUC_SUS_FranzII:0 "Franz II"
  LUC_SUS_WorkerCouncil:0 "Worker's Council"
  LUC_SUS_Ludwig_Marxer:0 "Ludwig Marxer"
+ LUC_InterimGovernment:0 "Lichtensteiner Landtag"
 
  # Character traits
- SUS_LUC_Neutrality_Advocate:0 "Neutrality Advocate"
- SUS_LUC_Silver_Tongued_Pragmatist:0 "Silver-Tongued Pragmatist"
- SUS_LUC_Dubious_Figure:0 "Germanophile"
- SUS_LUC_Fervent_Nationalist:0 "Fervent Nationalist"
- SUS_LUC_Old_School_Hawk:0 "Political Hawk"
- SUS_LUC_Germanic_Puppet:0 "Germany's Puppet"
- SUS_LUC_Workers_Council:0 "Unorganised Council"
- SUS_LUC_Lichtenstein_Prince:0 "Prince of Lichtenstein"
- SUS_LUC_Deutshes_Kaiser:0 "The Mountain Kaiser"
- SUS_LiberalLawyer:0 "Liberal Lawyer"
+ LUC_Neutrality_Advocate:0 "Neutrality Advocate"
+ LUC_Silver_Tongued_Pragmatist:0 "Silver-Tongued Pragmatist"
+ LUC_Germanophile:0 "Germanophile"
+ LUC_Fervent_Nationalist:0 "Fervent Nationalist"
+ LUC_PopulistFigure:0 "Populist Hawk"
+ LUC_Germanic_Puppet:0 "Germany's Puppet"
+ LUC_Workers_Council:0 "Unorganised Council"
+ LUC_Lichtenstein_Prince:0 "Prince of Lichtenstein"
+ LUC_Deutshes_Kaiser:0 "The Mountain Kaiser"
+ LUC_LiberalLawyer:0 "Liberal Lawyer"
+ LUC_Interim_Government:0 "Interim Government"
+
+ # Advisor Trait
+ LUC_Pragmatic_Pacifist:0 "Pragmatic Pacifist"
+ LUC_LiberalReformer:0 "Liberal Reformer"
+ LUC_SavvyPolitician:0 "Political Weasel"
+ LUC_nationalistic_agitator:0 "Head of the HVL"
+ LUC_GermanSympathiser:0 "Paramilitary Organiser"
+ LUC_Pastor:0 "Popular Priest"
+ LUC_Backstabber:0 "Two Faced Diplomat"
+ LUC_Statecapitalist:0 "State Interventionism Proponent"
+ LUC_ConservativeFigurehead:0 "Staunch Conservative"
+ LUC_EducationReformer:0 "Education Reformer"
+ LUC_NationalistJournalist:0 "Nationalistic Journalist"
+ LUC_Agrarian:0 "Leader of the Agrarian Union"
+ LUC_AusterityProponent:0 "Austerity Proponent"
+ LUC_ParliamenteryBully:0 "Parliamentary Bully"
+ LUC_Banker:0 "Banker"
+ LUC_UnionAdvocate:0 "Union Figurehead"
+ LUC_SocialDemocrat:0 "Moderate Socialist"
+ LUC_ArmementOrganiser:0 "Re-Armement Proponent"
+ LUC_IndustrialMagnate:0 "Industrial Magnate"
+ LUC_smallbuisnessadvocate:0 "Small Business Advocate"
+ LUC_doctor:0 "Head of the Vaduz hospital"
+
+ # advisor Tooltips
+ LUC_NOTarrestedadvisor_tt:0 "NOT: advisor was §Rarrested§!"
+ LUC_DemocraticOrFascistGov_tt:0 "Has a §YDemocratic§! or §YUnaligned§! government"
+ LUC_neutralityOrFascistGov_tt:0 "Has an §YUnaligned§! or §YFascist§! government"
 
  # Ideas - Base
  LUC_Lichtenstein_Neutrality_idea:0 "Lichtensteiner Neutrality"
@@ -119,17 +149,23 @@
  LUC_expanded_police_idea_desc:0 ""
  LUC_PurchasingSwissWeapons_idea:0 "Focus: §Y$LUC_PurchaseSwissWeapons$§!"
  LUC_PurchasingSwissWeapons_idea_desc:0 ""
- LUC_LichtensteinerMilitia:0 "A [ROOT.GetAdjective] Militia"
+ LUC_LichtensteinerMilitia:0 "Security Corps"
  LUC_LichtensteinerMilitia_desc:0 ""
  LUC_AssetsNationalisation_idea:0 "Industrial Appropriation"
  LUC_AssetsNationalisation_idea_desc:0 ""
  LUC_ShootingClubs_idea:0 "Patriotic Shooting Clubs"
  LUC_ShootingClubs_idea_desc:0 ""
+ LUC_RallyingPop_idea:0 "Nationalistic Broadcasts"
+ LUC_RallyingPop_idea_desc:0 ""
 
  # Inbdustrial Concerns
  LUC_Vaduz_Arsenal:0 "Vaduz Arsenal"
 
-
  #Neutrality Related
- luc_break_of_neutrality_warning_tt:0 "\n§RThis action is considered a breach of neutrality, and will anger the major powers of Europe. Should our relations with any of these countries be lower than §!§Y35§!§R, then they will gain a §!§Ywar goal§!§R against us!§!"
- luc_break_of_neutrality_effect_tt:0 "\n§RThe following countries will gain a war goal against us:§!"
+ luc_break_of_neutrality_warning_tt:0 "\n§RThis course of action will be considered a breach of neutrality, and will anger the major powers of Europe. Should our relations with any of these countries be lower than §!§Y35§!§R, then they will gain a §!§Ywar goal§!§R against us!§!"
+ luc_break_of_neutrality_effect_tt:0 "\n§RThe following countries will gain a war goal against us:§!" 
+ luc_break_of_neutrality_noeffect_tt:0 "\n§RCurrently there are no countries which would have enough grieveances to pursue military action against us.\n§!"
+ LUC_neutrality_pleased_tt:0 "\n§CThis course of action will appease our neighbours and greatly improve our standing with them!§!"
+
+ #Economy
+ LUC_LichtensteinerProsperity_idea:0 "Prospering Civilian Economy"

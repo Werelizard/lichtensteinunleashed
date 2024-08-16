@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_LUC_report_landtag_event"
+		textureFile = "gfx/event_pictures/LUC_report_landtag_event.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_report_diplomission_event"
+		textureFile = "gfx/event_pictures/LUC_report_diplomission_event.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_report_josefHoop_event"
+		textureFile = "gfx/event_pictures/GFX_LUC_report_josefHoop_event.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_report_farmers_event"
+		textureFile = "gfx/event_pictures/GFX_LUC_report_farmers_event.dds"
+	}
+}

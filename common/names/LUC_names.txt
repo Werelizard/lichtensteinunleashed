@@ -1,0 +1,16 @@
+SUS = {
+	male = {
+		names = { 
+			Alfred Andreas Anton Benjamin Daniel David Henrik Hilmar Ferdinand Franz Frederik Gebhard Johan Johann Josef Karl Lukas Magnus Markus Oskar Otto Peter Rupert Theodor Thomas 
+		}
+	}
+	female = {
+		names = {
+			Aloysia Anna Andrea Barbara Benedikt Cornelia Karoline Hermine Elsa Geraldine Leopoldine Maria Sophie Sofia Theodora Theresa
+		}
+	}
+	surnames = { 
+		Beck Büchel Eberle Erni Gassner Frick Hassler Kaiser Kieber Marxer Gantner Ganahl Gassner Geiger Hilbe Lampert Ospelt Quaderer Ritter Schädler Sprecher
+	}
+	callsigns = { }
+}

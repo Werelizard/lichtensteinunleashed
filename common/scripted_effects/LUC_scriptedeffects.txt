@@ -52,6 +52,9 @@ luc_break_of_neutrality_warning = {
 					NOT = {
 						is_in_faction_with = ROOT
 					}
+					NOT = {
+						has_war_with = ROOT
+					}
 					is_major = yes
 					capital_scope = {
 						is_on_continent = europe
@@ -100,6 +103,67 @@ luc_break_of_neutrality_warning = {
 					type = puppet_wargoal_focus
 				}
 			}
+		}
+		else = {
+			custom_effect_tooltip = luc_break_of_neutrality_noeffect_tt
+		}
+		every_other_country = {
+			limit = {
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+				NOT = {
+					has_war_with = ROOT
+				}
+				is_major = yes
+				capital_scope = {
+					is_on_continent = europe
+				}
+				OR = {
+					NOT = {
+						tag = SOV
+					}
+					AND = {
+						tag = SOV
+						is_neighbor_of = ROOT
+					}
+				}
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = LUC_ANGEREDOVERNEUTRALITY
+			}
+		}
+	}
+}
+
+LUC_neutrality_pleased = {
+	custom_effect_tooltip = LUC_neutrality_pleased_tt
+	every_other_country = {
+		limit = {
+			NOT = {
+				is_in_faction_with = ROOT
+			}
+			NOT = {
+				has_war_with = ROOT
+			}
+			is_major = yes
+			capital_scope = {
+				is_on_continent = europe
+			}
+			OR = {
+				NOT = {
+					tag = SOV
+				}
+				AND = {
+					tag = SOV
+					is_neighbor_of = ROOT
+				}
+			}
+		}
+		add_opinion_modifier = {
+			target = ROOT
+			modifier = LUC_PLEASEDBYNEUTRALITY
 		}
 	}
 }
