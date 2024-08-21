@@ -128,10 +128,16 @@ ideas = {
 		}
 		LUC_Liechtenstein_MilitantDemocracy_idea = {
 			modifier = {
-				opinion_gain_monthly_same_ideology_factor = -0.2
+				guarantee_cost = 0.5
+				guarantee_tension = 1
+				opinion_gain_monthly_same_ideology_factor = 0.25
 				send_volunteers_tension = -0.25
-				army_defence_factor = 0.1
+				army_defence_factor = 0.05
 				democratic_drift = 0.02
+				stability_factor = -0.15
+			}
+			allowed = {
+				has_government = democratic
 			}
 		}
 
@@ -320,7 +326,7 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.05
 				recruitable_population_factor = 0.1
-				production_factory_start_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
 				industrial_capacity_factory = 0.15
 			}
 
@@ -335,7 +341,7 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.05
 				recruitable_population_factor = 0.1
-				production_factory_start_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.1
 				war_support_factor = 0.1
 				industrial_capacity_factory = 0.15
 			}

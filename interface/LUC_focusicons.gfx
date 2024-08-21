@@ -35,6 +35,167 @@ spriteTypes = {
 		name = "GFX_LUC_ARealisticGovernment_shine"
 		textureFile = "gfx/interface/goals/LUC_focus_MarxerCabinet.dds"
 	}
+
+    spriteType = {
+		name = "GFX_LUC_PoliceExpansion"
+		textureFile = "gfx/interface/goals/LUC_PoliceExpansion.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_PoliceExpansion_shine"
+		textureFile = "gfx/interface/goals/LUC_PoliceExpansion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALiechtensteinerMilitia"
+		textureFile = "gfx/interface/goals/LUC_ALiechtensteinerMilitia.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALiechtensteinerMilitia_shine"
+		textureFile = "gfx/interface/goals/LUC_ALiechtensteinerMilitia.dds"
+	}
+
+	####################
+	# DEMOCRATIC: AGRO #
+	####################
+	
+	spriteType = {
+		name = "GFX_LUC_MilitaryRearmement"
+		textureFile = "gfx/interface/goals/LUC_MilitaryRearmement.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_MilitaryRearmement_shine"
+		textureFile = "gfx/interface/goals/LUC_MilitaryRearmement.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_LUC_PoliticalUnity"
+		textureFile = "gfx/interface/goals/LUC_PoliticalUnity.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_PoliticalUnity_shine"
+		textureFile = "gfx/interface/goals/LUC_PoliticalUnity.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_CivilPreparations"
+		textureFile = "gfx/interface/goals/LUC_CivilPreparations.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_CivilPreparations_shine"
+		textureFile = "gfx/interface/goals/LUC_CivilPreparations.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_AStandingArmy"
+		textureFile = "gfx/interface/goals/LUC_AStandingArmy.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AStandingArmy_shine"
+		textureFile = "gfx/interface/goals/LUC_AStandingArmy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_AbandonNeutrality"
+		textureFile = "gfx/interface/goals/LUC_AbandonNeutrality.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AbandonNeutrality_shine"
+		textureFile = "gfx/interface/goals/LUC_AbandonNeutrality.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ModernisedWeaponry"
+		textureFile = "gfx/interface/goals/LUC_ModernisedWeaponry.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ModernisedWeaponry_shine"
+		textureFile = "gfx/interface/goals/LUC_ModernisedWeaponry.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_SuperiorFirepower"
+		textureFile = "gfx/interface/goals/LUC_SuperiorFirepower.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_SuperiorFirepower_shine"
+		textureFile = "gfx/interface/goals/LUC_SuperiorFirepower.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_MilitaryIndustry"
+		textureFile = "gfx/interface/goals/LUC_MilitaryIndustry.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_MilitaryIndustry_shine"
+		textureFile = "gfx/interface/goals/LUC_MilitaryIndustry.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_MilitaryBudget"
+		textureFile = "gfx/interface/goals/LUC_MilitaryBudget.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_MilitaryBudget_shine"
+		textureFile = "gfx/interface/goals/LUC_MilitaryBudget.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_MilitaryResearch"
+		textureFile = "gfx/interface/goals/LUC_MilitaryResearch.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_MilitaryResearch_shine"
+		textureFile = "gfx/interface/goals/LUC_MilitaryResearch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_MilitaryBudget"
+		textureFile = "gfx/interface/goals/LUC_MilitaryBudget.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_MilitaryBudget_shine"
+		textureFile = "gfx/interface/goals/LUC_MilitaryBudget.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ElectrificationEfforts"
+		textureFile = "gfx/interface/goals/LUC_ElectrificationEfforts.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ElectrificationEfforts_shine"
+		textureFile = "gfx/interface/goals/LUC_ElectrificationEfforts.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ExperimentalResearch"
+		textureFile = "gfx/interface/goals/LUC_ExperimentalResearch.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExperimentalResearch_shine"
+		textureFile = "gfx/interface/goals/LUC_ExperimentalResearch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_Autarky"
+		textureFile = "gfx/interface/goals/LUC_Autarky.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_Autarky_shine"
+		textureFile = "gfx/interface/goals/LUC_Autarky.dds"
+	}
+
+	####################
+	# DEMOCRATIC: NEUT #
+	####################
+	
+	spriteType = {
+		name = "GFX_LUC_MilitaryDisarmement"
+		textureFile = "gfx/interface/goals/LUC_MilitaryDisarmement.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_MilitaryDisarmement_shine"
+		textureFile = "gfx/interface/goals/LUC_MilitaryDisarmement.dds"
+	}
+
 	####################
 	# DEMOCRATIC: HOOP #
 	####################

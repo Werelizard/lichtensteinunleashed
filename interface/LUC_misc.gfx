@@ -11,4 +11,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/operatives/agencies/LUC_agency_logo_security_corps.dds"
 		noOfFrames = 2
 	}
+	# TechGroup
+	spriteType = {	
+		name = "GFX_LUC_VaduzGroup"
+		texturefile = "gfx/interface/LUC_VaduzGroup.dds"
+	}
 }

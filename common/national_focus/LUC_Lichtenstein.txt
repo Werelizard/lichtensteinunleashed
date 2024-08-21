@@ -99,7 +99,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_PoliceExpansion
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_PoliceExpansion
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -11
@@ -201,7 +201,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_ALiechtensteinerMilitia
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_ALiechtensteinerMilitia
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -11
@@ -243,7 +243,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_MilitaryRearmement
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_MilitaryRearmement
 		cost = 2
 		relative_position_id = LUC_LiberalVictory
 		x = -6
@@ -296,7 +296,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_MilitaryDisarmement
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_MilitaryDisarmement
 		cost = 2
 		relative_position_id = LUC_LiberalVictory
 		x = -4
@@ -347,7 +347,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_MilitaryResearch
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_MilitaryResearch
 		cost = 3
 		relative_position_id = LUC_LiberalVictory
 		x = -5
@@ -387,7 +387,7 @@ focus_tree = {
 	
 	focus = {
 		id = LUC_ExperimentalResearch
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_ExperimentalResearch
 		cost = 3
 		relative_position_id = LUC_MilitaryDisarmement
 		x = -1
@@ -444,7 +444,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_Autarky
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_Autarky
 		cost = 5
 		relative_position_id = LUC_MilitaryDisarmement
 		x = -1
@@ -906,7 +906,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_ElectrificationEfforts
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_ElectrificationEfforts
 		cost = 4
 		relative_position_id = LUC_MilitaryDisarmement
 		x = 1
@@ -955,7 +955,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_MilitaryBudget
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_MilitaryBudget
 		cost = 4
 		relative_position_id = LUC_MilitaryRearmement
 		x = -1
@@ -1002,7 +1002,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_MilitaryIndustry
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_MilitaryIndustry
 		cost = 4
 		relative_position_id = LUC_MilitaryRearmement
 		x = -1
@@ -1066,7 +1066,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_PoliticalUnity
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_PoliticalUnity
 		cost = 4
 		relative_position_id = LUC_MilitaryRearmement
 		x = -3
@@ -1103,7 +1103,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_CivilPreparations
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_CivilPreparations
 		cost = 4
 		relative_position_id = LUC_MilitaryRearmement
 		x = -5
@@ -1153,7 +1153,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_AStandingArmy
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_AStandingArmy
 		cost = 4
 		relative_position_id = LUC_MilitaryRearmement
 		x = -3
@@ -1171,6 +1171,10 @@ focus_tree = {
 					ruling_only = yes
 					character = LUC_Ludwig_Marxer
 				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = LUC_hasUnityGovernment_tt
+				has_country_flag = LUC_unityGovFormed_flag
 			}
 		}
 		bypass = {
@@ -1190,7 +1194,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_AbandonNeutrality
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_AbandonNeutrality
 		cost = 4
 		relative_position_id = LUC_MilitaryRearmement
 		x = -5
@@ -1225,6 +1229,10 @@ focus_tree = {
 					}
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = LUC_hasUnityGovernment_tt
+				has_country_flag = LUC_unityGovFormed_flag
+			}
 		}
 		bypass = {
 			NOT = {
@@ -1252,7 +1260,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_ModernisedWeaponry
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_ModernisedWeaponry
 		cost = 3
 		relative_position_id = LUC_MilitaryRearmement
 		x = -4
@@ -1300,7 +1308,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_SuperiorFirepower
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_SuperiorFirepower
 		cost = 3
 		relative_position_id = LUC_MilitaryRearmement
 		x = -3
