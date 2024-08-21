@@ -1,5 +1,5 @@
 intelligence_agency = {
-	picture = GFX_LUC_intelligence_agency_logo_Lichtenstein
+	picture = GFX_LUC_intelligence_agency_logo_Liechtenstein
 	names = { "Landespolizei des Fürstentums Liechtenstein" }
 	
 	default = { tag = SUS }

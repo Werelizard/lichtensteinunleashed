@@ -1,10 +1,10 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_idea_LUC_Lichtensteiner_Economy_idea"
+		name = "GFX_idea_LUC_Liechtensteiner_Economy_idea"
 		textureFile = "gfx/interface/ideas/SUS/LUC_LichtensteinerEconomy.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_LUC_Lichtenstein_Neutrality_idea"
+		name = "GFX_idea_LUC_Liechtenstein_Neutrality_idea"
 		textureFile = "gfx/interface/ideas/SUS/LUC_Lichtenstein_Neutrality_idea.dds"
 	}
 	spriteType = {
@@ -14,5 +14,9 @@ spriteTypes = {
 	spriteType = { 
 		name = "GFX_idea_LUC_Fascist_Agitators_idea"
 		texturefile = "gfx/interface/ideas/generic_fascism_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Liechtensteiner_Army_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_LichtensteinerMilitary.dds"
 	}
 }

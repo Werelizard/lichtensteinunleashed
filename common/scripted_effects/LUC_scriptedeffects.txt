@@ -37,10 +37,7 @@ luc_customs_union_update_factory = {
 luc_break_of_neutrality_warning = {
 	if = {
 		limit = {
-			OR = {
-				has_idea = LUC_Lichtenstein_Neutrality_idea
-				has_idea = LUC_Lichtenstein_Neutrality_defensive_idea
-			}
+			has_idea = LUC_Liechtenstein_Neutrality_idea
 			NOT = {
 				has_country_flag = LUC_NeuralityRepealed_flag
 			}
@@ -115,9 +112,18 @@ luc_break_of_neutrality_warning = {
 				NOT = {
 					has_war_with = ROOT
 				}
-				is_major = yes
-				capital_scope = {
-					is_on_continent = europe
+				OR = {
+					AND = {
+						is_major = yes
+						capital_scope = {
+							is_on_continent = europe
+						}
+						has_opinion = {
+							target = ROOT
+							value > 34
+						}
+					}
+					is_neighbor_of = ROOT
 				}
 				OR = {
 					NOT = {

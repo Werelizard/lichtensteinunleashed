@@ -1,2 +1,2 @@
-# lichtensteinunleashed
-Making a HoI4 mod worthy of Lichtenstein
+# Liechtensteinunleashed
+Making a HoI4 mod worthy of Liechtenstein

@@ -49,7 +49,7 @@ country_event = {
 			}
 		}
 		has_idea = partial_economic_mobilisation
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -114,7 +114,7 @@ country_event = {
 			has_idea = volunteer_only
 			has_idea = disarmed_nation
 		}
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -188,7 +188,7 @@ country_event = {
 		has_government = democratic
 		NOT = { has_idea = fascism_defeated }
 		fascism > 0.15
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -260,7 +260,7 @@ country_event = {
 				tag = BRA
 			}
 		}
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -367,7 +367,7 @@ country_event = {
 		democratic < 0.5
 		fascism < 0.5
 		communism < 0.5
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -477,7 +477,7 @@ country_event = {
 			has_government = fascism
 			is_faction_leader = yes
 		}
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -564,7 +564,7 @@ country_event = {
 			has_government = communism
 			is_faction_leader = yes
 		}
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -654,7 +654,7 @@ country_event = {
 				tag = BRA
 			}
 		}
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -713,7 +713,7 @@ country_event = {
 				tag = BRA
 			}
 		}
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -760,7 +760,7 @@ country_event = {
 		}
 		has_government = democratic
 		has_idea_with_trait = motorized_equipment_manufacturer
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -817,7 +817,7 @@ country_event = {
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = yes
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -881,7 +881,7 @@ country_event = {
 		has_government = democratic
 		has_war = yes
 		any_war_score < 20
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -945,7 +945,7 @@ country_event = {
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = fascism
 		fascism > 0.5
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -976,7 +976,7 @@ country_event = {
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = fascism
 		NOT = { fascism > 0.5 }
-		# Lichtenstein Unleashed
+		# Liechtenstein Unleashed
 		NOT = {
 			tag = SUS
 		}
@@ -989,7 +989,7 @@ country_event = {
 }
 
 ###########################
-# Election Events - LICHTENSTEIN
+# Election Events - Liechtenstein
 ###########################
 
 #The Landtag of 1926

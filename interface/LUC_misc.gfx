@@ -7,7 +7,7 @@ spriteTypes = {
 	}
 	# Agency
 	spriteType = {	
-		name = "GFX_LUC_intelligence_agency_logo_Lichtenstein"
+		name = "GFX_LUC_intelligence_agency_logo_Liechtenstein"
 		texturefile = "gfx/interface/operatives/agencies/LUC_agency_logo_security_corps.dds"
 		noOfFrames = 2
 	}

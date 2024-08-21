@@ -1,0 +1,25 @@
+leader_traits = {
+	LUC_ChiefOfStaff = {
+
+		type = { land }
+		trait_type = personality_trait
+
+		allowed = {
+			FROM = { original_tag = SUS }
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+		
+		modifier = {
+			experience_gain_factor = -0.25
+		}
+
+		field_marshal_modifier = {
+			max_army_group_size = 2
+			max_planning_factor = 0.1
+			planning_speed = 0,1
+		}
+	}
+}

@@ -6,6 +6,7 @@ tags={
 	"National Focuses"
 	"Ideologies"
 }
-name="Lichteinstein Unleashed"
+name="Liechtenstein Unleashed"
 supported_version="1.14.*"
 path="C:/Users/lyral/Documents/Paradox Interactive/Hearts of Iron IV/mod/LichtensteinUnleashed"
+replace_path = "common/bookmarks"

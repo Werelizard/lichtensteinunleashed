@@ -20,11 +20,11 @@ opinion_modifiers = {
 		value = 10
 	}
 	LUC_ANGEREDOVERNEUTRALITY = {
-		value = -25
-		decay = 1
+		value = -45
+		decay = 2
 	}
 	LUC_PLEASEDBYNEUTRALITY = {
 		value = 20
-		decay = 1
+		decay = -1
 	}
 }

@@ -25,7 +25,7 @@ on_actions = {
 			100 = election.13
 			100 = election.14
 			100 = election.15
-			#Lichtenstein unleashed
+			#Liechtenstein unleashed
 			100 = election.1000
 		}
 	}

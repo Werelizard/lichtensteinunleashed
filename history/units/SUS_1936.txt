@@ -27,7 +27,7 @@ division_template = {
 }
 
 units = {
-	##### Lichtensteiner Militia #####
+	##### Liechtensteiner Militia #####
 	division= {	
 		location = 6680
 		division_template = "Grenadier Division"

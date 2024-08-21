@@ -1,0 +1,24 @@
+LUC_Liechtensteiner_Economy_idea = {
+    icon = GFX_idea_LUC_Liechtensteiner_Economy_idea
+    enable = { always = yes }
+	political_power_gain = LUC_PolGain_Var
+	economy_cost_factor = LUC_EcoCostFac_Var
+	trade_laws_cost_factor = LUC_TradeCostFac_Var
+	local_building_slots_factor = LUC_BuildSlotFac_Var
+	consumer_goods_factor = LUC_ConGoodsFac_Var
+	trade_opinion_factor = LUC_TradeOp_Var
+	local_resources_factor = LUC_ResExtraFac_Var
+	production_lack_of_resource_penalty_factor = LUC_ResPenalFac_Var
+	
+	production_speed_buildings_factor = LUC_BuildAllFac_Var
+	production_speed_arms_factory_factor = LUC_BuildArmFac_Var
+	production_speed_industrial_complex_factor = LUC_BuildCivFac_Var
+	production_speed_infrastructure_factor = LUC_BuildInfFac_Var
+	production_speed_synthetic_refinery_factor = LUC_BuildRefFac_Var
+	production_speed_rail_way_factor = LUC_BuildRailFac_Var
+	production_speed_supply_node_factor = LUC_SupplyFac_Var
+
+	industrial_capacity_factory = LUC_OutputFac_Var
+	monthly_population = LUC_PopFac_Var
+	stability_factor = LUC_StabFac_Var
+}

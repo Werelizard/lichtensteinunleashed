@@ -1,0 +1,22 @@
+technology_sharing_group = {
+
+	id = LUC_VaduzAcademy
+	name = LUC_VaduzAcademy_name
+	desc = LUC_VaduzAcademy_desc
+	picture = GFX_LUC_VaduzAcademy
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        OR = {
+			AND = {
+				original_tag = SUS
+				has_completed_focus = LUC_ExpandResearchFunding
+			}
+			NOT = {
+				has_war_with = SUS
+			}
+		}
+    }
+
+}

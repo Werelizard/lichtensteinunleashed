@@ -1,1 +1,1 @@
-SUS = "countries/Lichtenstein.txt"
+SUS = "countries/Liechtenstein.txt"

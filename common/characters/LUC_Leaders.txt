@@ -200,7 +200,7 @@ characters={
 		country_leader={
 			ideology = despotism
 			traits={  
-				LUC_Lichtenstein_Prince
+				LUC_Liechtenstein_Prince
 			}
 		}
 	}
@@ -446,7 +446,7 @@ characters={
 				LUC_Agrarian
 			}
 			available = {
-				has_completed_focus = LUC_AgriculturalIndustryFocusing
+				has_completed_focus = LUC_BeautifulValley
 			}
 		}
 	}
@@ -484,7 +484,7 @@ characters={
 				LUC_smallbuisnessadvocate
 			}
 			available = {
-				has_completed_focus = LUC_MechanicalIndustryFocusing
+				has_completed_focus = LUC_DevelopVaduz
 			}
 		}
 	}
@@ -622,7 +622,7 @@ characters={
 						has_government = communism
 					}
 				}
-				has_completed_focus = LUC_BankOfLichtenstein
+				has_completed_focus = LUC_BankOfLiechtenstein
 			}
 		}
 	}
@@ -697,7 +697,7 @@ characters={
 							has_government = democratic
 						}
 					}
-					has_completed_focus = LUC_BeginMilitarySpending
+					has_completed_focus = LUC_MilitaryBudget
 				}
 			}
 		}

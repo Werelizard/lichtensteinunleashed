@@ -4,10 +4,25 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "GER"
+		default_country = "SUS"
 		default = yes
+
+		
+		"SUS"={
+			history = SUS_GATHERING_STORM_DESC
+			ideology = democratic
+			ideas = {
+				LUC_Franz_I_idea
+				LUC_Liechtenstein_Neutrality_idea
+				LUC_Liechtensteiner_Army_idea
+			}
+			focuses = {
+				
+			}
+		}
 		
 		"FRA"={
+			minor = yes
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			available = { NOT = { has_dlc = "La Resistance" } }
@@ -23,6 +38,7 @@ bookmarks = {
 			}
 		}
 		"FRA"={
+			minor = yes
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			available = { has_dlc = "La Resistance" } 
@@ -38,6 +54,7 @@ bookmarks = {
 			}
 		}
 		"USA"={
+			minor = yes
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
@@ -52,6 +69,7 @@ bookmarks = {
 			}
 		}
 		"ENG"={
+			minor = yes
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
 			available = { has_dlc = "Man the Guns" }
@@ -67,6 +85,7 @@ bookmarks = {
 			}
 		}
 		"ENG"={
+			minor = yes
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
 			available = { NOT = { has_dlc = "Man the Guns" } }
@@ -82,6 +101,7 @@ bookmarks = {
 			}
 		}
 		"GER"={
+			minor = yes
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			available = { has_dlc = "Waking the Tiger" }
@@ -97,6 +117,7 @@ bookmarks = {
 			}
 		}
 		"GER"={
+			minor = yes
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
@@ -112,6 +133,7 @@ bookmarks = {
 			}
 		}
 		"ITA"={
+			minor = yes
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			available = { has_dlc = "By Blood Alone" }
@@ -127,6 +149,7 @@ bookmarks = {
 			}		
 		}
 		"ITA"={
+			minor = yes
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			available = { NOT = { has_dlc = "By Blood Alone" } }
@@ -142,6 +165,7 @@ bookmarks = {
 			}		
 		}
 		"JAP"={
+			minor = yes
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
@@ -156,6 +180,7 @@ bookmarks = {
 			}			
 		}
 		"SOV"={
+			minor = yes
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			available = { has_dlc = "No Step Back" }
@@ -171,6 +196,7 @@ bookmarks = {
 			}	
 		}
 		"SOV"={
+			minor = yes
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			available = { NOT = { has_dlc = "No Step Back" } }
@@ -186,9 +212,9 @@ bookmarks = {
 			}	
 		}
 
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
+		# "---"={
+		# 	history = "OTHER_GATHERING_STORM_DESC"
+		# }
 
 
 		# minors from DLC ####
@@ -759,19 +785,6 @@ bookmarks = {
 				ARG_islas_del_atlantico_sur
 				ARG_a_red_south_america
 				ARG_south_american_unity
-			}
-		}
-		"SUS"={
-			minor = yes
-			history = SUS_GATHERING_STORM_DESC
-			ideology = democratic
-			ideas = {
-				LUC_Franz_I_idea
-				LUC_Lichtenstein_Neutrality_idea
-				LUC_Lichtensteiner_Economy_idea
-			}
-			focuses = {
-				
 			}
 		}
 		effect = {
