@@ -178,7 +178,8 @@ leader_traits = {
 	# Josef Lienhardt 
 	LUC_smallbuisnessadvocate = {
 		production_speed_buildings_factor = 0.1
-		political_power_factor = 0.05
+		political_power_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.05
 	}
 	# Thomas Zwinger 
 	LUC_doctor = {

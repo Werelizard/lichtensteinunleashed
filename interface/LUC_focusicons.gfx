@@ -1,0 +1,276 @@
+spriteTypes = {
+	# Landtag Election
+	spriteType = {
+		name = "GFX_LUC_Landtag"
+		textureFile = "gfx/interface/goals/LUC_focus_LandtagElections.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_Landtag_shine"
+		textureFile = "gfx/interface/goals/LUC_focus_LandtagElections.dds"
+	}
+	###################
+	# DEMOCRATIC: ALL #
+	###################
+	spriteType = {
+		name = "GFX_LUC_LiberalVictory"
+		textureFile = "gfx/interface/goals/LUC_focus_LibConVictory.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_LiberalVictory_shine"
+		textureFile = "gfx/interface/goals/LUC_focus_LibConVictory.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ACoalitionGovernment"
+		textureFile = "gfx/interface/goals/LUC_focus_HoopCabinet.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ACoalitionGovernment_shine"
+		textureFile = "gfx/interface/goals/LUC_focus_HoopCabinet.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ARealisticGovernment"
+		textureFile = "gfx/interface/goals/LUC_focus_MarxerCabinet.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ARealisticGovernment_shine"
+		textureFile = "gfx/interface/goals/LUC_focus_MarxerCabinet.dds"
+	}
+	####################
+	# DEMOCRATIC: HOOP #
+	####################
+	
+	# Mission to germany
+	spriteType = { 
+		name = "GFX_LUC_DipMissionToGermany"
+		textureFile = "gfx/interface/goals/LUC_DiplomaticMissionToGermany.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_DipMissionToGermany_shine"
+		textureFile = "gfx/interface/goals/LUC_DiplomaticMissionToGermany.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_DipMissionToGermany_democratic"
+		textureFile = "gfx/interface/goals/LUC_DiplomaticMissionToGermany_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_DipMissionToGermany_democratic_shine"
+		textureFile = "gfx/interface/goals/LUC_DiplomaticMissionToGermany_democratic.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_DipMissionToGermany_communist"
+		textureFile = "gfx/interface/goals/LUC_DiplomaticMissionToGermany_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_DipMissionToGermany_communist_shine"
+		textureFile = "gfx/interface/goals/LUC_DiplomaticMissionToGermany_communist.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_DipMissionToGermany_fascist"
+		textureFile = "gfx/interface/goals/LUC_DiplomaticMissionToGermany_fascist.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_DipMissionToGermany_fascist_shine"
+		textureFile = "gfx/interface/goals/LUC_DiplomaticMissionToGermany_fascist.dds"
+	}
+	# German Trade
+	spriteType = { 
+		name = "GFX_LUC_GermanTradeAgreement"
+		textureFile = "gfx/interface/goals/LUC_GerTrade.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_GermanTradeAgreement_shine"
+		textureFile = "gfx/interface/goals/LUC_GerTrade.dds"
+	}
+	# German Industry
+	spriteType = { 
+		name = "GFX_LUC_GermanIndustry"
+		textureFile = "gfx/interface/goals/LUC_GerIndustry.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_GermanIndustry_shine"
+		textureFile = "gfx/interface/goals/LUC_GerIndustry.dds"
+	}
+	# Coalition Gov
+	spriteType = { 
+		name = "GFX_LUC_EmphasiseTradition"
+		textureFile = "gfx/interface/goals/LUC_EmphasiseTradition.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_EmphasiseTradition_shine"
+		textureFile = "gfx/interface/goals/LUC_EmphasiseTradition.dds"
+	}
+	# Privatisation
+	
+	spriteType = { 
+		name = "GFX_LUC_ContinuePrivatisation"
+		textureFile = "gfx/interface/goals/LUC_ContinuePrivatisation.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_ContinuePrivatisation_shine"
+		textureFile = "gfx/interface/goals/LUC_ContinuePrivatisation.dds"
+	}
+	# Lower taxes 
+	spriteType = { 
+		name = "GFX_LUC_LowerTaxes"
+		textureFile = "gfx/interface/goals/LUC_LowerTaxes.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_LowerTaxes_shine"
+		textureFile = "gfx/interface/goals/LUC_LowerTaxes.dds"
+	}
+	# Invite Investors 
+	spriteType = { 
+		name = "GFX_LUC_TaxHaven"
+		textureFile = "gfx/interface/goals/LUC_TaxInvestors.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_TaxHaven_shine"
+		textureFile = "gfx/interface/goals/LUC_TaxInvestors.dds"
+	}
+	# Ban unions 
+	spriteType = { 
+		name = "GFX_LUC_BanUnions"
+		textureFile = "gfx/interface/goals/LUC_BanUnions.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_BanUnions_shine"
+		textureFile = "gfx/interface/goals/LUC_BanUnions.dds"
+	}
+	# VBuy Swiss Weapons 
+	spriteType = { 
+		name = "GFX_LUC_PurchaseSwissWeapons"
+		textureFile = "gfx/interface/goals/LUC_BuySwissWeapons.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_PurchaseSwissWeapons_shine"
+		textureFile = "gfx/interface/goals/LUC_BuySwissWeapons.dds"
+	}
+
+	####################
+	# DEMOCRATIC: MARXER #
+	####################
+
+	#Denoucne COmmunism
+	spriteType = { 
+		name = "GFX_LUC_DenounceRedTyranny"
+		textureFile = "gfx/interface/goals/LUC_DenounceRedTyranny.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_DenounceRedTyranny_shine"
+		textureFile = "gfx/interface/goals/LUC_DenounceRedTyranny.dds"
+	}
+	# Denounce Fascims 
+	spriteType = { 
+		name = "GFX_LUC_CrackDownOnFacism"
+		textureFile = "gfx/interface/goals/LUC_DenounceFascism.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_CrackDownOnFacism_shine"
+		textureFile = "gfx/interface/goals/LUC_DenounceFascism.dds"
+	}
+	# Allow Trade unions
+	spriteType = { 
+		name = "GFX_LUC_AllowTradeUnions"
+		textureFile = "gfx/interface/goals/LUC_AllowTradeUnions.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_AllowTradeUnions_shine"
+		textureFile = "gfx/interface/goals/LUC_AllowTradeUnions.dds"
+	}
+	# Reach out to Communists
+	spriteType = { 
+		name = "GFX_LUC_MissionToSovietUnion"
+		textureFile = "gfx/interface/goals/LUC_MissionToSovietUnion.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_MissionToSovietUnion_shine"
+		textureFile = "gfx/interface/goals/LUC_MissionToSovietUnion.dds"
+	}
+	# Reach out to Democracies 
+	spriteType = { 
+		name = "GFX_LUC_TurnTowardsDemocracies"
+		textureFile = "gfx/interface/goals/LUC_TurnTowardsDemocracies.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_TurnTowardsDemocracies_shine"
+		textureFile = "gfx/interface/goals/LUC_TurnTowardsDemocracies.dds"
+	}
+
+	# Indiviudal Rights
+	
+	spriteType = { 
+		name = "GFX_LUC_GuaranteeIndividualRights"
+		textureFile = "gfx/interface/goals/LUC_GuaranteeIndividualRights.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_GuaranteeIndividualRights_shine"
+		textureFile = "gfx/interface/goals/LUC_GuaranteeIndividualRights.dds"
+	}
+
+	# Rights to vote!
+	
+	spriteType = { 
+		name = "GFX_LUC_CivicReform"
+		textureFile = "gfx/interface/goals/LUC_CivicReform.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_CivicReform_shine"
+		textureFile = "gfx/interface/goals/LUC_CivicReform.dds"
+	}
+
+	# Increase Regulations
+	
+	spriteType = { 
+		name = "GFX_LUC_IncreaseRegulation"
+		textureFile = "gfx/interface/goals/LUC_IncreaseRegulation.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_IncreaseRegulation_shine"
+		textureFile = "gfx/interface/goals/LUC_IncreaseRegulation.dds"
+	}
+
+	# Urabnise the Villages
+	
+	spriteType = { 
+		name = "GFX_LUC_AppealToFarmers"
+		textureFile = "gfx/interface/goals/LUC_AppealToFarmers.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_AppealToFarmers_shine"
+		textureFile = "gfx/interface/goals/LUC_AppealToFarmers.dds"
+	}
+
+	# Secular Education
+	
+	spriteType = { 
+		name = "GFX_LUC_SecularEducation"
+		textureFile = "gfx/interface/goals/LUC_SecularEducation.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_SecularEducation_shine"
+		textureFile = "gfx/interface/goals/LUC_SecularEducation.dds"
+	}
+
+	# National Liberalism
+	
+	spriteType = { 
+		name = "GFX_LUC_AMoralPrincipality"
+		textureFile = "gfx/interface/goals/AMoralPrincipality.dds"
+	}
+	spriteType = { 
+		name = "GFX_LUC_AMoralPrincipality_shine"
+		textureFile = "gfx/interface/goals/AMoralPrincipality.dds"
+	}
+
+	#####################
+	# SCHADLDER CABINET #
+	#####################
+	spriteType = {
+		name = "GFX_LUC_ConservativeVictory"
+		textureFile = "gfx/interface/goals/LUC_focus_VaterlandVictory.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ConservativeVictory_shine"
+		textureFile = "gfx/interface/goals/LUC_focus_VaterlandVictory.dds"
+	}
+}

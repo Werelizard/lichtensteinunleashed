@@ -153,9 +153,14 @@ LUC_neutrality_pleased = {
 			NOT = {
 				has_war_with = ROOT
 			}
-			is_major = yes
-			capital_scope = {
-				is_on_continent = europe
+			OR = {
+				AND = {
+						is_major = yes
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				is_neighbor_of = ROOT
 			}
 			OR = {
 				NOT = {

@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 100
 			tag = SUS
 		}
 	}
@@ -17,17 +17,15 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_Landtag
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_Landtag
 		cost = 1
 		x = 0
 		y = 0
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = LUC_LandtagCompleted_tt
-				always = no
-			}
+			always = no
 		}
 		completion_reward = {
+			custom_effect_tooltip = LUC_LandtagCompleted_tt
 		}
 	}
 	#####################
@@ -35,7 +33,7 @@ focus_tree = {
 	#####################
 	focus = {
 		id = LUC_LiberalVictory
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_LiberalVictory
 		cost = 1
 		relative_position_id = LUC_Landtag
 		x = -12
@@ -53,7 +51,7 @@ focus_tree = {
 		completion_reward = {
 		}
 		mutually_exclusive = {
-			focus = LUC_ConservativeVictory
+			
 		}
 	}
 	focus = {
@@ -139,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_PurchaseSwissWeapons
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_PurchaseSwissWeapons
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = 1
@@ -890,7 +888,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = LUC_PrecisionEngineeringElectronics
-				category = electronics
+				category = cat_production
 				bonus = 0.5
 				uses = 1
 			}
@@ -939,8 +937,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = LUC_electrifictionBonus
 				bonus = 1
-				uses = 1
-				category = cat_production
+				uses = 2
+				category = electronics
 			}
 		}
 		select_effect = {
@@ -1030,8 +1028,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = LUC_ModifiyEcoModifier_tt
 			custom_effect_tooltip = LUC_OutputIncrease10_tt
-			custom_effect_tooltip = LUC_MilFacIncrease5_tt
-			custom_effect_tooltip = LUC_GoodsFacIncrease10_tt
+			custom_effect_tooltip = LUC_MilFacIncrease10_tt
 			custom_effect_tooltip = LUC_ResPenIncrease10_tt
 
 			random_owned_controlled_state = {
@@ -1049,10 +1046,7 @@ focus_tree = {
 					LUC_OutputFac_Var = 0.1
 				}
 				add_to_variable = {
-					LUC_BuildArmFac_Var = 0.05					
-				}
-				add_to_variable = {
-					LUC_ConGoodsFac_Var = 0.1
+					LUC_BuildArmFac_Var = 0.1					
 				}
 				add_to_variable = {
 					LUC_ResPenalFac_Var = 0.1
@@ -1601,7 +1595,7 @@ focus_tree = {
 	#####################
 	focus = {
 		id = LUC_ACoalitionGovernment
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_ACoalitionGovernment
 		cost = 1
 		relative_position_id = LUC_LiberalVictory
 		x = 4
@@ -1627,6 +1621,7 @@ focus_tree = {
 				long_name = SUS_VPU_LONG_Coalition
 				name = SUS_VPU_Coalition
 			}
+			LUC_neutrality_pleased = yes
 		}
 		mutually_exclusive = {
 			focus = LUC_ARealisticGovernment
@@ -1634,7 +1629,34 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_DiplomaticMissionToGermany
-		icon = GFX_goal_unknown
+		dynamic = yes
+		icon = {
+			trigger = {
+				GER = {
+					has_government = democratic
+				}
+			}
+			value = GFX_LUC_DipMissionToGermany_democratic
+		}
+		icon = {
+			trigger = {
+				GER = {
+					has_government = fascism
+				}
+			}
+			value = GFX_LUC_DipMissionToGermany_fascist
+		}
+		icon = {
+			trigger = {
+				GER = {
+					has_government = communism
+				}
+			}
+			value = GFX_LUC_DipMissionToGermany_communist
+		}
+		icon = {
+			value = GFX_LUC_DipMissionToGermany
+		}
 		cost = 2
 		relative_position_id = LUC_LiberalVictory
 		x = 6
@@ -1691,7 +1713,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_GermanTradeAgreement
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_GermanTradeAgreement
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = 6
@@ -1734,7 +1756,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_EmphasiseTradition
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_EmphasiseTradition
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = 4
@@ -1760,7 +1782,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_ContinuePrivatisation
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_ContinuePrivatisation
 		cost = 5
 		relative_position_id = LUC_LiberalVictory
 		x = 5
@@ -1813,7 +1835,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_LowerTaxes
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_LowerTaxes
 		cost = 5
 		relative_position_id = LUC_LiberalVictory
 		x = 3
@@ -1851,7 +1873,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_TaxHaven
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_TaxHaven
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = 3
@@ -1894,7 +1916,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_GermanIndustry
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_GermanIndustry
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = 6
@@ -1945,7 +1967,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_BanUnions
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_BanUnions
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = 4
@@ -1972,7 +1994,7 @@ focus_tree = {
 	#####################
 	focus = {
 		id = LUC_ARealisticGovernment
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_ARealisticGovernment
 		cost = 1
 		relative_position_id = LUC_LiberalVictory
 		x = -14
@@ -1995,7 +2017,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_DenounceRedTyranny
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_DenounceRedTyranny
 		cost = 1
 		relative_position_id = LUC_LiberalVictory
 		x = -16
@@ -2048,7 +2070,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_CrackDownOnFacism
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_CrackDownOnFacism
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -15
@@ -2100,7 +2122,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_AllowTradeUnions
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_AllowTradeUnions
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -18
@@ -2128,7 +2150,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_MissionToSovietUnion
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_MissionToSovietUnion
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -18
@@ -2159,7 +2181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_TurnTowardsDemocracies
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_TurnTowardsDemocracies
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -15
@@ -2190,7 +2212,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_GuaranteeIndividualRights
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_GuaranteeIndividualRights
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -13
@@ -2216,7 +2238,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_CivicReform
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_CivicReform
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -13
@@ -2242,7 +2264,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_IncreaseRegulation
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_IncreaseRegulation
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -13
@@ -2267,7 +2289,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_AppealToFarmers
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_AppealToFarmers
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -14
@@ -2297,7 +2319,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_SecularEducation
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_SecularEducation
 		cost = 5
 		relative_position_id = LUC_LiberalVictory
 		x = -16
@@ -2320,7 +2342,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_AMoralPrincipality
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_AMoralPrincipality
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
 		x = -14
@@ -2351,7 +2373,7 @@ focus_tree = {
 	#####################
 	focus = {
 		id = LUC_ConservativeVictory
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_ConservativeVictory
 		cost = 1
 		relative_position_id = LUC_Landtag
 		x = 8
@@ -2369,7 +2391,6 @@ focus_tree = {
 		completion_reward = {
 		}
 		mutually_exclusive = {
-			focus = LUC_LiberalVictory
 		}
 	}
 	focus = {

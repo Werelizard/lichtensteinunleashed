@@ -116,7 +116,7 @@
  LUC_Hawk:0 "War Hawk"
  LUC_RearmementProponent:0 "Rearmement Proponent"
 
- # advisor Tooltips
+ # Ideology tooltips
  LUC_NOTarrestedadvisor_tt:0 "NOT: advisor was §Rarrested§!"
  LUC_DemocraticOrFascistGov_tt:0 "Has a §YDemocratic§! or §YUnaligned§! government"
  LUC_neutralityOrFascistGov_tt:0 "Has an §YUnaligned§! or §YFascist§! government"
@@ -127,6 +127,11 @@
  LUC_DemocraticGov_tt:0 "Has a §YDemocratic§! government"
  LUC_DemocraticOrCommunistGov_tt:0 "Has a §YDemocratic§! or §YCommunist§! government"
  LUC_notDemocraticGov_tt:0 "NOT: Has a §YDemocratic§! government"
+
+ LUC_FascistParty:0 "§FFascist§!"
+ LUC_CommunistParty:0 "§SCommunist§!"
+ LUC_NeutralityParty:0 "§NUnaligned§!"
+ LUC_DemocraticParty:0 "§DDemocratic§!"
 
  # Ideas - Base
  LUC_Liechtenstein_Neutrality_idea:0 "Liechtensteiner Neutrality"

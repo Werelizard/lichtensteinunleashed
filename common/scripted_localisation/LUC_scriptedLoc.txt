@@ -1,0 +1,30 @@
+defined_text = { # Country
+	name = LUC_GetGermanyRulingParty
+	text = {
+		trigger = {
+			GER = {
+				has_government = fascism
+			}
+		}
+		localization_key = LUC_FascistParty
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_government = communism
+			}
+		}
+		localization_key = LUC_CommunistParty
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_government = neutrality
+			}
+		}
+		localization_key = LUC_NeutralityParty
+	}
+	text = {
+		localization_key = LUC_DemocraticParty
+	}
+}

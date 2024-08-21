@@ -1,12 +1,12 @@
 ﻿l_english:
- LUC_Landtag:0 "The 1936 Landtag"
+ LUC_Landtag:0 "A Democratic Governance"
  LUC_Landtag_desc:0 ""
- LUC_LandtagCompleted_tt:0 "§LThis focus will be automatically completed once the 1936 elections have been held.§!"
+ LUC_LandtagCompleted_tt:0 "§LThis focus will be automatically completed once the [GetYear] elections have been held.§!"
 
  # Democratic Branches - Common
- LUC_LiberalVictory:0 "A Liberal-Conservative Cabinet"
+ LUC_LiberalVictory:0 "A Liberal-Conservative Government"
  LUC_LiberalVictory_decs:0 ""
- LUC_LiberalVictory_unlocked_tt:0 "Josef Hoop has retained the Landtag's confidence in the 1936 election."
+ LUC_LiberalVictory_unlocked_tt:0 "Josef Hoop has retained the Landtag's confidence in the [GetYear] election."
 
  LUC_InvestigateFascists:0 "Investigate the Military Movement"
  LUC_InvestigateFascists_desc:0 ""
@@ -60,7 +60,7 @@
  LUC_HealthcareReform:0 "Healthcare Expansion"
  LUC_HealthcareReform_desc:0 ""
 
- LUC_BeautifulValley:0 "A Picturesque Countryside"
+ LUC_BeautifulValley:0 "Limited Industrialisation"
  LUC_BeautifulValley_desc:0 ""
 
  LUC_WelfareState:0 "A Welfare State"
@@ -94,7 +94,7 @@
 
  LUC_AbandonNeutrality:0 "Discard Neutrality"
  LUC_AbandonNeutrality_desc:0 ""
- LUC_HasAtLeast40WarSupport_tt:0 "War Support is at least §Y50.0%§!"
+ LUC_HasAtLeast50WarSupport_tt:0 "War Support is at least §Y50.0%§!"
  LUC_NoDemocraticCountriesAroundUs_tt:0 "No neighbouring country has a §DDemocratic§! government"
 
  LUC_ModernisedWeaponry:0 "Modernised Equipment"
@@ -111,18 +111,18 @@
  LUC_LiberateGermany_desc:0 ""
  LUC_LiberateGermany_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to core German, Dutch, Swiss and Austrian states in Europe - if their respective governments are not democratic"
 
- LUC_StandWithGermany:0 "Together Against Tyranny"
+ LUC_StandWithGermany:0 "A Greater Democratic Alliance"
  LUC_StandWithGermany_desc:0 ""
- LUC_StandWithGermany_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to attack non-democratic states in Europe"
+ LUC_StandWithGermany_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to attack non-democratic countries in Europe"
 
  # Coalition Government
 
- LUC_ACoalitionGovernment:0 "A Sensible Government"
+ LUC_ACoalitionGovernment:0 "A Conservative Minister"
  LUC_ACoalitionGovernment_desc:0 ""
 
  LUC_DiplomaticMissionToGermany:0 "Diplomatic Mission to Germany"
  LUC_DiplomaticMissionToGermany_desc:0 ""
- LUC_DiplomaticMissionToGermany_effect_tt:0 "Our diplomatic overtures have a higher chance to succeed if:\n- [GER.GetNameDefCap] has a high opinion of us\n- We have not completed the §Y'$LUC_InvestigateFascists$'§! focus\n- The §Y[GER.GetRulingIdeology]§!'s party popularity in [ROOT.GetName]\n- [GER.GetNameDefCap] is at peace"
+ LUC_DiplomaticMissionToGermany_effect_tt:0 "Our diplomatic overtures have a higher chance to succeed depending on several factors:\n- Whether [GER.GetNameDefCap] has a high opinion of us\n- We have not completed the §Y'$LUC_InvestigateFascists$'§! focus\n- The [LUC_GetGermanyRulingParty]'s party popularity in [ROOT.GetName]\n- Whether [GER.GetNameDefCap] is at peace"
  LUC_DiplomaticMissionToGermany_effect_acepted_tt:0 "\nIf they §Gaccept§!:"
  LUC_DiplomaticMissionToGermany_effect_refusal_tt:0 "\nIf they §trefuse§!:"
 
@@ -151,7 +151,7 @@
 
  # Liberal Government
 
- LUC_ARealisticGovernment:0 "A Realistic Government"
+ LUC_ARealisticGovernment:0 "A Realistic Minister"
  LUC_ARealisticGovernment_desc:0 ""
 
  LUC_DenounceRedTyranny:0 "Denounce Red Tyranny"
@@ -192,7 +192,7 @@
  LUC_AMoralPrincipality_desc:0 ""
 
  #Authoritarian Branch
- LUC_ConservativeVictory:0 "The Schaedler Government"
+ LUC_ConservativeVictory:0 "A Populist Government"
  LUC_ConservativeVictory_desc:0 ""
  LUC_ConservativeVictory_unlocked_tt:0 "Otto Schaedler was appointed as prime minister by the Landtag."
 
@@ -260,6 +260,7 @@
  LUC_unlockADvisor:0 "Will be available as a political advisor:\n"
  LUC_hasAFieldMarshall_tt:0 "Has a §YField Marshall§!"
  LUC_ModifiyEcoModifier_tt:0 "Modify §Y$LUC_Liechtensteiner_Economy_idea$§! by\n"
+
 
  LUC_GoodsFacIncrease10_tt:0 "Consumer Goods Factories factor: §Y+10.0%§!"
  LUC_MilFacIncrease10_tt:0 "§YMilitary Factory§! construction speed: §G+10.0%§!"
