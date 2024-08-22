@@ -56,13 +56,13 @@
  LUC_LightIndustry:0 "Light Industry Developments"
  LUC_LightIndustry_desc:0 ""
 
- LUC_CarIndustry:0 "A Native Licthensteiner Industry"
+ LUC_CarIndustry:0 "A Homegrown Vehicular Industry"
  LUC_CarIndustry_desc:0 ""
 
  LUC_Tourism:0 "Alpine Resorts"
  LUC_Tourism_desc:0 ""
 
- LUC_HealthcareReform:0 "Healthcare Expansion"
+ LUC_HealthcareReform:0 "Universal Healthcare"
  LUC_HealthcareReform_desc:0 ""
 
  LUC_BeautifulValley:0 "Limited Industrialisation"
@@ -302,3 +302,4 @@
  LUC_StabilityDecrease10_tt:0 "Stability: §R-10.0%§!"
  LUC_ProductionEfficiencyIncrease6_tt:0 "Production Efficiency Growth: §G+6.00%§!"
  LUC_ProductionBaseDecrease2_tt:0 "Production Efficiency Base: §R-2.00%§!"
+ LUC_ConGoodsDecrease10_tt:0 "Consumer Goods Factories factor: §Y-10.0%§!"

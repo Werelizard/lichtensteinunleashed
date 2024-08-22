@@ -76,27 +76,27 @@ focus_tree = {
 			focus = LUC_NationallistCollaboration
 		}
 	}
-	# focus = {
-	# 	id = LUC_WelcomeRefugees		#TBD - EVENT
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_Landtag
-	# 	x = -5
-	# 	y = 2
-	# 	prerequisite = {
-	# 		focus = LUC_LiberalVictory
-	# 		focus = LUC_ConservativeVictory
-	# 	}
-	# 	available = {
-	# 		NOT = {
-	# 			has_government = fascism
-	# 		}
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
+	focus = {
+		id = LUC_WelcomeRefugees		#TBD - EVENT
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_Landtag
+		x = -5
+		y = 2
+		prerequisite = {
+			focus = LUC_LiberalVictory
+			focus = LUC_ConservativeVictory
+		}
+		available = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+		completion_reward = {
+		}
+		mutually_exclusive = {
+		}
+	}
 	focus = {
 		id = LUC_PoliceExpansion
 		icon = GFX_LUC_PoliceExpansion
@@ -623,7 +623,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_CarIndustry
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_CarIndustry
 		cost = 4
 		relative_position_id = LUC_MilitaryDisarmement
 		x = 3
@@ -674,7 +674,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_Tourism
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_Tourism
 		cost = 4
 		relative_position_id = LUC_MilitaryDisarmement
 		x = 2
@@ -703,7 +703,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 2
+				level = 1
 			}
 			add_ideas = LUC_Liechtenstein_Toursim_idea
 		}
@@ -719,7 +719,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_HealthcareReform
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_HealthcareReform
 		cost = 4
 		relative_position_id = LUC_MilitaryDisarmement
 		x = 4
@@ -761,7 +761,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_BeautifulValley
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_BeautifulValley
 		cost = 5
 		relative_position_id = LUC_MilitaryDisarmement
 		x = 1
@@ -791,8 +791,7 @@ focus_tree = {
 			custom_effect_tooltip = LUC_PolIncrease2_tt
 			custom_effect_tooltip = LUC_PopIncrease20_tt
 			custom_effect_tooltip = LUC_StabilityIncrease20_tt
-			custom_effect_tooltip = LUC_OutputDecrease5_tt
-			custom_effect_tooltip = LUC_ConGoodsDecrease5_tt
+			custom_effect_tooltip = LUC_ConGoodsDecrease10_tt
 
 			hidden_effect = {
 				add_to_variable = {
@@ -805,10 +804,7 @@ focus_tree = {
 					LUC_StabFac_Var = 0.2
 				}
 				add_to_variable = {
-					LUC_OutputFac_Var = -0.05
-				}
-				add_to_variable = {
-					LUC_ConGoodsFac_Var = -0.05
+					LUC_ConGoodsFac_Var = -0.1
 				}
 			}
 		}
@@ -825,7 +821,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_WelfareState
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_WelfareState
 		cost = 4
 		relative_position_id = LUC_MilitaryDisarmement
 		x = 4
@@ -866,7 +862,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_ExpandResearchFunding
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_ExpandResearchFunding
 		cost = 4
 		relative_position_id = LUC_MilitaryDisarmement
 		x = 5
@@ -907,7 +903,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_PrecisionEngineering
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_PrecisionEngineering
 		cost = 4
 		relative_position_id = LUC_MilitaryDisarmement
 		x = 5
@@ -963,7 +959,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_RequestLicenses
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_RequestLicenses
 		cost = 4
 		relative_position_id = LUC_MilitaryDisarmement
 		x = 6
@@ -1025,7 +1021,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 2
+				level = 1
 			}
 			add_tech_bonus = {
 				name = LUC_electrifictionBonus
@@ -1079,7 +1075,7 @@ focus_tree = {
 			show_ideas_tooltip = LUC_MartinLanter
 			add_offsite_building = {
 				type = arms_factory
-				level = 2
+				level = 1
 			}
 			luc_break_of_neutrality_warning = yes
 		}

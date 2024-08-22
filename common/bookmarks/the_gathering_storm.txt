@@ -17,7 +17,7 @@ bookmarks = {
 				LUC_Liechtensteiner_Army_idea
 			}
 			focuses = {
-				
+				LUC_GermanLiberators
 			}
 		}
 		

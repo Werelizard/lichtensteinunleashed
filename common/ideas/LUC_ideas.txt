@@ -204,7 +204,6 @@ ideas = {
 				custom_modifier_tooltip = LUC_Liechtenstein_Toursim_idea_tt
 			}
 			allowed = {
-				has_government = democratic
 				NOT = {
 					has_war = yes
 				}

@@ -259,6 +259,79 @@ spriteTypes = {
 		name = "GFX_LUC_LightIndustry_shine"
 		textureFile = "gfx/interface/goals/LUC_LightIndustry.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_LUC_BeautifulValley"
+		textureFile = "gfx/interface/goals/LUC_BeautifulValley.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_BeautifulValley_shine"
+		textureFile = "gfx/interface/goals/LUC_BeautifulValley.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ExpandResearchFunding"
+		textureFile = "gfx/interface/goals/LUC_ExpandResearchFunding.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExpandResearchFunding_shine"
+		textureFile = "gfx/interface/goals/LUC_ExpandResearchFunding.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_PrecisionEngineering"
+		textureFile = "gfx/interface/goals/LUC_PrecisionEngineering.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_PrecisionEngineering_shine"
+		textureFile = "gfx/interface/goals/LUC_PrecisionEngineering.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_CarIndustry"
+		textureFile = "gfx/interface/goals/LUC_CarIndustry.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_CarIndustry_shine"
+		textureFile = "gfx/interface/goals/LUC_CarIndustry.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_RequestLicenses"
+		textureFile = "gfx/interface/goals/LUC_RequestLicenses.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_RequestLicenses_shine"
+		textureFile = "gfx/interface/goals/LUC_RequestLicenses.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_Tourism"
+		textureFile = "gfx/interface/goals/LUC_Tourism.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_Tourism_shine"
+		textureFile = "gfx/interface/goals/LUC_Tourism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_HealthcareReform"
+		textureFile = "gfx/interface/goals/LUC_HealthcareReform.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_HealthcareReform_shine"
+		textureFile = "gfx/interface/goals/LUC_HealthcareReform.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_WelfareState"
+		textureFile = "gfx/interface/goals/LUC_WelfareState.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_WelfareState_shine"
+		textureFile = "gfx/interface/goals/LUC_WelfareState.dds"
+	}
+
 	####################
 	# DEMOCRATIC: HOOP #
 	####################
