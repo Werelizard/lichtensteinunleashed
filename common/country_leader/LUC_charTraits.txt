@@ -171,9 +171,9 @@ leader_traits = {
 	}
 	# Gustav Vogt 
 	LUC_IndustrialMagnate = {
-		production_speed_arms_factory_factor = 0.1
-		industrial_capacity_factory = 0.1
-		local_resources_factor = 0.1
+		production_speed_industrial_complex_factor = 0.05
+		industrial_capacity_factory = 0.05
+		political_power_gain = -0.175
 	}
 	# Josef Lienhardt 
 	LUC_smallbuisnessadvocate = {

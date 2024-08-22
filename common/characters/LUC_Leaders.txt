@@ -465,7 +465,7 @@ characters={
 				LUC_IndustrialMagnate
 			}
 			available = {
-				has_completed_focus = LUC_IndustryState
+				has_completed_focus = LUC_ExperimentalResearch
 			}
 		}
 	}
@@ -484,7 +484,7 @@ characters={
 				LUC_smallbuisnessadvocate
 			}
 			available = {
-				has_completed_focus = LUC_DevelopVaduz
+				has_completed_focus = LUC_LightIndustry
 			}
 		}
 	}

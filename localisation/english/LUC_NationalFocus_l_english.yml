@@ -45,13 +45,18 @@
  LUC_ExperimentalResearch:0 "Adress the Oil Issue"
  LUC_ExperimentalResearch_desc:0 ""
 
- LUC_Autarky:0 "A Self-Sufficient Industry"
+ LUC_Autarky:0 "Heavy Industry Focus"
  LUC_Autarky_desc:0 ""
+ LUC_ExperimentalResearch_tt:0 "If we have already researched §YSyntehtic Oil Experiments§!, we will gain §Y1§! offmap synthetic factory. Otherwise, we will gain a §Y1x§! §G100%§! research bonus for: §YSyntethic Materials§!."
 
- LUC_DevelopVaduz:0 "Light Industry Developments"
- LUC_DevelopVaduz_desc:0 ""
+ LUC_NationalDefenseFund:0 "Nationaler Verteidigungsfonds"
+ LUC_NationalDefenseFund_desc:0 ""
+ LUC_atLeast100PolPower_tt:0 "At least §Y100§! political power"
 
- LUC_CarIndustry:0 "Open the Tractor Factories"
+ LUC_LightIndustry:0 "Light Industry Developments"
+ LUC_LightIndustry_desc:0 ""
+
+ LUC_CarIndustry:0 "A Native Licthensteiner Industry"
  LUC_CarIndustry_desc:0 ""
 
  LUC_Tourism:0 "Alpine Resorts"
@@ -72,7 +77,10 @@
 
  LUC_PrecisionEngineering:0 "Invest in Precision Engineering"
  LUC_PrecisionEngineering_desc:0 ""
- LUC_PrecisionEngineering_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to gain §Yindustrial capacity§!, increase our §Yproduction§! or to gain §Ypolitical power§!."
+
+ LUC_RequestLicenses:0 "Secure International Expertise"
+ LUC_RequestLicenses_desc:0 ""
+ LUC_RequestLicenses_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to upgrade our §Yindustrial concerns§!."
 
  LUC_ElectrificationEfforts:0 "Construct the Lawena Power Station"
  LUC_ElectrificationEfforts_desc:0 ""
@@ -83,12 +91,15 @@
  LUC_MilitaryIndustry:0 "The [Root.GetAdjective] War Economy"
  LUC_MilitaryIndustry_desc:0 ""
 
- LUC_PoliticalUnity:0 "Petition the Landtag"
+ LUC_PoliticalUnity:0 "Form an Emergency Government"
  LUC_PoliticalUnity_desc:0 ""
  LUC_hasUnityGovernment_tt:0 "We've secured the Landtag's support"
 
  LUC_CivilPreparations:0 "Civilian Drills"
  LUC_CivilPreparations_desc:0 ""
+
+ LUC_WomenAuxiliary:0 "The Women's Auxiliary"
+ LUC_WomenAuxiliary_desc:0 ""
 
  LUC_AStandingArmy:0 "A Standing Army"
  LUC_AStandingArmy_desc:0 ""
@@ -110,11 +121,15 @@
 
  LUC_LiberateGermany:0 "A Reich no More!"
  LUC_LiberateGermany_desc:0 ""
- LUC_LiberateGermany_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to core German, Dutch, Swiss and Austrian states in Europe - if their respective governments are not democratic"
+ LUC_LiberateGermany_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to core German, Dutch, Swiss and Austrian states in Europe - if their respective governments are not §Ddemocratic§!"
 
  LUC_StandWithGermany:0 "A Greater Democratic Alliance"
  LUC_StandWithGermany_desc:0 ""
  LUC_StandWithGermany_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to attack non-democratic countries in Europe"
+
+ LUC_GermanLiberators:0 "Rebuild Germanic Identity"
+ LUC_GermanLiberators_desc:0 ""
+ LUC_GermanLiberators_tt:0 "Add §Y$LUC_GermanicLiberators$§!, which grants when dealing with @GER §Y[GER.GetNameDefCap]§!, @SWI §Y[SWI.GetNameDefCap]§!, @AUS §Y[AUS.GetNameDefCap]§! and @HOL §Y[HOL.GetNameDefCap]§!:\nDaily Compliance Gain: §G+0.10%§!"
 
  # Coalition Government
 
@@ -264,6 +279,7 @@
 
 
  LUC_GoodsFacIncrease10_tt:0 "Consumer Goods Factories factor: §Y+10.0%§!"
+ LUC_GoodsFacIncrease5_tt:0 "Consumer Goods Factories factor: §Y+5.0%§!"
  LUC_MilFacIncrease10_tt:0 "§YMilitary Factory§! construction speed: §G+10.0%§!"
  LUC_CivFacDecrease10_tt:0 "§YCivilian Factory§! construction speed: §R-10.0%§!"
  LUC_PolIncrease2_tt:0 "Daily Political Power Gain: §G+0.25§!"
@@ -278,8 +294,11 @@
  LUC_OutputIncrease10_tt:0 "Factory Output: §G+10.00%§!"
  LUC_ResPenIncrease10_tt:0 "Lack of Ressources Penalty Factor: §R+10.0%§!"
  LUC_CivFacDecrease5_tt:0 "§YCivilian Factory§! construction speed: §R-5.0%§!"
- LUC_PopIncrease10_tt:0 "Monthly Population: §G+10.0%§!"
- LUC_StabilityIncrease10_tt:0 "Stability: §G+10.0%§!"
+ LUC_PopIncrease20_tt:0 "Monthly Population: §G+20.0%§!"
+ LUC_StabilityIncrease20_tt:0 "Stability: §G+20.0%§!"
  LUC_OutputDecrease5_tt:0 "Factory Output: §R-5.00%§!"
  LUC_BuildIncrease10_tt:0 "Construction Speed: §G+10.00%§!" 
  LUC_MilFacIncrease5_tt:0 "§YMilitary Factory§! construction speed: §G+5.0%§!"
+ LUC_StabilityDecrease10_tt:0 "Stability: §R-10.0%§!"
+ LUC_ProductionEfficiencyIncrease6_tt:0 "Production Efficiency Growth: §G+6.00%§!"
+ LUC_ProductionBaseDecrease2_tt:0 "Production Efficiency Base: §R-2.00%§!"

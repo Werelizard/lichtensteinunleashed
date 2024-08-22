@@ -182,6 +182,61 @@ spriteTypes = {
 		name = "GFX_LUC_Autarky_shine"
 		textureFile = "gfx/interface/goals/LUC_Autarky.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_LUC_WomenAuxiliary"
+		textureFile = "gfx/interface/goals/LUC_WomenAuxiliary.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_WomenAuxiliary_shine"
+		textureFile = "gfx/interface/goals/LUC_WomenAuxiliary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_NationalDefenseFund"
+		textureFile = "gfx/interface/goals/LUC_NationalDefenseFund.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NationalDefenseFund_shine"
+		textureFile = "gfx/interface/goals/LUC_NationalDefenseFund.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_AlpineFaction"
+		textureFile = "gfx/interface/goals/LUC_AlpineFaction.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AlpineFaction_shine"
+		textureFile = "gfx/interface/goals/LUC_AlpineFaction.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_LiberateGermany"
+		textureFile = "gfx/interface/goals/LUC_LiberateGermany.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_LiberateGermany_shine"
+		textureFile = "gfx/interface/goals/LUC_LiberateGermany.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_StandWithGermany"
+		textureFile = "gfx/interface/goals/LUC_StandWithGermany.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_StandWithGermany_shine"
+		textureFile = "gfx/interface/goals/LUC_StandWithGermany.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_GermanLiberators"
+		textureFile = "gfx/interface/goals/LUC_GermanLiberators.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_GermanLiberators_shine"
+		textureFile = "gfx/interface/goals/LUC_GermanLiberators.dds"
+	}
+	
 
 	####################
 	# DEMOCRATIC: NEUT #
@@ -196,6 +251,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/LUC_MilitaryDisarmement.dds"
 	}
 
+	spriteType = {
+		name = "GFX_LUC_LightIndustry"
+		textureFile = "gfx/interface/goals/LUC_LightIndustry.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_LightIndustry_shine"
+		textureFile = "gfx/interface/goals/LUC_LightIndustry.dds"
+	}
 	####################
 	# DEMOCRATIC: HOOP #
 	####################

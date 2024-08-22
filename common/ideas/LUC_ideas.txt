@@ -102,14 +102,16 @@ ideas = {
 				}
 			}
 		}
-		LUC_LiechtensteinerMilitia = {
+		LUC_LiechtensteinerMilitia_idea = {
 			modifier = {
-				conscription = 0.007
-				army_infantry_attack_factor = -0.07
+				conscription = 0.005
+				army_infantry_attack_factor = -0.04
+				stability_factor = 0.04
+				intelligence_agency_defense = 1
 			}
 			equipment_bonus = {
 				support_equipment = {
-					soft_attack = 0.1
+					soft_attack = 0.05
 				}
 			}
 		}
@@ -136,6 +138,47 @@ ideas = {
 				democratic_drift = 0.02
 				stability_factor = -0.15
 			}
+			allowed = {
+				has_government = democratic
+			}
+		}
+		
+		LUC_LiechtensteinerWomensCorps_idea = {
+			modifier = {
+				conscription = 0.005
+				army_infantry_attack_factor = -0.04
+				intelligence_agency_defense = 1
+				recruitable_population_factor = 0.08
+				experience_loss_factor = -0.05
+			}
+			equipment_bonus = {
+				support_equipment = {
+					soft_attack = 0.05
+				}
+			}
+		}
+
+		LUC_GermanicLiberators = {
+			targeted_modifier = {
+				tag = GER
+				compliance_gain = 0.1
+			}
+			targeted_modifier = {
+				tag = HOL
+				compliance_gain = 0.1
+			}
+			targeted_modifier = {
+				tag = SWI
+				compliance_gain = 0.1
+			}
+			targeted_modifier = {
+				tag = AUS
+				compliance_gain = 0.1
+			}
+			modifier = {
+	
+			}
+
 			allowed = {
 				has_government = democratic
 			}
@@ -179,9 +222,10 @@ ideas = {
 		}
 		LUC_HealthcareWelfare_idea = {
 			modifier = {
-				stability_weekly_factor = 0.005
+				stability_weekly_factor = 0.01
 				monthly_population = 0.15
 				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.03
 			}
 		}
 

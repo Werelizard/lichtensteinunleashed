@@ -194,12 +194,12 @@
  LUC_AllowTradeUnions_idea:0 "Arbeitnehmer Innenverband"
  LUC_AllowTradeUnions_idea_desc:0 ""
   
- LUC_expanded_police_idea:0 "The Landespolizei"
+ LUC_expanded_police_idea:0 "Expanded Landespolizei"
  LUC_expanded_police_idea_desc:0 ""
  LUC_PurchasingSwissWeapons_idea:0 "Focus: §Y$LUC_PurchaseSwissWeapons$§!"
  LUC_PurchasingSwissWeapons_idea_desc:0 ""
- LUC_LiechtensteinerMilitia:0 "Security Corps"
- LUC_LiechtensteinerMilitia_desc:0 ""
+ LUC_LiechtensteinerMilitia_idea:0 "The National Security Corps"
+ LUC_LiechtensteinerMilitia_idea_desc:0 ""
  LUC_Liechtensteiner_Drills_Ideas:0 "Civilian Mobilisation"
  LUC_Liechtensteiner_Drills_Ideas_desc:0 ""
  LUC_Liechtenstein_MilitantDemocracy_idea:0 "A Militant Democracy"
@@ -215,6 +215,10 @@
  LUC_Healthcare_idea_desc:0 ""
  LUC_HealthcareWelfare_idea:0 "A Welfare State"
  LUC_HealthcareWelfare_idea_desc:0 "$LUC_Healthcare_idea_desc$"
+ LUC_LiechtensteinerWomensCorps_idea:0 "$LUC_LiechtensteinerMilitia_idea$"
+ LUC_LiechtensteinerWomensCorps_idea_dec:0 ""
+ LUC_GermanicLiberators:0 "Germanic Democratisation"
+ LUC_GermanicLiberators_desc:0 ""
 
  # Inbdustrial Concerns
  LUC_Vaduz_Arsenal:0 "Vaduz Arsenal"
