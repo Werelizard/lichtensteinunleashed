@@ -997,7 +997,8 @@ country_event = {
 	id = election.1000
 	title = election.1000.title
 	desc = election.1000.desc
-	picture = GFX_report_event_election_vote
+	
+	picture = GFX_LUC_report_landtag_event
 	
 	is_triggered_only = yes
 
@@ -1054,21 +1055,6 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = LUC_SchaedlerPath_Flag
-		}
-	}
-
-	option = {
-		#No one wins
-		name = election.1000.c
-
-		complete_national_focus = LUC_Landtag
-		
-		custom_effect_tooltip = LUC_politicalInstability_tt
-
-		add_stability = -0.05
-		add_popularity = {
-			ideology = democratic
-			popularity = -0.05
 		}
 	}
 }

@@ -16,4 +16,10 @@ spriteTypes = {
 		name = "GFX_LUC_VaduzGroup"
 		texturefile = "gfx/interface/LUC_VaduzGroup.dds"
 	}
+	# Deciion cat
+	
+	spriteType = {	
+		name = "GFX_LUC_Fascist_Radicalisation_cat"
+		texturefile = "gfx/interface/decisions/LUC_Fascist_Radicalisation_cat.dds"
+	}
 }

@@ -34,7 +34,7 @@ focus_tree = {
 	focus = {
 		id = LUC_LiberalVictory
 		icon = GFX_LUC_LiberalVictory
-		cost = 1
+		cost = 2
 		relative_position_id = LUC_Landtag
 		x = -17
 		y = 1
@@ -49,10 +49,24 @@ focus_tree = {
 			has_government = democratic
 		}
 		completion_reward = {
+			effect_tooltip = {
+				country_event = {
+					id = LUC_FocusTree.200
+				}
+			}
 		}
 		mutually_exclusive = {
 			
 		}
+		select_effect = {
+			hidden_effect = {
+				country_event = {
+					id = LUC_FocusTree.200
+					days = 5
+				}
+			}
+		}
+		cancelable = no
 		offset = {
 			trigger = {
 				has_completed_focus = LUC_ARealisticGovernment

@@ -1,0 +1,34 @@
+﻿l_english:
+ radicalisation_fascist_text_short_tt: "Currently, the §FMilitary Movement§! has a popularity of [?party_popularity@fascism|%Y1]. Penalties and bonuses will increase when it passes the thresholds of §Y1%§!, §Y20%§!, §Y40%§!, §Y60%§! and §Y80%§! popularity."
+ radicalisation_fascist_text_tt:0 "[?party_popularity@fascism|%Y1]"
+ radicalisation_fascist_counter_tt:0 "The §FMilitary Movement§! is a growing and persistent threat, one which - if not handled - may find itself emboldened enough to manage a succesful §Rcoup§!! In order to efficiently counter them, we must keep the popularity of the §Y[ROOT.GetFascistParty]§! low, for the more popular it becomes, the greater the debuffs to our nation's §Ystability§! and §Ypolitical power gain§!!\n\nShall we choose to rule side by side with the §FMilitary Movement§! however, these penalties will be exchanged for bonuses - though they may yet attempt a takeover of our government..."
+
+ radicalisation_fascist_l1_tt:0 "[LUC_GetRadicalisationFascistcheckmark1]"
+ LUC_FascistUprising1_yes:0 "Level I - §RActive§!: at this level, the nationalists are considered to be a disorganised, yet present threat.\n\n§YEffects:§!\nStability: §R-5.0%§!\nPolitical Power Gain: §R-3.0%§!"
+ LUC_FascistUprising1_no:0 "Level I - §LInactive§!: at this level, the nationalists are considered to be a disorganised, yet present threat.\n\n§YEffects:§!\nStability: §R-5.0%§!\nPolitical Power Gain: §R-3.0%§!"
+ LUC_FascistCollaborators1_yes:0 "Level I - §GActive§!: at this level, the nationalists are considered to be a disorganised, yet influential political force.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.02§!\nRecruitable Population: §G+2.0%§!"
+ LUC_FascistCollaborators1_no:0 "Level I - §LInactive§!: at this level, the nationalists are considered to be a disorganised, yet influential political force.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.02§!\nRecruitable Population: §G+2.0%§!"
+
+ radicalisation_fascist_l2_tt:0 "[LUC_GetRadicalisationFascistcheckmark2]"
+ LUC_FascistUprising2_yes:0 "Level II - §RActive§!: at this level, the nationalists are considered to be a semi-organised and growing threat.\n\n§YEffects:§!\nStability: §R-10.0%§!\nPolitical Power Gain: §R-6.0%§!"
+ LUC_FascistUprising2_no:0 "Level II - §LInactive§!: at this level, the nationalists are considered to be a semi-organised and growing threat.\n\n§YEffects:§!\nStability: §R-10.0%§!\nPolitical Power Gain: §R-6.0%§!"
+ LUC_FascistCollaborators2_yes:0 "Level II - §GActive§!: at this level, the nationalists are considered to be a semi-organised paramilitary group.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.04§!\nRecruitable Population: §G+4.0%§!"
+ LUC_FascistCollaborators2_no:0 "Level II - §LInactive§!: at this level, the nationalists are considered to be a semi-organised paramilitary group.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.04§!\nRecruitable Population: §G+4.0%§!"
+
+ radicalisation_fascist_l3_tt:0 "[LUC_GetRadicalisationFascistcheckmark3]"
+ LUC_FascistUprising3_yes:0 "Level III - §RActive§!: at this level, the nationalists are considered to be a well organised and serious threat.\n\n§YEffects:§!\nStability: §R-15.0%§!\nPolitical Power Gain: §R-9.0%§!"
+ LUC_FascistUprising3_no:0 "Level III - §LInactive§!: at this level, the nationalists are considered to be a well organised and serious threat.\n\n§YEffects:§!\nStability: §R-15.0%§!\nPolitical Power Gain: §R-9.0%§!"
+ LUC_FascistCollaborators3_yes:0 "Level III - §GActive§!: at this level, the nationalists are considered to be a well organised paramilitary group.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.06§!\nRecruitable Population: §G+6.0%§!"
+ LUC_FascistCollaborators3_no:0 "Level III - §LInactive§!: at this level, the nationalists are considered to be a well organised paramilitary group.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.06§!\nRecruitable Population: §G+6.0%§!"
+
+ radicalisation_fascist_l4_tt:0 "[LUC_GetRadicalisationFascistcheckmark4]"
+ LUC_FascistUprising4_yes:0 "Level III - §RActive§!: at this level, the nationalists are considered to be a political rival, and may attempt a coup.\n\n§YEffects:§!\nStability: §R-20.0%§!\nPolitical Power Gain: §R-12.0%§!"
+ LUC_FascistUprising4_no:0 "Level III - §LInactive§!: at this level, the nationalists are considered to be a political rival, and may attempt a coup.\n\n§YEffects:§!\nStability: §R-20.0%§!\nPolitical Power Gain: §R-12.0%§!"
+ LUC_FascistCollaborators4_yes:0 "Level III - §GActive§!: at this level, the nationalists are considered to be a political rival.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.08§!\nRecruitable Population: §G+8.0%§!"
+ LUC_FascistCollaborators4_no:0 "Level III - §LInactive§!: at this level, the nationalists are considered to be a political rival.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.08§!\nRecruitable Population: §G+8.0%§!"
+
+ radicalisation_fascist_l5_tt:0 "[LUC_GetRadicalisationFascistcheckmark5]"
+ LUC_FascistUprising5_yes:0 "Level III - §RActive§!: at this level, the nationalists are considered to be the dominant political faction in our country, and will certainly attempt a coup.\n\n§YEffects:§!\nStability: §R-25.0%§!\nPolitical Power Gain: §R-15.0%§!"
+ LUC_FascistUprising5_no:0 "Level III - §LInactive§!: at this level, the nationalists are considered to be the dominant political faction in our country, and will certainly attempt a coup.\n\n§YEffects:§!\nStability: §R-25.0%§!\nPolitical Power Gain: §R-15.0%§!"
+ LUC_FascistCollaborators5_yes:0 "Level III - §GActive§!: at this level, the nationalists are considered to be a domineering political rival, and may attempt a coup.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.1§!\nRecruitable Population: §G+10.0%§!"
+ LUC_FascistCollaborators5_no:0 "Level III - §LInactive§!: at this level, the nationalists are considered to be a domineering political rival, and may attempt a coup.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.1§!\nRecruitable Population: §G+10.0%§!"

@@ -1,0 +1,27 @@
+scripted_gui = {
+	# Scripted GUI for a fascist coup IF liechtenstein isn't fascist
+    LUC_FASCISTUPRISING = {
+        window_name = "LUC_FascistUprising_ui_window"
+        context_type = decision_category
+
+        dirty = party_popularity@fascism
+        
+        properties = {
+            radicalisation_fascist_l1 = {
+                image = "[LUC_GetRadicalisationFascist1]"
+            }
+            radicalisation_fascist_l2 = {
+                image = "[LUC_GetRadicalisationFascist2]"
+            }
+            radicalisation_fascist_l3 = {
+                image = "[LUC_GetRadicalisationFascist3]"
+            }
+            radicalisation_fascist_l4 = {
+                image = "[LUC_GetRadicalisationFascist4]"
+            }
+            radicalisation_fascist_l5 = {
+                image = "[LUC_GetRadicalisationFascist5]"
+            }
+        }
+    }
+}

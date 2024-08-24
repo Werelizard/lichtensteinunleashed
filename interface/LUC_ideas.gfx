@@ -13,7 +13,7 @@ spriteTypes = {
 	}
 	spriteType = { 
 		name = "GFX_idea_LUC_Fascist_Agitators_idea"
-		texturefile = "gfx/interface/ideas/generic_fascism_drift_bonus.dds"
+		textureFile = "gfx/interface/ideas/SUS/LUC_Fascist_Agitators_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Liechtensteiner_Army_idea"

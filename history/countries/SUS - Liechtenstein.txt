@@ -115,6 +115,36 @@ add_ideas = {
 add_dynamic_modifier = {
 	modifier = LUC_Liechtensteiner_Economy_idea
 }
+add_dynamic_modifier = {
+	modifier = LUC_MIL_Movement1_idea
+}
+add_dynamic_modifier = {
+	modifier = LUC_MIL_Movement2_idea
+}
+add_dynamic_modifier = {
+	modifier = LUC_MIL_Movement3_idea
+}
+add_dynamic_modifier = {
+	modifier = LUC_MIL_Movement4_idea
+}
+add_dynamic_modifier = {
+	modifier = LUC_MIL_Movement5_idea
+}
+add_dynamic_modifier = {
+	modifier = LUC_MIL_Collab1_idea
+}
+add_dynamic_modifier = {
+	modifier = LUC_MIL_Collab2_idea
+}
+add_dynamic_modifier = {
+	modifier = LUC_MIL_Collab3_idea
+}
+add_dynamic_modifier = {
+	modifier = LUC_MIL_Collab4_idea
+}
+add_dynamic_modifier = {
+	modifier = LUC_MIL_Collab5_idea
+}
 
 # Special effects
 luc_setup_customs_union = yes

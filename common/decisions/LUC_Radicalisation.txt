@@ -1,0 +1,3 @@
+LUC_Fascist_RadicalisatioN_cat ={
+	
+}

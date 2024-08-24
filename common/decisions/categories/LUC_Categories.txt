@@ -1,0 +1,16 @@
+LUC_Fascist_RadicalisatioN_cat = {
+	icon = GFX_LUC_Fascist_Radicalisation_cat
+	scripted_gui = LUC_FASCISTUPRISING
+	visible_when_empty = yes
+	allowed = {
+		always = yes
+	}
+	visible = {
+		original_tag = SUS
+		NOT = {
+			has_government = fascism
+		}
+		has_idea = LUC_Fascist_Agitators_idea
+	}
+	priority = 2
+}

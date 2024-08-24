@@ -60,10 +60,7 @@ ideas = {
 
 		#Event-Related
 		LUC_Fascist_Agitators_idea = {
-			modifier = {
-				fascism_drift = 0.015
-				stability_weekly_factor = -0.01
-			}
+			
 		}
 		# Focus Ideas - Democratic, common, internal
 		LUC_expanded_police_idea = {

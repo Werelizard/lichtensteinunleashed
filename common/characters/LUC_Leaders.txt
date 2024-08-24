@@ -72,8 +72,9 @@ characters={
 			}
 		}
 		country_leader={
-			ideology = moderatism
+			ideology = centrism
 			traits={  
+				likes_germany
 				LUC_Germanophile
 			}
 		}
@@ -113,6 +114,7 @@ characters={
 		country_leader={
 			ideology = rexism
 			traits={  
+				likes_germany
 				LUC_PopulistFigure
 			}
 		}
@@ -185,6 +187,7 @@ characters={
 		country_leader = {
 			ideology = liberalism
 			traits = {
+				dislikes_germany
 				LUC_LiberalLawyer
 			}
 		}

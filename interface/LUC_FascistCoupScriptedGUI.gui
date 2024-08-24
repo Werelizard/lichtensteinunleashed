@@ -1,0 +1,102 @@
+guiTypes = {
+	containerWindowType = {
+		name = "LUC_FascistUprising_ui_window"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 470
+			height = 166
+		}
+
+		iconType = {
+			name = "radicalisation_fascist_counter"
+			position = {x = 150 y = 10}
+			spriteType = "GFX_LUC_radicalisation_button_base"
+			pdx_tooltip = radicalisation_fascist_text_short_tt
+			pdx_tooltip_delayed = radicalisation_fascist_counter_tt
+		}
+
+		instantTextBoxType = {
+			name = "radicalisation_fascist_text"
+			maxWidth = 100
+			maxHeight = 46
+			margin = {
+				top = 2
+				bottom = 2
+			}
+			text = radicalisation_fascist_text_tt
+			position = {x = 200 y = 16}
+			font = "hoi_30header"
+			alwaystransparent = yes
+			format = center
+		}
+
+		containerWindowType = {
+			name = "LUC_FascistUprising_ui_buttons"
+			position = {
+				x = 0
+				y = 70
+			}
+			size = {
+				width = 470
+				height = 86
+			}
+	
+
+			background = {
+				name = "Background"
+				quadTextureSprite = GFX_tiled_bg
+				size = {
+					width = 470
+					height = 76
+				}
+				position = {
+					x = 10
+					y = 0
+				}
+			}
+	
+			#Button I
+			iconType = {
+				name = "radicalisation_fascist_l1"
+				position = { x = 110 y = 20 }
+				spriteType ="GFX_LUC_radicalisation_base_1"
+				pdx_tooltip = radicalisation_fascist_l1_tt
+			}
+	
+			#Button II
+			iconType = {
+				name = "radicalisation_fascist_l2"
+				position = { x = 161 y = 20 }
+				spriteType ="GFX_LUC_radicalisation_base_2"
+				pdx_tooltip = radicalisation_fascist_l2_tt
+			}
+	
+			#Button III
+			iconType = {
+				name = "radicalisation_fascist_l3"
+				position = { x = 212 y = 20 }
+				spriteType ="GFX_LUC_radicalisation_base_3"
+				pdx_tooltip = radicalisation_fascist_l3_tt
+			}
+	
+			#Button IV
+			iconType = {
+				name = "radicalisation_fascist_l4"
+				position = { x = 263 y = 20 }
+				spriteType ="GFX_LUC_radicalisation_base_4"
+				pdx_tooltip = radicalisation_fascist_l4_tt
+			}
+	
+			#Button V
+			iconType = {
+				name = "radicalisation_fascist_l5"
+				position = { x = 314 y = 20 }
+				spriteType ="GFX_LUC_radicalisation_base_5"
+				pdx_tooltip = radicalisation_fascist_l5_tt
+			}	
+		}
+	}
+}

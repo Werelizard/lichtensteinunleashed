@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_LUC_radicalisation_button_base"
+		textureFile = "gfx/interface/radicalisation/radicalisation_button_base.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_radicalisation_base_1"
+		textureFile = "gfx/interface/radicalisation/Radical_1_Blank.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_radicalisation_base_2"
+		textureFile = "gfx/interface/radicalisation/Radical_2_Blank.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_radicalisation_base_3"
+		textureFile = "gfx/interface/radicalisation/Radical_3_Blank.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_radicalisation_base_4"
+		textureFile = "gfx/interface/radicalisation/Radical_4_Blank.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_radicalisation_base_5"
+		textureFile = "gfx/interface/radicalisation/Radical_5_Blank.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_radicalisation_fascist_1"
+		textureFile = "gfx/interface/radicalisation/Radical_1_Fascist.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_radicalisation_fascist_2"
+		textureFile = "gfx/interface/radicalisation/Radical_2_Fascist.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_radicalisation_fascist_3"
+		textureFile = "gfx/interface/radicalisation/Radical_3_Fascist.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_radicalisation_fascist_4"
+		textureFile = "gfx/interface/radicalisation/Radical_4_Fascist.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_radicalisation_fascist_5"
+		textureFile = "gfx/interface/radicalisation/Radical_5_Fascist.dds"
+	}
+}

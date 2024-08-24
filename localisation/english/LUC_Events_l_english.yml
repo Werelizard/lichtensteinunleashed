@@ -1,14 +1,25 @@
 ﻿l_english:
+ # Shared tooltips
+ LUC_Notavailable_political_advisor:0 "§RRemoves§! as §YPolitical Advisor§!:\n"
+ 
  # Election Events
  election.1000.title:0 "The Landtag Elections of [GetYear]"
  election.1000.desc:0 ""
- election.1000.a:0 "Josef Hoop has the peoples' full confidence."
- election.1000.b:0 "In a surprise move, Otto Schaedler secures the Landtag's vote!"
+ election.1000.a:0 "$LUC_JosefHoop$ and the [ROOT.GetDemocraticParty] win a narrow victory!"
+ election.1000.b:0 "In a suprise upset, $LUC_OttoSchaedler$ and the [ROOT.GetNeutralParty] ticket secures a mandate!"
  election.1000.c:0 "No party secures a majority."
  LUC_unlockLiberalMandate_tt:0 "Unlocks the \"§Y$LUC_LiberalVictory$§!\" focus."
  LUC_unlockConservativeMandate_tt:0 "Unlocks the \"§Y$LUC_ConservativeVictory$§!\" focus."
- LUC_politicalInstability_tt:0 "§RGiven the current geopolitical climate, such an outcome is likely to lead to political upheaval!§!"
 
  # Democratic Focus Related Events
+ LUC_FocusTree.200.title:0 "A Meeting at Altenbach Strasse"
+ LUC_FocusTree.200.desc:0 ""
+ LUC_FocusTree.200.a:0 "Josef Hoop retains the party's government"
+ LUC_FocusTree.200.b:0 "Marxer secures party leadership"
+ LUC_unlockJosefHoopFocus_tt:0 "Unlocks the \"§Y$LUC_ACoalitionGovernment$§!\" focus"
+ LUC_unlockLudwigMarxerFocus_tt:0 "Unlocks the v§Y$LUC_ARealisticGovernment$§!\" focus"
  
- 
+ #Military-Movement
+ LUC_Fascists.title:0 "Fascist Sympathisers amongst the Government?"
+ LUC_Fascists.desc:0 "Though Liechtenstein has - mostly - steered clear of the growing radicalisation and societal polarisation of many of its European neighbours, it is a barely concealed fact that many in Liechtensteiner government, police force and even amongst the Landtag have great admiration for Germany's government and ultranationalistic policies, seeing these as the best bulwark against both liberalism and communism.\n\nWhilst not necessarily outright disloyal to the Prince or even the state itself, these individuals' radical ideas and desire to see ourselves align with Germany are seen by our government as a threat to our stability and even our independence."
+ LUC_Fascists.a:0 "We should handle this rabble as soon as possible..."

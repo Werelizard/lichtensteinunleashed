@@ -21,51 +21,34 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # Hoop succeeds in keeping a coalition
+	picture = GFX_LUC_report_josefHoop_event
+
+	timeout_days = 7
+
+	option = { # Hoop succeeds in keeping a coalition!
 		name = LUC_FocusTree.200.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+
+		custom_effect_tooltip = LUC_unlockJosefHoopFocus_tt
 	}
 
-	option = { # Hoop fails - cabinet temporarily resigns
+	option = { # Hoop fails - Marxer Comes to Power
 		name = LUC_FocusTree.200.b
 
-		promote_character = LUC_InterimGovernment_DEM
+		promote_character = LUC_Ludwig_Marxer
+		add_political_power = -50
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+
+		custom_effect_tooltip = LUC_unlockLudwigMarxerFocus_tt
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = LUC_JosefHoop
+		custom_effect_tooltip = LUC_Notavailable_political_advisor
+		show_ideas_tooltip = LUC_Ludwig_Marxer
 	}
 }
-
-# Hoop: Hoop's Cabinet
-
-# Marxer: German Reich Concerned about Anti-German position (if Germany fascist)
-
-# Marxer: Germany welcomes Marxer (if Germany not fascist)
-
-# Hoop: Diplomatic Mission to Germany (Licihtensteiner side)
-
-# Hoop: Diplomatic Mission to Germany (German side)
-
-# Hoop: German Refuses
-
-# Hoop: German Agrees
-
-# Marxer: opposition to women serving
-
-# Farmers Complain about Trucks
-
-# Citizens Protest Re-Armement
-
-# Hoop: workers oppose trade union ban
-
-# Marxer: Mission to <country> - success
-
-# Marxer: Misison to <country> - failure
-
-# Marxer: Women push for more feminst policies
-
-# Marxer: Conservatives upset (Stab < 50%)
-
-# Marxer: Liberal policies foster innovation (if either academy or secular organistion passed)
-
-# Hoop: Stability brings peace (Stab > 50%)
-
-# Hoop: People worried about war (if not at war,a dn war happening)
-
-# Hoop: Conservative policies foster stability

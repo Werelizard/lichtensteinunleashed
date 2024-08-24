@@ -1,4 +1,4 @@
-defined_text = { # Country
+defined_text = { # For determining what is germany's party
 	name = LUC_GetGermanyRulingParty
 	text = {
 		trigger = {
@@ -26,5 +26,230 @@ defined_text = { # Country
 	}
 	text = {
 		localization_key = LUC_DemocraticParty
+	}
+}
+
+defined_text = { # Radicalisation mechanic - fascist 1
+	name = LUC_GetRadicalisationFascist1
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0
+			}
+		}
+		localization_key = "GFX_LUC_radicalisation_fascist_1"
+	}
+	text = {
+		localization_key = "GFX_LUC_radicalisation_base_1"
+	}
+}
+
+defined_text = { # Radicalisation mechanic - fascist 2
+	name = LUC_GetRadicalisationFascist2
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.2
+			}
+		}
+		localization_key = "GFX_LUC_radicalisation_fascist_2"
+	}
+	text = {
+		localization_key = "GFX_LUC_radicalisation_base_2"
+	}
+}
+
+defined_text = { # Radicalisation mechanic - fascist 3
+	name = LUC_GetRadicalisationFascist3
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.4
+			}
+		}
+		localization_key = "GFX_LUC_radicalisation_fascist_3"
+	}
+	text = {
+		localization_key = "GFX_LUC_radicalisation_base_3"
+	}
+}
+
+defined_text = { # Radicalisation mechanic - fascist 4
+	name = LUC_GetRadicalisationFascist4
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.6
+			}
+		}
+		localization_key = "GFX_LUC_radicalisation_fascist_4"
+	}
+	text = {
+		localization_key = "GFX_LUC_radicalisation_base_4"
+	}
+}
+
+defined_text = { # Radicalisation mechanic - fascist 5
+	name = LUC_GetRadicalisationFascist5
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.8
+			}
+		}
+		localization_key = "GFX_LUC_radicalisation_fascist_5"
+	}
+	text = {
+		localization_key = "GFX_LUC_radicalisation_base_5"
+	}
+}
+
+defined_text = { # Radicalisation mechanic checkmark - fascist 1
+	name = LUC_GetRadicalisationFascistcheckmark1
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0
+			}
+			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+		}
+		localization_key = LUC_FascistCollaborators1_yes
+	}
+	text = {
+		trigger = {
+			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+		}
+		localization_key = LUC_FascistCollaborators1_no
+	}
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0
+			}
+		}
+		localization_key = LUC_FascistUprising1_yes
+	}
+	text = {
+		localization_key = LUC_FascistUprising1_no
+	}
+}
+
+defined_text = { # Radicalisation mechanic checkmark - fascist 2
+	name = LUC_GetRadicalisationFascistcheckmark2
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.2
+			}
+			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+		}
+		localization_key = LUC_FascistCollaborators2_yes
+	}
+	text = {
+		trigger = {
+			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+		}
+		localization_key = LUC_FascistCollaborators2_no
+	}
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.2
+			}
+		}
+		localization_key = LUC_FascistUprising2_yes
+	}
+	text = {
+		localization_key = LUC_FascistUprising2_no
+	}
+}
+
+defined_text = { # Radicalisation mechanic checkmark - fascist 3
+	name = LUC_GetRadicalisationFascistcheckmark3
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.4
+			}
+			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+		}
+		localization_key = LUC_FascistCollaborators3_yes
+	}
+	text = {
+		trigger = {
+			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+		}
+		localization_key = LUC_FascistCollaborators3_no
+	}
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.4
+			}
+		}
+		localization_key = LUC_FascistUprising3_yes
+	}
+	text = {
+		localization_key = LUC_FascistUprising3_no
+	}
+}
+
+defined_text = { # Radicalisation mechanic checkmark - fascist 4
+	name = LUC_GetRadicalisationFascistcheckmark4
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.6
+			}
+			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+		}
+		localization_key = LUC_FascistCollaborators4_yes
+	}
+	text = {
+		trigger = {
+			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+		}
+		localization_key = LUC_FascistCollaborators4_no
+	}
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.6
+			}
+		}
+		localization_key = LUC_FascistUprising4_yes
+	}
+	text = {
+		localization_key = LUC_FascistUprising4_no
+	}
+}
+
+defined_text = { # Radicalisation mechanic checkmark - fascist 5
+	name = LUC_GetRadicalisationFascistcheckmark5
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.8
+			}
+			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+		}
+		localization_key = LUC_FascistCollaborators4_yes
+	}
+	text = {
+		trigger = {
+			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+		}
+		localization_key = LUC_FascistCollaborators4_no
+	}
+	text = {
+		trigger = {
+			SUS = {
+				fascism > 0.8
+			}
+		}
+		localization_key = LUC_FascistUprising5_yes
+	}
+	text = {
+		localization_key = LUC_FascistUprising5_no
 	}
 }

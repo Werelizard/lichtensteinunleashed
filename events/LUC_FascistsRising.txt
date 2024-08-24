@@ -10,6 +10,8 @@ country_event = {
 	title = LUC_Fascists.title
 	desc = LUC_Fascists.desc
 
+	picture = GFX_report_event_SWI_soldier_gathering
+
 	trigger = {
 		original_tag = SUS
 		NOT = {
@@ -26,8 +28,13 @@ country_event = {
 
 	option = {
 		name = LUC_Fascists.a
-
-		add_stability = -0.02
+		
 		add_ideas = LUC_Fascist_Agitators_idea
+		unlock_decision_category_tooltip = LUC_Fascist_RadicalisatioN_cat
+		add_stability = -0.02
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
 	}
 }

@@ -8,3 +8,15 @@
  LUC_DENOUNCEDFASCISM:0 "Denounced Fascism"
  LUC_ANGEREDOVERNEUTRALITY:0 "Breach of Neutrality"
  LUC_PLEASEDBYNEUTRALITY:0 "Pleased"
+
+ #Military Movement
+ LUC_MIL_Movement1_idea:0 "Military Movement Influence"
+ LUC_MIL_Movement2_idea:0 "Military Movement Influence"
+ LUC_MIL_Movement3_idea:0 "Military Movement Influence"
+ LUC_MIL_Movement4_idea:0 "Military Movement Influence"
+ LUC_MIL_Movement5_idea:0 "Military Movement Influence"
+ LUC_MIL_Collab1_idea:0 "Military Movement Influence"
+ LUC_MIL_Collab2_idea:0 "Military Movement Influence"
+ LUC_MIL_Collab3_idea:0 "Military Movement Influence"
+ LUC_MIL_Collab4_idea:0 Military Movement Influence""
+ LUC_MIL_Collab5_idea:0 "Military Movement Influence"
