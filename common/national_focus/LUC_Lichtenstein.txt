@@ -36,7 +36,7 @@ focus_tree = {
 		icon = GFX_LUC_LiberalVictory
 		cost = 1
 		relative_position_id = LUC_Landtag
-		x = -12
+		x = -17
 		y = 1
 		prerequisite = {
 			focus = LUC_Landtag
@@ -53,21 +53,61 @@ focus_tree = {
 		mutually_exclusive = {
 			
 		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ARealisticGovernment
+				NOT = {
+					has_completed_focus = LUC_MilitaryRearmement
+				}
+			}
+			x = 4
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = 9
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+			x = 7
+		}
 	}
 	focus = {
 		id = LUC_InvestigateFascists		#TBD - EVENT
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_InvestigateFascists
 		cost = 1
 		relative_position_id = LUC_Landtag
-		x = 2
+		x = 4
 		y = 2
 		prerequisite = {
 			focus = LUC_LiberalVictory
 			focus = LUC_ConservativeVictory
 		}
 		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
 			NOT = {
-				has_government = fascism
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
 			}
 		}
 		completion_reward = {
@@ -78,18 +118,36 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_WelcomeRefugees		#TBD - EVENT
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_WelcomeRefugees
 		cost = 1
 		relative_position_id = LUC_Landtag
-		x = -5
+		x = -4
 		y = 2
 		prerequisite = {
 			focus = LUC_LiberalVictory
 			focus = LUC_ConservativeVictory
 		}
 		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
 			NOT = {
-				has_government = fascism
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
 			}
 		}
 		completion_reward = {
@@ -102,7 +160,7 @@ focus_tree = {
 		icon = GFX_LUC_PoliceExpansion
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
-		x = -11
+		x = -6
 		y = 2
 		prerequisite = {
 			focus = LUC_ACoalitionGovernment
@@ -134,13 +192,51 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = -9
+		}
+		offset = {
+			trigger = {
+				OR = {
+					AND = {
+						has_completed_focus = LUC_ACoalitionGovernment
+						OR = {
+							has_completed_focus = LUC_MilitaryDisarmement
+							has_completed_focus = LUC_MilitaryRearmement
+						}
+					}	
+					AND = {
+						has_completed_focus = LUC_MilitaryRearmement
+						has_completed_focus = LUC_ARealisticGovernment
+					}
+				}
+			}
+			x = 4
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+				has_completed_focus = LUC_MilitaryRearmement
+			}
+			x = 2
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ARealisticGovernment
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
+			x = 5
+		}
 	}
 	focus = {
 		id = LUC_PurchaseSwissWeapons
 		icon = GFX_LUC_PurchaseSwissWeapons
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
-		x = 1
+		x = 6
 		y = 2
 		prerequisite = {
 			focus = LUC_ACoalitionGovernment
@@ -198,13 +294,26 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = -9
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+				has_completed_focus = LUC_MilitaryRearmement
+			}
+			x = -3
+		}
 	}
 	focus = {
 		id = LUC_ALiechtensteinerMilitia
 		icon = GFX_LUC_ALiechtensteinerMilitia
 		cost = 4
 		relative_position_id = LUC_LiberalVictory
-		x = -11
+		x = -6
 		y = 3
 		prerequisite = {
 			focus = LUC_PoliceExpansion
@@ -241,15 +350,48 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = -9
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+				has_completed_focus = LUC_MilitaryRearmement
+			}
+			x = 6
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+			x = 4
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
+			x = 4
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ARealisticGovernment
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
+			x = 5
+		}
 	}
-
 
 	focus = {
 		id = LUC_MilitaryRearmement
 		icon = GFX_LUC_MilitaryRearmement
 		cost = 2
 		relative_position_id = LUC_LiberalVictory
-		x = -6
+		x = -1
 		y = 2
 		prerequisite = {
 			focus = LUC_ARealisticGovernment
@@ -285,6 +427,7 @@ focus_tree = {
 				add_to_variable = {
 					LUC_BuildCivFac_Var = -0.1
 				}
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 		select_effect = {
@@ -295,6 +438,31 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = LUC_MilitaryDisarmement
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = -9
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = 6
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+			x = 4
+		}
 	}
 
 	focus = {
@@ -302,7 +470,7 @@ focus_tree = {
 		icon = GFX_LUC_MilitaryDisarmement
 		cost = 2
 		relative_position_id = LUC_LiberalVictory
-		x = -4
+		x = 1
 		y = 2
 		prerequisite = {
 			focus = LUC_ARealisticGovernment
@@ -337,6 +505,7 @@ focus_tree = {
 				add_to_variable = {
 					LUC_ConGoodsFac_Var = -0.05
 				}
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 		select_effect = {
@@ -347,6 +516,24 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = LUC_MilitaryRearmement
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
+			}
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = -9
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ARealisticGovernment
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
+			x = 1
+		}
 	}
 
 	focus = {
@@ -354,7 +541,7 @@ focus_tree = {
 		icon = GFX_LUC_MilitaryResearch
 		cost = 3
 		relative_position_id = LUC_LiberalVictory
-		x = -5
+		x = 0
 		y = 3
 		prerequisite = {
 			focus = LUC_MilitaryDisarmement
@@ -386,6 +573,33 @@ focus_tree = {
 		mutually_exclusive = {
 			
 		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = -9
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = 6
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+			x = 4
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ARealisticGovernment
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
+			x = 1
+		}
 	}
 
 	
@@ -393,9 +607,9 @@ focus_tree = {
 		id = LUC_ExperimentalResearch
 		icon = GFX_LUC_ExperimentalResearch
 		cost = 3
-		relative_position_id = LUC_MilitaryDisarmement
-		x = -1
-		y = 3
+		relative_position_id = LUC_LiberalVictory
+		x = 0
+		y = 5
 		prerequisite = {
 			focus = LUC_ElectrificationEfforts
 			focus = LUC_MilitaryBudget
@@ -451,15 +665,42 @@ focus_tree = {
 		mutually_exclusive = {
 			
 		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = -9
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = 6
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+			x = 4
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ARealisticGovernment
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
+			x = 1
+		}
 	}
 
 	focus = {
 		id = LUC_Autarky
 		icon = GFX_LUC_Autarky
 		cost = 5
-		relative_position_id = LUC_MilitaryDisarmement
-		x = -1
-		y = 4
+		relative_position_id = LUC_LiberalVictory
+		x = 0
+		y = 6
 		prerequisite = {
 			focus = LUC_ExperimentalResearch
 		}
@@ -515,15 +756,42 @@ focus_tree = {
 			focus = LUC_BeautifulValley
 			focus = LUC_MilitaryIndustry
 		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = -9
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = 6
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+			x = 4
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ARealisticGovernment
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
+			x = 1
+		}
 	}
 
 	focus = {
 		id = LUC_NationalDefenseFund
 		icon = GFX_LUC_NationalDefenseFund
 		cost = 3
-		relative_position_id = LUC_MilitaryDisarmement
-		x = -1
-		y = 5
+		relative_position_id = LUC_LiberalVictory
+		x = 0
+		y = 7
 		prerequisite = {
 			focus = LUC_Autarky
 		}
@@ -548,11 +816,10 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = LUC_ModifiyEcoModifier_tt
 			custom_effect_tooltip = LUC_StabilityDecrease10_tt
-			custom_effect_tooltip = LUC_MilFacIncrease5_tt
-			luc_break_of_neutrality_warning = yes
+			custom_effect_tooltip = LUC_ConvertFacDecrease15_tt
 			hidden_effect = {
 				add_to_variable = {
-					LUC_BuildArmFac_Var = 0.05
+					LUC_ConvertFac_Var = -0.15
 				}
 				add_to_variable = {
 					LUC_StabFac_Var = -0.1
@@ -566,6 +833,33 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = -9
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = 6
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+			x = 4
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ARealisticGovernment
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
+			x = 1
 		}
 	}
 
@@ -619,6 +913,11 @@ focus_tree = {
 		mutually_exclusive = {
 			
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
+			}
+		}
 	}
 
 	focus = {
@@ -670,6 +969,11 @@ focus_tree = {
 		mutually_exclusive = {
 			
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
+			}
+		}
 	}
 
 	focus = {
@@ -715,6 +1019,11 @@ focus_tree = {
 		mutually_exclusive = {
 			
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
+			}
+		}
 	}
 
 	focus = {
@@ -756,6 +1065,11 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
+			}
 		}
 	}
 
@@ -817,6 +1131,11 @@ focus_tree = {
 			focus = LUC_Autarky
 			focus = LUC_MilitaryIndustry
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
+			}
+		}
 	}
 
 	focus = {
@@ -858,6 +1177,11 @@ focus_tree = {
 		mutually_exclusive = {
 			
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
+			}
+		}
 	}
 
 	focus = {
@@ -898,6 +1222,11 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
+			}
 		}
 	}
 
@@ -955,41 +1284,10 @@ focus_tree = {
 		mutually_exclusive = {
 			
 		}
-	}
-
-	focus = {
-		id = LUC_RequestLicenses
-		icon = GFX_LUC_RequestLicenses
-		cost = 4
-		relative_position_id = LUC_MilitaryDisarmement
-		x = 6
-		y = 5
-		prerequisite = {
-			focus = LUC_PrecisionEngineering
-		}
-		prerequisite = {
-			focus = LUC_TaxHaven
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
 			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_ideas = export_focus
-			custom_effect_tooltip = LUC_RequestLicenses_tt
-		}
-		select_effect = {
-			
-		}
-		cancel_effect = {
-		}
-		mutually_exclusive = {
-			
 		}
 	}
 
@@ -1037,6 +1335,11 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
+			}
 		}
 	}
 
@@ -1230,46 +1533,6 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_ideas = LUC_Liechtensteiner_Drills_Ideas
-		}
-		select_effect = {
-			
-		}
-		cancel_effect = {
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_WomenAuxiliary
-		icon = GFX_LUC_WomenAuxiliary
-		cost = 4
-		relative_position_id = LUC_MilitaryRearmement
-		x = -5
-		y = 3
-		prerequisite = {
-			focus = LUC_CivilPreparations
-		}
-		prerequisite = {
-			focus = LUC_CivicReform
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = LUC_LiechtensteinerMilitia_idea
-				add_idea = LUC_LiechtensteinerWomensCorps_idea
-			}
-			set_rule = {
-				can_generate_female_aces = yes
-			}
 		}
 		select_effect = {
 			
@@ -1495,7 +1758,6 @@ focus_tree = {
 			focus = LUC_NationalDefenseFund
 		}
 		prerequisite = {
-			focus = LUC_MilitaryIndustry
 			focus = LUC_AbandonNeutrality
 		}
 		available = {
@@ -1529,7 +1791,6 @@ focus_tree = {
 				luc_break_of_neutrality_warning = yes
 			}
 			create_faction = "Alpine Concordat"
-			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_AlpineFaction_tt
 		}
 		select_effect = {
@@ -1550,9 +1811,6 @@ focus_tree = {
 		y =7
 		prerequisite = {
 			focus = LUC_AlpineFaction
-		}
-		prerequisite = {
-			focus = LUC_AbandonNeutrality
 		}
 		available = {
 			OR = {
@@ -1787,7 +2045,7 @@ focus_tree = {
 		icon = GFX_LUC_ACoalitionGovernment
 		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = 4
+		x = 9
 		y = 1
 		prerequisite = {
 			focus = LUC_LiberalVictory
@@ -1811,9 +2069,23 @@ focus_tree = {
 				name = SUS_VPU_Coalition
 			}
 			LUC_neutrality_pleased = yes
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 		mutually_exclusive = {
 			focus = LUC_ARealisticGovernment
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			x = -9
 		}
 	}
 	focus = {
@@ -1847,9 +2119,9 @@ focus_tree = {
 			value = GFX_LUC_DipMissionToGermany
 		}
 		cost = 2
-		relative_position_id = LUC_LiberalVictory
-		x = 6
-		y = 2
+		relative_position_id = LUC_ACoalitionGovernment
+		x = 2
+		y = 1
 		prerequisite = {
 			focus = LUC_ACoalitionGovernment
 		}
@@ -1907,14 +2179,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_GermanTradeAgreement
 		icon = GFX_LUC_GermanTradeAgreement
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = 6
-		y = 3
+		relative_position_id = LUC_ACoalitionGovernment
+		x = 2
+		y = 2
 		prerequisite = {
 			focus = LUC_DiplomaticMissionToGermany
 		}
@@ -1950,14 +2227,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_EmphasiseTradition
 		icon = GFX_LUC_EmphasiseTradition
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = 4
-		y = 3
+		relative_position_id = LUC_ACoalitionGovernment
+		x = 0
+		y = 2
 		prerequisite = {
 			focus = LUC_ACoalitionGovernment
 		}
@@ -1976,14 +2258,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_ContinuePrivatisation
 		icon = GFX_LUC_ContinuePrivatisation
 		cost = 5
-		relative_position_id = LUC_LiberalVictory
-		x = 5
-		y = 4
+		relative_position_id = LUC_ACoalitionGovernment
+		x = 1
+		y = 3
 		prerequisite = {
 			focus = LUC_EmphasiseTradition
 		}
@@ -2029,14 +2316,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_LowerTaxes
 		icon = GFX_LUC_LowerTaxes
 		cost = 5
-		relative_position_id = LUC_LiberalVictory
-		x = 3
-		y = 4
+		relative_position_id = LUC_ACoalitionGovernment
+		x = -1
+		y = 3
 		prerequisite = {
 			focus = LUC_EmphasiseTradition
 		}
@@ -2067,14 +2359,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_TaxHaven
 		icon = GFX_LUC_TaxHaven
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = 3
-		y = 6
+		relative_position_id = LUC_ACoalitionGovernment
+		x = -1
+		y = 5
 		prerequisite = {
 			focus = LUC_LowerTaxes
 		}
@@ -2110,14 +2407,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_GermanIndustry
 		icon = GFX_LUC_GermanIndustry
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = 6
-		y = 5
+		relative_position_id = LUC_ACoalitionGovernment
+		x = 2
+		y = 4
 		prerequisite = {
 			focus = LUC_ContinuePrivatisation
 		}
@@ -2161,14 +2463,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_BanUnions
 		icon = GFX_LUC_BanUnions
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = 4
-		y = 5
+		relative_position_id = LUC_ACoalitionGovernment
+		x = 0
+		y = 4
 		prerequisite = {
 			focus = LUC_ContinuePrivatisation
 			focus = LUC_LowerTaxes
@@ -2185,6 +2492,54 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+		}
+	}
+	focus = {
+		id = LUC_RequestLicenses
+		icon = GFX_LUC_RequestLicenses
+		cost = 4
+		relative_position_id = LUC_ACoalitionGovernment
+		x = -2
+		y = 6
+		prerequisite = {
+			focus = LUC_PrecisionEngineering
+		}
+		prerequisite = {
+			focus = LUC_TaxHaven
+		}
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				character = LUC_JosefHoop
+			}
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_ideas = export_focus
+			custom_effect_tooltip = LUC_RequestLicenses_tt
+		}
+		select_effect = {
+			
+		}
+		cancel_effect = {
+		}
+		mutually_exclusive = {
+			
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+			NOT = {
+				has_completed_focus = LUC_MilitaryRearmement
+			}
+		}
 	}
 	#####################
 	# MARXER GOVERNMENT #
@@ -2194,7 +2549,7 @@ focus_tree = {
 		icon = GFX_LUC_ARealisticGovernment
 		cost = 1
 		relative_position_id = LUC_LiberalVictory
-		x = -14
+		x = -9
 		y = 1
 		prerequisite = {
 			focus = LUC_LiberalVictory
@@ -2207,18 +2562,40 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = LUC_DemocraticLiberal_government_idea
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 		mutually_exclusive = {
 			focus = LUC_ACoalitionGovernment
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_MilitaryRearmement
+				has_completed_focus = LUC_ARealisticGovernment
+			}
+			x = 4
+		}
+		offset = {
+			trigger = {
+				has_completed_focus = LUC_ARealisticGovernment
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
+			x = 5
 		}
 	}
 	focus = {
 		id = LUC_DenounceRedTyranny
 		icon = GFX_LUC_DenounceRedTyranny
 		cost = 1
-		relative_position_id = LUC_LiberalVictory
-		x = -16
-		y = 3
+		relative_position_id = LUC_ARealisticGovernment
+		x = -2
+		y = 2
 		prerequisite = {
 			focus = LUC_ARealisticGovernment
 		}
@@ -2264,14 +2641,19 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = LUC_MissionToSovietUnion
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_CrackDownOnFacism
 		icon = GFX_LUC_CrackDownOnFacism
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -15
-		y = 2
+		relative_position_id = LUC_ARealisticGovernment
+		x = -1
+		y = 1
 		prerequisite = {
 			focus = LUC_ARealisticGovernment
 		}
@@ -2316,14 +2698,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_AllowTradeUnions
 		icon = GFX_LUC_AllowTradeUnions
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -18
-		y = 2
+		relative_position_id = LUC_ARealisticGovernment
+		x = -4
+		y = 1
 		prerequisite = {
 			focus = LUC_ARealisticGovernment
 		}
@@ -2344,14 +2731,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_MissionToSovietUnion
 		icon = GFX_LUC_MissionToSovietUnion
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -18
-		y = 3
+		relative_position_id = LUC_ARealisticGovernment
+		x = -4
+		y = 2
 		prerequisite = {
 			focus = LUC_AllowTradeUnions
 		}
@@ -2375,14 +2767,19 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = LUC_DenounceRedTyranny
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_TurnTowardsDemocracies
 		icon = GFX_LUC_TurnTowardsDemocracies
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -15
-		y = 4
+		relative_position_id = LUC_ARealisticGovernment
+		x = -1
+		y = 3
 		prerequisite = {
 			focus = LUC_DenounceRedTyranny
 			focus = LUC_CrackDownOnFacism
@@ -2406,14 +2803,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_GuaranteeIndividualRights
 		icon = GFX_LUC_GuaranteeIndividualRights
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -13
-		y = 2
+		relative_position_id = LUC_ARealisticGovernment
+		x = 1
+		y = 1
 		prerequisite = {
 			focus = LUC_ARealisticGovernment
 		}
@@ -2432,14 +2834,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_CivicReform
 		icon = GFX_LUC_CivicReform
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -13
-		y = 4
+		relative_position_id = LUC_ARealisticGovernment
+		x = 1
+		y = 3
 		prerequisite = {
 			focus = LUC_GuaranteeIndividualRights
 		}
@@ -2458,14 +2865,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_IncreaseRegulation
 		icon = GFX_LUC_IncreaseRegulation
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -13
-		y = 6
+		relative_position_id = LUC_ARealisticGovernment
+		x = 1
+		y = 5
 		prerequisite = {
 			focus = LUC_CivicReform
 		}
@@ -2483,14 +2895,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_AppealToFarmers
 		icon = GFX_LUC_AppealToFarmers
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -14
-		y = 5
+		relative_position_id = LUC_ARealisticGovernment
+		x = 0
+		y = 4
 		prerequisite = {
 			focus = LUC_CivicReform
 		}
@@ -2513,14 +2930,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_SecularEducation
 		icon = GFX_LUC_SecularEducation
 		cost = 5
-		relative_position_id = LUC_LiberalVictory
-		x = -16
-		y = 6
+		relative_position_id = LUC_ARealisticGovernment
+		x = -2
+		y = 5
 		prerequisite = {
 			focus = LUC_AppealToFarmers
 		}
@@ -2536,14 +2958,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
 	}
 	focus = {
 		id = LUC_AMoralPrincipality
 		icon = GFX_LUC_AMoralPrincipality
 		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -14
-		y = 7
+		relative_position_id = LUC_ARealisticGovernment
+		x = 0
+		y = 6
 		prerequisite = {
 			focus = LUC_AppealToFarmers
 		}
@@ -2563,6 +2990,58 @@ focus_tree = {
 			}
 		}
 		mutually_exclusive = {
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+		}
+	}
+	focus = {
+		id = LUC_WomenAuxiliary
+		icon = GFX_LUC_WomenAuxiliary
+		cost = 4
+		relative_position_id = LUC_ARealisticGovernment
+		x = 3
+		y = 4
+		prerequisite = {
+			focus = LUC_CivilPreparations
+		}
+		prerequisite = {
+			focus = LUC_CivicReform
+		}
+		available = {
+			has_country_leader = {
+				ruling_only = yes
+				character = LUC_Ludwig_Marxer
+			}
+		}
+		bypass = {
+			
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LUC_LiechtensteinerMilitia_idea
+				add_idea = LUC_LiechtensteinerWomensCorps_idea
+			}
+			set_rule = {
+				can_generate_female_aces = yes
+			}
+		}
+		select_effect = {
+			
+		}
+		cancel_effect = {
+		}
+		mutually_exclusive = {
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = LUC_ACoalitionGovernment
+			}
+			NOT = {
+				has_completed_focus = LUC_MilitaryDisarmement
+			}
 		}
 	}
 	#####################
@@ -2592,7 +3071,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_NationallistCollaboration
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_NationallistCollaboration
 		cost = 1
 		relative_position_id = LUC_InvestigateFascists
 		x = 2
@@ -2601,6 +3080,24 @@ focus_tree = {
 			focus = LUC_ConservativeVictory
 		}
 		available = {
+			has_government = neutrality
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
 		}
 		completion_reward = {
 		}
@@ -2611,339 +3108,534 @@ focus_tree = {
 	#####################
 	# ALPINE CONFEDERACY #
 	#####################
-	# focus = {
-	# 	id = LUC_AlpineSolidarity
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_Landtag
-	# 	x = -2
-	# 	y = 2
-	# 	prerequisite = {
-	# 		focus = LUC_LiberalVictory
-	# 		focus = LUC_ConservativeVictory
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_IntegratedResearch
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = -2
-	# 	y = 1
-	# 	prerequisite = {
-	# 		focus = LUC_AlpineSolidarity
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_JointScientificFunding
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = -2
-	# 	y = 3
-	# 	prerequisite = {
-	# 		focus = LUC_IntegratedResearch
-	# 	}
-	# 	prerequisite = {
-	# 		focus = LUC_DeepenEconomicCooperation
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_InterLinkedRail
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 2
-	# 	y = 1
-	# 	prerequisite = {
-	# 		focus = LUC_AlpineSolidarity
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_SharedPostalService
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 4
-	# 	y = 1
-	# 	prerequisite = {
-	# 		focus = LUC_AlpineSolidarity
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_JointInvestments
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 5
-	# 	y = 2
-	# 	prerequisite = {
-	# 		focus = LUC_AlpineSolidarity
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_InviteAustria
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 6
-	# 	y = 1
-	# 	prerequisite = {
-	# 		focus = LUC_AlpineSolidarity
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_SharedIntelligence
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 3
-	# 	y = 2
-	# 	prerequisite = {
-	# 		focus = LUC_InterLinkedRail
-	# 		focus = LUC_SharedPostalService
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_DeepenEconomicCooperation
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 0
-	# 	y = 2
-	# 	prerequisite = {
-	# 		focus = LUC_AlpineSolidarity
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_FormaliseConfederacy
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 0
-	# 	y = 4
-	# 	prerequisite = {
-			
-	# 	}
-	# 	available = {
-	# 		OR = {
-	# 			has_country_leader = {
-	# 				ruling_only = yes
-	# 				character = LUC_JosefHoop
-	# 			}
-	# 			has_country_leader = {
-	# 				ruling_only = yes
-	# 				character = LUC_Ludwig_Marxer
-	# 			}
-	# 		}
-	# 		count_triggers = {
-	# 			amount = 3
-	# 			has_completed_focus = LUC_DeepenEconomicCooperation
-	# 			has_completed_focus = LUC_JointInvestments
-	# 			has_completed_focus = LUC_JointScientificFunding
-	# 			has_completed_focus = LUC_IntegratedResearch
-	# 			has_completed_focus = LUC_InterLinkedRail
-	# 			has_completed_focus = LUC_SharedPostalService
-	# 			has_completed_focus = LUC_SharedIntelligence
-	# 		}
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_AlpineMilitary
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = -2
-	# 	y = 5
-	# 	prerequisite = {
-	# 		focus = LUC_FormaliseConfederacy
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_AssimilateSwissIndustry
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 2
-	# 	y = 5
-	# 	prerequisite = {
-	# 		focus = LUC_FormaliseConfederacy
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_DamTheRhone
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 2
-	# 	y = 6
-	# 	prerequisite = {
-	# 		focus = LUC_AssimilateSwissIndustry
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_DamTheRhine
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 4
-	# 	y = 6
-	# 	prerequisite = {
-	# 		focus = LUC_AssimilateSwissIndustry
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_IntegrateVienna
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 0
-	# 	y = 6
-	# 	prerequisite = {
-	# 		focus = LUC_AssimilateSwissIndustry
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_UrbaniseTheAlps
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = 2
-	# 	y = 7
-	# 	prerequisite = {
-	# 		focus = LUC_DamTheRhone
-	# 		focus = LUC_DamTheRhine
-	# 		focus = LUC_IntegrateVienna
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_UnleaseTheAvalanche
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = -2
-	# 	y = 7
-	# 	prerequisite = {
-	# 		focus = LUC_AlpineMilitary
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
-	# focus = {
-	# 	id = LUC_AdoptRedoubtTactics
-	# 	icon = GFX_goal_unknown
-	# 	cost = 1
-	# 	relative_position_id = LUC_AlpineSolidarity
-	# 	x = -4
-	# 	y = 6
-	# 	prerequisite = {
-	# 		focus = LUC_AlpineMilitary
-	# 	}
-	# 	available = {
-	# 	}
-	# 	completion_reward = {
-	# 	}
-	# 	mutually_exclusive = {
-	# 	}
-	# }
+	focus = {
+		id = LUC_ALCAdoptTheFranc
+		icon = GFX_LUC_ALCAdoptTheFranc
+		cost = 1
+		relative_position_id = LUC_Landtag
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LUC_ConservativeVictory
+			focus = LUC_LiberalVictory
+		}
+		available = {
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+		}
+		completion_reward = {
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ALCEconomicIntegration
+		icon = GFX_LUC_ALCEconomicIntegration
+		cost = 1
+		relative_position_id = LUC_ALCAdoptTheFranc
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = LUC_ALCAdoptTheFranc
+		}
+		available = {
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+		}
+		completion_reward = {
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ALCMaintainEcoIndependence
+		icon = GFX_LUC_ALCMaintainEcoIndependence
+		cost = 1
+		relative_position_id = LUC_ALCAdoptTheFranc
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = LUC_ALCEconomicIntegration
+		}
+		available = {
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+		}
+		completion_reward = {
+		}
+		mutually_exclusive = {
+			focus = LUC_ALCTowardsEcoIntegration
+		}
+	}
+
+	focus = {
+		id = LUC_ALCTowardsEcoIntegration
+		icon = GFX_LUC_ALCTowardsEcoIntegration
+		cost = 1
+		relative_position_id = LUC_ALCAdoptTheFranc
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = LUC_ALCEconomicIntegration
+		}
+		available = {
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+		}
+		completion_reward = {
+		}
+		mutually_exclusive = {
+			focus = LUC_ALCMaintainEcoIndependence
+		}
+	}
+
+	focus = {
+		id = LUC_ALCLinkRailways
+		icon = GFX_LUC_ALCLinkRailways
+		cost = 1
+		relative_position_id = LUC_ALCAdoptTheFranc
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = LUC_ALCAdoptTheFranc
+		}
+		available = {
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+			NOT = {
+				has_completed_focus = LUC_ALCAlpineConfederacy
+			}
+		}
+		completion_reward = {
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ALCSwissMigration
+		icon = GFX_LUC_ALCSwissMigration
+		cost = 1
+		relative_position_id = LUC_ALCAdoptTheFranc
+		x = -4
+		y = 2
+		prerequisite = {
+			focus = LUC_ALCEconomicIntegration
+		}
+		available = {
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+			NOT = {
+				has_completed_focus = LUC_ALCAlpineConfederacy
+			}
+		}
+		completion_reward = {
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ALCResearch
+		icon = GFX_LUC_ALCResearch
+		cost = 1
+		relative_position_id = LUC_ALCAdoptTheFranc
+		x = -3
+		y = 3
+		prerequisite = {
+			focus = LUC_ALCEconomicIntegration
+		}
+		available = {
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+			NOT = {
+				has_completed_focus = LUC_ALCAlpineConfederacy
+			}
+		}
+		completion_reward = {
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ALCPoliticalIntegration
+		icon = GFX_LUC_ALCPoliticalIntegration
+		cost = 1
+		relative_position_id = LUC_ALCAdoptTheFranc
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = LUC_ALCAdoptTheFranc
+		}
+		available = {
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+		}
+		completion_reward = {
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ALCConsitutionalRevision
+		icon = GFX_LUC_ALCConsitutionalRevision
+		cost = 1
+		relative_position_id = LUC_ALCAdoptTheFranc
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = LUC_ALCPoliticalIntegration
+		}
+		available = {
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = LUC_ConsitutionalRevisions
+				days = 180
+			}
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ALCAlpineConfederacy
+		icon = GFX_LUC_ALCAlpineConfederacy
+		cost = 1
+		relative_position_id = LUC_ALCAdoptTheFranc
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = LUC_ALCConsitutionalRevision
+		}
+		prerequisite = {
+			focus = LUC_ALCTowardsEcoIntegration
+			focus = LUC_ALCMaintainEcoIndependence
+		}
+		available = {
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+			NOT = {
+				has_idea = LUC_ConsitutionalRevisions
+			}
+		}
+		completion_reward = {
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_ALCInviteAustria
+		icon = GFX_LUC_ALCInviteAustria
+		cost = 1
+		relative_position_id = LUC_ALCAdoptTheFranc
+		x = 3
+		y = 2
+		prerequisite = {
+			focus = LUC_ALCPoliticalIntegration
+		}
+		available = {
+			AUS = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			SWI = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			NOT = {
+				if = {
+					limit = {
+						has_country_flag = LUC_DeathOfPrince_flag
+					}
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzII
+					}
+				}
+				else = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_FranzI
+					}
+				}
+			}
+			NOT = {
+				has_completed_focus = LUC_ALCConsitutionalRevision
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = LUC_WarningAustrianIntegration_tt
+		}
+		mutually_exclusive = {
+		}
+	}
+
 	#####################
 	# LiechtensteinER ECONOMY
 	####################

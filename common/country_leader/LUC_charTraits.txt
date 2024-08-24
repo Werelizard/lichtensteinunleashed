@@ -65,7 +65,7 @@ leader_traits = {
 	}
 	# Traits for Princes
 	LUC_Liechtenstein_Prince = {
-		consumer_goods_factor = 0.02
+		consumer_goods_factor = 0.04
 		political_power_factor = 0.05
 	}
 	LUC_Deutshes_Kaiser = {

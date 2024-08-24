@@ -45,6 +45,7 @@
  LUC_OttoSchaedler:0 "Otto Schaedler"
  LUC_AlfonsGoop:0 "Alfons Goop"
  LUC_RudolfSchaedler:0 "Rudolf Shaedler"
+ LUC_FranzI:0 "Franz I"
  LUC_FranzII:0 "Franz II"
  LUC_WorkerCouncil:0 "Worker's Council"
  LUC_Ludwig_Marxer:0 "Ludwig Marxer"
@@ -219,6 +220,10 @@
  LUC_LiechtensteinerWomensCorps_idea_dec:0 ""
  LUC_GermanicLiberators:0 "Germanic Democratisation"
  LUC_GermanicLiberators_desc:0 ""
+
+ # Ideas - Alpine Confederacy 
+ LUC_ConsitutionalRevisions:0 "Governmental Restructuring"
+ LUC_ConsitutionalRevisions_desc:0 ""
 
  # Inbdustrial Concerns
  LUC_Vaduz_Arsenal:0 "Vaduz Arsenal"

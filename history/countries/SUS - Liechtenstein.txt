@@ -1,7 +1,7 @@
 # General things
 
 capital = 970
-oob = "SUS_1936"
+oob = "LIC_1936"
 
 # Technology
 
@@ -16,6 +16,7 @@ set_technology = {
 	basic_train = 1
 	tech_military_police = 1
 	tech_trucks = 1
+	militia_tech = 1
 }
 
 # Internal Politics, setup and basics
@@ -122,53 +123,15 @@ country_lock_all_division_template = yes
 
 # Variables for the initial economy
 
-set_variable = {
-	LUC_EcoCostFac_Var = 0.5
-}
-set_variable = {
-	LUC_TradeCostFac_Var = 0.5
-}
-set_variable = {
-	LUC_BuildSlotFac_Var = 0
-}
+
 set_variable = {
 	LUC_ConGoodsFac_Var = -0.05
 }
 set_variable = {
-	LUC_TradeOp_Var = 0.25
+	LUC_TradeOp_Var = -0.15
 }
 set_variable = {
-	LUC_ResExtraFac_Var = 0
-}
-set_variable = {
-	LUC_ResPenalFac_Var = 0
-}
-set_variable = {
-	LUC_BuildAllFac_Var = 0
-}
-set_variable = {
-	LUC_BuildArmFac_Var = 0
-}
-set_variable = {
-	LUC_BuildCivFac_Var = 0
-}
-set_variable = {
-	LUC_BuildInfFac_Var = 0
-}
-set_variable = {
-	LUC_BuildRefFac_Var = 0
-}
-set_variable = {
-	LUC_BuildRailFac_Var = 0
-}
-set_variable = {
-	LUC_PolGain_Var = 0
-}
-set_variable = {
-	LUC_SupplyFac_Var = 0
-}
-set_variable = {
-	LUC_OutputFac_Var = 0
+	LUC_ProductionFac_Var = -0.15
 }
 
 # Relation

@@ -8,6 +8,33 @@ spriteTypes = {
 		name = "GFX_LUC_Landtag_shine"
 		textureFile = "gfx/interface/goals/LUC_focus_LandtagElections.dds"
 	}
+	spriteType = {
+		name = "GFX_LUC_WelcomeRefugees"
+		textureFile = "gfx/interface/goals/LUC_WelcomeRefugees.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_WelcomeRefugees_shine"
+		textureFile = "gfx/interface/goals/LUC_WelcomeRefugees.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_InvestigateFascists"
+		textureFile = "gfx/interface/goals/LUC_InvestigateFascists.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_InvestigateFascists_shine"
+		textureFile = "gfx/interface/goals/LUC_InvestigateFascists.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_NationallistCollaboration"
+		textureFile = "gfx/interface/goals/LUC_NationallistCollaboration.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NationallistCollaboration_shine"
+		textureFile = "gfx/interface/goals/LUC_NationallistCollaboration.dds"
+	}
+	
 	###################
 	# DEMOCRATIC: ALL #
 	###################
@@ -569,5 +596,108 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_LUC_ConservativeVictory_shine"
 		textureFile = "gfx/interface/goals/LUC_focus_VaterlandVictory.dds"
+	}
+
+	#####################
+	# SALPINE CONFEDERACY #
+	#####################
+	
+	spriteType = {
+		name = "GFX_LUC_ALCAdoptTheFranc"
+		textureFile = "gfx/interface/goals/LUC_ALCAdoptTheFranc.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCAdoptTheFranc_shine"
+		textureFile = "gfx/interface/goals/LUC_ALCAdoptTheFranc.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALCLinkRailways"
+		textureFile = "gfx/interface/goals/LUC_ALCLinkRailways.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCLinkRailways_shine"
+		textureFile = "gfx/interface/goals/LUC_ALCLinkRailways.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALCEconomicIntegration"
+		textureFile = "gfx/interface/goals/LUC_ALCEconomicIntegration.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCEconomicIntegration_shine"
+		textureFile = "gfx/interface/goals/LUC_ALCEconomicIntegration.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALCSwissMigration"
+		textureFile = "gfx/interface/goals/LUC_ALCSwissMigration.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCSwissMigration_shine"
+		textureFile = "gfx/interface/goals/LUC_ALCSwissMigration.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALCResearch"
+		textureFile = "gfx/interface/goals/LUC_ALCResearch.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCResearch_shine"
+		textureFile = "gfx/interface/goals/LUC_ALCResearch.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALCPoliticalIntegration"
+		textureFile = "gfx/interface/goals/LUC_ALCPoliticalIntegration.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCPoliticalIntegration_shine"
+		textureFile = "gfx/interface/goals/LUC_ALCPoliticalIntegration.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALCConsitutionalRevision"
+		textureFile = "gfx/interface/goals/LUC_ALCConsitutionalRevision.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCConsitutionalRevision_shine"
+		textureFile = "gfx/interface/goals/LUC_ALCConsitutionalRevision.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALCTowardsEcoIntegration"
+		textureFile = "gfx/interface/goals/LUC_ALCTowardsEcoIntegration.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCTowardsEcoIntegration_shine"
+		textureFile = "gfx/interface/goals/LUC_ALCTowardsEcoIntegration.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALCMaintainEcoIndependence"
+		textureFile = "gfx/interface/goals/LUC_ALCMaintainEcoIndependence.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCMaintainEcoIndependence_shine"
+		textureFile = "gfx/interface/goals/LUC_ALCMaintainEcoIndependence.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALCInviteAustria"
+		textureFile = "gfx/interface/goals/ALCInviteAustria.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCInviteAustria_shine"
+		textureFile = "gfx/interface/goals/ALCInviteAustria.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ALCAlpineConfederacy"
+		textureFile = "gfx/interface/goals/LUC_ALCAlpineConfederacy.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ALCAlpineConfederacy_shine"
+		textureFile = "gfx/interface/goals/LUC_ALCAlpineConfederacy.dds"
 	}
 }

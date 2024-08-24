@@ -190,6 +190,20 @@ characters={
 		}
 	}
 	# Princes
+	LUC_FranzI = {
+		name = LUC_FranzI
+		portraits={
+			civilian={
+				large="GFX_LUC_FRANZ_I_LEADER"
+			}
+		}
+		country_leader={
+			ideology = despotism
+			traits={  
+				LUC_Liechtenstein_Prince
+			}
+		}
+	}
 	LUC_FranzII = {
 		name = LUC_FranzII
 		portraits={

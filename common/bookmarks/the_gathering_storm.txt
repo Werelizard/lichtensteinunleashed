@@ -18,6 +18,7 @@ bookmarks = {
 			}
 			focuses = {
 				LUC_GermanLiberators
+				LUC_ALCAlpineConfederacy
 			}
 		}
 		

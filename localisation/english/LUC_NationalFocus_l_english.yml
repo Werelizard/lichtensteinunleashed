@@ -216,58 +216,29 @@
  LUC_NationallistCollaboration_desc:0 ""
 
  #Alpine Confederacy
- LUC_AlpineSolidarity:0 "Alpine Solidarity"
- LUC_AlpineSolidarity_desc:0 ""
-
- LUC_IntegratedResearch:0 "Joint Scientific Endeavours"
- LUC_IntegratedResearch_desc:0 ""
-
- LUC_JointScientificFunding:0 "The Bern-Vaduz Research Agreement"
- LUC_JointScientificFunding_desc:0 ""
-
- LUC_InterLinkedRail:0 "Inter-Linked Rail"
- LUC_InterLinkedRail_desc:0 ""
-
- LUC_SharedPostalService:0 "Merge Postal Services"
- LUC_SharedPostalService_desc:0 ""
-
- LUC_JointInvestments:0 "Unified Infrastructure Scheme"
- LUC_JointInvestments_desc:0 ""
-
- LUC_InviteAustria:0 "Invite Austria"
- LUC_InviteAustria_desc:0 ""
-
- LUC_SharedIntelligence:0 "Shared Strategic Intelligence"
- LUC_SharedIntelligence_desc:0 ""
-
- LUC_DeepenEconomicCooperation:0 "Deepen Economic Cooperation"
- LUC_DeepenEconomicCooperation_desc:0 ""
- LUC_FormaliseConfederacy:0 "Formalise the Confederacy"
- LUC_FormaliseConfederacy_desc:0 ""
-
- LUC_AlpineMilitary:0 "An Alpine Military"
- LUC_AlpineMilitary_desc:0 ""
- 
- LUC_AssimilateSwissIndustry:0 "Economic Restructuring"
- LUC_AssimilateSwissIndustry_desc:0 ""
-
- LUC_DamTheRhone:0 "Develop the Western Alps"
- LUC_DamTheRhone_desc:0 ""
-
- LUC_DamTheRhine:0 "Develop the Central Alps"
- LUC_DamTheRhine_desc:0 ""
-
- LUC_IntegrateVienna:0 "Develop the Austrian Alps"
- LUC_IntegrateVienna_desc:0 ""
-
- LUC_UrbaniseTheAlps:0 "The Alpine Factorium"
- LUC_UrbaniseTheAlps_desc:0 ""
-
- LUC_UnleaseTheAvalanche:0 "Unleash the Avalanche"
- LUC_UnleaseTheAvalanche_desc:0 ""
-
- LUC_AdoptRedoubtTactics:0 "Adopt Redoubt Tactics"
- LUC_AdoptRedoubtTactics_desc:0 ""
+ LUC_ALCAdoptTheFranc:0 "Re-Examine the Customs Union"
+ LUC_ALCAdoptTheFranc_desc:0 ""
+ LUC_ALCResearch:0 "Alpine Research Grants"
+ LUC_ALCResearch_desc:0 ""
+ LUC_ALCEconomicIntegration:0 "Pursue Closer Economic Ties"
+ LUC_ALCEconomicIntegration_desc:0 ""
+ LUC_ALCMaintainEcoIndependence:0 "Economic Devolution"
+ LUC_ALCMaintainEcoIndependence_desc:0 ""
+ LUC_ALCTowardsEcoIntegration:0 "Economic Evolution"
+ LUC_ALCTowardsEcoIntegration_desc:0 ""
+ LUC_ALCLinkRailways:0 "Transalpine Railways"
+ LUC_ALCLinkRailways_desc:0 ""
+ LUC_ALCSwissMigration:0 "Encourage Swiss Migration"
+ LUC_ALCSwissMigration_desc:0 ""
+ LUC_ALCPoliticalIntegration:0 "Propose Administrative Alignment"
+ LUC_ALCPoliticalIntegration_desc:0 ""
+ LUC_ALCConsitutionalRevision:0 "Draft a Constitution"
+ LUC_ALCConsitutionalRevision_desc:0 ""
+ LUC_ALCAlpineConfederacy:0 "A True Alpine State"
+ LUC_ALCAlpineConfederacy_desc:0 ""
+ LUC_ALCInviteAustria:0 "An Olive Branch to the Austrians"
+ LUC_ALCInviteAustria_desc:0 "" 
+ LUC_WarningAustrianIntegration_tt:0 "§RWARNING: if we do not complete this focus prior to completing §!§Y$LUC_ALCConsitutionalRevision$§!§R, then we will not be able to integrate Austria diplomatically!§!"
 
  #The economy
  
@@ -303,3 +274,4 @@
  LUC_ProductionEfficiencyIncrease6_tt:0 "Production Efficiency Growth: §G+6.00%§!"
  LUC_ProductionBaseDecrease2_tt:0 "Production Efficiency Base: §R-2.00%§!"
  LUC_ConGoodsDecrease10_tt:0 "Consumer Goods Factories factor: §Y-10.0%§!"
+ LUC_ConvertFacDecrease15_tt:0 "Civilian to Military factory conversion cost: §G-15.00%"
