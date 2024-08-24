@@ -1,3 +1,10 @@
 ﻿l_english:
  LUC_Fascist_RadicalisatioN_cat:0 "Handling the Military Movement" 
  LUC_Fascist_RadicalisatioN_cat_desc:0 "While not a single political party, the §FMilitary Movement§! - represented by the §Y[ROOT.GetFascistParty]§! at the political level - is a loose collection of paramilitaries, politicians and businessmen seeking to align [ROOT.GetNameDef] with other ultranationalist movements in Europe, Germany in particular. Having failed to secure an electoral mandate per their ban, they may seek to instead overthrow the government - either by subversion or outright violence."
+ LUC_FascistRising_mis:0 "The §FMilitary Movement§! stirs..."
+ LUC_CrushRadicalisation_dec:0 "Crush the Military Movement"
+ LUC_InvestigateMilitary_dec:0 "Investigate the Military"
+ LUC_ArrestFascists_dec:0 "Arrest Pro-German Politicians"
+ LUC_CensorPress_dec:0 "Crack Down on Rallies"
+ LUC_FascistRising_coup_mis:0 "§RIncoming Nationalist Coup!§!"
+ LUC_MilitaryMovementCoup_tt:0 "The §FMilitary Movement§! will §Rcoup§! our government!"

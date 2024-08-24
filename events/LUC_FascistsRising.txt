@@ -36,5 +36,8 @@ country_event = {
 			ideology = fascism
 			popularity = 0.03
 		}
+		hidden_effect = {
+			activate_mission = LUC_FascistRising_mis
+		}
 	}
 }

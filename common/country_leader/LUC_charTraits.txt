@@ -16,7 +16,7 @@ leader_traits = {
 		party_popularity_stability_factor = 0.15
 	}
 	LUC_Pragmatic_Pacifist = {
-		political_power_factor = 0.1
+		democratic_drift = 0.1
 		war_support_factor = -0.05
 		improve_relations_maintain_cost_factor = -0.5
 	}
@@ -82,6 +82,7 @@ leader_traits = {
 	LUC_LiberalReformer = {
 		production_factory_max_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.05
+		fascism_drift = -0.1
 	}
 	# Interim Trait
 	LUC_Interim_Government = {

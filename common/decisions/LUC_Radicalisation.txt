@@ -1,3 +1,172 @@
 LUC_Fascist_RadicalisatioN_cat ={
-	
+	LUC_FascistRising_mis = {
+		icon = GFX_decision_generic_civil_support
+		is_good = no
+		days_mission_timeout = 60
+
+		priority = 100
+		visible = {
+
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		cancel_trigger = {
+			NOT = {
+				has_idea = LUC_Fascist_Agitators_idea
+			} 
+		}
+
+		activation = {
+			always = no
+		}
+
+		timeout_effect = {
+			if = {
+				limit = {
+					has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.02
+				}
+			}
+			else = {		
+				random_list = {
+					30 = {
+						add_popularity = {
+							ideology = fascism
+							popularity = 0.02
+						}
+					}
+					50 = {
+						add_popularity = {
+							ideology = fascism
+							popularity = 0.04
+						}
+					}
+					20 = {
+						add_popularity = {
+							ideology = fascism
+							popularity = 0.06
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				activate_mission = LUC_FascistRising_mis
+			}
+		}
+	}
+
+	LUC_CrushRadicalisation_dec = {
+		icon = GFX_decision_generic_police_action
+
+		available = {
+			has_completed_focus = LUC_InvestigateFascists
+			fascism < 0.5
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+			}
+		}
+
+		cost = 100
+
+		priority = 99
+
+		days_remove = 30
+
+		remove_effect = {
+			remove_ideas = LUC_Fascist_Agitators_idea
+			add_political_power = 150
+		}
+	}
+
+	LUC_InvestigateMilitary_dec = {
+		icon = GFX_decision_generic_army_support
+
+		visible = {
+			NOT = {
+				has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+			}
+		}
+
+		cost = 30
+
+		days_remove = 40
+
+		modifier = {
+			political_power_factor = -0.1
+			recruitable_population_factor = -0.25
+		}
+
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = LUC_FascistRising_mis
+				days = 15
+			}
+		}
+	}
+	LUC_ArrestFascists_dec = {
+		icon = GFX_decision_generic_arrest
+
+		available = {
+			has_completed_focus = LUC_InvestigateFascists
+		}
+
+		visible = {
+			NOT = {
+				has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+			}
+		}
+
+		priority = 98
+
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			political_power_cost = 0.5
+		}
+
+		remove_effect = {
+			add_stability = 0.025
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
+		}
+	}
+	LUC_CensorPress_dec = {
+		icon = GFX_decision_oppression
+
+		visible = {
+			NOT = {
+				has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
+			}
+		}
+
+		cost = 25
+
+		days_remove = 60
+
+		modifier = {
+			political_power_factor = -0.1
+			stability_factor = -0.1
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+		}
+	}
 }
