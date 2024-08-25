@@ -30,7 +30,7 @@ country_event = {
 		name = LUC_Fascists.a
 		
 		add_ideas = LUC_Fascist_Agitators_idea
-		unlock_decision_category_tooltip = LUC_Fascist_RadicalisatioN_cat
+		unlock_decision_category_tooltip = LUC_Fascist_Radicalisation_cat
 		add_stability = -0.02
 		add_popularity = {
 			ideology = fascism

@@ -163,7 +163,9 @@ set_variable = {
 set_variable = {
 	LUC_ProductionFac_Var = -0.15
 }
-
+set_variable = {
+	LUC_Confidence_var = 85
+}
 # Relation
 
 SWI = {
@@ -175,6 +177,10 @@ SUS = {
 
 # Events
 
+country_event = {
+	id = LUC_flavour.1
+	days = 1
+}
 country_event = {
 	id = LUC_Fascists.1
 	days = 30

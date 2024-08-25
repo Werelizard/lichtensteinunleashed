@@ -1,0 +1,711 @@
+LUC_Government_Confidence_cat = {
+	#Rely on deputies - flat random increase, but only if the ruling party is considered popular
+	LUC_Government_Confidence_GetDeputiesSupport = {
+		icon = GFX_decision_generic_political_address
+		available = {
+			LUC_check_ruling_party_is_50 = yes
+			custom_trigger_tooltip = {
+				tooltip = LUC_NotAlreadyTakingAction_tt
+				check_variable = {
+					LUC_NumOfActionsTaken_BOP < 1
+				}
+			}
+		}
+		
+		cost = 30
+
+		priority = 11
+
+		days_remove = 35
+
+		cancel_effect = {
+			add_political_power = 30
+		}
+
+		modifier = {
+			political_power_factor = -0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 1
+				}
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.025
+					}
+				}
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.05
+					}
+				}
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.1
+					}
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 0
+				}
+			}
+		}
+	}
+	#Seek support from communists
+	LUC_Government_Confidence_SupportFromCommunists = {
+		icon = GFX_decision_generic_political_discourse
+		available = {
+			communism < 0.5
+			custom_trigger_tooltip = {
+				tooltip = LUC_NotAlreadyTakingAction_tt
+				check_variable = {
+					LUC_NumOfActionsTaken_BOP < 1
+				}
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_government = communism
+			}
+		}
+		
+		cost = 20
+
+		days_remove = 35
+
+		cancel_effect = {
+			add_political_power = 20
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+			communism_drift = 0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 1
+				}
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.025
+					}
+				}
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.05
+					}
+				}
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.1
+					}
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 0
+				}
+			}
+		}
+	}
+	#Seek support from democrats
+	LUC_Government_Confidence_SupportFromDemocrats = {
+		icon = GFX_decision_generic_political_discourse
+		available = {
+			democratic < 0.5
+			custom_trigger_tooltip = {
+				tooltip = LUC_NotAlreadyTakingAction_tt
+				check_variable = {
+					LUC_NumOfActionsTaken_BOP < 1
+				}
+			}
+		}
+		
+		visible = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+
+		cost = 20
+
+		days_remove = 35
+
+		cancel_effect = {
+			add_political_power = 20
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+			democratic_drift = 0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 1
+				}
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.025
+					}
+				}
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.05
+					}
+				}
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.1
+					}
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 0
+				}
+			}
+		}
+	}
+	#Seek support from fascists
+	LUC_Government_Confidence_SupportFromFascists = {
+		icon = GFX_decision_generic_political_discourse
+		available = {
+			fascism < 0.5
+			custom_trigger_tooltip = {
+				tooltip = LUC_NotAlreadyTakingAction_tt
+				check_variable = {
+					LUC_NumOfActionsTaken_BOP < 1
+				}
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+		cost = 20
+
+		days_remove = 35
+
+		cancel_effect = {
+			add_political_power = 20
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+			fascism_drift = 0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 1
+				}
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.025
+					}
+				}
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.05
+					}
+				}
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.1
+					}
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 0
+				}
+			}
+		}
+	}
+	#Seek support from populists
+	LUC_Government_Confidence_SupportFromPopulists = {
+		icon = GFX_decision_generic_political_discourse
+		available = {
+			neutrality < 0.5
+			custom_trigger_tooltip = {
+				tooltip = LUC_NotAlreadyTakingAction_tt
+				check_variable = {
+					LUC_NumOfActionsTaken_BOP < 1
+				}
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_government = neutrality
+			}
+		}
+		cost = 20
+
+		days_remove = 35
+
+		cancel_effect = {
+			add_political_power = 20
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+			neutrality_drift = 0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 1
+				}
+			}
+		}
+
+		remove_effect = {
+			random_list = {
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.025
+					}
+				}
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.05
+					}
+				}
+				33 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = 0.1
+					}
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 0
+				}
+			}
+		}
+	}
+
+	#Denounce Party Poltiics - FOur decisions
+	LUC_Government_Confidence_CondemnPartyPoliticy_democratic = {
+		icon = GFX_decision_generic_break_treaty
+		available = {
+			has_government = democratic
+			custom_trigger_tooltip = {
+				tooltip = LUC_NotAlreadyTakingAction_tt
+				check_variable = {
+					LUC_NumOfActionsTaken_BOP < 1
+				}
+			}
+		}
+
+		visible = {
+			has_government = democratic
+		}
+
+		cost = 25
+
+		priority = 10
+
+		days_remove = 35
+
+		cancel_effect = {
+			add_political_power = 25
+		}
+
+		modifier = {
+			democratic_drift = 0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 1
+				}
+			}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			random_list = {
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.02
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.04
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.08
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.12
+					}
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 0
+				}
+			}
+		}
+	}
+	LUC_Government_Confidence_CondemnPartyPoliticy_communist = {
+		icon = GFX_decision_generic_break_treaty
+		available = {
+			has_government = communism
+			custom_trigger_tooltip = {
+				tooltip = LUC_NotAlreadyTakingAction_tt
+				check_variable = {
+					LUC_NumOfActionsTaken_BOP < 1
+				}
+			}
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		cost = 25
+
+		priority = 10
+
+		days_remove = 35
+
+		cancel_effect = {
+			add_political_power = 25
+		}
+
+		modifier = {
+			communism_drift = 0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 1
+				}
+			}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			random_list = {
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.02
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.04
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.08
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.12
+					}
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 0
+				}
+			}
+		}
+	}
+	LUC_Government_Confidence_CondemnPartyPoliticy_fascist = {
+		icon = GFX_decision_generic_break_treaty
+		available = {
+			has_government = fascism
+			custom_trigger_tooltip = {
+				tooltip = LUC_NotAlreadyTakingAction_tt
+				check_variable = {
+					LUC_NumOfActionsTaken_BOP < 1
+				}
+			}
+		}
+
+		visible = {
+			has_government = fascism
+		}
+
+		cost = 25
+
+		priority = 10
+
+		days_remove = 35
+
+		cancel_effect = {
+			add_political_power = 25
+		}
+
+		modifier = {
+			fascism_drift = 0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 1
+				}
+			}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			random_list = {
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.02
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.04
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.08
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.12
+					}
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 0
+				}
+			}
+		}
+	}
+	LUC_Government_Confidence_CondemnPartyPoliticy_populist = {
+		icon = GFX_decision_generic_break_treaty
+		available = {
+			has_government = neutrality
+			custom_trigger_tooltip = {
+				tooltip = LUC_NotAlreadyTakingAction_tt
+				check_variable = {
+					LUC_NumOfActionsTaken_BOP < 1
+				}
+			}
+		}
+
+		visible = {
+			has_government = neutrality
+		}
+
+		cost = 25
+
+		priority = 10
+
+		days_remove = 35
+
+		cancel_effect = {
+			add_political_power = 25
+		}
+
+		modifier = {
+			neutrality_drift = 0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 1
+				}
+			}
+		}
+
+		remove_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			random_list = {
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.02
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.04
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.08
+					}
+				}
+				25 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.12
+					}
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					LUC_NumOfActionsTaken_BOP = 0
+				}
+			}
+		}
+	}
+
+	# Opposition makes its move
+	LUC_Government_Confidence_Opposition_Gathers = {
+		icon = GFX_decision_generic_political_discourse
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_JosefHoop
+					} 
+				}
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_Ludwig_Marxer
+					} 
+				}
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_OttoSchaedler
+					} 
+				}
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = LUC_RichardMeier
+					} 
+				}
+			}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 30
+		fire_only_once = no
+		timeout_effect = {
+			random_list = {
+				50 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.04
+					}
+				}
+				30 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.10
+					}
+				}
+				20 = {
+					add_power_balance_value = {
+						id = SUS_Power_Balance
+						value = -0.15
+					}
+				}
+			}
+			hidden_effect = {
+				activate_mission = LUC_Government_Confidence_Opposition_Gathers
+			}
+		}
+	}
+}

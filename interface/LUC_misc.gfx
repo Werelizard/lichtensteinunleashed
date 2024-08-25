@@ -5,6 +5,11 @@ spriteTypes = {
 		textureFile = "gfx/texticons/SUS/LUC_BankTextIcon.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_LUC_PolSupport"
+		textureFile = "gfx/texticons/SUS/LUC_PolSupportTextIcon.dds"
+		legacy_lazy_load = no
+	}
 	# Agency
 	spriteType = {	
 		name = "GFX_LUC_intelligence_agency_logo_Liechtenstein"
@@ -21,5 +26,9 @@ spriteTypes = {
 	spriteType = {	
 		name = "GFX_LUC_Fascist_Radicalisation_cat"
 		texturefile = "gfx/interface/decisions/LUC_Fascist_Radicalisation_cat.dds"
+	}
+	spriteType = {	
+		name = "GFX_LUC_GovernmentConfidence_cat"
+		texturefile = "gfx/interface/decisions/LUC_GovernmentConfidence_cat.dds"
 	}
 }

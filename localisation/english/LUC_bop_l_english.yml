@@ -1,0 +1,14 @@
+﻿l_english:
+ SUS_Power_Balance:0 "Political Support"
+ SUS_LowConfidence_side:0 "Detracting Landtag"
+ SUS_HighConfidence_side:0 "Supportive Landtag"
+
+ SUS_BalanceConfidence_Range:0 "Indifferent Landtag"
+ SUS_LowConfidence_Mistrust_range:0 "Moderate Landtag Opposition"
+ SUS_LowConfidence_Opposition_range:0 "Established Landtag Opposition"
+ SUS_LowConfidence_Veto_range:0 "Landtag Non-Confidence Motion"
+ SUS_HighConfidence_MediumTrust_range:0 "Moderate Landtag Support"
+ SUS_HighConfidence_FullSupport_range:0 "Broad Landtag Support"
+ SUS_HighConfidence_TotalBacking_range:0 "Universal Landtag Support"
+
+ SUS_LowConfidence_Veto_range_tt:0 "The §YLandtag§! opposition will begin gathering support for a non-confidence motion!"

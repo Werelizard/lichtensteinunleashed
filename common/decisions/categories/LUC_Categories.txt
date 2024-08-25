@@ -1,4 +1,4 @@
-LUC_Fascist_RadicalisatioN_cat = {
+LUC_Fascist_Radicalisation_cat = {
 	icon = GFX_LUC_Fascist_Radicalisation_cat
 	scripted_gui = LUC_FASCISTUPRISING
 	visible_when_empty = yes
@@ -12,5 +12,9 @@ LUC_Fascist_RadicalisatioN_cat = {
 		}
 		has_idea = LUC_Fascist_Agitators_idea
 	}
-	priority = 2
+	priority = 3
+}
+
+LUC_Government_Confidence_cat = {
+	icon = GFX_LUC_GovernmentConfidence_cat
 }

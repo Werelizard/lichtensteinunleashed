@@ -1,6 +1,11 @@
 ﻿l_english:
  # Shared tooltips
  LUC_Notavailable_political_advisor:0 "§RRemoves§! as §YPolitical Advisor§!:\n"
+
+ #Flavour events
+ LUC_flavour.1.title:0 "Liechtenstein in 1936"
+ LUC_flavour.1.desc:0 "Trapped between Austria and Switzerland, themselves landlocked between three of Europe's great powers, Liechtenstein's situation is far from enviable. With a meager population, no standing army, a backwater industry and being isolated from any of the continent's powerbrokers the principality enters the second half of the twentieth century on the backfoot.\n\nAs if to make matters worse, it is becoming increasingly clear that it is a matter of when - not if - Europe shall find itself once again caught in a war. With growing political radicalisation coming to define many of its neighbours' governance, Liechtenstein will have to confront the increasingly dire reality sooner or later, unless it wishes to see its sovereignity be whisked away. Yet not all is lost: the growing partnership with Switzerland, our country's ties to Austria and the good financial disposition of the Von Liechtenstein family grant us some breathing room.\n\nBut how long until it all comes tumbling down?"
+ LUC_flavour.1.a:0 "All quiet by the Rhine...for now"
  
  # Election Events
  election.1000.title:0 "The Landtag Elections of [GetYear]"
@@ -23,3 +28,4 @@
  LUC_Fascists.title:0 "Fascist Sympathisers amongst the Government?"
  LUC_Fascists.desc:0 "Though Liechtenstein has - mostly - steered clear of the growing radicalisation and societal polarisation of many of its European neighbours, it is a barely concealed fact that many in Liechtensteiner government, police force and even amongst the Landtag have great admiration for Germany's government and ultranationalistic policies, seeing these as the best bulwark against both liberalism and communism.\n\nWhilst not necessarily outright disloyal to the Prince or even the state itself, these individuals' radical ideas and desire to see ourselves align with Germany are seen by our government as a threat to our stability and even our independence."
  LUC_Fascists.a:0 "We should handle this rabble as soon as possible..."
+ LUC_flavour.1_tt:0 "Enables the £GFX_LUC_PolSupport  §YPolitical Support§! mechanic: starting at §Y40%§! on the §Y$SUS_HighConfidence_side$§! side"

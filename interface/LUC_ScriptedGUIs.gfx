@@ -1,4 +1,5 @@
 spriteTypes = {
+	# Military Movement
 	spriteType = {
 		name = "GFX_LUC_radicalisation_button_base"
 		textureFile = "gfx/interface/radicalisation/radicalisation_button_base.dds"
@@ -42,5 +43,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_LUC_radicalisation_fascist_5"
 		textureFile = "gfx/interface/radicalisation/Radical_5_Fascist.dds"
+	}
+	# BOP
+	spriteType = {
+		name = "GFX_LUC_LowConfidence_side"
+		textureFile = "gfx/interface/bop/LUC_bop_SUS_lowconfidence.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_LowConfidence_side_inactive"
+		textureFile = "gfx/interface/bop/LUC_bop_SUS_lowconfidence_inactive.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_HighConfidence_side"
+		textureFile = "gfx/interface/bop/LUC_bop_SUS_highconfidence.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_HighConfidence_side_inactive"
+		textureFile = "gfx/interface/bop/LUC_bop_SUS_highconfidence_inactive.dds"
 	}
 }

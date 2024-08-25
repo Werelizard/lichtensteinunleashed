@@ -15,4 +15,8 @@ spriteTypes = {
 		name = "GFX_LUC_report_farmers_event"
 		textureFile = "gfx/event_pictures/GFX_LUC_report_farmers_event.dds"
 	}
+	spriteType = {
+		name = "GFX_LUC_report_castle_event"
+		textureFile = "gfx/event_pictures/LUC_report_castle_event.dds"
+	}
 }

@@ -1,4 +1,5 @@
 ﻿l_english:
+ # The Military Movement UI
  radicalisation_fascist_text_short_tt: "Currently, the §FMilitary Movement§! has a popularity of [?party_popularity@fascism|%Y1]. Penalties and bonuses will increase when it passes the thresholds of §Y1%§!, §Y20%§!, §Y40%§!, §Y60%§! and §Y80%§! popularity."
  radicalisation_fascist_text_tt:0 "[?party_popularity@fascism|%Y1]"
  radicalisation_fascist_counter_tt:0 "The §FMilitary Movement§! is a growing and persistent threat, one which - if not handled - may find itself emboldened enough to manage a succesful §Rcoup§!! In order to efficiently counter them, we must keep the popularity of the §Y[ROOT.GetFascistParty]§! low, for the more popular it becomes, the greater the debuffs to our nation's §Ystability§! and §Ypolitical power gain§!!\n\nShall we choose to rule side by side with the §FMilitary Movement§! however, these penalties will be exchanged for bonuses - though they may yet attempt a takeover of our government..."

@@ -1,0 +1,205 @@
+SUS_Power_Balance = {
+	initial_value = 0.6
+	left_side = SUS_LowConfidence_side
+	right_side = SUS_HighConfidence_side	
+	decision_category = LUC_Government_Confidence_cat
+
+	### Neutral status
+	range = {
+		id = SUS_BalanceConfidence_Range
+		min = -0.20
+		max = 0.20
+		modifier = {
+			political_power_factor = -0.1
+		}
+		on_activate = {
+			set_power_balance_gfx = {
+				id = SUS_Power_Balance
+				side = SUS_LowConfidence_side
+				gfx = GFX_LUC_LowConfidence_side_inactive
+			}
+			set_power_balance_gfx = {
+				id = SUS_Power_Balance
+				side = SUS_HighConfidence_side
+				gfx = GFX_LUC_HighConfidence_side_inactive
+			}
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	### Low Confidence
+	side = {
+		id = SUS_LowConfidence_side	
+		icon = GFX_LUC_LowConfidence_side_inactive
+
+		range = {
+			id = SUS_LowConfidence_Mistrust_range
+			min = -0.5
+			max = -0.2
+			modifier = {	
+				political_power_factor = -0.15
+				trade_laws_cost_factor = 0.2
+				mobilization_laws_cost_factor = 0.2
+				economy_cost_factor = 0.2
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_LowConfidence_side
+					gfx = GFX_LUC_LowConfidence_side
+				}
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_HighConfidence_side
+					gfx = GFX_LUC_HighConfidence_side_inactive
+				}
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = SUS_LowConfidence_Opposition_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				political_power_factor = -0.2
+				trade_laws_cost_factor = 0.3
+				mobilization_laws_cost_factor = 0.3
+				economy_cost_factor = 0.3
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_LowConfidence_side
+					gfx = GFX_LUC_LowConfidence_side
+				}
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_HighConfidence_side
+					gfx = GFX_LUC_HighConfidence_side_inactive
+				}
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = SUS_LowConfidence_Veto_range
+			min = -1
+			max = -0.9
+			modifier = {
+				political_power_factor = -0.25
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economy_cost_factor = 0.5
+			}
+			on_activate = {
+				custom_effect_tooltip = SUS_LowConfidence_Veto_range_tt
+				#Remove the current prime minister because he's clearly bad at his job
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_LowConfidence_side
+					gfx = GFX_LUC_LowConfidence_side
+				}
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_HighConfidence_side
+					gfx = GFX_LUC_HighConfidence_side_inactive
+				}
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+
+	### High Confidence
+	side = {
+		id = SUS_HighConfidence_side	
+		icon = GFX_LUC_HighConfidence_side_inactive
+
+		range = {
+			id = SUS_HighConfidence_MediumTrust_range
+			min = 0.2
+			max = 0.5
+			modifier = {
+				political_advisor_cost_factor = -0.05
+				party_popularity_stability_factor = 0.1
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_HighConfidence_side
+					gfx = GFX_LUC_HighConfidence_side
+				}
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_LowConfidence_side
+					gfx = GFX_LUC_LowConfidence_side_inactive
+				}
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = SUS_HighConfidence_FullSupport_range
+			min = 0.5
+			max = 0.9
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				party_popularity_stability_factor = 0.15
+				stability_factor = 0.05
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_HighConfidence_side
+					gfx = GFX_LUC_HighConfidence_side
+				}
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_LowConfidence_side
+					gfx = GFX_LUC_LowConfidence_side_inactive
+				}
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = SUS_HighConfidence_TotalBacking_range
+			min = 0.9
+			max = 1
+			modifier = {
+				political_advisor_cost_factor = -0.15
+				party_popularity_stability_factor = 0.2
+				stability_factor = 0.1
+			}
+			on_activate = {
+				#Remove the current prime minister because he's clearly bad at his job
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_HighConfidence_side
+					gfx = GFX_LUC_HighConfidence_side
+				}
+				set_power_balance_gfx = {
+					id = SUS_Power_Balance
+					side = SUS_LowConfidence_side
+					gfx = GFX_LUC_LowConfidence_side_inactive
+				}
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+}
+

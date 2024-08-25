@@ -1,0 +1,32 @@
+add_namespace = LUC_flavour
+
+#####################
+# Introductory Event
+#####################
+
+country_event = {
+	id = LUC_flavour.1
+	title = LUC_flavour.1.title
+	desc = LUC_flavour.1.desc
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = SUS
+	}
+
+	picture = GFX_LUC_report_castle_event
+
+	option = {
+		name = LUC_flavour.1.a
+		custom_effect_tooltip = LUC_flavour.1_tt
+		
+		hidden_effect = {
+			set_power_balance = {
+				id = SUS_Power_Balance
+				set_value = 0.4
+			}
+		}
+	}
+}
