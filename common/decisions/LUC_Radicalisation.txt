@@ -36,22 +36,22 @@ LUC_Fascist_RadicalisatioN_cat ={
 			}
 			else = {		
 				random_list = {
-					30 = {
+					50 = {
 						add_popularity = {
 							ideology = fascism
-							popularity = 0.02
+							popularity = 0.03
 						}
 					}
-					50 = {
+					40 = {
 						add_popularity = {
 							ideology = fascism
 							popularity = 0.04
 						}
 					}
-					20 = {
+					10 = {
 						add_popularity = {
 							ideology = fascism
-							popularity = 0.06
+							popularity = 0.05
 						}
 					}
 				}
