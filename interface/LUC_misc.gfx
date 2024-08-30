@@ -1,5 +1,5 @@
 spriteTypes = {
-	# Texticon - National Investment Bank
+	# Texticons 
 	spriteType = {
 		name = "GFX_LUC_BankIcon"
 		textureFile = "gfx/texticons/SUS/LUC_BankTextIcon.dds"
@@ -8,6 +8,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_LUC_PolSupport"
 		textureFile = "gfx/texticons/SUS/LUC_PolSupportTextIcon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LUC_FactionLiberal_text"
+		textureFile = "gfx/texticons/SUS/LUC_PolLiberals.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LUC_FactionConservative_text"
+		textureFile = "gfx/texticons/SUS/LUC_PolConservatives.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LUC_FactionAgrarian_text"
+		textureFile = "gfx/texticons/SUS/LUC_PolAgrarians.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_LUC_FactionPopulist_text"
+		textureFile = "gfx/texticons/SUS/LUC_PolPopulists.dds"
 		legacy_lazy_load = no
 	}
 	# Agency

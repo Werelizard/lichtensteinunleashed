@@ -22,10 +22,14 @@ spriteTypes = {
 		clicksound = click
 	}
 
-	spriteType = {
-		name = "GFX_console_win_bg"
-		texturefile = "gfx/interface/console_win_bg.dds"
-	}
+	frameAnimatedSpriteType = {
+        name = "GFX_console_win_bg"
+        texturefile = "gfx/interface/console_win_bg.dds"
+        noOfFrames = 2
+		animation_rate_fps = 4
+		looping = yes
+		play_on_show = yes
+    }
 
 	spriteType = {
 		name = "GFX_dog"

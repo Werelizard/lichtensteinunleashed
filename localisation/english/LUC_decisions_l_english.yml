@@ -9,4 +9,5 @@
  LUC_FascistRising_coup_mis:0 "§RIncoming Nationalist Coup!§!"
  LUC_MilitaryMovementCoup_tt:0 "The §FMilitary Movement§! will §Rcoup§! our government!"
 
- LUC_Government_LandtagSupport_cat:0 "The Landtag"
+ LUC_Government_LandtagSupport_cat:0 "Political Support"
+ LUC_Government_LandtagSupport_cat_desc:0 "The [ROOT.GetAdjective] political system is imperfect. Nominally a constitutionally monarchy, in reality the majority of the political power is usually deligated to the §YPrime Minister§!. The §YPrince§! of [ROOT.GetNameDef] on the other hand serves as a head of state. However, the §YLandtag§! - regrouping various parties - and the broader government at larger - has been vested with the power to recommend that the prime minister be deposed, which would serve as a de facto vote of no confidence.\n\nThe government of [ROOT.GetNameDef] is therefore one which has traditionally replied on compromise, coalition and political negotiating. Should the §CLandtag Support§! fall too low, then there is a risk that our current §YPrime Minister§! be §Rforced to resign§!. As such, it becomes imperative that we court and appease the different §Yfactions§! making up our government - lest the government collapse.\n"

@@ -16,18 +16,24 @@ country_event = {
 		original_tag = SUS
 	}
 
+	immediate = {
+		hidden_effect = {
+			LUC_SupportSetup = yes
+			LUC_SupportUpdateModifier = yes
+			set_variable = {
+				LUC_Confidence_var = 85.9
+			}
+			LUC_UpdateLandtagModifier = yes
+			set_country_flag = LUC_EnableLandtag_flag
+		}
+	}
+
 	picture = GFX_LUC_report_castle_event
 
 	option = {
 		name = LUC_flavour.1.a
 		custom_effect_tooltip = LUC_flavour.1_tt
+		unlock_decision_category_tooltip = LUC_Government_LandtagSupport_cat
 
-		hidden_effect = {
-			set_variable = {
-				LUC_Confidence_var = 85
-			}
-			LUC_UpdateLandtagModifier = yes
-			set_country_flag = LUC_EnableLandtag_flag
-		}
 	}
 }

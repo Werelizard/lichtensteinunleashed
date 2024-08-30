@@ -54,22 +54,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/support/LUC_indicator_inactive.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_LowConfidence_side"
-		textureFile = "gfx/interface/support/LUC_bop_SUS_lowconfidence.dds"
-	}
-	spriteType = {
-		name = "GFX_LUC_LowConfidence_side_inactive"
-		textureFile = "gfx/interface/support/LUC_bop_SUS_lowconfidence_inactive.dds"
-	}
-	spriteType = {
-		name = "GFX_LUC_HighConfidence_side"
-		textureFile = "gfx/interface/support/LUC_bop_SUS_highconfidence.dds"
-	}
-	spriteType = {
-		name = "GFX_LUC_HighConfidence_side_inactive"
-		textureFile = "gfx/interface/support/LUC_bop_SUS_highconfidence_inactive.dds"
-	}
-	spriteType = {
 		name = "GFX_LUC_confidence_HOOP"
 		textureFile = "gfx/interface/support/LUC_JosefHoop.dds"
 	}
@@ -112,5 +96,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_LUC_confidenceBar_bg"
 		textureFile = "gfx/interface/support/LUC_confidenceBar_bg.dds"
+	}
+	# Factions
+	spriteType = {
+		name = "GFX_LUC_FactionLiberal"
+		textureFile = "gfx/interface/support/LUC_FactionLiberals.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_FactionConservative"
+		textureFile = "gfx/interface/support/LUC_FactionConservative.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_FactionPopulist"
+		textureFile = "gfx/interface/support/LUC_FactionPopulists.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_FactionAgrarian"
+		textureFile = "gfx/interface/support/LUC_FactionAgrarian.dds"
 	}
 }

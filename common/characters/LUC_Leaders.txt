@@ -639,7 +639,6 @@ characters={
 						has_government = communism
 					}
 				}
-				has_completed_focus = LUC_BankOfLiechtenstein
 			}
 		}
 	}

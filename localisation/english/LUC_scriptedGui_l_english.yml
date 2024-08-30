@@ -36,11 +36,37 @@
 
  # Landtag Support
  confidence_header:0 "Landtag Support"
- confidence_bar_explanation:0 "The [ROOT.GetAdjective] political system is imperfect, one where the unicameral [ROOT.GetAdjective] parliament serves as a check on the §Yprime minister§!'s cabinet. In order for our government to function, we must ensure that the £GFX_LUC_PolSupport  §Opolitical support§! remains high at all times, lest [ROOT.GetLeader.GetSheHe] be §Rdeposed§! and the government fall!"
- confidence_bar_frame_tt:0 "Current Prime Minister: §Y[ROOT.GetLeader]§!"
  support_control_tt:0 "§YTotal Landtag Support§!:\n\nPolitical Advisor Cost: §G-10.0%§!\nStability: §G+10.0%§!\n\nUnlocks £decision_icon_small decision: §YRequest Emergency Powers§!"
  support_support_tt:0 "§YStrong Landtag Support§!:\n\nPolitical Advisor Cost: §G-5.0%§!\nStability: §G+5.0%§!"
  support_neutral_tt:0 "§YIndifferent Landtag§!:\n\nPolitical Power Gain: §R-5.0%§!"
  support_opposition_tt:0 "§YLandtag Opposition§!:\n\nPolitical Power Gain: §R-10.0%§!\nPolitical Power Cost: §R+0.25§!"
  support_veto_tt:0 "§YLandtag Veto§!:\n\nPolitical Power Gain: §R-20.0%§!\nPolitical Power Cost: §R+0.5§!\n\n§RThe opposition will begin measures to remove §!§Y[ROOT.GetLeader]§!§R from power!"
  confidence_bar_value_text:0 "[?LUC_Confidence_var|%%]"
+
+ LUC_LIB_LOY:0 "[LUC_GetAttitudeLiberals]"
+ LUC_CON_LOY:0 "[LUC_GetAttitudeConservatives]"
+ LUC_AGR_LOY:0 "[LUC_GetAttitudeAgrarians]"
+ LUC_POP_LOY:0 "[LUC_GetAttitudePopulists]"
+
+ LOYAL_LANDTAG_LIB:0 "§GSupportive ([?LUC_SupportLiberalLoyalty_var])§!"
+ DISLOYAL_LANDTAG_LIB:0 "§ROpposed ([?LUC_SupportLiberalLoyalty_var])§!"
+ NEUTRAL_LIB:0 "Neutral ([?LUC_SupportLiberalLoyalty_var])"
+
+ LOYAL_LANDTAG_CON:0 "§GSupportive ([?LUC_SupportConservativeLoyalty_var])§!"
+ DISLOYAL_LANDTAG_CON:0 "§ROpposed ([?LUC_SupportConservativeLoyalty_var])§!"
+ NEUTRAL_CON:0 "Neutral ([?LUC_SupportConservativeLoyalty_var])"
+
+ LOYAL_LANDTAG_AGR:0 "§GSupportive ([?LUC_SupportAgrarianLoyalty_var])§!"
+ DISLOYAL_LANDTAG_AGR:0 "§ROpposed ([?LUC_SupportAgrarianLoyalty_var])§!"
+ NEUTRAL_AGR:0 "Neutral ([?LUC_SupportAgrarianLoyalty_var])"
+
+ LOYAL_LANDTAG_POP:0 "§GSupportive ([?LUC_SupportPopulistLoyalty_var])§!"
+ DISLOYAL_LANDTAG_POP:0 "§ROpposed ([?LUC_SupportPopulistLoyalty_var])§!"
+ NEUTRAL_POP:0 "Neutral ([?LUC_SupportPopulistLoyalty_var])"
+ 
+ LUC_LIB_INF:0 "[?LUC_SupportLiberalInfluence_var|%%]"
+ LUC_CON_INF:0 "[?LUC_SupportConservativeInfluence_var|%%]"
+ LUC_AGR_INF:0 "[?LUC_SupportAgrarianInfluence_var|%%]"
+ LUC_POP_INF:0 "[?LUC_SupportPopulistInfluence_var|%%]"
+
+ LUC_landtag_support_status_display:0 "§T[LUC_GetLandtagState]§!"

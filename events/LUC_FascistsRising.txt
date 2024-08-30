@@ -7,8 +7,8 @@ add_namespace = LUC_Fascists
 #Fasict Acitivity Increases
 country_event = {
 	id = LUC_Fascists.1
-	title = LUC_Fascists.title
-	desc = LUC_Fascists.desc
+	title = LUC_Fascists.1.title
+	desc = LUC_Fascists.1.desc
 
 	picture = GFX_report_event_SWI_soldier_gathering
 
@@ -27,7 +27,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = LUC_Fascists.a
+		name = LUC_Fascists.1.a
 		
 		add_ideas = LUC_Fascist_Agitators_idea
 		unlock_decision_category_tooltip = LUC_Fascist_Radicalisation_cat

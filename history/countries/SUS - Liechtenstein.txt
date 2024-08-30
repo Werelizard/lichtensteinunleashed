@@ -174,10 +174,7 @@ SUS = {
 
 # Events
 
-country_event = {
-	id = LUC_flavour.1
-	days = 1
-}
+
 country_event = {
 	id = LUC_Fascists.1
 	days = 30

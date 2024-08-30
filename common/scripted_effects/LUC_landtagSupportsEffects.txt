@@ -1,0 +1,711 @@
+########################
+# FLOW CONTROL EFFECTS #
+########################
+
+LUC_SupportSetup = {
+	# Setup the initial influences
+	set_variable = {
+		LUC_SupportLiberalInfluence_var = 20
+	}
+	set_variable = {
+		LUC_SupportConservativeInfluence_var = 70
+	}
+	set_variable = {
+		LUC_SupportPopulistInfluence_var = 10
+	}
+	set_variable = {
+		LUC_SupportAgrarianInfluence_var = 0
+	}
+	# Setup the initial loyalties
+	set_variable = {
+		LUC_SupportLiberalLoyalty_var = 60
+	}
+	set_variable = {
+		LUC_SupportConservativeLoyalty_var = 80
+	}
+	set_variable = {
+		LUC_SupportPopulistLoyalty_var = 0	
+	}
+	set_variable = {
+		LUC_SupportAgrarianLoyalty_var = 40
+	}
+}
+
+LUC_SupportUpdateModifier = {
+	set_variable = {
+		LUC_SupportDailyChange_var = 0
+	}
+	# Manage liberal contribution
+	set_temp_variable = {
+		LUC_SupportTemp_var = LUC_SupportLiberalInfluence_var
+	}
+	divide_temp_variable = {
+		LUC_SupportTemp_var = 100
+	}
+	if = { # If loyal (70 or above - ADD)
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_SupportLiberalLoyalty_var < 70
+				}
+			}
+		}
+		add_to_variable = {
+			LUC_SupportDailyChange_var = LUC_SupportTemp_var
+		}
+	}
+	else_if = { # If disloyaly
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_SupportLiberalLoyalty_var > 30
+				}
+			}
+		}
+		subtract_from_variable = {
+			LUC_SupportDailyChange_var = LUC_SupportTemp_var
+		}
+	}
+	# Manage conservative contribution
+	set_temp_variable = {
+		LUC_SupportTemp_var = LUC_SupportConservativeInfluence_var
+	}
+	divide_temp_variable = {
+		LUC_SupportTemp_var = 100
+	}
+	if = { # If loyal (70 or above - ADD)
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_SupportConservativeLoyalty_var < 70
+				}
+			}
+		}
+		add_to_variable = {
+			LUC_SupportDailyChange_var = LUC_SupportTemp_var
+		}
+	}
+	else_if = { # If disloyaly
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_SupportConservativeLoyalty_var > 30
+				}
+			}
+		}
+		subtract_from_variable = {
+			LUC_SupportDailyChange_var = LUC_SupportTemp_var
+		}
+	}
+	# Manage populist contribution
+	set_temp_variable = {
+		LUC_SupportTemp_var = LUC_SupportPopulistInfluence_var
+	}
+	divide_temp_variable = {
+		LUC_SupportTemp_var = 100
+	}
+	if = { # If loyal (70 or above - ADD)
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_SupportPopulistLoyalty_var < 70
+				}
+			}
+		}
+		add_to_variable = {
+			LUC_SupportDailyChange_var = LUC_SupportTemp_var
+		}
+	}
+	else_if = { # If disloyaly
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_SupportPopulistLoyalty_var > 30
+				}
+			}
+		}
+		subtract_from_variable = {
+			LUC_SupportDailyChange_var = LUC_SupportTemp_var
+		}
+	}
+	# Manage Agrarian contribution
+	set_temp_variable = {
+		LUC_SupportTemp_var = LUC_SupportAgrarianInfluence_var
+	}
+	divide_temp_variable = {
+		LUC_SupportTemp_var = 100
+	}
+	if = { # If loyal (70 or above - ADD)
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_SupportAgrarianLoyalty_var < 70
+				}
+			}
+		}
+		add_to_variable = {
+			LUC_SupportDailyChange_var = LUC_SupportTemp_var
+		}
+	}
+	else_if = { # If disloyaly
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_SupportAgrarianLoyalty_var > 30
+				}
+			}
+		}
+		subtract_from_variable = {
+			LUC_SupportDailyChange_var = LUC_SupportTemp_var
+		}
+	}
+}
+
+LUC_SupportDailyEffect = {
+	add_to_variable = {
+		LUC_Confidence_var = LUC_SupportDailyChange_var
+	}
+}
+
+LUC_Clamp_Loyalites = {
+	clamp_variable = {
+		var = LUC_SupportLiberalLoyalty_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = LUC_SupportConservativeLoyalty_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = LUC_SupportPopulistLoyalty_var
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = LUC_SupportAgrarianLoyalty_var
+		min = 0
+		max = 100
+	}
+}
+
+###################
+# LOYALTY EFFECTS #
+###################
+
+LUC_IncreaseLiberalLoyalty = {
+	custom_effect_tooltip = LUC_IncreaseLiberalLoyalty_tt
+	add_to_variable = {
+		LUC_SupportLiberalLoyalty_var = 5
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_IncreaseConservativeLoyalty = {
+	custom_effect_tooltip = LUC_IncreaseConservativeLoyalty_tt
+	add_to_variable = {
+		LUC_SupportConservativeLoyalty_var = 5
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_IncreasePopulistLoyalty = {
+	custom_effect_tooltip = LUC_IncreasePopulistLoyalty_tt
+	add_to_variable = {
+		LUC_SupportPopulistLoyalty_var = 5
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_IncreaseAgrarianLoyalty = {
+	custom_effect_tooltip = LUC_IncreaseAgrarianLoyalty_tt
+	add_to_variable = {
+		LUC_SupportAgrarianLoyalty_var = 5
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_IncreaseLiberalLoyaltyBIG = {
+	custom_effect_tooltip = LUC_IncreaseLiberalLoyaltyBIG_tt
+	add_to_variable = {
+		LUC_SupportLiberalLoyalty_var = 15
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_IncreaseConservativeLoyaltBIGy = {
+	custom_effect_tooltip = LUC_IncreaseConservativeLoyaltBIGy_tt
+	add_to_variable = {
+		LUC_SupportConservativeLoyalty_var = 15
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_IncreasePopulistLoyaltyBIG = {
+	custom_effect_tooltip = LUC_IncreasePopulistLoyaltyBIG_tt
+	add_to_variable = {
+		LUC_SupportPopulistLoyalty_var = 15
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_IncreaseAgrarianLoyaltyBIG = {
+	custom_effect_tooltip = LUC_IncreaseAgrarianLoyaltyBIG_tt
+	add_to_variable = {
+		LUC_SupportAgrarianLoyalty_var = 15
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_DecreaseLiberalLoyalty = {
+	custom_effect_tooltip = LUC_DecreaseLiberalLoyalty_tt
+	add_to_variable = {
+		LUC_SupportLiberalLoyalty_var = -5
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_DecreaseConservativeLoyalty = {
+	custom_effect_tooltip = LUC_DecreaseConservativeLoyalty_tt
+	add_to_variable = {
+		LUC_SupportConservativeLoyalty_var = -5
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_DecreasePopulistLoyalty = {
+	custom_effect_tooltip = LUC_DecreasePopulistLoyalty_tt
+	add_to_variable = {
+		LUC_SupportPopulistLoyalty_var = -5
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_DecreaseAgrarianLoyalty = {
+	custom_effect_tooltip = LUC_DecreaseAgrarianLoyalty_tt
+	add_to_variable = {
+		LUC_SupportAgrarianLoyalty_var = -5
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_DecreaseLiberalLoyaltyBIG = {
+	custom_effect_tooltip = LUC_DecreaseLiberalLoyaltyBIG_tt
+	add_to_variable = {
+		LUC_SupportLiberalLoyalty_var = -15
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_DecreaseConservativeLoyaltyBIG = {
+	custom_effect_tooltip = LUC_DecreaseConservativeLoyaltyBIG_tt
+	add_to_variable = {
+		LUC_SupportConservativeLoyalty_var = -15
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_DecreasePopulistLoyaltyBIG = {
+	custom_effect_tooltip = LUC_DecreasePopulistLoyaltyBIG_tt
+	add_to_variable = {
+		LUC_SupportPopulistLoyalty_var = -15
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+LUC_DecreaseAgrarianLoyaltyBIG = {
+	custom_effect_tooltip = LUC_DecreaseAgrarianLoyaltyBIG_tt
+	add_to_variable = {
+		LUC_SupportAgrarianLoyalty_var = -15
+	}
+	LUC_Clamp_Loyalites = yes
+}
+
+###################
+# INFLUENCE EFFECTS #
+###################
+
+LUC_DecreaseLiberal_Influence = {
+	custom_effect_tooltip = LUC_DecreaseLiberal_Influence_tt
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportLiberalInfluence_var < 0.05
+			}
+		}
+		set_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportLiberalInfluence_var
+		}
+		set_variable = {
+			LUC_SupportLiberalInfluence_var = 0
+		}
+	}
+	else = {
+		set_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportLiberalInfluence_var = -0.05
+		}
+	}
+	divide_temp_variable = {
+		LUC_InfluenceChange_temp_var = 3
+	}
+	add_to_variable = {
+		LUC_SupportConservativeInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportPopulistInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportAgrarianInfluence_var = LUC_InfluenceChange_temp_var
+	}
+}
+
+LUC_DecreaseConservative_Influence = {
+	custom_effect_tooltip = LUC_DecreaseConservative_Influence_tt
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportConservativeInfluence_var < 0.05
+			}
+		}
+		set_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportConservativeInfluence_var
+		}
+		set_variable = {
+			LUC_SupportConservativeInfluence_var = 0
+		}
+	}
+	else = {
+		set_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportConservativeInfluence_var = -0.05
+		}
+	}
+	divide_temp_variable = {
+		LUC_InfluenceChange_temp_var = 3
+	}
+	add_to_variable = {
+		LUC_SupportLiberalInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportPopulistInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportAgrarianInfluence_var = LUC_InfluenceChange_temp_var
+	}
+}
+
+LUC_DecreasePopulist_Influence = {
+	custom_effect_tooltip = LUC_DecreasePopulist_Influence_tt
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportPopulistInfluence_var < 0.05
+			}
+		}
+		set_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportPopulistInfluence_var
+		}
+		set_variable = {
+			LUC_SupportPopulistInfluence_var = 0
+		}
+	}
+	else = {
+		set_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportPopulistInfluence_var = -0.05
+		}
+	}
+	divide_temp_variable = {
+		LUC_InfluenceChange_temp_var = 3
+	}
+	add_to_variable = {
+		LUC_SupportLiberalInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportConservativeInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportAgrarianInfluence_var = LUC_InfluenceChange_temp_var
+	}
+}
+
+LUC_DecreaseAgrarian_Influence = {
+	custom_effect_tooltip = LUC_DecreaseAgrarian_Influence_tt
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportAgrarianInfluence_var < 0.05
+			}
+		}
+		set_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportAgrarianInfluence_var
+		}
+		set_variable = {
+			LUC_SupportAgrarianInfluence_var = 0
+		}
+	}
+	else = {
+		set_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportAgrarianInfluence_var = -0.05
+		}
+	}
+	divide_temp_variable = {
+		LUC_InfluenceChange_temp_var = 3
+	}
+	add_to_variable = {
+		LUC_SupportLiberalInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportConservativeInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportPopulistInfluence_var = LUC_InfluenceChange_temp_var
+	}
+}
+
+LUC_DecreaseLiberalAgrarian_Influence = {
+	custom_effect_tooltip = LUC_DecreaseLiberal_Influence_tt
+	custom_effect_tooltip = LUC_DecreaseAgrarian_Influence_tt
+	set_temp_variable = {
+		LUC_InfluenceChange_temp_var = 0
+	}
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportLiberalInfluence_var < 0.05
+			}
+		}
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportLiberalInfluence_var
+		}
+		set_variable = {
+			LUC_SupportLiberalInfluence_var = 0
+		}
+	}
+	else = {
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportLiberalInfluence_var = -0.05
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportAgrarianInfluence_var < 0.05
+			}
+		}
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportAgrarianInfluence_var
+		}
+		set_variable = {
+			LUC_SupportAgrarianInfluence_var = 0
+		}
+	}
+	else = {
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportAgrarianInfluence_var = -0.05
+		}
+	}
+	divide_temp_variable = {
+		LUC_InfluenceChange_temp_var = 2
+	}
+	add_to_variable = {
+		LUC_SupportConservativeInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportPopulistInfluence_var = LUC_InfluenceChange_temp_var
+	}
+}
+
+LUC_DecreaseConservativeLiberal_Influence = {
+	custom_effect_tooltip = LUC_DecreaseLiberal_Influence_tt
+	custom_effect_tooltip = LUC_DecreaseConservative_Influence_tt
+	set_temp_variable = {
+		LUC_InfluenceChange_temp_var = 0
+	}
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportLiberalInfluence_var < 0.05
+			}
+		}
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportLiberalInfluence_var
+		}
+		set_variable = {
+			LUC_SupportLiberalInfluence_var = 0
+		}
+	}
+	else = {
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportLiberalInfluence_var = -0.05
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportConservativeInfluence_var < 0.05
+			}
+		}
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportConservativeInfluence_var
+		}
+		set_variable = {
+			LUC_SupportConservativeInfluence_var = 0
+		}
+	}
+	else = {
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportConservativeInfluence_var = -0.05
+		}
+	}
+	divide_temp_variable = {
+		LUC_InfluenceChange_temp_var = 2
+	}
+	add_to_variable = {
+		LUC_SupportAgrarianInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportPopulistInfluence_var = LUC_InfluenceChange_temp_var
+	}
+}
+
+LUC_DecreasePopulistConservative_Influence = {
+	custom_effect_tooltip = LUC_DecreaseConservative_Influence_tt
+	custom_effect_tooltip = LUC_DecreasePopulist_Influence_tt
+	set_temp_variable = {
+		LUC_InfluenceChange_temp_var = 0
+	}
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportPopulistInfluence_var < 0.05
+			}
+		}
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportPopulistInfluence_var
+		}
+		set_variable = {
+			LUC_SupportPopulistInfluence_var = 0
+		}
+	}
+	else = {
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportPopulistInfluence_var = -0.05
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportConservativeInfluence_var < 0.05
+			}
+		}
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportConservativeInfluence_var
+		}
+		set_variable = {
+			LUC_SupportConservativeInfluence_var = 0
+		}
+	}
+	else = {
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportConservativeInfluence_var = -0.05
+		}
+	}
+	divide_temp_variable = {
+		LUC_InfluenceChange_temp_var = 2
+	}
+	add_to_variable = {
+		LUC_SupportAgrarianInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportLiberalInfluence_var = LUC_InfluenceChange_temp_var
+	}
+}
+
+LUC_DecreaseAgrarianConservative_Influence = {
+	custom_effect_tooltip = LUC_DecreaseAgrarian_Influence_tt
+	custom_effect_tooltip = LUC_DecreasePopulist_Influence_tt
+	set_temp_variable = {
+		LUC_InfluenceChange_temp_var = 0
+	}
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportPopulistInfluence_var < 0.05
+			}
+		}
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportPopulistInfluence_var
+		}
+		set_variable = {
+			LUC_SupportPopulistInfluence_var = 0
+		}
+	}
+	else = {
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportPopulistInfluence_var = -0.05
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				LUC_SupportConservativeInfluence_var < 0.05
+			}
+		}
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = LUC_SupportConservativeInfluence_var
+		}
+		set_variable = {
+			LUC_SupportConservativeInfluence_var = 0
+		}
+	}
+	else = {
+		add_to_temp_variable = {
+			LUC_InfluenceChange_temp_var = 0.05
+		}
+		add_to_variable = {
+			LUC_SupportConservativeInfluence_var = -0.05
+		}
+	}
+	divide_temp_variable = {
+		LUC_InfluenceChange_temp_var = 2
+	}
+	add_to_variable = {
+		LUC_SupportAgrarianInfluence_var = LUC_InfluenceChange_temp_var
+	}
+	add_to_variable = {
+		LUC_SupportLiberalInfluence_var = LUC_InfluenceChange_temp_var
+	}
+}

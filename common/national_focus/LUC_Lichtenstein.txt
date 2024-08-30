@@ -447,8 +447,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			focus = LUC_MilitaryDisarmement
 		}
@@ -525,8 +524,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			focus = LUC_MilitaryRearmement
 		}
@@ -582,8 +580,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -674,8 +671,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -764,8 +760,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			focus = LUC_BeautifulValley
 			focus = LUC_MilitaryIndustry
@@ -843,8 +838,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -922,8 +916,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -978,8 +971,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -1028,8 +1020,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -1075,8 +1066,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -1139,8 +1129,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			focus = LUC_Autarky
 			focus = LUC_MilitaryIndustry
@@ -1186,8 +1175,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -1232,8 +1220,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -1293,8 +1280,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -1345,8 +1331,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -1399,8 +1384,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 		}
 	}
@@ -1462,8 +1446,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			focus = LUC_Autarky
 			focus = LUC_BeautifulValley
@@ -1501,8 +1484,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 		}
 	}
@@ -1551,8 +1533,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 		}
 	}
@@ -1592,8 +1573,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 		}
 	}
@@ -1658,8 +1638,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 		}
 	}
@@ -1706,8 +1685,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 		}
 	}
@@ -1754,8 +1732,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 		}
 	}
@@ -1810,8 +1787,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 		}
 	}
@@ -1936,8 +1912,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 
 		}
@@ -1997,8 +1972,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -2044,8 +2018,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -2173,7 +2146,6 @@ focus_tree = {
 					diplomatic_relation = {
 						country = ROOT
 						relation = guarantee
-						active = YES
 					}
 				}
 			}
@@ -2541,8 +2513,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 			
 		}
@@ -3045,8 +3016,7 @@ focus_tree = {
 		select_effect = {
 			
 		}
-		cancel_effect = {
-		}
+		
 		mutually_exclusive = {
 		}
 		allow_branch = {
