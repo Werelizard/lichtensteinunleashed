@@ -31,4 +31,11 @@ spriteTypes = {
 		name = "GFX_LUC_GovernmentConfidence_cat"
 		texturefile = "gfx/interface/decisions/LUC_GovernmentConfidence_cat.dds"
 	}
+
+	#Help tooltip
+	
+	spriteType = {	
+		name = "GFX_LUC_help_icon"
+		texturefile = "gfx/interface/LUC_Help_Tooltip.dds"
+	}
 }

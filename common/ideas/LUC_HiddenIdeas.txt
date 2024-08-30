@@ -1,0 +1,33 @@
+ideas = {
+	hidden_ideas = {
+		LUC_LandtagVeto = {
+			modifier = {
+				political_power_factor = -0.2
+				political_power_cost = 0.5
+			}
+		}
+		LUC_LandtagOpposition = {
+			modifier = {
+				political_power_factor = -0.15
+				political_power_cost = 0.25
+			}
+		}
+		LUC_LandtagNeutral = {
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
+		LUC_LandtagSupport = {
+			modifier = {
+				political_advisor_cost_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		LUC_LandtagControl = {
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				stability_factor = 0.1
+			}
+		}
+	}
+}

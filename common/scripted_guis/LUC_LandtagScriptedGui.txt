@@ -1,0 +1,88 @@
+scripted_gui = {
+	LUC_GOVERNMENTCONFIDENCE = {
+		window_name = LUC_GovernmentConfidence_ui_window
+		context_type = decision_category
+
+		dirty = SUS.LUC_Confidence_var
+
+		properties = {
+			confidence_bar_fill = {
+				frame = SUS.LUC_Confidence_var
+			}
+		}
+		triggers = {
+			support_neutral_active_visible = {
+				check_variable = {
+					SUS.LUC_Confidence_var > 40
+				}
+				check_variable = {
+					SUS.LUC_Confidence_var < 60
+				}
+			}
+			support_opposition_active_visible = {
+				NOT = {
+					check_variable = {
+						SUS.LUC_Confidence_var > 40
+					}
+				}
+				check_variable = {
+					SUS.LUC_Confidence_var > 10
+				}
+			}
+			support_veto_active_visible = {
+				NOT = {
+					check_variable = {
+						SUS.LUC_Confidence_var > 10
+					}
+				}
+			}
+			support_support_active_visible = {
+				NOT = {
+					check_variable = {
+						SUS.LUC_Confidence_var < 60
+					}
+				}
+				check_variable = {
+					SUS.LUC_Confidence_var < 90
+				}
+			}
+			support_control_active_visible = {
+				NOT = {
+					check_variable = {
+						SUS.LUC_Confidence_var < 90
+					}
+				}
+			}
+			confidence_Hoop_portrait_visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = LUC_JosefHoop
+				}
+			}
+			confidence_Marxer_portrait_visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = LUC_Ludwig_Marxer
+				}
+			}
+			confidence_Meier_portrait_visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = LUC_RichardMeier
+				}
+			}
+			confidence_Schaedler_portrait_visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = LUC_OttoSchaedler
+				}
+			}
+			confidence_Rudolf_portrait_visible = {
+				has_country_leader = {
+					ruling_only = yes
+					character = LUC_RudolfSchaedler
+				}
+			}
+		}
+	}
+}

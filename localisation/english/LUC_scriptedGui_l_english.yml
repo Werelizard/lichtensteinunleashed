@@ -33,3 +33,14 @@
  LUC_FascistUprising5_no:0 "Level III - §LInactive§!: at this level, the nationalists are considered to be the dominant political faction in our country, and will certainly attempt a §Rcoup§!.\n\n§YEffects:§!\nStability: §R-25.0%§!\nPolitical Power Gain: §R-15.0%§!"
  LUC_FascistCollaborators5_yes:0 "Level III - §GActive§!: at this level, the nationalists are considered to be a domineering political rival, and may attempt a §Rcoup§!.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.1§!\nRecruitable Population: §G+10.0%§!"
  LUC_FascistCollaborators5_no:0 "Level III - §LInactive§!: at this level, the nationalists are considered to be a domineering political rival, and may attempt a §Rcoup§!.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.1§!\nRecruitable Population: §G+10.0%§!"
+
+ # Landtag Support
+ confidence_header:0 "Landtag Support"
+ confidence_bar_explanation:0 "The [ROOT.GetAdjective] political system is imperfect, one where the unicameral [ROOT.GetAdjective] parliament serves as a check on the §Yprime minister§!'s cabinet. In order for our government to function, we must ensure that the £GFX_LUC_PolSupport  §Opolitical support§! remains high at all times, lest [ROOT.GetLeader.GetSheHe] be §Rdeposed§! and the government fall!"
+ confidence_bar_frame_tt:0 "Current Prime Minister: §Y[ROOT.GetLeader]§!"
+ support_control_tt:0 "§YTotal Landtag Support§!:\n\nPolitical Advisor Cost: §G-10.0%§!\nStability: §G+10.0%§!\n\nUnlocks £decision_icon_small decision: §YRequest Emergency Powers§!"
+ support_support_tt:0 "§YStrong Landtag Support§!:\n\nPolitical Advisor Cost: §G-5.0%§!\nStability: §G+5.0%§!"
+ support_neutral_tt:0 "§YIndifferent Landtag§!:\n\nPolitical Power Gain: §R-5.0%§!"
+ support_opposition_tt:0 "§YLandtag Opposition§!:\n\nPolitical Power Gain: §R-10.0%§!\nPolitical Power Cost: §R+0.25§!"
+ support_veto_tt:0 "§YLandtag Veto§!:\n\nPolitical Power Gain: §R-20.0%§!\nPolitical Power Cost: §R+0.5§!\n\n§RThe opposition will begin measures to remove §!§Y[ROOT.GetLeader]§!§R from power!"
+ confidence_bar_value_text:0 "[?LUC_Confidence_var|%%]"

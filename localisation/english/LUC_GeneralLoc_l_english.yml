@@ -154,6 +154,14 @@
  LUC_Liechtensteiner_Army_idea_desc:0 ""
  LUC_Liechtensteiner_Army_idea_tt:0 "§RCannot train units, disband units, or edit unit templates§!"
 
+
+ # Hidden ideas
+ LUC_LandtagVeto:0 "Landtag Veto"
+ LUC_LandtagOpposition:0 "Landtag Opposition"
+ LUC_LandtagNeutral:0 "Indifferent Landtag"
+ LUC_LandtagSupport:0 "Strong Landtag Support"
+ LUC_LandtagControl:0 "Total Landtag Support"
+ 
  # Ideas - Events
 
  LUC_Fascist_Agitators_idea:0 "Growing Paramilitary Movement"

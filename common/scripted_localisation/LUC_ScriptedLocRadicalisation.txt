@@ -1,33 +1,4 @@
-defined_text = { # For determining what is germany's party
-	name = LUC_GetGermanyRulingParty
-	text = {
-		trigger = {
-			GER = {
-				has_government = fascism
-			}
-		}
-		localization_key = LUC_FascistParty
-	}
-	text = {
-		trigger = {
-			GER = {
-				has_government = communism
-			}
-		}
-		localization_key = LUC_CommunistParty
-	}
-	text = {
-		trigger = {
-			GER = {
-				has_government = neutrality
-			}
-		}
-		localization_key = LUC_NeutralityParty
-	}
-	text = {
-		localization_key = LUC_DemocraticParty
-	}
-}
+
 
 defined_text = { # Radicalisation mechanic - fascist 1
 	name = LUC_GetRadicalisationFascist1

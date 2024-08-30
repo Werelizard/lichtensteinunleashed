@@ -151,8 +151,8 @@ luc_setup_customs_union = yes
 add_manpower = 9000
 country_lock_all_division_template = yes
 
-# Variables for the initial economy
 
+# Variables for the initial economy
 
 set_variable = {
 	LUC_ConGoodsFac_Var = -0.05
@@ -162,9 +162,6 @@ set_variable = {
 }
 set_variable = {
 	LUC_ProductionFac_Var = -0.15
-}
-set_variable = {
-	LUC_Confidence_var = 85
 }
 # Relation
 

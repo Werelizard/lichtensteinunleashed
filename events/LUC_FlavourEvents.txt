@@ -21,12 +21,13 @@ country_event = {
 	option = {
 		name = LUC_flavour.1.a
 		custom_effect_tooltip = LUC_flavour.1_tt
-		
+
 		hidden_effect = {
-			set_power_balance = {
-				id = SUS_Power_Balance
-				set_value = 0.4
+			set_variable = {
+				LUC_Confidence_var = 85
 			}
+			LUC_UpdateLandtagModifier = yes
+			set_country_flag = LUC_EnableLandtag_flag
 		}
 	}
 }

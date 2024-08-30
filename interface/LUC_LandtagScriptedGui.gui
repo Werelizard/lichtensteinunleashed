@@ -1,0 +1,212 @@
+guiTypes = {
+	containerWindowType = {
+		name = "LUC_GovernmentConfidence_ui_window"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 470
+			height = 330
+		}
+
+		background = {
+			name = "Background"
+			quadTextureSprite = GFX_tiled_bg
+			size = {
+				width = 470
+				height = 330
+			}
+			position = {
+				x = 10
+				y = 0
+			}
+		}
+
+		iconType = {
+			name = "confidence_Hoop_portrait"
+			position = {x = 69 y = 69}
+			spriteType = "GFX_LUC_confidence_HOOP"
+		}
+
+		iconType = {
+			name = "confidence_Marxer_portrait"
+			position = {x = 69 y = 69}
+			spriteType = "GFX_LUC_confidence_MARXER"
+		}
+
+		iconType = {
+			name = "confidence_Meier_portrait"
+			position = {x = 69 y = 69}
+			spriteType = "GFX_LUC_confidence_MEIER"
+		}
+
+		iconType = {
+			name = "confidence_Schaedler_portrait"
+			position = {x = 69 y = 69}
+			spriteType = "GFX_LUC_confidence_SHAEDLER"
+		}
+		
+		iconType = {
+			name = "confidence_Rudolf_portrait"
+			position = {x = 69 y = 69}
+			spriteType = "GFX_LUC_confidence_RUDOLF"
+		}
+
+		iconType = {
+			name = "confidence_portait_frame"
+			position = {x = 65 y = 65}
+			spriteType = "GFX_LUC_confidence_FRAME"
+			pdx_tooltip = confidence_bar_frame_tt
+			alwaystransparent = no
+		}
+
+		# iconType = {
+		# 	name = "confidence_bar_bg"
+		# 	position = {x = 65 y = 266}
+		# 	spriteType = "GFX_LUC_confidenceBar_bg"
+		# 	alwaystransparent = yes
+		# }
+
+		iconType = {
+			name = "confidence_bar_fill"
+			size = { x = 360 y = 32 }
+			position = {x = 65 y = 271}
+			spriteType = "GFX_LUC_confidenceBar_fill"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "confidence_bar_frame"
+			position = {x = 61 y = 263}
+			spriteType = "GFX_LUC_confidenceBar_frame"
+		}
+
+		instantTextBoxType = {
+			name = "confidence_bar_value"
+			position = {x = 61 y = 275}
+			format = center
+			font = hoi_24header
+			maxWidth = 368
+			maxHeight = 48
+			size = {
+				width = 368
+				height = 48
+			}
+			fixedsize = yes
+			text = confidence_bar_value_text
+			alwaystransparent = yes
+		}
+
+		# Text
+
+		instantTextBoxType = {
+			name = "confidence_bar_header"
+			position = {x = 61 y = 27}
+			format = center
+			font = hoi_24header
+			maxWidth = 368
+			maxHeight = 48
+			size = {
+				width = 368
+				height = 48
+			}
+			fixedsize = yes
+			text = confidence_header
+		}
+
+		instantTextBoxType = {
+			name = "confidence_bar_explanation"
+			position = {x = 211 y = 65}
+			format = left
+			font = hoi_18b
+			maxWidth = 239
+			maxHeight = 175
+			fixedsize = yes
+			text = confidence_bar_explanation
+		}
+
+		# Indicators
+
+
+		iconType = {
+			name = "support_neutral_inactive"
+			position = {x = 234 y = 245}
+			spriteType = "GFX_LUC_IndicatorOff"
+			alwaystransparent = no
+			pdx_tooltip = support_neutral_tt
+		}
+
+		iconType = {
+			name = "support_opposition_inactive"
+			position = {x = 144 y = 245}
+			spriteType = "GFX_LUC_IndicatorOff"
+			alwaystransparent = no
+			pdx_tooltip = support_opposition_tt
+		}
+
+		iconType = {
+			name = "support_veto_inactive"
+			position = {x = 74 y = 245}
+			spriteType = "GFX_LUC_IndicatorOff"
+			alwaystransparent = no
+			pdx_tooltip = support_veto_tt
+		}
+
+		iconType = {
+			name = "support_support_inactive"
+			position = {x = 324 y = 245}
+			spriteType = "GFX_LUC_IndicatorOff"
+			alwaystransparent = no
+			pdx_tooltip = support_support_tt
+		}
+
+		iconType = {
+			name = "support_control_inactive"
+			position = {x = 394 y = 245}
+			spriteType = "GFX_LUC_IndicatorOff"
+			alwaystransparent = no
+			pdx_tooltip = support_control_tt
+		}
+		
+		iconType = {
+			name = "support_neutral_active"
+			position = {x = 234 y = 245}
+			spriteType = "GFX_LUC_IndicatorOn"
+			alwaystransparent = no
+			pdx_tooltip = support_neutral_tt
+		}
+
+		iconType = {
+			name = "support_opposition_active"
+			position = {x = 144 y = 245}
+			spriteType = "GFX_LUC_IndicatorOn"
+			alwaystransparent = no
+			pdx_tooltip = support_opposition_tt
+		}
+
+		iconType = {
+			name = "support_veto_active"
+			position = {x = 74 y = 245}
+			spriteType = "GFX_LUC_IndicatorOn"
+			alwaystransparent = no
+			pdx_tooltip = support_veto_tt
+		}
+
+		iconType = {
+			name = "support_support_active"
+			position = {x = 324 y = 245}
+			spriteType = "GFX_LUC_IndicatorOn"
+			alwaystransparent = no
+			pdx_tooltip = support_support_tt
+		}
+
+		iconType = {
+			name = "support_control_active"
+			position = {x = 394 y = 245}
+			spriteType = "GFX_LUC_IndicatorOn"
+			alwaystransparent = no
+			pdx_tooltip = support_control_tt
+		}
+	}
+}

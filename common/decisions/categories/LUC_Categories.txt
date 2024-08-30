@@ -15,6 +15,38 @@ LUC_Fascist_Radicalisation_cat = {
 	priority = 3
 }
 
-LUC_Government_Confidence_cat = {
+LUC_Government_LandtagSupport_cat = {
 	icon = GFX_LUC_GovernmentConfidence_cat
+	scripted_gui = LUC_GOVERNMENTCONFIDENCE
+	visible_when_empty = yes
+	allowed = {
+		always = yes
+	}
+	visible = {
+		original_tag = SUS
+		has_country_flag = LUC_EnableLandtag_flag
+		OR = {
+			has_country_leader = {
+				ruling_only = yes
+				character = LUC_OttoSchaedler
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = LUC_RudolfSchaedler
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = LUC_JosefHoop
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = LUC_Ludwig_Marxer
+			}
+			has_country_leader = {
+				ruling_only = yes
+				character = LUC_RichardMeier
+			}
+		}
+	}
+	priority = 4
 }

@@ -178,3 +178,63 @@ LUC_neutrality_pleased = {
 		}
 	}
 }
+
+LUC_UpdateLandtagModifier = {
+	# Clears all modifiers
+	remove_ideas = {
+		LUC_LandtagVeto
+		LUC_LandtagOpposition
+		LUC_LandtagNeutral
+		LUC_LandtagSupport
+		LUC_LandtagControl
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_Confidence_var > 10
+				}
+			}
+		}
+		add_ideas = LUC_LandtagVeto
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_Confidence_var > 40
+				}
+			}
+			check_variable = {
+				LUC_Confidence_var > 10
+			}
+		}
+		add_ideas = LUC_LandtagOpposition
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_Confidence_var < 60
+				}
+			}
+			check_variable = {
+				LUC_Confidence_var < 90
+			}
+		}
+		add_ideas = LUC_LandtagSupport
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					LUC_Confidence_var < 90
+				}
+			}
+		}
+		add_ideas = LUC_LandtagControl
+	}
+	else = {
+		add_ideas = LUC_LandtagNeutral
+	}
+}
