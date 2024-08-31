@@ -42,6 +42,7 @@
  support_opposition_tt:0 "§YLandtag Opposition§!:\n\nPolitical Power Gain: §R-10.0%§!\nPolitical Power Cost: §R+0.25§!"
  support_veto_tt:0 "§YLandtag Veto§!:\n\nPolitical Power Gain: §R-20.0%§!\nPolitical Power Cost: §R+0.5§!\n\n§RThe opposition will begin measures to remove §!§Y[ROOT.GetLeader]§!§R from power!"
  confidence_bar_value_text:0 "[?LUC_Confidence_var|%%]"
+ confidence_bar_frame_tt:0 "Current daily change: [?LUC_SupportDailyChange_var|2+=]"
 
  LUC_LIB_LOY:0 "[LUC_GetAttitudeLiberals]"
  LUC_CON_LOY:0 "[LUC_GetAttitudeConservatives]"
@@ -68,5 +69,10 @@
  LUC_CON_INF:0 "[?LUC_SupportConservativeInfluence_var|%%]"
  LUC_AGR_INF:0 "[?LUC_SupportAgrarianInfluence_var|%%]"
  LUC_POP_INF:0 "[?LUC_SupportPopulistInfluence_var|%%]"
+
+ LUC_LIB_EFF:0 "[?LUC_SupportLiberal_var|2+=]"
+ LUC_CON_EFF:0 "[?LUC_SupportConservative_var|2+=]"
+ LUC_AGR_EFF:0 "[?LUC_SupportAgrarian_var|2+=]"
+ LUC_POP_EFF:0 "[?LUC_SupportPopulist_var|2+=]"
 
  LUC_landtag_support_status_display:0 "§T[LUC_GetLandtagState]§!"

@@ -2,8 +2,9 @@
 @LUC_LandtagHeight = 415
 @LUC_LandtagInner_X = 61
 @LUC_LandtagHeader_Y = 25
-@LUC_LandtagLoyalty_X = 220
-@LUC_LandtagInfluence_X = 360
+@LUC_LandtagLoyalty_X = 190
+@LUC_LandtagInfluence_X = 280
+@LUC_LandtagEffect_X = 370
 @LUC_LandtagHeaders_Y = 70
 @LUC_LandtagFactionsText_X = 106
 
@@ -99,6 +100,7 @@ guiTypes = {
 			name = "confidence_bar_frame"
 			position = {x = @LUC_LandtagInner_X  y = 313}
 			spriteType = "GFX_LUC_confidenceBar_frame"
+			pdx_tooltip = confidence_bar_frame_tt
 		}
 
 		instantTextBoxType = {
@@ -139,6 +141,17 @@ guiTypes = {
 			maxHeight = 48
 			fixedsize = yes
 			text = "Influence"
+		}
+
+		instantTextBoxType = {
+			name = "confidence_effect_col"
+			position = {x = @LUC_LandtagEffect_X  y = @LUC_LandtagHeaders_Y }
+			format = center
+			font = hoi_18header
+			maxWidth = 100
+			maxHeight = 48
+			fixedsize = yes
+			text = "Effect"
 		}
 
 		instantTextBoxType = {
@@ -186,6 +199,17 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
+			name = "LUC_Faction_Liberals_Effect"
+			position = {x = @LUC_LandtagEffect_X y = 113 }
+			format = centre
+			font = hoi_16mbs
+			maxWidth = 100
+			maxHeight = 48
+			fixedsize = yes
+			text = LUC_LIB_EFF
+		}
+
+		instantTextBoxType = {
 			name = "LUC_Faction_Conservatives"
 			position = {x = @LUC_LandtagFactionsText_X  y = 158 }
 			format = left
@@ -216,6 +240,17 @@ guiTypes = {
 			maxHeight = 48
 			fixedsize = yes
 			text = LUC_CON_INF
+		}
+
+		instantTextBoxType = {
+			name = "LUC_Faction_Conservatives_Effect"
+			position = {x = @LUC_LandtagEffect_X y = 158 }
+			format = centre
+			font = hoi_16mbs
+			maxWidth = 100
+			maxHeight = 48
+			fixedsize = yes
+			text = LUC_CON_EFF
 		}
 
 		instantTextBoxType = {
@@ -252,6 +287,17 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
+			name = "LUC_Faction_Agrarian_Effect"
+			position = {x = @LUC_LandtagEffect_X y = 203 }
+			format = centre
+			font = hoi_16mbs
+			maxWidth = 100
+			maxHeight = 48
+			fixedsize = yes
+			text = LUC_AGR_EFF
+		}
+
+		instantTextBoxType = {
 			name = "LUC_Faction_Populists"
 			position = {x = @LUC_LandtagFactionsText_X  y = 248 }
 			format = left
@@ -282,6 +328,17 @@ guiTypes = {
 			maxHeight = 48
 			fixedsize = yes
 			text = LUC_POP_INF
+		}
+
+		instantTextBoxType = {
+			name = "LUC_Faction_Populist_Effect"
+			position = {x = @LUC_LandtagEffect_X y = 248 }
+			format = centre
+			font = hoi_16mbs
+			maxWidth = 100
+			maxHeight = 48
+			fixedsize = yes
+			text = LUC_POP_EFF
 		}
 
 		# Indicators - all manual

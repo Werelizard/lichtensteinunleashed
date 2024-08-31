@@ -19,11 +19,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			LUC_SupportSetup = yes
-			LUC_SupportUpdateModifier = yes
-			set_variable = {
-				LUC_Confidence_var = 85.9
-			}
-			LUC_UpdateLandtagModifier = yes
+			LUC_UpdateVariables = yes
 			set_country_flag = LUC_EnableLandtag_flag
 		}
 	}
