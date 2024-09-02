@@ -1,12 +1,13 @@
 @LUC_LandtagWidth = 470
 @LUC_LandtagHeight = 415
 @LUC_LandtagInner_X = 61
+@LUC_LandtagIcons_X = 51
 @LUC_LandtagHeader_Y = 25
-@LUC_LandtagLoyalty_X = 190
-@LUC_LandtagInfluence_X = 280
-@LUC_LandtagEffect_X = 370
+@LUC_LandtagLoyalty_X = 180
+@LUC_LandtagInfluence_X = 270
+@LUC_LandtagEffect_X = 350
 @LUC_LandtagHeaders_Y = 70
-@LUC_LandtagFactionsText_X = 106
+@LUC_LandtagFactionsText_X = 98
 
 guiTypes = {
 	containerWindowType = {
@@ -33,57 +34,32 @@ guiTypes = {
 			}
 		}
 
-		# Bar Label / Display
-		containerWindowType = {
-			name = "LUC_landtag_support_status"
-			position = {x = 94 y = 350}
-			size = {width = 300	height = 40}
-
-			background = {
-				name = "LUC_landtag_support_status_bg"
-				spriteType = "GFX_equipment_role_selector_tiled_window"
-			}
-
-			instantTextBoxType = {
-				name = "LUC_landtag_support_status_display"
-				text = LUC_landtag_support_status_display
-				position = {
-					x = 0
-					y = 10
-				}
-				size = {width = 300	height = 40}
-				maxWidth = 300
-				font = hoi_18header
-				format = center
-			}
-		}
-
 		# Icons
 
 		iconType = {
 			name = "LUC_faction_liberal_icon"
-			position = {x = @LUC_LandtagInner_X y = 100}
+			position = {x = @LUC_LandtagIcons_X y = 100}
 			size = {width = 60	height = 60}
 			spriteType = "GFX_LUC_FactionLiberal"
 		}
 
 		iconType = {
 			name = "LUC_faction_conservative_icon"
-			position = {x = @LUC_LandtagInner_X y = 145}
+			position = {x = @LUC_LandtagIcons_X y = 145}
 			size = {width = 60	height = 60}
 			spriteType = "GFX_LUC_FactionConservative"
 		}
 
 		iconType = {
 			name = "LUC_faction_agrarian_icon"
-			position = {x = @LUC_LandtagInner_X y = 190}
+			position = {x = @LUC_LandtagIcons_X y = 190}
 			size = {width = 60	height = 60}
 			spriteType = "GFX_LUC_FactionAgrarian"
 		}
 
 		iconType = {
 			name = "LUC_faction_populist_icon"
-			position = {x = @LUC_LandtagInner_X y = 235}
+			position = {x = @LUC_LandtagIcons_X y = 235}
 			size = {width = 60	height = 60}
 			spriteType = "GFX_LUC_FactionPopulist"
 		}
@@ -91,32 +67,84 @@ guiTypes = {
 		iconType = {
 			name = "confidence_bar_fill"
 			size = { x = 360 y = 32 }
-			position = {x = 65 y = 321}
+			position = {x = 65 y = 311}
 			spriteType = "GFX_LUC_confidenceBar_fill"
 			alwaystransparent = yes
 		}
 
 		iconType = {
-			name = "confidence_bar_frame"
-			position = {x = @LUC_LandtagInner_X  y = 313}
-			spriteType = "GFX_LUC_confidenceBar_frame"
-			pdx_tooltip = confidence_bar_frame_tt
+			name = "confidence_bar_frame_1"
+			position = {x = 61  y = 303}
+			spriteType = "GFX_LUC_confidenceBar_frame_1"
+			pdx_tooltip = LUC_LandtagSupport_1
+		}
+		iconType = {
+			name = "confidence_bar_frame_1_active"
+			position = {x = 61  y = 303}
+			spriteType = "GFX_LUC_confidenceBar_frame_1_active"
+			pdx_tooltip = LUC_LandtagSupport_1
+		}
+
+		iconType = {
+			name = "confidence_bar_frame_2"
+			position = {x = 103 y = 303}
+			spriteType = "GFX_LUC_confidenceBar_frame_2"
+			pdx_tooltip = LUC_LandtagSupport_2
+		}
+		iconType = {
+			name = "confidence_bar_frame_2_active"
+			position = {x = 103 y = 303}
+			spriteType = "GFX_LUC_confidenceBar_frame_2_active"
+			pdx_tooltip = LUC_LandtagSupport_2
+		}
+
+		iconType = {
+			name = "confidence_bar_frame_3"
+			position = {x = 210 y = 303}
+			spriteType = "GFX_LUC_confidenceBar_frame_3"
+			pdx_tooltip = LUC_LandtagSupport_3
+		}
+		iconType = {
+			name = "confidence_bar_frame_3_active"
+			position = {x = 210 y = 303}
+			spriteType = "GFX_LUC_confidenceBar_frame_3_active"
+			pdx_tooltip = LUC_LandtagSupport_3
+		}
+
+		iconType = {
+			name = "confidence_bar_frame_4"
+			position = {x = 281  y = 303}
+			spriteType = "GFX_LUC_confidenceBar_frame_4"
+			pdx_tooltip = LUC_LandtagSupport_4
+		}
+		iconType = {
+			name = "confidence_bar_frame_4_active"
+			position = {x = 281  y = 303}
+			spriteType = "GFX_LUC_confidenceBar_frame_4_active"
+			pdx_tooltip = LUC_LandtagSupport_4
+		}
+
+		iconType = {
+			name = "confidence_bar_frame_5"
+			position = {x = 388 y = 303}
+			spriteType = "GFX_LUC_confidenceBar_frame_5"
+			pdx_tooltip = LUC_LandtagSupport_5
+		}
+		iconType = {
+			name = "confidence_bar_frame_5_active"
+			position = {x = 388 y = 303}
+			spriteType = "GFX_LUC_confidenceBar_frame_5_active"
+			pdx_tooltip = LUC_LandtagSupport_5
 		}
 
 		instantTextBoxType = {
-			name = "confidence_bar_value"
-			position = {x = @LUC_LandtagInner_X  y = 325}
-			format = center
+			name = "LUC_landtag_support_status_display"
+			text = LUC_landtag_support_status_display
+			position = {x = 94 y = 350}
+			size = {width = 300	height = 40}
+			maxWidth = 300
 			font = hoi_24header
-			maxWidth = 368
-			maxHeight = 48
-			size = {
-				width = 368
-				height = 48
-			}
-			fixedsize = yes
-			text = confidence_bar_value_text
-			alwaystransparent = yes
+			format = center
 		}
 
 		# Text
@@ -151,7 +179,7 @@ guiTypes = {
 			maxWidth = 100
 			maxHeight = 48
 			fixedsize = yes
-			text = "Effect"
+			text = "Support"
 		}
 
 		instantTextBoxType = {
@@ -339,88 +367,6 @@ guiTypes = {
 			maxHeight = 48
 			fixedsize = yes
 			text = LUC_POP_EFF
-		}
-
-		# Indicators - all manual
-
-		iconType = {
-			name = "support_neutral_inactive"
-			position = {x = 234 y = 295}
-			spriteType = "GFX_LUC_IndicatorOff"
-			alwaystransparent = no
-			pdx_tooltip = support_neutral_tt
-		}
-
-		iconType = {
-			name = "support_opposition_inactive"
-			position = {x = 144 y = 295}
-			spriteType = "GFX_LUC_IndicatorOff"
-			alwaystransparent = no
-			pdx_tooltip = support_opposition_tt
-		}
-
-		iconType = {
-			name = "support_veto_inactive"
-			position = {x = 74 y = 295}
-			spriteType = "GFX_LUC_IndicatorOff"
-			alwaystransparent = no
-			pdx_tooltip = support_veto_tt
-		}
-
-		iconType = {
-			name = "support_support_inactive"
-			position = {x = 324 y = 295}
-			spriteType = "GFX_LUC_IndicatorOff"
-			alwaystransparent = no
-			pdx_tooltip = support_support_tt
-		}
-
-		iconType = {
-			name = "support_control_inactive"
-			position = {x = 394 y = 295}
-			spriteType = "GFX_LUC_IndicatorOff"
-			alwaystransparent = no
-			pdx_tooltip = support_control_tt
-		}
-		
-		iconType = {
-			name = "support_neutral_active"
-			position = {x = 234 y = 295}
-			spriteType = "GFX_LUC_IndicatorOn"
-			alwaystransparent = no
-			pdx_tooltip = support_neutral_tt
-		}
-
-		iconType = {
-			name = "support_opposition_active"
-			position = {x = 144 y = 295}
-			spriteType = "GFX_LUC_IndicatorOn"
-			alwaystransparent = no
-			pdx_tooltip = support_opposition_tt
-		}
-
-		iconType = {
-			name = "support_veto_active"
-			position = {x = 74 y = 295}
-			spriteType = "GFX_LUC_IndicatorOn"
-			alwaystransparent = no
-			pdx_tooltip = support_veto_tt
-		}
-
-		iconType = {
-			name = "support_support_active"
-			position = {x = 324 y = 295}
-			spriteType = "GFX_LUC_IndicatorOn"
-			alwaystransparent = no
-			pdx_tooltip = support_support_tt
-		}
-
-		iconType = {
-			name = "support_control_active"
-			position = {x = 394 y = 295}
-			spriteType = "GFX_LUC_IndicatorOn"
-			alwaystransparent = no
-			pdx_tooltip = support_control_tt
 		}
 	}
 }

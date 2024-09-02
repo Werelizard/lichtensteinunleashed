@@ -46,40 +46,44 @@ spriteTypes = {
 	}
 	# Landtag Support
 	spriteType = {
-		name = "GFX_LUC_IndicatorOn"
-		textureFile = "gfx/interface/support/LUC_indicator.dds"
+		name = "GFX_LUC_confidenceBar_frame_1"
+		textureFile = "gfx/interface/support/LUC_confidenceBar_frame_1.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_IndicatorOff"
-		textureFile = "gfx/interface/support/LUC_indicator_inactive.dds"
+		name = "GFX_LUC_confidenceBar_frame_2"
+		textureFile = "gfx/interface/support/LUC_confidenceBar_frame_2.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_confidence_HOOP"
-		textureFile = "gfx/interface/support/LUC_JosefHoop.dds"
+		name = "GFX_LUC_confidenceBar_frame_3"
+		textureFile = "gfx/interface/support/LUC_confidenceBar_frame_3.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_confidence_RUDOLF"
-		textureFile = "gfx/interface/support/LUC_RudolfSchaedler.dds"
+		name = "GFX_LUC_confidenceBar_frame_4"
+		textureFile = "gfx/interface/support/LUC_confidenceBar_frame_4.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_confidence_MARXER"
-		textureFile = "gfx/interface/support/LUC_LudwigMarxer.dds"
+		name = "GFX_LUC_confidenceBar_frame_5"
+		textureFile = "gfx/interface/support/LUC_confidenceBar_frame_5.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_confidence_SHAEDLER"
-		textureFile = "gfx/interface/support/LUC_OttoSchaedler.dds"
+		name = "GFX_LUC_confidenceBar_frame_1_active"
+		textureFile = "gfx/interface/support/LUC_confidenceBar_frame_1_active.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_confidence_MEIER"
-		textureFile = "gfx/interface/support/LUC_RichardMeier.dds"
+		name = "GFX_LUC_confidenceBar_frame_2_active"
+		textureFile = "gfx/interface/support/LUC_confidenceBar_frame_2_active.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_confidence_FRAME"
-		textureFile = "gfx/interface/support/LUC_confidenceframe.dds"
+		name = "GFX_LUC_confidenceBar_frame_3_active"
+		textureFile = "gfx/interface/support/LUC_confidenceBar_frame_3_active.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_confidenceBar_frame"
-		textureFile = "gfx/interface/support/LUC_confidenceBar_frame.dds"
+		name = "GFX_LUC_confidenceBar_frame_4_active"
+		textureFile = "gfx/interface/support/LUC_confidenceBar_frame_4_active.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_confidenceBar_frame_5_active"
+		textureFile = "gfx/interface/support/LUC_confidenceBar_frame_5_active.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_confidenceBar_fill"

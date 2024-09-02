@@ -36,13 +36,13 @@
 
  # Landtag Support
  confidence_header:0 "Landtag Support"
- support_control_tt:0 "§YTotal Landtag Support§!:\n\nPolitical Advisor Cost: §G-10.0%§!\nStability: §G+10.0%§!\n\nUnlocks £decision_icon_small decision: §YRequest Emergency Powers§!"
- support_support_tt:0 "§YStrong Landtag Support§!:\n\nPolitical Advisor Cost: §G-5.0%§!\nStability: §G+5.0%§!"
- support_neutral_tt:0 "§YIndifferent Landtag§!:\n\nPolitical Power Gain: §R-5.0%§!"
- support_opposition_tt:0 "§YLandtag Opposition§!:\n\nPolitical Power Gain: §R-10.0%§!\nPolitical Power Cost: §R+0.25§!"
- support_veto_tt:0 "§YLandtag Veto§!:\n\nPolitical Power Gain: §R-20.0%§!\nPolitical Power Cost: §R+0.5§!\n\n§RThe opposition will begin measures to remove §!§Y[ROOT.GetLeader]§!§R from power!"
+ LUC_LandtagSupport_5:0 "§YTotal Landtag Support§!:\n\nPolitical Advisor Cost: §G-10.0%§!\nStability: §G+10.0%§!\n\nUnlocks £decision_icon_small decision: §YRequest Emergency Powers§!\n\n------------\n\nCurrent Support: §Y[?LUC_Confidence_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
+ LUC_LandtagSupport_4:0 "§YStrong Landtag Support§!:\n\nPolitical Advisor Cost: §G-5.0%§!\nStability: §G+5.0%§!\n\n------------\n\nCurrent Support: §Y[?LUC_Confidence_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
+ LUC_LandtagSupport_3:0 "§YIndifferent Landtag§!:\n\nPolitical Power Gain: §R-5.0%§!\nConscription Laws Cost: §R+5.0%§!\nnTrade Laws Cost: §R+5.0%§!\nEconomy Laws Cost: §R+5.0%§!\n\n------------\n\nCurrent Support: §Y[?LUC_Confidence_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
+ LUC_LandtagSupport_2:0 "§YLandtag Opposition§!:\n\nPolitical Power Gain: §R-10.0%§!\nConscription Laws Cost: §R+15.0%§!\nTrade Laws Cost: §R+15.0%§!\nEconomy Laws Cost: §R+15.0%§!\n\n------------\n\nCurrent Support: §Y[?LUC_Confidence_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
+ LUC_LandtagSupport_1:0 "§YLandtag Veto§!:\n\nPolitical Power Gain: §R-20.0%§!\nConscription Laws Cost: §R+25.0%§!\nTrade Laws Cost: §R+25.0%§!\nEconomy Laws Cost: §R+25.0%§!\n\n§RThe opposition will begin measures to remove §!§Y[ROOT.GetLeader]§!§R from power!§!\n\n------------\n\nCurrent Support: §Y[?LUC_Confidence_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
  confidence_bar_value_text:0 "[?LUC_Confidence_var|%%]"
- confidence_bar_frame_tt:0 "Current daily change: [?LUC_SupportDailyChange_var|2+=]"
+ confidence_bar_frame_explanations:0 "\n\n------------\n\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
 
  LUC_LIB_LOY:0 "[LUC_GetAttitudeLiberals]"
  LUC_CON_LOY:0 "[LUC_GetAttitudeConservatives]"

@@ -116,7 +116,7 @@ defined_text = { # Landtag Support
 				}
 			}
 		}
-		localization_key = "Total Landtag Support"
+		localization_key = "Controlled Landtag"
 	}
 	text = {
 		trigger = {

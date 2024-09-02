@@ -11,76 +11,99 @@ scripted_gui = {
 			}
 		}
 		triggers = {
-			support_neutral_active_visible = {
+			# Veto range
+			confidence_bar_frame_1_visible = {
 				check_variable = {
-					SUS.LUC_Confidence_var > 40
-				}
-				check_variable = {
-					SUS.LUC_Confidence_var < 60
+					LUC_Confidence_var > 10
 				}
 			}
-			support_opposition_active_visible = {
+			confidence_bar_frame_1_active_visible = {
 				NOT = {
 					check_variable = {
-						SUS.LUC_Confidence_var > 40
-					}
-				}
-				check_variable = {
-					SUS.LUC_Confidence_var > 10
-				}
-			}
-			support_veto_active_visible = {
-				NOT = {
-					check_variable = {
-						SUS.LUC_Confidence_var > 10
+						LUC_Confidence_var > 10
 					}
 				}
 			}
-			support_support_active_visible = {
+			# Oppositon range
+			confidence_bar_frame_2_visible = {
+				OR = {
+					NOT = {
+						check_variable = {
+							LUC_Confidence_var > 10
+						}
+					}
+					check_variable = {
+						LUC_Confidence_var > 40
+					}
+				}
+			}
+			confidence_bar_frame_2_active_visible = {
+				check_variable = {
+					LUC_Confidence_var > 10
+				}
 				NOT = {
 					check_variable = {
-						SUS.LUC_Confidence_var < 60
+						LUC_Confidence_var > 40
 					}
+				}
+			}
+			# Neutral range
+			confidence_bar_frame_3_visible = {
+				OR = {
+					NOT = {
+						check_variable = {
+							LUC_Confidence_var < 60
+						}
+					}
+					NOT = {
+						check_variable = {
+							LUC_Confidence_var > 40
+						}
+					}
+				}
+			}
+			confidence_bar_frame_3_active_visible = {
+				check_variable = {
+					LUC_Confidence_var < 60
 				}
 				check_variable = {
-					SUS.LUC_Confidence_var < 90
+					LUC_Confidence_var > 40
 				}
 			}
-			support_control_active_visible = {
-				NOT = {
+			# Support range
+			confidence_bar_frame_4_visible = {
+				OR = {
 					check_variable = {
-						SUS.LUC_Confidence_var < 90
+						LUC_Confidence_var < 60
+					}
+					NOT = {
+						check_variable = {
+							LUC_Confidence_var < 90
+						}
 					}
 				}
 			}
-			confidence_Hoop_portrait_visible = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
+			confidence_bar_frame_4_active_visible = {
+				check_variable = {
+					LUC_Confidence_var < 90
+				}
+				NOT = {
+					check_variable = {
+						LUC_Confidence_var < 60
+					}
 				}
 			}
-			confidence_Marxer_portrait_visible = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
+			# Total control range
+			confidence_bar_frame_5_visible = {
+				check_variable = {
+					LUC_Confidence_var < 90
 				}
 			}
-			confidence_Meier_portrait_visible = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_RichardMeier
-				}
-			}
-			confidence_Schaedler_portrait_visible = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_OttoSchaedler
-				}
-			}
-			confidence_Rudolf_portrait_visible = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_RudolfSchaedler
+			confidence_bar_frame_5_active_visible = {
+				NOT = {
+					check_variable = {
+						LUC_Confidence_var < 90
+					}
 				}
 			}
 		}
