@@ -106,13 +106,40 @@ defined_text = { # Attitude - Populists
 	}
 }
 
+defined_text = { # Attitude - Natioanlists
+	name = LUC_GetAttitudeNationalists
+	text = {
+		trigger = {
+			NOT = {
+				check_variable = {
+					LUC_SupportNationalistLoyalty_var < 70
+				}
+			}
+		}
+		localization_key = LOYAL_LANDTAG_POP
+	}
+	text = {
+		trigger = {
+			NOT = {
+				check_variable = {
+					LUC_SupportNationalistLoyalty_var > 30
+				}
+			}
+		}
+		localization_key = DISLOYAL_LANDTAG_POP
+	}
+	text = {
+		localization_key = NEUTRAL_POP
+	}
+}
+
 defined_text = { # Landtag Support
 	name = LUC_GetLandtagState
 	text = {
 		trigger = {
 			NOT = {
 				check_variable = {
-					SUS.LUC_Confidence_var < 90
+					SUS.LUC_LandtagOverallSupport_var < 90
 				}
 			}
 		}
@@ -122,11 +149,11 @@ defined_text = { # Landtag Support
 		trigger = {
 			NOT = {
 				check_variable = {
-					SUS.LUC_Confidence_var < 60
+					SUS.LUC_LandtagOverallSupport_var < 60
 				}
 			}
 			check_variable = {
-				SUS.LUC_Confidence_var < 90
+				SUS.LUC_LandtagOverallSupport_var < 90
 			}
 		}
 		localization_key = "Supportive Landtag"
@@ -134,10 +161,10 @@ defined_text = { # Landtag Support
 	text = {
 		trigger = {
 			check_variable = {
-				SUS.LUC_Confidence_var > 40
+				SUS.LUC_LandtagOverallSupport_var > 40
 			}
 			check_variable = {
-				SUS.LUC_Confidence_var < 60
+				SUS.LUC_LandtagOverallSupport_var < 60
 			}
 		}
 		localization_key = "Indifferent Landtag"
@@ -146,11 +173,11 @@ defined_text = { # Landtag Support
 		trigger = {
 			NOT = {
 				check_variable = {
-					SUS.LUC_Confidence_var > 40
+					SUS.LUC_LandtagOverallSupport_var > 40
 				}
 			}
 			check_variable = {
-				SUS.LUC_Confidence_var > 10
+				SUS.LUC_LandtagOverallSupport_var > 10
 			}
 		}
 		localization_key = "Landtag Opposition"
@@ -159,7 +186,7 @@ defined_text = { # Landtag Support
 		trigger = {
 			NOT = {
 				check_variable = {
-					SUS.LUC_Confidence_var > 10
+					SUS.LUC_LandtagOverallSupport_var > 10
 				}
 			}
 		}
@@ -167,5 +194,103 @@ defined_text = { # Landtag Support
 	}
 	text = {
 		localization_key = " "
+	}
+}
+
+# Check for contributions - for display
+defined_text = { # 
+	name = LUC_GetIsLiberalContributing
+	text = {
+		trigger = {
+			check_variable = {
+				LUC_SupportLiberalLoyalty_var > 30
+			}
+			check_variable = {
+				LUC_SupportLiberalLoyalty_var < 70
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = LUC_LibContrib_tt
+	}
+}
+
+defined_text = { # 
+	name = LUC_GetIsConservativeContributing
+	text = {
+		trigger = {
+			check_variable = {
+				LUC_SupportConservativeLoyalty_var > 30
+			}
+			check_variable = {
+				LUC_SupportConservativeLoyalty_var < 70
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = LUC_ConContrib_tt
+	}
+}
+
+defined_text = { # 
+	name = LUC_GetIsAgrarianContributing
+	text = {
+		trigger = {
+			check_variable = {
+				LUC_SupportAgrarianLoyalty_var > 30
+			}
+			check_variable = {
+				LUC_SupportAgrarianLoyalty_var < 70
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = LUC_AgrContrib_tt
+	}
+}
+
+defined_text = { # 
+	name = LUC_GetIsPopulistContributing
+	text = {
+		trigger = {
+			check_variable = {
+				LUC_SupportPopulistLoyalty_var > 30
+			}
+			check_variable = {
+				LUC_SupportPopulistLoyalty_var < 70
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = LUC_PopContrib_tt
+	}
+}
+
+defined_text = { # 
+	name = LUC_GetIsNationalistContributing
+	text = {
+		trigger = {
+			OR = {
+				NOT = {
+					has_country_flag = LUC_LandtagNationalistFaction_flag
+				}
+				AND = {
+					check_variable = {
+						LUC_SupportNationalistLoyalty_var > 30
+					}
+					check_variable = {
+						LUC_SupportNationalistLoyalty_var < 70
+					}
+				}
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = LUC_NatContrib_tt
 	}
 }

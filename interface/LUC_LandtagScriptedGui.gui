@@ -1,5 +1,5 @@
 @LUC_LandtagWidth = 470
-@LUC_LandtagHeight = 480
+@LUC_LandtagHeight = 460
 @LUC_LandtagInner_X = 61
 @LUC_LandtagIcons_X = 51
 @LUC_LandtagHeader_Y = 25
@@ -67,72 +67,72 @@ guiTypes = {
 		iconType = {
 			name = "confidence_bar_fill"
 			size = { x = 360 y = 32 }
-			position = {x = 65 y = 376}
+			position = {x = 65 y = 356}
 			spriteType = "GFX_LUC_confidenceBar_fill"
 			alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "confidence_bar_frame_1"
-			position = {x = 61  y = 368}
+			position = {x = 61  y = 348}
 			spriteType = "GFX_LUC_confidenceBar_frame_1"
 			pdx_tooltip = LUC_LandtagSupport_1
 		}
 		iconType = {
 			name = "confidence_bar_frame_1_active"
-			position = {x = 61  y = 368}
+			position = {x = 61  y = 348}
 			spriteType = "GFX_LUC_confidenceBar_frame_1_active"
 			pdx_tooltip = LUC_LandtagSupport_1
 		}
 
 		iconType = {
 			name = "confidence_bar_frame_2"
-			position = {x = 103 y = 368}
+			position = {x = 103 y = 348}
 			spriteType = "GFX_LUC_confidenceBar_frame_2"
 			pdx_tooltip = LUC_LandtagSupport_2
 		}
 		iconType = {
 			name = "confidence_bar_frame_2_active"
-			position = {x = 103 y = 368}
+			position = {x = 103 y = 348}
 			spriteType = "GFX_LUC_confidenceBar_frame_2_active"
 			pdx_tooltip = LUC_LandtagSupport_2
 		}
 
 		iconType = {
 			name = "confidence_bar_frame_3"
-			position = {x = 210 y = 368}
+			position = {x = 210 y = 348}
 			spriteType = "GFX_LUC_confidenceBar_frame_3"
 			pdx_tooltip = LUC_LandtagSupport_3
 		}
 		iconType = {
 			name = "confidence_bar_frame_3_active"
-			position = {x = 210 y = 368}
+			position = {x = 210 y = 348}
 			spriteType = "GFX_LUC_confidenceBar_frame_3_active"
 			pdx_tooltip = LUC_LandtagSupport_3
 		}
 
 		iconType = {
 			name = "confidence_bar_frame_4"
-			position = {x = 281  y = 368}
+			position = {x = 281  y = 348}
 			spriteType = "GFX_LUC_confidenceBar_frame_4"
 			pdx_tooltip = LUC_LandtagSupport_4
 		}
 		iconType = {
 			name = "confidence_bar_frame_4_active"
-			position = {x = 281  y = 368}
+			position = {x = 281  y = 348}
 			spriteType = "GFX_LUC_confidenceBar_frame_4_active"
 			pdx_tooltip = LUC_LandtagSupport_4
 		}
 
 		iconType = {
 			name = "confidence_bar_frame_5"
-			position = {x = 388 y = 368}
+			position = {x = 388 y = 348}
 			spriteType = "GFX_LUC_confidenceBar_frame_5"
 			pdx_tooltip = LUC_LandtagSupport_5
 		}
 		iconType = {
 			name = "confidence_bar_frame_5_active"
-			position = {x = 388 y = 368}
+			position = {x = 388 y = 348}
 			spriteType = "GFX_LUC_confidenceBar_frame_5_active"
 			pdx_tooltip = LUC_LandtagSupport_5
 		}
@@ -140,7 +140,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "LUC_landtag_support_status_display"
 			text = LUC_landtag_support_status_display
-			position = {x = 94 y = 415}
+			position = {x = 94 y = 395}
 			size = {width = 300	height = 40}
 			maxWidth = 300
 			font = hoi_24header
@@ -367,6 +367,59 @@ guiTypes = {
 			maxHeight = 48
 			fixedsize = yes
 			text = LUC_POP_EFF
+		}
+
+		# Nationalist  - only there if the faction is unlocked
+
+		iconType = {
+			name = "LUC_faction_Nationalists_icon"
+			position = {x = @LUC_LandtagIcons_X y = 280}
+			size = {width = 60	height = 60}
+			spriteType = "GFX_LUC_FactionNationalist"
+		}
+
+		instantTextBoxType = {
+			name = "LUC_Faction_Nationalists"
+			position = {x = @LUC_LandtagFactionsText_X  y = 293 }
+			format = left
+			font = hoi_16mbs	
+			maxWidth = 90
+			maxHeight = 48
+			fixedsize = yes
+			text = "Nationalists"
+		}
+
+		instantTextBoxType = {
+			name = "LUC_Faction_Nationalists_Loyalty"
+			position = {x = @LUC_LandtagLoyalty_X  y = 293 }
+			format = centre
+			font = hoi_16mbs
+			maxWidth = 100
+			maxHeight = 48
+			fixedsize = yes
+			text = LUC_NAT_LOY
+		}
+
+		instantTextBoxType = {
+			name = "LUC_Faction_Nationalists_Influence"
+			position = {x = @LUC_LandtagInfluence_X y = 293 }
+			format = centre
+			font = hoi_16mbs
+			maxWidth = 100
+			maxHeight = 48
+			fixedsize = yes
+			text = LUC_NAT_INF
+		}
+
+		instantTextBoxType = {
+			name = "LUC_Faction_Nationalists_Effect"
+			position = {x = @LUC_LandtagEffect_X y = 293 }
+			format = centre
+			font = hoi_16mbs
+			maxWidth = 100
+			maxHeight = 48
+			fixedsize = yes
+			text = LUC_NAT_EFF
 		}
 	}
 }

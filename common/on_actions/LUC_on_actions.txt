@@ -1,0 +1,10 @@
+on_actions = {
+	on_weekly_SUS = {
+		effect = {
+			SUS = {
+				# Landtag Effects
+				LUC_SupportWeeklyEffect = yes
+			}
+		}
+	}
+}

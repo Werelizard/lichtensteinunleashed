@@ -3,8 +3,6 @@ LUC_Government_LandtagSupport_cat = {
 		visible = {
 			is_debug = yes
 		}
-
-		fixed_random_seed = no
 	
 		complete_effect = {
 			LUC_LiechtensteinLandtag_ActivateNationalistFaction = yes

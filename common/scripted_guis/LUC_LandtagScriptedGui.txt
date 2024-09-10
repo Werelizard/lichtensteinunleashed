@@ -3,24 +3,50 @@ scripted_gui = {
 		window_name = LUC_GovernmentConfidence_ui_window
 		context_type = decision_category
 
-		dirty = SUS.LUC_Confidence_var
+		# dirty = SUS.LUC_LandtagOverallSupport_var
+		# dirty = SUS.LUC_SupportLiberalInfluence_var
+		# dirty = SUS.LUC_SupportLiberalLoyalty_var
+		# dirty = SUS.LUC_SupportConservativeInfluence_var
+		# dirty = SUS.LUC_SupportConservativeLoyalty_var
+		# dirty = SUS.LUC_SupportAgrarianInfluence_var
+		# dirty = SUS.LUC_SupportAgrarianLoyalty_var
+		# dirty = SUS.LUC_SupportPopulistInfluence_var
+		# dirty = SUS.LUC_SupportPopulistLoyalty_var
+		# dirty = SUS.LUC_SupportNationalistInfluence_var
+		# dirty = SUS.LUC_SupportNationalistLoyalty_var
 
 		properties = {
 			confidence_bar_fill = {
-				frame = SUS.LUC_Confidence_var
+				frame = SUS.LUC_LandtagOverallSupport_var
 			}
 		}
 		triggers = {
+			#Nationalists - visible or not
+			LUC_faction_Nationalists_icon_visible = {
+				has_country_flag = LUC_LandtagNationalistFaction_flag
+			}
+			LUC_Faction_Nationalists_visible = {
+				has_country_flag = LUC_LandtagNationalistFaction_flag
+			}
+			LUC_Faction_Nationalists_Loyalty_visible = {
+				has_country_flag = LUC_LandtagNationalistFaction_flag
+			}
+			LUC_Faction_Nationalists_Influence_visible = {
+				has_country_flag = LUC_LandtagNationalistFaction_flag
+			}
+			LUC_Faction_Nationalists_Effect_visible = {
+				has_country_flag = LUC_LandtagNationalistFaction_flag
+			}
 			# Veto range
 			confidence_bar_frame_1_visible = {
 				check_variable = {
-					LUC_Confidence_var > 10
+					LUC_LandtagOverallSupport_var > 10
 				}
 			}
 			confidence_bar_frame_1_active_visible = {
 				NOT = {
 					check_variable = {
-						LUC_Confidence_var > 10
+						LUC_LandtagOverallSupport_var > 10
 					}
 				}
 			}
@@ -29,21 +55,21 @@ scripted_gui = {
 				OR = {
 					NOT = {
 						check_variable = {
-							LUC_Confidence_var > 10
+							LUC_LandtagOverallSupport_var > 10
 						}
 					}
 					check_variable = {
-						LUC_Confidence_var > 40
+						LUC_LandtagOverallSupport_var > 40
 					}
 				}
 			}
 			confidence_bar_frame_2_active_visible = {
 				check_variable = {
-					LUC_Confidence_var > 10
+					LUC_LandtagOverallSupport_var > 10
 				}
 				NOT = {
 					check_variable = {
-						LUC_Confidence_var > 40
+						LUC_LandtagOverallSupport_var > 40
 					}
 				}
 			}
@@ -52,57 +78,57 @@ scripted_gui = {
 				OR = {
 					NOT = {
 						check_variable = {
-							LUC_Confidence_var < 60
+							LUC_LandtagOverallSupport_var < 60
 						}
 					}
 					NOT = {
 						check_variable = {
-							LUC_Confidence_var > 40
+							LUC_LandtagOverallSupport_var > 40
 						}
 					}
 				}
 			}
 			confidence_bar_frame_3_active_visible = {
 				check_variable = {
-					LUC_Confidence_var < 60
+					LUC_LandtagOverallSupport_var < 60
 				}
 				check_variable = {
-					LUC_Confidence_var > 40
+					LUC_LandtagOverallSupport_var > 40
 				}
 			}
 			# Support range
 			confidence_bar_frame_4_visible = {
 				OR = {
 					check_variable = {
-						LUC_Confidence_var < 60
+						LUC_LandtagOverallSupport_var < 60
 					}
 					NOT = {
 						check_variable = {
-							LUC_Confidence_var < 90
+							LUC_LandtagOverallSupport_var < 90
 						}
 					}
 				}
 			}
 			confidence_bar_frame_4_active_visible = {
 				check_variable = {
-					LUC_Confidence_var < 90
+					LUC_LandtagOverallSupport_var < 90
 				}
 				NOT = {
 					check_variable = {
-						LUC_Confidence_var < 60
+						LUC_LandtagOverallSupport_var < 60
 					}
 				}
 			}
 			# Total control range
 			confidence_bar_frame_5_visible = {
 				check_variable = {
-					LUC_Confidence_var < 90
+					LUC_LandtagOverallSupport_var < 90
 				}
 			}
 			confidence_bar_frame_5_active_visible = {
 				NOT = {
 					check_variable = {
-						LUC_Confidence_var < 90
+						LUC_LandtagOverallSupport_var < 90
 					}
 				}
 			}

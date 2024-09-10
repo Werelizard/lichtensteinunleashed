@@ -4,58 +4,60 @@
 
 LUC_LiechtensteinLandtag_ActivateNationalistFaction = {
 	set_country_flag = LUC_LandtagNationalistFaction_flag
+	LUC_UpdateVariables = yes
 }
 
 LUC_LiechtensteinLandtag_DectivateNationalistFaction = {
 	clr_country_flag = LUC_LandtagNationalistFaction_flag
+	LUC_UpdateVariables = yes
 }
 
 ########################
 # FLOW CONTROL EFFECTS #
 ########################
 
-LUC_SupportSetup = {
+LUC_SupportSetup_Initial = {
 	# Setup the initial influences
 	set_variable = {
-		LUC_SupportLiberalInfluence_var = 20
+		LUC_SupportLiberalInfluence_var = 10
 	}
 	set_variable = {
-		LUC_SupportConservativeInfluence_var = 45
+		LUC_SupportConservativeInfluence_var = 50
 	}
 	set_variable = {
-		LUC_SupportPopulistInfluence_var = 10
+		LUC_SupportPopulistInfluence_var = 2
 	}
 	set_variable = {
-		LUC_SupportAgrarianInfluence_var = 25
+		LUC_SupportAgrarianInfluence_var = 38
 	}
 	set_variable = {
 		LUC_SupportNationalistInfluence_var = 0
 	}
-	# Setup the initial loyalties
+	# Setup the initial loyalties 
 	set_variable = {
-		LUC_SupportLiberalLoyalty_var = 50
+		LUC_SupportLiberalLoyalty_var = 60
 	}
 	set_variable = {
-		LUC_SupportConservativeLoyalty_var = 80
+		LUC_SupportConservativeLoyalty_var = 70
 	}
 	set_variable = {
-		LUC_SupportPopulistLoyalty_var = 0	
+		LUC_SupportPopulistLoyalty_var = 10	
 	}
 	set_variable = {
-		LUC_SupportAgrarianLoyalty_var = 75
+		LUC_SupportAgrarianLoyalty_var = 40
 	}
 	set_variable = {
-		LUC_SupportNationalistLoyalty_var = 40
+		LUC_SupportNationalistLoyalty_var = 0
 	}
-	# Iitial support - total
+	# Initial support - mid
 	set_variable = {
-		LUC_Confidence_var = 85.9
+		LUC_LandtagOverallSupport_var = 50.0
 	}
 }
 
 LUC_SupportCalculateContributions = {
 	set_variable = {
-		LUC_SupportDailyChange_var = 0
+		LUC_SupportWeeklyChange_var = -0.25
 	}
 	# Liberal faction
 	set_variable = {
@@ -76,7 +78,7 @@ LUC_SupportCalculateContributions = {
 			LUC_SupportLiberal_var = -1
 		}
 		add_to_variable = {
-			LUC_SupportDailyChange_var = LUC_SupportLiberal_var
+			LUC_SupportWeeklyChange_var = LUC_SupportLiberal_var
 		}
 	}
 	else_if = { # if loyal - do nothing
@@ -88,7 +90,7 @@ LUC_SupportCalculateContributions = {
 			}
 		}
 		add_to_variable = {
-			LUC_SupportDailyChange_var = LUC_SupportLiberal_var
+			LUC_SupportWeeklyChange_var = LUC_SupportLiberal_var
 		}		
 	}
 	else = { # if neutral - set it to zero, no contribution
@@ -115,7 +117,7 @@ LUC_SupportCalculateContributions = {
 			LUC_SupportConservative_var = -1
 		}
 		add_to_variable = {
-			LUC_SupportDailyChange_var = LUC_SupportConservative_var
+			LUC_SupportWeeklyChange_var = LUC_SupportConservative_var
 		}
 	}
 	else_if = { # if loyal 
@@ -127,7 +129,7 @@ LUC_SupportCalculateContributions = {
 			}
 		}
 		add_to_variable = {
-			LUC_SupportDailyChange_var = LUC_SupportConservative_var
+			LUC_SupportWeeklyChange_var = LUC_SupportConservative_var
 		}
 	}
 	else = { # if neutral - set it to zero, no contribution
@@ -154,7 +156,7 @@ LUC_SupportCalculateContributions = {
 			LUC_SupportAgrarian_var = -1
 		}
 		add_to_variable = {
-			LUC_SupportDailyChange_var = LUC_SupportAgrarian_var
+			LUC_SupportWeeklyChange_var = LUC_SupportAgrarian_var
 		}
 	}
 	else_if = { # if loyal 
@@ -166,7 +168,7 @@ LUC_SupportCalculateContributions = {
 			}
 		}
 		add_to_variable = {
-			LUC_SupportDailyChange_var = LUC_SupportAgrarian_var
+			LUC_SupportWeeklyChange_var = LUC_SupportAgrarian_var
 		}
 	}
 	else = { # if neutral - set it to zero, no contribution
@@ -193,7 +195,7 @@ LUC_SupportCalculateContributions = {
 			LUC_SupportPopulist_var = -1
 		}
 		add_to_variable = {
-			LUC_SupportDailyChange_var = LUC_SupportPopulist_var
+			LUC_SupportWeeklyChange_var = LUC_SupportPopulist_var
 		}
 	}
 	else_if = { # if loyal 
@@ -205,7 +207,7 @@ LUC_SupportCalculateContributions = {
 			}
 		}
 		add_to_variable = {
-			LUC_SupportDailyChange_var = LUC_SupportPopulist_var
+			LUC_SupportWeeklyChange_var = LUC_SupportPopulist_var
 		}
 	}
 	else = { # if neutral - set it to zero, no contribution
@@ -236,7 +238,7 @@ LUC_SupportCalculateContributions = {
 				LUC_SupportNationalist_var = -1
 			}
 			add_to_variable = {
-				LUC_SupportDailyChange_var = LUC_SupportNationalist_var
+				LUC_SupportWeeklyChange_var = LUC_SupportNationalist_var
 			}
 		}
 		else_if = { # if loyal 
@@ -248,7 +250,7 @@ LUC_SupportCalculateContributions = {
 				}
 			}
 			add_to_variable = {
-				LUC_SupportDailyChange_var = LUC_SupportNationalist_var
+				LUC_SupportWeeklyChange_var = LUC_SupportNationalist_var
 			}
 		}
 		else = { # if neutral - set it to zero, no contribution
@@ -258,143 +260,6 @@ LUC_SupportCalculateContributions = {
 		}
 	}
 }
-
-# LUC_SupportUpdateModifier = {
-# 	set_variable = {
-# 		LUC_SupportDailyChange_var = 0
-# 	}
-# 	# Manage liberal contribution
-# 	set_temp_variable = {
-# 		LUC_SupportTemp_var = LUC_SupportLiberalInfluence_var
-# 	}
-# 	divide_temp_variable = {
-# 		LUC_SupportTemp_var = 100
-# 	}
-# 	if = { # If loyal (70 or above - ADD)
-# 		limit = {
-# 			NOT = {
-# 				check_variable = {
-# 					LUC_SupportLiberalLoyalty_var < 70
-# 				}
-# 			}
-# 		}
-# 		add_to_variable = {
-# 			LUC_SupportDailyChange_var = LUC_SupportTemp_var
-# 		}
-# 	}
-# 	else_if = { # If disloyaly
-# 		limit = {
-# 			NOT = {
-# 				check_variable = {
-# 					LUC_SupportLiberalLoyalty_var > 30
-# 				}
-# 			}
-# 		}
-# 		subtract_from_variable = {
-# 			LUC_SupportDailyChange_var = LUC_SupportTemp_var
-# 		}
-# 	}
-# 	# Manage conservative contribution
-# 	set_temp_variable = {
-# 		LUC_SupportTemp_var = LUC_SupportConservativeInfluence_var
-# 	}
-# 	divide_temp_variable = {
-# 		LUC_SupportTemp_var = 100
-# 	}
-# 	if = { # If loyal (70 or above - ADD)
-# 		limit = {
-# 			NOT = {
-# 				check_variable = {
-# 					LUC_SupportConservativeLoyalty_var < 70
-# 				}
-# 			}
-# 		}
-# 		add_to_variable = {
-# 			LUC_SupportDailyChange_var = LUC_SupportTemp_var
-# 		}
-# 	}
-# 	else_if = { # If disloyaly
-# 		limit = {
-# 			NOT = {
-# 				check_variable = {
-# 					LUC_SupportConservativeLoyalty_var > 30
-# 				}
-# 			}
-# 		}
-# 		subtract_from_variable = {
-# 			LUC_SupportDailyChange_var = LUC_SupportTemp_var
-# 		}
-# 	}
-# 	# Manage populist contribution
-# 	set_temp_variable = {
-# 		LUC_SupportTemp_var = LUC_SupportPopulistInfluence_var
-# 	}
-# 	divide_temp_variable = {
-# 		LUC_SupportTemp_var = 100
-# 	}
-# 	if = { # If loyal (70 or above - ADD)
-# 		limit = {
-# 			NOT = {
-# 				check_variable = {
-# 					LUC_SupportPopulistLoyalty_var < 70
-# 				}
-# 			}
-# 		}
-# 		add_to_variable = {
-# 			LUC_SupportDailyChange_var = LUC_SupportTemp_var
-# 		}
-# 	}
-# 	else_if = { # If disloyaly
-# 		limit = {
-# 			NOT = {
-# 				check_variable = {
-# 					LUC_SupportPopulistLoyalty_var > 30
-# 				}
-# 			}
-# 		}
-# 		subtract_from_variable = {
-# 			LUC_SupportDailyChange_var = LUC_SupportTemp_var
-# 		}
-# 	}
-# 	# Manage Agrarian contribution
-# 	set_temp_variable = {
-# 		LUC_SupportTemp_var = LUC_SupportAgrarianInfluence_var
-# 	}
-# 	divide_temp_variable = {
-# 		LUC_SupportTemp_var = 100
-# 	}
-# 	if = { # If loyal (70 or above - ADD)
-# 		limit = {
-# 			NOT = {
-# 				check_variable = {
-# 					LUC_SupportAgrarianLoyalty_var < 70
-# 				}
-# 			}
-# 		}
-# 		add_to_variable = {
-# 			LUC_SupportDailyChange_var = LUC_SupportTemp_var
-# 		}
-# 	}
-# 	else_if = { # If disloyaly
-# 		limit = {
-# 			NOT = {
-# 				check_variable = {
-# 					LUC_SupportAgrarianLoyalty_var > 30
-# 				}
-# 			}
-# 		}
-# 		subtract_from_variable = {
-# 			LUC_SupportDailyChange_var = LUC_SupportTemp_var
-# 		}
-# 	}
-# }
-
-LUC_SupportDailyEffect = {
-	add_to_variable = {
-		LUC_Confidence_var = LUC_SupportDailyChange_var
-	}
-}
-
 
 LUC_UpdateLandtagModifier = {
 	# Clears all modifiers
@@ -409,7 +274,7 @@ LUC_UpdateLandtagModifier = {
 		limit = {
 			NOT = {
 				check_variable = {
-					LUC_Confidence_var > 10
+					LUC_LandtagOverallSupport_var > 10
 				}
 			}
 		}
@@ -419,11 +284,11 @@ LUC_UpdateLandtagModifier = {
 		limit = {
 			NOT = {
 				check_variable = {
-					LUC_Confidence_var > 40
+					LUC_LandtagOverallSupport_var > 40
 				}
 			}
 			check_variable = {
-				LUC_Confidence_var > 10
+				LUC_LandtagOverallSupport_var > 10
 			}
 		}
 		add_ideas = LUC_LandtagOpposition
@@ -432,11 +297,11 @@ LUC_UpdateLandtagModifier = {
 		limit = {
 			NOT = {
 				check_variable = {
-					LUC_Confidence_var < 60
+					LUC_LandtagOverallSupport_var < 60
 				}
 			}
 			check_variable = {
-				LUC_Confidence_var < 90
+				LUC_LandtagOverallSupport_var < 90
 			}
 		}
 		add_ideas = LUC_LandtagSupport
@@ -445,7 +310,7 @@ LUC_UpdateLandtagModifier = {
 		limit = {
 			NOT = {
 				check_variable = {
-					LUC_Confidence_var < 90
+					LUC_LandtagOverallSupport_var < 90
 				}
 			}
 		}
@@ -468,9 +333,10 @@ LUC_DisableLandtag = {
 }
 
 LUC_UpdateVariables = {
-	LUC_SupportCalculateContributions = yes
-	# LUC_SupportUpdateModifier = yes
-	LUC_UpdateLandtagModifier = yes
+	hidden_effect = {
+		LUC_SupportCalculateContributions = yes
+		LUC_UpdateLandtagModifier = yes
+	}
 }
 
 LUC_Clamp_Loyalites = {
@@ -499,6 +365,21 @@ LUC_Clamp_Loyalites = {
 		min = 0
 		max = 100
 	}
+}
+
+
+LUC_SupportWeeklyEffect = {
+	#Add vars
+	add_to_variable = {
+		LUC_LandtagOverallSupport_var = LUC_SupportWeeklyChange_var
+	}
+	# Clamp landtagsupport variable
+	clamp_variable = {
+		var = LUC_LandtagOverallSupport_var
+		min = 0
+		max = 100	
+	}
+	LUC_UpdateLandtagModifier = yes
 }
 
 ###################
@@ -932,7 +813,7 @@ LUC_IncreaseConservativeInfluence = {
 		}
 		# Adjust influence
 		add_to_variable = {
-			LUC_SupportLiberalInfluence_var = LUC_influenceIncrease_temp_var
+			LUC_SupportConservativeInfluence_var = LUC_influenceIncrease_temp_var
 		}
 	}
 	else = {
@@ -1113,7 +994,7 @@ LUC_IncreaseAgrarianInfluence = {
 		}
 		# Adjust influence
 		add_to_variable = {
-			LUC_SupportLiberalInfluence_var = LUC_influenceIncrease_temp_var
+			LUC_SupportAgrarianInfluence_var = LUC_influenceIncrease_temp_var
 		}
 	}
 	else = {
@@ -1294,7 +1175,7 @@ LUC_IncreasePopulistInfluence = {
 		}
 		# Adjust influence
 		add_to_variable = {
-			LUC_SupportLiberalInfluence_var = LUC_influenceIncrease_temp_var
+			LUC_SupportPopulistInfluence_var = LUC_influenceIncrease_temp_var
 		}
 	}
 	else = {
