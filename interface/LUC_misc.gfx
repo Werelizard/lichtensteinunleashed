@@ -30,6 +30,11 @@ spriteTypes = {
 		textureFile = "gfx/texticons/SUS/LUC_PolPopulists.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_LUC_FactionNationalist_text"
+		textureFile = "gfx/texticons/SUS/LUC_PolNationalists.dds"
+		legacy_lazy_load = no
+	}
 	# Agency
 	spriteType = {	
 		name = "GFX_LUC_intelligence_agency_logo_Liechtenstein"

@@ -794,7 +794,7 @@ bitmapfonts = {
 		9 = { 252 169 125 }	# Gradient Step 9 - orange		{ 250 102 25 }
 		t = { 255 76 77 }	# Gradient Step 10 - red 		{ 229 0 0 }
 		# Liechtenstein UNLEASHED
-		F = { 150 75 0 }
+		F = { 200 125 50 }
 		D = { 50 50 255 }
 		S = { 255 50 50 }
 		N = { 124 124 124 }

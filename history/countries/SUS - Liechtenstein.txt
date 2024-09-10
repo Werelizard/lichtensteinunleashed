@@ -127,24 +127,6 @@ add_dynamic_modifier = {
 add_dynamic_modifier = {
 	modifier = LUC_MIL_Movement4_idea
 }
-add_dynamic_modifier = {
-	modifier = LUC_MIL_Movement5_idea
-}
-add_dynamic_modifier = {
-	modifier = LUC_MIL_Collab1_idea
-}
-add_dynamic_modifier = {
-	modifier = LUC_MIL_Collab2_idea
-}
-add_dynamic_modifier = {
-	modifier = LUC_MIL_Collab3_idea
-}
-add_dynamic_modifier = {
-	modifier = LUC_MIL_Collab4_idea
-}
-add_dynamic_modifier = {
-	modifier = LUC_MIL_Collab5_idea
-}
 
 # Special effects
 luc_setup_customs_union = yes
@@ -155,13 +137,16 @@ country_lock_all_division_template = yes
 # Variables for the initial economy
 
 set_variable = {
-	LUC_ConGoodsFac_Var = -0.05
+	LUC_ConGoodsFac_Var = 0.08
 }
 set_variable = {
-	LUC_TradeOp_Var = -0.15
+	LUC_ExportFac_Var = -0.25
 }
 set_variable = {
-	LUC_ProductionFac_Var = -0.15
+	LUC_ProductionFac_Var = -0.1
+}
+set_variable = {
+	LUC_StabFac_Var = 0.05
 }
 # Relation
 

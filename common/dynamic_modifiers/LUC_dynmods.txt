@@ -9,6 +9,7 @@ LUC_Liechtensteiner_Economy_idea = {
 	trade_opinion_factor = LUC_TradeOp_Var
 	local_resources_factor = LUC_ResExtraFac_Var
 	production_lack_of_resource_penalty_factor = LUC_ResPenalFac_Var
+	min_export = LUC_ExportFac_Var
 	
 	production_speed_buildings_factor = LUC_BuildAllFac_Var
 	production_speed_arms_factory_factor = LUC_BuildArmFac_Var
@@ -33,9 +34,6 @@ LUC_MIL_Movement1_idea = {
 			NOT = {
 				fascism > 0.2
 			}
-			NOT = {
-				has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
-			}
 			OR = {
 				has_government = democratic
 				has_government = neutrality
@@ -52,9 +50,6 @@ LUC_MIL_Movement2_idea = {
 			fascism > 0.2
 			NOT = {
 				fascism > 0.4
-			}
-			NOT = {
-				has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
 			}
 			OR = {
 				has_government = democratic
@@ -73,9 +68,6 @@ LUC_MIL_Movement3_idea = {
 			NOT = {
 				fascism > 0.6
 			}
-			NOT = {
-				has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
-			}
 			OR = {
 				has_government = democratic
 				has_government = neutrality
@@ -93,9 +85,6 @@ LUC_MIL_Movement4_idea = {
 			NOT = {
 				fascism > 0.8 
 			}
-			NOT = {
-				has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
-			}
 			OR = {
 				has_government = democratic
 				has_government = neutrality
@@ -110,9 +99,6 @@ LUC_MIL_Movement5_idea = {
 	enable = {
 		SUS = {
 			fascism > 0.8
-			NOT = {
-				has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
-			}
 			OR = {
 				has_government = democratic
 				has_government = neutrality
@@ -122,91 +108,4 @@ LUC_MIL_Movement5_idea = {
 	}
 	stability_factor = -0.25
 	political_power_factor = -0.15
-}
-LUC_MIL_Collab1_idea = {
-	enable = {
-		SUS = {
-			fascism > 0
-			NOT = {
-				fascism > 0.2
-			}
-			has_idea = LUC_Fascist_Agitators_idea
-			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
-	}
-	fascism_drift = 0.02
-	recruitable_population_factor = 0.02
-}
-LUC_MIL_Collab2_idea = {
-	enable = {
-		SUS = {
-			fascism > 0.2
-			NOT = {
-				fascism > 0.4
-			}
-			has_idea = LUC_Fascist_Agitators_idea
-			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
-	}
-	fascism_drift = 0.04
-	recruitable_population_factor = 0.04
-}
-LUC_MIL_Collab3_idea = {
-	enable = {
-		SUS = {
-			fascism > 0.4
-			NOT = {
-				fascism > 0.6
-			}
-			has_idea = LUC_Fascist_Agitators_idea
-			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
-	}
-	fascism_drift = 0.06
-	recruitable_population_factor = 0.06
-}
-LUC_MIL_Collab4_idea = {
-	enable = {
-		SUS = {
-			fascism > 0.6
-			NOT = {
-				fascism > 0.8 
-			}
-			has_idea = LUC_Fascist_Agitators_idea
-			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
-	}
-	fascism_drift = 0.08
-	recruitable_population_factor = 0.08
-}
-LUC_MIL_Collab5_idea = {
-	enable = {
-		SUS = {
-			fascism > 0.8
-			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
-			has_idea = LUC_Fascist_Agitators_idea	
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-		}
-	}
-	fascism_drift = 0.1
-	recruitable_population_factor = 0.1
 }

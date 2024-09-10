@@ -1,5 +1,5 @@
 @LUC_LandtagWidth = 470
-@LUC_LandtagHeight = 415
+@LUC_LandtagHeight = 480
 @LUC_LandtagInner_X = 61
 @LUC_LandtagIcons_X = 51
 @LUC_LandtagHeader_Y = 25
@@ -67,72 +67,72 @@ guiTypes = {
 		iconType = {
 			name = "confidence_bar_fill"
 			size = { x = 360 y = 32 }
-			position = {x = 65 y = 311}
+			position = {x = 65 y = 376}
 			spriteType = "GFX_LUC_confidenceBar_fill"
 			alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "confidence_bar_frame_1"
-			position = {x = 61  y = 303}
+			position = {x = 61  y = 368}
 			spriteType = "GFX_LUC_confidenceBar_frame_1"
 			pdx_tooltip = LUC_LandtagSupport_1
 		}
 		iconType = {
 			name = "confidence_bar_frame_1_active"
-			position = {x = 61  y = 303}
+			position = {x = 61  y = 368}
 			spriteType = "GFX_LUC_confidenceBar_frame_1_active"
 			pdx_tooltip = LUC_LandtagSupport_1
 		}
 
 		iconType = {
 			name = "confidence_bar_frame_2"
-			position = {x = 103 y = 303}
+			position = {x = 103 y = 368}
 			spriteType = "GFX_LUC_confidenceBar_frame_2"
 			pdx_tooltip = LUC_LandtagSupport_2
 		}
 		iconType = {
 			name = "confidence_bar_frame_2_active"
-			position = {x = 103 y = 303}
+			position = {x = 103 y = 368}
 			spriteType = "GFX_LUC_confidenceBar_frame_2_active"
 			pdx_tooltip = LUC_LandtagSupport_2
 		}
 
 		iconType = {
 			name = "confidence_bar_frame_3"
-			position = {x = 210 y = 303}
+			position = {x = 210 y = 368}
 			spriteType = "GFX_LUC_confidenceBar_frame_3"
 			pdx_tooltip = LUC_LandtagSupport_3
 		}
 		iconType = {
 			name = "confidence_bar_frame_3_active"
-			position = {x = 210 y = 303}
+			position = {x = 210 y = 368}
 			spriteType = "GFX_LUC_confidenceBar_frame_3_active"
 			pdx_tooltip = LUC_LandtagSupport_3
 		}
 
 		iconType = {
 			name = "confidence_bar_frame_4"
-			position = {x = 281  y = 303}
+			position = {x = 281  y = 368}
 			spriteType = "GFX_LUC_confidenceBar_frame_4"
 			pdx_tooltip = LUC_LandtagSupport_4
 		}
 		iconType = {
 			name = "confidence_bar_frame_4_active"
-			position = {x = 281  y = 303}
+			position = {x = 281  y = 368}
 			spriteType = "GFX_LUC_confidenceBar_frame_4_active"
 			pdx_tooltip = LUC_LandtagSupport_4
 		}
 
 		iconType = {
 			name = "confidence_bar_frame_5"
-			position = {x = 388 y = 303}
+			position = {x = 388 y = 368}
 			spriteType = "GFX_LUC_confidenceBar_frame_5"
 			pdx_tooltip = LUC_LandtagSupport_5
 		}
 		iconType = {
 			name = "confidence_bar_frame_5_active"
-			position = {x = 388 y = 303}
+			position = {x = 388 y = 368}
 			spriteType = "GFX_LUC_confidenceBar_frame_5_active"
 			pdx_tooltip = LUC_LandtagSupport_5
 		}
@@ -140,7 +140,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "LUC_landtag_support_status_display"
 			text = LUC_landtag_support_status_display
-			position = {x = 94 y = 350}
+			position = {x = 94 y = 415}
 			size = {width = 300	height = 40}
 			maxWidth = 300
 			font = hoi_24header

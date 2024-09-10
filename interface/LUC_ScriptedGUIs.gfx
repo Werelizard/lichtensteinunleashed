@@ -118,4 +118,8 @@ spriteTypes = {
 		name = "GFX_LUC_FactionAgrarian"
 		textureFile = "gfx/interface/support/LUC_FactionAgrarian.dds"
 	}
+	spriteType = {
+		name = "GFX_LUC_FactionNationalist"
+		textureFile = "gfx/interface/support/LUC_FactionNationalists.dds"
+	}
 }

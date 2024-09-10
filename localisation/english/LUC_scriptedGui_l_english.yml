@@ -40,7 +40,7 @@
  LUC_LandtagSupport_4:0 "§YStrong Landtag Support§!:\n\nPolitical Advisor Cost: §G-5.0%§!\nStability: §G+5.0%§!\n\n------------\n\nCurrent Support: §Y[?LUC_Confidence_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
  LUC_LandtagSupport_3:0 "§YIndifferent Landtag§!:\n\nPolitical Power Gain: §R-5.0%§!\nConscription Laws Cost: §R+5.0%§!\nnTrade Laws Cost: §R+5.0%§!\nEconomy Laws Cost: §R+5.0%§!\n\n------------\n\nCurrent Support: §Y[?LUC_Confidence_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
  LUC_LandtagSupport_2:0 "§YLandtag Opposition§!:\n\nPolitical Power Gain: §R-10.0%§!\nConscription Laws Cost: §R+15.0%§!\nTrade Laws Cost: §R+15.0%§!\nEconomy Laws Cost: §R+15.0%§!\n\n------------\n\nCurrent Support: §Y[?LUC_Confidence_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
- LUC_LandtagSupport_1:0 "§YLandtag Veto§!:\n\nPolitical Power Gain: §R-20.0%§!\nConscription Laws Cost: §R+25.0%§!\nTrade Laws Cost: §R+25.0%§!\nEconomy Laws Cost: §R+25.0%§!\n\n§RThe opposition will begin measures to remove §!§Y[ROOT.GetLeader]§!§R from power!§!\n\n------------\n\nCurrent Support: §Y[?LUC_Confidence_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
+ LUC_LandtagSupport_1:0 "§YLandtag Veto§!:\n\nPolitical Power Gain: §R-20.0%§!\nConscription Laws Cost:0 §R+25.0%§!\nTrade Laws Cost: §R+25.0%§!\nEconomy Laws Cost: §R+25.0%§!\n\n§RThe opposition will begin measures to remove §!§Y[ROOT.GetLeader]§!§R from power!§!\n\n------------\n\nCurrent Support: §Y[?LUC_Confidence_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
  confidence_bar_value_text:0 "[?LUC_Confidence_var|%%]"
  confidence_bar_frame_explanations:0 "\n\n------------\n\nCurrent Weekly Change: [?LUC_SupportDailyChange_var|2+=]"
 
@@ -76,3 +76,40 @@
  LUC_POP_EFF:0 "[?LUC_SupportPopulist_var|2+=]"
 
  LUC_landtag_support_status_display:0 "§T[LUC_GetLandtagState]§!"
+
+ LUC_IncreaseNationalistInfluence_tt:0 "Increases the influence of the £GFX_LUC_FactionNationalist_text §YNationalist§! faction"
+ LUC_IncreasePopulistInfluence_tt:0 "Increases the influence of the £GFX_LUC_FactionPopulist_text §YPopulist§! faction"
+ LUC_IncreaseAgrarianInfluence_tt:0 "Increases the influence of the £GFX_LUC_FactionAgrarian_text §YAgrarian§! faction"
+ LUC_IncreaseConservativeInfluence_tt:0 "Increases the influence of the £GFX_LUC_FactionConservative_text §YConservative§! faction"
+ LUC_IncreaseLiberalInfluence_tt:0 "Increases the influence of the £GFX_LUC_FactionLiberal_text §YLiberal§! faction"
+ 
+ LUC_DecreaseLiberalInfluence_tt:0 "Decreases the influence of the £GFX_LUC_FactionLiberal_text §YLiberal§! faction"
+ LUC_DecreaseConservativeInfluence_tt:0 "Decreases the influence of the £GFX_LUC_FactionConservative_text §YConservative§! faction"
+ LUC_DecreaseAgrarianInfluence_tt:0 "Decreases the influence of the £GFX_LUC_FactionAgrarian_text §YAgrarian§! faction"
+ LUC_DecreasePopulistInfluence_tt:0 "Decreases the influence of the £GFX_LUC_FactionPopulist_text §YPopulist§! faction"
+ LUC_DecreaseNationalistInfluence_tt:0 "Decreases the influence of the £GFX_LUC_FactionNationalist_text §YNationalist§! faction"
+
+ LUC_IncreaseNationalistLoyalty_tt:0 "§GIncreases§! the loyalty of the £GFX_LUC_FactionNationalist_text §YNationalist§! faction"
+ LUC_IncreaseNationalistLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionNationalist_text §YNationalist§! faction"
+ LUC_DecreaseNationalistLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionNationalist_text §YNationalist§! faction"
+ LUC_DecreaseNationalistLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionNationalist_text §YNationalist§! faction"
+
+ LUC_IncreaseLiberalLoyalty_tt:0 "§GIncreases§! the loyalty of the £GFX_LUC_FactionLiberal_text §YLiberal§! faction"
+ LUC_IncreaseLiberalLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionLiberal_text §YLiberal§! faction"
+ LUC_DecreaseLiberalLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionLiberal_text §YLiberal§! faction"
+ LUC_DecreaseLiberalLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionLiberal_text §YLiberal§! faction"
+
+ LUC_IncreaseConservativeLoyalty_tt:0 "§GIncreases§! the loyalty of the £GFX_LUC_FactionConservative_text §YConservative§! faction"
+ LUC_IncreaseConservativeLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionConservative_text §YConservative§! faction"
+ LUC_DecreaseConservativeLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionConservative_text §YConservative§! faction"
+ LUC_DecreaseConservativeLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionConservative_text §YConservative§! faction"
+
+ LUC_IncreasePopulistLoyalty_tt:0 "§GIncreases§! the loyalty of the £GFX_LUC_FactionPopulist_text §YPopulist§! faction"
+ LUC_IncreasePopulistLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionPopulist_text §YPopulist§! faction"
+ LUC_DecreasePopulistLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionPopulist_text §YPopulist§! faction"
+ LUC_DecreasePopulistLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionPopulist_text §YPopulist§! faction"
+
+ LUC_IncreaseAgrarianLoyalty_tt:0 "§GIncreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text §YAgrarian§! faction"
+ LUC_IncreaseAgrarianLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text §YAgrarian§! faction"
+ LUC_DecreaseAgrarianLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text §YAgrarian§! faction"
+ LUC_DecreaseAgrarianLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text §YAgrarian§! faction"

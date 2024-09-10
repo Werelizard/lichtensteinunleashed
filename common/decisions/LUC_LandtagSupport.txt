@@ -7,34 +7,7 @@ LUC_Government_LandtagSupport_cat = {
 		fixed_random_seed = no
 	
 		complete_effect = {
-			random_list = {
-				20 = {
-					set_variable = {
-						LUC_Confidence_var = 0
-					}
-				}
-				20 = {
-					set_variable = {
-						LUC_Confidence_var = 20
-					}
-				}
-				20 = {
-					set_variable = {
-						LUC_Confidence_var = 50
-					}
-				}
-				20 = {
-					set_variable = {
-						LUC_Confidence_var = 80
-					}
-				}
-				20 = {
-					set_variable = {
-						LUC_Confidence_var = 100
-					}
-				}
-			}
-			LUC_UpdateLandtagModifier = yes
+			LUC_LiechtensteinLandtag_ActivateNationalistFaction = yes
 		}
 	}
 }
