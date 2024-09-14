@@ -8,4 +8,10 @@ LUC_Government_LandtagSupport_cat = {
 			LUC_LiechtensteinLandtag_ActivateNationalistFaction = yes
 		}
 	}
+
+	LUC_Landtag_Armement = {
+		visible = {
+			has_completed_focus = LUC_EconomyReorientEconomy_Focus
+		}
+	}
 }

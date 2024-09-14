@@ -2,179 +2,56 @@
 
 luc_setup_customs_union = {
 	set_variable = {
-		luc_customsUnionFactories_var = 0
-	}
-	set_variable = {
-		luc_customsUnionFactoriesIncrease_var = 1
+		luc_customsUnionFactories_var = 1
 	}
 	luc_customs_union_update_factory = yes
 }
 
 luc_remove_customs_union = {
 	set_temp_variable = {
-		luc_customsUnionFactoriesDecrease_var = luc_customsUnionFactories_var
+		luc_removedfactories_var = luc_customsUnionFactories_var
 	}
 	multiply_temp_variable = {
-		luc_customsUnionFactoriesDecrease_var = -1
+		luc_removedfactories_var = -1
 	}
 	add_offsite_building = {
 		type = industrial_complex
-		level = luc_customsUnionFactoriesDecrease_var
+		level = luc_removedfactories_var
+	}
+}
+
+luc_customs_union_remove_factory = {
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					luc_customsUnionFactories_var < 1
+				}
+			}
+		}
+		subtract_from_variable = {
+			luc_customsUnionFactories_var = 1
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = -1
+		}
+	}
+}
+
+luc_customs_union_add_factory = {
+	add_to_variable = {
+		luc_customsUnionFactories_var = 1
+	}
+	add_offsite_building = {
+		type = industrial_complex
+		level = 1
 	}
 }
 
 luc_customs_union_update_factory = {
 	add_offsite_building = {
 		type = industrial_complex
-		level = luc_customsUnionFactoriesIncrease_var
-	}
-	add_to_variable = {
-		luc_customsUnionFactories_var = 1
-	}
-}
-
-# BREACH OF NEUTRALTIY WARNING / EFFECT - For Focuses and other one time uses
-luc_break_of_neutrality_warning = {
-	if = {
-		limit = {
-			has_idea = LUC_Liechtenstein_Neutrality_idea
-			NOT = {
-				has_country_flag = LUC_NeuralityRepealed_flag
-			}
-		}
-		custom_effect_tooltip = luc_break_of_neutrality_warning_tt
-		if = {
-			limit = {
-				any_other_country = {
-					NOT = {
-						is_in_faction_with = ROOT
-					}
-					NOT = {
-						has_war_with = ROOT
-					}
-					is_major = yes
-					capital_scope = {
-						is_on_continent = europe
-					}
-					has_opinion = {
-						target = ROOT
-						value < 35
-					}
-					OR = {
-						NOT = {
-							tag = SOV
-						}
-						AND = {
-							tag = SOV
-							is_neighbor_of = ROOT
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = luc_break_of_neutrality_effect_tt
-			every_other_country = {
-				limit = {
-					NOT = {
-						is_in_faction_with = ROOT
-					}
-					is_major = yes
-					capital_scope = {
-						is_on_continent = europe
-					}
-					has_opinion = {
-						target = ROOT
-						value < 35
-					}
-					OR = {
-						NOT = {
-							tag = SOV
-						}
-						AND = {
-							tag = SOV
-							is_neighbor_of = ROOT
-						}
-					}
-				}
-				create_wargoal = {
-					target = ROOT
-					type = puppet_wargoal_focus
-				}
-			}
-		}
-		else = {
-			custom_effect_tooltip = luc_break_of_neutrality_noeffect_tt
-		}
-		every_other_country = {
-			limit = {
-				NOT = {
-					is_in_faction_with = ROOT
-				}
-				NOT = {
-					has_war_with = ROOT
-				}
-				OR = {
-					AND = {
-						is_major = yes
-						capital_scope = {
-							is_on_continent = europe
-						}
-						has_opinion = {
-							target = ROOT
-							value > 34
-						}
-					}
-					is_neighbor_of = ROOT
-				}
-				OR = {
-					NOT = {
-						tag = SOV
-					}
-					AND = {
-						tag = SOV
-						is_neighbor_of = ROOT
-					}
-				}
-			}
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = LUC_ANGEREDOVERNEUTRALITY
-			}
-		}
-	}
-}
-
-LUC_neutrality_pleased = {
-	custom_effect_tooltip = LUC_neutrality_pleased_tt
-	every_other_country = {
-		limit = {
-			NOT = {
-				is_in_faction_with = ROOT
-			}
-			NOT = {
-				has_war_with = ROOT
-			}
-			OR = {
-				AND = {
-						is_major = yes
-					capital_scope = {
-						is_on_continent = europe
-					}
-				}
-				is_neighbor_of = ROOT
-			}
-			OR = {
-				NOT = {
-					tag = SOV
-				}
-				AND = {
-					tag = SOV
-					is_neighbor_of = ROOT
-				}
-			}
-		}
-		add_opinion_modifier = {
-			target = ROOT
-			modifier = LUC_PLEASEDBYNEUTRALITY
-		}
+		level = luc_customsUnionFactories_var
 	}
 }

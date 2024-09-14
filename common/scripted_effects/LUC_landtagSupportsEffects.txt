@@ -516,7 +516,7 @@ LUC_DecreaseAgrarianLoyaltyBIG = {
 
 # Nationalists - only used if the nationalists are active
 
-LUC_DecreaseNationalistLoyalty = {
+LUC_IncreaseNationalistLoyalty = {
 	custom_effect_tooltip = LUC_IncreaseNationalistLoyalty_tt
 	add_to_variable = {
 		LUC_SupportNationalistLoyalty_var = 5
@@ -524,7 +524,7 @@ LUC_DecreaseNationalistLoyalty = {
 	LUC_Clamp_Loyalites = yes
 }
 
-LUC_DecreaseNationalistLoyaltyBIG = {
+LUC_IncreaseNationalistLoyaltyBIG = {
 	custom_effect_tooltip = LUC_IncreaseNationalistLoyaltyBIG_tt
 	add_to_variable = {
 		LUC_SupportNationalistLoyalty_var = 15
@@ -1830,5 +1830,112 @@ LUC_DecreaseNationalistInfluence = {
 		add_to_variable = {
 			LUC_SupportPopulistInfluence_var = 2.5
 		}
+	}
+}
+
+##########################
+# ADD / DECREASE SUPPORT #
+##########################
+
+LUC_LandtagIncreaseSupport_5 = {
+	if = {
+		limit = {
+			LUC_hasLandtagMechanic_trigger = yes
+		}
+		add_to_variable = {
+			LUC_LandtagOverallSupport_var = 5
+		}
+		clamp_variable = {
+			var = LUC_LandtagOverallSupport_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = LUC_increaseLandtagSupport_5_tt
+	}
+}
+
+LUC_LandtagIncreaseSupport_10 = {
+	if = {
+		limit = {
+			LUC_hasLandtagMechanic_trigger = yes
+		}
+		add_to_variable = {
+			LUC_LandtagOverallSupport_var = 10
+		}
+		clamp_variable = {
+			var = LUC_LandtagOverallSupport_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = LUC_increaseLandtagSupport_10_tt
+	}
+}
+
+
+LUC_LandtagIncreaseSupport_15 = {
+	if = {
+		limit = {
+			LUC_hasLandtagMechanic_trigger = yes
+		}
+		add_to_variable = {
+			LUC_LandtagOverallSupport_var = 5
+		}
+		clamp_variable = {
+			var = LUC_LandtagOverallSupport_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = LUC_increaseLandtagSupport_15_tt
+	}
+}
+
+LUC_LandtagDecreaseSupport_5 = {
+	if = {
+		limit = {
+			LUC_hasLandtagMechanic_trigger = yes
+		}
+		subtract_from_variable = {
+			LUC_LandtagOverallSupport_var = 5
+		}
+		clamp_variable = {
+			var = LUC_LandtagOverallSupport_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = LUC_decreaseLandtagSupport_5_tt
+	}
+}
+
+LUC_LandtagDecreaseSupport_10 = {
+	if = {
+		limit = {
+			LUC_hasLandtagMechanic_trigger = yes
+		}
+		subtract_from_variable = {
+			LUC_LandtagOverallSupport_var = 10
+		}
+		clamp_variable = {
+			var = LUC_LandtagOverallSupport_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = LUC_decreaseLandtagSupport_10_tt
+	}
+}
+
+LUC_LandtagDecreaseSupport_15 = {
+	if = {
+		limit = {
+			LUC_hasLandtagMechanic_trigger = yes
+		}
+		subtract_from_variable = {
+			LUC_LandtagOverallSupport_var = 15
+		}
+		clamp_variable = {
+			var = LUC_LandtagOverallSupport_var
+			min = 0
+			max = 100
+		}
+		custom_effect_tooltip = LUC_decreaseLandtagSupport_15_tt
 	}
 }

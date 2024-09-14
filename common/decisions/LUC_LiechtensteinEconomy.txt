@@ -1,0 +1,14 @@
+LUC_LiechtensteinEco_cat = {
+	# Decisions to repatriate Austrian / Bohemian Assets
+	LUC_LiechtensteinEco_austrianAssets = {
+		visible = {
+			has_completed_focus = LUC_EconomyRoyalAssets_Focus
+		}
+	}
+	LUC_LiechtensteinEco_czechAssets = {
+		visible = {
+			has_completed_focus = LUC_EconomyRoyalAssets_Focus
+		}
+	}
+	# 
+}

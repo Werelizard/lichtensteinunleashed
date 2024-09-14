@@ -1,28 +1,4 @@
 ﻿division_template = {
-	name = "Swiss Auxialiaries"
-	division_names_group = SWI_MNT_01
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 1 y = 0 }
-	}
-	support = {
-		engineer = {
-			x = 0
-			y = 0
-		}
-		recon = {
-			x = 0
-			y = 1
-		}
-	}
-	priority = 2
-	division_cap = 1
-	is_locked = yes
-}
-
-division_template = {
 	name = "Landespolizei"
 	division_names_group = SWI_INF_01
 
@@ -58,13 +34,6 @@ division_template = {
 
 units = {
 	##### Liechtensteiner Militia #####
-	division= {	
-		location = 6680
-		division_template = "Swiss Auxialiaries"
-		start_experience_factor = 0.03
-		start_manpower_factor = 1
-		start_equipment_factor = 1
-	}
 	division= {	
 		location = 6680
 		division_template = "Landespolizei"

@@ -3,7 +3,29 @@ on_actions = {
 		effect = {
 			SUS = {
 				# Landtag Effects
-				LUC_SupportWeeklyEffect = yes
+				if = {
+					limit = {
+						LUC_hasLandtagMechanic_trigger = yes
+					}
+					LUC_SupportWeeklyEffect = yes
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			SUS = {
+				country_event = {
+					id = LUC_flavour.1
+				}
+				remove_ideas = LUC_Liechtensteiner_Economy_idea
+				add_dynamic_modifier = {
+					modifier = LUC_Liechtensteiner_Economy_idea
+				}
+				remove_ideas = LUC_CustomsUnion_idea
+				add_dynamic_modifier = {
+					modifier = LUC_CustomsUnion_idea
+				}
 			}
 		}
 	}

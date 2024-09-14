@@ -1345,11 +1345,6 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
-			SUS = {
-				country_event = {
-					id = LUC_flavour.1
-				}
-			}
 			GER = { #Axis and Poland just didn't get along
 				add_ai_strategy = {
 				   type = alliance

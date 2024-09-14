@@ -1,0 +1,10 @@
+ideas = {
+	country = {
+		LUC_Fascist_Agitators_idea = {
+			modifier = {
+				fascism_acceptance = 15
+				stability_factor = -0.025
+			}
+		}
+	}
+}

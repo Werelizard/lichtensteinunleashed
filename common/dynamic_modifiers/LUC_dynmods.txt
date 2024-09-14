@@ -10,6 +10,7 @@ LUC_Liechtensteiner_Economy_idea = {
 	local_resources_factor = LUC_ResExtraFac_Var
 	production_lack_of_resource_penalty_factor = LUC_ResPenalFac_Var
 	min_export = LUC_ExportFac_Var
+	local_building_slots = LUC_BuildSlots_Var
 	
 	production_speed_buildings_factor = LUC_BuildAllFac_Var
 	production_speed_arms_factory_factor = LUC_BuildArmFac_Var
@@ -25,6 +26,16 @@ LUC_Liechtensteiner_Economy_idea = {
 	industrial_capacity_factory = LUC_OutputFac_Var
 	monthly_population = LUC_PopFac_Var
 	stability_factor = LUC_StabFac_Var
+}
+
+LUC_CustomsUnion_idea = {
+	icon = GFX_idea_LUC_CustomsUnion_idea
+	enable = {
+		always = yes
+	}
+	custom_modifier_tooltip = LUC_CustomsUnion_idea_tt
+	production_factory_start_efficiency_factor = LUC_UnionFactoryOutput_Var
+	political_power_factor = LUC_UnionPolPower_Var
 }
 
 LUC_MIL_Movement1_idea = {

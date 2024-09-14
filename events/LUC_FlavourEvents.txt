@@ -18,7 +18,6 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			LUC_LiechtensteinLandtag_SetupGui = yes
 			LUC_SupportSetup_Initial = yes
 			LUC_UpdateVariables = yes
 			set_country_flag = LUC_EnableLandtag_flag

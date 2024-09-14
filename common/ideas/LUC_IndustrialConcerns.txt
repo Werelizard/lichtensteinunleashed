@@ -1,0 +1,33 @@
+ideas = {
+	industrial_concern = {
+		LUC_LawenaPower_concern = {
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.025
+				custom_modifier_tooltip = LUC_LawenaPower_concern_tt
+			}
+			research_bonus = {
+				electronics = 0.05
+			}
+			on_add = {
+				hidden_effect = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			on_remove = {
+				hidden_effect = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = -2
+					}
+				}
+			}
+			available = {
+				original_tag = SUS
+				has_completed_focus = LUC_EconomyHydroEnergy_Focus
+			}
+		}
+	}
+}

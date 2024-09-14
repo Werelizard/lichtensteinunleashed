@@ -14,11 +14,10 @@ bookmarks = {
 			ideas = {
 				LUC_Franz_I_idea
 				LUC_Liechtenstein_Neutrality_idea
-				LUC_Liechtensteiner_Army_idea
+				LUC_Liechtensteiner_Economy_idea
 			}
 			focuses = {
-				LUC_GermanLiberators
-				LUC_ALCAlpineConfederacy
+				
 			}
 		}
 		

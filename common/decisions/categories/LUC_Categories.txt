@@ -23,30 +23,14 @@ LUC_Government_LandtagSupport_cat = {
 		always = yes
 	}
 	visible = {
-		original_tag = SUS
-		has_country_flag = LUC_EnableLandtag_flag
-		OR = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_OttoSchaedler
-			}
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_RudolfSchaedler
-			}
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_RichardMeier
-			}
-		}
+		LUC_hasLandtagMechanic_trigger = yes
 	}
 	priority = 4
+}
+
+LUC_LiechtensteinEco_cat = {
+	allowed = {
+		original_tag = SUS
+	}
+	priority = 2
 }

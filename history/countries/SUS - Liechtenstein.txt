@@ -108,46 +108,27 @@ add_ideas = {
 	limited_exports
 	LUC_Franz_I_idea
 	LUC_Liechtenstein_Neutrality_idea
-	LUC_CustomsUnion_idea
 	LUC_Liechtensteiner_Army_idea
-}
-
-add_dynamic_modifier = {
-	modifier = LUC_Liechtensteiner_Economy_idea
-}
-add_dynamic_modifier = {
-	modifier = LUC_MIL_Movement1_idea
-}
-add_dynamic_modifier = {
-	modifier = LUC_MIL_Movement2_idea
-}
-add_dynamic_modifier = {
-	modifier = LUC_MIL_Movement3_idea
-}
-add_dynamic_modifier = {
-	modifier = LUC_MIL_Movement4_idea
+	LUC_Liechtensteiner_Economy_idea
+	LUC_CustomsUnion_idea
 }
 
 # Special effects
 luc_setup_customs_union = yes
-add_manpower = 9000
-country_lock_all_division_template = yes
-
+add_manpower = 1000
 
 # Variables for the initial economy
 
 set_variable = {
-	LUC_ConGoodsFac_Var = 0.08
+	LUC_ConGoodsFac_Var = 0.15
 }
 set_variable = {
-	LUC_ExportFac_Var = -0.25
+	LUC_UnionFactoryOutput_Var = 0.04
 }
 set_variable = {
-	LUC_ProductionFac_Var = -0.1
+	LUC_UnionPolPower_Var = -0.04
 }
-set_variable = {
-	LUC_StabFac_Var = 0.05
-}
+
 # Relation
 
 SWI = {

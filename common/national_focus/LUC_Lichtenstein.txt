@@ -28,3600 +28,627 @@ focus_tree = {
 			custom_effect_tooltip = LUC_LandtagCompleted_tt
 		}
 	}
-	#####################
-	# DEMOCRATIC GOVERNMENT #
-	#####################
+
+	# THE ECONOMY OF LIECHTENSTEIN
+
 	focus = {
-		id = LUC_LiberalVictory
-		icon = GFX_LUC_LiberalVictory
-		cost = 3
-		relative_position_id = LUC_Landtag
-		x = -17
-		y = 1
-		prerequisite = {
-			focus = LUC_Landtag
-		}
+		id = LUC_EconomyStateOfEconomy_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = -14
+		y = 0
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = LUC_LiberalVictory_unlocked_tt
-				has_country_flag = LUC_HoopPath_Flag
-			}
-			has_government = democratic
-		}
-		completion_reward = {
-			effect_tooltip = {
-				country_event = {
-					id = LUC_FocusTree.200
-				}
-			}
-		}
-		mutually_exclusive = {
 			
 		}
-		select_effect = {
+		completion_reward = { 
+			LUC_LandtagIncreaseSupport_5 = yes
+			custom_effect_tooltip = LUC_ModifiyEconomy_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_ConsumerGoods_neg10_tt
 			hidden_effect = {
-				country_event = {
-					id = LUC_FocusTree.200
-					days = 5
+				subtract_from_variable = {
+					LUC_ConGoodsFac_Var = 0.1
 				}
 			}
-		}
-		cancelable = no
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ARealisticGovernment
-				NOT = {
-					has_completed_focus = LUC_MilitaryRearmement
-				}
-			}
-			x = 4
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = 9
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-			x = 7
 		}
 	}
+
 	focus = {
-		id = LUC_InvestigateFascists		#TBD - EVENT
-		icon = GFX_LUC_InvestigateFascists
+		id = LUC_EconomyDevelopVaduz_Focus
+		icon = GFX_goal_unknown
 		cost = 1
-		relative_position_id = LUC_Landtag
+		x = 5
+		y = 1
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		available = {
+			controls_state = 970
+			owns_state = 970
+		}
+		completion_reward = { 
+			970 = {
+				increase_state_category = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyIntegrateBank_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 5
+		y = 4
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyDevelopVaduz_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			add_timed_idea = {
+				idea = LUC_LiechtensteinBankIntegrated
+				days = 540
+			}
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyRoyalAssets_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 6
+		y = 5
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyIntegrateBank_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = LUC_LiechtensteinEco_austrianAssets
+			unlock_decision_tooltip = LUC_LiechtensteinEco_czechAssets
+		}
+	}
+
+	focus = {
+		id = LUC_EconomySecureForeignInvestments_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 5
+		y = 6
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyIntegrateBank_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyHydroEnergy_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 7
+		y = 2
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyDevelopVaduz_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = LUC_LawenaPower_concern
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyBroadElectrification_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 6
+		y = 3
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyHydroEnergy_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = LUC_EconomyBroadElectrification_Focus_bonus
+				uses = 2
+				category = electronics
+				bonus = 1
+			}
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyOpenTractorFactories_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 9
+		y = 3
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyHydroEnergy_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyPrecisionExports_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 8
+		y = 4
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyBroadElectrification_Focus
+			focus = LUC_EconomyOpenTractorFactories_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyUrbanisation_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 2
+		y = 1
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyStateOfEconomy_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = LUC_EconomyUrbanisation_Focus_bonus
+				category = construction_tech
+				bonus = 1
+				uses = 1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyModernTools_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = -2
+		y = 1
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyStateOfEconomy_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = LUC_EconomyModernTools_Focus_bonus
+				category = cat_production
+				bonus = 1
+				uses = 1
+			}
+			custom_effect_tooltip = LUC_ModifiyEconomy_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_Production_pos5_tt
+			hidden_effect = {
+				add_to_variable = {
+					production_factory_efficiency_gain_factor = 0.05
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = LUC_EconomyIron_Focus
+		icon = GFX_goal_unknown
+		cost = 1
 		x = 4
 		y = 2
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
-			focus = LUC_LiberalVictory
-			focus = LUC_ConservativeVictory
+			focus = LUC_EconomyModernTools_Focus
+			focus = LUC_EconomyUrbanisation_Focus
+		}
+		prerequisite = {
+			focus = LUC_EconomyDevelopVaduz_Focus
 		}
 		available = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
+			controls_state = 970
+			owns_state = 970
+		}
+		completion_reward = { 
+			970 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
 				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
+				add_resource = {
+					type = steel
+					amount = 6
 				}
 			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-			focus = LUC_NationallistCollaboration
 		}
 	}
+
 	focus = {
-		id = LUC_WelcomeRefugees		#TBD - EVENT
-		icon = GFX_LUC_WelcomeRefugees
+		id = LUC_EconomyIncreaseStateControl_Focus
+		icon = GFX_goal_unknown
 		cost = 1
-		relative_position_id = LUC_Landtag
-		x = -4
+		x = 2
 		y = 2
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
-			focus = LUC_LiberalVictory
-			focus = LUC_ConservativeVictory
+			focus = LUC_EconomyModernTools_Focus
+			focus = LUC_EconomyUrbanisation_Focus
+		}
+		prerequisite = {
+			focus = LUC_EconomyDevelopVaduz_Focus
 		}
 		available = {
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
+			LUC_isLandtagSupportive_trigger = yes
 		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-		}
-	}
-	focus = {
-		id = LUC_PoliceExpansion
-		icon = GFX_LUC_PoliceExpansion
-		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -6
-		y = 2
-		prerequisite = {
-			focus = LUC_ACoalitionGovernment
-			focus = LUC_ARealisticGovernment
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		completion_reward = {
+		completion_reward = { 
+			LUC_IncreaseConservativeLoyalty = yes
+			LUC_IncreaseAgrarianLoyalty = yes
 			if = {
 				limit = {
-					has_intelligence_agency = yes
+					has_country_flag = LUC_LandtagNationalistFaction_flag
 				}
-				gain_random_agency_upgrade = yes
+				LUC_IncreaseNationalistLoyalty = yes
 			}
-			else = {
-				create_intelligence_agency = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
 			}
-			add_ideas = LUC_expanded_police_idea
+			custom_effect_tooltip = LUC_ModifiyEconomy_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_MaxBuildSlots_pos1_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_ProdBase_pos10_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_ConsumerGoods_pos5_tt
+			hidden_effect = {
+				add_to_variable = {
+					LUC_BuildSlots_Var = 1
+				}
+				add_to_variable = {
+					LUC_ProdStartFac_Var = 0.1
+				}
+				add_to_variable = {
+					LUC_ConGoodsFac_Var = 0.05
+				}
+			}
 		}
 		mutually_exclusive = {
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = -9
-		}
-		offset = {
-			trigger = {
-				OR = {
-					AND = {
-						has_completed_focus = LUC_ACoalitionGovernment
-						OR = {
-							has_completed_focus = LUC_MilitaryDisarmement
-							has_completed_focus = LUC_MilitaryRearmement
-						}
-					}	
-					AND = {
-						has_completed_focus = LUC_MilitaryRearmement
-						has_completed_focus = LUC_ARealisticGovernment
-					}
-				}
-			}
-			x = 4
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-			x = 2
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ARealisticGovernment
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-			x = 5
-		}
-	}
-	focus = {
-		id = LUC_PurchaseSwissWeapons
-		icon = GFX_LUC_PurchaseSwissWeapons
-		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = 6
-		y = 2
-		prerequisite = {
-			focus = LUC_ACoalitionGovernment
-			focus = LUC_ARealisticGovernment
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			num_of_civilian_factories > 2
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-				has_opinion = {
-					target = ROOT
-					value > 49
-				}
-			}
-		}
-		bypass = {
-			SWI = {
-				exists = no
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_PurchaseSwissWeapons_tt
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 2500
-				producer = SWI
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment
-				amount = 200
-				producer = SWI
-			}
-		}
-		select_effect = {
-			add_timed_idea = {
-				idea = LUC_PurchasingSwissWeapons_idea
-				days = 35
-			}
-		}
-		cancel_effect = {
-			remove_ideas = LUC_PurchasingSwissWeapons_idea
-		}
-		mutually_exclusive = {
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = -9
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-			x = -3
-		}
-	}
-	focus = {
-		id = LUC_ALiechtensteinerMilitia
-		icon = GFX_LUC_ALiechtensteinerMilitia
-		cost = 4
-		relative_position_id = LUC_LiberalVictory
-		x = -6
-		y = 3
-		prerequisite = {
-			focus = LUC_PoliceExpansion
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			OR = {
-				any_neighbor_country = {
-					OR = {
-						has_government = communism
-						has_government = fascism
-					}
-					has_war_with_major = yes
-				}
-				threat > 0.1
-			}
-		}
-		completion_reward = {
-			add_war_support = 0.05
-			swap_ideas = {
-				remove_idea = LUC_expanded_police_idea
-				add_idea = LUC_LiechtensteinerMilitia_idea
-			}
-			# TBD - Add event "CITIZENS PROTEST REARMEMENT"
-		}
-		mutually_exclusive = {
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = -9
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-			x = 6
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-			x = 4
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-			x = 4
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ARealisticGovernment
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-			x = 5
+			focus = LUC_EconomyEmbraceDeregulation_Focus
 		}
 	}
 
 	focus = {
-		id = LUC_MilitaryRearmement
-		icon = GFX_LUC_MilitaryRearmement
-		cost = 2
-		relative_position_id = LUC_LiberalVictory
-		x = -1
+		id = LUC_EconomyEmbraceDeregulation_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = -2
 		y = 2
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
-			focus = LUC_ARealisticGovernment
-			focus = LUC_ACoalitionGovernment
+			focus = LUC_EconomyModernTools_Focus
+			focus = LUC_EconomyUrbanisation_Focus
+		}
+		prerequisite = {
+			focus = LUC_EconomyDevelopVaduz_Focus
 		}
 		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
+			LUC_isLandtagSupportive_trigger = yes
+		}
+		completion_reward = { 
+			LUC_IncreaseLiberalLoyalty = yes
+			LUC_IncreasePopulistLoyalty = yes
+			add_political_power = 100
+			custom_effect_tooltip = LUC_ModifiyEconomy_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_ConsumerGoods_neg10_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_PolPower_pos5_tt
+			hidden_effect = {
+				add_to_variable = {
+					LUC_PolGain_Var = 0.05
 				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
+				subtract_from_variable = {
+					LUC_ConGoodsFac_Var = -0.1
 				}
 			}
 		}
-		bypass = {
+		mutually_exclusive = {
+			focus = LUC_EconomyIncreaseStateControl_Focus
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyUniversity_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 0
+		y = 3
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyIncreaseStateControl_Focus
+			focus = LUC_EconomyEmbraceDeregulation_Focus
+		}
+		available = {
 			
 		}
-		completion_reward = {
-			add_threat = 1
-			add_war_support = 0.02
-			custom_effect_tooltip = LUC_ModifiyEcoModifier_tt
-			custom_effect_tooltip = LUC_MilFacIncrease10_tt
-			custom_effect_tooltip = LUC_CivFacDecrease10_tt
-			luc_break_of_neutrality_warning = yes
+		completion_reward = { 
+			add_research_slot = 1
+		}
+		mutually_exclusive = {
+		}
+	}
 
+	focus = {
+		id = LUC_EconomyLowerTaxes_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = -3
+		y = 3
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyEmbraceDeregulation_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			LUC_IncreaseLiberalInfluence = yes
+			LUC_IncreasePopulistInfluence = yes
+			custom_effect_tooltip = LUC_ModifiyEconomy_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_ConsumerGoods_neg5_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_ConstructionSpeed_pos10_tt
+			hidden_effect = {
+				subtract_from_variable = {
+					LUC_ConGoodsFac_Var = 0.05
+				}
+				add_to_variable = {
+					LUC_BuildAllFac_Var = 0.1
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_EconomySupportSmallBusinesses_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = -2
+		y = 4
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyEmbraceDeregulation_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyCompleteDeregulation_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = -3
+		y = 5
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyLowerTaxes_Focus
+			focus = LUC_EconomySupportSmallBusinesses_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyAgriculutralInvestments_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 3
+		y = 3
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyIncreaseStateControl_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			LUC_IncreaseConservativeInfluence = yes
+			LUC_IncreaseAgrarianInfluence = yes
+			if = {
+				limit = {
+					has_country_flag = LUC_LandtagNationalistFaction_flag
+				}
+				LUC_IncreaseNationalistInfluence = yes
+			}
+			add_stability = 0.1
+			custom_effect_tooltip = LUC_ModifiyEconomy_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_MonthlyPopulation_pos50_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_MinExports_neg25_tt
+			hidden_effect = {
+				subtract_from_variable = {
+					LUC_ExportFac_Var = -0.25
+				}
+				add_to_variable = {
+					LUC_PopFac_Var = 0.5
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyNationalInfrastructure_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 2
+		y = 4
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyIncreaseStateControl_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			LUC_IncreaseConservativeInfluence = yes
+			LUC_IncreaseAgrarianInfluence = yes
+			if = {
+				limit = {
+					has_country_flag = LUC_LandtagNationalistFaction_flag
+				}
+				LUC_IncreaseNationalistInfluence = yes
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyLimitedNationalisation_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 2
+		y = 5
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyNationalInfrastructure_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			LUC_DecreaseLiberalLoyaltyBIG = yes
+			LUC_DecreasePopulistLoyaltyBIG = yes
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
+		id = LUC_EconomyReorientEconomy_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		x = -5
+		y = 3
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyEmbraceDeregulation_Focus
+			focus = LUC_EconomyIncreaseStateControl_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = { 
+			LUC_LandtagDecreaseSupport_15 = yes
+			custom_effect_tooltip = LUC_ModifiyEconomy_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_Output_pos10_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_MilSpeed_pos10_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_CivSpeed_neg10_tt
+			custom_effect_tooltip = LUC_ModifiyEconomy_PolPower_neg5_tt
+			unlock_decision_tooltip = LUC_Landtag_Armement
 			hidden_effect = {
 				add_to_variable = {
 					LUC_BuildArmFac_Var = 0.1
 				}
 				add_to_variable = {
-					LUC_BuildCivFac_Var = -0.1
-				}
-				mark_focus_tree_layout_dirty = yes
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			focus = LUC_MilitaryDisarmement
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = -9
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = 6
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-			x = 4
-		}
-	}
-
-	focus = {
-		id = LUC_MilitaryDisarmement
-		icon = GFX_LUC_MilitaryDisarmement
-		cost = 2
-		relative_position_id = LUC_LiberalVictory
-		x = 1
-		y = 2
-		prerequisite = {
-			focus = LUC_ARealisticGovernment
-			focus = LUC_ACoalitionGovernment
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = -0.1
-			custom_effect_tooltip = LUC_ModifiyEcoModifier_tt
-			custom_effect_tooltip = LUC_TradeOpIncrease25_tt
-			custom_effect_tooltip = LUC_ConGoodsDecrease5_tt
-			LUC_neutrality_pleased = yes
-			hidden_effect = {
-				add_to_variable = {
-					LUC_TradeOp_Var = 0.25
-				}
-				add_to_variable = {
-					LUC_ConGoodsFac_Var = -0.05
-				}
-				mark_focus_tree_layout_dirty = yes
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			focus = LUC_MilitaryRearmement
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = -9
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ARealisticGovernment
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-			x = 1
-		}
-	}
-
-	focus = {
-		id = LUC_MilitaryResearch
-		icon = GFX_LUC_MilitaryResearch
-		cost = 3
-		relative_position_id = LUC_LiberalVictory
-		x = 0
-		y = 3
-		prerequisite = {
-			focus = LUC_MilitaryDisarmement
-			focus = LUC_MilitaryRearmement
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = -9
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = 6
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-			x = 4
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ARealisticGovernment
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-			x = 1
-		}
-	}
-
-	
-	focus = {
-		id = LUC_ExperimentalResearch
-		icon = GFX_LUC_ExperimentalResearch
-		cost = 3
-		relative_position_id = LUC_LiberalVictory
-		x = 0
-		y = 5
-		prerequisite = {
-			focus = LUC_ElectrificationEfforts
-			focus = LUC_MilitaryBudget
-		}
-		prerequisite = {
-			focus = LUC_MilitaryResearch
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_ExperimentalResearch_tt
-			custom_effect_tooltip = LUC_newline_tt
-			if = {
-				limit = {	
-					has_tech = synth_oil_experiments
-				}
-				add_offsite_building = {
-					type = synthetic_refinery
-					level = 1
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = LUC_SyntheticResearchOil
-					category = synth_resources
-					bonus = 1
-				}
-			}
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 48
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = -9
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = 6
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-			x = 4
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ARealisticGovernment
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-			x = 1
-		}
-	}
-
-	focus = {
-		id = LUC_Autarky
-		icon = GFX_LUC_Autarky
-		cost = 5
-		relative_position_id = LUC_LiberalVictory
-		x = 0
-		y = 6
-		prerequisite = {
-			focus = LUC_ExperimentalResearch
-		}
-		prerequisite = {
-			
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_ModifiyEcoModifier_tt
-			custom_effect_tooltip = LUC_BuildIncrease10_tt
-			custom_effect_tooltip = LUC_GoodsFacIncrease10_tt
-			custom_effect_tooltip = LUC_ResFacIncrease15_tt
-			custom_effect_tooltip = LUC_ResPenDecrease10_tt
-			custom_effect_tooltip = LUC_newline_tt
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = LUC_GustavVogt
-
-			hidden_effect = {
-				add_to_variable = {
-					LUC_BuildAllFac_Var = 0.1
-				}
-				add_to_variable = {
-					LUC_ConGoodsFac_Var = 0.1
-				}
-				add_to_variable = {
-					LUC_ResExtraFac_Var = 0.15
-				}
-				add_to_variable = {
-					LUC_ResPenalFac_Var = -0.1
-				}
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			focus = LUC_BeautifulValley
-			focus = LUC_MilitaryIndustry
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = -9
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = 6
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-			x = 4
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ARealisticGovernment
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-			x = 1
-		}
-	}
-
-	focus = {
-		id = LUC_NationalDefenseFund
-		icon = GFX_LUC_NationalDefenseFund
-		cost = 3
-		relative_position_id = LUC_LiberalVictory
-		x = 0
-		y = 7
-		prerequisite = {
-			focus = LUC_Autarky
-		}
-		prerequisite = {
-			
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_ModifiyEcoModifier_tt
-			custom_effect_tooltip = LUC_StabilityDecrease10_tt
-			custom_effect_tooltip = LUC_ConvertFacDecrease15_tt
-			hidden_effect = {
-				add_to_variable = {
-					LUC_ConvertFac_Var = -0.15
-				}
-				add_to_variable = {
-					LUC_StabFac_Var = -0.1
-				}
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = -9
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = 6
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-			x = 4
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ARealisticGovernment
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-			x = 1
-		}
-	}
-
-	# Democratic Prosperity - No Militarisation
-
-	focus = {
-		id = LUC_LightIndustry
-		icon = GFX_LUC_LightIndustry
-		cost = 4
-		relative_position_id = LUC_MilitaryDisarmement
-		x = 3
-		y = 1
-		prerequisite = {
-			focus = LUC_MilitaryDisarmement
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			970 = {
-				is_owned_and_controlled_by = ROOT
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_political_power = 75
-			970 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = LUC_JosefLienhardt
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-	}
-
-	focus = {
-		id = LUC_CarIndustry
-		icon = GFX_LUC_CarIndustry
-		cost = 4
-		relative_position_id = LUC_MilitaryDisarmement
-		x = 3
-		y = 3
-		prerequisite = {
-			focus = LUC_LightIndustry
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = LUC_Automobile
-				category = motorized_equipment
-				ahead_reduction = 1
-				uses = 1
-			}
-			custom_effect_tooltip = LUC_ModifiyEcoModifier_tt
-			custom_effect_tooltip = LUC_OutputIncrease10_tt
-
-			hidden_effect = {
-				add_to_variable = {
 					LUC_OutputFac_Var = 0.1
 				}
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-	}
-
-	focus = {
-		id = LUC_Tourism
-		icon = GFX_LUC_Tourism
-		cost = 4
-		relative_position_id = LUC_MilitaryDisarmement
-		x = 2
-		y = 5
-		prerequisite = {
-			focus = LUC_CarIndustry
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			NOT = {
-				has_war = yes
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 1
-			}
-			add_ideas = LUC_Liechtenstein_Toursim_idea
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-	}
-
-	focus = {
-		id = LUC_HealthcareReform
-		icon = GFX_LUC_HealthcareReform
-		cost = 4
-		relative_position_id = LUC_MilitaryDisarmement
-		x = 4
-		y = 5
-		prerequisite = {
-			focus = LUC_CarIndustry
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.1
-			}
-			add_ideas = LUC_Healthcare_idea			
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-	}
-
-	focus = {
-		id = LUC_BeautifulValley
-		icon = GFX_LUC_BeautifulValley
-		cost = 5
-		relative_position_id = LUC_MilitaryDisarmement
-		x = 1
-		y = 4
-		prerequisite = {
-			focus = LUC_CarIndustry
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = LUC_PeterBuchel
-			custom_effect_tooltip = LUC_ModifiyEcoModifier_tt
-			custom_effect_tooltip = LUC_PolIncrease2_tt
-			custom_effect_tooltip = LUC_PopIncrease20_tt
-			custom_effect_tooltip = LUC_StabilityIncrease20_tt
-			custom_effect_tooltip = LUC_ConGoodsDecrease10_tt
-
-			hidden_effect = {
-				add_to_variable = {
-					LUC_PolGain_Var = 0.25
-				}
-				add_to_variable = {
-					LUC_PopFac_Var = 0.2
-				}
-				add_to_variable = {
-					LUC_StabFac_Var = 0.2
-				}
-				add_to_variable = {
-					LUC_ConGoodsFac_Var = -0.1
-				}
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			focus = LUC_Autarky
-			focus = LUC_MilitaryIndustry
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-	}
-
-	focus = {
-		id = LUC_WelfareState
-		icon = GFX_LUC_WelfareState
-		cost = 4
-		relative_position_id = LUC_MilitaryDisarmement
-		x = 4
-		y = 6
-		prerequisite = {
-			focus = LUC_HealthcareReform
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = LUC_Healthcare_idea
-				add_idea = LUC_HealthcareWelfare_idea
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-	}
-
-	focus = {
-		id = LUC_ExpandResearchFunding
-		icon = GFX_LUC_ExpandResearchFunding
-		cost = 4
-		relative_position_id = LUC_MilitaryDisarmement
-		x = 5
-		y = 2
-		prerequisite = {
-			focus = LUC_LightIndustry
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_to_tech_sharing_group = LUC_VaduzAcademy
-			custom_effect_tooltip = LUC_ExpandResearchFunding_tt
-			custom_effect_tooltip = LUC_newline_tt
-			add_ideas = LUC_VaduzCircle_idea
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-	}
-
-	focus = {
-		id = LUC_PrecisionEngineering
-		icon = GFX_LUC_PrecisionEngineering
-		cost = 4
-		relative_position_id = LUC_MilitaryDisarmement
-		x = 5
-		y = 4
-		prerequisite = {
-			focus = LUC_ExpandResearchFunding
-			focus = LUC_CarIndustry
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			custom_effect_tooltip = LUC_ModifiyEcoModifier_tt
-			custom_effect_tooltip = LUC_ProductionEfficiencyIncrease6_tt
-			custom_effect_tooltip = LUC_ProductionBaseDecrease2_tt
-			hidden_effect = {
-				add_to_variable = {
-					LUC_ProdStartFac_Var = -0.02
-				}
-				add_to_variable = {
-					LUC_ProductionFac_Var = 0.06
-				}
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-	}
-
-	focus = {
-		id = LUC_ElectrificationEfforts
-		icon = GFX_LUC_ElectrificationEfforts
-		cost = 4
-		relative_position_id = LUC_MilitaryDisarmement
-		x = 1
-		y = 2
-		prerequisite = {
-			focus = LUC_MilitaryDisarmement
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 1
-			}
-			add_tech_bonus = {
-				name = LUC_electrifictionBonus
-				bonus = 1
-				uses = 2
-				category = electronics
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-	}
-
-	# Democratic Militarisation
-
-	focus = {
-		id = LUC_MilitaryBudget
-		icon = GFX_LUC_MilitaryBudget
-		cost = 4
-		relative_position_id = LUC_MilitaryRearmement
-		x = -1
-		y = 2
-		prerequisite = {
-			focus = LUC_MilitaryRearmement
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			any_owned_state = {
-				is_controlled_by = ROOT
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = LUC_MartinLanter
-			add_offsite_building = {
-				type = arms_factory
-				level = 1
-			}
-			luc_break_of_neutrality_warning = yes
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-		}
-	}
-
-
-	focus = {
-		id = LUC_MilitaryIndustry
-		icon = GFX_LUC_MilitaryIndustry
-		cost = 5
-		relative_position_id = LUC_MilitaryRearmement
-		x = -1
-		y = 4
-		prerequisite = {
-			focus = LUC_AStandingArmy
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_ModifiyEcoModifier_tt
-			custom_effect_tooltip = LUC_OutputIncrease10_tt
-			custom_effect_tooltip = LUC_MilFacIncrease10_tt
-			custom_effect_tooltip = LUC_ResPenIncrease10_tt
-
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
-
-			luc_break_of_neutrality_warning = yes
-
-			hidden_effect = {
-				add_to_variable = {
-					LUC_OutputFac_Var = 0.1
-				}
-				add_to_variable = {
-					LUC_BuildArmFac_Var = 0.1					
-				}
-				add_to_variable = {
-					LUC_ResPenalFac_Var = 0.1
-				}
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			focus = LUC_Autarky
-			focus = LUC_BeautifulValley
-		}
-	}
-
-	focus = {
-		id = LUC_PoliticalUnity
-		icon = GFX_LUC_PoliticalUnity
-		cost = 4
-		relative_position_id = LUC_MilitaryRearmement
-		x = -3
-		y = 1
-		prerequisite = {
-			focus = LUC_MilitaryRearmement
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_CivilPreparations
-		icon = GFX_LUC_CivilPreparations
-		cost = 4
-		relative_position_id = LUC_MilitaryRearmement
-		x = -4
-		y = 2
-		prerequisite = {
-			focus = LUC_PoliticalUnity
-		}
-		prerequisite = {
-			focus = LUC_ALiechtensteinerMilitia
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			OR = {
-				any_other_country = {
-					capital_scope = {
-						is_on_continent = europe
-					}
-					has_war_with_major = yes
-				}
-				threat > 0.2
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_war_support = 0.05
-			add_ideas = LUC_Liechtensteiner_Drills_Ideas
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_AStandingArmy
-		icon = GFX_LUC_AStandingArmy
-		cost = 4
-		relative_position_id = LUC_MilitaryRearmement
-		x = -3
-		y = 3
-		prerequisite = {
-			focus = LUC_PoliticalUnity
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = LUC_hasUnityGovernment_tt
-				has_country_flag = LUC_unityGovFormed_flag
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			luc_break_of_neutrality_warning = yes
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_AbandonNeutrality
-		icon = GFX_LUC_AbandonNeutrality
-		cost = 4
-		relative_position_id = LUC_MilitaryRearmement
-		x = -4
-		y = 5
-		prerequisite = {
-			focus = LUC_AStandingArmy
-			focus = LUC_CivilPreparations
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_HasAtLeast50WarSupport_tt
-					has_war_support > 0.49
-				}
-				custom_trigger_tooltip = {
-					tooltip = LUC_NoDemocraticCountriesAroundUs_tt
-					NOT = {
-						any_neighbor_country = {
-							exists = yes
-							has_government = democratic
-						}
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = LUC_hasUnityGovernment_tt
-				has_country_flag = LUC_unityGovFormed_flag
-			}
-		}
-		bypass = {
-			NOT = {
-				has_idea = LUC_Liechtenstein_Neutrality_idea
-			}
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = LUC_Liechtenstein_Neutrality_idea
-				add_idea = LUC_Liechtenstein_MilitantDemocracy_idea
-			}
-			set_rule = {
-				can_force_government = yes
-			}
-			luc_break_of_neutrality_warning = yes
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_ModernisedWeaponry
-		icon = GFX_LUC_ModernisedWeaponry
-		cost = 3
-		relative_position_id = LUC_MilitaryRearmement
-		x = -2
-		y = 5
-		prerequisite = {
-			focus = LUC_AStandingArmy
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = LUC_ModernisedGuns
-				category = infantry_weapons
-				bonus = 1
-				uses = 1	
-			}
-			add_tech_bonus = {
-				name = LUC_ModernisedSupport
-				category = support_tech
-				bonus = 0.5
-				uses = 1
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_SuperiorFirepower
-		icon = GFX_LUC_SuperiorFirepower
-		cost = 3
-		relative_position_id = LUC_MilitaryRearmement
-		x = -3
-		y = 4
-		prerequisite = {
-			focus = LUC_AStandingArmy
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = LUC_ModernisedCanons
-				category = artillery
-				bonus = 0.5
-				uses = 1
-			}
-			add_tech_bonus = {
-				name = LUC_ModernisedAntiAir
-				category = cat_anti_air
-				bonus = 0.5
-				uses = 1
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_AlpineFaction
-		icon = GFX_LUC_AlpineFaction
-		cost = 3
-		relative_position_id = LUC_MilitaryRearmement
-		x = -1
-		y = 6
-		prerequisite = {
-			focus = LUC_MilitaryIndustry
-			focus = LUC_NationalDefenseFund
-		}
-		prerequisite = {
-			focus = LUC_AbandonNeutrality
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-		}
-		bypass = {
-			ROOT = {
-				is_in_faction = yes
-			}
-			NOT = {
-				has_idea = LUC_Liechtenstein_Neutrality_idea
-			}
-		}
-		completion_reward = {
-			add_threat = 1
-			if = {
-				limit = {
-					has_war = yes
-					has_idea = LUC_Liechtenstein_Neutrality_idea
-				}
-				remove_ideas = LUC_Liechtenstein_Neutrality_idea
-				luc_break_of_neutrality_warning = yes
-			}
-			create_faction = "Alpine Concordat"
-			custom_effect_tooltip = LUC_AlpineFaction_tt
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_LiberateGermany
-		icon = GFX_LUC_LiberateGermany
-		cost = 4
-		relative_position_id = LUC_MilitaryRearmement
-		x = -4
-		y =7
-		prerequisite = {
-			focus = LUC_AlpineFaction
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			OR = {
-				is_faction_leader = yes
-				is_major = yes
-			}
-			GER = {
-				exists = yes
-				custom_trigger_tooltip = {
-					tooltip = LUC_notDemocraticGov_tt
-					NOT = {
-						has_government = democratic
-					}
-				}
-				is_subject = no
-			}
-			can_declare_war_on = GER
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			create_wargoal = {
-				target = GER
-				type = topple_government
-			}
-			if = {
-				limit = {
-					AUS = {
-						exists = yes
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}
-				create_wargoal = {
-					target = AUS
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					HUN = {
-						exists = yes
-						NOT = {
-							has_government = democratic
-						}
-						has_cosmetic_tag = HUN_EMPIRE
-					}
-				}
-				create_wargoal = {
-					target = HUN
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					SWI = {
-						exists = yes
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}
-				create_wargoal = {
-					target = SWI
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					HOL = {
-						exists = yes
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}
-				create_wargoal = {
-					target = HOL
-					type = topple_government
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = SWI
-						is_core_of = AUS
-						is_core_of = HOL
-						is_core_of = GER
-						state = 28
-						state = 8
-					}
-				}
-				add_claim_by = ROOT
-			}
-			custom_effect_tooltip = LUC_LiberateGermany_tt
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-
-		}
-	}
-
-	focus = {
-		id = LUC_StandWithGermany
-		icon = GFX_LUC_StandWithGermany
-		cost = 4
-		relative_position_id = LUC_MilitaryRearmement
-		x = 1
-		y = 7
-		prerequisite = {
-			focus = LUC_AlpineFaction
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			GER = {
-				exists = yes
-				custom_trigger_tooltip = {
-					tooltip = LUC_DemocraticGov_tt
-					has_government = democratic
-				}
-			}
-			OR = {
-				ROOT = {
-					is_faction_leader = yes
-					is_in_faction_with = GER
-				}
-				GER = {
-					is_faction_leader = yes
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_war_support = 0.1
-			add_research_slot = 1
-			GER = {
-				add_war_support = 0.1
-				add_research_slot = 1
-			}
-			custom_effect_tooltip = LUC_StandWithGermany_tt
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-	}
-
-	focus = {
-		id = LUC_GermanLiberators
-		icon = GFX_LUC_GermanLiberators
-		cost = 4
-		relative_position_id = LUC_MilitaryRearmement
-		x = -1
-		y = 8
-		prerequisite = {
-			focus = LUC_AlpineFaction
-		}
-		available = {
-			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_JosefHoop
-				}
-				has_country_leader = {
-					ruling_only = yes
-					character = LUC_Ludwig_Marxer
-				}
-			}
-			OR = {
-				has_war_with = GER
-				GER = {
-					exists = no
-				}
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_GermanLiberators_tt
-			hidden_effect = {
-				add_ideas = LUC_GermanicLiberators
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-	}
-	
-	#####################
-	# HOOP GOVERNMENT #
-	#####################
-	focus = {
-		id = LUC_ACoalitionGovernment
-		icon = GFX_LUC_ACoalitionGovernment
-		cost = 1
-		relative_position_id = LUC_LiberalVictory
-		x = 9
-		y = 1
-		prerequisite = {
-			focus = LUC_LiberalVictory
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-		}
-		completion_reward = {
-			add_ideas = LUC_DemocraticConservative_government_idea
-			set_party_name = {
-				ideology = democratic
-				long_name = SUS_FBP_LONG_Coalition
-				name = SUS_FBP_Coalition
-			}
-			set_party_name = {
-				ideology = neutrality
-				long_name = SUS_VPU_LONG_Coalition
-				name = SUS_VPU_Coalition
-			}
-			LUC_neutrality_pleased = yes
-			hidden_effect = {
-				mark_focus_tree_layout_dirty = yes
-			}
-		}
-		mutually_exclusive = {
-			focus = LUC_ARealisticGovernment
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			x = -9
-		}
-	}
-	focus = {
-		id = LUC_DiplomaticMissionToGermany
-		dynamic = yes
-		icon = {
-			trigger = {
-				GER = {
-					has_government = democratic
-				}
-			}
-			value = GFX_LUC_DipMissionToGermany_democratic
-		}
-		icon = {
-			trigger = {
-				GER = {
-					has_government = fascism
-				}
-			}
-			value = GFX_LUC_DipMissionToGermany_fascist
-		}
-		icon = {
-			trigger = {
-				GER = {
-					has_government = communism
-				}
-			}
-			value = GFX_LUC_DipMissionToGermany_communist
-		}
-		icon = {
-			value = GFX_LUC_DipMissionToGermany
-		}
-		cost = 2
-		relative_position_id = LUC_ACoalitionGovernment
-		x = 2
-		y = 1
-		prerequisite = {
-			focus = LUC_ACoalitionGovernment
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-			GER = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-				NOT = {
-					has_capitulated = yes
-				}
-			}
-		}
-		completion_reward = {
-			# TBD - ADD EVENT TO GIVE GERMANY THE CHOICE
-			custom_effect_tooltip = LUC_DiplomaticMissionToGermany_effect_tt
-			custom_effect_tooltip = LUC_DiplomaticMissionToGermany_effect_acepted_tt
-			effect_tooltip = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = LUC_GERMANFRIENDSHIP
-				}
-				GER = {
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = LUC_GERMANFRIENDSHIP
-					}
-				}
-				GER = {
-					diplomatic_relation = {
-						country = ROOT
-						relation = guarantee
-					}
-				}
-			}
-			custom_effect_tooltip = LUC_DiplomaticMissionToGermany_effect_refusal_tt
-			effect_tooltip = {
-				add_stability = -0.1
-				add_political_power = -50
-			}
-		}
-		bypass = {
-			OR = {
-				is_subject_of = GER
-				GER = {
-					is_subject_of = ROOT
+				subtract_from_variable = {
+					LUC_BuildCivFac_Var = 0.1
+				}
+				subtract_from_variable = {
+					LUC_PolGain_Var = 0.05
 				}
 			}
 		}
 		mutually_exclusive = {
 		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-		}
 	}
-	focus = {
-		id = LUC_GermanTradeAgreement
-		icon = GFX_LUC_GermanTradeAgreement
-		cost = 4
-		relative_position_id = LUC_ACoalitionGovernment
-		x = 2
-		y = 2
-		prerequisite = {
-			focus = LUC_DiplomaticMissionToGermany
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-			custom_trigger_tooltip = {
-				tooltip = LUC_GermanTradeAgreement_tt
-				has_country_flag = LUC_GerMissionSuccess_flag
-			}
-			GER = {
-				exists = yes
-				has_capitulated = no
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-		}
-		completion_reward = {
-			add_opinion_modifier = {
-				target = GER
-				modifier = LUC_TRADE_PARTNERS
-			}
-			GER = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = LUC_TRADE_PARTNERS
-				}
-			}
-			custom_effect_tooltip = LUC_GermanTradeAgreement_decisions_tt
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_EmphasiseTradition
-		icon = GFX_LUC_EmphasiseTradition
-		cost = 4
-		relative_position_id = LUC_ACoalitionGovernment
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = LUC_ACoalitionGovernment
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-		}
-		completion_reward = {
-			add_political_power = 100
-			custom_effect_tooltip = LUC_unlockADvisor
-			show_ideas_tooltip = LUC_OttoSchaedler
-			show_ideas_tooltip = LUC_AloisVogt
-			show_ideas_tooltip = LUC_RichardMeier
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_ContinuePrivatisation
-		icon = GFX_LUC_ContinuePrivatisation
-		cost = 5
-		relative_position_id = LUC_ACoalitionGovernment
-		x = 1
-		y = 3
-		prerequisite = {
-			focus = LUC_EmphasiseTradition
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-		}
-		completion_reward = {
-			capital_scope = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-			}
-			if = {
-				limit = {
-					has_idea = LUC_DemocraticConservative_taxesAndtaxHaven_idea
-				}
-				add_ideas = LUC_DemocraticConservative_reforms_idea
-				swap_ideas = {
-					remove_idea = LUC_DemocraticConservative_taxesAndtaxHaven_idea
-					add_idea = LUC_DemocraticConservative_reforms_idea
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = LUC_DemocraticConservative_taxes_idea
-				}
-				swap_ideas = {
-					remove_idea = LUC_DemocraticConservative_taxes_idea
-					add_idea = LUC_DemocraticConservative_taxesAndPrivatisation_idea
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = LUC_DemocraticConservative_government_idea
-					add_idea = LUC_DemocraticConservative_privatisation_idea
-				}
-			}
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_LowerTaxes
-		icon = GFX_LUC_LowerTaxes
-		cost = 5
-		relative_position_id = LUC_ACoalitionGovernment
-		x = -1
-		y = 3
-		prerequisite = {
-			focus = LUC_EmphasiseTradition
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-		}
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
-			if = {
-				limit = {
-					has_idea = LUC_DemocraticConservative_privatisation_idea
-				}
-				swap_ideas = {
-					remove_idea = LUC_DemocraticConservative_privatisation_idea
-					add_idea = LUC_DemocraticConservative_taxesAndPrivatisation_idea
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = LUC_DemocraticConservative_government_idea
-					add_idea = LUC_DemocraticConservative_taxes_idea
-				}
-			}
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_TaxHaven
-		icon = GFX_LUC_TaxHaven
-		cost = 4
-		relative_position_id = LUC_ACoalitionGovernment
-		x = -1
-		y = 5
-		prerequisite = {
-			focus = LUC_LowerTaxes
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_idea = LUC_DemocraticConservative_taxesAndPrivatisation_idea
-				}
-				swap_ideas = {
-					remove_idea = LUC_DemocraticConservative_taxesAndPrivatisation_idea
-					add_idea = LUC_DemocraticConservative_reforms_idea
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = LUC_DemocraticConservative_taxes_idea
-					add_idea = LUC_DemocraticConservative_taxesAndtaxHaven_idea
-				}
-			}
-			capital_scope = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_GermanIndustry
-		icon = GFX_LUC_GermanIndustry
-		cost = 4
-		relative_position_id = LUC_ACoalitionGovernment
-		x = 2
-		y = 4
-		prerequisite = {
-			focus = LUC_ContinuePrivatisation
-		}
-		prerequisite = {
-			focus = LUC_GermanTradeAgreement
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-			GER = {
-				exists = yes
-				has_capitulated = no
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = LUC_GERMANLiechtensteinINDUSTRY
-				category = cat_production
-				bonus = 1
-				uses = 1
-			}
-			capital_scope = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			capital_scope = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-				}
-			}
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_BanUnions
-		icon = GFX_LUC_BanUnions
-		cost = 4
-		relative_position_id = LUC_ACoalitionGovernment
-		x = 0
-		y = 4
-		prerequisite = {
-			focus = LUC_ContinuePrivatisation
-			focus = LUC_LowerTaxes
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-		}
-		completion_reward = {
-			add_ideas = LUC_banned_trade_unions_idea
-			#TBD add event "WORKERS PROTEST"
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_RequestLicenses
-		icon = GFX_LUC_RequestLicenses
-		cost = 4
-		relative_position_id = LUC_ACoalitionGovernment
-		x = -2
-		y = 6
-		prerequisite = {
-			focus = LUC_PrecisionEngineering
-		}
-		prerequisite = {
-			focus = LUC_TaxHaven
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_JosefHoop
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_ideas = export_focus
-			custom_effect_tooltip = LUC_RequestLicenses_tt
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-			
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-			NOT = {
-				has_completed_focus = LUC_MilitaryRearmement
-			}
-		}
-	}
-	#####################
-	# MARXER GOVERNMENT #
-	#####################
-	focus = {
-		id = LUC_ARealisticGovernment
-		icon = GFX_LUC_ARealisticGovernment
-		cost = 1
-		relative_position_id = LUC_LiberalVictory
-		x = -9
-		y = 1
-		prerequisite = {
-			focus = LUC_LiberalVictory
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-		}
-		completion_reward = {
-			add_ideas = LUC_DemocraticLiberal_government_idea
-			hidden_effect = {
-				mark_focus_tree_layout_dirty = yes
-			}
-		}
-		mutually_exclusive = {
-			focus = LUC_ACoalitionGovernment
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_MilitaryRearmement
-				has_completed_focus = LUC_ARealisticGovernment
-			}
-			x = 4
-		}
-		offset = {
-			trigger = {
-				has_completed_focus = LUC_ARealisticGovernment
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-			x = 5
-		}
-	}
-	focus = {
-		id = LUC_DenounceRedTyranny
-		icon = GFX_LUC_DenounceRedTyranny
-		cost = 1
-		relative_position_id = LUC_ARealisticGovernment
-		x = -2
-		y = 2
-		prerequisite = {
-			focus = LUC_ARealisticGovernment
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-			communism < 0.1
-			democratic > 0.5
-		}
-		completion_reward = {
-			add_war_support = 0.04
-			add_ideas = LUC_DenounceRedTyranny_idea
-			every_other_country = {
-				limit = {
-					has_government = communism
-					capital_scope = {
-						is_on_continent = europe
-					}
-				}
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = LUC_ANGEREDOVERIDEOLOGY
-				}
-			}
-			every_other_country = {
-				limit = {
-					OR = {
-						has_government = democratic
-						has_government = fascism
-					}
-					capital_scope = {
-						is_on_continent = europe
-					}
-				}
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = LUC_DENOUNCEDCOMMUNISM
-				}
-			}
-		}
-		mutually_exclusive = {
-			focus = LUC_MissionToSovietUnion
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_CrackDownOnFacism
-		icon = GFX_LUC_CrackDownOnFacism
-		cost = 4
-		relative_position_id = LUC_ARealisticGovernment
-		x = -1
-		y = 1
-		prerequisite = {
-			focus = LUC_ARealisticGovernment
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-			fascism < 0.1
-			democratic > 0.5
-		}
-		completion_reward = {
-			add_war_support = 0.04
-			add_ideas = LUC_CrackDownOnFacism_idea
-			every_other_country = {
-				limit = {
-					has_government = fascism
-					capital_scope = {
-						is_on_continent = europe
-					}
-				}
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = LUC_ANGEREDOVERIDEOLOGY
-				}
-			}
-			every_other_country = {
-				limit = {
-					OR = {
-						has_government = democratic
-						has_government = communism
-					}
-					capital_scope = {
-						is_on_continent = europe
-					}
-				}
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = LUC_DENOUNCEDFASCISM
-				}
-			}
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_AllowTradeUnions
-		icon = GFX_LUC_AllowTradeUnions
-		cost = 4
-		relative_position_id = LUC_ARealisticGovernment
-		x = -4
-		y = 1
-		prerequisite = {
-			focus = LUC_ARealisticGovernment
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_unlockADvisor
-			show_ideas_tooltip = LUC_DanielaHilzinger
-			add_popularity = {
-				ideology = communism
-				popularity = 0.06
-			}
-			add_ideas = LUC_AllowTradeUnions_idea
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_MissionToSovietUnion
-		icon = GFX_LUC_MissionToSovietUnion
-		cost = 4
-		relative_position_id = LUC_ARealisticGovernment
-		x = -4
-		y = 2
-		prerequisite = {
-			focus = LUC_AllowTradeUnions
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-			any_other_country = {
-				is_major = yes
-				capital_scope = {
-					is_on_continent = europe
-				}
-				has_government = communism
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_MissionToSovietUnion_tt
-			custom_effect_tooltip = LUC_MissionToSovietUnion_descisions_tt
-		}
-		mutually_exclusive = {
-			focus = LUC_DenounceRedTyranny
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_TurnTowardsDemocracies
-		icon = GFX_LUC_TurnTowardsDemocracies
-		cost = 4
-		relative_position_id = LUC_ARealisticGovernment
-		x = -1
-		y = 3
-		prerequisite = {
-			focus = LUC_DenounceRedTyranny
-			focus = LUC_CrackDownOnFacism
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-			any_other_country = {
-				is_major = yes
-				capital_scope = {
-					is_on_continent = europe
-				}
-				has_government = democratic
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_TurnTowardsDemocracies_tt
-			custom_effect_tooltip = LUC_TurnTowardsDemocracies_decisions_tt
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_GuaranteeIndividualRights
-		icon = GFX_LUC_GuaranteeIndividualRights
-		cost = 4
-		relative_position_id = LUC_ARealisticGovernment
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = LUC_ARealisticGovernment
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-		}
-		completion_reward = {
-			#TBH - add advisors
-			swap_ideas = {
-				remove_idea = LUC_DemocraticLiberal_government_idea
-				add_idea = LUC_DemocraticLiberal_liberties_idea
-			}
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_CivicReform
-		icon = GFX_LUC_CivicReform
-		cost = 4
-		relative_position_id = LUC_ARealisticGovernment
-		x = 1
-		y = 3
-		prerequisite = {
-			focus = LUC_GuaranteeIndividualRights
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-		}
-		completion_reward = {
-			#TBD - ADD EVENT TO GET DEBATE ON WOMEN IN THE ARMY
-			swap_ideas = {
-				remove_idea = LUC_DemocraticLiberal_liberties_idea
-				add_idea = LUC_DemocraticLiberal_womensuffrage_idea
-			}
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_IncreaseRegulation
-		icon = GFX_LUC_IncreaseRegulation
-		cost = 4
-		relative_position_id = LUC_ARealisticGovernment
-		x = 1
-		y = 5
-		prerequisite = {
-			focus = LUC_CivicReform
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = LUC_DemocraticLiberal_womensuffrage_idea
-				add_idea = LUC_DemocraticLiberal_regulation_idea
-			}
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_AppealToFarmers
-		icon = GFX_LUC_AppealToFarmers
-		cost = 4
-		relative_position_id = LUC_ARealisticGovernment
-		x = 0
-		y = 4
-		prerequisite = {
-			focus = LUC_CivicReform
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-		}
-		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 4
-			}
-			add_tech_bonus = {
-				name = LUC_appealToFarmers
-				category = construction_tech
-				bonus = 1
-				uses = 2
-			}
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_SecularEducation
-		icon = GFX_LUC_SecularEducation
-		cost = 5
-		relative_position_id = LUC_ARealisticGovernment
-		x = -2
-		y = 5
-		prerequisite = {
-			focus = LUC_AppealToFarmers
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-		}
-		completion_reward = {
-			add_research_slot = 1
-			add_ideas = LUC_DemocraticLiberal_secularisation_idea
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_AMoralPrincipality
-		icon = GFX_LUC_AMoralPrincipality
-		cost = 4
-		relative_position_id = LUC_ARealisticGovernment
-		x = 0
-		y = 6
-		prerequisite = {
-			focus = LUC_AppealToFarmers
-		}
-		prerequisite = {
-			focus = LUC_IncreaseRegulation
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = LUC_DemocraticLiberal_regulation_idea
-				add_idea = LUC_DemocraticLiberal_reform_idea
-			}
-		}
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-		}
-	}
-	focus = {
-		id = LUC_WomenAuxiliary
-		icon = GFX_LUC_WomenAuxiliary
-		cost = 4
-		relative_position_id = LUC_ARealisticGovernment
-		x = 3
-		y = 4
-		prerequisite = {
-			focus = LUC_CivilPreparations
-		}
-		prerequisite = {
-			focus = LUC_CivicReform
-		}
-		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = LUC_Ludwig_Marxer
-			}
-		}
-		bypass = {
-			
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = LUC_LiechtensteinerMilitia_idea
-				add_idea = LUC_LiechtensteinerWomensCorps_idea
-			}
-			set_rule = {
-				can_generate_female_aces = yes
-			}
-		}
-		select_effect = {
-			
-		}
-		
-		mutually_exclusive = {
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = LUC_ACoalitionGovernment
-			}
-			NOT = {
-				has_completed_focus = LUC_MilitaryDisarmement
-			}
-		}
-	}
-	#####################
-	# SCHAREDER GOVERNMENT #
-	#####################
-	focus = {
-		id = LUC_ConservativeVictory
-		icon = GFX_LUC_ConservativeVictory
-		cost = 3
-		relative_position_id = LUC_Landtag
-		x = 8
-		y = 1
-		prerequisite = {
-			focus = LUC_Landtag
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = LUC_ConservativeVictory_unlocked_tt
-				has_country_flag = LUC_SchaedlerPath_Flag
-			}
-			has_government = neutrality
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-		}
-	}
-	focus = {
-		id = LUC_NationallistCollaboration
-		icon = GFX_LUC_NationallistCollaboration
-		cost = 1
-		relative_position_id = LUC_InvestigateFascists
-		x = 2
-		y = 0
-		prerequisite = {
-			focus = LUC_ConservativeVictory
-		}
-		available = {
-			has_government = neutrality
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-			focus = LUC_InvestigateFascists
-		}
-	}
-	#####################
-	# ALPINE CONFEDERACY #
-	#####################
-	focus = {
-		id = LUC_ALCAdoptTheFranc
-		icon = GFX_LUC_ALCAdoptTheFranc
-		cost = 1
-		relative_position_id = LUC_Landtag
-		x = 0
-		y = 2
-		prerequisite = {
-			focus = LUC_ConservativeVictory
-			focus = LUC_LiberalVictory
-		}
-		available = {
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_ALCEconomicIntegration
-		icon = GFX_LUC_ALCEconomicIntegration
-		cost = 1
-		relative_position_id = LUC_ALCAdoptTheFranc
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = LUC_ALCAdoptTheFranc
-		}
-		available = {
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_ALCMaintainEcoIndependence
-		icon = GFX_LUC_ALCMaintainEcoIndependence
-		cost = 1
-		relative_position_id = LUC_ALCAdoptTheFranc
-		x = -1
-		y = 2
-		prerequisite = {
-			focus = LUC_ALCEconomicIntegration
-		}
-		available = {
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-			focus = LUC_ALCTowardsEcoIntegration
-		}
-	}
-
-	focus = {
-		id = LUC_ALCTowardsEcoIntegration
-		icon = GFX_LUC_ALCTowardsEcoIntegration
-		cost = 1
-		relative_position_id = LUC_ALCAdoptTheFranc
-		x = 1
-		y = 2
-		prerequisite = {
-			focus = LUC_ALCEconomicIntegration
-		}
-		available = {
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-			focus = LUC_ALCMaintainEcoIndependence
-		}
-	}
-
-	focus = {
-		id = LUC_ALCLinkRailways
-		icon = GFX_LUC_ALCLinkRailways
-		cost = 1
-		relative_position_id = LUC_ALCAdoptTheFranc
-		x = -2
-		y = 1
-		prerequisite = {
-			focus = LUC_ALCAdoptTheFranc
-		}
-		available = {
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-			NOT = {
-				has_completed_focus = LUC_ALCAlpineConfederacy
-			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_ALCSwissMigration
-		icon = GFX_LUC_ALCSwissMigration
-		cost = 1
-		relative_position_id = LUC_ALCAdoptTheFranc
-		x = -4
-		y = 2
-		prerequisite = {
-			focus = LUC_ALCEconomicIntegration
-		}
-		available = {
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-			NOT = {
-				has_completed_focus = LUC_ALCAlpineConfederacy
-			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_ALCResearch
-		icon = GFX_LUC_ALCResearch
-		cost = 1
-		relative_position_id = LUC_ALCAdoptTheFranc
-		x = -3
-		y = 3
-		prerequisite = {
-			focus = LUC_ALCEconomicIntegration
-		}
-		available = {
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-			NOT = {
-				has_completed_focus = LUC_ALCAlpineConfederacy
-			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_ALCPoliticalIntegration
-		icon = GFX_LUC_ALCPoliticalIntegration
-		cost = 1
-		relative_position_id = LUC_ALCAdoptTheFranc
-		x = 2
-		y = 1
-		prerequisite = {
-			focus = LUC_ALCAdoptTheFranc
-		}
-		available = {
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_ALCConsitutionalRevision
-		icon = GFX_LUC_ALCConsitutionalRevision
-		cost = 1
-		relative_position_id = LUC_ALCAdoptTheFranc
-		x = 2
-		y = 3
-		prerequisite = {
-			focus = LUC_ALCPoliticalIntegration
-		}
-		available = {
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = LUC_ConsitutionalRevisions
-				days = 180
-			}
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_ALCAlpineConfederacy
-		icon = GFX_LUC_ALCAlpineConfederacy
-		cost = 1
-		relative_position_id = LUC_ALCAdoptTheFranc
-		x = 0
-		y = 4
-		prerequisite = {
-			focus = LUC_ALCConsitutionalRevision
-		}
-		prerequisite = {
-			focus = LUC_ALCTowardsEcoIntegration
-			focus = LUC_ALCMaintainEcoIndependence
-		}
-		available = {
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-			NOT = {
-				has_idea = LUC_ConsitutionalRevisions
-			}
-		}
-		completion_reward = {
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	focus = {
-		id = LUC_ALCInviteAustria
-		icon = GFX_LUC_ALCInviteAustria
-		cost = 1
-		relative_position_id = LUC_ALCAdoptTheFranc
-		x = 3
-		y = 2
-		prerequisite = {
-			focus = LUC_ALCPoliticalIntegration
-		}
-		available = {
-			AUS = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			SWI = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-			OR = {
-				has_government = democratic
-				has_government = neutrality
-			}
-			NOT = {
-				if = {
-					limit = {
-						has_country_flag = LUC_DeathOfPrince_flag
-					}
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzII
-					}
-				}
-				else = {
-					has_country_leader = {
-						ruling_only = yes
-						character = LUC_FranzI
-					}
-				}
-			}
-			NOT = {
-				has_completed_focus = LUC_ALCConsitutionalRevision
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_WarningAustrianIntegration_tt
-		}
-		mutually_exclusive = {
-		}
-	}
-
-	#####################
-	# LiechtensteinER ECONOMY
-	####################
-	
 }

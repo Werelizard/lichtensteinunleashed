@@ -3,275 +3,90 @@
  LUC_Landtag_desc:0 ""
  LUC_LandtagCompleted_tt:0 "§LThis focus will be automatically completed once the [GetYear] elections have been held.§!"
 
- # Democratic Branches - Common
- LUC_LiberalVictory:0 "A Liberal-Conservative Government"
- LUC_LiberalVictory_decs:0 ""
- LUC_LiberalVictory_unlocked_tt:0 "The §DFortschrittliche Bürgerpartei§! has been granted a mandate by the Landtag"
+ # Liechtensteiner Economy
+ LUC_EconomyStateOfEconomy_Focus:0 "Revitalise the Economy"
+ LUC_EconomyStateOfEconomy_Focus_desc:0 "The Liechtensteiner Economy, has hardly evolved past artisans and farmers - with the overwhelming majority of its exports being agricultural in nature. The industrial capability of the country is near to non-existant and will need a near to complete overhaul if our country is to succesfully transition into the twentieth century."
 
- LUC_InvestigateFascists:0 "Investigate the Military Movement"
- LUC_InvestigateFascists_desc:0 ""
+ LUC_EconomyDevelopVaduz_Focus:0 "Develop Vaduz"
+ LUC_EconomyDevelopVaduz_Focus_desc:0 "The city of Vaduz is barely industrialised as is. We should endeavour to continue developing it, so that it may be a worthy rival to other Alpine and Southern German cities - if not in terms of size then in terms of infrastructure and inudstrial scale."
 
- LUC_WelcomeRefugees:0 "Welcome Refugees"
- LUC_WelcomeRefugees_desc:0 ""
+ LUC_EconomyIntegrateBank_Focus:0 "Integrate the Aktiengesellschaft"
+ LUC_EconomyIntegrateBank_Focus_desc:0 "The Bank of Liechtenstein Aktiengesellschaft has, since the financial crisis of the 1930's, slipped under the thumb of the Prince of Liechtenstein. However our control remains...limited. Perhaps it would be better to twist their hand and secure their loyalty - ensuring that such consequential assets do not slip between our fingers, and that we do not lose control of vast monetary reserves."
+
+ LUC_EconomyRoyalAssets_Focus:0 "Repatriate Princely Assets"
+ LUC_EconomyRoyalAssets_Focus_desc:0 "The Princely family of Liechtenstein owns numerous estates, assets and properties throughout Bohemia, Germany and Austria. It is time for us to re-assert our control of what is rightfully the crown's property."
+
+ LUC_EconomySecureForeignInvestments_Focus:0 "Attract Foreign Investments"
+ LUC_EconomySecureForeignInvestments_Focus_desc:0 "Liechtenstein is a neutral nation, like its neighbour Switzerland. By following its example, our government would strive to secure economical investments and ties with major European banks - irrespectively of their political dispositions."
+
+ LUC_EconomyHydroEnergy_Focus:0 "Expand the Lawena Power Station"
+ LUC_EconomyHydroEnergy_Focus_desc:0 "The Vaduz valley sits by the Rhine, something which begs to be exploited. By expanding the current hydroelectric infrastructure, we ensure nation-wide access to cheap, renewable and most importantly independent energy."
+
+ LUC_EconomyBroadElectrification_Focus:0 "Broad Electrification"
+ LUC_EconomyBroadElectrification_Focus_desc:0 "Our cities, villages and towns darken at night when they should be lit as the night sky above. Only through the broad electrification can this goal be achieved. Only by ensuring that every house, every factory and every government building has access to electricity can we become a modern nation."
+
+ LUC_EconomyOpenTractorFactories_Focus:0 "Open the 'Tractor Factories'"
+ LUC_EconomyOpenTractorFactories_Focus_desc:0 "Tractors are important not just to our farmers, but to our economy as a whole; a burgeoning tractor industry will open further trade avenues, as well as continue developing the mechanical, automotive and industrial sectors of our economy."
+
+ LUC_EconomyPrecisionExports_Focus:0 "Clockwork of Our Own"
+ LUC_EconomyPrecisionExports_Focus_desc:0 "We've been approached by both Swiss watch and part makers, who have sought out our endorsment in the construction of factories in Vaduz, with the aim to produce specialised tools and gears."
+
+ LUC_EconomyUrbanisation_Focus:0 "Urbanise the Villages"
+ LUC_EconomyUrbanisation_Focus_desc:0 "Our infrastructure remains trapped in the past - a vestige of the world past. This needs to be adressed."
+
+ LUC_EconomyModernTools_Focus:0 "Purchase Modern Tools"
+ LUC_EconomyModernTools_Focus_desc:0 "Farming equipment, hammers and the odd blowtorch will not be enough. We need to acquire modern equipment from neighbouring countries if we wish to have a chance to develop our industry."
+
+ LUC_EconomyIron_Focus:0 "Expand the Gonzen Iron Mine"
+ LUC_EconomyIron_Focus_desc:0 "Whilst the Vaduz valley is no industrial cradle, the soil upon which our country rests is rich with both iron and aluminium ore, riches begging to be carved out of their earthen prison."
+
+ LUC_EconomyIncreaseStateControl_Focus:0 "Embrace State Capitalism"
+ LUC_EconomyIncreaseStateControl_Focus_desc:0 ""
+
+ LUC_EconomyEmbraceDeregulation_Focus:0 "Full Privatisation"
+ LUC_EconomyEmbraceDeregulation_Focus_desc:0 ""
+
+ LUC_EconomyUniversity_Focus:0 "Universität Liechtenstein"
+ LUC_EconomyUniversity_Focus_desc:0 ""
  
- LUC_PoliceExpansion:0 "Reorganise the Landespolizei"
- LUC_PoliceExpansion_desc:0 ""
+ LUC_EconomyLowerTaxes_Focus:0 "Lower Taxes"
+ LUC_EconomyLowerTaxes_Focus_desc:0 ""
 
- LUC_EmergencyReserves:0 "Build Up National Stockpiles"
- LUC_EmergencyReserves_desc:0 ""
+ LUC_EconomySupportSmallBusinesses_Focus:0 "Support Small Businesses"
+ LUC_EconomySupportSmallBusinesses_Focus_desc:0 ""
 
- LUC_SwissMiliaryGuarantees:0 "Request Swiss Military Guarantees"
- LUC_SwissMiliaryGuarantees_desc:0 ""
+ LUC_EconomyCompleteDeregulation_Focus:0 "Exploit the Rhine"
+ LUC_EconomyCompleteDeregulation_Focus_desc:0 ""
 
- LUC_PurchaseSwissWeapons:0 "Purchase Swiss Weapons"
- LUC_PurchaseSwissWeapons_desc:0 ""
- LUC_PurchaseSwissWeapons_tt:0 "A total of §R2§! §YCivilian Factories§! will be used while this focus is active"
+ LUC_EconomyAgriculutralInvestments_Focus:0 "Increase Agricultural Production"
+ LUC_EconomyAgriculutralInvestments_Focus_desc:0 ""
 
- LUC_ALiechtensteinerMilitia:0 "Expanded Security Corps"
- LUC_ALiechtensteinerMilitia_desc:0 ""
- 
- LUC_MilitaryRearmement:0 "Begin Re-Armement"
- LUC_MilitaryRearmement_desc:0 ""
+ LUC_EconomyNationalInfrastructure_Focus:0 "Expand Light Industrial Sector"
+ LUC_EconomyNationalInfrastructure_Focus_desc:0 ""
 
- LUC_ModernisedEquipment:0 "Adopt Modern Military Rifles"
- LUC_ModernisedEquipment_desc:0 ""
+ LUC_EconomyLimitedNationalisation_Focus:0 "Nationalise Key Assets"
+ LUC_EconomyLimitedNationalisation_Focus_desc:0 ""
 
- LUC_MilitaryDisarmement:0 "Re-Assert Neutrality"
- LUC_MilitaryDisarmement_desc:0 ""
+ LUC_EconomyReorientEconomy_Focus:0 "Divest Funding to Military Production"
+ LUC_EconomyReorientEconomy_Focus_desc:0 ""
 
- LUC_MilitaryResearch:0 "New Research Initiatives"
- LUC_MilitaryResearch_desc:0 ""
-
- LUC_ExperimentalResearch:0 "Adress the Oil Issue"
- LUC_ExperimentalResearch_desc:0 ""
-
- LUC_Autarky:0 "Heavy Industry Focus"
- LUC_Autarky_desc:0 ""
- LUC_ExperimentalResearch_tt:0 "If we have already researched §YSyntehtic Oil Experiments§!, we will gain §Y1§! offmap synthetic factory. Otherwise, we will gain a §Y1x§! §G100%§! research bonus for: §YSyntethic Materials§!."
-
- LUC_NationalDefenseFund:0 "Nationaler Verteidigungsfonds"
- LUC_NationalDefenseFund_desc:0 ""
- LUC_atLeast100PolPower_tt:0 "At least §Y100§! political power"
-
- LUC_LightIndustry:0 "Light Industry Developments"
- LUC_LightIndustry_desc:0 ""
-
- LUC_CarIndustry:0 "A Homegrown Vehicular Industry"
- LUC_CarIndustry_desc:0 ""
-
- LUC_Tourism:0 "Alpine Resorts"
- LUC_Tourism_desc:0 ""
-
- LUC_HealthcareReform:0 "Universal Healthcare"
- LUC_HealthcareReform_desc:0 ""
-
- LUC_BeautifulValley:0 "Limited Industrialisation"
- LUC_BeautifulValley_desc:0 ""
-
- LUC_WelfareState:0 "A Welfare State"
- LUC_WelfareState_desc:0 ""
-
- LUC_ExpandResearchFunding:0 "International Scientific Cooperation"
- LUC_ExpandResearchFunding_desc:0 ""
- LUC_ExpandResearchFunding_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to invite other countries to join §Y$LUC_VaduzAcademy_name$§!"
-
- LUC_PrecisionEngineering:0 "Invest in Precision Engineering"
- LUC_PrecisionEngineering_desc:0 ""
-
- LUC_RequestLicenses:0 "Secure International Expertise"
- LUC_RequestLicenses_desc:0 ""
- LUC_RequestLicenses_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to upgrade our §Yindustrial concerns§!."
-
- LUC_ElectrificationEfforts:0 "Construct the Lawena Power Station"
- LUC_ElectrificationEfforts_desc:0 ""
-
- LUC_MilitaryBudget:0 "The Vaduz Arsenal"
- LUC_MilitaryBudget_desc:0 ""
-
- LUC_MilitaryIndustry:0 "The [Root.GetAdjective] War Economy"
- LUC_MilitaryIndustry_desc:0 ""
-
- LUC_PoliticalUnity:0 "Form an Emergency Government"
- LUC_PoliticalUnity_desc:0 ""
- LUC_hasUnityGovernment_tt:0 "We've secured the Landtag's support"
-
- LUC_CivilPreparations:0 "Civilian Drills"
- LUC_CivilPreparations_desc:0 ""
-
- LUC_WomenAuxiliary:0 "The Women's Auxiliary"
- LUC_WomenAuxiliary_desc:0 ""
-
- LUC_AStandingArmy:0 "A Standing Army"
- LUC_AStandingArmy_desc:0 ""
-
- LUC_AbandonNeutrality:0 "Discard Neutrality"
- LUC_AbandonNeutrality_desc:0 ""
- LUC_HasAtLeast50WarSupport_tt:0 "War Support is at least §Y50.0%§!"
- LUC_NoDemocraticCountriesAroundUs_tt:0 "No neighbouring country has a §DDemocratic§! government"
-
- LUC_ModernisedWeaponry:0 "Modernised Equipment"
- LUC_ModernisedWeaponry_desc:0 ""
-
- LUC_SuperiorFirepower:0 "Victory through Firepower"
- LUC_SuperiorFirepower_desc:0 ""
-
- LUC_AlpineFaction:0 "Enter the Fray"
- LUC_AlpineFaction_desc:0 ""
- LUC_AlpineFaction_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to invite §Ddemocratic§! and §Nunaligned§! countries to our faction"
-
- LUC_LiberateGermany:0 "A Reich no More!"
- LUC_LiberateGermany_desc:0 ""
- LUC_LiberateGermany_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to core German, Dutch, Swiss and Austrian states in Europe - if their respective governments are not §Ddemocratic§!"
-
- LUC_StandWithGermany:0 "A Greater Democratic Alliance"
- LUC_StandWithGermany_desc:0 ""
- LUC_StandWithGermany_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to attack non-democratic countries in Europe"
-
- LUC_GermanLiberators:0 "Rebuild Germanic Identity"
- LUC_GermanLiberators_desc:0 ""
- LUC_GermanLiberators_tt:0 "Add §Y$LUC_GermanicLiberators$§!, which grants when dealing with @GER §Y[GER.GetNameDefCap]§!, @SWI §Y[SWI.GetNameDefCap]§!, @AUS §Y[AUS.GetNameDefCap]§! and @HOL §Y[HOL.GetNameDefCap]§!:\nDaily Compliance Gain: §G+0.10%§!"
-
- # Coalition Government
-
- LUC_ACoalitionGovernment:0 "A Conservative Minister"
- LUC_ACoalitionGovernment_desc:0 ""
-
- LUC_DiplomaticMissionToGermany:0 "Diplomatic Mission to Germany"
- LUC_DiplomaticMissionToGermany_desc:0 ""
- LUC_DiplomaticMissionToGermany_effect_tt:0 "Our diplomatic overtures have a higher chance to succeed depending on several factors:\n- Whether [GER.GetNameDefCap] has a high opinion of us\n- We have not completed the §Y'$LUC_InvestigateFascists$'§! focus\n- The [LUC_GetGermanyRulingParty]'s party popularity in [ROOT.GetName]\n- Whether [GER.GetNameDefCap] is at peace"
- LUC_DiplomaticMissionToGermany_effect_acepted_tt:0 "\nIf they §Gaccept§!:"
- LUC_DiplomaticMissionToGermany_effect_refusal_tt:0 "\nIf they §trefuse§!:"
-
- LUC_GermanTradeAgreement:0 "German Trade Agreement"
- LUC_GermanTradeAgreement_desc:0 ""
- LUC_GermanTradeAgreement_tt:0 "Our diplomatic mission to [GER.GetNameDef] was a success"
- LUC_GermanTradeAgreement_decisions_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to extract additional §Yressources§! thanks to German assistance"
-
- LUC_EmphasiseTradition:0 "Die Bequeme Regierung"
- LUC_EmphasiseTradition_desc:0 ""
-
- LUC_ContinuePrivatisation:0 "Privatisierung Fortsetzen"
- LUC_ContinuePrivatisation_desc:0 ""
-
- LUC_LowerTaxes:0 "Lower Taxes"
- LUC_LowerTaxes_desc:0 ""
-
- LUC_TaxHaven:0 "Welcome Foreign Capital"
- LUC_TaxHaven_desc:0 ""
-
- LUC_GermanIndustry:0 "German-[ROOT.GetAdjective] Industrial Collaboration"
- LUC_GermanIndustry_desc:0 ""
-
- LUC_BanUnions:0 "Ban Trade Unions"
- LUC_BanUnions_desc:0 ""
-
- # Liberal Government
-
- LUC_ARealisticGovernment:0 "A Realistic Minister"
- LUC_ARealisticGovernment_desc:0 ""
-
- LUC_DenounceRedTyranny:0 "Denounce Red Tyranny"
- LUC_DenounceRedTyranny_desc:0 ""
-
- LUC_CrackDownOnFacism:0 "Crack Down on Fascism"
- LUC_CrackDownOnFacism_desc:0 ""
-
- LUC_AllowTradeUnions:0 "State-Sanctioned Trade Unions"
- LUC_AllowTradeUnions_desc:0 ""
-
- LUC_MissionToSovietUnion:0 "Mission to the Workers' Republics"
- LUC_MissionToSovietUnion_desc:0 ""
- LUC_MissionToSovietUnion_tt:0 "We shall seek help from §Scommunist§! countries in Europe"
- LUC_MissionToSovietUnion_descisions_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to petition major communist European powers for economic, military and diplomatic assistance"
-
- LUC_TurnTowardsDemocracies:0 "Seek Western Guarantees"
- LUC_TurnTowardsDemocracies_desc:0 ""
- LUC_TurnTowardsDemocracies_tt:0 "We shall seek assistance from European §Ddemocracies§!"
- LUC_TurnTowardsDemocracies_decisions_tt:0 "\nUnlocks £decision_icon_small §Ydecisions§! allowing us to petition major democratic European powers for economic, military and diplomatic assistance"
-
- LUC_GuaranteeIndividualRights:0 "Freiheit, Land, Wohlstand!"
- LUC_GuaranteeIndividualRights_desc:0 ""
-
- LUC_CivicReform:0 "A Woman's Right to Vote"
- LUC_CivicReform_desc:0 ""
-
- LUC_IncreaseRegulation:0 "Increased Industrial Regulation"
- LUC_IncreaseRegulation_desc:0 ""
-
- LUC_AppealToFarmers:0 "Urbanise the Villages"
- LUC_AppealToFarmers_desc:0 ""
-
- LUC_SecularEducation:0 "Secularise Public Education"
- LUC_SecularEducation_desc:0 ""
-
- LUC_AMoralPrincipality:0 "National Liberalism"
- LUC_AMoralPrincipality_desc:0 ""
-
- #Authoritarian Branch
- LUC_ConservativeVictory:0 "A Populist Government"
- LUC_ConservativeVictory_desc:0 ""
- LUC_ConservativeVictory_unlocked_tt:0 "The §NVaterländische Union§! has been granted a mandate by the Landtag"
-
- LUC_NationallistCollaboration:0 "Collaborate with the Nationalists"
- LUC_NationallistCollaboration_desc:0 ""
-
- #Alpine Confederacy
- LUC_ALCAdoptTheFranc:0 "Re-Examine the Customs Union"
- LUC_ALCAdoptTheFranc_desc:0 ""
- LUC_ALCResearch:0 "Alpine Research Grants"
- LUC_ALCResearch_desc:0 ""
- LUC_ALCEconomicIntegration:0 "Pursue Closer Economic Ties"
- LUC_ALCEconomicIntegration_desc:0 ""
- LUC_ALCMaintainEcoIndependence:0 "Economic Devolution"
- LUC_ALCMaintainEcoIndependence_desc:0 ""
- LUC_ALCTowardsEcoIntegration:0 "Economic Evolution"
- LUC_ALCTowardsEcoIntegration_desc:0 ""
- LUC_ALCLinkRailways:0 "Transalpine Railways"
- LUC_ALCLinkRailways_desc:0 ""
- LUC_ALCSwissMigration:0 "Encourage Swiss Migration"
- LUC_ALCSwissMigration_desc:0 ""
- LUC_ALCPoliticalIntegration:0 "Propose Administrative Alignment"
- LUC_ALCPoliticalIntegration_desc:0 ""
- LUC_ALCConsitutionalRevision:0 "Draft a Constitution"
- LUC_ALCConsitutionalRevision_desc:0 ""
- LUC_ALCAlpineConfederacy:0 "The Alpine Confederacy"
- LUC_ALCAlpineConfederacy_desc:0 ""
- LUC_ALCInviteAustria:0 "An Olive Branch to the Austrians"
- LUC_ALCInviteAustria_desc:0 "" 
- LUC_WarningAustrianIntegration_tt:0 "§RWARNING: if we do not complete this focus prior to completing §!§Y$LUC_ALCConsitutionalRevision$§!§R, then we will not be able to integrate Austria diplomatically!§!"
-
- #The economy
- 
-
- #General Tooltip
- LUC_unlockADvisor:0 "Will be available as a political advisor:\n"
- LUC_hasAFieldMarshall_tt:0 "Has a §YField Marshall§!"
- LUC_ModifiyEcoModifier_tt:0 "Modify §Y$LUC_Liechtensteiner_Economy_idea$§! by\n"
-
-
- LUC_GoodsFacIncrease10_tt:0 "Consumer Goods Factories factor: §Y+10.0%§!"
- LUC_GoodsFacIncrease5_tt:0 "Consumer Goods Factories factor: §Y+5.0%§!"
- LUC_MilFacIncrease10_tt:0 "§YMilitary Factory§! construction speed: §G+10.0%§!"
- LUC_CivFacDecrease10_tt:0 "§YCivilian Factory§! construction speed: §R-10.0%§!"
- LUC_PolIncrease2_tt:0 "Daily Political Power Gain: §G+0.25§!"
- LUC_PolDecrease1_tt:0 "Daily Political Power Gain: §R-0.1§!"
- LUC_PolDecrease2_tt:0 "Daily Political Power Gain: §R-0.25§!"
- LUC_TradeOpIncrease25_tt:0 "Trade Opinion factor: §Y+25.0%§!"
- LUC_ConGoodsDecrease5_tt:0 "Consumer Goods Factories factor: §Y-5.0%§!"
- LUC_BuildSlotsFacIncrease15_tt:0 "Max Factories in a State: §G+15.0%§!"
- LUC_ResFacIncrease15_tt:0 "Resource Gain Efficiency: §G+15.00%§!"
- LUC_BuildIncrease5_tt:0 "Construction Speed: §G+5.00%§!"
- LUC_ResPenDecrease10_tt:0 "Lack of Ressources Penalty Factor: §G-10.0%§!"
- LUC_OutputIncrease10_tt:0 "Factory Output: §G+10.00%§!"
- LUC_ResPenIncrease10_tt:0 "Lack of Ressources Penalty Factor: §R+10.0%§!"
- LUC_CivFacDecrease5_tt:0 "§YCivilian Factory§! construction speed: §R-5.0%§!"
- LUC_PopIncrease20_tt:0 "Monthly Population: §G+20.0%§!"
- LUC_StabilityIncrease20_tt:0 "Stability: §G+20.0%§!"
- LUC_OutputDecrease5_tt:0 "Factory Output: §R-5.00%§!"
- LUC_BuildIncrease10_tt:0 "Construction Speed: §G+10.00%§!" 
- LUC_MilFacIncrease5_tt:0 "§YMilitary Factory§! construction speed: §G+5.0%§!"
- LUC_StabilityDecrease10_tt:0 "Stability: §R-10.0%§!"
- LUC_ProductionEfficiencyIncrease6_tt:0 "Production Efficiency Growth: §G+6.00%§!"
- LUC_ProductionBaseDecrease2_tt:0 "Production Efficiency Base: §R-2.00%§!"
- LUC_ConGoodsDecrease10_tt:0 "Consumer Goods Factories factor: §Y-10.0%§!"
- LUC_ConvertFacDecrease15_tt:0 "Civilian to Military factory conversion cost: §G-15.00%"
+ # TOOLTIPS FOR THE DYNAMIC MODIFIERS
+ LUC_ModifiyEconomy_tt:0 "Modifiy §Y$LUC_Liechtensteiner_Economy_idea$§! by"
+ LUC_ModifiyEconomy_ConsumerGoods_neg5_tt:0 "Consumer Goods Factories factor: §Y-5.0%§!"
+ LUC_ModifiyEconomy_ConsumerGoods_neg15_tt:0 "Consumer Goods Factories factor: §Y-15.0%§!"
+ LUC_ModifiyEconomy_ConsumerGoods_neg10_tt:0 "Consumer Goods Factories factor: §Y-10.0%§!"
+ LUC_ModifiyEconomy_ConsumerGoods_pos5_tt:0 "Consumer Goods Factories factor: §Y+5.0%§!"
+ LUC_ModifiyEconomy_PolPower_pos5_tt:0 "Political Power Gain: §G+5.0%§!"
+ LUC_ModifiyEconomy_Construction_pos5_tt:0 "Construction Speed: §G+5.0%§!"
+ LUC_ModifiyEconomy_ConstructionSpeed_pos10_tt:0 "Construction Speed: §G+10.0%§!"
+ LUC_ModifiyEconomy_Infrastructure_pos15_tt:0 "Infrastructure Construction Speed: §G+15.0%§!"
+ LUC_ModifiyEconomy_Production_pos5_tt:0 "Production Efficiency growth: §G+5.0%§!"
+ LUC_ModifiyEconomy_Output_pos5_tt:0 "Factory Output: §G+5.0%§!"
+ LUC_ModifiyEconomy_MaxBuildSlots_pos1_tt:0 "Max Factories in a State: §G+1§!"
+ LUC_ModifiyEconomy_MonthlyPopulation_pos50_tt:0 "Monthly Population: §G+50.0%§!"
+ LUC_ModifiyEconomy_MinExports_neg25_tt:0 "Resources to Market: §Y-25.0%§!"
+ LUC_ModifiyEconomy_ProdBase_pos10_tt:0 "Production Efficiency Base: §G+10.0%§!"
+ LUC_ModifiyEconomy_Output_pos10_tt:0 "Factory Output: §G+10.0%§!"
+ LUC_ModifiyEconomy_MilSpeed_pos10_tt:0 "§YMilitary Factory§! Construction Speed: §G+10.0%§!"
+ LUC_ModifiyEconomy_CivSpeed_neg10_tt:0 "§YCivilian Factory§! Construction Speed: §R-10.0%§!"
+ LUC_ModifiyEconomy_PolPower_neg5_tt:0 "Political Power Gain: §R-5.0%§!"

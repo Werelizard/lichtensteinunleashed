@@ -34,7 +34,7 @@
  LUC_FascistCollaborators5_yes:0 "Level III - §GActive§!: at this level, the nationalists are considered to be a domineering political rival, and may attempt a §Rcoup§!.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.1§!\nRecruitable Population: §G+10.0%§!"
  LUC_FascistCollaborators5_no:0 "Level III - §LInactive§!: at this level, the nationalists are considered to be a domineering political rival, and may attempt a §Rcoup§!.\n\n§YEffects:§!\nDaily Fascism Support: §Y+0.1§!\nRecruitable Population: §G+10.0%§!"
 
- # Landtag Support
+ # Landtag Support UI
  confidence_header:0 "Landtag Support"
  LUC_LandtagSupport_5:0 "§YTotal Landtag Support§!:\n\nPolitical Advisor Cost: §G-10.0%§!\nStability: §G+10.0%§!\n\nUnlocks £decision_icon_small decision: §YRequest Emergency Powers§!\n\n------------\n\nCurrent Support: §Y[?LUC_LandtagOverallSupport_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportWeeklyChange_var|2+=]\n  Base: §R-0.25§![LUC_GetIsLiberalContributing][LUC_GetIsConservativeContributing][LUC_GetIsAgrarianContributing][LUC_GetIsPopulistContributing][LUC_GetIsNationalistContributing]"
  LUC_LandtagSupport_4:0 "§YStrong Landtag Support§!:\n\nPolitical Advisor Cost: §G-5.0%§!\nStability: §G+5.0%§!\n\n------------\n\nCurrent Support: §Y[?LUC_LandtagOverallSupport_var|%%]§!\nCurrent Weekly Change: [?LUC_SupportWeeklyChange_var|2+=]\n  Base: §R-0.25§![LUC_GetIsLiberalContributing][LUC_GetIsConservativeContributing][LUC_GetIsAgrarianContributing][LUC_GetIsPopulistContributing][LUC_GetIsNationalistContributing]"
@@ -122,3 +122,4 @@
  LUC_IncreaseAgrarianLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text  §YAgrarian§! faction"
  LUC_DecreaseAgrarianLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text §YAgrarian§!  faction"
  LUC_DecreaseAgrarianLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text  §YAgrarian§! faction"
+

@@ -29,3 +29,53 @@ LUC_check_ruling_party_is_50 = {
 		}
 	}
 }
+
+# Trigger to check if the Landtag Mechanic should be enabled
+
+LUC_hasLandtagMechanic_trigger = {
+	original_tag = SUS
+	has_country_flag = LUC_EnableLandtag_flag
+	OR = {
+		has_government = democratic
+		AND = {
+			has_government = neutrality
+			NOT = {
+				has_country_leader = {
+					ruling_only = yes
+					character = LUC_FranzI
+				}
+			}
+			NOT = {
+				has_country_leader = {
+					ruling_only = yes
+					character = LUC_FranzII
+				}
+			}
+		}
+		AND = {
+			has_government = fascism
+			NOT = {
+				has_country_leader = {
+					ruling_only = yes
+					character = LUC_AlfonsGoop
+				}
+			}
+		}
+	}
+}
+
+LUC_isLandtagSupportive_trigger = {
+	if = {
+		limit = {
+			LUC_hasLandtagMechanic_trigger = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = LUC_isLandtagSupportive_trigger_tt
+			NOT = {
+				check_variable = {
+					LUC_LandtagOverallSupport_var < 60
+				}
+			}
+		}
+	}
+}
