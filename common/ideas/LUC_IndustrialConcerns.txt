@@ -16,6 +16,9 @@ ideas = {
 					}
 				}
 			}
+			visible = {
+				original_tag = SUS
+			}
 			on_remove = {
 				hidden_effect = {
 					add_offsite_building = {
@@ -25,7 +28,6 @@ ideas = {
 				}
 			}
 			available = {
-				original_tag = SUS
 				has_completed_focus = LUC_EconomyHydroEnergy_Focus
 			}
 		}

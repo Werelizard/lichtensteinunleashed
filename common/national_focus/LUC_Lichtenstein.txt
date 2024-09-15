@@ -34,7 +34,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyStateOfEconomy_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 1.5
 		x = -14
 		y = 0
 		available = {
@@ -42,8 +42,11 @@ focus_tree = {
 		}
 		completion_reward = { 
 			LUC_LandtagIncreaseSupport_5 = yes
-			custom_effect_tooltip = LUC_ModifiyEconomy_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_ConsumerGoods_neg10_tt
+			custom_effect_tooltip = LUC_newline_tt
+			add_political_power = 50
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_neg10_tt
 			hidden_effect = {
 				subtract_from_variable = {
 					LUC_ConGoodsFac_Var = 0.1
@@ -55,7 +58,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyDevelopVaduz_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = 5
 		y = 1
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -81,7 +84,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyIntegrateBank_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = 5
 		y = 4
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -94,15 +97,19 @@ focus_tree = {
 		completion_reward = { 
 			add_timed_idea = {
 				idea = LUC_LiechtensteinBankIntegrated
-				days = 540
+				days = 180
 			}
+			custom_effect_tooltip = LUC_newline_tt
+			unlock_decision_tooltip = LUC_keepBankIntegrated
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_EconomyIntegrateBank_Focus_tt
 		}
 	}
 
 	focus = {
 		id = LUC_EconomyRoyalAssets_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = 6
 		y = 5
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -110,18 +117,87 @@ focus_tree = {
 			focus = LUC_EconomyIntegrateBank_Focus
 		}
 		available = {
-			
+			OR = {
+				NOT = {
+					owns_state = 9
+				}
+				NOT = {
+					owns_state = 152
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						NOT = {
+							owns_state = 9
+						}
+						NOT = {
+							owns_state = 152
+						}
+					}
+				}
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = LUC_EconomyRoyalAssets_Focus_Bohemia_tt
+						any_country = {
+							owns_state = 9
+							NOT = {
+								has_war_with = ROOT
+							}
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = LUC_EconomyRoyalAssets_Focus_Austria_tt
+						any_country = {
+							owns_state = 152
+							NOT = {
+								has_war_with = ROOT
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					owns_state = 9
+				}
+				custom_trigger_tooltip = {
+					tooltip = LUC_EconomyRoyalAssets_Focus_Austria_tt
+					any_country = {
+						owns_state = 152
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					owns_state = 152
+				}
+				custom_trigger_tooltip = {
+					tooltip = LUC_EconomyRoyalAssets_Focus_Austria_tt
+					any_country = {
+						owns_state = 152
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
 		}
 		completion_reward = { 
 			unlock_decision_tooltip = LUC_LiechtensteinEco_austrianAssets
 			unlock_decision_tooltip = LUC_LiechtensteinEco_czechAssets
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_EconomyRoyalAssets_Focus_tt
 		}
 	}
 
 	focus = {
 		id = LUC_EconomySecureForeignInvestments_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 10
 		x = 5
 		y = 6
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -129,17 +205,60 @@ focus_tree = {
 			focus = LUC_EconomyIntegrateBank_Focus
 		}
 		available = {
-			
+			NOT = {
+				has_war = yes
+			}
+			has_idea = LUC_LiechtensteinBankIntegrated
+		}
+		bypass = {
+			NOT = {
+				has_idea = LUC_LiechtensteinBankIntegrated
+			}
+			has_completed_focus = LUC_EconomyIntegrateBank_Focus
 		}
 		completion_reward = { 
-
+			remove_ideas = LUC_LiechtensteinBankIntegrated
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_EconomySecureForeignInvestments_Focus_tt
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_LiechtensteinBankIntegrated_warning_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							original_tag = SWI
+							original_tag = AUS
+							original_tag = GER
+							original_tag = HOL
+							original_tag = CZE
+							original_tag = FRA
+							original_tag = BEL
+							original_tag = ENG
+						}
+						has_opinion = {
+							target = ROOT
+							value > 84
+						}
+					}
+					add_to_temp_array = {
+						array = LUC_TempArray
+					}
+				}
+				for_each_loop = {
+					array = LUC_TempArray
+					add_offsite_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = LUC_EconomyHydroEnergy_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = 7
 		y = 2
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -147,7 +266,7 @@ focus_tree = {
 			focus = LUC_EconomyDevelopVaduz_Focus
 		}
 		available = {
-			
+			num_of_civilian_factories_available_for_projects > 2
 		}
 		completion_reward = { 
 			random_owned_controlled_state = {
@@ -156,6 +275,7 @@ focus_tree = {
 					level = 2
 				}
 			}
+			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = LUC_LawenaPower_concern
 		}
@@ -164,7 +284,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyBroadElectrification_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = 6
 		y = 3
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -187,7 +307,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyOpenTractorFactories_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = 9
 		y = 3
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -195,7 +315,7 @@ focus_tree = {
 			focus = LUC_EconomyHydroEnergy_Focus
 		}
 		available = {
-			
+			has_tech = basic_machine_tools
 		}
 		completion_reward = { 
 			random_owned_controlled_state = {
@@ -209,28 +329,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LUC_EconomyPrecisionExports_Focus
-		icon = GFX_goal_unknown
-		cost = 1
-		x = 8
-		y = 4
-		relative_position_id = LUC_EconomyStateOfEconomy_Focus
-		prerequisite = {
-			focus = LUC_EconomyBroadElectrification_Focus
-			focus = LUC_EconomyOpenTractorFactories_Focus
-		}
-		available = {
-			
-		}
-		completion_reward = { 
-
-		}
-	}
-
-	focus = {
 		id = LUC_EconomyUrbanisation_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		x = 2
 		y = 1
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -247,6 +348,7 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 			}
+			custom_effect_tooltip = LUC_newline_tt
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 			}
@@ -256,7 +358,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyModernTools_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		x = -2
 		y = 1
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -273,8 +375,9 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 			}
-			custom_effect_tooltip = LUC_ModifiyEconomy_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_Production_pos5_tt
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_Production_pos5_tt
 			hidden_effect = {
 				add_to_variable = {
 					production_factory_efficiency_gain_factor = 0.05
@@ -287,7 +390,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyIron_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		x = 4
 		y = 2
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -299,6 +402,13 @@ focus_tree = {
 			focus = LUC_EconomyDevelopVaduz_Focus
 		}
 		available = {
+			OR = {
+				has_tech = excavation1
+				has_tech = excavation2
+				has_tech = excavation3
+				has_tech = excavation4
+				has_tech = excavation5
+			}
 			controls_state = 970
 			owns_state = 970
 		}
@@ -320,7 +430,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyIncreaseStateControl_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5.8
 		x = 2
 		y = 2
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -343,23 +453,21 @@ focus_tree = {
 				}
 				LUC_IncreaseNationalistLoyalty = yes
 			}
+			custom_effect_tooltip = LUC_newline_tt
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 				}
 			}
-			custom_effect_tooltip = LUC_ModifiyEconomy_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_MaxBuildSlots_pos1_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_ProdBase_pos10_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_ConsumerGoods_pos5_tt
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_MaxBuildSlots_pos1_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_pos5_tt
 			hidden_effect = {
 				add_to_variable = {
 					LUC_BuildSlots_Var = 1
-				}
-				add_to_variable = {
-					LUC_ProdStartFac_Var = 0.1
 				}
 				add_to_variable = {
 					LUC_ConGoodsFac_Var = 0.05
@@ -374,7 +482,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyEmbraceDeregulation_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5.8
 		x = -2
 		y = 2
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -391,10 +499,12 @@ focus_tree = {
 		completion_reward = { 
 			LUC_IncreaseLiberalLoyalty = yes
 			LUC_IncreasePopulistLoyalty = yes
+			custom_effect_tooltip = LUC_newline_tt
 			add_political_power = 100
-			custom_effect_tooltip = LUC_ModifiyEconomy_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_ConsumerGoods_neg10_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_PolPower_pos5_tt
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_neg10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_PolPower_pos5_tt
 			hidden_effect = {
 				add_to_variable = {
 					LUC_PolGain_Var = 0.05
@@ -412,7 +522,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyUniversity_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 10
 		x = 0
 		y = 3
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -431,9 +541,114 @@ focus_tree = {
 	}
 
 	focus = {
+		id = LUC_EconomyFinal_Focus
+		icon = GFX_goal_unknown
+		cost = 10
+
+		dynamic = yes
+
+		x = 0
+		y = 7
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyLimitedNationalisation_Focus
+			focus = LUC_EconomyCompleteDeregulation_Focus
+		}
+		prerequisite = {
+			focus = LUC_EconomySecureForeignInvestments_Focus
+		}
+		available = {
+			has_stability > 0.6
+			OR = {
+				970 = {
+					industrial_complex > 9
+				}
+				industrial_complex > 19
+			}
+		}
+		completion_reward = { 
+			LUC_LandtagIncreaseSupport_10 = yes
+			custom_effect_tooltip = LUC_newline_tt
+			if = {
+				limit = {
+					has_completed_focus = LUC_EconomyEmbraceDeregulation_Focus
+				}
+				add_research_slot = 1
+				custom_effect_tooltip = LUC_ModifyEconomy_tt
+				custom_effect_tooltip = LUC_ModifyEconomy_Production_pos5_tt
+				custom_effect_tooltip = LUC_ModifyEconomy_EficiencyCap_pos10_tt
+				custom_effect_tooltip = LUC_ModifyEconomy_PolPower_pos10_tt
+				hidden_effect = {
+					add_to_variable = {
+						LUC_PolGain_Var = 0.1
+					}
+					add_to_variable = {
+						LUC_ProductionFac_Var = 0.05
+					}
+					add_to_variable = {
+						LUC_ProdMaxFac_Var = 0.1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = LUC_EconomyIncreaseStateControl_Focus
+				}
+				add_stability = 0.1
+				add_war_support = 0.1
+				custom_effect_tooltip = LUC_ModifyEconomy_tt
+				custom_effect_tooltip = LUC_ModifyEconomy_CivSpeed_pos15_tt
+				custom_effect_tooltip = LUC_ModifyEconomy_MilSpeed_pos10_tt
+				every_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+				hidden_effect = {
+					add_to_variable = {
+						LUC_BuildArmFac_Var = 0.1
+					}
+					add_to_variable = {
+						LUC_BuildCivFac_Var = 0.15
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = LUC_EconomyFinal_Focus_optionStatism_tt
+				effect_tooltip = {
+				add_stability = 0.1
+				add_war_support = 0.1
+				custom_effect_tooltip = LUC_ModifyEconomy_tt
+				custom_effect_tooltip = LUC_ModifyEconomy_CivSpeed_pos15_tt
+				custom_effect_tooltip = LUC_ModifyEconomy_MilSpeed_pos10_tt
+				every_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+				}
+				custom_effect_tooltip = LUC_EconomyFinal_Focus_optionLaissezfaire_tt
+				effect_tooltip = {
+					add_research_slot = 1
+					custom_effect_tooltip = LUC_ModifyEconomy_tt
+					custom_effect_tooltip = LUC_ModifyEconomy_Production_pos5_tt
+					custom_effect_tooltip = LUC_ModifyEconomy_EficiencyCap_pos10_tt
+					custom_effect_tooltip = LUC_ModifyEconomy_PolPower_pos10_tt
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	focus = {
 		id = LUC_EconomyLowerTaxes_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = -3
 		y = 3
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -446,12 +661,13 @@ focus_tree = {
 		completion_reward = { 
 			LUC_IncreaseLiberalInfluence = yes
 			LUC_IncreasePopulistInfluence = yes
-			custom_effect_tooltip = LUC_ModifiyEconomy_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_ConsumerGoods_neg5_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_ConstructionSpeed_pos10_tt
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_neg10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_Research_pos5_tt
 			hidden_effect = {
 				subtract_from_variable = {
-					LUC_ConGoodsFac_Var = 0.05
+					LUC_ConGoodsFac_Var = 0.1
 				}
 				add_to_variable = {
 					LUC_BuildAllFac_Var = 0.1
@@ -465,7 +681,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomySupportSmallBusinesses_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = -2
 		y = 4
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -476,7 +692,28 @@ focus_tree = {
 			
 		}
 		completion_reward = { 
-
+			LUC_IncreaseLiberalInfluence = yes
+			LUC_IncreasePopulistInfluence = yes
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_Production_pos5_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_EficiencyCap_pos5_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_Output_pos5_tt
+			hidden_effect = {
+				add_to_variable = {
+					LUC_BuildAllFac_Var = 0.05
+				}
+				add_to_variable = {
+					LUC_OutputFac_Var = 0.05
+				}
+				add_to_variable = {
+					LUC_ProdMaxFac_Var = 0.05
+				}
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			unlock_decision_tooltip = LUC_Landtag_BusinessGrant
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_EconomySupportSmallBusinesses_Focus_tt
 		}
 		mutually_exclusive = {
 		}
@@ -485,7 +722,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyCompleteDeregulation_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = -3
 		y = 5
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -497,7 +734,33 @@ focus_tree = {
 			
 		}
 		completion_reward = { 
-
+			LUC_DecreaseConservativeLoyaltyBIG = yes
+			LUC_DecreaseAgrarianLoyaltyBIG = yes
+			if = {
+				limit = {
+					has_country_flag = LUC_LandtagNationalistFaction_flag
+				}
+				LUC_DecreaseNationalistLoyaltyBIG = yes
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			add_tech_bonus = {
+				name = LUC_EconomyCompleteDeregulation_Focus_Bonus
+				category = industry
+				bonus = 1
+				uses = 2
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_ResourceGain_pos10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_ConstructionSpeed_pos10_tt
+			hidden_effect = {
+				add_to_variable = {
+					LUC_ResExtraFac_Var = 0.1
+				}
+				add_to_variable = {
+					LUC_BuildAllFac_Var = 0.1
+				}
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -506,7 +769,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyAgriculutralInvestments_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = 3
 		y = 3
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -525,18 +788,28 @@ focus_tree = {
 				}
 				LUC_IncreaseNationalistInfluence = yes
 			}
+			custom_effect_tooltip = LUC_newline_tt
 			add_stability = 0.1
-			custom_effect_tooltip = LUC_ModifiyEconomy_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_MonthlyPopulation_pos50_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_MinExports_neg25_tt
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_MonthlyPopulation_pos30_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_PopFactor_pos10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_MinExports_neg25_tt
 			hidden_effect = {
 				subtract_from_variable = {
 					LUC_ExportFac_Var = -0.25
 				}
 				add_to_variable = {
-					LUC_PopFac_Var = 0.5
+					LUC_PopFac_Var = 0.3
+				}
+				add_to_variable = {
+					LUC_RecruitPopFactor_var = 0.1
 				}
 			}
+			custom_effect_tooltip = LUC_newline_tt
+			unlock_decision_tooltip = LUC_Landtag_FarmGrant
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_EconomyAgriculutralInvestments_Focus_tt
 		}
 		mutually_exclusive = {
 		}
@@ -545,7 +818,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyNationalInfrastructure_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = 2
 		y = 4
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -564,6 +837,7 @@ focus_tree = {
 				}
 				LUC_IncreaseNationalistInfluence = yes
 			}
+			custom_effect_tooltip = LUC_newline_tt
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -579,7 +853,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyLimitedNationalisation_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5
 		x = 2
 		y = 5
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -592,6 +866,7 @@ focus_tree = {
 		completion_reward = {  
 			LUC_DecreaseLiberalLoyaltyBIG = yes
 			LUC_DecreasePopulistLoyaltyBIG = yes
+			custom_effect_tooltip = LUC_newline_tt
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -614,7 +889,7 @@ focus_tree = {
 	focus = {
 		id = LUC_EconomyReorientEconomy_Focus
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 5.8
 		x = -5
 		y = 3
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -627,12 +902,16 @@ focus_tree = {
 		}
 		completion_reward = { 
 			LUC_LandtagDecreaseSupport_15 = yes
-			custom_effect_tooltip = LUC_ModifiyEconomy_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_Output_pos10_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_MilSpeed_pos10_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_CivSpeed_neg10_tt
-			custom_effect_tooltip = LUC_ModifiyEconomy_PolPower_neg5_tt
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_Output_pos10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_MilSpeed_pos10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_CivSpeed_neg10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_PolPower_neg5_tt
+			custom_effect_tooltip = LUC_newline_tt
 			unlock_decision_tooltip = LUC_Landtag_Armement
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_EconomyReorientEconomy_Focus_tt
 			hidden_effect = {
 				add_to_variable = {
 					LUC_BuildArmFac_Var = 0.1

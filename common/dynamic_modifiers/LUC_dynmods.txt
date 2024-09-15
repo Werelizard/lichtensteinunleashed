@@ -11,6 +11,7 @@ LUC_Liechtensteiner_Economy_idea = {
 	production_lack_of_resource_penalty_factor = LUC_ResPenalFac_Var
 	min_export = LUC_ExportFac_Var
 	local_building_slots = LUC_BuildSlots_Var
+	recruitable_population_factor = LUC_RecruitPopFactor_var
 	
 	production_speed_buildings_factor = LUC_BuildAllFac_Var
 	production_speed_arms_factory_factor = LUC_BuildArmFac_Var
@@ -22,6 +23,7 @@ LUC_Liechtensteiner_Economy_idea = {
 	conversion_cost_civ_to_mil_factor = LUC_ConvertFac_Var
 	production_factory_efficiency_gain_factor = LUC_ProductionFac_Var
 	production_factory_start_efficiency_factor = LUC_ProdStartFac_Var
+	production_factory_max_efficiency_factor = LUC_ProdMaxFac_Var
 
 	industrial_capacity_factory = LUC_OutputFac_Var
 	monthly_population = LUC_PopFac_Var

@@ -51,7 +51,7 @@ LUC_SupportSetup_Initial = {
 	}
 	# Initial support - mid
 	set_variable = {
-		LUC_LandtagOverallSupport_var = 50.0
+		LUC_LandtagOverallSupport_var = 45.0
 	}
 }
 
@@ -1850,6 +1850,9 @@ LUC_LandtagIncreaseSupport_5 = {
 			min = 0
 			max = 100
 		}
+		hidden_effect = {
+			LUC_UpdateLandtagModifier = yes
+		}
 		custom_effect_tooltip = LUC_increaseLandtagSupport_5_tt
 	}
 }
@@ -1866,6 +1869,9 @@ LUC_LandtagIncreaseSupport_10 = {
 			var = LUC_LandtagOverallSupport_var
 			min = 0
 			max = 100
+		}
+		hidden_effect = {
+			LUC_UpdateLandtagModifier = yes
 		}
 		custom_effect_tooltip = LUC_increaseLandtagSupport_10_tt
 	}
@@ -1885,6 +1891,9 @@ LUC_LandtagIncreaseSupport_15 = {
 			min = 0
 			max = 100
 		}
+		hidden_effect = {
+			LUC_UpdateLandtagModifier = yes
+		}
 		custom_effect_tooltip = LUC_increaseLandtagSupport_15_tt
 	}
 }
@@ -1901,6 +1910,9 @@ LUC_LandtagDecreaseSupport_5 = {
 			var = LUC_LandtagOverallSupport_var
 			min = 0
 			max = 100
+		}
+		hidden_effect = {
+			LUC_UpdateLandtagModifier = yes
 		}
 		custom_effect_tooltip = LUC_decreaseLandtagSupport_5_tt
 	}
@@ -1919,6 +1931,9 @@ LUC_LandtagDecreaseSupport_10 = {
 			min = 0
 			max = 100
 		}
+		hidden_effect = {
+			LUC_UpdateLandtagModifier = yes
+		}
 		custom_effect_tooltip = LUC_decreaseLandtagSupport_10_tt
 	}
 }
@@ -1935,6 +1950,9 @@ LUC_LandtagDecreaseSupport_15 = {
 			var = LUC_LandtagOverallSupport_var
 			min = 0
 			max = 100
+		}
+		hidden_effect = {
+			LUC_UpdateLandtagModifier = yes
 		}
 		custom_effect_tooltip = LUC_decreaseLandtagSupport_15_tt
 	}

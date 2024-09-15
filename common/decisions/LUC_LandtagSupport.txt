@@ -14,4 +14,16 @@ LUC_Government_LandtagSupport_cat = {
 			has_completed_focus = LUC_EconomyReorientEconomy_Focus
 		}
 	}
+
+	LUC_Landtag_FarmGrant = {
+		visible = {
+			has_completed_focus = LUC_EconomyAgriculutralInvestments_Focus
+		}
+	}
+
+	LUC_Landtag_BusinessGrant = {
+		visible = {
+			has_completed_focus = LUC_EconomySupportSmallBusinesses_Focus
+		}
+	}
 }

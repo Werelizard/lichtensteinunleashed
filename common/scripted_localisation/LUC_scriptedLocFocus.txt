@@ -28,3 +28,22 @@ defined_text = { # For determining what is germany's party
 		localization_key = LUC_DemocraticParty
 	}
 }
+
+defined_text = {
+	name = LUC_EconomyFinal_Focus_name
+	text = {
+		trigger = {
+			has_completed_focus = LUC_EconomyEmbraceDeregulation_Focus
+		}
+		localization_key = LUC_EconomyFinal_Focus_fullderegulation
+	}
+	text = {
+		trigger = {
+			has_completed_focus = LUC_EconomyIncreaseStateControl_Focus
+		}
+		localization_key = LUC_EconomyFinal_Focus_statecontrol
+	}
+	text = {
+		localization_key = LUC_EconomyFinal_Focus_nochoice
+	}
+}
