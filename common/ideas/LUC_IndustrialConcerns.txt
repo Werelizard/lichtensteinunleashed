@@ -2,30 +2,14 @@ ideas = {
 	industrial_concern = {
 		LUC_LawenaPower_concern = {
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.025
-				custom_modifier_tooltip = LUC_LawenaPower_concern_tt
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
 			}
 			research_bonus = {
 				electronics = 0.05
 			}
-			on_add = {
-				hidden_effect = {
-					add_offsite_building = {
-						type = industrial_complex
-						level = 2
-					}
-				}
-			}
 			visible = {
 				original_tag = SUS
-			}
-			on_remove = {
-				hidden_effect = {
-					add_offsite_building = {
-						type = industrial_complex
-						level = -2
-					}
-				}
 			}
 			available = {
 				has_completed_focus = LUC_EconomyHydroEnergy_Focus

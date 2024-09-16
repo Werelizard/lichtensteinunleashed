@@ -4,7 +4,7 @@
  LUC_LandtagCompleted_tt:0 "§LThis focus will be automatically completed once the [GetYear] elections have been held.§!"
 
  # Liechtensteiner Economy
- LUC_EconomyStateOfEconomy_Focus:0 "Revitalise the Economy"
+ LUC_EconomyStateOfEconomy_Focus:0 "Budgetary Adjustments"
  LUC_EconomyStateOfEconomy_Focus_desc:0 "The Liechtensteiner Economy, has hardly evolved past artisans and farmers - with the overwhelming majority of its exports being agricultural in nature. The industrial capability of the country is near to non-existant and will need a near to complete overhaul if our country is to succesfully transition into the twentieth century."
 
  LUC_EconomyDevelopVaduz_Focus:0 "Develop Vaduz"
@@ -23,12 +23,15 @@
  LUC_EconomySecureForeignInvestments_Focus:0 "Attract Foreign Investments"
  LUC_EconomySecureForeignInvestments_Focus_desc:0 "Liechtenstein is a neutral nation, like its neighbour Switzerland. By following its example, our government would strive to secure economical investments and ties with major European banks - irrespectively of their political dispositions."
  LUC_EconomySecureForeignInvestments_Focus_tt:0 "For every country in §YCentral Europe§! and §YWestern Europe§! (@GER §Y[GER.GetNameDef]§!, @SWI §Y[SWI.GetNameDef]§!, @AUS §Y[AUS.GetNameDef]§!, @FRA§Y[FRA.GetNameDef]§!, @ENG §Y[ENG.GetNameDef]§!, @CZE §Y[CZE.GetNameDef]§!, @BEL §Y[BEL.GetNameDef]§! and @HOL §Y[HOL.GetNameDef]§!) with an opinion of at least §G85§! of us we will gain one §YOff-Map Civilian Factory§!."
- LUC_LiechtensteinBankIntegrated_warning_tt:0 "§RThis focus will be automatically bypassed without any rewards if we no longer benefits from the effects of §!§Y$LUC_LiechtensteinBankIntegrated$§!§R!§!"
+ LUC_LiechtensteinBankIntegrated_warning_tt:0 "§RThis focus will be automatically bypassed without any rewards if we no longer benefits from the effects of the §!§Y$LUC_LiechtensteinBankIntegrated$§!§R national spirit!§!"
 
- LUC_EconomyHydroEnergy_Focus:0 "Expand the Lawena Power Station"
+ LUC_EconomyContinueIndustrialisation_Focus:0 "Industrial Expansion"
+ LUC_EconomyContinueIndustrialisation_Focus_desc:0 ""
+
+ LUC_EconomyHydroEnergy_Focus:0 "Modernise Hydroelectric Installations"
  LUC_EconomyHydroEnergy_Focus_desc:0 "The Vaduz valley sits by the Rhine, something which begs to be exploited. By expanding the current hydroelectric infrastructure, we ensure nation-wide access to cheap, renewable and most importantly independent energy."
 
- LUC_EconomyBroadElectrification_Focus:0 "Broad Electrification"
+ LUC_EconomyBroadElectrification_Focus:0 "Broaden Electrification Efforts"
  LUC_EconomyBroadElectrification_Focus_desc:0 "Our cities, villages and towns darken at night when they should be lit as the night sky above. Only through the broad electrification can this goal be achieved. Only by ensuring that every house, every factory and every government building has access to electricity can we become a modern nation."
 
  LUC_EconomyOpenTractorFactories_Focus:0 "Open the 'Tractor Factories'"
@@ -40,10 +43,10 @@
  LUC_EconomyModernTools_Focus:0 "Purchase Modern Tools"
  LUC_EconomyModernTools_Focus_desc:0 "Farming equipment, hammers and the odd blowtorch will not be enough. We need to acquire modern equipment from neighbouring countries if we wish to have a chance to develop our industry."
 
- LUC_EconomyIron_Focus:0 "Expand the Gonzen Iron Mine"
+ LUC_EconomyIron_Focus:0 "Open the Gonzen Iron Mine"
  LUC_EconomyIron_Focus_desc:0 "Whilst the Vaduz valley is no industrial cradle, the soil upon which our country rests is rich with both iron and aluminium ore, riches begging to be carved out of their earthen prison."
 
- LUC_EconomyIncreaseStateControl_Focus:0 "A Heavy-Handed Approach"
+ LUC_EconomyIncreaseStateControl_Focus:0 "Maintain State Primacy"
  LUC_EconomyIncreaseStateControl_Focus_desc:0 ""
 
  LUC_EconomyEmbraceDeregulation_Focus:0 "Embrace Laissez-Faire"
@@ -59,24 +62,24 @@
  LUC_EconomySupportSmallBusinesses_Focus_desc:0 ""
  LUC_EconomySupportSmallBusinesses_Focus_tt:0 "§LThis decision would allow us to beseech the Landtag and expand political power for a random building in a random state. These buildings include civilian factories, resources, naval dockyards and synthetic oil factories.§!"
 
- LUC_EconomyCompleteDeregulation_Focus:0 "Sow the Seeds and Reap the Soil"
+ LUC_EconomyCompleteDeregulation_Focus:0 "Lift All Industrial Regulations"
  LUC_EconomyCompleteDeregulation_Focus_desc:0 ""
 
  LUC_EconomyAgriculutralInvestments_Focus:0 "Increase Agricultural Production"
  LUC_EconomyAgriculutralInvestments_Focus_desc:0 ""
  LUC_EconomyAgriculutralInvestments_Focus_tt:0 "§LThis decision would allow us to beseech the Landtag and trade in civilian factories for additional building slots in a random state.§!"
 
- LUC_EconomyNationalInfrastructure_Focus:0 "Expand Light Industrial Sector"
+ LUC_EconomyNationalInfrastructure_Focus:0 "Encourage Domestic Artisanship"
  LUC_EconomyNationalInfrastructure_Focus_desc:0 ""
 
- LUC_EconomyLimitedNationalisation_Focus:0 "Nationalise Key Assets"
+ LUC_EconomyLimitedNationalisation_Focus:0 "Partial Nationalisation"
  LUC_EconomyLimitedNationalisation_Focus_desc:0 ""
 
  LUC_EconomyReorientEconomy_Focus:0 "Divest Funding to Military Production"
  LUC_EconomyReorientEconomy_Focus_desc:0 ""
  LUC_EconomyReorientEconomy_Focus_tt:0 "§LThis decision would allow us to beseech the Landtag and purchase military equipement from our neighbours.§!"
 
- LUC_EconomyFinal_Focus:0 "[LUC_EconomyFinal_Focus_name]"
+ LUC_EconomyFinal_Focus:0 "An Economic Miracle"
  LUC_EconomyFinal_Focus_desc:0 ""
  LUC_EconomyFinal_Focus_fullderegulation:0 "A Gilded Mountain"
  LUC_EconomyFinal_Focus_statecontrol:0 "An Economy in Service of the State"
@@ -113,3 +116,5 @@
  LUC_ModifyEconomy_ResourceGain_pos10_tt:0 "Resource Gain Efficiency: §G+10.0%§!"
  LUC_ModifyEconomy_Output_pos5_tt:0 "Factory Output: §G+5.0%§!"
  LUC_ModifyEconomy_Research_pos5_tt:0 "Research Speed: §G+5.0%§!"
+ LUC_ModifyEconomy_PolPower_neg15_tt:0 "Political Power Gain: §R-15.0%§!"
+ LUC_ModifyEconomy_MaxBuildSlotsFactor_pos10_tt:0 "Max Factories in a State: §G+10.0%§!"

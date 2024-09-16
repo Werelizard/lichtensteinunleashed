@@ -1,11 +1,203 @@
 spriteTypes = {
-	# Landtag Election
+	###################################
+	# POLITICAL FOCUSES - ALL OF THEM #
+	###################################
 	spriteType = {
 		name = "GFX_LUC_Landtag"
-		textureFile = "gfx/interface/goals/LUC_focus_LandtagElections.dds"
+		textureFile = "gfx/interface/goals/SUS/LUC_focus_LandtagElections.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_Landtag_shine"
-		textureFile = "gfx/interface/goals/LUC_focus_LandtagElections.dds"
+		textureFile = "gfx/interface/goals/SUS/LUC_focus_LandtagElections.dds"
 	}
+	###################################
+	# ECONOMy-ORIENTED FOCUSES        #
+	###################################
+	spriteType = {
+		name = "GFX_LUC_EconomyStateOfEconomy"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyStateOfEconomy_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyStateOfEconomy_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyStateOfEconomy_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyDevelopVaduz_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyDevelopVaduz_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyDevelopVaduz_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyDevelopVaduz_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyBroadElectrification_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyBroadElectrification_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyBroadElectrification_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyBroadElectrification_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyOpenTractorFactories_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyOpenTractorFactories_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyOpenTractorFactories_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyOpenTractorFactories_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyUrbanisation_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyUrbanisation_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyUrbanisation_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyUrbanisation_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyModernTools_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyModernTools_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyModernTools_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyModernTools_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyContinueIndustrialisation_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyContinueIndustrialisation_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyContinueIndustrialisation_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyContinueIndustrialisation_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyHydroEnergy_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyHydroEnergy_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyHydroEnergy_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyHydroEnergy_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyIron_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIron_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyIron_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIron_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyIncreaseStateControl_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIncreaseStateControl_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyIncreaseStateControl_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIncreaseStateControl_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyEmbraceDeregulation_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyEmbraceDeregulation_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyEmbraceDeregulation_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyEmbraceDeregulation_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyIntegrateBank_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIntegrateBank_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyIntegrateBank_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIntegrateBank_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyRoyalAssets_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyRoyalAssets_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyRoyalAssets_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyRoyalAssets_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomySecureForeignInvestments_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomySecureForeignInvestments_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomySecureForeignInvestments_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomySecureForeignInvestments_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyUniversity_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyUniversity_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyUniversity_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyUniversity_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_EconomyAgriculutralInvestments_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyAgriculutralInvestments_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyAgriculutralInvestments_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyAgriculutralInvestments_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyNationalInfrastructure_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyNationalInfrastructure_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyNationalInfrastructure_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyNationalInfrastructure_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyLimitedNationalisation_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyLimitedNationalisation.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyLimitedNationalisation_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyLimitedNationalisation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_EconomyFinal_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyFinal_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyFinal_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyFinal_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyLowerTaxes_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyLowerTaxes_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyLowerTaxes_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyLowerTaxes_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomySupportSmallBusinesses_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomySupportSmallBusinesses_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomySupportSmallBusinesses_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomySupportSmallBusinesses_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyCompleteDeregulation_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyCompleteDeregulation_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyCompleteDeregulation_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyCompleteDeregulation_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyReorientEconomy_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyReorientEconomy.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyReorientEconomy_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_EconomyReorientEconomy.dds"
+	}
+	
 }
