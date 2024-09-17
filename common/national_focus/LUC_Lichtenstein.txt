@@ -913,44 +913,471 @@ focus_tree = {
 		}
 	}
 
+	# focus = {
+	# 	id = LUC_EconomyReorientEconomy_Focus
+	# 	icon = GFX_LUC_EconomyReorientEconomy_Focus
+	# 	cost = 5.8
+	# 	x = -2
+	# 	y = 6
+	# 	relative_position_id = LUC_EconomyStateOfEconomy_Focus
+	# 	prerequisite = {
+	# 		focus = LUC_EconomyLimitedNationalisation_Focus
+	# 		focus = LUC_EconomyCompleteDeregulation_Focus
+	# 	}
+	# 	available = {
+			
+	# 	}
+	# 	completion_reward = { 
+	# 		LUC_DecreaseLiberalLoyalty = yes
+	# 		LUC_DecreaseConservativeLoyaltyBIG = yes
+	# 		LUC_DecreaseAgrarianLoyaltyBIG = yes
+	# 		custom_effect_tooltip = LUC_newline_tt
+	# 		custom_effect_tooltip = LUC_ModifyEconomy_tt
+	# 		custom_effect_tooltip = LUC_ModifyEconomy_MilSpeed_pos10_tt
+	# 		custom_effect_tooltip = LUC_ModifyEconomy_CivSpeed_neg10_tt
+	# 		custom_effect_tooltip = LUC_ModifyEconomy_PolPower_neg15_tt
+	# 		custom_effect_tooltip = LUC_newline_tt
+	# 		unlock_decision_tooltip = LUC_Landtag_Armement
+	# 		custom_effect_tooltip = LUC_newline_tt
+	# 		custom_effect_tooltip = LUC_EconomyReorientEconomy_Focus_tt
+	# 		hidden_effect = {
+	# 			add_to_variable = {
+	# 				LUC_BuildArmFac_Var = 0.1
+	# 			}
+	# 			subtract_from_variable = {
+	# 				LUC_BuildCivFac_Var = 0.1
+	# 			}
+	# 			subtract_from_variable = {
+	# 				LUC_PolGain_Var = 0.15
+	# 			}
+	# 		}
+	# 	}
+	# 	mutually_exclusive = {
+	# 	}
+	# }
+
+	###################################
+	# MILITARY-ORIENTED FOCUSES       #
+	###################################
+	
 	focus = {
-		id = LUC_EconomyReorientEconomy_Focus
-		icon = GFX_LUC_EconomyReorientEconomy_Focus
-		cost = 5.8
-		x = -2
-		y = 6
-		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		id = LUC_ArmyReviewMilitary_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -26
+		y = 0
 		prerequisite = {
-			focus = LUC_EconomyLimitedNationalisation_Focus
-			focus = LUC_EconomyCompleteDeregulation_Focus
+
 		}
 		available = {
 			
 		}
-		completion_reward = { 
-			LUC_DecreaseLiberalLoyalty = yes
-			LUC_DecreaseConservativeLoyaltyBIG = yes
-			LUC_DecreaseAgrarianLoyaltyBIG = yes
-			custom_effect_tooltip = LUC_newline_tt
-			custom_effect_tooltip = LUC_ModifyEconomy_tt
-			custom_effect_tooltip = LUC_ModifyEconomy_MilSpeed_pos10_tt
-			custom_effect_tooltip = LUC_ModifyEconomy_CivSpeed_neg10_tt
-			custom_effect_tooltip = LUC_ModifyEconomy_PolPower_neg15_tt
-			custom_effect_tooltip = LUC_newline_tt
-			unlock_decision_tooltip = LUC_Landtag_Armement
-			custom_effect_tooltip = LUC_newline_tt
-			custom_effect_tooltip = LUC_EconomyReorientEconomy_Focus_tt
-			hidden_effect = {
-				add_to_variable = {
-					LUC_BuildArmFac_Var = 0.1
-				}
-				subtract_from_variable = {
-					LUC_BuildCivFac_Var = 0.1
-				}
-				subtract_from_variable = {
-					LUC_PolGain_Var = 0.15
-				}
-			}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyWeaponContracts_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -4
+		y = 1
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
+		prerequisite = {
+			focus = LUC_EconomyStateOfEconomy_Focus
+		}
+		prerequisite = {
+			focus = LUC_ArmyReviewMilitary_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyBeginRearmement_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 6
+		y = 2
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_EconomyStateOfEconomy_Focus
+		}
+		prerequisite = {
+			focus = LUC_ArmyReviewMilitary_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyStudyGermanDesigns_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_ArmyBeginRearmement_Focus
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = LUC_ArmyBeginRearmement_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+			focus = LUC_ArmyStudySwissDesigns_Focus
+		}
+	}
+	focus = {
+		id = LUC_ArmyStudySwissDesigns_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_ArmyBeginRearmement_Focus
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = LUC_ArmyBeginRearmement_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+			focus = LUC_ArmyStudyGermanDesigns_Focus
+		}
+	}
+	focus = {
+		id = LUC_ArmyVaduzArmory_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_ArmyBeginRearmement_Focus
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = LUC_ArmyStudyGermanDesigns_Focus
+			focus = LUC_ArmyStudySwissDesigns_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+	focus = {
+		id = LUC_ArmyStudyPanzers_Focus
+		icon = GFX_goal_unknown
+		cost = 1
+		relative_position_id = LUC_ArmyBeginRearmement_Focus
+		x = -1
+		y = 3
+		prerequisite = {
+			focus = LUC_ArmyStudyGermanDesigns_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+	focus = {
+		id = LUC_ArmySupportDivisions_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -2
+		y = -1
+		relative_position_id = LUC_ArmyBeginRearmement_Focus
+		prerequisite = {
+			focus = LUC_ArmyReviewMilitary_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyEngineerDivisions_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = LUC_ArmyBeginRearmement_Focus
+		prerequisite = {
+			focus = LUC_ArmyBeginRearmement_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyEstablishOfficerCorps_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyReviewMilitary_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyDefenceInDepth_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -2
+		y = 2
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyEstablishOfficerCorps_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+			focus = LUC_ArmyOnTheOffence_Focus
+		}
+	}
+	focus = {
+		id = LUC_ArmyOnTheOffence_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 2
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyEstablishOfficerCorps_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+			focus = LUC_ArmyDefenceInDepth_Focus
+		}
+	}
+	focus = {
+		id = LUC_ExpandConscription_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 3
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyOnTheOffence_Focus
+			focus = LUC_ArmyDefenceInDepth_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	
+	focus = {
+		id = LUC_ArmyNewManuals_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -1
+		y = 5
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyOnTheOffence_Focus
+			focus = LUC_ArmyDefenceInDepth_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmySwissExercises_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -1
+		y = 6
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyNewManuals_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmySpecialMountaineerForces_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 4
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyOnTheOffence_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyMountainEngineering_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 3
+		y = 5
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmySpecialMountaineerForces_Focus
+		}
+		prerequisite = {
+			focus = LUC_ArmyEngineerDivisions_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyFortressVaduz_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -3
+		y = 4
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyRaiseMilitias_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyRaiseMilitias_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -3
+		y = 3
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyDefenceInDepth_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	###################################
+	# INTELLIEGENCE-ORIENTED FOCUSES  #
+	###################################
+	focus = {
+		id = LUC_IntelligenceService_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -29
+		y = 0
+		prerequisite = {
+
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_IntelligenceAuxiliary_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = LUC_IntelligenceService_Focus
+		prerequisite = {
+			focus = LUC_IntelligenceService_Focus
+		}
+		prerequisite = {
+			focus = LUC_ArmyReviewMilitary_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
 		}
 		mutually_exclusive = {
 		}
