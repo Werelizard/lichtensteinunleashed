@@ -199,5 +199,226 @@ spriteTypes = {
 		name = "GFX_LUC_EconomyReorientEconomy_Focus_shine"
 		textureFile = "gfx/interface/goals/SUS/LUC_EconomyReorientEconomy.dds"
 	}
+	###################################
+	# INTELLIEGENCE-ORIENTED FOCUSES  #
+	###################################
+	spriteType = {
+		name = "GFX_LUC_ArmyReviewMilitary_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyReviewMilitary_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyReviewMilitary_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyReviewMilitary_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyWeaponContracts_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWeaponContracts_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyWeaponContracts_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWeaponContracts_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyBeginRearmement_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyBeginRearmement_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyBeginRearmement_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyBeginRearmement_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudyGermanDesigns_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudyGermanDesigns_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudyGermanDesigns_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudyGermanDesigns_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudySwissDesigns_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudySwissDesigns_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudySwissDesigns_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudySwissDesigns_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyVaduzArmory_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyVaduzArmory_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyVaduzArmory_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyVaduzArmory_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyMilitaryEconomyFocus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyMilitaryEconomyFocus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyMilitaryEconomyFocus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyMilitaryEconomyFocus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudyPanzers_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudyPanzers_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudyPanzers_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudyPanzers_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyEngineerDivisions_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyEngineerDivisions_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyEngineerDivisions_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyEngineerDivisions_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStockpiles_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStockpiles_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStockpiles_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStockpiles_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmySupportDivisions_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmySupportDivisions_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmySupportDivisions_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmySupportDivisions_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyModernRifles_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyModernRifles_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyModernRifles_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyModernRifles_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyWeaponKrupp_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWeaponKrupp_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyWeaponKrupp_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWeaponKrupp_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyEstablishOfficerCorps_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyEstablishOfficerCorps_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyEstablishOfficerCorps_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyEstablishOfficerCorps_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyDefenceInDepth_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyDefenceInDepth_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyDefenceInDepth_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyDefenceInDepth_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyOnTheOffence_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyOnTheOffence_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyOnTheOffence_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyOnTheOffence_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_ArmyCivilianPreparations_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyCivilianPreparations_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyCivilianPreparations_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyCivilianPreparations_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyWomensCorps_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWomensCorps_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyWomensCorps_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWomensCorps_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_IntelligenceService_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_IntelligenceService_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_IntelligenceService_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_IntelligenceService_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_IntelligenceAuxiliary_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_IntelligenceAuxiliary_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_IntelligenceAuxiliary_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_IntelligenceAuxiliary_Focus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_LUC_ExpandConscription_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ExpandConscription_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExpandConscription_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ExpandConscription_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyNewManuals_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyNewManuals_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyNewManuals_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyNewManuals_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmySpecialMountaineerForces_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmySpecialMountaineerForces_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmySpecialMountaineerForces_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmySpecialMountaineerForces_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyRaiseMilitias_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyRaiseMilitias_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyRaiseMilitias_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyRaiseMilitias_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmySwissExercises_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmySwissExercises_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmySwissExercises_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmySwissExercises_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyFortressVaduz_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyFortressVaduz_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyFortressVaduz_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyFortressVaduz_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyMountainEngineering_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyMountainEngineering_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyMountainEngineering_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyMountainEngineering_Focus.dds"
+	}
 	
 }

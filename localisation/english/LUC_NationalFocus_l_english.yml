@@ -88,11 +88,14 @@
  LUC_EconomyFinal_Focus_optionLaissezfaire_tt:0 "\n§LIf we have completed the §!§Y$LUC_EconomyEmbraceDeregulation_Focus$§!§L focus, we would get:§!\n\n"
 
  # Liechtensteiner Army
- LUC_ArmyReviewMilitary_Focus:0 "A Principality Without Arms"
+ LUC_ArmyReviewMilitary_Focus:0 "Re-Establish the Liechtensteiner Army"
  LUC_ArmyReviewMilitary_Focus_desc:0 ""
 
- LUC_ArmyWeaponContracts_Focus:0 "Hire Swiss Contractors"
+ LUC_ArmyWeaponContracts_Focus:0 "Offer Contracts to Swiss Gunsmiths"
  LUC_ArmyWeaponContracts_Focus_desc:0 ""
+
+ LUC_ArmyWeaponKrupp_Focus:0 "Meet the Steel Barons"
+ LUC_ArmyWeaponKrupp_Focus_desc:0 ""
 
  LUC_ArmyBeginRearmement_Focus:0 "Establish a Military Budget"
  LUC_ArmyBeginRearmement_Focus_desc:0 ""
@@ -100,7 +103,7 @@
  LUC_ArmyStudyGermanDesigns_Focus:0 "Study German Designs"
  LUC_ArmyStudyGermanDesigns_Focus_desc:0 ""
 
- LUC_ArmyStudySwissDesigns_Focus:0 "Study Swiss Designs"
+ LUC_ArmyStudySwissDesigns_Focus:0 "Adopt Swiss Equipment"
  LUC_ArmyStudySwissDesigns_Focus_desc:0 ""
 
  LUC_ArmyVaduzArmory_Focus:0 "The Vaduz Arsenal"
@@ -112,31 +115,37 @@
  LUC_ArmySupportDivisions_Focus:0 "Victory through Firepower"
  LUC_ArmySupportDivisions_Focus_desc:0 ""
 
+ LUC_ArmyModernRifles_Focus:0 "The Queen of Battle"
+ LUC_ArmyModernRifles_Focus_desc:0 ""
+
  LUC_ArmyEngineerDivisions_Focus:0 "A Dedicated Engineer Corps"
  LUC_ArmyEngineerDivisions_Focus_desc:0 ""
 
- LUC_ArmyEstablishOfficerCorps_Focus:0 "Review Military Training"
+ LUC_ArmyEstablishOfficerCorps_Focus:0 "The Question of the Commander-in-Chief"
  LUC_ArmyEstablishOfficerCorps_Focus_desc:0 ""
 
- LUC_ArmyDefenceInDepth_Focus:0 "Stand by our Defensive Mentality"
+ LUC_ArmyStockpiles_Focus:0 "The Oil Question"
+ LUC_ArmyStockpiles_Focus_desc:0 ""
+
+ LUC_ArmyDefenceInDepth_Focus:0 "A Defensive Mentality"
  LUC_ArmyDefenceInDepth_Focus_desc:0 ""
 
- LUC_ArmyOnTheOffence_Focus:0 "A Proper Liechtensteiner Army"
+ LUC_ArmyOnTheOffence_Focus:0 "Alpine Patrols"
  LUC_ArmyOnTheOffence_Focus_desc:0 ""
 
  LUC_ExpandConscription_Focus:0 "Intensify Conscription Efforts"
  LUC_ExpandConscription_Focus_desc:0 ""
 
- LUC_ArmyNewManuals_Focus:0 "Adopt to Modern Tactics"
+ LUC_ArmyNewManuals_Focus:0 "[ROOT.GetAdjective] Planning School"
  LUC_ArmyNewManuals_Focus_desc:0 ""
 
  LUC_ArmySwissExercises_Focus:0 "Joint Exercises with [SWI.GetName]"
  LUC_ArmySwissExercises_Focus_desc:0 ""
  
- LUC_ArmySpecialMountaineerForces_Focus:0 "Mountain Warfare"
+ LUC_ArmySpecialMountaineerForces_Focus:0 "Mountain Warfare Specialisation"
  LUC_ArmySpecialMountaineerForces_Focus_desc:0 ""
 
- LUC_ArmyMountainEngineering_Focus:0 "Shatter the Mountaintops"
+ LUC_ArmyMountainEngineering_Focus:0 "Masters of the Glaciers"
  LUC_ArmyMountainEngineering_Focus_desc:0 ""
 
  LUC_ArmyFortressVaduz_Focus:0 "Fortress Vaduz"
@@ -145,11 +154,20 @@
  LUC_ArmyRaiseMilitias_Focus:0 "An Army of Volunteers"
  LUC_ArmyRaiseMilitias_Focus_desc:0 ""
 
- LUC_IntelligenceService_Focus:0 "Expand the State-Police"
+ LUC_IntelligenceService_Focus:0 "Landespolizei des Fürstentums"
  LUC_IntelligenceService_Focus_desc:0 ""
 
- LUC_IntelligenceAuxiliary_Focus:0 "Create the Auxiliary Corps"
+ LUC_IntelligenceAuxiliary_Focus:0 "Create the Security Corps"
  LUC_IntelligenceAuxiliary_Focus_desc:0 ""
+
+ LUC_ArmyCivilianPreparations_Focus:0 "Civilian Preparations"
+ LUC_ArmyCivilianPreparations_Focus_desc:0 ""
+
+ LUC_ArmyWomensCorps_Focus:0 "Womens' Auxiliary Divisions"
+ LUC_ArmyWomensCorps_Focus_desc:0 ""
+
+ LUC_ArmyMilitaryEconomyFocus:0 "Economic Mobilisation"
+ LUC_ArmyMilitaryEconomyFocus_desc:0 ""
 
  # TOOLTIPS FOR THE DYNAMIC MODIFIERS
  LUC_ModifyEconomy_tt:0 "Modifiy §Y$LUC_Liechtensteiner_Economy_idea$§! by"
