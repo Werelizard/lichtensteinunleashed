@@ -200,7 +200,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/SUS/LUC_EconomyReorientEconomy.dds"
 	}
 	###################################
-	# INTELLIEGENCE-ORIENTED FOCUSES  #
+	# ARMY-ORIENTED FOCUSES           #
 	###################################
 	spriteType = {
 		name = "GFX_LUC_ArmyReviewMilitary_Focus"
@@ -419,6 +419,65 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_LUC_ArmyMountainEngineering_Focus_shine"
 		textureFile = "gfx/interface/goals/SUS/LUC_ArmyMountainEngineering_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyModernWarfare_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyModernWarfare_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyModernWarfare_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_ArmyModernWarfare_Focus.dds"
+	}
+	###################################
+	# AIRFORCE-ORIENTED FOCUSES       #
+	###################################
+	spriteType = {
+		name = "GFX_LUC_AirforceMountainFlights_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforceMountainFlights_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforceMountainFlights_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforceMountainFlights_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforceAirfieldsConstruction_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforceAirfieldsConstruction_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforceAirfieldsConstruction_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforceAirfieldsConstruction_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforcePurchaseForeignDesigns_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforcePurchaseForeignDesigns_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforcePurchaseForeignDesigns_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforcePurchaseForeignDesigns_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforceBomberFocus_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforceBomberFocus_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforceBomberFocus_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforceBomberFocus_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforceFighterPlanes_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforceFighterPlanes_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforceFighterPlanes_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforceFighterPlanes_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforceCombinedArms_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforceCombinedArms_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_AirforceCombinedArms_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_AirforceCombinedArms_Focus.dds"
 	}
 	
 }

@@ -348,7 +348,7 @@ focus_tree = {
 		id = LUC_EconomyOpenTractorFactories_Focus
 		icon = GFX_LUC_EconomyOpenTractorFactories_Focus
 		cost = 5
-		x = 9
+		x = 8
 		y = 3
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
@@ -964,8 +964,9 @@ focus_tree = {
 		id = LUC_ArmyReviewMilitary_Focus
 		icon = GFX_LUC_ArmyReviewMilitary_Focus
 		cost = 5
-		x = -26
+		x = -16
 		y = 0
+		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 
 		}
@@ -1026,7 +1027,7 @@ focus_tree = {
 		id = LUC_ArmyBeginRearmement_Focus
 		icon = GFX_LUC_ArmyBeginRearmement_Focus
 		cost = 5
-		x = 6
+		x = 10
 		y = 2
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
@@ -1153,46 +1154,8 @@ focus_tree = {
 		id = LUC_ArmySupportDivisions_Focus
 		icon = GFX_LUC_ArmySupportDivisions_Focus
 		cost = 5
-		x = -1
-		y = -1
-		relative_position_id = LUC_ArmyBeginRearmement_Focus
-		prerequisite = {
-			focus = LUC_ArmyReviewMilitary_Focus
-		}
-		available = {
-			
-		}
-		completion_reward = {  
-			
-		}
-		mutually_exclusive = {
-		}
-	}
-	focus = {
-		id = LUC_ArmyModernRifles_Focus
-		icon = GFX_LUC_ArmyModernRifles_Focus
-		cost = 5
 		x = -2
-		y = 0
-		relative_position_id = LUC_ArmyBeginRearmement_Focus
-		prerequisite = {
-			focus = LUC_ArmyReviewMilitary_Focus
-		}
-		available = {
-			
-		}
-		completion_reward = {  
-			
-		}
-		mutually_exclusive = {
-		}
-	}
-	focus = {
-		id = LUC_ArmyEngineerDivisions_Focus
-		icon = GFX_LUC_ArmyEngineerDivisions_Focus
-		cost = 5
-		x = -3
-		y = 1
+		y = 2
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		prerequisite = {
 			focus = LUC_ArmyBeginRearmement_Focus
@@ -1207,10 +1170,30 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LUC_ArmyEstablishOfficerCorps_Focus
-		icon = GFX_LUC_ArmyEstablishOfficerCorps_Focus
+		id = LUC_ArmyModernWarfare_Focus
+		icon = GFX_LUC_ArmyModernWarfare_Focus
 		cost = 5
-		x = 0
+		x = -2
+		y = 4
+		relative_position_id = LUC_ArmyBeginRearmement_Focus
+		prerequisite = {
+			focus = LUC_ArmySupportDivisions_Focus
+			focus = LUC_ArmyStudyPanzers_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyModernRifles_Focus
+		icon = GFX_LUC_ArmyModernRifles_Focus
+		cost = 5
+		x = 3
 		y = 1
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
@@ -1229,7 +1212,48 @@ focus_tree = {
 		id = LUC_ArmyStockpiles_Focus
 		icon = GFX_LUC_ArmyStockpiles_Focus
 		cost = 5
+		x = 8
+		y = 1
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyReviewMilitary_Focus
+		}
+		prerequisite = {
+			focus = LUC_EconomyStateOfEconomy_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyEngineerDivisions_Focus
+		icon = GFX_LUC_ArmyEngineerDivisions_Focus
+		cost = 5
 		x = 3
+		y = 3
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyModernRifles_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_ArmyEstablishOfficerCorps_Focus
+		icon = GFX_LUC_ArmyEstablishOfficerCorps_Focus
+		cost = 5
+		x = 0
 		y = 1
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
@@ -1329,14 +1353,11 @@ focus_tree = {
 		id = LUC_ArmySwissExercises_Focus
 		icon = GFX_LUC_ArmySwissExercises_Focus
 		cost = 5
-		x = 0
+		x = -1
 		y = 5
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyNewManuals_Focus
-		}
-		prerequisite = {
-			focus = LUC_ArmySpecialMountaineerForces_Focus
 		}
 		available = {
 			
@@ -1475,8 +1496,9 @@ focus_tree = {
 		id = LUC_IntelligenceService_Focus
 		icon = GFX_LUC_IntelligenceService_Focus
 		cost = 5
-		x = -31
+		x = -5
 		y = 0
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 
 		}
@@ -1498,6 +1520,135 @@ focus_tree = {
 		relative_position_id = LUC_IntelligenceService_Focus
 		prerequisite = {
 			focus = LUC_IntelligenceService_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	###################################
+	# AIRFORCE-ORIENTED FOCUSES       #
+	###################################
+	focus = {
+		id = LUC_AirforceMountainFlights_Focus
+		icon = GFX_LUC_AirforceMountainFlights_Focus
+		cost = 5
+		x = 6
+		y = 1
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_ArmyReviewMilitary_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_AirforcePurchaseForeignDesigns_Focus
+		icon = GFX_LUC_AirforcePurchaseForeignDesigns_Focus
+		cost = 5
+		x = 4
+		y = 2
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_AirforceMountainFlights_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_AirforceAirfieldsConstruction_Focus
+		icon = GFX_LUC_AirforceAirfieldsConstruction_Focus
+		cost = 5
+		x = 6
+		y = 2
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_AirforceMountainFlights_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_AirforceBomberFocus_Focus
+		icon = GFX_LUC_AirforceBomberFocus_Focus
+		cost = 5
+		x = 7
+		y = 3
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_AirforceAirfieldsConstruction_Focus
+		}
+		prerequisite = {
+			focus = LUC_ArmyBeginRearmement_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+			focus = LUC_AirforceFighterPlanes_Focus
+		}
+	}
+	focus = {
+		id = LUC_AirforceFighterPlanes_Focus
+		icon = GFX_LUC_AirforceFighterPlanes_Focus
+		cost = 5
+		x = 5
+		y = 3
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_AirforceAirfieldsConstruction_Focus
+		}
+		prerequisite = {
+			focus = LUC_ArmyBeginRearmement_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+			focus = LUC_AirforceBomberFocus_Focus
+		}
+	}
+	focus = {
+		id = LUC_AirforceCombinedArms_Focus
+		icon = GFX_LUC_AirforceCombinedArms_Focus
+		cost = 5
+		x = 6
+		y = 4
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			focus = LUC_AirforceBomberFocus_Focus
+			focus = LUC_AirforceFighterPlanes_Focus
+		}
+		prerequisite = {
+			focus = LUC_ArmyEngineerDivisions_Focus
 		}
 		available = {
 			

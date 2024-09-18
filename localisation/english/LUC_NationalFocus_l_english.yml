@@ -169,6 +169,31 @@
  LUC_ArmyMilitaryEconomyFocus:0 "Economic Mobilisation"
  LUC_ArmyMilitaryEconomyFocus_desc:0 ""
 
+ LUC_ArmyModernWarfare_Focus:0 "Army Motorisation"
+ LUC_ArmyModernWarfare_Focus_desc:0 ""
+
+  ###################################
+	# AIRFORCE-ORIENTED FOCUSES       #
+	###################################
+
+ LUC_AirforceMountainFlights_Focus:0 "Transalpine Flights"
+ LUC_AirforceMountainFlights_Focus_desc:0 ""
+
+ LUC_AirforcePurchaseForeignDesigns_Focus:0 "Purchase Foreign Designs"
+ LUC_AirforcePurchaseForeignDesigns_Focus_desc:0 ""
+
+ LUC_AirforceAirfieldsConstruction_Focus:0 "The [ROOT.GetAdjective] Air Corps"
+ LUC_AirforceAirfieldsConstruction_Focus_desc:0 ""
+
+ LUC_AirforceBomberFocus_Focus:0 "Air Support Doctrine"
+ LUC_AirforceBomberFocus_Focus_desc:0 ""
+
+ LUC_AirforceFighterPlanes_Focus:0 "Air Superiority Doctrine"
+ LUC_AirforceFighterPlanes_Focus_desc:0 ""
+
+ LUC_AirforceCombinedArms_Focus:0 "Air and Land Coordination"
+ LUC_AirforceCombinedArms_Focus_desc:0 ""
+
  # TOOLTIPS FOR THE DYNAMIC MODIFIERS
  LUC_ModifyEconomy_tt:0 "Modifiy §Y$LUC_Liechtensteiner_Economy_idea$§! by"
  LUC_ModifyEconomy_ConsumerGoods_neg5_tt:0 "Consumer Goods Factories factor: §Y-5.0%§!"
