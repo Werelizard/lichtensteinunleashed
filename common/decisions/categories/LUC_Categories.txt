@@ -28,9 +28,20 @@ LUC_Government_LandtagSupport_cat = {
 	priority = 4
 }
 
-LUC_LiechtensteinEco_cat = {
+LUC_Bank_Cat = {
+	icon = GFX_decision_category_gre_investment_decisions
+	visible_when_empty = yes
 	allowed = {
-		original_tag = SUS
+		always = yes
+	}
+	visible = {
+		has_idea = LUC_LiechtensteinBankIntegrated
 	}
 	priority = 2
+}
+
+LUC_Bank_ForeignInvestors_cat_DUMMY = {
+	allowed = {
+		always = no
+	}
 }

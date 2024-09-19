@@ -22,7 +22,6 @@
 
  LUC_EconomySecureForeignInvestments_Focus:0 "Attract Foreign Investments"
  LUC_EconomySecureForeignInvestments_Focus_desc:0 "Liechtenstein is a neutral nation, like its neighbour Switzerland. By following its example, our government would strive to secure economical investments and ties with major European banks - irrespectively of their political dispositions."
- LUC_EconomySecureForeignInvestments_Focus_tt:0 "For every country in §YCentral Europe§! and §YWestern Europe§! (@GER §Y[GER.GetNameDef]§!, @SWI §Y[SWI.GetNameDef]§!, @AUS §Y[AUS.GetNameDef]§!, @FRA§Y[FRA.GetNameDef]§!, @ENG §Y[ENG.GetNameDef]§!, @CZE §Y[CZE.GetNameDef]§!, @BEL §Y[BEL.GetNameDef]§! and @HOL §Y[HOL.GetNameDef]§!) with an opinion of at least §G85§! of us we will gain one §YOff-Map Civilian Factory§!."
  LUC_LiechtensteinBankIntegrated_warning_tt:0 "§RThis focus will be automatically bypassed without any rewards if we no longer benefits from the effects of the §!§Y$LUC_LiechtensteinBankIntegrated$§!§R national spirit!§!"
 
  LUC_EconomyContinueIndustrialisation_Focus:0 "Industrial Expansion"
@@ -34,7 +33,7 @@
  LUC_EconomyBroadElectrification_Focus:0 "Broaden Electrification Efforts"
  LUC_EconomyBroadElectrification_Focus_desc:0 "Our cities, villages and towns darken at night when they should be lit as the night sky above. Only through the broad electrification can this goal be achieved. Only by ensuring that every house, every factory and every government building has access to electricity can we become a modern nation."
 
- LUC_EconomyOpenTractorFactories_Focus:0 "Open the 'Tractor Factories'"
+ LUC_EconomyOpenTractorFactories_Focus:0 "Modernised Agriculture"
  LUC_EconomyOpenTractorFactories_Focus_desc:0 "Tractors are important not just to our farmers, but to our economy as a whole; a burgeoning tractor industry will open further trade avenues, as well as continue developing the mechanical, automotive and industrial sectors of our economy."
 
  LUC_EconomyUrbanisation_Focus:0 "Urbanise the Villages"
@@ -185,10 +184,10 @@
  LUC_AirforceAirfieldsConstruction_Focus:0 "The [ROOT.GetAdjective] Air Corps"
  LUC_AirforceAirfieldsConstruction_Focus_desc:0 ""
 
- LUC_AirforceBomberFocus_Focus:0 "Air Support Doctrine"
+ LUC_AirforceBomberFocus_Focus:0 "Bomber Prioritisation"
  LUC_AirforceBomberFocus_Focus_desc:0 ""
 
- LUC_AirforceFighterPlanes_Focus:0 "Air Superiority Doctrine"
+ LUC_AirforceFighterPlanes_Focus:0 "Fighter Prioritisation"
  LUC_AirforceFighterPlanes_Focus_desc:0 ""
 
  LUC_AirforceCombinedArms_Focus:0 "Air and Land Coordination"
@@ -225,3 +224,4 @@
  LUC_ModifyEconomy_Research_pos5_tt:0 "Research Speed: §G+5.0%§!"
  LUC_ModifyEconomy_PolPower_neg15_tt:0 "Political Power Gain: §R-15.0%§!"
  LUC_ModifyEconomy_MaxBuildSlotsFactor_pos10_tt:0 "Max Factories in a State: §G+10.0%§!"
+ LUC_ModifyEconomy_CivSpeed_pos5_tt:0 "§YCivilian Factory§! Construction Speed: §G+5.0%§!"

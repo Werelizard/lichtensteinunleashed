@@ -1,54 +1,125 @@
 add_namespace = LUC_FocusTree
 
 #########################
-# DEMOCRATIC/AUTHORITARIAN EVENTS
+# ECONOMIC BRANCH EVENTS
 #########################
 
-# Vaterland Union Scandal when investigating military movement
-
-# Refugees
-
-#########################
-# DEMOCRATIC TREE EVENTS
-#########################
-
-# Fate of the Coalition 
-
-country_event = {
-	id = LUC_FocusTree.200
-	title = LUC_FocusTree.200.title
-	desc = LUC_FocusTree.200.desc
+country_event = { #Event for the receiving country
+	id = LUC_FocusTree.101
+	title = LUC_FocusTree.101.title
+	desc = LUC_FocusTree.101.desc
 
 	is_triggered_only = yes
 
-	picture = GFX_LUC_report_josefHoop_event
-
-	timeout_days = 7
-
-	option = { # Hoop succeeds in keeping a coalition!
-		name = LUC_FocusTree.200.a
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.05
-		}
-
-		custom_effect_tooltip = LUC_unlockJosefHoopFocus_tt
+	immediate = {
+		
 	}
 
-	option = { # Hoop fails - Marxer Comes to Power
-		name = LUC_FocusTree.200.b
+	picture = GFX_LUC_report_diplomission_event
 
-		promote_character = LUC_Ludwig_Marxer
-		add_political_power = -50
-		add_popularity = {
-			ideology = democratic
-			popularity = -0.05
+	option = { #Yes, send them factories
+		name = LUC_FocusTree.101.a
+		add_political_power = -25
+		add_ideas = LUC_Investments_idea
+		FROM = {
+			country_event = {
+				id = LUC_FocusTree.102
+				days = 5
+			}
+		}
+		
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM
+					value > 69
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM
+					value > 89
+				}
+			}
+		}
+	}
+
+	option = { #No
+		name = LUC_FocusTree.101.b
+		FROM = {
+			country_event = {
+				id = LUC_FocusTree.103
+				days = 3
+			}
 		}
 
-		custom_effect_tooltip = LUC_unlockLudwigMarxerFocus_tt
-		custom_effect_tooltip = available_political_advisor
-		show_ideas_tooltip = LUC_JosefHoop
-		custom_effect_tooltip = LUC_Notavailable_political_advisor
-		show_ideas_tooltip = LUC_Ludwig_Marxer
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+			modifier = {
+				factor = 4
+				surrender_progress < 0.1
+			}
+			modifier = {
+				factor = 1000
+				OR = {
+					is_justifying_wargoal_against = FROM
+					has_wargoal_against = FROM
+					any_country = {
+						has_war_with = ROOT
+						is_in_faction_with = FROM
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Event for Leichtenstein - success
+	id = LUC_FocusTree.102
+	title = LUC_FocusTree.102.title
+	desc = LUC_FocusTree.102.desc
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	picture = GFX_LUC_report_diplomission_event
+
+	option = { #Great!
+		name = LUC_FocusTree.102.a
+		add_stability = 0.01
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+	}
+}
+
+country_event = { #Event for Leichtenstein - Failure
+	id = LUC_FocusTree.103
+	title = LUC_FocusTree.103.title
+	desc = LUC_FocusTree.103.desc
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	picture = GFX_LUC_report_diplomission_event
+
+	option = { #Damnit
+		name = LUC_FocusTree.103.a
+		add_stability = -0.025
+		LUC_LandtagDecreaseSupport_5 = yes
 	}
 }

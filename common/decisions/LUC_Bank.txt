@@ -1,0 +1,202 @@
+LUC_Bank_Cat = {
+	LUC_Bank_RenewFinancialControls_mission = {
+		icon = GFX_decision_generic_fundraising
+		priority = 100
+		is_good = no
+		days_mission_timeout = 60
+		selectable_mission = no
+
+		visible = {
+
+		}
+
+		available = {
+		}
+
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			remove_ideas = LUC_LiechtensteinBankIntegrated
+			custom_effect_tooltip = LUC_Bank_Cat_notAvailable_tt
+		}
+	}
+	LUC_Bank_RenewFinancialControls_decision = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		priority = 10
+		cost = LUC_FinancianControls_cost
+		days_remove = 20
+		visible = {
+			always = yes			
+		}
+		available = {
+			has_idea = LUC_LiechtensteinBankIntegrated
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = LUC_Bank_RenewFinancialControls_decision_tt
+			add_days_mission_timeout = {
+				mission = LUC_Bank_RenewFinancialControls_mission
+				days = 60
+			}
+			hidden_effect = {
+				add_to_variable = {
+					LUC_FinancianControls_cost = 15
+				}
+			}
+		}
+	}
+	LUC_Bank_ForeignInvestors_decision = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		priority = 8
+		cost = 20
+
+		fire_only_once = yes
+
+		targets = { SWI AUS GER HOL CZE FRA SYR BEL ENG }
+
+		visible = {
+			always = yes
+		}
+
+		available = {
+			has_idea = LUC_LiechtensteinBankIntegrated
+			has_completed_focus = LUC_EconomySecureForeignInvestments_Focus
+			NOT = {
+				has_war_with = FROM
+			}
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > 49
+				}
+				NOT = {
+					has_government = communism
+				}
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				country_event =  LUC_FocusTree.101
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ifTheyAccept_tt
+			effect_tooltip = {
+				add_stability = 0.01
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ifTheyRefuse_tt
+			effect_tooltip = {
+				add_stability = -0.025
+				LUC_LandtagDecreaseSupport_5 = yes
+			}
+			custom_effect_tooltip = LUC_newline_tt
+		}
+		
+	}
+	
+	# Decisions to repatriate Austrian / Bohemian Assets
+	LUC_LiechtensteinEco_austrianAssets = {
+		icon = GFX_decision_eng_ally_imperialist_coup
+		fire_only_once = yes
+		days_remove = 90
+
+		available = {
+			has_idea = LUC_LiechtensteinBankIntegrated
+			has_completed_focus = LUC_EconomyRoyalAssets_Focus
+			custom_trigger_tooltip = {
+				tooltip = LUC_LiechtensteinEco_austrianAssets_tt
+				any_country = {
+					owns_state = 152
+					has_opinion = {
+						target = ROOT
+						value > 64
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = LUC_LiechtensteinEco_austrianAssets_peace_tt
+				any_country = {
+					owns_state = 152
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				has_government = communism
+			}
+			NOT = {
+				owns_state = 152
+			}
+		}
+		complete_effect = {
+			add_political_power = 30
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	LUC_LiechtensteinEco_czechAssets = {
+		icon = GFX_decision_eng_ally_imperialist_coup
+		fire_only_once = yes
+		days_remove = 120
+
+		available = {
+			has_idea = LUC_LiechtensteinBankIntegrated
+			has_completed_focus = LUC_EconomyRoyalAssets_Focus
+			custom_trigger_tooltip = {
+				tooltip = LUC_LiechtensteinEco_czechAssets_tt
+				any_country = {
+					owns_state = 9
+					has_opinion = {
+						target = ROOT
+						value > 64
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = LUC_LiechtensteinEco_czechAssets_peace_tt
+				any_country = {
+					owns_state = 9
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				has_government = communism
+			}
+			NOT = {
+				owns_state = 9
+			}
+		}
+		remove_effect = {
+			add_political_power = 30
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+}

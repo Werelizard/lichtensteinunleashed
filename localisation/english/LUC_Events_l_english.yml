@@ -1,6 +1,8 @@
 ﻿l_english:
  # Shared tooltips
  LUC_Notavailable_political_advisor:0 "§RRemoves§! as §YPolitical Advisor§!:\n"
+ LUC_ifTheyAccept_tt:0 "If they §Gaccept§!:\n"
+ LUC_ifTheyRefuse_tt:0 "If they §Rrefuse§!:\n"
 
  #Flavour events
  LUC_flavour.1.title:0 "Liechtenstein in 1936"
@@ -8,22 +10,19 @@
  LUC_flavour.1.a:0 "All quiet by the Rhine...for now"
  LUC_flavour.1_tt:0 "Enables the £GFX_LUC_PolSupport  §Y$confidence_header$§! mechanic."
  
- # Election Events
- election.1000.title:0 "The Landtag Elections of [GetYear]"
- election.1000.desc:0 ""
- election.1000.a:0 "$LUC_JosefHoop$ and the [ROOT.GetDemocraticParty] win a narrow victory!"
- election.1000.b:0 "In a suprise upset, $LUC_OttoSchaedler$ and the [ROOT.GetNeutralParty] ticket secures a mandate!"
- election.1000.c:0 "No party secures a majority."
- LUC_unlockLiberalMandate_tt:0 "Unlocks the \"§Y$LUC_LiberalVictory$§!\" focus."
- LUC_unlockConservativeMandate_tt:0 "Unlocks the \"§Y$LUC_ConservativeVictory$§!\" focus."
+ # EConomy Event
+ LUC_FocusTree.101.title:0 "Investment Opportunities in [FROM.GetName]"
+ LUC_FocusTree.101.desc:0 ""
+ LUC_FocusTree.101.a:0 "Agree to the investment portfolio"
+ LUC_FocusTree.101.b:0 "Who cares about [FROM.GetName]?"
 
- # Democratic Focus Related Events
- LUC_FocusTree.200.title:0 "A Meeting at Altenbach Strasse"
- LUC_FocusTree.200.desc:0 ""
- LUC_FocusTree.200.a:0 "Josef Hoop retains the party's government"
- LUC_FocusTree.200.b:0 "Marxer secures party leadership"
- LUC_unlockJosefHoopFocus_tt:0 "Unlocks the \"§Y$LUC_ACoalitionGovernment$§!\" focus"
- LUC_unlockLudwigMarxerFocus_tt:0 "Unlocks the v§Y$LUC_ARealisticGovernment$§!\" focus"
+ LUC_FocusTree.102.title:0 "[FROM.GetName] invests in [ROOT.GetNameDef]!"
+ LUC_FocusTree.102.desc:0 ""
+ LUC_FocusTree.102.a:0 "Splendid!"
+
+ LUC_FocusTree.103.title:0 "[FROM.GetName] ignored us"
+ LUC_FocusTree.103.desc:0 ""
+  LUC_FocusTree.103.a:0 "Damnit..."
  
  #Military-Movement
  LUC_Fascists.1.title:0 "Fascist Sympathisers amongst the Government?"
