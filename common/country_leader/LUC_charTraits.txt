@@ -1,208 +1,241 @@
 leader_traits = {
+	#################
+	# PRINCE TRAITS #
+	#################
+	LUC_LeaderTrait_PrinceOfLiechtenstein = {
+		consumer_goods_factor = 0.1
+		political_power_factor = -0.1
+		stability_factor = 0.1
+		recruitable_population_factor = 0.1
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+	}
 
 	#################
-	# LEADER/ADVISOR TRAITS #
+	# LEADER TRAITS #
 	#################
 
-	#Traits for Hoop
-	LUC_Neutrality_Advocate = {
-		war_support_factor = -0.15
-		improve_relations_maintain_cost_factor = -0.2
-		ai_get_ally_desire_factor = -100
+	# Josef Hoop
+
+	LUC_LeaderTrait_StalwartPacifist = {
+		war_support_factor = -0.2
+		democratic_drift = 0.1
 		ai_join_ally_desire_factor = -100
 	}
-	LUC_Silver_Tongued_Pragmatist = {
-		political_power_cost = -0.1
-		party_popularity_stability_factor = 0.15
+
+	# Otto Schaedler
+
+	LUC_LeaderTrait_Germanophile = {
+		fascism_acceptance = 25
+		neutrality_acceptance = 25
 	}
-	LUC_Pragmatic_Pacifist = {
-		democratic_drift = 0.1
-		war_support_factor = -0.05
-		improve_relations_maintain_cost_factor = -0.5
-	}
-	#Traits for Otto Schaedler
-	LUC_Germanophile = {
-		fascism_acceptance = 10
-		stability_factor = -0.05
+
+	# Alfons Goop
+
+	LUC_LeaderTrait_NationalistHawk = {
+		opinion_gain_monthly_factor = -0.2
+		opinion_gain_monthly_same_ideology_factor = 0.2
 		war_support_factor = 0.05
 	}
-	LUC_SavvyPolitician = {
-		political_power_factor = 0.1
-		political_advisor_cost_factor = -0.25
-		neutrality_drift = 0.02
+
+	# Rudolf Shaedler
+
+	LUC_LeaderTrait_AntiDemocrat = {
+		democratic_drift = -0.1
+		communism_drift = -0.1
 	}
-	# Traits for Rudolf
-	LUC_Fervent_Nationalist = {
-		war_support_factor = 0.05
-		army_core_defence_factor = 0.1
-		political_power_gain = -0.1
-	}
-	LUC_nationalistic_agitator = {
-		war_support_factor = 0.05
-		fascism_drift = 0.05
-	}
-	# Traits for Goop
-	LUC_PopulistFigure = {
-		war_stability_factor = -0.1
-		political_advisor_cost_factor = -0.1
-	}
-	LUC_GermanSympathiser = {
-		war_stability_factor = 0.1
-		non_core_manpower = 0.05
-		fascism_drift = 0.05
-	}
-	# Puppet Traits
-	LUC_Germanic_Puppet = {
-		fascism_drift = 0.01
-		political_power_factor = -0.1
-	}
-	# Traits for Council
-	LUC_Workers_Council = {
-		political_power_gain = -0.15
-		war_support_factor = 0.1
-		production_factory_max_efficiency_factor = 0.1
-		industrial_capacity_dockyard = 0.15
-	}
-	# Traits for Princes
-	LUC_Liechtenstein_Prince = {
-		consumer_goods_factor = 0.04
-		political_power_factor = 0.05
-	}
-	LUC_Deutshes_Kaiser = {
-		war_support_factor = 0.15
-		army_attack_factor = 0.1
-	}
-	# Traits for Ludwig Marxer
-	LUC_LiberalLawyer = {
-		political_power_factor = 0.05
-		trade_laws_cost_factor = -0.05
-		mobilization_laws_cost_factor = -0.05
-		economy_cost_factor = -0.05
-	}
-	LUC_LiberalReformer = {
-		production_factory_max_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.05
-		fascism_drift = -0.1
-	}
-	# Interim Trait
-	LUC_Interim_Government = {
-		political_power_cost = 0.5
-		political_power_gain = -0.2
-	}
-	# Anton Frommelt
-	LUC_Pastor = {
-		stability_factor = 0.1
-		party_popularity_stability_factor = 0.15
-	}
-	# Alois Vogt
-	LUC_Backstabber = {
-		diplomatic_pressure_mission_factor = 0.25
-		operation_risk = -0.15
-		drift_defence_factor = 0.25
-	}
-	# Eugen Schafhause
-	LUC_Statecapitalist = {
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_infrastructure_factor = 0.1
-		production_speed_rail_way_factor = 0.1
-		industrial_capacity_factory = 0.05
-	}
-	# Richard Meier
-	LUC_Conservative_PrimeMinister = {
-		communism_acceptance = -50
-		fascism_acceptance = -25
+
+	# Ludwig Marxer
+
+	LUC_LeaderTrait_ClassicalLiberal = {
 		consumer_goods_factor = -0.05
-		political_power_factor = -0.08
+		trade_laws_cost_factor = 0.2
+		economy_cost_factor = 0.2
 	}
-	LUC_ConservativeFigurehead = {
-		neutrality_drift = 0.1
-		democratic_drift = 0.1
+
+	# Richard Meier
+
+	LUC_LeaderTrait_ConservativeFigurehead = {
+		stability_factor = 0.1
+		war_support_factor = -0.05
+	}
+
+	#################
+	# ADVISOR TRAITS #
+	#################
+
+	# Josef Hoop
+
+	LUC_AdvisorTrait_GreatCompromiser = {
+		party_popularity_stability_factor = 0.25
+		stability_factor = 0.1
+	}
+
+	# Otto Schaedler
+
+	LUC_AdvisorTrait_PoliticalWeasel = {
+		political_advisor_cost_factor = -0.2
+	}
+
+	# Alfons Goop
+
+	LUC_AdvisorTrait_HeadOfTheLHD = {
+		resistance_growth = -0.1
+		required_garrison_factor = -0.1
+		weekly_manpower = 50
+	}
+
+	# Rudolf Shaedler
+
+	LUC_AdvisorTrait_Agitator = {
+		stability_factor = -0.05
+		war_support_factor = 0.1
+	}
+
+	# Ludwig Marxer
+
+	LUC_AdvisorTrait_LiberalLawyer = {
+		political_power_cost = -0.2
+	}
+
+	# Richard Meier
+
+	LUC_AdvisorTrait_WealthyLandowner = {
+		consumer_goods_factor = 0.05
+		production_speed_buildings_factor = 0.1
+	}
+
+	# Anton Frommelt
+
+	LUC_AdvisorTrait_Pastor = {
 		stability_factor = 0.15
-		political_power_cost = 0.1
+		drift_defence_factor = 0.1
 	}
+
+	# Alois Vogt
+
+	LUC_AdvisorTrait_TwoFacedDiplomat = {
+		operative_slot = 1
+		diplomatic_pressure_mission_factor = 0.2
+		boost_ideology_mission_factor = 0.2
+	}
+
+	# Eugen Schafhause
+
+	LUC_AdvisorTrait_PopularAuthor = {
+		political_power_factor = 0.1
+		custom_modifier_tooltip = LUC_AdvisorTrait_PopularAuthor_tt # Daily ruling party popularity increases by 0.03
+	}
+
 	# Gustav Schädler
-	LUC_EducationReformer = {
-		research_speed_factor = 0.075
-	}
-	# Carl Freiherr von Vogelsang
-	LUC_NationalistJournalist = {
-		justify_war_goal_time = -0.15
-		stability_factor = 0.05
-		fascism_drift = 0.05
-	}
-	# Peter Büchel
-	LUC_Agrarian = {
-		local_building_slots_factor = 0.2
-		min_export = -0.25
-		monthly_population = 0.1
-	}
-	# Josef Steger
-	LUC_AusterityProponent = {
-		consumer_goods_factor = -0.15
-	}
-	# Johann Georg Hasler
-	LUC_ParliamenteryBully = {
+
+	LUC_AdvisorTrait_PoliticalBrute = {
 		trade_laws_cost_factor = -0.15
 		economy_cost_factor = -0.15
-		political_advisor_cost_factor = -0.15
 		mobilization_laws_cost_factor = -0.15
 	}
-	# Karl Trauttmanssdorf
-	LUC_Banker= {
-		political_power_factor = 0.1
-		production_factory_start_efficiency_factor = 0.05
+
+	# Carl Freiherr von Vogelsang
+
+	LUC_AdvisorTrait_Yellowjournalist = {
+		offensive_war_stability_factor = 0.1
+		party_popularity_stability_factor = 0.05
+		custom_modifier_tooltip = LUC_AdvisorTrait_Yellowjournalist_tt # Decrease popularity of opposing parties by -0.02 Daily
 	}
-	# Peter Zünd 
-	LUC_UnionAdvocate = {
-		production_factory_max_efficiency_factor = 0.125
-		production_lack_of_resource_penalty_factor = -0.3
-		communism_drift = 0.05
+
+	# Peter Buchel
+
+	LUC_AdvisorTrait_StateCapitalist = {
+		consumer_goods_factor = 0.1
+		production_factory_max_efficiency_factor = 0.1
+		industrial_capacity_factory = 0.1
 	}
-	# Daniela Hilzinger 
-	LUC_SocialDemocrat = {
-		consumer_goods_factor = 0.05
-		stability_weekly_factor = 0.01
-	}
-	# Martin Lanter 
-	LUC_ArmementOrganiser = {
-		production_speed_arms_factory_factor = 0.15
-		conversion_cost_civ_to_mil_factor = -0.2
+
+	# Gustav Vogt
+
+	LUC_AdvisorTrait_Industrialist = {
+		production_speed_industrial_complex_factor = 0.15
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
 		production_speed_fuel_silo_factor = 0.1
-		production_speed_synthetic_refinery_factor = 0.1
 	}
-	# Gustav Vogt 
-	LUC_IndustrialMagnate = {
-		production_speed_industrial_complex_factor = 0.05
-		industrial_capacity_factory = 0.05
-		political_power_gain = -0.2
+
+	# Josef Lienhardt
+
+	LUC_AdvisorTrait_ConciliatoryDiplomat = {
+		opinion_gain_monthly_factor = 0.2
+		trade_opinion_factor = 0.25
+		improve_relations_maintain_cost_factor = -0.25
 	}
-	# Josef Lienhardt 
-	LUC_smallbuisnessadvocate = {
-		production_speed_buildings_factor = 0.1
-		political_power_factor = 0.1
-		production_factory_efficiency_gain_factor = 0.05
-	}
-	# Thomas Zwinger 
-	LUC_doctor = {
-		weekly_manpower = 150
-		recruitable_population_factor = 0.1
-	}
-	# Chief of Police
-	LUC_ChiefOfPolice = {
-		army_intel_to_others = -10
-		resistance_growth = -0.15
-		resistance_damage_to_garrison = -0.15
-	}
-	# Rupert Mette
-	LUC_Hawk = {
-		stability_factor = -0.1
-		war_support_factor = 0.1
-	}
-	# Martin Lanter
-	LUC_RearmementProponent = {
+
+	# Peter Zund
+
+	LUC_AdvisorTrait_RearmementProponent = {
 		production_speed_arms_factory_factor = 0.1
-		production_speed_fuel_silo_factor = 0.1
-		production_speed_supply_node_factor = 0.1
-		conversion_cost_civ_to_mil_factor = -0.15
+		industrial_capacity_factory = 0.05
+	}
+
+	# Daniela Hilzinger
+
+	LUC_AdvisorTrait_SocialDemocrat = {
+		monthly_population = 0.15
+		local_building_slots_factor = 0.15
+	}
+
+	# Josef Steger
+
+	LUC_AdvisorTrait_ParamilitaryOrganiser = {
+		recruitable_population_factor = 0.1
+		dig_in_speed_factor = 0.2
+		resistance_growth_on_our_occupied_states = 0.2
+	}
+
+	# Johann Georg Hasler
+
+	LUC_AdvisorTrait_EducatinReformer = {
+		research_speed_factor = 0.05
+	}
+
+	# Baron Karl Trauttmanssdorf
+
+	LUC_AdvisorTrait_Banker = {
+		consumer_goods_factor = -0.15
+	}
+
+	# Thomas Zwinger
+
+	LUC_AdvisorTrait_UnionRepresentative = {
+		production_factory_start_efficiency_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+	}
+
+	# Markus Ledswher
+
+	LUC_AdvisorTrait_SavvyPolitician = {
+		political_power_factor = 0.1
+		custom_modifier_tooltip = LUC_AdvisorTrait_AdminsitrativeWorkhorse_tt # Lowers the Cost of Landtag Decisions by 33%
+	}
+
+	# Rupert Mette
+
+	LUC_AdvisorTrait_AgrarianRepresentative = {
+		min_export = -0.25
+		production_speed_buildings_factor = 0.05
+		local_building_slots_factor = 0.1
+	}
+
+	# Martin Lanter
+
+	LUC_AdvisorTrait_LiberalDoctor = {
+		casualty_trickleback = 0.15
+		weekly_manpower = 500
+	}
+
+	# Yvonne Vogt
+
+	LUC_AdvisorTrait_SmallBuisnessAdvocate = {
+		production_factory_efficiency_gain_factor = 0.075
+		military_industrial_organization_funds_gain = 0.2
+		industrial_concern_cost_factor = -0.1
 	}
 }

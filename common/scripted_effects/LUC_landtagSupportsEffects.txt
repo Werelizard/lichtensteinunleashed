@@ -517,35 +517,55 @@ LUC_DecreaseAgrarianLoyaltyBIG = {
 # Nationalists - only used if the nationalists are active
 
 LUC_IncreaseNationalistLoyalty = {
-	custom_effect_tooltip = LUC_IncreaseNationalistLoyalty_tt
-	add_to_variable = {
-		LUC_SupportNationalistLoyalty_var = 5
+	if = {
+		limit = {
+			has_country_flag = LUC_LandtagNationalistFaction_flag
+		}
+		custom_effect_tooltip = LUC_IncreaseNationalistLoyalty_tt
+		add_to_variable = {
+			LUC_SupportNationalistLoyalty_var = 5
+		}
+		LUC_Clamp_Loyalites = yes
 	}
-	LUC_Clamp_Loyalites = yes
 }
 
 LUC_IncreaseNationalistLoyaltyBIG = {
-	custom_effect_tooltip = LUC_IncreaseNationalistLoyaltyBIG_tt
-	add_to_variable = {
-		LUC_SupportNationalistLoyalty_var = 15
+	if = {
+		limit = {
+			has_country_flag = LUC_LandtagNationalistFaction_flag
+		}	
+		custom_effect_tooltip = LUC_IncreaseNationalistLoyaltyBIG_tt
+		add_to_variable = {
+			LUC_SupportNationalistLoyalty_var = 15
+		}
+		LUC_Clamp_Loyalites = yes
 	}
-	LUC_Clamp_Loyalites = yes
 }
 
 LUC_DecreaseNationalistLoyalty = {
-	custom_effect_tooltip = LUC_DecreaseNationalistLoyalty_tt
-	add_to_variable = {
-		LUC_SupportNationalistLoyalty_var = -5
+	if = {
+		limit = {
+			has_country_flag = LUC_LandtagNationalistFaction_flag
+		}	
+		custom_effect_tooltip = LUC_DecreaseNationalistLoyalty_tt
+		add_to_variable = {
+			LUC_SupportNationalistLoyalty_var = -5
+		}
+		LUC_Clamp_Loyalites = yes
 	}
-	LUC_Clamp_Loyalites = yes
 }
 
 LUC_DecreaseNationalistLoyaltyBIG = {
-	custom_effect_tooltip = LUC_DecreaseNationalistLoyaltyBIG_tt
-	add_to_variable = {
-		LUC_SupportNationalistLoyalty_var = -15
+	if = {
+		limit = {
+			has_country_flag = LUC_LandtagNationalistFaction_flag
+		}
+		custom_effect_tooltip = LUC_DecreaseNationalistLoyaltyBIG_tt
+		add_to_variable = {
+			LUC_SupportNationalistLoyalty_var = -15
+		}
+		LUC_Clamp_Loyalites = yes
 	}
-	LUC_Clamp_Loyalites = yes
 }
 
 ##############################

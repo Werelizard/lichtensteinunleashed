@@ -70,9 +70,6 @@ recruit_character = LUC_RudolfSchaedler
 recruit_character = LUC_AlfonsGoop
 recruit_character = LUC_WorkerCouncil
 recruit_character = LUC_Ludwig_Marxer
-recruit_character = LUC_InterimGovernment_DEM
-recruit_character = LUC_InterimGovernment_FAS
-recruit_character = LUC_InterimGovernment_NEU
 
 # Advisors
 recruit_character = LUC_Anton_Frommelt
@@ -93,6 +90,7 @@ recruit_character = LUC_ThomasZwinger
 recruit_character = LUC_MarkusLedswher
 recruit_character = LUC_RupertMette
 recruit_character = LUC_MartinLanter
+recruit_character = LUC_YvonneVogt
 
 # Generals
 

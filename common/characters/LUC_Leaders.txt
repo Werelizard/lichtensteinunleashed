@@ -12,16 +12,9 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_JosefHoop
 			traits = {
-				LUC_Pragmatic_Pacifist
+				LUC_AdvisorTrait_GreatCompromiser
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_DemocraticOrFascistGov_tt
-					OR = {
-						has_government = democratic
-						has_government = neutrality
-					}
-				}
 				NOT = {
 					is_country_leader = yes
 				}
@@ -30,8 +23,8 @@ characters={
 		country_leader={
 			ideology = conservatism
 			traits={  
-				LUC_Neutrality_Advocate
-				LUC_Silver_Tongued_Pragmatist
+				LUC_LeaderTrait_StalwartPacifist
+				LUC_AdvisorTrait_GreatCompromiser
 			}
 		}
 	}
@@ -47,25 +40,9 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_OttoSchaedler
 			traits = {
-				LUC_SavvyPolitician
+				LUC_AdvisorTrait_PoliticalWeasel
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_NOTarrestedadvisor_tt
-					NOT = {
-						has_character_flag = LUC_ArrestedAdvisor_flag
-					}
-				}
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = LUC_neutralityOrFascistGov_tt
-						OR = {
-							has_government = fascism
-							has_government = neutrality
-						}
-					}
-					has_completed_focus = LUC_EmphasiseTradition
-				}
 				NOT = {
 					is_country_leader = yes
 				}
@@ -74,8 +51,8 @@ characters={
 		country_leader={
 			ideology = centrism
 			traits={  
-				likes_germany
-				LUC_Germanophile
+				LUC_AdvisorTrait_PoliticalWeasel
+				LUC_LeaderTrait_Germanophile
 			}
 		}
 	}
@@ -91,21 +68,9 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_AlfonsGoop
 			traits = {
-				LUC_GermanSympathiser
+				LUC_AdvisorTrait_HeadOfTheLHD
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_NOTarrestedadvisor_tt
-					NOT = {
-						has_character_flag = LUC_ArrestedAdvisor_flag
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = LUC_notCommunistGov_tt
-					NOT = {
-						has_government = communism
-					}
-				}
 				NOT = {
 					is_country_leader = yes
 				}
@@ -114,8 +79,8 @@ characters={
 		country_leader={
 			ideology = rexism
 			traits={  
-				likes_germany
-				LUC_PopulistFigure
+				LUC_AdvisorTrait_HeadOfTheLHD
+				LUC_LeaderTrait_NationalistHawk
 			}
 		}
 	}
@@ -131,21 +96,9 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_RudolfSchaedler
 			traits = {
-				LUC_nationalistic_agitator
+				LUC_AdvisorTrait_Agitator
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_NOTarrestedadvisor_tt
-					NOT = {
-						has_character_flag = LUC_ArrestedAdvisor_flag
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = LUC_notCommunistGov_tt
-					NOT = {
-						has_government = communism
-					}
-				}
 				NOT = {
 					is_country_leader = yes
 				}
@@ -154,7 +107,8 @@ characters={
 		country_leader={
 			ideology = gen_nazism
 			traits={  
-				LUC_Fervent_Nationalist
+				LUC_AdvisorTrait_Agitator
+				LUC_LeaderTrait_AntiDemocrat
 			}
 		}
 	}
@@ -169,7 +123,7 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_Ludwig_Marxer
 			traits = {
-				LUC_LiberalReformer
+				LUC_AdvisorTrait_LiberalLawyer
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -187,121 +141,8 @@ characters={
 		country_leader = {
 			ideology = liberalism
 			traits = {
-				dislikes_germany
-				LUC_LiberalLawyer
-			}
-		}
-	}
-	# Princes
-	LUC_FranzI = {
-		name = LUC_FranzI
-		portraits={
-			civilian={
-				large="GFX_LUC_FRANZ_I_LEADER"
-			}
-		}
-		country_leader={
-			ideology = despotism
-			traits={  
-				LUC_Liechtenstein_Prince
-			}
-		}
-	}
-	LUC_FranzII = {
-		name = LUC_FranzII
-		portraits={
-			civilian={
-				large="GFX_LUC_FRANZ_II_LEADER"
-			}
-		}
-		country_leader={
-			ideology = despotism
-			traits={  
-				LUC_Liechtenstein_Prince
-			}
-		}
-	}
-	# Communsit council 
-	LUC_WorkerCouncil = {
-		name = LUC_WorkerCouncil
-		portraits={
-			civilian={
-				large="GFX_LUC_WorkersCouncil"
-			}
-		}
-		country_leader={
-			ideology = anarchist_communism
-			traits={  
-				LUC_Workers_Council
-			}
-		}
-	}
-	# Interim Government
-	LUC_InterimGovernment_DEM = {
-		name = LUC_InterimGovernment
-		portraits = {
-			civilian = {
-				large = "GFX_LUC_InterimGovernment"
-			}
-		}
-		country_leader = {
-			ideology = conservatism
-			traits = {
-				LUC_Interim_Government
-			}
-		}
-	}
-	LUC_InterimGovernment_FAS = {
-		name = LUC_InterimGovernment
-		portraits = {
-			civilian = {
-				large = "GFX_LUC_InterimGovernment"
-			}
-		}
-		country_leader = {
-			ideology = fascism_ideology
-			traits = {
-				LUC_Interim_Government
-			}
-		}
-	}
-	LUC_InterimGovernment_NEU = {
-		name = LUC_InterimGovernment
-		portraits = {
-			civilian = {
-				large = "GFX_LUC_InterimGovernment"
-			}
-		}
-		country_leader = {
-			ideology = moderatism
-			traits = {
-				LUC_Interim_Government
-			}
-		}
-	}
-
-	# Advisors
-	LUC_Anton_Frommelt = {
-		name = LUC_Anton_Frommelt
-		portraits={
-			civilian={
-				small = "GFX_LUC_AntonFrommelt_Advisor"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = LUC_Anton_Frommelt
-			traits = {
-				LUC_Pastor
-			}
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_DemocraticOrFascistGov_tt
-					OR = {
-						has_government = democratic
-						has_government = neutrality
-					}
-				}
+				LUC_LeaderTrait_ClassicalLiberal
+				LUC_AdvisorTrait_LiberalLawyer
 			}
 		}
 	}
@@ -317,22 +158,88 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_RichardMeier
 			traits = {
-				LUC_ConservativeFigurehead
+				LUC_AdvisorTrait_WealthyLandowner
 			}
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = LUC_UnalignedGov_tt
-						has_government = neutrality
-					}
-					has_completed_focus = LUC_EmphasiseTradition
+				NOT = {
+					is_country_leader = yes
 				}
 			}
 		}
 		country_leader = {
 			ideology = moderatism
 			traits = {
-				LUC_Conservative_PrimeMinister
+				LUC_AdvisorTrait_WealthyLandowner
+				LUC_LeaderTrait_ConservativeFigurehead
+			}
+		}
+	}
+	# Princes
+	LUC_FranzI = {
+		name = LUC_FranzI
+		portraits={
+			civilian={
+				large="GFX_LUC_FRANZ_I_LEADER"
+			}
+		}
+		country_leader={
+			ideology = despotism
+			traits={  
+				
+			}
+		}
+	}
+	LUC_FranzII = {
+		name = LUC_FranzII
+		portraits={
+			civilian={
+				large="GFX_LUC_FRANZ_II_LEADER"
+			}
+		}
+		country_leader={
+			ideology = despotism
+			traits={  
+				LUC_LeaderTrait_PrinceOfLiechtenstein
+			}
+		}
+	}
+	# Communist Council
+	LUC_WorkerCouncil = {
+		name = LUC_WorkerCouncil
+		portraits={
+			civilian={
+				large="GFX_LUC_WorkersCouncil"
+			}
+		}
+		country_leader={
+			ideology = anarchist_communism
+			traits={  
+				
+			}
+		}
+	}
+	# Advisors
+	LUC_Anton_Frommelt = {
+		name = LUC_Anton_Frommelt
+		portraits={
+			civilian={
+				small = "GFX_LUC_AntonFrommelt_Advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LUC_Anton_Frommelt
+			traits = {
+				LUC_AdvisorTrait_Pastor
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = LUC_DemocraticOrNeutralGov_tt
+					OR = {
+						has_government = democratic
+						has_government = neutrality
+					}
+				}
 			}
 		}
 	}
@@ -347,25 +254,10 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_AloisVogt
 			traits = {
-				LUC_Backstabber
+				LUC_AdvisorTrait_TwoFacedDiplomat
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_NOTarrestedadvisor_tt
-					NOT = {
-						has_character_flag = LUC_ArrestedAdvisor_flag
-					}
-				}
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = LUC_neutralityOrFascistGov_tt
-						OR = {
-							has_government = fascism
-							has_government = neutrality
-						}
-					}
-					has_completed_focus = LUC_EmphasiseTradition
-				}
+
 			}
 		}
 	}
@@ -381,12 +273,13 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_EugenSchafhause
 			traits = {
-				LUC_Statecapitalist
+				LUC_AdvisorTrait_PopularAuthor
 			}
 			available = {
 				custom_trigger_tooltip = {
-					tooltip = LUC_notCommunistGov_tt
-					NOT = {
+					tooltip = LUC_DemocraticOrCommunistGov_tt
+					OR = {
+						has_government = democratic
 						has_government = communism
 					}
 				}
@@ -405,15 +298,10 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_GustavSchadler
 			traits = {
-				LUC_EducationReformer
+				LUC_AdvisorTrait_PoliticalBrute
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_notFascistGov_tt
-					NOT = {
-						has_government = fascism
-					}
-				}
+				
 			}
 		}
 	}
@@ -429,23 +317,21 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_CarlVogelsang
 			traits = {
-				LUC_NationalistJournalist
+				LUC_AdvisorTrait_Yellowjournalist
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_NOTarrestedadvisor_tt
-					NOT = {
-						has_character_flag = LUC_ArrestedAdvisor_flag
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = LUC_neutralityOrFascistGov_tt
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-					}
+				OR = {
+					has_government = fascism
+					fascism > 0.15
 				}
 			}
+			on_add = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+			}
+			cost = 75
 		}
 	}
 	
@@ -460,10 +346,15 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_PeterBuchel
 			traits = {
-				LUC_Agrarian
+				LUC_AdvisorTrait_StateCapitalist
 			}
 			available = {
-				has_completed_focus = LUC_BeautifulValley
+				custom_trigger_tooltip = {
+					tooltip = LUC_notCommunistGov_tt
+					NOT = {
+						has_government = communism
+					}
+				}
 			}
 		}
 	}
@@ -479,10 +370,10 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_GustavVogt
 			traits = {
-				LUC_IndustrialMagnate
+				LUC_AdvisorTrait_Industrialist
 			}
 			available = {
-				has_completed_focus = LUC_ExperimentalResearch
+
 			}
 		}
 	}
@@ -498,10 +389,15 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_JosefLienhardt
 			traits = {
-				LUC_smallbuisnessadvocate
+				LUC_AdvisorTrait_ConciliatoryDiplomat
 			}
 			available = {
-				has_completed_focus = LUC_LightIndustry
+				custom_trigger_tooltip = {
+					tooltip = LUC_notFascistGov_tt
+						NOT = {
+							has_government = fascism
+						}
+				}
 			}
 		}
 	}
@@ -517,24 +413,10 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_PeterZund
 			traits = {
-				LUC_UnionAdvocate
+				LUC_AdvisorTrait_RearmementProponent
 			}
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = LUC_CommunistGov_tt
-						has_government = communism
-					}
-					AND = {
-						custom_trigger_tooltip = {
-							tooltip = LUC_DemocraticGov_tt
-							has_government = democratic
-						}
-						NOT = {
-							has_completed_focus = LUC_BanUnions
-						}
-					}
-				}
+				has_completed_focus = LUC_ArmyBeginRearmement_Focus
 			}
 		}
 	}
@@ -550,20 +432,14 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_DanielaHilzinger
 			traits = {
-				LUC_SocialDemocrat
+				LUC_AdvisorTrait_SocialDemocrat
 			}
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = LUC_CommunistGov_tt
+				custom_trigger_tooltip = {
+					tooltip = LUC_DemocraticOrCommunistGov_tt
+					OR = {
+						has_government = democratic
 						has_government = communism
-					}
-					AND = {
-						custom_trigger_tooltip = {
-							tooltip = LUC_DemocraticGov_tt
-							has_government = democratic
-						}
-						has_completed_focus = LUC_AllowTradeUnions
 					}
 				}
 			}
@@ -581,12 +457,13 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_JosefSteger
 			traits = {
-				LUC_AusterityProponent
+				LUC_AdvisorTrait_ParamilitaryOrganiser
 			}
 			available = {
 				custom_trigger_tooltip = {
-					tooltip = LUC_notCommunistGov_tt
-					NOT = {
+					tooltip = LUC_FascistOrCommunsitGov_tt
+					OR = {
+						has_government = fascism
 						has_government = communism
 					}
 				}
@@ -605,16 +482,10 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_JohannGeorgHasler
 			traits = {
-				LUC_ParliamenteryBully
+				LUC_AdvisorTrait_EducatinReformer
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_DemocraticOrFascistGov_tt
-					OR = {
-						has_government = democratic
-						has_government = neutrality
-					}
-				}
+				has_completed_focus = LUC_EconomyUniversity_Focus
 			}
 		}
 	}
@@ -630,15 +501,10 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_KarlTrauttmanssdorf
 			traits = {
-				LUC_Banker
+				LUC_AdvisorTrait_Banker
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_notCommunistGov_tt
-					NOT = {
-						has_government = communism
-					}
-				}
+				has_completed_focus = LUC_EconomyIntegrateBank_Focus
 			}
 		}
 	}
@@ -654,15 +520,20 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_ThomasZwinger
 			traits = {
-				LUC_doctor
+				LUC_AdvisorTrait_UnionRepresentative
 			}
 			available = {
 				custom_trigger_tooltip = {
-					tooltip = LUC_DemocraticOrCommunistGov_tt
-					OR = {
-						has_government = communism
-						has_government = democratic
+					tooltip = LUC_notFascistGov_tt
+					NOT = {
+						has_government = fascism
 					}
+				}
+			}
+			on_add = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
 				}
 			}
 		}
@@ -679,13 +550,20 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_MarkusLedswher
 			traits = {
-				LUC_ChiefOfPolice
+				LUC_AdvisorTrait_SavvyPolitician
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_notCommunistGov_tt
-					NOT = {
-						has_government = communism
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = LUC_DemocraticOrNeutralGov_tt
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = LUC_HasLandtagMechanic_tt
+						LUC_hasLandtagMechanic_trigger = yes
 					}
 				}
 			}
@@ -703,17 +581,14 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_MartinLanter
 			traits = {
-				LUC_RearmementProponent
+				LUC_AdvisorTrait_LiberalDoctor
 			}
 			available = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = LUC_notDemocraticGov_tt
-						NOT = {
-							has_government = democratic
-						}
+				custom_trigger_tooltip = {
+					tooltip = LUC_notFascistGov_tt
+					NOT = {
+						has_government = fascism
 					}
-					has_completed_focus = LUC_MilitaryBudget
 				}
 			}
 		}
@@ -730,16 +605,29 @@ characters={
 			slot = political_advisor
 			idea_token = LUC_RupertMette
 			traits = {
-				LUC_Hawk
+				LUC_AdvisorTrait_AgrarianRepresentative
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_DemocraticOrFascistGov_tt
-					OR = {
-						has_government = democratic
-						has_government = neutrality
-					}
-				}
+				has_completed_focus = LUC_EconomyAgriculutralInvestments_Focus
+			}
+		}
+	}
+
+	LUC_YvonneVogt = {
+		name = LUC_YvonneVogt
+		portraits={
+			civilian={
+				small = "GFX_LUC_YvonneVogt_Advisor"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LUC_YvonneVogt
+			traits = {
+				LUC_AdvisorTrait_SmallBuisnessAdvocate
+			}
+			available = {
+				has_completed_focus = LUC_EconomySupportSmallBusinesses_Focus
 			}
 		}
 	}

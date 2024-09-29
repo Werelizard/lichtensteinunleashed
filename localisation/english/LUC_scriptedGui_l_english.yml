@@ -99,27 +99,27 @@
  LUC_DecreaseNationalistInfluence_tt:0 "Decreases the influence of the £GFX_LUC_FactionNationalist_text  §YNationalist§! faction"
 
  LUC_IncreaseNationalistLoyalty_tt:0 "§GIncreases§! the loyalty of the £GFX_LUC_FactionNationalist_text  §YNationalist§! faction"
- LUC_IncreaseNationalistLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionNationalist_text  §YNationalist§! faction"
+ LUC_IncreaseNationalistLoyaltyBIG_tt:0 "§GGreatly increases§! the loyalty of the £GFX_LUC_FactionNationalist_text  §YNationalist§! faction"
  LUC_DecreaseNationalistLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionNationalist_text  §YNationalist§! faction"
- LUC_DecreaseNationalistLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionNationalist_text  §YNationalist§! faction"
+ LUC_DecreaseNationalistLoyaltyBIG_tt:0 "§RGreatly decreases§! the loyalty of the £GFX_LUC_FactionNationalist_text  §YNationalist§! faction"
 
  LUC_IncreaseLiberalLoyalty_tt:0 "§GIncreases§! the loyalty of the £GFX_LUC_FactionLiberal_text  §YLiberal§! faction"
- LUC_IncreaseLiberalLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionLiberal_text  §YLiberal§! faction"
+ LUC_IncreaseLiberalLoyaltyBIG_tt:0 "§GGreatly increases§! the loyalty of the £GFX_LUC_FactionLiberal_text  §YLiberal§! faction"
  LUC_DecreaseLiberalLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionLiberal_text  §YLiberal§! faction"
- LUC_DecreaseLiberalLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionLiberal_text  §YLiberal§! faction"
+ LUC_DecreaseLiberalLoyaltyBIG_tt:0 "§RGreatly decreases§! the loyalty of the £GFX_LUC_FactionLiberal_text  §YLiberal§! faction"
 
  LUC_IncreaseConservativeLoyalty_tt:0 "§GIncreases§! the loyalty of the £GFX_LUC_FactionConservative_text  §YModerates§! faction"
- LUC_IncreaseConservativeLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionConservative_text  §YModerates§! faction"
+ LUC_IncreaseConservativeLoyaltyBIG_tt:0 "§GGreatly increases§! the loyalty of the £GFX_LUC_FactionConservative_text  §YModerates§! faction"
  LUC_DecreaseConservativeLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionConservative_text  §YModerates§! faction"
- LUC_DecreaseConservativeLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionConservative_text  §YModerates§! faction"
+ LUC_DecreaseConservativeLoyaltyBIG_tt:0 "§RGreatly decreases§! the loyalty of the £GFX_LUC_FactionConservative_text  §YModerates§! faction"
 
  LUC_IncreasePopulistLoyalty_tt:0 "§GIncreases§! the loyalty of the £GFX_LUC_FactionPopulist_text  §YPopulist§! faction"
- LUC_IncreasePopulistLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionPopulist_text  §YPopulist§! faction"
+ LUC_IncreasePopulistLoyaltyBIG_tt:0 "§GGreatly increases§! the loyalty of the £GFX_LUC_FactionPopulist_text  §YPopulist§! faction"
  LUC_DecreasePopulistLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionPopulist_text  §YPopulist§! faction"
- LUC_DecreasePopulistLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionPopulist_text  §YPopulist§! faction"
+ LUC_DecreasePopulistLoyaltyBIG_tt:0 "§RGreatly decreases§! the loyalty of the £GFX_LUC_FactionPopulist_text  §YPopulist§! faction"
 
  LUC_IncreaseAgrarianLoyalty_tt:0 "§GIncreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text  §YAgrarian§! faction"
- LUC_IncreaseAgrarianLoyaltyBIG_tt:0 "Greatly §Gincreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text  §YAgrarian§! faction"
+ LUC_IncreaseAgrarianLoyaltyBIG_tt:0 "§GGreatly increases§! the loyalty of the £GFX_LUC_FactionAgrarian_text  §YAgrarian§! faction"
  LUC_DecreaseAgrarianLoyalty_tt:0 "§RDecreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text §YAgrarian§!  faction"
- LUC_DecreaseAgrarianLoyaltyBIG_tt:0 "Greatly §Rdecreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text  §YAgrarian§! faction"
+ LUC_DecreaseAgrarianLoyaltyBIG_tt:0 "§RGreatly decreases§! the loyalty of the £GFX_LUC_FactionAgrarian_text  §YAgrarian§! faction"
 

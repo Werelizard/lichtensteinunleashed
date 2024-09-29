@@ -12,7 +12,6 @@ LUC_Liechtensteiner_Economy_idea = {
 	min_export = LUC_ExportFac_Var
 	local_building_slots = LUC_BuildSlots_Var
 	recruitable_population_factor = LUC_RecruitPopFactor_var
-	
 	production_speed_buildings_factor = LUC_BuildAllFac_Var
 	production_speed_arms_factory_factor = LUC_BuildArmFac_Var
 	production_speed_industrial_complex_factor = LUC_BuildCivFac_Var
@@ -20,14 +19,18 @@ LUC_Liechtensteiner_Economy_idea = {
 	production_speed_synthetic_refinery_factor = LUC_BuildRefFac_Var
 	production_speed_rail_way_factor = LUC_BuildRailFac_Var
 	production_speed_supply_node_factor = LUC_SupplyFac_Var
-	conversion_cost_civ_to_mil_factor = LUC_ConvertFac_Var
 	production_factory_efficiency_gain_factor = LUC_ProductionFac_Var
 	production_factory_start_efficiency_factor = LUC_ProdStartFac_Var
 	production_factory_max_efficiency_factor = LUC_ProdMaxFac_Var
-
+	line_change_production_efficiency_factor = LUC_ProdChangeFac_Var
+	conversion_cost_civ_to_mil_factor = LUC_CivtoMil_Var
+	conversion_cost_mil_to_civ_factor = LUC_MiltoCiv_Var
 	industrial_capacity_factory = LUC_OutputFac_Var
 	monthly_population = LUC_PopFac_Var
-	stability_factor = LUC_StabFac_Var
+	stability_factor = LUC_StabFac_Var 
+	military_industrial_organization_funds_gain  = LUC_FundsGainFac_Var 
+	research_speed_factor = LUC_ResearchSpeed_Var
+	license_purchase_cost = LUC_LicenseCost_Var
 }
 
 LUC_CustomsUnion_idea = {

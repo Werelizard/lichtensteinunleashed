@@ -171,6 +171,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_ThomasZwinger_Advisor.dds"
 	}
 
+	spriteType = {
+		name = "GFX_LUC_YvonneVogt_Advisor"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_YvonneVogt_Advisor.dds"
+	}
+
 	# Generals
 
 	spriteType = {
