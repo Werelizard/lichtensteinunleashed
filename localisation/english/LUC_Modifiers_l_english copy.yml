@@ -20,3 +20,6 @@
  LUC_MIL_Collab3_idea:0 "Military Movement Influence"
  LUC_MIL_Collab4_idea:0 "Military Movement Influence""
  LUC_MIL_Collab5_idea:0 "Military Movement Influence"
+
+ #Province Modifiers
+ LUC_RequesitionedIndustry_ProvinceMod:0 "Requisitioned Industry"

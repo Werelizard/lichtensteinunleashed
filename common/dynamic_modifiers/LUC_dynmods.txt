@@ -31,6 +31,7 @@ LUC_Liechtensteiner_Economy_idea = {
 	military_industrial_organization_funds_gain  = LUC_FundsGainFac_Var 
 	research_speed_factor = LUC_ResearchSpeed_Var
 	license_purchase_cost = LUC_LicenseCost_Var
+	war_support_factor = LUC_WarSupportFac_Var
 }
 
 LUC_CustomsUnion_idea = {

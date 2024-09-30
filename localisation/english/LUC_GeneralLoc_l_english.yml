@@ -178,7 +178,9 @@
 
  # Ideas - focus
  LUC_LiechtensteinBankIntegrated:0 "Integrated Aktiengesellschaft"
- LUC_LiechtensteinBankIntegrated_desc:0 ""
+ LUC_LiechtensteinBankIntegrated_desc:0 "" 
+ LUC_IncreasedRifleProduction:0 "Military Buildup"
+ LUC_IncreasedRifleProduction_desc:0 ""
 
  # Inbdustrial Concerns
  LUC_LawenaPower_concern:0 "Lawena Energy"
@@ -192,6 +194,8 @@
  # Scripted Triggers
  LUC_isLandtagSupportive_trigger_tt:0 " £GFX_LUC_PolSupport  Landtag support is at least at §Y60.0%§! (Currently §Y[?LUC_LandtagOverallSupport_var|%%]§!)"
  LUC_HasLandtagMechanic_tt:0 "Has not disbanded the §YLandtag§!"
+ LUC_noLandtagMechanic_tt:0 "The §YLandtag§! was disbanded"
+ LUC_LandtagRearmemmentBill_tt:0 "The §YLandtag§! has voted in support of rearmement"
 
  # Scripted Effect
  LUC_increaseLandtagSupport_5_tt:0 " £GFX_LUC_PolSupport  Landtag support will §Gincrease§! by §Y5.0%§!"

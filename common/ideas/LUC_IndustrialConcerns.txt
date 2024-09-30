@@ -23,6 +23,8 @@ ideas = {
 					}
 				}
 			}
+
+			traits = { industrial_concern }
 		}
 		LUC_VaduzTimber_concern = {
 			modifier = {
@@ -42,12 +44,13 @@ ideas = {
 					}
 				}
 			}
+
+			traits = { industrial_concern }
 		}
 		# Always visible
 		LUC_LawenaPower_concern = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
-				production_factory_start_efficiency_factor = 0.05
 			}
 			research_bonus = {
 				electronics = 0.05
@@ -65,6 +68,61 @@ ideas = {
 					}
 				}
 				has_completed_focus = LUC_EconomyHydroEnergy_Focus
+			}
+
+			traits = { industrial_concern }
+		}
+		# Modifier Vanilla
+		krupp = {
+			
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = SUS
+				}
+			}
+
+			visible = {
+				OR = {
+					original_tag = GER
+					has_country_flag = LUC_kruppAllowed_flag
+				}
+			}
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			ai_will_do = {
+				factor = 2
+			}
+			
+			traits = { industrial_concern }
+		}
+		ig_faben = {
+			
+			allowed = {
+				OR = {
+					original_tag = GER
+					original_tag = SUS
+				}
+			}
+
+			visible = {
+				OR = {
+					original_tag = GER
+					has_country_flag = LUC_fabenAllowed_flag
+				}
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}

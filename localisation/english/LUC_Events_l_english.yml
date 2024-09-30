@@ -3,6 +3,7 @@
  LUC_Notavailable_political_advisor:0 "§RRemoves§! as §YPolitical Advisor§!:\n"
  LUC_ifTheyAccept_tt:0 "If they §Gaccept§!:\n"
  LUC_ifTheyRefuse_tt:0 "If they §Rrefuse§!:\n"
+ LUC_removeIndustrialConern_tt:0 "§RRemoves§! the following §YIndustrial Concern§!:\n"
 
  #Flavour events
  LUC_flavour.1.title:0 "Liechtenstein in 1936"
@@ -16,13 +17,19 @@
  LUC_FocusTree.101.a:0 "Agree to the investment portfolio"
  LUC_FocusTree.101.b:0 "Who cares about [FROM.GetName]?"
 
- LUC_FocusTree.102.title:0 "[FROM.GetName] invests in [ROOT.GetNameDef]!"
+ LUC_FocusTree.102.title:0 "[FROM.GetName] Invests in [ROOT.GetNameDef]!"
  LUC_FocusTree.102.desc:0 ""
  LUC_FocusTree.102.a:0 "Splendid!"
 
- LUC_FocusTree.103.title:0 "[FROM.GetName] ignored us"
+ LUC_FocusTree.103.title:0 "[FROM.GetName] Ignored Us"
  LUC_FocusTree.103.desc:0 ""
-  LUC_FocusTree.103.a:0 "Damnit..."
+ LUC_FocusTree.103.a:0 "Damnit..."
+
+ LUC_FocusTree.104.title:0 "A Dinner With German Industrialists"
+ LUC_FocusTree.104.desc:0 ""
+ LUC_FocusTree.104.a:0 "We accept their offer!"
+ LUC_FocusTree.104.b:0 "We had another idea in mind, actually."
+ LUC_FocusTree.104.c:0 "We cannot afford such prospects at the moment."
  
  #Military-Movement
  LUC_Fascists.1.title:0 "Fascist Sympathisers amongst the Government?"

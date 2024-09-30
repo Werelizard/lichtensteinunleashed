@@ -32,3 +32,12 @@
  LUC_LiechtensteinEco_czechAssets:0 "Repatriate Czech Assets"
  LUC_LiechtensteinEco_czechAssets_tt:0 "§Y[9.Owner.GetName]§!: opinion of §Y[ROOT.GetNameDef]§! at least §Y65§!"
  LUC_LiechtensteinEco_czechAssets_peace_tt:0 "§Y[9.Owner.GetName]§!: at peace with §Y[ROOT.GetNameDef]§!"
+
+ # Economic Decisions
+ LUC_BuyForeignRiflesRifles:0 "Purchase [FROM.GetAdjective] Rifles"
+ LUC_BuyForeignRiflesArtillery:0 "Purchase [FROM.GetAdjective] Field Guns"
+ LUC_BuyForeignSupportEquipement:0 "Purchase [FROM.GetAdjective] Support Equipment"
+ LUC_BoughtMaxEquipmentFromTarget_tt:0 "Less than §Y4§! equipment purchases from §Y[FROM.GetNameDef]§! (Currently [?FROM.LUC_BoughtEquipmentFromCountry_var])"
+
+ LUC_HiddenWorkshops:0 "Divest Industrial Production in §Y[FROM.GetName]§!"
+ LUC_HiddenWorkshops_tt:0 "§Y[FROM.GetName]§! Gains the Following:\nLocal Construction Speed: §R-20.0%§!"

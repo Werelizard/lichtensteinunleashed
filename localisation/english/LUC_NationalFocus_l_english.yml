@@ -82,9 +82,7 @@
 
  LUC_EconomyFinal_Focus:0 "The [SUS.GetAdjective] Miracle"
  LUC_EconomyFinal_Focus_desc:0 ""
- LUC_AtLeastTenFactories_tt:0 "Has at Least §Y10§! Factories"
- LUC_EconomyFinal_Focus_fullderegulation:0 "A Gilded Mountain"
- LUC_EconomyFinal_Focus_statecontrol:0 "An Economy in Service of the State"
+ LUC_EconomyFinal_Focus_tt:0 "Has at Least §Y25§! Factories"
  LUC_EconomyFinal_Focus_nochoice:0 "A Prospering Economy"
  LUC_EconomyFinal_Focus_optionStatism_tt:0 "§LIf we have completed the §!§Y$LUC_EconomyIncreaseStateControl_Focus$§!§L focus, we would get§!:\n\n"
  LUC_EconomyFinal_Focus_optionLaissezfaire_tt:0 "\n§LIf we have completed the §!§Y$LUC_EconomyEmbraceDeregulation_Focus$§!§L focus, we would get:§!\n\n"
@@ -104,12 +102,18 @@
 
  LUC_ArmyStudyGermanDesigns_Focus:0 "Study German Designs"
  LUC_ArmyStudyGermanDesigns_Focus_desc:0 ""
+ LUC_ArmyStudyGermanDesigns_RiflePurchase_tt:0 "Unlocks Decision: £GFX_decision_icon_small §YPurchase German Rifles§!"
+ LUC_ArmyStudyGermanDesigns_ArtilPurchase_tt:0 "Unlocks Decision: £GFX_decision_icon_small §YPurchase German Field Guns§!"
+ LUC_ArmyStudySwissDesigns_RiflePurchase_tt:0 "Unlocks Decision: £GFX_decision_icon_small §YPurchase Swiss Rifles§!"
+ LUC_ArmyStudySwissDesigns_ArtilPurchase_tt:0 "Unlocks Decision: £GFX_decision_icon_small §YPurchase Swiss Field Guns§!"
+ LUC_ArmyStudySwissDesigns_SupportPurchase_tt:0 "Unlocks Decision: £GFX_decision_icon_small §YPurchase Swiss Support Equipment§!"
 
  LUC_ArmyStudySwissDesigns_Focus:0 "Adopt Swiss Equipment"
  LUC_ArmyStudySwissDesigns_Focus_desc:0 ""
 
  LUC_ArmyVaduzArmory_Focus:0 "The Vaduz Arsenal"
  LUC_ArmyVaduzArmory_Focus_desc:0 ""
+ LUC_ArmyVaduzArmory_Focus_tt:0 "Unlocks Decision: £GFX_decision_icon_small §YDivest Industrial Production§!"
 
  LUC_ArmyStudyPanzers_Focus:0 "A Liechtensteiner Panzer?"
  LUC_ArmyStudyPanzers_Focus_desc:0 ""
@@ -239,3 +243,4 @@
  LUC_ModifyEconomy_FundsFac_pos15_tt:0 "Funds Gain: §G+15.0%§!"
  LUC_ModifyEconomy_LicenseCost_neg25_tt:0 "License Purchase Cost: §G-25.0%§!"
  LUC_ModifyEconomy_PolPower_pos15_tt:0 "Political Power Gain: §G+15.0%§!"
+ LUC_ModifyEconomy_WarSupport_pos10_tt:0 "War Support: §G+10.0%§!"
