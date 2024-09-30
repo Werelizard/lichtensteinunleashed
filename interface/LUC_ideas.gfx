@@ -1,4 +1,5 @@
 spriteTypes = {
+	# Base Ideas
 	spriteType = {
 		name = "GFX_idea_LUC_Liechtensteiner_Economy_idea"
 		textureFile = "gfx/interface/ideas/SUS/LUC_LichtensteinerEconomy.dds"
@@ -18,5 +19,23 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_LUC_Liechtensteiner_Army_idea"
 		textureFile = "gfx/interface/ideas/SUS/LUC_LichtensteinerMilitary.dds"
+	}
+	# Industrial Concerns
+	spriteType = {
+		name = "GFX_idea_LUC_LawenaPower_concern"
+		textureFile = "gfx/interface/ideas/SUS/Concerns/LUC_LawenaPower.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_LudwigIndustrial_concern"
+		textureFile = "gfx/interface/ideas/SUS/Concerns/LUC_LudwigIndustrial.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_VaduzTimber_concern"
+		textureFile = "gfx/interface/ideas/SUS/Concerns/LUC_VaduzTimber.dds"
+	}
+	# Focus ideas
+	spriteType = {
+		name = "GFX_idea_LUC_LiechtensteinBankIntegrated"
+		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinBankIntegrated.dds"
 	}
 }

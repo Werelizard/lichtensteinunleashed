@@ -46,7 +46,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			add_political_power = -100
+			add_political_power = -50
 			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_neg5_tt
@@ -101,6 +101,9 @@ focus_tree = {
 			add_ideas = {
 				LUC_LiechtensteinBankIntegrated
 			}
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = LUC_KarlTrauttmanssdorf
 			custom_effect_tooltip = LUC_newline_tt
 			unlock_decision_category_tooltip = LUC_Bank_Cat
 			activate_mission_tooltip = LUC_Bank_RenewFinancialControls_mission
@@ -268,6 +271,9 @@ focus_tree = {
 			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_MaxBuildSlotsFactor_pos10_tt
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = LUC_PeterBuchel
 			hidden_effect = {
 				add_to_variable = {
 					LUC_BuildSlotFac_Var = 0.1
@@ -883,7 +889,9 @@ focus_tree = {
 		available = {
 			has_stability > 0.5
 			OR = {
-				num_of_factories > 24
+				NOT = {
+					num_of_factories < 20
+				}
 				970 = {
 					custom_trigger_tooltip = {
 						tooltip = LUC_AtLeastTenFactories_tt

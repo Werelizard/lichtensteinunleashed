@@ -1,5 +1,49 @@
 ideas = {
 	industrial_concern = {
+		# Always visible and avaialble
+		LUC_LudwigIndustrial_concern = {
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+			visible = {
+				original_tag = SUS
+			}
+			available = {
+				OR = {
+					970 = {
+						is_fully_controlled_by = ROOT
+					}
+					970 = {
+						is_owned_by = ROOT
+					}
+				}
+			}
+		}
+		LUC_VaduzTimber_concern = {
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				local_building_slots_factor = 0.05
+			}
+			visible = {
+				original_tag = SUS
+			}
+			available = {
+				OR = {
+					970 = {
+						is_fully_controlled_by = ROOT
+					}
+					970 = {
+						is_owned_by = ROOT
+					}
+				}
+			}
+		}
+		# Always visible
 		LUC_LawenaPower_concern = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
@@ -12,6 +56,14 @@ ideas = {
 				original_tag = SUS
 			}
 			available = {
+				OR = {
+					970 = {
+						is_fully_controlled_by = ROOT
+					}
+					970 = {
+						is_owned_by = ROOT
+					}
+				}
 				has_completed_focus = LUC_EconomyHydroEnergy_Focus
 			}
 		}

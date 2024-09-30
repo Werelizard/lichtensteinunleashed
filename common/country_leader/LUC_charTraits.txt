@@ -148,7 +148,7 @@ leader_traits = {
 	LUC_AdvisorTrait_StateCapitalist = {
 		consumer_goods_factor = 0.1
 		production_factory_max_efficiency_factor = 0.1
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.05
 	}
 
 	# Gustav Vogt
@@ -227,14 +227,14 @@ leader_traits = {
 	# Martin Lanter
 
 	LUC_AdvisorTrait_LiberalDoctor = {
-		casualty_trickleback = 0.15
 		weekly_manpower = 500
+		monthly_population = 0.05
 	}
 
 	# Yvonne Vogt
 
 	LUC_AdvisorTrait_SmallBuisnessAdvocate = {
-		production_factory_efficiency_gain_factor = 0.075
+		production_factory_efficiency_gain_factor = 0.05
 		military_industrial_organization_funds_gain = 0.2
 		industrial_concern_cost_factor = -0.1
 	}

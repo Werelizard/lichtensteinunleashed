@@ -349,12 +349,7 @@ characters={
 				LUC_AdvisorTrait_StateCapitalist
 			}
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = LUC_notCommunistGov_tt
-					NOT = {
-						has_government = communism
-					}
-				}
+				has_completed_focus = LUC_EconomyContinueIndustrialisation_Focus
 			}
 		}
 	}

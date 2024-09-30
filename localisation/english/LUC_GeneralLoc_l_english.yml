@@ -182,6 +182,8 @@
 
  # Inbdustrial Concerns
  LUC_LawenaPower_concern:0 "Lawena Energy"
+ LUC_VaduzTimber_concern:0 "Vaduzer Holz"
+ LUC_LudwigIndustrial_concern:0 "Ludwig Industrial"
 
  #Research Group
  LUC_VaduzAcademy_name:0 "The Vaduz Circle"
