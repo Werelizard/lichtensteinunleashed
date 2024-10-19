@@ -1012,7 +1012,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmyReviewMilitary_Focus
 		icon = GFX_LUC_ArmyReviewMilitary_Focus
-		cost = 5
+		cost = 4
 		x = -16
 		y = 0
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
@@ -1020,10 +1020,17 @@ focus_tree = {
 
 		}
 		available = {
-			
+			OR = {
+				LUC_isLandtagSupportive_trigger = yes
+				has_government = fascism
+				threat > 0.1
+			}
 		}
-		completion_reward = {  
-			
+		completion_reward = { 
+			add_war_support = 0.05
+			remove_ideas = LUC_Liechtensteiner_No_Army_idea
+			custom_effect_tooltip = LUC_newline_tt
+			unlock_decision_tooltip = LUC_Landtag_Armement
 		}
 		mutually_exclusive = {
 		}
@@ -1102,11 +1109,11 @@ focus_tree = {
 		completion_reward = {  
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = krupp
+			show_ideas_tooltip = ig_faben
 			hidden_effect = {
 				set_country_flag = LUC_kruppAllowed_flag
+				set_country_flag = LUC_fabenAllowed_flag
 			}
-			custom_effect_tooltip = LUC_newline_tt
-			country_event = LUC_FocusTree.104
 		}
 		mutually_exclusive = {
 		}
@@ -1142,10 +1149,10 @@ focus_tree = {
 			add_political_power = 50
 			custom_effect_tooltip = LUC_newline_tt
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 				}
 			}
 			custom_effect_tooltip = LUC_newline_tt
@@ -1200,7 +1207,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmyStudySwissDesigns_Focus
 		icon = GFX_LUC_ArmyStudySwissDesigns_Focus
-		cost = 1
+		cost = 5
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		x = 1
 		y = 1
@@ -1259,12 +1266,12 @@ focus_tree = {
 					level = 2
 				}
 			}
-			custom_effect_tooltip = LUC_newline_tt
-			custom_effect_tooltip = LUC_ArmyVaduzArmory_Focus_tt
+			# custom_effect_tooltip = LUC_newline_tt
+			# custom_effect_tooltip = LUC_ArmyVaduzArmory_Focus_tt
 			custom_effect_tooltip = LUC_newline_tt
 			add_timed_idea = {
 				idea = LUC_IncreasedRifleProduction
-				days = 360
+				days = 720
 			}
 		}
 		mutually_exclusive = {
@@ -1286,8 +1293,11 @@ focus_tree = {
 			focus = LUC_EconomyLimitedNationalisation_Focus
 		}
 		available = {
-			NOT = {
-				has_idea = LUC_Liechtenstein_Neutrality_idea
+			OR = {
+				NOT = {
+					has_idea = LUC_Liechtenstein_Neutrality_idea
+				}
+				has_war = yes
 			}
 		}
 		completion_reward = {  
@@ -1297,22 +1307,6 @@ focus_tree = {
 			custom_effect_tooltip = LUC_ModifyEconomy_WarSupport_pos10_tt
 			custom_effect_tooltip = LUC_newline_tt
 			upgrade_economy_law = yes
-			custom_effect_tooltip = LUC_newline_tt
-			if = {
-				limit = {
-					has_idea = LUC_IncreasedRifleProduction
-				}
-				modify_timed_idea = {
-					idea = LUC_IncreasedRifleProduction
-					days = 360
-				}
-			}
-			else = {
-				add_timed_idea = {
-					idea = LUC_IncreasedRifleProduction
-					days = 360
-				}
-			}
 			hidden_effect = {
 				add_to_variable = {
 					LUC_ConGoodsFac_Var = 0.05
@@ -1332,7 +1326,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmyStudyPanzers_Focus
 		icon = GFX_LUC_ArmyStudyPanzers_Focus
-		cost = 1
+		cost = 5
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		x = -1
 		y = 3
@@ -1343,7 +1337,17 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			army_experience = 50
+			custom_effect_tooltip = LUC_newline_tt
+			add_tech_bonus = {
+				name = LUC_ArmyStudyPanzers_Focus_bonus
+				category = armor
+				bonus = 1
+				uses = 2
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_mio_tooltip = GER_daimler_benz_organization
 		}
 		mutually_exclusive = {
 			
@@ -1363,7 +1367,20 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			army_experience = 50
+			custom_effect_tooltip = LUC_newline_tt
+			add_tech_bonus = {
+				name = LUC_ArmySupportDivisions_Focus_support_bonus
+				category = support_tech
+				bonus = 0.5
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = LUC_ArmySupportDivisions_Focus_artillery_bonus
+				category = artillery
+				bonus = 0.5
+				uses = 2
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1383,7 +1400,27 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			add_tech_bonus = {
+				name = LUC_ArmyModernWarfare_Focus_trucks_bonus
+				category = motorized_equipment
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				name = LUC_ArmyModernWarfare_Focus_armored_bonus
+				category = cat_mechanized_equipment
+				bonus = 1
+				uses = 1
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 250
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 5
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1402,7 +1439,18 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			army_experience = 25
+			custom_effect_tooltip = LUC_newline_tt
+			set_technology = {
+				bicycle_infantry = 1
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			add_tech_bonus = {
+				name = LUC_ArmyModernRifles_Focus_tech_bonus
+				category = infantry_weapons
+				bonus = 1
+				uses = 1
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1424,7 +1472,13 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			add_tech_bonus = {
+				name = LUC_ArmyStockpiles_Focus_oil_bonus
+				category = cat_synth_oil
+				uses = 2
+				bonus = 0.5
+				ahead_reduction = 1
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1443,7 +1497,14 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			add_tech_bonus = {
+				name = LUC_ArmyEngineerDivisions_Focus_engineer
+				category = engineers_tech
+				bonus = 0.5
+				uses = 1
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			add_ideas = LUC_EngineerCorps
 		}
 		mutually_exclusive = {
 		}
@@ -1459,10 +1520,24 @@ focus_tree = {
 			focus = LUC_ArmyReviewMilitary_Focus
 		}
 		available = {
-			
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = LUC_LandtagRearmemmentBill_tt
+					has_country_flag = LUC_LandtagRearmemmentBill_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = LUC_noLandtagMechanic_tt
+					NOT = {
+						LUC_hasLandtagMechanic_trigger = yes
+					}
+				}
+			}
 		}
 		completion_reward = {  
-			
+			add_command_power = 25
+			army_experience = 50
+			custom_effect_tooltip = LUC_newline_tt
+			country_event = LUC_FocusTree.201
 		}
 		mutually_exclusive = {
 		}
@@ -1478,10 +1553,15 @@ focus_tree = {
 			focus = LUC_ArmyEstablishOfficerCorps_Focus
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = LUC_ArmyDefenceInDepth_Focus_unlock_tt
+				has_country_flag = LUC_ArmyDefenceInDepth_Focus_flag
+			}
 		}
 		completion_reward = {  
-			
+			add_ideas = LUC_Army_Defence1
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ArmyDefenceInDepth_Focus_tt
 		}
 		mutually_exclusive = {
 			focus = LUC_ArmyOnTheOffence_Focus
@@ -1498,10 +1578,15 @@ focus_tree = {
 			focus = LUC_ArmyEstablishOfficerCorps_Focus
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = LUC_ArmyOnTheOffence_Focus_unlock_tt
+				has_country_flag = LUC_ArmyOnTheOffence_Focus_flag
+			}
 		}
 		completion_reward = {  
-			
+			add_ideas = LUC_Army_Offence1
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ArmyOnTheOffence_Focus_tt
 		}
 		mutually_exclusive = {
 			focus = LUC_ArmyDefenceInDepth_Focus
@@ -1519,10 +1604,57 @@ focus_tree = {
 			focus = LUC_ArmyDefenceInDepth_Focus
 		}
 		available = {
-			
+			has_completed_focus = LUC_ArmyCivilianPreparations_Focus
+			OR = {
+				surrender_progress > 0.05
+				custom_trigger_tooltip = {
+					tooltip = LUC_ExpandConscription_Focus_tt
+					any_enemy_country = {
+						strength_ratio = {
+							tag = SUS
+							ratio > 1
+						}
+					}
+				}
+				threat > 0.25
+			}
 		}
 		completion_reward = {  
-			
+			add_ideas = LUC_Army_Conscription
+			custom_effect_tooltip = LUC_newline_tt
+			if = {
+				limit = {
+					has_idea = disarmed_nation
+				}
+				add_ideas = volunteer_only
+			}
+			else_if = {
+				limit = {
+					has_idea = volunteer_only
+				}
+				add_ideas = limited_conscription
+			}
+			else_if = {
+				limit = {
+					has_idea = limited_conscription
+				}
+				add_ideas = extensive_conscription
+			}
+			else_if = {
+				limit = {
+					has_idea = extensive_conscription
+				}
+				add_ideas = service_by_requirement
+			}
+			else_if = {
+				limit = {
+					has_idea = service_by_requirement
+				}
+				add_ideas = all_adults_serve
+			}
+			else = {
+				add_ideas = scraping_the_barrel
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1542,8 +1674,17 @@ focus_tree = {
 		available = {
 			
 		}
-		completion_reward = {  
-			
+		completion_reward = { 
+			every_army_leader = {
+				add_planning = 1
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				name = LUC_ArmyNewManuals
+				uses = 3
+				category = land_doctrine
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1559,10 +1700,82 @@ focus_tree = {
 			focus = LUC_ArmyNewManuals_Focus
 		}
 		available = {
-			
+			OR = {
+				AND = {
+					SWI = {
+						exists = yes
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				AND = {
+					SWI = {
+						exists = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = LUC_FormedAlpineFederation_tt
+						has_country_flag = LUC_FormedAlpineFederation_flag
+					}
+				}
+			}
 		}
 		completion_reward = {  
-			
+			army_experience = 100
+			if = {
+				limit = {
+					SWI = {
+						exists = yes
+					}
+				}
+				SWI = {
+					army_experience = 100
+				}
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ArmySwissExercises_Focus_tt
+			hidden_effect = {
+				every_army_leader = {
+					random_list = {
+						25 = {
+							modifier = {
+								factor = 0
+								has_trait = trait_mountaineer
+							}
+							add_trait = {
+								trait = trait_mountaineer
+							}
+						}
+						25 = {
+							modifier = {
+								factor = 0
+								has_trait = hill_fighter
+							}
+							add_trait = {
+								trait = hill_fighter
+							}
+						}
+						25 = {
+							modifier = {
+								factor = 0
+								has_trait = ranger
+							}
+							add_trait = {
+								trait = ranger
+							}
+						}
+						25 = {
+							modifier = {
+								factor = 0
+								has_trait = urban_assault_specialist
+							}
+							add_trait = {
+								trait = urban_assault_specialist
+							}
+						}
+					}
+				}
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1581,7 +1794,21 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			swap_ideas = {
+				remove_idea = LUC_Army_Offence1
+				add_idea = LUC_Army_Offence2
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.8
+				category = cat_mountaineers_doctrine
+				name = LUC_MountaineerBonus
+			}
+			add_tech_bonus = {
+				name = LUC_MountaineerBonus
+				category = mountaineers_tech
+				bonus = 0.5
+				uses = 2
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1602,8 +1829,30 @@ focus_tree = {
 		available = {
 			
 		}
-		completion_reward = {  
-			
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LUC_Army_Offence2
+				add_idea = LUC_Army_Offence3
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.8
+				category = cat_mountaineers_doctrine
+				name = LUC_MountaineerBonus
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			every_army_leader = {
+				if = {
+					limit = {
+						has_trait = trait_mountaineer
+					}
+					add_logistics = 2
+				}
+				else = {
+					add_trait = {
+						trait = trait_mountaineer
+					}
+				}
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1619,10 +1868,32 @@ focus_tree = {
 			focus = LUC_ArmyRaiseMilitias_Focus
 		}
 		available = {
-			
+			owns_state = 970
+			OR = {
+				any_neighbor_country = {
+					has_war = yes
+					NOT = {
+						has_government = ROOT
+					}
+				}
+				has_war = yes
+			}
 		}
 		completion_reward = {  
-			
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			970 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+				}
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1638,10 +1909,45 @@ focus_tree = {
 			focus = LUC_ArmyDefenceInDepth_Focus
 		}
 		available = {
-			
 		}
 		completion_reward = {  
-			
+			swap_ideas = {
+				remove_idea = LUC_Army_Defence1
+				add_idea = LUC_Army_Defence2
+			}
+			custom_effect_tooltip = LUC_ArmyRaiseMilitias_Focus_tt
+			custom_effect_tooltip = LUC_newline_tt
+			hidden_effect = {
+				set_division_template_lock = {
+					division_template = "Civilian Militia"
+					is_locked = no
+				}
+				add_units_to_division_template = {
+					template_name = "Civilian Militia"
+					regiments = {
+						militia = 3
+						militia = 2
+						militia = 3
+						militia = 2
+					}
+					support = {
+						artillery = 0
+					}
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				create_unit = {
+					division = "Civilian Militia"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "Civilian Militia"
+					owner = ROOT
+				}
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1657,10 +1963,21 @@ focus_tree = {
 			focus = LUC_ArmyReviewMilitary_Focus
 		}
 		available = {
-			
+			OR = {
+				NOT = {
+					has_government = democratic
+				}
+				any_neighbor_country = {
+					has_war = yes
+					NOT = {
+						has_government = ROOT
+					}
+				}
+				threat > 0.15
+			}
 		}
 		completion_reward = {  
-			
+			add_ideas = LUC_CivilianPreparations
 		}
 		mutually_exclusive = {
 		}
@@ -1680,10 +1997,30 @@ focus_tree = {
 			focus = LUC_ArmyCivilianPreparations_Focus
 		}
 		available = {
-			
+			OR = {
+				has_government = democratic
+				has_government = communism
+				AND = {
+					has_war = yes
+					NOT = {
+						has_idea = civilian_economy
+					}
+				}
+			}
 		}
 		completion_reward = {  
-			
+			set_rule = {
+				can_generate_female_aces  = yes
+			}
+			set_rule = {
+				can_generate_female_unit_leaders = yes
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			swap_ideas = {
+				remove_idea = LUC_CivilianPreparations
+				add_idea = LUC_WomenDivisions
+
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1705,7 +2042,18 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			add_political_power = 50
+			add_stability = 0.05
+			custom_effect_tooltip = LUC_newline_tt
+			if = {
+				limit = {
+					has_intelligence_agency = yes
+				}
+				gain_random_agency_upgrade = yes
+			}
+			else = {
+				create_intelligence_agency = yes
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1724,7 +2072,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			add_ideas = LUC_SecurityCorps
 		}
 		mutually_exclusive = {
 		}
@@ -1746,7 +2094,19 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			add_equipment_to_stockpile = {
+				type = transport_plane_equipment
+				amount = 50
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			air_experience = 25
+			custom_effect_tooltip = LUC_newline_tt
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1762,10 +2122,29 @@ focus_tree = {
 			focus = LUC_AirforceMountainFlights_Focus
 		}
 		available = {
-			
+			any_country = {
+				is_major = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+				has_opinion = {
+					target = ROOT
+					value > 49
+				}
+			}
 		}
 		completion_reward = {  
-			
+			add_timed_idea = {
+				idea = LUC_AirPurchases_idea
+				days = 720
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			add_tech_bonus = {
+				name = LUC_AirforcePurchaseForeignDesigns_Focus
+				uses = 2
+				bonus = 0.5
+				category = air_equipment
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1781,10 +2160,18 @@ focus_tree = {
 			focus = LUC_AirforceMountainFlights_Focus
 		}
 		available = {
-			
+			has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
 		}
 		completion_reward = {  
-			
+			add_ideas = LUC_LiechtensteinAirforce_idea
+			custom_effect_tooltip = LUC_newline_tt
+			air_experience = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+				name = LUC_AirforceAirfieldsConstruction_Focus
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1806,7 +2193,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			swap_ideas = {
+				remove_idea = LUC_LiechtensteinAirforce_idea
+				add_idea = LUC_LiechtensteinAirforce_bomber_idea
+			}
 		}
 		mutually_exclusive = {
 			focus = LUC_AirforceFighterPlanes_Focus
@@ -1829,7 +2219,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			swap_ideas = {
+				remove_idea = LUC_LiechtensteinAirforce_idea
+				add_idea = LUC_LiechtensteinAirforce_fighter_idea
+			}
 		}
 		mutually_exclusive = {
 			focus = LUC_AirforceBomberFocus_Focus
@@ -1853,7 +2246,23 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			
+			air_experience = 50
+			custom_effect_tooltip = LUC_newline_tt
+			if = {
+				limit = {
+					has_idea = LUC_LiechtensteinAirforce_fighter_idea
+				}
+				swap_ideas = {
+					remove_idea = LUC_LiechtensteinAirforce_fighter_idea
+					add_idea = LUC_LiechtensteinAirforce_fighter_cas_idea
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = LUC_LiechtensteinAirforce_bomber_idea
+					add_idea = LUC_LiechtensteinAirforce_bomber_cas_idea
+				}
+			}
 		}
 		mutually_exclusive = {
 		}

@@ -121,7 +121,7 @@
  LUC_ArmySupportDivisions_Focus:0 "Victory through Firepower"
  LUC_ArmySupportDivisions_Focus_desc:0 ""
 
- LUC_ArmyModernRifles_Focus:0 "The Queen of Battle"
+ LUC_ArmyModernRifles_Focus:0 "The Queen of the Battlefield"
  LUC_ArmyModernRifles_Focus_desc:0 ""
 
  LUC_ArmyEngineerDivisions_Focus:0 "A Dedicated Engineer Corps"
@@ -135,18 +135,24 @@
 
  LUC_ArmyDefenceInDepth_Focus:0 "A Defensive Mentality"
  LUC_ArmyDefenceInDepth_Focus_desc:0 ""
+ LUC_ArmyDefenceInDepth_Focus_unlock_tt:0 "We appointed §Y$LUC_Johannes_Franz_Maria_Balthasar$§! as our army's chief of staff\n\n"
+ LUC_ArmyDefenceInDepth_Focus_tt:0 "Our commanders will be more likely to gain the §YInflexible Strategist§! and §YCautious§! traits."
 
  LUC_ArmyOnTheOffence_Focus:0 "Alpine Patrols"
  LUC_ArmyOnTheOffence_Focus_desc:0 ""
+ LUC_ArmyOnTheOffence_Focus_unlock_tt:0 "We appointed §Y$LUC_Rene_Batliner$§! as our army's chief of staff\n\n"
+ LUC_ArmyOnTheOffence_Focus_tt:0 "Our commanders will be more likely to gain the §Y Career Officer§! and §YReckless§! traits."
 
  LUC_ExpandConscription_Focus:0 "Intensify Conscription Efforts"
  LUC_ExpandConscription_Focus_desc:0 ""
+ LUC_ExpandConscription_Focus_tt:0 "Any country at war with §Y[ROOT.GetName]§! has a larger army than §Y[ROOT.GetName]§!"
 
  LUC_ArmyNewManuals_Focus:0 "[ROOT.GetAdjective] Planning School"
  LUC_ArmyNewManuals_Focus_desc:0 ""
 
  LUC_ArmySwissExercises_Focus:0 "Joint Exercises with [SWI.GetName]"
  LUC_ArmySwissExercises_Focus_desc:0 ""
+ LUC_ArmySwissExercises_Focus_tt:0 "Every one of our commanders will get a trait, randomly chosen between the §YMountaineer§!, §YHill Fighter§!, §YRanger§! or §YUrban Specialist§!."
  
  LUC_ArmySpecialMountaineerForces_Focus:0 "Mountain Warfare Specialisation"
  LUC_ArmySpecialMountaineerForces_Focus_desc:0 ""
@@ -159,6 +165,7 @@
 
  LUC_ArmyRaiseMilitias_Focus:0 "An Army of Volunteers"
  LUC_ArmyRaiseMilitias_Focus_desc:0 ""
+ LUC_ArmyRaiseMilitias_Focus_tt:0 "Expands the §YCivilian Militia§! template with §Y4§! Militia Brigades and unlocks it."
 
  LUC_IntelligenceService_Focus:0 "Landespolizei des Fürstentums"
  LUC_IntelligenceService_Focus_desc:0 ""

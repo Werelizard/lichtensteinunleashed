@@ -30,6 +30,8 @@ division_template = {
 			y = 0
 		}
 	}
+
+	is_locked = yes
 }
 
 units = {

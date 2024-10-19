@@ -106,7 +106,7 @@ add_ideas = {
 	limited_exports
 	LUC_Franz_I_idea
 	LUC_Liechtenstein_Neutrality_idea
-	LUC_Liechtensteiner_Army_idea
+	LUC_Liechtensteiner_No_Army_idea
 	LUC_Liechtensteiner_Economy_idea
 	LUC_CustomsUnion_idea
 }

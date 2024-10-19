@@ -11,7 +11,7 @@ LUC_Government_LandtagSupport_cat = {
 
 	LUC_Landtag_Armement = {
 		visible = {
-			has_completed_focus = LUC_EconomyReorientEconomy_Focus
+			has_completed_focus = LUC_ArmyReviewMilitary_Focus
 		}
 	}
 

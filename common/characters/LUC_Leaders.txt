@@ -635,6 +635,9 @@ characters={
 				large = "GFX_LUC_Alois_Gonzaga_Maria_Adolf"
 				small = "GFX_LUC_Alois_Gonzaga_Maria_Adolf_small"
 			}
+			civilian = {
+				small = "GFX_LUC_Alois_Gonzaga_Maria_Adolf_small"
+			}
 		}
 		corps_commander = {
 			traits = {
@@ -655,6 +658,9 @@ characters={
 		portraits = {
 			army = {
 				large = "GFX_LUC_Heinrich_Aloys_Maria_Joseph"
+				small = "GFX_LUC_Heinrich_Aloys_Maria_Joseph_small"
+			}
+			civilian = {
 				small = "GFX_LUC_Heinrich_Aloys_Maria_Joseph_small"
 			}
 		}
@@ -679,6 +685,9 @@ characters={
 				large = "GFX_LUC_Johannes_Franz_Maria_Balthasar"
 				small = "GFX_LUC_Johannes_Franz_Maria_Balthasar_small"
 			}
+			civilian = {
+				small = "GFX_LUC_Johannes_Franz_Maria_Balthasar_small"
+			}
 		}
 		field_marshal = {
 			traits = {
@@ -699,6 +708,9 @@ characters={
 		portraits = {
 			army = {
 				large = "GFX_LUC_Rene_Batliner"
+				small = "GFX_LUC_Rene_Batliner_small"
+			}
+			civilian = {
 				small = "GFX_LUC_Rene_Batliner_small"
 			}
 		}

@@ -17,7 +17,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SUS/LUC_Fascist_Agitators_idea.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_LUC_Liechtensteiner_Army_idea"
+		name = "GFX_idea_LUC_Liechtensteiner_No_Army_idea"
 		textureFile = "gfx/interface/ideas/SUS/LUC_LichtensteinerMilitary.dds"
 	}
 	# Industrial Concerns

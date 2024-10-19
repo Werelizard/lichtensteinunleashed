@@ -29,10 +29,9 @@ ideas = {
 				can_create_factions = no
 			}
 		}
-		LUC_Liechtensteiner_Army_idea = {
+		LUC_Liechtensteiner_No_Army_idea = {
 			modifier = {
-				recruitable_population_factor = -0.8
-				experience_gain_factor = -0.5
+				recruitable_population_factor = -0.5
 			}
 		}
 		LUC_CustomsUnion_idea = {

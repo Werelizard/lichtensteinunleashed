@@ -124,12 +124,14 @@ country_event = { #Event for Leichtenstein - Failure
 	}
 }
 
-# Meeting with Krupp
+#########################
+# ARMY BRANCH EVENTS
+#########################
 
-country_event = { 
-	id = LUC_FocusTree.104
-	title = LUC_FocusTree.104.title
-	desc = LUC_FocusTree.104.desc
+country_event = { #Appoitning a commander in chief
+	id = LUC_FocusTree.201
+	title = LUC_FocusTree.201.title
+	desc = LUC_FocusTree.201.desc
 
 	is_triggered_only = yes
 
@@ -137,55 +139,142 @@ country_event = {
 		
 	}
 
-	picture = GFX_report_event_baltic_entente_one
+	picture = GFX_report_event_FIN_finnish_generals
 
-	option = { # Of course!
-		name = LUC_FocusTree.104.a
+	option = { # Keep Joseph Franz Maria - unlocks him as a chief of army.
+		name = LUC_FocusTree.201.a
 
-		trigger = {
-			any_owned_state = {
-				industrial_complex > 0
-			}
-		}
-
-		random_owned_state = {
-			limit = {
-				industrial_complex > 0
-			}
-			remove_building = {
-				type = industrial_complex
-				level = 1
-			}
-			add_extra_state_shared_building_slots = 1
-			add_resource = {
-				type = steel
-				amount = 4
-			}
-		}
-
-		GER = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 1
-			}
-		}
-	}
-
-	option = { # We had other interests in mind...
-		name = LUC_FocusTree.104.b
-
-		custom_effect_tooltip = LUC_removeIndustrialConern_tt
-		show_ideas_tooltip = krupp
+		custom_effect_tooltip = LUC_FocusTree.201.a_tt
 		custom_effect_tooltip = LUC_newline_tt
-		custom_effect_tooltip = available_industrial_concern
-		show_ideas_tooltip = ig_faben
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_grand_battle_plan
+			name = LUC_ArmyTraditional
+		}
+		custom_effect_tooltip = LUC_newline_tt
+		add_advisor_role = {
+			character = LUC_Johannes_Franz_Maria_Balthasar
+			advisor = {
+				slot = army_chief
+				cost = 150
+				idea_token = LUC_ArmyChief
+				traits = {
+					army_chief_planning_3
+				}
+			}
+		}
+		custom_effect_tooltip = LUC_newline_tt
+		add_advisor_role = {
+			character = LUC_Alois_Gonzaga_Maria_Adolf
+			advisor = {
+				slot = high_command
+				cost = 150
+				ledger = army
+				idea_token = LUC_HighCommand_Entrenchment
+				traits = {
+					army_infantry_1
+				}
+			}
+		}
+		add_advisor_role = {
+			character = LUC_Heinrich_Aloys_Maria_Joseph
+			advisor = {
+				slot = high_command
+				cost = 150
+				ledger = army
+				idea_token = LUC_HighCommand_Logistics
+				traits = {
+					army_logistics_1
+				}
+			}
+		}
+		add_advisor_role = {
+			character = LUC_Rene_Batliner
+			advisor = {
+				slot = high_command
+				cost = 150
+				ledger = army
+				idea_token = LUC_HighCommand_SpecialForces
+				traits = {
+					army_commando_1
+				}
+			}
+		}
+
 		hidden_effect = {
-			clr_country_flag = LUC_kruppAllowed_flag
-			set_country_flag = LUC_fabenAllowed_flag
+			set_country_flag = LUC_ArmyDefenceInDepth_Focus_flag
 		}
 	}
 
-	option = { # We cannot afford this
-		name = LUC_FocusTree.104.c
+	option = { # Trust in Batliner - unlocks him as a chief of army.
+		name = LUC_FocusTree.201.b
+
+		custom_effect_tooltip = LUC_FocusTree.201.b_tt
+		custom_effect_tooltip = LUC_newline_tt
+		LUC_Rene_Batliner = {
+			promote_leader = yes
+		}
+		LUC_Johannes_Franz_Maria_Balthasar = {
+			demote_leader = yes
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			category = special_forces_doctrine
+			name = LUC_SpecialForces
+		}
+		custom_effect_tooltip = LUC_newline_tt
+		add_advisor_role = {
+			character = LUC_Rene_Batliner
+			advisor = {
+				slot = army_chief
+				cost = 150
+				ledger = army
+				idea_token = LUC_HighCommand_SpecialForces
+				traits = {
+					army_commando_3
+				}
+			}
+		}
+		custom_effect_tooltip = LUC_newline_tt
+		add_advisor_role = {
+			character = LUC_Alois_Gonzaga_Maria_Adolf
+			advisor = {
+				slot = high_command
+				cost = 150
+				ledger = army
+				idea_token = LUC_HighCommand_Entrenchment
+				traits = {
+					army_infantry_1
+				}
+			}
+		}
+		add_advisor_role = {
+			character = LUC_Heinrich_Aloys_Maria_Joseph
+			advisor = {
+				slot = high_command
+				cost = 150
+				ledger = army
+				idea_token = LUC_HighCommand_Logistics
+				traits = {
+					army_logistics_1
+				}
+			}
+		}
+		add_advisor_role = {
+			character = LUC_Johannes_Franz_Maria_Balthasar
+			advisor = {
+				slot = high_command
+				cost = 150
+				idea_token = LUC_ArmyChief
+				traits = {
+					army_chief_planning_1
+				}
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = LUC_ArmyOnTheOffence_Focus_flag
+		}
 	}
 }

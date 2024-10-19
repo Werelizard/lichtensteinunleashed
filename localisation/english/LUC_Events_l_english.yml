@@ -30,6 +30,14 @@
  LUC_FocusTree.104.a:0 "We accept their offer!"
  LUC_FocusTree.104.b:0 "We had another idea in mind, actually."
  LUC_FocusTree.104.c:0 "We cannot afford such prospects at the moment."
+
+ # Army events
+ LUC_FocusTree.201.title:0 "The Future of the [ROOT.GetAdjective] High Command"
+ LUC_FocusTree.201.desc:0 ""
+ LUC_FocusTree.201.a:0 "We must stand by our military traditions"
+ LUC_FocusTree.201.a_tt:0 "We will put our faith in §Y$LUC_Johannes_Franz_Maria_Balthasar$§!, focusing on thorough planing"
+ LUC_FocusTree.201.b:0 "A shakeup is necessary!"
+ LUC_FocusTree.201.b_tt:0 "We will put our faith in §Y$LUC_Rene_Batliner$§!, focusing on special forces"
  
  #Military-Movement
  LUC_Fascists.1.title:0 "Fascist Sympathisers amongst the Government?"
