@@ -91,6 +91,12 @@
  LUC_RupertMette:0 "Rupert Mette"
  LUC_MartinLanter:0 "Martin Lanter"
  LUC_YvonneVogt:0 "Yvonne Vogt"
+ LUC_Simon_Buhler:0 "Simon Bühler"
+ LUC_Max_Spitz:0 "Max Spitz"
+ LUC_Niels_Wohlwend:0 "Niels Wohlwend"
+ LUC_Georg_Meyer:0 "Georg Meyer"
+ LUC_Tomas_Frick:0 "Tomas Frick"
+ LUC_Andreas_Goos:0 "Andreas Goos"
 
  # Advisor Trait
  LUC_LeaderTrait_PrinceOfLiechtenstein:0 "The Mountain Prince"
@@ -127,6 +133,7 @@
  LUC_AdvisorTrait_AgrarianRepresentative:0 "Head of the Agrarian Union"
  LUC_AdvisorTrait_LiberalDoctor:0 "Head of the Vaduz Hospital"
  LUC_AdvisorTrait_SmallBuisnessAdvocate:0 "Small Business Advocate"
+ LUC_OfficerTrait_Paramilitary:0 "Militia Officer"
 
  # Ideology tooltips
  LUC_NOTarrestedadvisor_tt:0 "NOT: advisor was §Rarrested§!"

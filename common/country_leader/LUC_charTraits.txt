@@ -238,4 +238,15 @@ leader_traits = {
 		military_industrial_organization_funds_gain = 0.2
 		industrial_concern_cost_factor = -0.1
 	}
+
+	#################
+	# OFFICER TRAITS #
+	#################
+
+	LUC_OfficerTrait_Paramilitary = {
+		modifier_army_sub_unit_militia_attack_factor = 0.05
+		modifier_army_sub_unit_militia_defence_factor = 0.05
+		experience_gain_army_factor = 0.1
+		fascism_drift = 0.1
+	}
 }

@@ -2,7 +2,10 @@
  LUC_Landtag:0 "A Democratic Governance"
  LUC_Landtag_desc:0 ""
  LUC_LandtagCompleted_tt:0 "§LThis focus will be automatically completed once the [GetYear] elections have been held.§!"
-
+ LUC_AvailableAsChiefOfNavy:0 "Available as Chief of Navy:"
+ LUC_AvailableAsChiefOfAir:0 "Available as Chief of Airforce:"
+ LUC_AvailableAsHighCommand:0 "Available as High Command:"
+ 
  # Liechtensteiner Economy
  LUC_EconomyStateOfEconomy_Focus:0 "Budgetary Adjustments"
  LUC_EconomyStateOfEconomy_Focus_desc:0 "The Liechtensteiner Economy, has hardly evolved past artisans and farmers - with the overwhelming majority of its exports being agricultural in nature. The industrial capability of the country is near to non-existant and will need a near to complete overhaul if our country is to succesfully transition into the twentieth century."
@@ -185,6 +188,9 @@
  LUC_ArmyModernWarfare_Focus:0 "Army Motorisation"
  LUC_ArmyModernWarfare_Focus_desc:0 ""
 
+ LUC_ArmyExperimentalResarch_Focus:0 "Experimental Research"
+ LUC_ArmyExperimentalResarch_Focus_desc:0 ""
+
   ###################################
 	# AIRFORCE-ORIENTED FOCUSES       #
 	###################################
@@ -207,6 +213,41 @@
  LUC_AirforceCombinedArms_Focus:0 "Air and Land Coordination"
  LUC_AirforceCombinedArms_Focus_desc:0 ""
 
+  ###################################
+	# NAVY-ORIENTED FOCUSES           #
+	###################################
+
+ LUC_NavyDockyards_Focus:0 "The Foundations of a [ROOT.GetADjective] Navy"
+ LUC_NavyDockyards_Focus_desc:0 ""
+
+ LUC_NavyModernisedNavalProduction_Focus:0 "Expanding our Naval Production"
+ LUC_NavyModernisedNavalProduction_Focus_desc:0 ""
+
+ LUC_NavyAdvancedNavalProduction_Focus:0 "Advanced Naval Designs"
+ LUC_NavyAdvancedNavalProduction_Focus_desc:0 ""
+
+ LUC_NavyForeignTrade_Focus:0 "Break the Land-Lock"
+ LUC_NavyForeignTrade_Focus_desc:0 ""
+
+ LUC_NavyAcquireAlaska_Focus:0 "Our Claim to Alaska"
+ LUC_NavyAcquireAlaska_Focus_desc:0 ""
+
+ LUC_NavyAdmiralty_Focus:0 "A [ROOT.GetADjective] Admiralty"
+ LUC_NavyAdmiralty_Focus_desc:0 ""
+
+ LUC_NavySubmarines_Focus:0 "Terror From Below"
+ LUC_NavySubmarines_Focus_desc:0 ""
+
+ LUC_NavyLightShips_Focus:0 "A Great White Fleet"
+ LUC_NavyLightShips_Focus_desc:0 ""
+
+ LUC_NavyHeavyShips_Focus:0 "Total Naval Supremacy"
+ LUC_NavyHeavyShips_Focus_desc:0 ""
+
+  ###################################
+	# MISC                            #
+	###################################
+ 
  # TOOLTIPS FOR THE DYNAMIC MODIFIERS
  LUC_ModifyEconomy_tt:0 "Modifiy §Y$LUC_Liechtensteiner_Economy_idea$§! by"
  LUC_ModifyEconomy_ConsumerGoods_neg5_tt:0 "Consumer Goods Factories factor: §Y-5.0%§!"

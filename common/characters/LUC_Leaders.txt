@@ -76,6 +76,16 @@ characters={
 				}
 			}
 		}
+		advisor = {
+			slot = high_command
+			idea_token = LUC_AlfonsGoop
+			available = {
+				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
+			}
+			traits = {
+				LUC_OfficerTrait_Paramilitary
+			}
+		}
 		country_leader={
 			ideology = rexism
 			traits={  
@@ -647,9 +657,19 @@ characters={
 			}
 			skill = 2
 			attack_skill = 1
-			defense_skill = 3
+			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 0
+		}
+		advisor = {
+			slot = high_command
+			idea_token = LUC_HighcommandCavalry
+			available = {
+				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
+			}
+			traits = {
+				army_cavalry_2
+			}
 		}
 	}
 	
@@ -671,10 +691,20 @@ characters={
 				cavalry_officer
 			}
 			skill = 2
-			attack_skill = 1
+			attack_skill = 0
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = LUC_HighcommandLogistics
+			available = {
+				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
+			}
+			traits = {
+				army_logistics_1
+			}
 		}
 	}
 	
@@ -701,6 +731,45 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 		}
+		advisor = {
+			slot = high_command
+			idea_token = LUC_HighcommandDefensive
+			available = {
+				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
+				custom_trigger_tooltip = {
+					tooltip = LUC_ArmyOnTheOffence_Focus_unlock_tt
+					has_country_flag = LUC_ArmyOnTheOffence_Focus_flag
+				}
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = LUC_ArmyChief
+			available = {
+				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
+				custom_trigger_tooltip = {
+					tooltip = LUC_ArmyDefenceInDepth_Focus_unlock_tt
+					has_country_flag = LUC_ArmyDefenceInDepth_Focus_flag
+				}
+			}
+			traits = {
+				army_chief_old_guard
+				army_infantry_1
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = LUC_Theorist
+			available = {
+				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
 	}
 	
 	LUC_Rene_Batliner = {
@@ -724,7 +793,184 @@ characters={
 			attack_skill = 1
 			defense_skill = 2
 			planning_skill = 0
-			logistics_skill = 2
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = LUC_HighcommandDefensive
+			available = {
+				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
+				custom_trigger_tooltip = {
+					tooltip = LUC_ArmyDefenceInDepth_Focus_unlock_tt
+					has_country_flag = LUC_ArmyDefenceInDepth_Focus_flag
+				}
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = LUC_ArmyChief
+			available = {
+				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
+				custom_trigger_tooltip = {
+					tooltip = LUC_ArmyOnTheOffence_Focus_unlock_tt
+					has_country_flag = LUC_ArmyOnTheOffence_Focus_flag
+				}
+			}
+			traits = {
+				army_chief_maneuver_1
+				army_commando_1
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = LUC_Theorist
+			available = {
+				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
+			}
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	# Admirals
+
+	## Naval Reform Guy
+	LUC_Simon_Buhler = {
+		name = LUC_Simon_Buhler
+		portraits = {
+			civilian = {
+				small = "GFX_LUC_Simon_Buhler_small"
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 0
+			defense_skill = 0
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = LUC_NavyChief
+			available = {
+				has_completed_focus = LUC_NavyAdmiralty_Focus
+			}
+			traits = {
+				navy_chief_reform_1
+			}
+		}
+	}
+
+	## Naval Landings guy
+	LUC_Max_Spitz = {
+		name = LUC_Max_Spitz
+		portraits = {
+			civilian = {
+				small = "GFX_LUC_Max_Spitz_small"
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 0
+			maneuvering_skill = 0
+			coordination_skill = 2
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = LUC_NavyChief
+			available = {
+				has_completed_focus = LUC_NavyAdmiralty_Focus
+			}
+			traits = {
+				navy_chief_maneuver_1
+			}
+		}
+	}
+
+	### Raiding Defence Guy
+	LUC_Niels_Wohlwend = {
+		name = LUC_Niels_Wohlwend
+		portraits = {
+			civilian = {
+				small = "GFX_LUC_Niels_Wohlwend_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = LUC_NavyCommand
+			available = {
+				has_completed_focus = LUC_NavyAdmiralty_Focus
+			}
+			traits = {
+				navy_fleet_logistics_2
+			}
+		}
+	}
+
+	# Airforce
+
+	## Weather Guy
+	LUC_Georg_Meyer = {
+		name = LUC_Georg_Meyer
+		portraits = {
+			civilian = {
+				small = "GFX_LUC_Georg_Meyer_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = LUC_AirChief
+			available = {
+				has_completed_focus = LUC_AirforceAirfieldsConstruction_Focus
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+		}
+	}
+
+	## Paratrooper Guy
+	LUC_Tomas_Frick = {
+		name = LUC_Tomas_Frick
+		portraits = {
+			civilian = {
+				small = "GFX_LUC_Tomas_Frick_small"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = LUC_AirChief
+			available = {
+				has_completed_focus = LUC_AirforceAirfieldsConstruction_Focus
+			}
+			traits = {
+				air_airborne_1
+			}
+		}
+	}
+
+	### Anti-Air Guy
+	LUC_Andreas_Goos = {
+		name = LUC_Andreas_Goos
+		portraits = {
+			civilian = {
+				small = "GFX_LUC_Andreas_Goos_small"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = LUC_AirCommand
+			available = {
+				has_completed_focus = LUC_AirforceAirfieldsConstruction_Focus
+			}
+			traits = {
+				air_air_superiority_1
+			}
 		}
 	}
 }

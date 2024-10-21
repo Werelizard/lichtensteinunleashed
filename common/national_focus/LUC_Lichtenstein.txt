@@ -1036,6 +1036,30 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = LUC_ArmyExperimentalResarch_Focus
+		icon = GFX_focus_research
+		cost = 5
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		x = 8
+		y = 2
+		prerequisite = {
+			focus = LUC_ArmyReviewMilitary_Focus
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			army_experience = 20
+			navy_experience = 20
+			air_experience = 20
+			custom_effect_tooltip = LUC_newline_tt
+			add_research_slot = 1
+		}
+		mutually_exclusive = {
+			
+		}
+	}
+	focus = {
 		id = LUC_ArmyWeaponContracts_Focus
 		icon = GFX_LUC_ArmyWeaponContracts_Focus
 		cost = 5
@@ -1471,7 +1495,7 @@ focus_tree = {
 		id = LUC_ArmyStockpiles_Focus
 		icon = GFX_LUC_ArmyStockpiles_Focus
 		cost = 5
-		x = 8
+		x = 9
 		y = 1
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
@@ -1506,7 +1530,18 @@ focus_tree = {
 			focus = LUC_ArmyModernRifles_Focus
 		}
 		available = {
-			
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = LUC_LandtagRearmemmentBill_tt
+					has_country_flag = LUC_LandtagRearmemmentBill_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = LUC_noLandtagMechanic_tt
+					NOT = {
+						LUC_hasLandtagMechanic_trigger = yes
+					}
+				}
+			}
 		}
 		completion_reward = {  
 			add_tech_bonus = {
@@ -1548,6 +1583,29 @@ focus_tree = {
 		completion_reward = {  
 			add_command_power = 25
 			army_experience = 50
+			custom_effect_tooltip = LUC_newline_tt
+			effect_tooltip = {
+				add_advisor_role = {
+					character = LUC_Heinrich_Aloys_Maria_Joseph
+					advisor = {
+						slot = high_command
+						idea_token = LUC_HighcommandLogistics
+						traits = {
+							army_logistics_1
+						}
+					}
+				}
+				add_advisor_role = {
+					character = LUC_Alois_Gonzaga_Maria_Adolf
+					advisor = {
+						slot = high_command
+						idea_token = LUC_HighcommandLogistics
+						traits = {
+							army_cavalry_2
+						}
+					}
+				}
+			}
 			custom_effect_tooltip = LUC_newline_tt
 			country_event = LUC_FocusTree.201
 		}
@@ -2154,7 +2212,6 @@ focus_tree = {
 				idea = LUC_AirPurchases_idea
 				days = 720
 			}
-			custom_effect_tooltip = LUC_newline_tt
 			add_tech_bonus = {
 				name = LUC_AirforcePurchaseForeignDesigns_Focus
 				uses = 2
@@ -2181,12 +2238,39 @@ focus_tree = {
 		completion_reward = {  
 			add_ideas = LUC_LiechtensteinAirforce_idea
 			custom_effect_tooltip = LUC_newline_tt
-			air_experience = 25
-			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 2
-				category = air_doctrine
-				name = LUC_AirforceAirfieldsConstruction_Focus
+			air_experience = 50
+			custom_effect_tooltip = LUC_newline_tt
+			effect_tooltip = {
+				add_advisor_role = {
+					character = LUC_Georg_Meyer
+					advisor = {
+						slot = air_chief
+						idea_token = LUC_HighcommandLogistics
+						traits = {
+							air_chief_all_weather_2
+						}
+					}
+				}
+				add_advisor_role = {
+					character = LUC_Tomas_Frick
+					advisor = {
+						slot = air_chief
+						idea_token = LUC_HighcommandLogistics
+						traits = {
+							air_airborne_1
+						}
+					}
+				}
+				add_advisor_role = {
+					character = LUC_Andreas_Goos
+					advisor = {
+						slot = high_command
+						idea_token = LUC_HighcommandLogistics
+						traits = {
+							air_air_superiority_1
+						}
+					}
+				}
 			}
 		}
 		mutually_exclusive = {
@@ -2213,7 +2297,6 @@ focus_tree = {
 				remove_idea = LUC_LiechtensteinAirforce_idea
 				add_idea = LUC_LiechtensteinAirforce_bomber_idea
 			}
-			custom_effect_tooltip = LUC_newline_tt
 			add_tech_bonus = {
 				name = LUC_AirforceBomberFocus_Focus
 				uses = 1
@@ -2246,7 +2329,6 @@ focus_tree = {
 				remove_idea = LUC_LiechtensteinAirforce_idea
 				add_idea = LUC_LiechtensteinAirforce_fighter_idea
 			}
-			custom_effect_tooltip = LUC_newline_tt
 			add_tech_bonus = {
 				name = LUC_AirforceFighterPlanes_Focus
 				uses = 1
@@ -2294,6 +2376,278 @@ focus_tree = {
 					add_idea = LUC_LiechtensteinAirforce_bomber_cas_idea
 				}
 			}
+		}
+		mutually_exclusive = {
+		}
+	}
+	###################################
+	# NAVY-ORIENTED FOCUSES           #
+	###################################
+	focus = {
+		id = LUC_NavyDockyards_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -2
+		y = 6
+		relative_position_id = LUC_ArmyReviewMilitary_Focus
+		prerequisite = {
+			
+		}
+		available = {
+			has_completed_focus = LUC_ArmyReviewMilitary_Focus
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
+		completion_reward = {  
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_NavyModernisedNavalProduction_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyDockyards_Focus
+			focus = LUC_NavyAdmiralty_Focus
+		}
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
+		completion_reward = {  
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			add_tech_bonus = {
+				name = LUC_NavyModernisedNavalProduction_Focus
+				uses = 2
+				category = naval_equipment
+				bonus = 0.5
+			}
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_NavyAdvancedNavalProduction_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 3
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyModernisedNavalProduction_Focus
+		}
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+			}
+			OR = {
+				has_completed_focus = LUC_NavySubmarines_Focus
+				has_completed_focus = LUC_NavyLightShips_Focus
+				has_completed_focus = LUC_NavyHeavyShips_Focus
+			}
+		}
+		completion_reward = {  
+			navy_experience = 50
+			custom_effect_tooltip = LUC_newline_tt
+			add_tech_bonus = {
+				name = LUC_NavyAdvancedNavalProduction_Focus
+				category = naval_equipment
+				uses = 2
+				bonus = 0.75
+				ahead_reduction = 2
+			}
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_NavyForeignTrade_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyDockyards_Focus
+		}
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_NavyAcquireAlaska_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyForeignTrade_Focus
+		}
+		prerequisite = {
+			focus = LUC_NavyModernisedNavalProduction_Focus
+		}
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_NavyAdmiralty_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 5
+		y = 0
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			
+		}
+		available = {
+			has_completed_focus = LUC_ArmyReviewMilitary_Focus
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
+		completion_reward = {  
+			navy_experience = 50
+			custom_effect_tooltip = LUC_newline_tt
+			effect_tooltip = {
+				add_advisor_role = {
+					character = LUC_Simon_Buhler
+					advisor = {
+						slot = navy_chief
+						idea_token = LUC_HighcommandLogistics
+						traits = {
+							navy_chief_reform_1
+						}
+					}
+				}
+				add_advisor_role = {
+					character = LUC_Max_Spitz
+					advisor = {
+						slot = navy_chief
+						idea_token = LUC_HighcommandLogistics
+						traits = {
+							navy_chief_maneuver_1
+						}
+					}
+				}
+				add_advisor_role = {
+					character = LUC_Alois_Gonzaga_Maria_Adolf
+					advisor = {
+						slot = high_command
+						idea_token = LUC_HighcommandLogistics
+						traits = {
+							navy_chief_maneuver_1
+						}
+					}
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_NavySubmarines_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 5
+		y = 2
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyAdmiralty_Focus
+		}
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_NavyLightShips_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyAdmiralty_Focus
+		}
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
+		completion_reward = {  
+			
+		}
+		mutually_exclusive = {
+		}
+	}
+	focus = {
+		id = LUC_NavyHeavyShips_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 6
+		y = 1
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyAdmiralty_Focus
+		}
+		available = {
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
+		completion_reward = {  
+			
 		}
 		mutually_exclusive = {
 		}

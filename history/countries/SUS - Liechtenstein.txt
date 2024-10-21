@@ -91,6 +91,12 @@ recruit_character = LUC_MarkusLedswher
 recruit_character = LUC_RupertMette
 recruit_character = LUC_MartinLanter
 recruit_character = LUC_YvonneVogt
+recruit_character = LUC_Andreas_Goos
+recruit_character = LUC_Tomas_Frick
+recruit_character = LUC_Georg_Meyer
+recruit_character = LUC_Niels_Wohlwend
+recruit_character = LUC_Max_Spitz
+recruit_character = LUC_Simon_Buhler
 
 # Generals
 

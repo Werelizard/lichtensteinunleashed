@@ -29,7 +29,7 @@ ideas = {
 		LUC_VaduzTimber_concern = {
 			modifier = {
 				production_speed_buildings_factor = 0.05
-				local_building_slots_factor = 0.05
+				local_building_slots_factor = 0.1
 			}
 			visible = {
 				original_tag = SUS
@@ -51,6 +51,7 @@ ideas = {
 		LUC_LawenaPower_concern = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.025
 			}
 			research_bonus = {
 				electronics = 0.05

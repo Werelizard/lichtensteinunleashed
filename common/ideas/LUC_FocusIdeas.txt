@@ -28,6 +28,7 @@ ideas = {
 		}
 		LUC_Army_Defence1_idea = {
 			modifier = {
+				experience_gain_army = 0.1
 				defence = 0.1
 				army_org_factor = 0.1
 				max_dig_in_factor = 0.1
@@ -35,6 +36,7 @@ ideas = {
 		}
 		LUC_Army_Defence2_idea = {
 			modifier = {
+				experience_gain_army = 0.1
 				defence = 0.1
 				army_org_factor = 0.1
 				max_dig_in_factor = 0.1
@@ -45,6 +47,7 @@ ideas = {
 		}
 		LUC_Army_Offence1_idea = {
 			modifier = {
+				experience_gain_army = 0.1
 				recon_factor = 0.1
 				special_forces_attack_factor = 0.05
 				mountaineers_special_forces_contribution_factor = -0.1
@@ -52,20 +55,22 @@ ideas = {
 		}
 		LUC_Army_Offence2_idea = {
 			modifier = {
+				experience_gain_army = 0.1
 				recon_factor = 0.1
 				special_forces_attack_factor = 0.05
 				mountaineers_special_forces_contribution_factor = -0.1
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
-				special_forces_cap = 0.2
+				special_forces_cap = 0.1
 			}
 		}
 		LUC_Army_Offence3_idea = {
 			modifier = {
+				experience_gain_army = 0.1
 				recon_factor = 0.1
 				special_forces_attack_factor = 0.05
-				mountaineers_special_forces_contribution_factor = -0.2
-				modifier_army_sub_unit_mountaineers_attack_factor = 0.15
-				special_forces_cap = 0.2
+				mountaineers_special_forces_contribution_factor = -0.1
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.2
+				special_forces_cap = 0.1
 				modifier_army_sub_unit_mountaineers_max_org_factor = 0.1
 			}
 		}

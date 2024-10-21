@@ -148,56 +148,34 @@ country_event = { #Appoitning a commander in chief
 		custom_effect_tooltip = LUC_newline_tt
 		add_doctrine_cost_reduction = {
 			cost_reduction = 0.5
-			uses = 2
-			category = cat_grand_battle_plan
+			uses = 1
+			category = land_doctrine
 			name = LUC_ArmyTraditional
 		}
-		custom_effect_tooltip = LUC_newline_tt
-		add_advisor_role = {
-			character = LUC_Johannes_Franz_Maria_Balthasar
-			advisor = {
-				slot = army_chief
-				cost = 150
-				idea_token = LUC_ArmyChief
-				traits = {
-					army_chief_planning_3
+		
+		effect_tooltip = {
+			add_advisor_role = {
+				character = LUC_Johannes_Franz_Maria_Balthasar
+				advisor = {
+					slot = army_chief
+					cost = 150
+					idea_token = LUC_DUMMY
+					traits = {
+						army_chief_old_guard
+						army_infantry_1
+					}
 				}
 			}
-		}
-		custom_effect_tooltip = LUC_newline_tt
-		add_advisor_role = {
-			character = LUC_Alois_Gonzaga_Maria_Adolf
-			advisor = {
-				slot = high_command
-				cost = 150
-				ledger = army
-				idea_token = LUC_HighCommand_Entrenchment
-				traits = {
-					army_infantry_1
-				}
-			}
-		}
-		add_advisor_role = {
-			character = LUC_Heinrich_Aloys_Maria_Joseph
-			advisor = {
-				slot = high_command
-				cost = 150
-				ledger = army
-				idea_token = LUC_HighCommand_Logistics
-				traits = {
-					army_logistics_1
-				}
-			}
-		}
-		add_advisor_role = {
-			character = LUC_Rene_Batliner
-			advisor = {
-				slot = high_command
-				cost = 150
-				ledger = army
-				idea_token = LUC_HighCommand_SpecialForces
-				traits = {
-					army_commando_1
+			add_advisor_role = {
+				character = LUC_Rene_Batliner
+				advisor = {
+					slot = high_command
+					cost = 150
+					ledger = army
+					idea_token = LUC_DUMMY
+					traits = {
+						army_chief_offensive_1
+					}
 				}
 			}
 		}
@@ -223,55 +201,33 @@ country_event = { #Appoitning a commander in chief
 			category = special_forces_doctrine
 			name = LUC_SpecialForces
 		}
-		custom_effect_tooltip = LUC_newline_tt
-		add_advisor_role = {
-			character = LUC_Rene_Batliner
-			advisor = {
-				slot = army_chief
-				cost = 150
-				ledger = army
-				idea_token = LUC_HighCommand_SpecialForces
-				traits = {
-					army_commando_3
+		effect_tooltip = {
+			add_advisor_role = {
+				character = LUC_Rene_Batliner
+				advisor = {
+					slot = army_chief
+					cost = 150
+					ledger = army
+					idea_token = LUC_DUMMY
+					traits = {
+						army_chief_maneuver_1
+						army_commando_1
+					}
+				}
+			}
+			add_advisor_role = {
+				character = LUC_Johannes_Franz_Maria_Balthasar
+				advisor = {
+					slot = high_command
+					cost = 150
+					idea_token = LUC_DUMMY
+					traits = {
+						army_chief_defensive_1
+					}
 				}
 			}
 		}
-		custom_effect_tooltip = LUC_newline_tt
-		add_advisor_role = {
-			character = LUC_Alois_Gonzaga_Maria_Adolf
-			advisor = {
-				slot = high_command
-				cost = 150
-				ledger = army
-				idea_token = LUC_HighCommand_Entrenchment
-				traits = {
-					army_infantry_1
-				}
-			}
-		}
-		add_advisor_role = {
-			character = LUC_Heinrich_Aloys_Maria_Joseph
-			advisor = {
-				slot = high_command
-				cost = 150
-				ledger = army
-				idea_token = LUC_HighCommand_Logistics
-				traits = {
-					army_logistics_1
-				}
-			}
-		}
-		add_advisor_role = {
-			character = LUC_Johannes_Franz_Maria_Balthasar
-			advisor = {
-				slot = high_command
-				cost = 150
-				idea_token = LUC_ArmyChief
-				traits = {
-					army_chief_planning_1
-				}
-			}
-		}
+
 
 		hidden_effect = {
 			set_country_flag = LUC_ArmyOnTheOffence_Focus_flag

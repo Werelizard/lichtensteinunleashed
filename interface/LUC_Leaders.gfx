@@ -213,4 +213,30 @@ spriteTypes = {
 		name = "GFX_LUC_Rene_Batliner_small"
 		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Rene_Batliner_Small.dds"
 	}
+
+	# Military Advisors
+	spriteType = {
+		name = "GFX_LUC_Simon_Buhler_small"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Simon_Buhler_small.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_Max_Spitz_small"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Max_Spitz_small.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_Niels_Wohlwend_small"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Niels_Wohlwend_small.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_Georg_Meyer_small"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Georg_Meyer_small.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_Tomas_Frick_small"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Tomas_Frick_small.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_Andreas_Goos_small"
+		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Andreas_Goos_small.dds"
+	}
 }
