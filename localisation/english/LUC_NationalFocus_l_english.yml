@@ -22,7 +22,7 @@
 
  LUC_EconomySecureForeignInvestments_Focus:0 "Attract Foreign Investments"
  LUC_EconomySecureForeignInvestments_Focus_desc:0 "Liechtenstein is a neutral nation, like its neighbour Switzerland. By following its example, our government would strive to secure economical investments and ties with major European banks - irrespectively of their political dispositions."
- LUC_LiechtensteinBankIntegrated_warning_tt:0 "§RThis focus will be automatically bypassed without any rewards if we no longer benefits from the effects of the §!§Y$LUC_LiechtensteinBankIntegrated$§!§R national spirit!§!"
+ LUC_LiechtensteinBankIntegrated_idea_warning_tt:0 "§RThis focus will be automatically bypassed without any rewards if we no longer benefits from the effects of the §!§Y$LUC_LiechtensteinBankIntegrated_idea$§!§R national spirit!§!"
 
  LUC_EconomyContinueIndustrialisation_Focus:0 "Industrial Expansion"
  LUC_EconomyContinueIndustrialisation_Focus_desc:0 ""

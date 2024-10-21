@@ -12,10 +12,6 @@ spriteTypes = {
 		name = "GFX_idea_LUC_CustomsUnion_idea"
 		textureFile = "gfx/interface/ideas/SUS/LUC_CustomsUnion_idea.dds"
 	}
-	spriteType = { 
-		name = "GFX_idea_LUC_Fascist_Agitators_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_Fascist_Agitators_idea.dds"
-	}
 	spriteType = {
 		name = "GFX_idea_LUC_Liechtensteiner_No_Army_idea"
 		textureFile = "gfx/interface/ideas/SUS/LUC_LichtensteinerMilitary.dds"
@@ -33,9 +29,78 @@ spriteTypes = {
 		name = "GFX_idea_LUC_VaduzTimber_concern"
 		textureFile = "gfx/interface/ideas/SUS/Concerns/LUC_VaduzTimber.dds"
 	}
+	#Evetn ideas
+	spriteType = { 
+		name = "GFX_idea_LUC_Fascist_Agitators_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_Fascist_Agitators_idea.dds"
+	}
 	# Focus ideas
 	spriteType = {
-		name = "GFX_idea_LUC_LiechtensteinBankIntegrated"
+		name = "GFX_idea_LUC_LiechtensteinBankIntegrated_idea"
 		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinBankIntegrated.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_EngineerCorps_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_EngineerCorps.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Army_Conscription_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_Army_Conscription_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Army_Defence1_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_NewArmy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Army_Defence2_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_NewArmy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Army_Offence1_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_NewArmy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Army_Offence2_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_NewArmy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Army_Offence3_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_NewArmy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_CivilianPreparations_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_CivilianPreparations_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_WomenDivisions_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_CivilianPreparations_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_SecurityCorps_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_SecurityCorps_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_AirPurchases_idea"
+		textureFile = "gfx/interface/ideas/SUS/GFX_idea_LUC_AirPurchases_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_LiechtensteinAirforce_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_LiechtensteinAirforce_bomber_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_LiechtensteinAirforce_fighter_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_LUC_LiechtensteinAirforce_bomber_cas_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_LiechtensteinAirforce_fighter_cas_idea"
+		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
 	}
 }

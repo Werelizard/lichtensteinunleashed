@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		LUC_LiechtensteinBankIntegrated = {
+		LUC_LiechtensteinBankIntegrated_idea = {
 			modifier = {
 				consumer_goods_factor = -0.10
 				political_power_factor = -0.1
@@ -11,20 +11,7 @@ ideas = {
 				}
 			}
 		}
-		LUC_IncreasedRifleProduction = { #No Icon
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.1
-				}
-				support_equipment = {
-					build_cost_ic = -0.1
-				}
-				artillery = {
-					build_cost_ic = -0.05
-				}
-			}
-		}
-		LUC_EngineerCorps = { #No Icon
+		LUC_EngineerCorps_idea = { #No Icon
 			modifier = {
 				dig_in_speed_factor = 0.1
 				terrain_penalty_reduction = 0.15
@@ -32,20 +19,21 @@ ideas = {
 				training_time_army_factor = 0.1
 			}
 		}
-		LUC_Army_Conscription = {
+		LUC_Army_Conscription_idea = {
 			modifier = {
 				mobilization_speed = 0.1
 				conscription_factor = 0.15
+				weekly_casualties_war_support = -0.005
 			}
 		}
-		LUC_Army_Defence1 = {
+		LUC_Army_Defence1_idea = {
 			modifier = {
 				defence = 0.1
 				army_org_factor = 0.1
 				max_dig_in_factor = 0.1
 			}
 		}
-		LUC_Army_Defence2 = {
+		LUC_Army_Defence2_idea = {
 			modifier = {
 				defence = 0.1
 				army_org_factor = 0.1
@@ -55,14 +43,14 @@ ideas = {
 				modifier_army_sub_unit_militia_max_org_factor = 0.05
 			}
 		}
-		LUC_Army_Offence1 = {
+		LUC_Army_Offence1_idea = {
 			modifier = {
 				recon_factor = 0.1
 				special_forces_attack_factor = 0.05
 				mountaineers_special_forces_contribution_factor = -0.1
 			}
 		}
-		LUC_Army_Offence2 = {
+		LUC_Army_Offence2_idea = {
 			modifier = {
 				recon_factor = 0.1
 				special_forces_attack_factor = 0.05
@@ -71,7 +59,7 @@ ideas = {
 				special_forces_cap = 0.2
 			}
 		}
-		LUC_Army_Offence3 = {
+		LUC_Army_Offence3_idea = {
 			modifier = {
 				recon_factor = 0.1
 				special_forces_attack_factor = 0.05
@@ -81,14 +69,14 @@ ideas = {
 				modifier_army_sub_unit_mountaineers_max_org_factor = 0.1
 			}
 		}
-		LUC_CivilianPreparations = {
+		LUC_CivilianPreparations_idea = {
 			modifier = {
 				weekly_bombing_war_support = 0.05
 				weekly_convoys_war_support = 0.05
 				industry_air_damage_factor = -0.1
 			}
 		}
-		LUC_WomenDivisions = {
+		LUC_WomenDivisions_idea = {
 			modifier = {
 				weekly_bombing_war_support = 0.05
 				weekly_convoys_war_support = 0.05
@@ -98,7 +86,7 @@ ideas = {
 				conscription = 0.005
 			}
 		}
-		LUC_SecurityCorps = {
+		LUC_SecurityCorps_idea = {
 			modifier = {
 				local_intel_to_enemies = -0.1
 				resistance_growth = -0.1
@@ -107,7 +95,7 @@ ideas = {
 		}
 		LUC_AirPurchases_idea = {
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.05
 			}
 			research_bonus = {
 				air_equipment = 0.10

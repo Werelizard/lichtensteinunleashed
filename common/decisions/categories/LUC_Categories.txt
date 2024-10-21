@@ -35,7 +35,7 @@ LUC_Bank_Cat = {
 		always = yes
 	}
 	visible = {
-		has_idea = LUC_LiechtensteinBankIntegrated
+		has_idea = LUC_LiechtensteinBankIntegrated_idea
 	}
 	priority = 2
 }

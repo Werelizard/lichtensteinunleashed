@@ -21,7 +21,7 @@ LUC_Bank_Cat = {
 		}
 
 		timeout_effect = {
-			remove_ideas = LUC_LiechtensteinBankIntegrated
+			remove_ideas = LUC_LiechtensteinBankIntegrated_idea
 			custom_effect_tooltip = LUC_Bank_Cat_notAvailable_tt
 		}
 	}
@@ -34,7 +34,7 @@ LUC_Bank_Cat = {
 			always = yes			
 		}
 		available = {
-			has_idea = LUC_LiechtensteinBankIntegrated
+			has_idea = LUC_LiechtensteinBankIntegrated_idea
 		}
 
 		remove_effect = {
@@ -64,7 +64,7 @@ LUC_Bank_Cat = {
 		}
 
 		available = {
-			has_idea = LUC_LiechtensteinBankIntegrated
+			has_idea = LUC_LiechtensteinBankIntegrated_idea
 			has_completed_focus = LUC_EconomySecureForeignInvestments_Focus
 			NOT = {
 				has_war_with = FROM
@@ -111,7 +111,7 @@ LUC_Bank_Cat = {
 		days_remove = 90
 
 		available = {
-			has_idea = LUC_LiechtensteinBankIntegrated
+			has_idea = LUC_LiechtensteinBankIntegrated_idea
 			has_completed_focus = LUC_EconomyRoyalAssets_Focus
 			custom_trigger_tooltip = {
 				tooltip = LUC_LiechtensteinEco_austrianAssets_tt
@@ -158,7 +158,7 @@ LUC_Bank_Cat = {
 		days_remove = 120
 
 		available = {
-			has_idea = LUC_LiechtensteinBankIntegrated
+			has_idea = LUC_LiechtensteinBankIntegrated_idea
 			has_completed_focus = LUC_EconomyRoyalAssets_Focus
 			custom_trigger_tooltip = {
 				tooltip = LUC_LiechtensteinEco_czechAssets_tt
