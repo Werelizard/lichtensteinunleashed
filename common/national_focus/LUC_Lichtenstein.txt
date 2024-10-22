@@ -2537,7 +2537,7 @@ focus_tree = {
 				}
 				has_idea = LUC_Franz_I_idea
 				has_country_leader = {
-					character = LUC_FranzI
+					character = LUC_FranzII
 					ruling_only = yes
 				}
 				has_idea = LUC_Franz_II_idea
@@ -2567,16 +2567,113 @@ focus_tree = {
 		available = {
 			463 = {
 				is_fully_controlled_by = ROOT
-				is_core_of = ROOT
+				is_owned_by = ROOT
 			}
 			has_army_manpower = {
 				size > 199999
 			}
 		}
 		completion_reward = {  
+			unlock_decision_tooltip = LUC_LiechtensteinAlaskaFormable
+			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_NavyAlaskaLiechtenstein_Focus_tt
 			custom_effect_tooltip = LUC_newline_tt
-			unlock_decision_tooltip = LUC_LiechtensteinAlaskaFormable
+			every_state = {
+				limit = {
+					is_core_of = CAN
+					NOT = {
+						is_claimed_by = ROOT
+					}
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				add_claim_by = ROOT
+			}
+		}
+		mutually_exclusive = {
+		}
+		allow_branch = {
+			has_country_flag = LUC_FormedLiechtensteinEmpire_flag
+		}
+	}
+	focus = {
+		id = LUC_NavyAlaskaResources_Focus
+		icon = GFX_LUC_NavyAlaskaResources_Focus
+		cost = 5
+		x = -1
+		y = 4
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyAlaskaLiechtenstein_Focus
+		}
+		available = {
+			463 = {
+				is_fully_controlled_by = ROOT
+				is_owned_by = ROOT
+			}
+		}
+		completion_reward = {  
+			463 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+				}
+				add_resource = {
+					type = oil
+					amount = 24
+				}
+				add_resource = {
+					type = aluminium
+					amount = 24
+				}
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+		mutually_exclusive = {
+		}
+		allow_branch = {
+			has_country_flag = LUC_FormedLiechtensteinEmpire_flag
+		}
+	}
+	focus = {
+		id = LUC_NavyAlaskaNukes_Focus
+		icon = GFX_LUC_NavyAlaskaNukes_Focus
+		cost = 5
+		x = 0
+		y = 5
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyAlaskaLiechtenstein_Focus
+		}
+		available = {
+			463 = {
+				is_fully_controlled_by = ROOT
+				is_owned_by = ROOT
+			}
+		}
+		completion_reward = {  
+			if = {
+				limit = {
+					NOT = {
+						has_tech = atomic_research
+					}
+				}
+				set_technology = {
+					atomic_research = 1
+				}
+			}
+			add_tech_bonus = {
+				name = LUC_NavyAlaskaNukes_Focus
+				category = nuclear
+				bonus = 1
+				uses = 2
+				ahead_reduction = 2
+			}
 		}
 		mutually_exclusive = {
 		}

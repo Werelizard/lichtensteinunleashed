@@ -563,4 +563,22 @@ spriteTypes = {
 		name = "GFX_LUC_NavyHeavyShips_Focus_shine"
 		textureFile = "gfx/interface/goals/SUS/LUC_NavyHeavyShips_Focus.dds"
 	}
+
+	spriteType = {
+		name = "GFX_LUC_NavyAlaskaResources_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaResources_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyAlaskaResources_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaResources_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_NavyAlaskaNukes_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaNukes_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyAlaskaNukes_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaNukes_Focus.dds"
+	}
 }

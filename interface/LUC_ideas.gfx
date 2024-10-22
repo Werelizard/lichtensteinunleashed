@@ -103,4 +103,8 @@ spriteTypes = {
 		name = "GFX_idea_LUC_LiechtensteinAirforce_fighter_cas_idea"
 		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_LUC_LiechtensteinOverseasTrade_idea"
+		textureFile = "gfx/interface/ideas/SUS/GFX_idea_LUC_LiechtensteinOverseasTrade_idea.dds"
+	}
 }
