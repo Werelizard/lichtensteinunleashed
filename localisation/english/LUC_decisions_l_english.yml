@@ -41,3 +41,13 @@
 
  LUC_HiddenWorkshops:0 "Divest Industrial Production in §Y[FROM.GetName]§!"
  LUC_HiddenWorkshops_tt:0 "§Y[FROM.GetName]§! Gains the Following:\nLocal Construction Speed: §R-20.0%§!"
+
+ LUC_PurchaseAlaska:0 "Purchase Alaska"
+ LUC_PurchaseAlaska_desc:0 ""
+
+ LUC_IntegrateAlaska:0 "Integrate Alaska"
+ LUC_IntegrateAlaska_desc:0 ""
+ LUC_PurchaseAlaska_tt:0 "§Y[463.Owner.GetName]§!: One of the following must be true:\n Is in a faction with §Y[Root.GetName]§!\n All of the following must be true:\n    Is not at war with §Y[Root.GetName]§!\n    Opinion of §Y[Root.GetName]§! is at least §Y100§!"
+
+ LUC_IntegrateGreaterAlaska:0 "Integrate [FROM.GetName]"
+ LUC_LiechtensteinAlaskaFormable:0 "Form Alaska-Liechtenstein"

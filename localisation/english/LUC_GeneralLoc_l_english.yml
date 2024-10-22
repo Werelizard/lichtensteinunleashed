@@ -134,6 +134,8 @@
  LUC_AdvisorTrait_LiberalDoctor:0 "Head of the Vaduz Hospital"
  LUC_AdvisorTrait_SmallBuisnessAdvocate:0 "Small Business Advocate"
  LUC_OfficerTrait_Paramilitary:0 "Militia Officer"
+ LUC_OfficerTrait_Veteran:0 "Meticulous Planner"
+ LUC_OfficerTrait_NewGuard:0 "Mountaineer Specialist"
 
  # Ideology tooltips
  LUC_NOTarrestedadvisor_tt:0 "NOT: advisor was §Rarrested§!"
@@ -222,6 +224,8 @@
  LUC_LiechtensteinAirforce_bomber_cas_idea_desc:0 ""
  LUC_LiechtensteinAirforce_fighter_cas_idea:0 "A [ROOT.GetAdjective] Airforce"
  LUC_LiechtensteinAirforce_fighter_cas_idea_desc:0 ""
+ LUC_LiechtensteinOverseasTrade_idea:0 "Overseas Trade"
+ LUC_LiechtensteinOverseasTrade_idea_desc:0 ""
 
  # Inbdustrial Concerns
  LUC_LawenaPower_concern:0 "Lawena Energy"

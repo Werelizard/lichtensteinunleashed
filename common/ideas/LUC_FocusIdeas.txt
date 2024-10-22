@@ -37,11 +37,10 @@ ideas = {
 		LUC_Army_Defence2_idea = {
 			modifier = {
 				experience_gain_army = 0.1
-				defence = 0.1
+				defence = 0.15
 				army_org_factor = 0.1
 				max_dig_in_factor = 0.1
-				war_support_weekly_factor = 0.01
-				modifier_army_sub_unit_militia_defence_factor = 0.05
+				weekly_casualties_war_support = 0.01
 				modifier_army_sub_unit_militia_max_org_factor = 0.05
 			}
 		}
@@ -59,7 +58,7 @@ ideas = {
 				recon_factor = 0.1
 				special_forces_attack_factor = 0.05
 				mountaineers_special_forces_contribution_factor = -0.1
-				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
 				special_forces_cap = 0.1
 			}
 		}
@@ -69,9 +68,9 @@ ideas = {
 				recon_factor = 0.1
 				special_forces_attack_factor = 0.05
 				mountaineers_special_forces_contribution_factor = -0.1
-				modifier_army_sub_unit_mountaineers_attack_factor = 0.2
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
 				special_forces_cap = 0.1
-				modifier_army_sub_unit_mountaineers_max_org_factor = 0.1
+				modifier_army_sub_unit_mountaineers_max_org_factor = 0.05
 			}
 		}
 		LUC_CivilianPreparations_idea = {
@@ -86,8 +85,8 @@ ideas = {
 				weekly_bombing_war_support = 0.05
 				weekly_convoys_war_support = 0.05
 				industry_air_damage_factor = -0.1
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 				conscription = 0.005
 			}
 		}
@@ -179,6 +178,13 @@ ideas = {
 				small_plane_airframe = {
 					build_cost_ic = -0.1
 				}
+			}
+		}
+		LUC_LiechtensteinOverseasTrade_idea = {
+			modifier = {
+				consumer_goods_factor = -0.07
+				min_export = -0.1
+				trade_opinion_factor = 0.2
 			}
 		}
 	}

@@ -1,5 +1,200 @@
 political_actions = {
 
+	LUC_PurchaseAlaska = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		cost = 200
+
+		allowed = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SUS
+			has_completed_focus = LUC_NavyAcquireAlaska_Focus
+			NOT = {
+				owns_state = 463
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LUC_PurchaseAlaska_tt
+				any_country = {
+					owns_state = 463
+					OR = {
+						is_in_faction_with = ROOT
+						AND = {
+							NOT = {
+								has_war_with = ROOT
+							}
+							has_opinion = {
+								target = ROOT
+								value > 99
+							}
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			463 = {
+				owner = {
+					country_event = LUC_FocusTree.301
+				}
+			}
+		}
+	}
+	LUC_IntegrateAlaska = {
+		icon = GFX_decision_generic_form_nation
+		
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			original_tag = SUS
+			has_completed_focus = LUC_NavyAcquireAlaska_Focus
+		}
+
+		available = {
+			owns_state = 463
+		}
+
+		days_remove = 60
+
+		cost = 25
+
+		modifier = {
+			political_power_factor = -0.15
+		}
+
+		remove_effect = {
+			463 = {
+				add_core_of = ROOT
+			}
+			471 = {
+				add_claim_by = ROOT
+			}
+			473 = {
+				add_claim_by = ROOT
+			}
+			739 = {
+				add_claim_by = ROOT
+			}
+			740 = {
+				add_claim_by = ROOT
+			}
+			864 = {
+				add_claim_by = ROOT
+			}
+			hidden_effect = {
+				country_event = {
+					id = LUC_FocusTree.304
+					days = 28
+				}
+			}
+		}	
+	}
+	LUC_IntegrateGreaterAlaska = {
+		icon = GFX_decision_generic_form_nation
+		
+		allowed = {
+			always = yes
+		}
+
+		state_target = yes
+
+		target_trigger = {
+	        FROM = {
+	            OR = {
+					state = 471
+					state = 473
+					state = 739
+					state = 740 
+					state = 864
+				}
+	        }
+	    }
+
+		visible = {
+			original_tag = SUS
+			has_completed_focus = LUC_NavyAlaskaLiechtenstein_Focus
+		}
+
+		available = {
+			463 = {
+				is_core_of = ROOT
+			}
+			OR = {
+				FROM = {
+					is_owned_by = ROOT
+				}
+				FROM = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		days_remove = 60
+
+		cost = 25
+
+		modifier = {
+			political_power_factor = -0.15
+		}
+
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}	
+	}
+	LUC_LiechtensteinAlaskaFormable = {
+		icon = GFX_decision_generic_form_nation
+		
+		allowed = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SUS
+			has_completed_focus = LUC_NavyAlaskaLiechtenstein_Focus
+		}
+
+		available = {
+			463 = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}
+			471 = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}
+			739 = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}
+			740 = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}
+			864 = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}
+		}	
+
+		complete_effect = {
+			set_capital = {
+				state = 463
+			}
+		}
+	}
 	
 	targeted_race_for_the_bomb = {
 
@@ -2188,6 +2383,7 @@ foreign_politics = {
 }
 
 economy_decisions = {
+
 	infrastructure_building_slot = {
 
 		icon = generic_construction
@@ -2201,27 +2397,27 @@ economy_decisions = {
 
         days_re_enable = 30
 
-	available = {
-		any_owned_state = {
-			NOT = { has_state_flag = infrastructure_building_slot_flag }
-			is_fully_controlled_by = ROOT
-			free_building_slots = {
-				building = infrastructure
-				size < 1
+		available = {
+			any_owned_state = {
+				NOT = { has_state_flag = infrastructure_building_slot_flag }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
 			}
 		}
-	}
 
-	visible = {
-		any_owned_state = {
-			NOT = { has_state_flag = infrastructure_building_slot_flag }
-			is_fully_controlled_by = ROOT
-			free_building_slots = {
-				building = infrastructure
-				size < 1
+		visible = {
+			any_owned_state = {
+				NOT = { has_state_flag = infrastructure_building_slot_flag }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
 			}
 		}
-	}
 
         complete_effect = {
 			random_owned_state = {

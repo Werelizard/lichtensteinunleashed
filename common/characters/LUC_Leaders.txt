@@ -78,9 +78,17 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			idea_token = LUC_AlfonsGoop
+			idea_token = LUC_AlfonsGoop_HighCommand
+			ledger = army
+			cost = 150
 			available = {
 				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
+				NOT = {
+					has_government = democratic
+				}
+				NOT = {
+					is_country_leader = yes
+				}
 			}
 			traits = {
 				LUC_OfficerTrait_Paramilitary
@@ -664,6 +672,7 @@ characters={
 		advisor = {
 			slot = high_command
 			idea_token = LUC_HighcommandCavalry
+			cost = 150
 			available = {
 				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
 			}
@@ -699,6 +708,7 @@ characters={
 		advisor = {
 			slot = high_command
 			idea_token = LUC_HighcommandLogistics
+			cost = 150
 			available = {
 				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
 			}
@@ -734,6 +744,7 @@ characters={
 		advisor = {
 			slot = high_command
 			idea_token = LUC_HighcommandDefensive
+			cost = 150
 			available = {
 				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
 				custom_trigger_tooltip = {
@@ -742,12 +753,13 @@ characters={
 				}
 			}
 			traits = {
-				army_chief_defensive_1
+				army_entrenchment_2
 			}
 		}
 		advisor = {
 			slot = army_chief
 			idea_token = LUC_ArmyChief
+			cost = 150
 			available = {
 				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
 				custom_trigger_tooltip = {
@@ -756,13 +768,13 @@ characters={
 				}
 			}
 			traits = {
-				army_chief_old_guard
-				army_infantry_1
+				LUC_OfficerTrait_Veteran
 			}
 		}
 		advisor = {
 			slot = theorist
 			idea_token = LUC_Theorist
+			cost = 150
 			available = {
 				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
 			}
@@ -797,7 +809,8 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			idea_token = LUC_HighcommandDefensive
+			idea_token = LUC_HighcommandOffensive
+			cost = 150
 			available = {
 				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
 				custom_trigger_tooltip = {
@@ -806,12 +819,13 @@ characters={
 				}
 			}
 			traits = {
-				army_chief_offensive_1
+				army_infantry_1
 			}
 		}
 		advisor = {
 			slot = army_chief
 			idea_token = LUC_ArmyChief
+			cost = 150
 			available = {
 				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
 				custom_trigger_tooltip = {
@@ -820,13 +834,13 @@ characters={
 				}
 			}
 			traits = {
-				army_chief_maneuver_1
-				army_commando_1
+				LUC_OfficerTrait_NewGuard
 			}
 		}
 		advisor = {
 			slot = theorist
 			idea_token = LUC_Theorist
+			cost = 150
 			available = {
 				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
 			}
@@ -856,6 +870,7 @@ characters={
 		advisor = {
 			slot = navy_chief
 			idea_token = LUC_NavyChief
+			cost = 150
 			available = {
 				has_completed_focus = LUC_NavyAdmiralty_Focus
 			}
@@ -873,16 +888,10 @@ characters={
 				small = "GFX_LUC_Max_Spitz_small"
 			}
 		}
-		navy_leader = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 0
-			maneuvering_skill = 0
-			coordination_skill = 2
-		}
 		advisor = {
 			slot = navy_chief
 			idea_token = LUC_NavyChief
+			cost = 150
 			available = {
 				has_completed_focus = LUC_NavyAdmiralty_Focus
 			}
@@ -903,6 +912,7 @@ characters={
 		advisor = {
 			slot = high_command
 			idea_token = LUC_NavyCommand
+			cost = 150
 			available = {
 				has_completed_focus = LUC_NavyAdmiralty_Focus
 			}
@@ -925,11 +935,12 @@ characters={
 		advisor = {
 			slot = air_chief
 			idea_token = LUC_AirChief
+			cost = 150
 			available = {
 				has_completed_focus = LUC_AirforceAirfieldsConstruction_Focus
 			}
 			traits = {
-				air_chief_all_weather_2
+				air_chief_all_weather_1
 			}
 		}
 	}
@@ -943,8 +954,9 @@ characters={
 			}
 		}
 		advisor = {
-			slot = air_chief
-			idea_token = LUC_AirChief
+			slot = high_command
+			idea_token = LUC_AirParatroopers
+			cost = 150
 			available = {
 				has_completed_focus = LUC_AirforceAirfieldsConstruction_Focus
 			}
@@ -964,7 +976,8 @@ characters={
 		}
 		advisor = {
 			slot = high_command
-			idea_token = LUC_AirCommand
+			idea_token = LUC_AirSuperiority
+			cost = 150
 			available = {
 				has_completed_focus = LUC_AirforceAirfieldsConstruction_Focus
 			}

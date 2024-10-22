@@ -244,6 +244,10 @@
  LUC_NavyHeavyShips_Focus:0 "Total Naval Supremacy"
  LUC_NavyHeavyShips_Focus_desc:0 ""
 
+ LUC_NavyAlaskaLiechtenstein_Focus:0 "Consolidate [ROOT.GetAdjective] America"
+ LUC_NavyAlaskaLiechtenstein_Focus_desc:0 ""
+ LUC_NavyAlaskaLiechtenstein_Focus_tt:0 "Unlocks £GFX_decision_icon_small decisions to core §Y[471.GetName]§!, §Y[473.GetName]§!, §Y[739.GetName]§!, §Y[740.GetName]§! and §Y[864.GetName]§!"
+
   ###################################
 	# MISC                            #
 	###################################

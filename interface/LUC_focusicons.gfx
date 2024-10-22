@@ -191,14 +191,6 @@ spriteTypes = {
 		name = "GFX_LUC_EconomyCompleteDeregulation_Focus_shine"
 		textureFile = "gfx/interface/goals/SUS/LUC_EconomyCompleteDeregulation_Focus.dds"
 	}
-	spriteType = {
-		name = "GFX_LUC_EconomyReorientEconomy_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyReorientEconomy.dds"
-	}
-	spriteType = {
-		name = "GFX_LUC_EconomyReorientEconomy_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyReorientEconomy.dds"
-	}
 	###################################
 	# ARMY-ORIENTED FOCUSES           #
 	###################################
@@ -479,5 +471,96 @@ spriteTypes = {
 		name = "GFX_LUC_AirforceCombinedArms_Focus_shine"
 		textureFile = "gfx/interface/goals/SUS/LUC_AirforceCombinedArms_Focus.dds"
 	}
-	
+	###################################
+	# NAVY-ORIENTED FOCUSES           #
+	###################################
+	spriteType = {
+		name = "GFX_LUC_NavyDockyards_Focus"
+		textureFile = "gfx/interface/goals/SUS/GFX_LUC_NavyDockyards_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyDockyards_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/GFX_LUC_NavyDockyards_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_NavyModernisedNavalProduction_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyModernisedNavalProduction_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyModernisedNavalProduction_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyModernisedNavalProduction_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_NavyAdvancedNavalProduction_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAdvancedNavalProduction_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyAdvancedNavalProduction_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAdvancedNavalProduction_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_NavyForeignTrade_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyForeignTrade_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyForeignTrade_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyForeignTrade_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_NavyAcquireAlaska_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAcquireAlaska_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyAcquireAlaska_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAcquireAlaska_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_NavyAlaskaLiechtenstein_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaLiechtenstein_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyAlaskaLiechtenstein_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaLiechtenstein_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_NavyAdmiralty_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAdmiralty_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyAdmiralty_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyAdmiralty_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_NavySubmarines_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavySubmarines_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavySubmarines_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavySubmarines_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_NavyLightShips_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyLightShips_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyLightShips_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyLightShips_Focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_LUC_NavyHeavyShips_Focus"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyHeavyShips_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyHeavyShips_Focus_shine"
+		textureFile = "gfx/interface/goals/SUS/LUC_NavyHeavyShips_Focus.dds"
+	}
 }

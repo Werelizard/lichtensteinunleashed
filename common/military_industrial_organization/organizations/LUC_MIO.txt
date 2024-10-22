@@ -236,3 +236,25 @@ GER_daimler_benz_organization = {
 		}
 	}
 }
+SWI_eidgenossische_FW_organization = {
+	name = SWI_eidgenossische_FW
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_SWI_eidgenossische_FW
+	allowed = {	
+		OR = {
+			AND = {
+				tag = SWI
+				has_dlc = "By Blood Alone"
+			}
+			original_tag = SUS
+		}
+	}
+	available = {
+		OR = {
+			owner = { has_completed_focus = SWI_swiss_airplane_designs }
+			owner = {
+				has_completed_focus = LUC_AirforcePurchaseForeignDesigns_Focus
+			}
+		}
+	}
+}

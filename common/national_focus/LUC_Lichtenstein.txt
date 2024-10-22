@@ -1582,7 +1582,7 @@ focus_tree = {
 		}
 		completion_reward = {  
 			add_command_power = 25
-			army_experience = 50
+			army_experience = 25
 			custom_effect_tooltip = LUC_newline_tt
 			effect_tooltip = {
 				add_advisor_role = {
@@ -2204,7 +2204,7 @@ focus_tree = {
 			}
 			OR = {
 				has_completed_focus = LUC_EconomyFinal_Focus
-				num_of_civilian_factories > 5
+				num_of_factories > 6
 			}
 		}
 		completion_reward = {  
@@ -2212,12 +2212,16 @@ focus_tree = {
 				idea = LUC_AirPurchases_idea
 				days = 720
 			}
+			custom_effect_tooltip = LUC_newline_tt
 			add_tech_bonus = {
 				name = LUC_AirforcePurchaseForeignDesigns_Focus
 				uses = 2
 				bonus = 0.5
 				category = air_equipment
 			}
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = available_industrial_concern
+			show_mio_tooltip = SWI_eidgenossische_FW_organization
 		}
 		mutually_exclusive = {
 		}
@@ -2254,7 +2258,7 @@ focus_tree = {
 				add_advisor_role = {
 					character = LUC_Tomas_Frick
 					advisor = {
-						slot = air_chief
+						slot = high_command
 						idea_token = LUC_HighcommandLogistics
 						traits = {
 							air_airborne_1
@@ -2385,7 +2389,7 @@ focus_tree = {
 	###################################
 	focus = {
 		id = LUC_NavyDockyards_Focus
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_NavyDockyards_Focus
 		cost = 5
 		x = -2
 		y = 6
@@ -2394,7 +2398,6 @@ focus_tree = {
 			
 		}
 		available = {
-			has_completed_focus = LUC_ArmyReviewMilitary_Focus
 			any_owned_state = {
 				is_fully_controlled_by = ROOT
 				is_coastal = yes
@@ -2414,7 +2417,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_NavyModernisedNavalProduction_Focus
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_NavyModernisedNavalProduction_Focus
 		cost = 5
 		x = 2
 		y = 1
@@ -2450,7 +2453,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_NavyAdvancedNavalProduction_Focus
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_NavyAdvancedNavalProduction_Focus
 		cost = 5
 		x = 2
 		y = 3
@@ -2485,7 +2488,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_NavyForeignTrade_Focus
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_NavyForeignTrade_Focus
 		cost = 5
 		x = -1
 		y = 1
@@ -2498,16 +2501,20 @@ focus_tree = {
 				is_fully_controlled_by = ROOT
 				is_coastal = yes
 			}
+			OR = {
+				has_completed_focus = LUC_EconomyEmbraceDeregulation_Focus
+				has_completed_focus = LUC_EconomyIncreaseStateControl_Focus
+			}
 		}
 		completion_reward = {  
-			
+			add_ideas = LUC_LiechtensteinOverseasTrade_idea
 		}
 		mutually_exclusive = {
 		}
 	}
 	focus = {
 		id = LUC_NavyAcquireAlaska_Focus
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_NavyAcquireAlaska_Focus
 		cost = 5
 		x = 0
 		y = 2
@@ -2523,16 +2530,63 @@ focus_tree = {
 				is_fully_controlled_by = ROOT
 				is_coastal = yes
 			}
+			OR = {
+				has_country_leader = {
+					character = LUC_FranzI
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_I_idea
+				has_country_leader = {
+					character = LUC_FranzI
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_II_idea
+			}
 		}
 		completion_reward = {  
-			
+			463 = {
+				add_claim_by = ROOT
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			unlock_decision_tooltip = LUC_PurchaseAlaska
+			unlock_decision_tooltip = LUC_IntegrateAlaska
 		}
 		mutually_exclusive = {
 		}
 	}
 	focus = {
+		id = LUC_NavyAlaskaLiechtenstein_Focus
+		icon = GFX_LUC_NavyAlaskaLiechtenstein_Focus
+		cost = 5
+		x = 0
+		y = 3
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyAcquireAlaska_Focus
+		}
+		available = {
+			463 = {
+				is_fully_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			has_army_manpower = {
+				size > 199999
+			}
+		}
+		completion_reward = {  
+			custom_effect_tooltip = LUC_NavyAlaskaLiechtenstein_Focus_tt
+			custom_effect_tooltip = LUC_newline_tt
+			unlock_decision_tooltip = LUC_LiechtensteinAlaskaFormable
+		}
+		mutually_exclusive = {
+		}
+		allow_branch = {
+			has_country_flag = LUC_FormedLiechtensteinEmpire_flag
+		}
+	}
+	focus = {
 		id = LUC_NavyAdmiralty_Focus
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_NavyAdmiralty_Focus
 		cost = 5
 		x = 5
 		y = 0
@@ -2572,7 +2626,7 @@ focus_tree = {
 					}
 				}
 				add_advisor_role = {
-					character = LUC_Alois_Gonzaga_Maria_Adolf
+					character = LUC_Tomas_Frick
 					advisor = {
 						slot = high_command
 						idea_token = LUC_HighcommandLogistics
@@ -2588,7 +2642,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_NavySubmarines_Focus
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_NavySubmarines_Focus
 		cost = 5
 		x = 5
 		y = 2
@@ -2601,16 +2655,33 @@ focus_tree = {
 				is_fully_controlled_by = ROOT
 				is_coastal = yes
 			}
+			NOT = {
+				has_completed_focus = LUC_NavyLightShips_Focus
+			}
+			NOT = {
+				has_completed_focus = LUC_NavyHeavyShips_Focus
+			}
 		}
-		completion_reward = {  
-			
+		completion_reward = { 
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				category = trade_interdiction_tree
+				uses = 2
+				name = LUC_NavySubmarines_Focus
+			} 
+			add_tech_bonus = {
+				name = LUC_NavySubmarines_Focus
+				category = ss_tech
+				uses = 2
+				bonus = 0.5
+			}
 		}
 		mutually_exclusive = {
 		}
 	}
 	focus = {
 		id = LUC_NavyLightShips_Focus
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_NavyLightShips_Focus
 		cost = 5
 		x = 4
 		y = 1
@@ -2623,16 +2694,33 @@ focus_tree = {
 				is_fully_controlled_by = ROOT
 				is_coastal = yes
 			}
+			NOT = {
+				has_completed_focus = LUC_NavySubmarines_Focus
+			}
+			NOT = {
+				has_completed_focus = LUC_NavyHeavyShips_Focus
+			}
 		}
 		completion_reward = {  
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				category = fleet_in_being_tree
+				uses = 2
+				name = LUC_NavyLightShips_Focus
+			} 
+			add_tech_bonus = {
+				name = LUC_NavyLightShips_Focus
+				category = cl_tech
+				uses = 2
+				bonus = 0.5
+			}
 		}
 		mutually_exclusive = {
 		}
 	}
 	focus = {
 		id = LUC_NavyHeavyShips_Focus
-		icon = GFX_goal_unknown
+		icon = GFX_LUC_NavyHeavyShips_Focus
 		cost = 5
 		x = 6
 		y = 1
@@ -2645,9 +2733,32 @@ focus_tree = {
 				is_fully_controlled_by = ROOT
 				is_coastal = yes
 			}
+			NOT = {
+				has_completed_focus = LUC_NavySubmarines_Focus
+			}
+			NOT = {
+				has_completed_focus = LUC_NavyLightShips_Focus
+			}
 		}
 		completion_reward = {  
-			
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				category = base_strike_main
+				uses = 2
+				name = LUC_NavyHeavyShips_Focus
+			} 
+			add_tech_bonus = {
+				name = LUC_NavyHeavyShips_Focus
+				category = ca_tech
+				uses = 1
+				bonus = 0.5
+			}
+			add_tech_bonus = {
+				name = LUC_NavyHeavyShips_Focus
+				category = bc_tech
+				uses = 1
+				bonus = 0.5
+			}
 		}
 		mutually_exclusive = {
 		}

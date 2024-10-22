@@ -161,8 +161,7 @@ country_event = { #Appoitning a commander in chief
 					cost = 150
 					idea_token = LUC_DUMMY
 					traits = {
-						army_chief_old_guard
-						army_infantry_1
+						LUC_OfficerTrait_Veteran
 					}
 				}
 			}
@@ -174,7 +173,7 @@ country_event = { #Appoitning a commander in chief
 					ledger = army
 					idea_token = LUC_DUMMY
 					traits = {
-						army_chief_offensive_1
+						army_infantry_1
 					}
 				}
 			}
@@ -210,8 +209,7 @@ country_event = { #Appoitning a commander in chief
 					ledger = army
 					idea_token = LUC_DUMMY
 					traits = {
-						army_chief_maneuver_1
-						army_commando_1
+						LUC_OfficerTrait_NewGuard
 					}
 				}
 			}
@@ -222,7 +220,7 @@ country_event = { #Appoitning a commander in chief
 					cost = 150
 					idea_token = LUC_DUMMY
 					traits = {
-						army_chief_defensive_1
+						army_entrenchment_2
 					}
 				}
 			}
@@ -232,5 +230,197 @@ country_event = { #Appoitning a commander in chief
 		hidden_effect = {
 			set_country_flag = LUC_ArmyOnTheOffence_Focus_flag
 		}
+	}
+}
+
+#########################
+# NAVY BRANCH EVENTS
+#########################
+
+country_event = { # Liechtenstein offers to Purchase Alaska
+	id = LUC_FocusTree.301
+	title = LUC_FocusTree.301.title
+	desc = LUC_FocusTree.301.desc
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = { # Yeah?
+		name = LUC_FocusTree.301.a
+		add_political_power = 250
+		463 = {
+			set_state_owner_to = FROM
+		}
+	}
+
+	option = { # No!
+		name = LUC_FocusTree.301.b
+	}
+}
+
+country_event = { # Liechtenstein offers to Purchase Alaska
+	id = LUC_FocusTree.301
+	title = LUC_FocusTree.301.title
+	desc = LUC_FocusTree.301.desc
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = { # Yeah?
+		name = LUC_FocusTree.301.a
+		add_political_power = 250
+		effect_tooltip = {
+			463 = {
+				set_state_owner_to = FROM
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+			modifier = {
+				factor = 0
+				any_country = {
+					has_war_with = ROOT
+					is_in_faction_with = FROM
+				}
+			}
+		}
+
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = LUC_FocusTree.302
+					days = 10
+				}
+			}
+		}
+	}
+
+	option = { # No!
+		name = LUC_FocusTree.301.b
+
+		ai_chance = {
+			base = 1
+		}
+
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = LUC_FocusTree.303
+					days = 10
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Alaska purchase - positive response
+	id = LUC_FocusTree.302
+	title = LUC_FocusTree.302.title
+	desc = LUC_FocusTree.302.desc
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = { # Great!
+		name = LUC_FocusTree.302.a
+		463 = {
+			set_state_owner_to = ROOT
+		}
+	}
+}
+
+country_event = { # Alaska purchase - negative response
+	id = LUC_FocusTree.303
+	title = LUC_FocusTree.303.title
+	desc = LUC_FocusTree.303.desc
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	option = { # Ddamn them
+		name = LUC_FocusTree.303.a
+		create_wargoal = {
+			target = FROM
+			type = take_claimed_state
+		}
+	}
+}
+
+country_event = { # A Liechtenstein Empire?
+	id = LUC_FocusTree.304
+	title = LUC_FocusTree.304.title
+	desc = LUC_FocusTree.304.desc
+
+	is_triggered_only = yes
+
+	immediate = {
+		
+	}
+
+	trigger = {
+		OR = {
+			has_government = neutrality
+			has_government = fascism
+			has_government = democratic
+		}
+		OR = {
+			has_country_leader = {
+				character = LUC_FranzI
+				ruling_only = yes
+			}
+			has_idea = LUC_Franz_I_idea
+			has_country_leader = {
+				character = LUC_FranzI
+				ruling_only = yes
+			}
+			has_idea = LUC_Franz_II_idea
+		}
+	}
+
+	picture = GFX_report_event_gre_megali_conference_signing
+
+	option = { # Naturally
+		name = LUC_FocusTree.304.a
+		custom_effect_tooltip = LUC_FormedLiechtensteinEmpire_tt
+		custom_effect_tooltip = LUC_newline_tt
+		add_stability = -0.2
+		add_political_power = -200
+		add_threat = 5
+		custom_effect_tooltip = LUC_newline_tt
+		
+		463 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 1
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = LUC_FormedLiechtensteinEmpire_flag
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	option = { # We have no need for empires!
+		name = LUC_FocusTree.304.b
+		add_stability = 0.05
 	}
 }
