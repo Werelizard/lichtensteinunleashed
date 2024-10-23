@@ -64,6 +64,8 @@ LUC_hasLandtagMechanic_trigger = {
 	}
 }
 
+# Trigger to check if the Landtag is supportive
+
 LUC_isLandtagSupportive_trigger = {
 	if = {
 		limit = {
@@ -76,6 +78,51 @@ LUC_isLandtagSupportive_trigger = {
 					LUC_LandtagOverallSupport_var < 60
 				}
 			}
+		}
+	}
+}
+
+# Trigger to check if the target country has a friendly ideology to ROOT
+
+LUC_isFriendlyIdeology = {
+	if = {
+		limit = {
+			ROOT = {
+				has_government = democratic
+			}
+		}
+		OR = {
+			has_government = democratic
+			has_government = neutrality
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_government = communism
+			}
+		}
+		OR = {
+			has_government = communism
+ 			has_government = neutrality
+		}
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_government = fascism
+			}
+		}
+		OR = {
+			has_government = fascism
+			has_government = neutrality
+		}
+	}
+	else = {
+		OR = {
+			has_government = democratic
+			has_government = fascism
+			has_government = neutrality
 		}
 	}
 }

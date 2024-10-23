@@ -12,25 +12,25 @@ focus_tree = {
 		x = 200
 		y = 2300
 	}
-	initial_show_position = {
-		focus = LUC_Landtag
-	}
+	# initial_show_position = {
+	# 	focus = LUC_Landtag
+	# }
 	###################################
 	# POLITICAL FOCUSES - ALL OF THEM #
 	###################################
-	focus = {
-		id = LUC_Landtag
-		icon = GFX_LUC_Landtag
-		cost = 1
-		x = 0
-		y = 0
-		available = {
-			always = no
-		}
-		completion_reward = {
-			custom_effect_tooltip = LUC_LandtagCompleted_tt
-		}
-	}
+	# focus = {
+	# 	id = LUC_Landtag
+	# 	icon = GFX_LUC_Landtag
+	# 	cost = 1
+	# 	x = 0
+	# 	y = 0
+	# 	available = {
+	# 		always = no
+	# 	}
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = LUC_LandtagCompleted_tt
+	# 	}
+	# }
 
 	###################################
 	# ECONOMy-ORIENTED FOCUSES        #
@@ -42,6 +42,9 @@ focus_tree = {
 		cost = 3
 		x = -14
 		y = 0
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+		}
 		available = {
 			
 		}
@@ -69,6 +72,9 @@ focus_tree = {
 			controls_state = 970
 			owns_state = 970
 		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		completion_reward = { 
 			970 = {
 				increase_state_category = yes
@@ -90,6 +96,9 @@ focus_tree = {
 		cost = 5
 		x = 5
 		y = 4
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyDevelopVaduz_Focus
@@ -122,6 +131,10 @@ focus_tree = {
 		cost = 5
 		x = 6
 		y = 5
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyIntegrateBank_Focus
@@ -214,6 +227,10 @@ focus_tree = {
 		cost = 10
 		x = 5
 		y = 6
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyIntegrateBank_Focus
@@ -250,6 +267,9 @@ focus_tree = {
 		cost = 4
 		x = 7
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyDevelopVaduz_Focus
@@ -288,6 +308,9 @@ focus_tree = {
 		cost = 4
 		x = 7
 		y = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyContinueIndustrialisation_Focus
@@ -313,6 +336,9 @@ focus_tree = {
 		cost = 4
 		x = 6
 		y = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyContinueIndustrialisation_Focus
@@ -349,6 +375,9 @@ focus_tree = {
 		cost = 4
 		x = 8
 		y = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyContinueIndustrialisation_Focus
@@ -388,6 +417,9 @@ focus_tree = {
 		cost = 4
 		x = 2
 		y = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyStateOfEconomy_Focus
@@ -415,6 +447,10 @@ focus_tree = {
 		cost = 4
 		x = -2
 		y = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyStateOfEconomy_Focus
@@ -447,6 +483,9 @@ focus_tree = {
 		cost = 5
 		x = 4
 		y = 2
+		search_filters = {
+			LUC_FOCUS_RESOURCES
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyModernTools_Focus
@@ -482,6 +521,9 @@ focus_tree = {
 		cost = 5
 		x = 2
 		y = 2
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyModernTools_Focus
@@ -553,6 +595,10 @@ focus_tree = {
 		cost = 5
 		x = 3
 		y = 3
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyIncreaseStateControl_Focus
@@ -595,6 +641,10 @@ focus_tree = {
 		cost = 5
 		x = 2
 		y = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyIncreaseStateControl_Focus
@@ -630,6 +680,10 @@ focus_tree = {
 		cost = 5
 		x = 2
 		y = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyNationalInfrastructure_Focus
@@ -675,6 +729,9 @@ focus_tree = {
 		cost = 5
 		x = -2
 		y = 2
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyModernTools_Focus
@@ -739,6 +796,9 @@ focus_tree = {
 		cost = 5
 		x = -3
 		y = 3
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyEmbraceDeregulation_Focus
@@ -771,6 +831,9 @@ focus_tree = {
 		cost = 5
 		x = -2
 		y = 4
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyEmbraceDeregulation_Focus
@@ -806,6 +869,9 @@ focus_tree = {
 		cost = 5
 		x = -3
 		y = 5
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyLowerTaxes_Focus
@@ -851,6 +917,9 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyIncreaseStateControl_Focus
@@ -876,6 +945,10 @@ focus_tree = {
 
 		x = 0
 		y = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyLimitedNationalisation_Focus
@@ -1015,6 +1088,10 @@ focus_tree = {
 		cost = 4
 		x = -16
 		y = 0
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+			LUC_FOCUS_ARMYREFORM
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 
@@ -1042,6 +1119,12 @@ focus_tree = {
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		x = 8
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_ARMY_XP
+			FOCUS_FILTER_AIR_XP
+			FOCUS_FILTER_NAVY_XP
+		}
 		prerequisite = {
 			focus = LUC_ArmyReviewMilitary_Focus
 		}
@@ -1065,6 +1148,9 @@ focus_tree = {
 		cost = 5
 		x = -5
 		y = 1
+		search_filters = {
+			LUC_FOCUS_FILTER_ARMYTECH
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyStateOfEconomy_Focus
@@ -1105,6 +1191,9 @@ focus_tree = {
 		cost = 5
 		x = -4
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		prerequisite = {
 			focus = LUC_EconomyStateOfEconomy_Focus
@@ -1148,6 +1237,9 @@ focus_tree = {
 		cost = 5
 		x = 10
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_EconomyStateOfEconomy_Focus
@@ -1193,6 +1285,10 @@ focus_tree = {
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		x = -1
 		y = 1
+		search_filters = {
+			LUC_FOCUS_FILTER_ARMYTECH
+			LUC_FOCUS_EQUIPMENT
+		}
 		prerequisite = {
 			focus = LUC_ArmyBeginRearmement_Focus
 		}
@@ -1235,6 +1331,10 @@ focus_tree = {
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		x = 1
 		y = 1
+		search_filters = {
+			LUC_FOCUS_FILTER_ARMYTECH
+			LUC_FOCUS_EQUIPMENT
+		}
 		prerequisite = {
 			focus = LUC_ArmyBeginRearmement_Focus
 		}
@@ -1273,6 +1373,10 @@ focus_tree = {
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		x = 0
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			LUC_FOCUS_EQUIPMENT
+		}
 		prerequisite = {
 			focus = LUC_ArmyStudyGermanDesigns_Focus
 			focus = LUC_ArmyStudySwissDesigns_Focus
@@ -1321,6 +1425,9 @@ focus_tree = {
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		x = 0
 		y = 4
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+		}
 		prerequisite = {
 			focus = LUC_ArmyVaduzArmory_Focus
 		}
@@ -1366,6 +1473,11 @@ focus_tree = {
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		x = -1
 		y = 3
+		search_filters = {
+			LUC_FOCUS_FILTER_ARMYTECH
+			FOCUS_FILTER_ARMY_XP
+
+		}
 		prerequisite = {
 			focus = LUC_ArmyStudyGermanDesigns_Focus
 		}
@@ -1395,6 +1507,10 @@ focus_tree = {
 		cost = 5
 		x = -2
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+			LUC_FOCUS_FILTER_ARMYTECH
+		}
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		prerequisite = {
 			focus = LUC_ArmyBeginRearmement_Focus
@@ -1403,7 +1519,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			army_experience = 50
+			army_experience = 25
 			custom_effect_tooltip = LUC_newline_tt
 			add_tech_bonus = {
 				name = LUC_ArmySupportDivisions_Focus_support_bonus
@@ -1427,6 +1543,10 @@ focus_tree = {
 		cost = 5
 		x = -2
 		y = 4
+		search_filters = {
+			LUC_FOCUS_FILTER_ARMYTECH
+			LUC_FOCUS_EQUIPMENT
+		}
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		prerequisite = {
 			focus = LUC_ArmySupportDivisions_Focus
@@ -1467,6 +1587,10 @@ focus_tree = {
 		cost = 5
 		x = 3
 		y = 1
+		search_filters = {
+			LUC_FOCUS_FILTER_ARMYTECH
+			FOCUS_FILTER_ARMY_XP
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyReviewMilitary_Focus
@@ -1497,6 +1621,9 @@ focus_tree = {
 		cost = 5
 		x = 9
 		y = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyReviewMilitary_Focus
@@ -1525,6 +1652,10 @@ focus_tree = {
 		cost = 5
 		x = 3
 		y = 3
+		search_filters = {
+			LUC_FOCUS_FILTER_ARMYTECH
+			LUC_FOCUS_ARMYREFORM
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyModernRifles_Focus
@@ -1562,6 +1693,10 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 1
+		search_filters = {
+			LUC_FOCUS_ARMYREFORM
+			FOCUS_FILTER_ARMY_XP
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyReviewMilitary_Focus
@@ -1618,6 +1753,9 @@ focus_tree = {
 		cost = 5
 		x = -2
 		y = 2
+		search_filters = {
+			LUC_FOCUS_ARMYREFORM
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyEstablishOfficerCorps_Focus
@@ -1643,6 +1781,9 @@ focus_tree = {
 		cost = 5
 		x = 2
 		y = 2
+		search_filters = {
+			LUC_FOCUS_ARMYREFORM
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyEstablishOfficerCorps_Focus
@@ -1668,6 +1809,9 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 3
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyOnTheOffence_Focus
@@ -1736,6 +1880,9 @@ focus_tree = {
 		cost = 5
 		x = -1
 		y = 4
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyOnTheOffence_Focus
@@ -1765,6 +1912,9 @@ focus_tree = {
 		cost = 5
 		x = -1
 		y = 5
+		search_filters = {
+			FOCUS_FILTER_ARMY_XP
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyNewManuals_Focus
@@ -1777,6 +1927,7 @@ focus_tree = {
 						NOT = {
 							has_war_with = ROOT
 						}
+						LUC_isFriendlyIdeology = yes
 					}
 				}
 				AND = {
@@ -1792,6 +1943,7 @@ focus_tree = {
 		}
 		completion_reward = {  
 			army_experience = 100
+			# set_cosmetic_tag = LUC_ALPINEFEDERATION
 			if = {
 				limit = {
 					SWI = {
@@ -1856,6 +2008,10 @@ focus_tree = {
 		cost = 5
 		x = 2
 		y = 4
+		search_filters = {
+			LUC_FOCUS_FILTER_ARMYTECH
+			LUC_FOCUS_ARMYREFORM
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyOnTheOffence_Focus
@@ -1889,6 +2045,10 @@ focus_tree = {
 		cost = 5
 		x = 3
 		y = 5
+		search_filters = {
+			LUC_FOCUS_ARMYREFORM
+			LUC_FOCUS_FILTER_ARMYTECH
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmySpecialMountaineerForces_Focus
@@ -1933,6 +2093,9 @@ focus_tree = {
 		cost = 5
 		x = -3
 		y = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyRaiseMilitias_Focus
@@ -1974,6 +2137,10 @@ focus_tree = {
 		cost = 5
 		x = -3
 		y = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+			LUC_FOCUS_ARMYREFORM
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyDefenceInDepth_Focus
@@ -2028,6 +2195,10 @@ focus_tree = {
 		cost = 5
 		x = -3
 		y = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_WAR_SUPPORT
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyReviewMilitary_Focus
@@ -2059,6 +2230,9 @@ focus_tree = {
 		cost = 5
 		x = -4
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_IntelligenceAuxiliary_Focus
@@ -2104,6 +2278,10 @@ focus_tree = {
 		cost = 5
 		x = -5
 		y = 0
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+			LUC_FOCUS_INTELLIGENCE
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 
@@ -2134,6 +2312,9 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 1
+		search_filters = {
+			LUC_FOCUS_INTELLIGENCE
+		}
 		relative_position_id = LUC_IntelligenceService_Focus
 		prerequisite = {
 			focus = LUC_IntelligenceService_Focus
@@ -2156,6 +2337,11 @@ focus_tree = {
 		cost = 5
 		x = 6
 		y = 1
+		search_filters = {
+			FOCUS_FILTER_AIR_XP
+			LUC_FOCUS_EQUIPMENT
+			LUC_FOCUS_FILTER_AIR_TECH
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_ArmyReviewMilitary_Focus
@@ -2187,6 +2373,10 @@ focus_tree = {
 		cost = 5
 		x = 4
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			LUC_FOCUS_FILTER_AIR_TECH
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_AirforceMountainFlights_Focus
@@ -2232,6 +2422,9 @@ focus_tree = {
 		cost = 5
 		x = 6
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_AIR_XP
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_AirforceMountainFlights_Focus
@@ -2286,6 +2479,10 @@ focus_tree = {
 		cost = 5
 		x = 7
 		y = 3
+		search_filters = {
+			FOCUS_FILTER_AIR_XP
+			LUC_FOCUS_FILTER_AIR_TECH
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_AirforceAirfieldsConstruction_Focus
@@ -2318,6 +2515,10 @@ focus_tree = {
 		cost = 5
 		x = 5
 		y = 3
+		search_filters = {
+			FOCUS_FILTER_AIR_XP
+			LUC_FOCUS_FILTER_AIR_TECH
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_AirforceAirfieldsConstruction_Focus
@@ -2350,6 +2551,12 @@ focus_tree = {
 		cost = 5
 		x = 6
 		y = 4
+		search_filters = {
+			FOCUS_FILTER_AIR_XP
+			FOCUS_FILTER_ARMY_XP
+			LUC_FOCUS_FILTER_AIR_TECH
+			LUC_FOCUS_ARMYREFORM
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			focus = LUC_AirforceBomberFocus_Focus
@@ -2393,6 +2600,9 @@ focus_tree = {
 		cost = 5
 		x = -2
 		y = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
 			
@@ -2421,6 +2631,10 @@ focus_tree = {
 		cost = 5
 		x = 2
 		y = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			LUC_FOCUS_FILTER_NAVY_TECH
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			focus = LUC_NavyDockyards_Focus
@@ -2457,6 +2671,10 @@ focus_tree = {
 		cost = 5
 		x = 2
 		y = 3
+		search_filters = {
+			FOCUS_FILTER_NAVY_XP
+			LUC_FOCUS_FILTER_NAVY_TECH
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			focus = LUC_NavyModernisedNavalProduction_Focus
@@ -2492,6 +2710,9 @@ focus_tree = {
 		cost = 5
 		x = -1
 		y = 1
+		search_filters = {
+			LUC_FOCUS_ECONOMY
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			focus = LUC_NavyDockyards_Focus
@@ -2518,6 +2739,9 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			focus = LUC_NavyForeignTrade_Focus
@@ -2560,17 +2784,17 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 3
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			focus = LUC_NavyAcquireAlaska_Focus
 		}
 		available = {
 			463 = {
-				is_fully_controlled_by = ROOT
 				is_owned_by = ROOT
-			}
-			has_army_manpower = {
-				size > 199999
+				is_fully_controlled_by = ROOT
 			}
 		}
 		completion_reward = {  
@@ -2603,6 +2827,9 @@ focus_tree = {
 		cost = 5
 		x = -1
 		y = 4
+		search_filters = {
+			LUC_FOCUS_RESOURCES
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			focus = LUC_NavyAlaskaLiechtenstein_Focus
@@ -2646,6 +2873,9 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			focus = LUC_NavyAlaskaLiechtenstein_Focus
@@ -2687,6 +2917,9 @@ focus_tree = {
 		cost = 5
 		x = 5
 		y = 0
+		search_filters = {
+			FOCUS_FILTER_NAVY_XP
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			
@@ -2743,6 +2976,9 @@ focus_tree = {
 		cost = 5
 		x = 5
 		y = 2
+		search_filters = {
+			LUC_FOCUS_FILTER_NAVY_TECH
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			focus = LUC_NavyAdmiralty_Focus
@@ -2782,6 +3018,9 @@ focus_tree = {
 		cost = 5
 		x = 4
 		y = 1
+		search_filters = {
+			LUC_FOCUS_FILTER_NAVY_TECH
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			focus = LUC_NavyAdmiralty_Focus
@@ -2821,6 +3060,9 @@ focus_tree = {
 		cost = 5
 		x = 6
 		y = 1
+		search_filters = {
+			LUC_FOCUS_FILTER_NAVY_TECH
+		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
 			focus = LUC_NavyAdmiralty_Focus

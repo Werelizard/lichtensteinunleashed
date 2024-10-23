@@ -1,5 +1,6 @@
 ﻿l_english:
  LUC_newline_tt:0 " \n"
+ LUC_ClaimedStatesCanBeCored_tt:0 "Claimed states can be §Ycored§!!"
 
  #Splash / Load
  LUC_FE_SELECT:0 "§YLiechtenstein Unleashed§!"
@@ -20,11 +21,32 @@
  SUS_democratic:0 "Liechtenstein"
  SUS_democratic_DEF:0 "the Principality of Liechtenstein"
  SUS_fascism:0 "National State of Liechtenstein"
- SUS_fascism_DEF:0 "the National State of Liechtenstein"
+ SUS_fascism_DEF:0 "The National State of Liechtenstein"
  SUS_gen_nazism:0 "German State of Liechtenstein"
  SUS_gen_nazism_DEF:0 "the German State of Liechtenstein"
  SUS_communism:0 "Worker's Republic of Liechtenstein"
  SUS_communism_DEF:0 "the Workers' Republic of Liechtenstein"
+
+ #Cosmetic Tags
+ LUC_ALPINEFEDERATION:0 "the Alpine State"
+ LUC_ALPINEFEDERATION_DEF:0 "the Alpine State"
+ LUC_ALPINEFEDERATION_neutrality:0 "the Alpine Confederacy"
+ LUC_ALPINEFEDERATION_neutrality_DEF:0 "the Alpine Confederacy" 
+ LUC_ALPINEFEDERATION_democratic:0 "the Alpine Confederacy"
+ LUC_ALPINEFEDERATION_democratic_DEF:0 "the Alpine Confederacy"
+ LUC_ALPINEFEDERATION_fascism:0 "the Alpine State"
+ LUC_ALPINEFEDERATION_fascism_DEF:0 "the Alpine State"
+ LUC_ALPINEFEDERATION_communism:0 "the Alpine Workers' Democratic Republic"
+ LUC_ALPINEFEDERATION_communism_DEF:0 "the Alpine Workers' Democratic Republic"
+
+ LUC_ALASKALIECHTENSTEIN:0 "Kingdom of Liechtenstein-Alaska"
+ LUC_ALASKALIECHTENSTEIN_DEF:0 "the Kingdom of Liechtenstein-Alaska"
+ LUC_ALASKALIECHTENSTEIN_democratic:0 "Liechtenstein-Alaska"
+ LUC_ALASKALIECHTENSTEIN_democratic_DEF:0 "the Kingdom of Liechtenstein-Alaska"
+ LUC_ALASKALIECHTENSTEIN_fascism:0 "Thule"
+ LUC_ALASKALIECHTENSTEIN_fascism_DEF:0 "the German State of Thule"
+ LUC_ALASKALIECHTENSTEIN_communism:0 "the German People's Republic of Alaska"
+ LUC_ALASKALIECHTENSTEIN_communism_DEF:0 "the German People's Republic of Alaska"
  
  # Political Parties - Start
  SUS_FBP_LONG:0 "Fortschrittliche Bürgerpartei"
@@ -249,6 +271,16 @@
  LUC_decreaseLandtagSupport_10_tt:0 " £GFX_LUC_PolSupport  Landtag support will §Rdecrease§! by §Y10.0%§!"
  LUC_increaseLandtagSupport_15_tt:0 " £GFX_LUC_PolSupport  Landtag support will §Gincrease§! by §Y15.0%§!"
  LUC_decreaseLandtagSupport_15_tt:0 " £GFX_LUC_PolSupport  Landtag support will §Rdecrease§! by §Y15.0%§!"
+
+ # Research Filter
+ LUC_FOCUS_FILTER_ARMYTECH:0 "Army Advances"
+ LUC_FOCUS_FILTER_AIR_TECH:0 "Air Advances"
+ LUC_FOCUS_FILTER_NAVY_TECH:0 "Naval Advances"
+ LUC_FOCUS_EQUIPMENT:0 "Equipment"
+ LUC_FOCUS_INTELLIGENCE:0 "Military Intelligence"
+ LUC_FOCUS_ECONOMY:0 "Economy"
+ LUC_FOCUS_RESOURCES:0 "Resources"
+ LUC_FOCUS_ARMYREFORM:0 "Army Reform"
 
  # Various
  LUC_FormedAlpineFederation_tt:0 "Formed the §YAlpine Confederation§!"

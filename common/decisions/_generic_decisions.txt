@@ -105,16 +105,41 @@ political_actions = {
 			always = yes
 		}
 
+		on_map_mode = map_and_decisions_view
+
 		state_target = yes
 
 		target_trigger = {
 	        FROM = {
-	            OR = {
-					state = 471
-					state = 473
-					state = 739
-					state = 740 
-					state = 864
+				if = {
+					limit = {
+						ROOT = {
+							has_cosmetic_tag = LUC_ALASKALIECHTENSTEIN
+						}
+					}
+					OR = {
+						state = 875
+						state = 822
+						state = 637
+						state = 386
+						state = 650
+						state = 874
+						state = 471
+						state = 473
+						state = 739
+						state = 740 
+						state = 864
+						state = 385
+					}
+				}
+				else = {
+					OR = {
+						state = 471
+						state = 473
+						state = 739
+						state = 740 
+						state = 864
+					}
 				}
 	        }
 	    }
@@ -163,7 +188,28 @@ political_actions = {
 
 		visible = {
 			original_tag = SUS
-			has_completed_focus = LUC_NavyAlaskaLiechtenstein_Focus
+			# has_completed_focus = LU	C_NavyAlaskaLiechtenstein_Focus
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				OR = {
+					state = 463
+					state = 471
+					state = 473
+					state = 739
+					state = 740
+					state = 864
+				}
+				OR = {
+					NOT = {
+						is_core_of = ROOT
+					}
+					NOT = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
 		}
 
 		available = {
@@ -171,28 +217,71 @@ political_actions = {
 				is_core_of = ROOT
 				is_fully_controlled_by = ROOT
 			}
-			471 = {
-				is_core_of = ROOT
-				is_fully_controlled_by = ROOT
-			}
-			739 = {
-				is_core_of = ROOT
-				is_fully_controlled_by = ROOT
-			}
-			740 = {
-				is_core_of = ROOT
-				is_fully_controlled_by = ROOT
-			}
-			864 = {
-				is_core_of = ROOT
-				is_fully_controlled_by = ROOT
+			OR = {
+				471 = {
+					is_core_of = ROOT
+					is_fully_controlled_by = ROOT
+				}
+				473 = {
+					is_core_of = ROOT
+					is_fully_controlled_by = ROOT
+				}
+				739 = {
+					is_core_of = ROOT
+					is_fully_controlled_by = ROOT
+				}
+				740 = {
+					is_core_of = ROOT
+					is_fully_controlled_by = ROOT
+				}
+				864 = {
+					is_core_of = ROOT
+					is_fully_controlled_by = ROOT
+				}
 			}
 		}	
 
 		complete_effect = {
+			set_cosmetic_tag =  LUC_ALASKALIECHTENSTEIN
 			set_capital = {
 				state = 463
 			}
+			set_province_name = {
+				id = 13091
+				name = "St-Joseph"
+			}
+			463 = {
+				increase_state_category = yes
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+				}
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			every_state = {
+				limit = {
+					OR = {
+						state = 875
+						state = 822
+						state = 637
+						state = 386
+						state = 650
+						state = 874
+						state = 385
+					}
+				}
+				add_claim_by = ROOT
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ClaimedStatesCanBeCored_tt
 		}
 	}
 	

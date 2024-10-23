@@ -63,4 +63,39 @@ spriteTypes = {
 		name = "GFX_LUC_help_icon"
 		texturefile = "gfx/interface/LUC_Help_Tooltip.dds"
 	}
+
+	# Filters
+
+	spriteType = {
+		name = "GFX_LUC_FOCUS_FILTER_ARMYTECH"
+		texturefile = "gfx/interface/focusview/filter/LUC_FOCUS_FILTER_ARMYTECH.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_FOCUS_FILTER_AIR_TECH"
+		texturefile = "gfx/interface/focusview/filter/LUC_FOCUS_FILTER_AIR_TECH.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_FOCUS_FILTER_NAVY_TECH"
+		texturefile = "gfx/interface/focusview/filter/LUC_FOCUS_FILTER_NAVY_TECH.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_FOCUS_EQUIPMENT"
+		texturefile = "gfx/interface/focusview/filter/LUC_FOCUS_EQUIPMENT.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_FOCUS_INTELLIGENCE"
+		texturefile = "gfx/interface/focusview/filter/LUC_FOCUS_INTELLIGENCE.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_FOCUS_ECONOMY"
+		texturefile = "gfx/interface/focusview/filter/LUC_FOCUS_ECONOMY.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_FOCUS_RESOURCES"
+		texturefile = "gfx/interface/focusview/filter/LUC_FOCUS_RESOURCES.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_FOCUS_ARMYREFORM"
+		texturefile = "gfx/interface/focusview/filter/LUC_FOCUS_FILTER_ARMYREFORM.dds"
+	}
 }
