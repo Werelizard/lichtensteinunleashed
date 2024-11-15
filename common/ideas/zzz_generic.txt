@@ -1282,7 +1282,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = FIN } }
 				NOT = {
@@ -1351,7 +1351,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = SWE tag = HUN tag = CZE tag = FIN } }
 				NOT = {
@@ -1424,7 +1424,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = FIN } }
 				NOT = {
@@ -1492,7 +1492,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = ROM tag = FIN } }
 				NOT = {
@@ -1561,7 +1561,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = FIN } }
 				NOT = {
@@ -1628,7 +1628,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = YUG tag = FIN } }
 				NOT = {
@@ -1696,7 +1696,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = FIN } }
 				NOT = {
@@ -1763,7 +1763,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = FIN } }
 				NOT = {
@@ -1838,7 +1838,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = FIN } }
 				NOT = {
@@ -1893,7 +1893,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = HUN tag = FIN } }
 				NOT = {
@@ -1948,7 +1948,7 @@ ideas = {
 			allowed = {
 				# Liechtenstein Expanded
 				NOT = {
-					tag = SUS
+					tag = LIC
 				}
 				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = FIN } }
 				NOT = {

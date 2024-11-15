@@ -17,7 +17,7 @@ fascism_on_the_rise = {
 			NOT = { has_government = fascism }
 			check_has_focus_tree_to_switch_to_fascism = yes
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 		
@@ -602,7 +602,7 @@ democratic_on_the_rise = {
 			NOT = { has_government = democratic }
 			check_has_focus_tree_to_switch_to_democratic = yes
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 		
@@ -1185,7 +1185,7 @@ communism_on_the_rise = {
 			NOT = { has_government = communism }
 			check_has_focus_tree_to_switch_to_communism = yes
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 		
@@ -1762,7 +1762,7 @@ political_actions = {
             NOT = { has_government = communism }
 			is_government_in_exile = no
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 
@@ -1823,7 +1823,7 @@ political_actions = {
             NOT = { has_government = communism }
 			is_government_in_exile = no
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
         }
         cost = 100
@@ -1860,7 +1860,7 @@ political_actions = {
     	visible = {
 			NOT = { has_government = fascism }
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 
@@ -1949,7 +1949,7 @@ political_actions = {
     	visible = {
 			NOT = { has_government = democratic }
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 
@@ -1992,7 +1992,7 @@ political_actions = {
     	visible = {
 			NOT = { has_government = communism }
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 
@@ -2081,7 +2081,7 @@ political_actions = {
 				NOT = { original_tag = GRE }
 			}
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 
@@ -2164,7 +2164,7 @@ political_actions = {
 				NOT = { original_tag = CHL }
 			}
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 
@@ -2258,7 +2258,7 @@ political_actions = {
 				NOT = { original_tag = GRE }
 			}
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 
@@ -2367,7 +2367,7 @@ political_actions = {
 				NOT = { original_tag = GRE }
 			}
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 	
@@ -2435,7 +2435,7 @@ political_actions = {
 				NOT = { original_tag = GRE }
 			}
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 		
@@ -2494,7 +2494,7 @@ political_actions = {
 				NOT = { original_tag = GRE }
 			}
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 	
@@ -2562,7 +2562,7 @@ political_actions = {
 				NOT = { original_tag = GRE }
 			}
 			NOT = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 		}
 	

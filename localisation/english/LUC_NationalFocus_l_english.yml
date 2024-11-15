@@ -83,7 +83,7 @@
  LUC_EconomyReorientEconomy_Focus_desc:0 ""
  LUC_EconomyReorientEconomy_Focus_tt:0 "§LThis decision would allow us to beseech the Landtag and purchase military equipement from our neighbours.§!"
 
- LUC_EconomyFinal_Focus:0 "The [SUS.GetAdjective] Miracle"
+ LUC_EconomyFinal_Focus:0 "The [LIC.GetAdjective] Miracle"
  LUC_EconomyFinal_Focus_desc:0 ""
  LUC_EconomyFinal_Focus_tt:0 "Has at Least §Y25§! Factories"
  LUC_EconomyFinal_Focus_nochoice:0 "A Prospering Economy"

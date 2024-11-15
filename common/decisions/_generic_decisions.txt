@@ -11,7 +11,7 @@ political_actions = {
 		fire_only_once = yes
 
 		visible = {
-			original_tag = SUS
+			original_tag = LIC
 			has_completed_focus = LUC_NavyAcquireAlaska_Focus
 			NOT = {
 				owns_state = 463
@@ -55,7 +55,7 @@ political_actions = {
 		}
 
 		visible = {
-			original_tag = SUS
+			original_tag = LIC
 			has_completed_focus = LUC_NavyAcquireAlaska_Focus
 		}
 
@@ -90,12 +90,12 @@ political_actions = {
 			864 = {
 				add_claim_by = ROOT
 			}
-			hidden_effect = {
-				country_event = {
-					id = LUC_FocusTree.304
-					days = 28
-				}
-			}
+			# hidden_effect = {
+			# 	country_event = {
+			# 		id = LUC_FocusTree.304
+			# 		days = 28
+			# 	}
+			# }
 		}	
 	}
 	LUC_IntegrateGreaterAlaska = {
@@ -145,7 +145,7 @@ political_actions = {
 	    }
 
 		visible = {
-			original_tag = SUS
+			original_tag = LIC
 			has_completed_focus = LUC_NavyAlaskaLiechtenstein_Focus
 		}
 
@@ -187,7 +187,7 @@ political_actions = {
 		fire_only_once = yes
 
 		visible = {
-			original_tag = SUS
+			original_tag = LIC
 			# has_completed_focus = LU	C_NavyAlaskaLiechtenstein_Focus
 		}
 
@@ -437,7 +437,7 @@ economy_decisions = {
 	# 	cost = 25
 
 	# 	visible = {
-	# 		original_tag = SUS
+	# 		original_tag = LIC
 	# 		has_completed_focus = LUC_ArmyVaduzArmory_Focus
 	# 	}
 
@@ -493,7 +493,7 @@ economy_decisions = {
 		}
 
 		visible = {
-			original_tag = SUS
+			original_tag = LIC
 			OR = {
 				has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
 				has_completed_focus = LUC_ArmyStudySwissDesigns_Focus
@@ -550,7 +550,7 @@ economy_decisions = {
 		}
 
 		visible = {
-			original_tag = SUS
+			original_tag = LIC
 			OR = {
 				has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
 				has_completed_focus = LUC_ArmyStudySwissDesigns_Focus
@@ -606,7 +606,7 @@ economy_decisions = {
 		}
 
 		visible = {
-			original_tag = SUS
+			original_tag = LIC
 			OR = {
 				has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
 				has_completed_focus = LUC_ArmyStudySwissDesigns_Focus

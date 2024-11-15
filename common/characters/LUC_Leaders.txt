@@ -49,7 +49,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology = centrism
+			ideology = conservatism
 			traits={  
 				LUC_AdvisorTrait_PoliticalWeasel
 				LUC_LeaderTrait_Germanophile
@@ -185,7 +185,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = moderatism
+			ideology = conservatism
 			traits = {
 				LUC_AdvisorTrait_WealthyLandowner
 				LUC_LeaderTrait_ConservativeFigurehead
@@ -203,7 +203,7 @@ characters={
 		country_leader={
 			ideology = despotism
 			traits={  
-				
+				LUC_LeaderTrait_PrinceOfLiechtenstein
 			}
 		}
 	}
@@ -677,7 +677,7 @@ characters={
 				has_completed_focus = LUC_ArmyEstablishOfficerCorps_Focus
 			}
 			traits = {
-				army_cavalry_2
+				army_regrouping_1
 			}
 		}
 	}

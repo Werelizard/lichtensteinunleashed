@@ -2,241 +2,241 @@ spriteTypes = {
 	# Princes of Liechtenstein
 	spriteType = {
 		name = "GFX_idea_LUC_Franz_I_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_FRANZ_I_SMALL.tga"
+		textureFile = "gfx/interface/ideas/LIC/LUC_FRANZ_I_SMALL.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_FRANZ_I_LEADER"
-		textureFile = "gfx/leaders/SUS/LUC_FRANZ_I.tga"
+		textureFile = "gfx/leaders/LIC/LUC_FRANZ_I.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Franz_II_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_FRANZ_II_SMALL.tga"
+		textureFile = "gfx/interface/ideas/LIC/LUC_FRANZ_II_SMALL.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_FRANZ_II_LEADER"
-		textureFile = "gfx/leaders/SUS/LUC_FRANZ_II.tga"
+		textureFile = "gfx/leaders/LIC/LUC_FRANZ_II.tga"
 	}
 
 	#Prime Ministers
 	spriteType = {
 		name = "GFX_LUC_AlfonsGoop"
-		textureFile = "gfx/leaders/SUS/LUC_AlfonsGoop.tga"
+		textureFile = "gfx/leaders/LIC/LUC_AlfonsGoop.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_JosefHoop"
-		textureFile = "gfx/leaders/SUS/LUC_JosefHoop.tga"
+		textureFile = "gfx/leaders/LIC/LUC_JosefHoop.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_OttoSchaedler"
-		textureFile = "gfx/leaders/SUS/LUC_OttoSchaedler.tga"
+		textureFile = "gfx/leaders/LIC/LUC_OttoSchaedler.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_RudolfSchaedler"
-		textureFile = "gfx/leaders/SUS/LUC_RudolfSchaedler.tga"
+		textureFile = "gfx/leaders/LIC/LUC_RudolfSchaedler.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_LudwigMarxer"
-		textureFile = "gfx/leaders/SUS/LUC_LudwigMarxer.tga"
+		textureFile = "gfx/leaders/LIC/LUC_LudwigMarxer.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_RichardMeier"
-		texturefile = "gfx/leaders/SUS/LUC_RichardMeier.tga"
+		texturefile = "gfx/leaders/LIC/LUC_RichardMeier.tga"
 	}
 
 	# Workers council
 	spriteType = {
 		name = "GFX_LUC_WorkersCouncil"
-		textureFile = "gfx/leaders/SUS/LUC_WorkersCouncil.tga"
+		textureFile = "gfx/leaders/LIC/LUC_WorkersCouncil.tga"
 	}
 
 	# Interime Government
 	spriteType = {
 		name = "GFX_LUC_InterimGovernment"
-		textureFile = "gfx/leaders/SUS/LUC_InterimGovernment.tga"
+		textureFile = "gfx/leaders/LIC/LUC_InterimGovernment.tga"
 	}
 
 	#Advisors
 	spriteType = {
 		name = "GFX_LUC_AlfonsGoop_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_AlfonsGoop_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_AlfonsGoop_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_AloisVogt_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_AloisVogt_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_AloisVogt_Advisor.dds"
 	}	
 
 	spriteType = {
 		name = "GFX_LUC_AntonFrommelt_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_AntonFrommelt_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_AntonFrommelt_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_CarlVogelsang_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_CarlVogelsang_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_CarlVogelsang_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_DanielaHilzinger_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_DanielaHilzinger_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_DanielaHilzinger_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_EugenSchafhause_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_EugenSchafhause_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_EugenSchafhause_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_GustavSchadler_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_GustavSchadler_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_GustavSchadler_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_GustavVogt_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_GustavVogt_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_GustavVogt_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_JohannHasler_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_JohannHasler_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_JohannHasler_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_JosefHoop_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_JosefHoop_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_JosefHoop_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_JosefLienhardt_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_JosefLienhardt_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_JosefLienhardt_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_JosefSteger_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_JosefSteger_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_JosefSteger_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_KarlTrauttmanssdorf_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_KarlTrauttmanssdorf_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_KarlTrauttmanssdorf_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_LudwigMarxer_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_LudwigMarxer_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_LudwigMarxer_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_MarkusLedswher_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_MarkusLedswher_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_MarkusLedswher_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_MartinLanter_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_MartinLanter_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_MartinLanter_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_OttoSchaedler_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_OttoSchaedler_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_OttoSchaedler_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_PeterBuchel_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_PeterBuchel_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_PeterBuchel_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_PeterZund_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_PeterZund_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_PeterZund_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_RichardMeier_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_RichardMeier_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_RichardMeier_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_RudolfSchaedler_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_RudolfSchaedler_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_RudolfSchaedler_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_RupertMette_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_RupertMette_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_RupertMette_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_ThomasZwinger_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_ThomasZwinger_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_ThomasZwinger_Advisor.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_YvonneVogt_Advisor"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_YvonneVogt_Advisor.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_YvonneVogt_Advisor.dds"
 	}
 
 	# Generals
 
 	spriteType = {
 		name = "GFX_LUC_Alois_Gonzaga_Maria_Adolf"
-		texturefile = "gfx/leaders/SUS/LUC_Alois_Gonzaga_Maria_Adolf.tga"
+		texturefile = "gfx/leaders/LIC/LUC_Alois_Gonzaga_Maria_Adolf.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_Alois_Gonzaga_Maria_Adolf_small"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Alois_Gonzaga_Maria_Adolf_Small.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_Alois_Gonzaga_Maria_Adolf_Small.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_Heinrich_Aloys_Maria_Joseph"
-		texturefile = "gfx/leaders/SUS/LUC_Heinrich_Aloys_Maria_Joseph.tga"
+		texturefile = "gfx/leaders/LIC/LUC_Heinrich_Aloys_Maria_Joseph.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_Heinrich_Aloys_Maria_Joseph_small"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Heinrich_Aloys_Maria_Joseph_Small.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_Heinrich_Aloys_Maria_Joseph_Small.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_Johannes_Franz_Maria_Balthasar"
-		texturefile = "gfx/leaders/SUS/LUC_Johannes_Franz_Maria_Balthasar.tga"
+		texturefile = "gfx/leaders/LIC/LUC_Johannes_Franz_Maria_Balthasar.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_Johannes_Franz_Maria_Balthasar_small"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Johannes_Franz_Maria_Balthasar_Small.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_Johannes_Franz_Maria_Balthasar_Small.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_Rene_Batliner"
-		texturefile = "gfx/leaders/SUS/LUC_Rene_Batliner.tga"
+		texturefile = "gfx/leaders/LIC/LUC_Rene_Batliner.tga"
 	}
 	spriteType = {
 		name = "GFX_LUC_Rene_Batliner_small"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Rene_Batliner_Small.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_Rene_Batliner_Small.dds"
 	}
 
 	# Military Advisors
 	spriteType = {
 		name = "GFX_LUC_Simon_Buhler_small"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Simon_Buhler_small.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_Simon_Buhler_small.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_Max_Spitz_small"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Max_Spitz_small.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_Max_Spitz_small.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_Niels_Wohlwend_small"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Niels_Wohlwend_small.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_Niels_Wohlwend_small.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_Georg_Meyer_small"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Georg_Meyer_small.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_Georg_Meyer_small.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_Tomas_Frick_small"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Tomas_Frick_small.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_Tomas_Frick_small.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_Andreas_Goos_small"
-		texturefile = "gfx/interface/ideas/SUS/Advisors/LUC_Andreas_Goos_small.dds"
+		texturefile = "gfx/interface/ideas/LIC/Advisors/LUC_Andreas_Goos_small.dds"
 	}
 }

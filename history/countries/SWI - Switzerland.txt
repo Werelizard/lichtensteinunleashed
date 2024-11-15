@@ -380,9 +380,3 @@ set_popularities = {
 #}
 
 set_stability = 0.85
-
-# LICHSTENSTEIN UNLEASED
-
-add_ideas = LUC_CustomsUnion_idea
-# Special effects
-luc_setup_customs_union = yes

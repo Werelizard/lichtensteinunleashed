@@ -33,7 +33,7 @@ LUC_check_ruling_party_is_50 = {
 # Trigger to check if the Landtag Mechanic should be enabled
 
 LUC_hasLandtagMechanic_trigger = {
-	original_tag = SUS
+	original_tag = LIC
 	has_country_flag = LUC_EnableLandtag_flag
 	OR = {
 		has_government = democratic

@@ -5,8 +5,8 @@ intelligence_agency = {
 	picture = GFX_LUC_intelligence_agency_logo_Liechtenstein
 	names = { "Landespolizei des Fürstentums Liechtenstein" }
 	
-	default = { tag = SUS }
-	available = { original_tag = SUS }
+	default = { tag = LIC }
+	available = { original_tag = LIC }
 }
 
 intelligence_agency = {

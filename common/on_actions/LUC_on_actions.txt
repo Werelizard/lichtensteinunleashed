@@ -1,7 +1,7 @@
 on_actions = {
-	on_weekly_SUS = {
+	on_weekly_LIC = {
 		effect = {
-			SUS = {
+			LIC = {
 				# Landtag Effects
 				if = {
 					limit = {
@@ -14,7 +14,7 @@ on_actions = {
 	}
 	on_startup = {
 		effect = {
-			SUS = {
+			LIC = {
 				country_event = {
 					id = LUC_flavour.1
 				}
@@ -25,6 +25,74 @@ on_actions = {
 				remove_ideas = LUC_CustomsUnion_idea
 				add_dynamic_modifier = {
 					modifier = LUC_CustomsUnion_idea
+				}
+			}
+		}
+	}
+	on_ruling_party_change = {
+		effect = {
+			# Remove the monarchy if you abolished it
+			if ={
+				limit = {
+					original_tag = LIC
+					OR = {
+						has_idea = LUC_Franz_I_idea
+						has_idea = LUC_Franz_II_idea
+					}
+					OR = {
+						has_country_flag = LUC_removedMonarchy_flag
+						has_government = communism
+						AND = {
+							has_government = neutrality
+							OR = {
+								has_country_leader = {
+									character = LUC_FranzI
+									ruling_only = yes
+								}
+								has_country_leader = {
+									character = LUC_FranzII
+									ruling_only = yes
+								}
+							}
+						}
+					}
+				}
+				remove_ideas = LUC_Franz_I_idea
+				remove_ideas = LUC_Franz_II_idea
+			}
+		}
+		effect = {
+			# Reinstate it if you don't have it, but should
+			if = {
+				limit = {
+					original_tag = LIC
+					NOT = {
+						has_government = communism
+					}
+					NOT = {
+						has_country_flag = LUC_removedMonarchy_flag
+					}
+					NOT = {
+						has_country_leader = {
+							character = LUC_FranzI
+							ruling_only = yes
+						}
+					}
+					NOT = {	
+						has_country_leader = {
+							character = LUC_FranzII
+							ruling_only = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = LUC_franzDied_flag
+					}
+					add_ideas = LUC_Franz_II_idea
+				}
+				else = {
+					add_ideas = LUC_Franz_I_idea
 				}
 			}
 		}

@@ -1,0 +1,147 @@
+# General things
+
+capital = 982
+oob = "LIC_1936"
+
+# Technology
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_engineers = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	basic_train = 1
+	tech_military_police = 1
+	tech_trucks = 1
+	militia_tech = 1
+}
+
+# Internal Politics, setup and basics
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.3.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	neutrality = 20
+	democratic = 70
+	fascism = 10
+	communism = 0
+}
+
+set_party_name = {
+	ideology = democratic
+	long_name = LIC_FBP_LONG
+	name = LIC_FBP
+}
+
+set_party_name = {
+	ideology = neutrality
+	long_name = LIC_Neutral_LONG
+	name = LIC_Neutral
+}
+
+set_party_name = {
+	ideology = fascism
+	long_name = LIC_NAT_LONG
+	name = LIC_NAT
+}
+
+set_party_name = {
+	ideology = communism
+	long_name = LIC_tradeunions_Long
+	name = LIC_tradeunions
+}
+
+set_stability = 0.5
+set_war_support = 0
+
+# Country Leaders
+
+recruit_character = LUC_JosefHoop
+recruit_character = LUC_OttoSchaedler
+recruit_character = LUC_RudolfSchaedler
+recruit_character = LUC_AlfonsGoop
+recruit_character = LUC_WorkerCouncil
+recruit_character = LUC_Ludwig_Marxer
+
+# Advisors
+recruit_character = LUC_Anton_Frommelt
+recruit_character = LUC_RichardMeier
+recruit_character = LUC_AloisVogt
+recruit_character = LUC_EugenSchafhause
+recruit_character = LUC_GustavSchadler
+recruit_character = LUC_CarlVogelsang
+recruit_character = LUC_PeterBuchel
+recruit_character = LUC_GustavVogt
+recruit_character = LUC_JosefLienhardt
+recruit_character = LUC_PeterZund
+recruit_character = LUC_DanielaHilzinger
+recruit_character = LUC_JosefSteger
+recruit_character = LUC_JohannGeorgHasler
+recruit_character = LUC_KarlTrauttmanssdorf
+recruit_character = LUC_ThomasZwinger
+recruit_character = LUC_MarkusLedswher
+recruit_character = LUC_RupertMette
+recruit_character = LUC_MartinLanter
+recruit_character = LUC_YvonneVogt
+recruit_character = LUC_Andreas_Goos
+recruit_character = LUC_Tomas_Frick
+recruit_character = LUC_Georg_Meyer
+recruit_character = LUC_Niels_Wohlwend
+recruit_character = LUC_Max_Spitz
+recruit_character = LUC_Simon_Buhler
+recruit_character = LUC_FranzI
+recruit_character = LUC_FranzII
+
+# Generals
+
+recruit_character = LUC_Alois_Gonzaga_Maria_Adolf
+recruit_character = LUC_Heinrich_Aloys_Maria_Joseph
+recruit_character = LUC_Johannes_Franz_Maria_Balthasar
+recruit_character = LUC_Rene_Batliner
+
+# Ideas
+
+add_ideas = {
+	disarmed_nation
+	limited_exports
+	LUC_Franz_I_idea
+	LUC_Liechtenstein_Neutrality_idea
+	LUC_Liechtensteiner_No_Army_idea
+	LUC_Liechtensteiner_Economy_idea
+	LUC_CustomsUnion_idea
+}
+
+# Special effects
+luc_setup_customs_union = yes
+add_manpower = 1000
+
+# Variables for the initial economy
+
+set_variable = {
+	LUC_ConGoodsFac_Var = 0.15
+}
+set_variable = {
+	LUC_UnionPolPower_Var = -0.1
+}
+
+# Relation
+
+SWI = {
+	give_guarantee = LIC
+}
+# Events
+
+
+country_event = {
+	id = LUC_Fascists.1
+	days = 30
+	random_days = 10
+}

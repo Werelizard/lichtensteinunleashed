@@ -11,14 +11,14 @@ ideas = {
 				industry = 0.05
 			}
 			visible = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 			available = {
 				OR = {
-					970 = {
+					982 = {
 						is_fully_controlled_by = ROOT
 					}
-					970 = {
+					982 = {
 						is_owned_by = ROOT
 					}
 				}
@@ -32,14 +32,14 @@ ideas = {
 				local_building_slots_factor = 0.1
 			}
 			visible = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 			available = {
 				OR = {
-					970 = {
+					982 = {
 						is_fully_controlled_by = ROOT
 					}
-					970 = {
+					982 = {
 						is_owned_by = ROOT
 					}
 				}
@@ -57,14 +57,14 @@ ideas = {
 				electronics = 0.05
 			}
 			visible = {
-				original_tag = SUS
+				original_tag = LIC
 			}
 			available = {
 				OR = {
-					970 = {
+					982 = {
 						is_fully_controlled_by = ROOT
 					}
-					970 = {
+					982 = {
 						is_owned_by = ROOT
 					}
 				}
@@ -79,7 +79,7 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = GER
-					original_tag = SUS
+					original_tag = LIC
 				}
 			}
 
@@ -104,7 +104,7 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = GER
-					original_tag = SUS
+					original_tag = LIC
 				}
 			}
 

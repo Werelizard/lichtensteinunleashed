@@ -11,19 +11,18 @@ ideas = {
 				}
 			}
 		}
-		LUC_EngineerCorps_idea = { #No Icon
+		LUC_EngineerCorps_idea = { 
 			modifier = {
 				dig_in_speed_factor = 0.1
-				terrain_penalty_reduction = 0.15
-				out_of_supply_factor = -0.1
-				training_time_army_factor = 0.1
+				supply_consumption_factor = -0.1
+				terrain_penalty_reduction = 0.1
 			}
 		}
 		LUC_Army_Conscription_idea = {
 			modifier = {
 				mobilization_speed = 0.1
-				conscription_factor = 0.15
-				weekly_casualties_war_support = -0.005
+				weekly_manpower = 250
+				stability_factor = -0.1
 			}
 		}
 		LUC_Army_Defence1_idea = {
@@ -31,34 +30,32 @@ ideas = {
 				experience_gain_army = 0.1
 				defence = 0.1
 				army_org_factor = 0.1
-				max_dig_in_factor = 0.1
+				max_dig_in = 3
 			}
 		}
 		LUC_Army_Defence2_idea = {
 			modifier = {
 				experience_gain_army = 0.1
-				defence = 0.15
+				defence = 0.1
 				army_org_factor = 0.1
-				max_dig_in_factor = 0.1
-				weekly_casualties_war_support = 0.01
-				modifier_army_sub_unit_militia_max_org_factor = 0.05
+				max_dig_in = 5
+				conscription = 0.015
 			}
 		}
 		LUC_Army_Offence1_idea = {
 			modifier = {
 				experience_gain_army = 0.1
 				recon_factor = 0.1
-				special_forces_attack_factor = 0.05
-				mountaineers_special_forces_contribution_factor = -0.1
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
+				mountaineers_special_forces_contribution_factor = -0.2
 			}
 		}
 		LUC_Army_Offence2_idea = {
 			modifier = {
 				experience_gain_army = 0.1
 				recon_factor = 0.1
-				special_forces_attack_factor = 0.05
-				mountaineers_special_forces_contribution_factor = -0.1
-				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
+				mountaineers_special_forces_contribution_factor = -0.2
 				special_forces_cap = 0.1
 			}
 		}
@@ -66,11 +63,10 @@ ideas = {
 			modifier = {
 				experience_gain_army = 0.1
 				recon_factor = 0.1
-				special_forces_attack_factor = 0.05
-				mountaineers_special_forces_contribution_factor = -0.1
-				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
+				special_forces_attack_factor = 0.1
+				mountaineers_special_forces_contribution_factor = -0.2
 				special_forces_cap = 0.1
-				modifier_army_sub_unit_mountaineers_max_org_factor = 0.05
+				modifier_army_sub_unit_mountaineers_max_org_factor = 0.1
 			}
 		}
 		LUC_CivilianPreparations_idea = {
@@ -87,44 +83,26 @@ ideas = {
 				industry_air_damage_factor = -0.1
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
-				conscription = 0.005
+				conscription_factor = 0.1
 			}
 		}
 		LUC_SecurityCorps_idea = {
 			modifier = {
-				local_intel_to_enemies = -0.1
-				resistance_growth = -0.1
 				political_power_factor = -0.1
-			}
-		}
-		LUC_AirPurchases_idea = {
-			modifier = {
-				consumer_goods_factor = 0.05
-			}
-			research_bonus = {
-				air_equipment = 0.10
-			}
-			equipment_bonus = {
-				small_plane_airframe = {
-					build_cost_ic = -0.1
-				}
-				medium_plane_airframe = {
-					build_cost_ic = -0.1
-				}
-				large_plane_airframe = {
-					build_cost_ic = -0.1
-				}
+				army_intel_factor = 0.2
+				army_intel_to_others = -20
+				operative_slot = 1
 			}
 		}
 		LUC_LiechtensteinAirforce_idea = {
 			modifier = {
-				experience_gain_air = 0.2
+				experience_gain_air = 0.1
 				air_doctrine_cost_factor = -0.1
 			}
 		}
 		LUC_LiechtensteinAirforce_bomber_idea = {
 			modifier = {
-				experience_gain_air = 0.4
+				experience_gain_air = 0.2
 				air_doctrine_cost_factor = -0.1
 				air_defence_factor = 0.1
 			}
@@ -139,7 +117,7 @@ ideas = {
 		}
 		LUC_LiechtensteinAirforce_fighter_idea = {
 			modifier = {
-				experience_gain_air = 0.4
+				experience_gain_air = 0.2
 				air_doctrine_cost_factor = -0.1
 				air_superiority_efficiency = 0.1
 			}
@@ -151,7 +129,7 @@ ideas = {
 		}
 		LUC_LiechtensteinAirforce_bomber_cas_idea = {
 			modifier = {
-				experience_gain_air = 0.4
+				experience_gain_air = 0.2
 				air_doctrine_cost_factor = -0.1
 				air_defence_factor = 0.1
 				cas_damage_reduction = 0.1
@@ -164,11 +142,14 @@ ideas = {
 				large_plane_airframe = {
 					build_cost_ic = -0.1
 				}
+				anti_air_equipment = {
+					anti_air_attack = 0.1
+				}
 			}
 		}
 		LUC_LiechtensteinAirforce_fighter_cas_idea = {
 			modifier = {
-				experience_gain_air = 0.4
+				experience_gain_air = 0.2
 				air_doctrine_cost_factor = -0.1
 				air_superiority_efficiency = 0.1
 				cas_damage_reduction = 0.1
@@ -177,6 +158,9 @@ ideas = {
 			equipment_bonus = {
 				small_plane_airframe = {
 					build_cost_ic = -0.1
+				}
+				anti_air_equipment = {
+					anti_air_attack = 0.1
 				}
 			}
 		}

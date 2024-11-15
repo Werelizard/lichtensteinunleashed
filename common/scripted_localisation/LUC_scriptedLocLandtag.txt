@@ -139,7 +139,7 @@ defined_text = { # Landtag Support
 		trigger = {
 			NOT = {
 				check_variable = {
-					SUS.LUC_LandtagOverallSupport_var < 90
+					LIC.LUC_LandtagOverallSupport_var < 90
 				}
 			}
 		}
@@ -149,11 +149,11 @@ defined_text = { # Landtag Support
 		trigger = {
 			NOT = {
 				check_variable = {
-					SUS.LUC_LandtagOverallSupport_var < 60
+					LIC.LUC_LandtagOverallSupport_var < 60
 				}
 			}
 			check_variable = {
-				SUS.LUC_LandtagOverallSupport_var < 90
+				LIC.LUC_LandtagOverallSupport_var < 90
 			}
 		}
 		localization_key = "Supportive Landtag"
@@ -161,10 +161,10 @@ defined_text = { # Landtag Support
 	text = {
 		trigger = {
 			check_variable = {
-				SUS.LUC_LandtagOverallSupport_var > 40
+				LIC.LUC_LandtagOverallSupport_var > 40
 			}
 			check_variable = {
-				SUS.LUC_LandtagOverallSupport_var < 60
+				LIC.LUC_LandtagOverallSupport_var < 60
 			}
 		}
 		localization_key = "Indifferent Landtag"
@@ -173,11 +173,11 @@ defined_text = { # Landtag Support
 		trigger = {
 			NOT = {
 				check_variable = {
-					SUS.LUC_LandtagOverallSupport_var > 40
+					LIC.LUC_LandtagOverallSupport_var > 40
 				}
 			}
 			check_variable = {
-				SUS.LUC_LandtagOverallSupport_var > 10
+				LIC.LUC_LandtagOverallSupport_var > 10
 			}
 		}
 		localization_key = "Landtag Opposition"
@@ -186,7 +186,7 @@ defined_text = { # Landtag Support
 		trigger = {
 			NOT = {
 				check_variable = {
-					SUS.LUC_LandtagOverallSupport_var > 10
+					LIC.LUC_LandtagOverallSupport_var > 10
 				}
 			}
 		}

@@ -1,0 +1,31 @@
+state={
+	id=982
+	name= "STATE_982"
+	state_category = rural
+
+	history = {
+		owner = LIC
+		add_core_of = LIC
+
+		victory_points = {
+			13366 15
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+
+	resources = {
+		steel = 4
+	}
+
+	provinces={
+		13366 
+	}
+	manpower=10500 
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -13,11 +13,11 @@ ideas = {
 			}
 			allowed = {
 				NOT = {
-					has_war_with = SUS
+					has_war_with = LIC
 				}
 			}
 			on_remove = {
-				SUS = {
+				LIC = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = -1

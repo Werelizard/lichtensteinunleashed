@@ -2,37 +2,37 @@ spriteTypes = {
 	# Texticons 
 	spriteType = {
 		name = "GFX_LUC_BankIcon"
-		textureFile = "gfx/texticons/SUS/LUC_BankTextIcon.dds"
+		textureFile = "gfx/texticons/LIC/LUC_BankTextIcon.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_LUC_PolSupport"
-		textureFile = "gfx/texticons/SUS/LUC_PolSupportTextIcon.dds"
+		textureFile = "gfx/texticons/LIC/LUC_PolSupportTextIcon.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_LUC_FactionLiberal_text"
-		textureFile = "gfx/texticons/SUS/LUC_PolLiberals.dds"
+		textureFile = "gfx/texticons/LIC/LUC_PolLiberals.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_LUC_FactionConservative_text"
-		textureFile = "gfx/texticons/SUS/LUC_PolConservatives.dds"
+		textureFile = "gfx/texticons/LIC/LUC_PolConservatives.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_LUC_FactionAgrarian_text"
-		textureFile = "gfx/texticons/SUS/LUC_PolAgrarians.dds"
+		textureFile = "gfx/texticons/LIC/LUC_PolAgrarians.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_LUC_FactionPopulist_text"
-		textureFile = "gfx/texticons/SUS/LUC_PolPopulists.dds"
+		textureFile = "gfx/texticons/LIC/LUC_PolPopulists.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_LUC_FactionNationalist_text"
-		textureFile = "gfx/texticons/SUS/LUC_PolNationalists.dds"
+		textureFile = "gfx/texticons/LIC/LUC_PolNationalists.dds"
 		legacy_lazy_load = no
 	}
 	# Agency
@@ -98,4 +98,24 @@ spriteTypes = {
 		name = "GFX_LUC_FOCUS_ARMYREFORM"
 		texturefile = "gfx/interface/focusview/filter/LUC_FOCUS_FILTER_ARMYREFORM.dds"
 	}
+
+	#Units
+	spriteType = { 
+		name = "GFX_unit_LUC_grenadiers_icon_medium"				
+		textureFile = "gfx/interface/counters/divisions_large/LUC_grenadiers_icon.dds"  
+		noOfFrames = 2
+	}
+   
+	  spriteType = { 
+		name = "GFX_unit_LUC_grenadiers_icon_medium_white" 					
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_LUC_grenadiers_icon.dds" 
+		noOfFrames = 2
+	  }
+   
+	  spriteType = {
+		name = "GFX_unit_LUC_grenadiers_icon_small"
+		texturefile = "gfx/texticons/unit_LUC_grenadiers_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	  }	 
 }

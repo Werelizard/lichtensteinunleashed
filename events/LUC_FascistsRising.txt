@@ -9,7 +9,7 @@ country_event = {
 	desc = LUC_Fascists.1.desc
 	picture = GFX_report_event_SWI_soldier_gathering
 	trigger = {
-		original_tag = SUS
+		original_tag = LIC
 		NOT = {
 			has_government = fascism
 		}

@@ -40,13 +40,12 @@ LUC_CustomsUnion_idea = {
 		always = yes
 	}
 	custom_modifier_tooltip = LUC_CustomsUnion_idea_tt
-	production_factory_start_efficiency_factor = LUC_UnionFactoryOutput_Var
 	political_power_factor = LUC_UnionPolPower_Var
 }
 
 LUC_MIL_Movement1_idea = {
 	enable = {
-		SUS = {
+		LIC = {
 			fascism > 0
 			NOT = {
 				fascism > 0.2
@@ -63,7 +62,7 @@ LUC_MIL_Movement1_idea = {
 }
 LUC_MIL_Movement2_idea = {
 	enable = {
-		SUS = {
+		LIC = {
 			fascism > 0.2
 			NOT = {
 				fascism > 0.4
@@ -80,7 +79,7 @@ LUC_MIL_Movement2_idea = {
 }
 LUC_MIL_Movement3_idea = {
 	enable = {
-		SUS = {
+		LIC = {
 			fascism > 0.4
 			NOT = {
 				fascism > 0.6
@@ -97,7 +96,7 @@ LUC_MIL_Movement3_idea = {
 }
 LUC_MIL_Movement4_idea = {
 	enable = {
-		SUS = {
+		LIC = {
 			fascism > 0.6
 			NOT = {
 				fascism > 0.8 
@@ -114,7 +113,7 @@ LUC_MIL_Movement4_idea = {
 }
 LUC_MIL_Movement5_idea = {
 	enable = {
-		SUS = {
+		LIC = {
 			fascism > 0.8
 			OR = {
 				has_government = democratic

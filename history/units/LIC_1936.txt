@@ -37,13 +37,13 @@ division_template = {
 units = {
 	##### Liechtensteiner Militia #####
 	division= {	
-		location = 6680
+		location = 13366
 		division_template = "Landespolizei"
 		start_experience_factor = 0.01
 		start_equipment_factor = 0.5
 	}
 	division= {	
-		location = 6680
+		location = 13366
 		division_template = "Landespolizei"
 		start_experience_factor = 0.01
 		start_equipment_factor = 0.5
@@ -56,7 +56,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "SUS"
+			creator = "LIC"
 		}
 		requested_factories = 1
 		progress = 0.5
@@ -65,7 +65,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "SUS"
+			creator = "LIC"
 		}
 		requested_factories = 1
 		progress = 0.95

@@ -1,4 +1,4 @@
-SUS = {
+LIC = {
 	male = {
 		names = { 
 			Alfred Andreas Anton Benjamin Daniel David Henrik Hilmar Ferdinand Franz Frederik Gebhard Johan Johann Josef Karl Lukas Magnus Markus Oskar Otto Peter Rupert Theodor Thomas 

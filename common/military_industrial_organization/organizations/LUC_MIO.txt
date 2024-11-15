@@ -7,14 +7,14 @@ SWI_eidgenossische_WF_organization = {
 			tag = SWI
 			has_dlc = "By Blood Alone"
 		}
-		tag = SUS
+		tag = LIC
 	}
 	visible = {
 		owner = {
 			OR = {
 				tag = SWI
 				AND = {
-					original_tag = SUS
+					original_tag = LIC
 					has_completed_focus = LUC_ArmyWeaponContracts_Focus
 				}
 			}
@@ -38,14 +38,14 @@ SWI_sig_organization = {
 			tag = SWI
 			has_dlc = "By Blood Alone"
 		}
-		tag = SUS
+		tag = LIC
 	}
 	visible = {
 		owner = {
 			OR = {
 				tag = SWI
 				AND = {
-					original_tag = SUS
+					original_tag = LIC
 					has_completed_focus = LUC_ArmyWeaponContracts_Focus
 				}
 			}
@@ -108,14 +108,14 @@ SWI_oerlikon_organization = {
 			tag = SWI
 			has_dlc = "By Blood Alone"
 		}
-		tag = SUS
+		tag = LIC
 	}
 	visible = {
 		owner = {
 			OR = {
 				tag = SWI
 				AND = {
-					original_tag = SUS
+					original_tag = LIC
 					has_completed_focus = LUC_ArmyWeaponContracts_Focus
 				}
 			}
@@ -133,7 +133,7 @@ GER_daimler_benz_organization = {
 				tag = BRA
 				has_dlc = "Trial of Allegiance"
 			}
-			original_tag = SUS
+			original_tag = LIC
 		}
 	}
 
@@ -146,7 +146,7 @@ GER_daimler_benz_organization = {
 					has_dlc = "Trial of Allegiance"
 				}
 				AND = {
-					original_tag = SUS
+					original_tag = LIC
 					has_completed_focus = LUC_ArmyStudyPanzers_Focus
 				}
 			}
@@ -246,7 +246,7 @@ SWI_eidgenossische_FW_organization = {
 				tag = SWI
 				has_dlc = "By Blood Alone"
 			}
-			original_tag = SUS
+			original_tag = LIC
 		}
 	}
 	available = {

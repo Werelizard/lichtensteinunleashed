@@ -4,12 +4,12 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "SUS"
+		default_country = "LIC"
 		default = yes
 
 		
-		"SUS"={
-			history = SUS_GATHERING_STORM_DESC
+		"LIC"={
+			history = LIC_GATHERING_STORM_DESC
 			ideology = democratic
 			ideas = {
 				LUC_Franz_I_idea

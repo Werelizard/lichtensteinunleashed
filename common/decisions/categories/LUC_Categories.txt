@@ -6,7 +6,7 @@ LUC_Fascist_Radicalisation_cat = {
 		always = yes
 	}
 	visible = {
-		original_tag = SUS
+		original_tag = LIC
 		NOT = {
 			has_government = fascism
 		}

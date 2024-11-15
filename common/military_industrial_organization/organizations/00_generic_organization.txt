@@ -17,7 +17,7 @@ generic_tank_organization = {
 	allowed = {
 		# Liechtenstein Expanded
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = ROM } }
 		NOT = {
@@ -2101,7 +2101,7 @@ generic_escort_ship_organization = {
 	allowed = {
 		# Liechtenstein Expanded
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = SWE tag = HUN tag = CZE tag = ROM tag = YUG tag = POR tag = GRE tag = TUR tag = LAT tag = EST } }
 		NOT = { OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD } }
@@ -3595,7 +3595,7 @@ generic_general_aircraft_organization = {
 	allowed = {
 		# Liechtenstein Expanded
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CAN tag = YUG tag = ROM tag = CZE tag = HUN tag = CHI tag = MAN tag = HOL tag = BUL tag = GRE tag = TUR tag = LAT tag = LIT } }
 		NOT = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
@@ -6379,7 +6379,7 @@ generic_artillery_organization = {
 	allowed = {
 		# Liechtenstein Expanded
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = USA tag = JAP tag = CZE tag = ROM tag = MEX } }
 		NOT = {
@@ -6763,7 +6763,7 @@ generic_infantry_equipment_organization = {
 	allowed = {
 		# Liechtenstein Expanded
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = BEL tag = CZE tag = HUN tag = YUG tag = ROM tag = MEX tag = TUR tag = EST } }
 		NOT = {
@@ -7391,7 +7391,7 @@ generic_motorized_mechanized_organization = {
 	allowed = {
 		# Liechtenstein Expanded
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 		NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CZE tag = ROM tag = MEX } }
 		NOT = {

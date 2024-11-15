@@ -10,11 +10,11 @@ technology_sharing_group = {
     available = {
         OR = {
 			AND = {
-				original_tag = SUS
+				original_tag = LIC
 				has_completed_focus = LUC_ExpandResearchFunding
 			}
 			NOT = {
-				has_war_with = SUS
+				has_war_with = LIC
 			}
 		}
     }

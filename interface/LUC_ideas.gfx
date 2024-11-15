@@ -2,109 +2,109 @@ spriteTypes = {
 	# Base Ideas
 	spriteType = {
 		name = "GFX_idea_LUC_Liechtensteiner_Economy_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_LichtensteinerEconomy.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LichtensteinerEconomy.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Liechtenstein_Neutrality_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_Lichtenstein_Neutrality_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_Lichtenstein_Neutrality_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_CustomsUnion_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_CustomsUnion_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_CustomsUnion_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Liechtensteiner_No_Army_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_LichtensteinerMilitary.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LichtensteinerMilitary.dds"
 	}
 	# Industrial Concerns
 	spriteType = {
 		name = "GFX_idea_LUC_LawenaPower_concern"
-		textureFile = "gfx/interface/ideas/SUS/Concerns/LUC_LawenaPower.dds"
+		textureFile = "gfx/interface/ideas/LIC/Concerns/LUC_LawenaPower.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_LudwigIndustrial_concern"
-		textureFile = "gfx/interface/ideas/SUS/Concerns/LUC_LudwigIndustrial.dds"
+		textureFile = "gfx/interface/ideas/LIC/Concerns/LUC_LudwigIndustrial.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_VaduzTimber_concern"
-		textureFile = "gfx/interface/ideas/SUS/Concerns/LUC_VaduzTimber.dds"
+		textureFile = "gfx/interface/ideas/LIC/Concerns/LUC_VaduzTimber.dds"
 	}
 	#Evetn ideas
 	spriteType = { 
 		name = "GFX_idea_LUC_Fascist_Agitators_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_Fascist_Agitators_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_Fascist_Agitators_idea.dds"
 	}
 	# Focus ideas
 	spriteType = {
 		name = "GFX_idea_LUC_LiechtensteinBankIntegrated_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinBankIntegrated.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LiechtensteinBankIntegrated.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_EngineerCorps_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_EngineerCorps.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_EngineerCorps.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Army_Conscription_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_Army_Conscription_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_Army_Conscription_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Army_Defence1_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_NewArmy_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_NewArmy_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Army_Defence2_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_NewArmy_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_NewArmy_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Army_Offence1_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_NewArmy_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_NewArmy_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Army_Offence2_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_NewArmy_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_NewArmy_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_Army_Offence3_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_NewArmy_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_NewArmy_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_CivilianPreparations_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_CivilianPreparations_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_CivilianPreparations_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_WomenDivisions_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_CivilianPreparations_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_CivilianPreparations_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_SecurityCorps_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_SecurityCorps_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_SecurityCorps_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_AirPurchases_idea"
-		textureFile = "gfx/interface/ideas/SUS/GFX_idea_LUC_AirPurchases_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/GFX_idea_LUC_AirPurchases_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_LiechtensteinAirforce_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LiechtensteinAirforce_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_LiechtensteinAirforce_bomber_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LiechtensteinAirforce_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_LiechtensteinAirforce_fighter_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LiechtensteinAirforce_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_LUC_LiechtensteinAirforce_bomber_cas_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LiechtensteinAirforce_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_LiechtensteinAirforce_fighter_cas_idea"
-		textureFile = "gfx/interface/ideas/SUS/LUC_LiechtensteinAirforce_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LiechtensteinAirforce_idea.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_LUC_LiechtensteinOverseasTrade_idea"
-		textureFile = "gfx/interface/ideas/SUS/GFX_idea_LUC_LiechtensteinOverseasTrade_idea.dds"
+		textureFile = "gfx/interface/ideas/LIC/GFX_idea_LUC_LiechtensteinOverseasTrade_idea.dds"
 	}
 }

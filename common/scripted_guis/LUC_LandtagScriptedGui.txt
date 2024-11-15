@@ -3,21 +3,21 @@ scripted_gui = {
 		window_name = LUC_GovernmentConfidence_ui_window
 		context_type = decision_category
 
-		# dirty = SUS.LUC_LandtagOverallSupport_var
-		# dirty = SUS.LUC_SupportLiberalInfluence_var
-		# dirty = SUS.LUC_SupportLiberalLoyalty_var
-		# dirty = SUS.LUC_SupportConservativeInfluence_var
-		# dirty = SUS.LUC_SupportConservativeLoyalty_var
-		# dirty = SUS.LUC_SupportAgrarianInfluence_var
-		# dirty = SUS.LUC_SupportAgrarianLoyalty_var
-		# dirty = SUS.LUC_SupportPopulistInfluence_var
-		# dirty = SUS.LUC_SupportPopulistLoyalty_var
-		# dirty = SUS.LUC_SupportNationalistInfluence_var
-		# dirty = SUS.LUC_SupportNationalistLoyalty_var
+		# dirty = LIC.LUC_LandtagOverallSupport_var
+		# dirty = LIC.LUC_SupportLiberalInfluence_var
+		# dirty = LIC.LUC_SupportLiberalLoyalty_var
+		# dirty = LIC.LUC_SupportConservativeInfluence_var
+		# dirty = LIC.LUC_SupportConservativeLoyalty_var
+		# dirty = LIC.LUC_SupportAgrarianInfluence_var
+		# dirty = LIC.LUC_SupportAgrarianLoyalty_var
+		# dirty = LIC.LUC_SupportPopulistInfluence_var
+		# dirty = LIC.LUC_SupportPopulistLoyalty_var
+		# dirty = LIC.LUC_SupportNationalistInfluence_var
+		# dirty = LIC.LUC_SupportNationalistLoyalty_var
 
 		properties = {
 			confidence_bar_fill = {
-				frame = SUS.LUC_LandtagOverallSupport_var
+				frame = LIC.LUC_LandtagOverallSupport_var
 			}
 		}
 		triggers = {

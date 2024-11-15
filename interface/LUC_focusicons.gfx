@@ -4,581 +4,581 @@ spriteTypes = {
 	###################################
 	spriteType = {
 		name = "GFX_LUC_Landtag"
-		textureFile = "gfx/interface/goals/SUS/LUC_focus_LandtagElections.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_focus_LandtagElections.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_Landtag_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_focus_LandtagElections.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_focus_LandtagElections.dds"
 	}
 	###################################
 	# ECONOMy-ORIENTED FOCUSES        #
 	###################################
 	spriteType = {
 		name = "GFX_LUC_EconomyStateOfEconomy"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyStateOfEconomy_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyStateOfEconomy_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyStateOfEconomy_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyStateOfEconomy_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyStateOfEconomy_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyDevelopVaduz_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyDevelopVaduz_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyDevelopVaduz_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyDevelopVaduz_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyDevelopVaduz_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyDevelopVaduz_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyBroadElectrification_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyBroadElectrification_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyBroadElectrification_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyBroadElectrification_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyBroadElectrification_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyBroadElectrification_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyOpenTractorFactories_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyOpenTractorFactories_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyOpenTractorFactories_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyOpenTractorFactories_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyOpenTractorFactories_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyOpenTractorFactories_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyUrbanisation_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyUrbanisation_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyUrbanisation_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyUrbanisation_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyUrbanisation_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyUrbanisation_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyModernTools_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyModernTools_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyModernTools_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyModernTools_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyModernTools_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyModernTools_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyContinueIndustrialisation_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyContinueIndustrialisation_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyContinueIndustrialisation_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyContinueIndustrialisation_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyContinueIndustrialisation_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyContinueIndustrialisation_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyHydroEnergy_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyHydroEnergy_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyHydroEnergy_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyHydroEnergy_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyHydroEnergy_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyHydroEnergy_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyIron_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIron_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyIron_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyIron_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIron_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyIron_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyIncreaseStateControl_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIncreaseStateControl_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyIncreaseStateControl_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyIncreaseStateControl_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIncreaseStateControl_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyIncreaseStateControl_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyEmbraceDeregulation_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyEmbraceDeregulation_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyEmbraceDeregulation_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyEmbraceDeregulation_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyEmbraceDeregulation_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyEmbraceDeregulation_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyIntegrateBank_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIntegrateBank_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyIntegrateBank_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyIntegrateBank_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyIntegrateBank_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyIntegrateBank_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyRoyalAssets_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyRoyalAssets_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyRoyalAssets_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyRoyalAssets_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyRoyalAssets_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyRoyalAssets_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomySecureForeignInvestments_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomySecureForeignInvestments_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomySecureForeignInvestments_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomySecureForeignInvestments_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomySecureForeignInvestments_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomySecureForeignInvestments_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyUniversity_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyUniversity_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyUniversity_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyUniversity_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyUniversity_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyUniversity_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_EconomyAgriculutralInvestments_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyAgriculutralInvestments_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyAgriculutralInvestments_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyAgriculutralInvestments_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyAgriculutralInvestments_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyAgriculutralInvestments_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyNationalInfrastructure_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyNationalInfrastructure_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyNationalInfrastructure_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyNationalInfrastructure_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyNationalInfrastructure_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyNationalInfrastructure_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyLimitedNationalisation_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyLimitedNationalisation.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyLimitedNationalisation.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyLimitedNationalisation_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyLimitedNationalisation.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyLimitedNationalisation.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_LUC_EconomyFinal_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyFinal_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyFinal_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyFinal_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyFinal_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyFinal_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyLowerTaxes_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyLowerTaxes_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyLowerTaxes_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyLowerTaxes_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyLowerTaxes_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyLowerTaxes_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomySupportSmallBusinesses_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomySupportSmallBusinesses_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomySupportSmallBusinesses_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomySupportSmallBusinesses_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomySupportSmallBusinesses_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomySupportSmallBusinesses_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyCompleteDeregulation_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyCompleteDeregulation_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyCompleteDeregulation_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_EconomyCompleteDeregulation_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_EconomyCompleteDeregulation_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyCompleteDeregulation_Focus.dds"
 	}
 	###################################
 	# ARMY-ORIENTED FOCUSES           #
 	###################################
 	spriteType = {
 		name = "GFX_LUC_ArmyReviewMilitary_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyReviewMilitary_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyReviewMilitary_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyReviewMilitary_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyReviewMilitary_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyReviewMilitary_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyWeaponContracts_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWeaponContracts_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyWeaponContracts_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyWeaponContracts_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWeaponContracts_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyWeaponContracts_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyBeginRearmement_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyBeginRearmement_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyBeginRearmement_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyBeginRearmement_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyBeginRearmement_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyBeginRearmement_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyStudyGermanDesigns_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudyGermanDesigns_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyStudyGermanDesigns_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudyGermanDesigns_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyStudySwissDesigns_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudySwissDesigns_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudySwissDesigns_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyStudySwissDesigns_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudySwissDesigns_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudySwissDesigns_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyVaduzArmory_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyVaduzArmory_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyVaduzArmory_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyVaduzArmory_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyVaduzArmory_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyVaduzArmory_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyMilitaryEconomyFocus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyMilitaryEconomyFocus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyMilitaryEconomyFocus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyMilitaryEconomyFocus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyMilitaryEconomyFocus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyMilitaryEconomyFocus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyStudyPanzers_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudyPanzers_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyPanzers_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyStudyPanzers_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStudyPanzers_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyPanzers_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyEngineerDivisions_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyEngineerDivisions_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyEngineerDivisions_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyEngineerDivisions_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyEngineerDivisions_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyEngineerDivisions_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyStockpiles_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStockpiles_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStockpiles_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyStockpiles_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyStockpiles_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStockpiles_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmySupportDivisions_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmySupportDivisions_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmySupportDivisions_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmySupportDivisions_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmySupportDivisions_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmySupportDivisions_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyModernRifles_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyModernRifles_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyModernRifles_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyModernRifles_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyModernRifles_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyModernRifles_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyWeaponKrupp_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWeaponKrupp_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyWeaponKrupp_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyWeaponKrupp_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWeaponKrupp_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyWeaponKrupp_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyEstablishOfficerCorps_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyEstablishOfficerCorps_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyEstablishOfficerCorps_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyEstablishOfficerCorps_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyEstablishOfficerCorps_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyEstablishOfficerCorps_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyDefenceInDepth_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyDefenceInDepth_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyDefenceInDepth_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyDefenceInDepth_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyDefenceInDepth_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyDefenceInDepth_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyOnTheOffence_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyOnTheOffence_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyOnTheOffence_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyOnTheOffence_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyOnTheOffence_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyOnTheOffence_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_ArmyCivilianPreparations_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyCivilianPreparations_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyCivilianPreparations_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyCivilianPreparations_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyCivilianPreparations_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyCivilianPreparations_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyWomensCorps_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWomensCorps_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyWomensCorps_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyWomensCorps_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyWomensCorps_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyWomensCorps_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_IntelligenceService_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_IntelligenceService_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_IntelligenceService_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_IntelligenceService_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_IntelligenceService_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_IntelligenceService_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_IntelligenceAuxiliary_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_IntelligenceAuxiliary_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_IntelligenceAuxiliary_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_IntelligenceAuxiliary_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_IntelligenceAuxiliary_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_IntelligenceAuxiliary_Focus.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_LUC_ExpandConscription_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ExpandConscription_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExpandConscription_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ExpandConscription_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ExpandConscription_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExpandConscription_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyNewManuals_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyNewManuals_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyNewManuals_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyNewManuals_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyNewManuals_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyNewManuals_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmySpecialMountaineerForces_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmySpecialMountaineerForces_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmySpecialMountaineerForces_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmySpecialMountaineerForces_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmySpecialMountaineerForces_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmySpecialMountaineerForces_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyRaiseMilitias_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyRaiseMilitias_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyRaiseMilitias_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyRaiseMilitias_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyRaiseMilitias_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyRaiseMilitias_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmySwissExercises_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmySwissExercises_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmySwissExercises_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmySwissExercises_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmySwissExercises_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmySwissExercises_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyFortressVaduz_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyFortressVaduz_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyFortressVaduz_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyFortressVaduz_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyFortressVaduz_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyFortressVaduz_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyMountainEngineering_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyMountainEngineering_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyMountainEngineering_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyMountainEngineering_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyMountainEngineering_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyMountainEngineering_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyModernWarfare_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyModernWarfare_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyModernWarfare_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyModernWarfare_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_ArmyModernWarfare_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyModernWarfare_Focus.dds"
 	}
 	###################################
 	# AIRFORCE-ORIENTED FOCUSES       #
 	###################################
 	spriteType = {
 		name = "GFX_LUC_AirforceMountainFlights_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforceMountainFlights_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforceMountainFlights_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforceMountainFlights_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforceMountainFlights_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforceMountainFlights_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforceAirfieldsConstruction_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforceAirfieldsConstruction_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforceAirfieldsConstruction_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforceAirfieldsConstruction_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforceAirfieldsConstruction_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforceAirfieldsConstruction_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforcePurchaseForeignDesigns_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforcePurchaseForeignDesigns_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforcePurchaseForeignDesigns_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforcePurchaseForeignDesigns_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforcePurchaseForeignDesigns_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforcePurchaseForeignDesigns_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforceBomberFocus_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforceBomberFocus_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforceBomberFocus_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforceBomberFocus_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforceBomberFocus_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforceBomberFocus_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforceFighterPlanes_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforceFighterPlanes_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforceFighterPlanes_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforceFighterPlanes_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforceFighterPlanes_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforceFighterPlanes_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforceCombinedArms_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforceCombinedArms_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforceCombinedArms_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_AirforceCombinedArms_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_AirforceCombinedArms_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_AirforceCombinedArms_Focus.dds"
 	}
 	###################################
 	# NAVY-ORIENTED FOCUSES           #
 	###################################
 	spriteType = {
 		name = "GFX_LUC_NavyDockyards_Focus"
-		textureFile = "gfx/interface/goals/SUS/GFX_LUC_NavyDockyards_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/GFX_LUC_NavyDockyards_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyDockyards_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/GFX_LUC_NavyDockyards_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/GFX_LUC_NavyDockyards_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavyModernisedNavalProduction_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyModernisedNavalProduction_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyModernisedNavalProduction_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyModernisedNavalProduction_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyModernisedNavalProduction_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyModernisedNavalProduction_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavyAdvancedNavalProduction_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAdvancedNavalProduction_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAdvancedNavalProduction_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyAdvancedNavalProduction_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAdvancedNavalProduction_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAdvancedNavalProduction_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavyForeignTrade_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyForeignTrade_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyForeignTrade_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyForeignTrade_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyForeignTrade_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyForeignTrade_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavyAcquireAlaska_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAcquireAlaska_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAcquireAlaska_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyAcquireAlaska_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAcquireAlaska_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAcquireAlaska_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavyAlaskaLiechtenstein_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaLiechtenstein_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAlaskaLiechtenstein_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyAlaskaLiechtenstein_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaLiechtenstein_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAlaskaLiechtenstein_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavyAdmiralty_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAdmiralty_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAdmiralty_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyAdmiralty_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAdmiralty_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAdmiralty_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavySubmarines_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavySubmarines_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavySubmarines_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavySubmarines_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavySubmarines_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavySubmarines_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavyLightShips_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyLightShips_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyLightShips_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyLightShips_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyLightShips_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyLightShips_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavyHeavyShips_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyHeavyShips_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyHeavyShips_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyHeavyShips_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyHeavyShips_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyHeavyShips_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavyAlaskaResources_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaResources_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAlaskaResources_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyAlaskaResources_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaResources_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAlaskaResources_Focus.dds"
 	}
 
 	spriteType = {
 		name = "GFX_LUC_NavyAlaskaNukes_Focus"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaNukes_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAlaskaNukes_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_NavyAlaskaNukes_Focus_shine"
-		textureFile = "gfx/interface/goals/SUS/LUC_NavyAlaskaNukes_Focus.dds"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAlaskaNukes_Focus.dds"
 	}
 }

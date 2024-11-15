@@ -51,7 +51,7 @@ country_event = {
 		has_idea = partial_economic_mobilisation
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 
@@ -116,7 +116,7 @@ country_event = {
 		}
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 
@@ -190,7 +190,7 @@ country_event = {
 		fascism > 0.15
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -262,7 +262,7 @@ country_event = {
 		}
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 		DEN_aat = no #Denmark has custom election events
 		NOR_AAT = no
@@ -369,7 +369,7 @@ country_event = {
 		communism < 0.5
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -479,7 +479,7 @@ country_event = {
 		}
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -566,7 +566,7 @@ country_event = {
 		}
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -656,7 +656,7 @@ country_event = {
 		}
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -715,7 +715,7 @@ country_event = {
 		}
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -762,7 +762,7 @@ country_event = {
 		has_idea_with_trait = motorized_equipment_manufacturer
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -819,7 +819,7 @@ country_event = {
 		has_war = yes
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -883,7 +883,7 @@ country_event = {
 		any_war_score < 20
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -947,7 +947,7 @@ country_event = {
 		fascism > 0.5
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -978,7 +978,7 @@ country_event = {
 		NOT = { fascism > 0.5 }
 		# Liechtenstein Unleashed
 		NOT = {
-			tag = SUS
+			tag = LIC
 		}
 	}
 	
@@ -1003,7 +1003,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = SUS
+		tag = LIC
 		NOT = {
 			has_country_flag = LUC_landtagHeld_flag
 		}

@@ -3,12 +3,9 @@ leader_traits = {
 	# PRINCE TRAITS #
 	#################
 	LUC_LeaderTrait_PrinceOfLiechtenstein = {
-		consumer_goods_factor = 0.1
-		political_power_factor = -0.1
+		political_power_gain = -0.1
 		stability_factor = 0.1
-		recruitable_population_factor = 0.1
-		army_core_attack_factor = 0.1
-		army_core_defence_factor = 0.1
+		consumer_goods_factor = 0.1
 	}
 
 	#################
@@ -251,13 +248,13 @@ leader_traits = {
 	}
 
 	LUC_OfficerTrait_Veteran = {
-		experience_gain_air = 0.4
+		experience_gain_army = 0.3
 		max_planning_factor = 0.1
 		planning_speed = -0.1
 	}
 
 	LUC_OfficerTrait_NewGuard = {
-		experience_gain_air = 0.2
+		experience_gain_army = 0.3
 		special_forces_attack_factor = 0.05
 		special_forces_training_time_factor = -0.05
 	}

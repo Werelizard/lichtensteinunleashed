@@ -4,7 +4,7 @@ defined_text = { # Radicalisation mechanic - fascist 1
 	name = LUC_GetRadicalisationFascist1
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0
 			}
 		}
@@ -19,7 +19,7 @@ defined_text = { # Radicalisation mechanic - fascist 2
 	name = LUC_GetRadicalisationFascist2
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.2
 			}
 		}
@@ -34,7 +34,7 @@ defined_text = { # Radicalisation mechanic - fascist 3
 	name = LUC_GetRadicalisationFascist3
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.4
 			}
 		}
@@ -49,7 +49,7 @@ defined_text = { # Radicalisation mechanic - fascist 4
 	name = LUC_GetRadicalisationFascist4
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.6
 			}
 		}
@@ -64,7 +64,7 @@ defined_text = { # Radicalisation mechanic - fascist 5
 	name = LUC_GetRadicalisationFascist5
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.8
 			}
 		}
@@ -79,7 +79,7 @@ defined_text = { # Radicalisation mechanic checkmark - fascist 1
 	name = LUC_GetRadicalisationFascistcheckmark1
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0
 			}
 			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
@@ -94,7 +94,7 @@ defined_text = { # Radicalisation mechanic checkmark - fascist 1
 	}
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0
 			}
 		}
@@ -109,7 +109,7 @@ defined_text = { # Radicalisation mechanic checkmark - fascist 2
 	name = LUC_GetRadicalisationFascistcheckmark2
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.2
 			}
 			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
@@ -124,7 +124,7 @@ defined_text = { # Radicalisation mechanic checkmark - fascist 2
 	}
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.2
 			}
 		}
@@ -139,7 +139,7 @@ defined_text = { # Radicalisation mechanic checkmark - fascist 3
 	name = LUC_GetRadicalisationFascistcheckmark3
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.4
 			}
 			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
@@ -154,7 +154,7 @@ defined_text = { # Radicalisation mechanic checkmark - fascist 3
 	}
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.4
 			}
 		}
@@ -169,7 +169,7 @@ defined_text = { # Radicalisation mechanic checkmark - fascist 4
 	name = LUC_GetRadicalisationFascistcheckmark4
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.6
 			}
 			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
@@ -184,7 +184,7 @@ defined_text = { # Radicalisation mechanic checkmark - fascist 4
 	}
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.6
 			}
 		}
@@ -199,7 +199,7 @@ defined_text = { # Radicalisation mechanic checkmark - fascist 5
 	name = LUC_GetRadicalisationFascistcheckmark5
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.8
 			}
 			has_country_flag = LUC_collaboratedWithMilitaryMovement_flag
@@ -214,7 +214,7 @@ defined_text = { # Radicalisation mechanic checkmark - fascist 5
 	}
 	text = {
 		trigger = {
-			SUS = {
+			LIC = {
 				fascism > 0.8
 			}
 		}

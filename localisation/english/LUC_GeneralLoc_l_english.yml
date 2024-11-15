@@ -4,28 +4,28 @@
 
  #Splash / Load
  LUC_FE_SELECT:0 "§YLiechtenstein Unleashed§!"
- SUS_GATHERING_STORM_DESC:0 "Nestled betwixt the Austro-Fascist state of Kurt Schuschnigg and the peaceful, increasingly withdrawn Switzerland, Liechtenstein stands alone: it is an Alpine bastion of neutrality, stability and tradition. Yet, amidst the rapidly deteriorating political climate in Europe, choices will have to be made, and the peaceful principality may all too well find itself cast as an unwilling particpant in a new world war. Though perhaps - that is the sort of challenge which you seek?"
+ LIC_GATHERING_STORM_DESC:0 "Nestled betwixt the Austro-Fascist state of Kurt Schuschnigg and the peaceful, increasingly withdrawn Switzerland, Liechtenstein stands alone: it is an Alpine bastion of neutrality, stability and tradition. Yet, amidst the rapidly deteriorating political climate in Europe, choices will have to be made, and the peaceful principality may all too well find itself cast as an unwilling particpant in a new world war. Though perhaps - that is the sort of challenge which you seek?"
 
  # New state
- STATE_970:0 "Vaduz"
+ STATE_982:0 "Vaduz"
 
  #History
- SUS_BLITZKRIEG_DESC:0 ""
+ LIC_BLITZKRIEG_DESC:0 ""
 
  #Country names - without comsetics
- SUS:0 "Liechtenstein"
- SUS_DEF:0 "the Principality of Liechtenstein"
- SUS_ADJ:0 "Liechtensteiner"
- SUS_neutrality:0 "Liechtenstein"
- SUS_neutrality_DEF:0 "the Principality of Liechtenstein"
- SUS_democratic:0 "Liechtenstein"
- SUS_democratic_DEF:0 "the Principality of Liechtenstein"
- SUS_fascism:0 "National State of Liechtenstein"
- SUS_fascism_DEF:0 "The National State of Liechtenstein"
- SUS_gen_nazism:0 "German State of Liechtenstein"
- SUS_gen_nazism_DEF:0 "the German State of Liechtenstein"
- SUS_communism:0 "Worker's Republic of Liechtenstein"
- SUS_communism_DEF:0 "the Workers' Republic of Liechtenstein"
+ LIC:0 "Liechtenstein"
+ LIC_DEF:0 "the Principality of Liechtenstein"
+ LIC_ADJ:0 "Liechtensteiner"
+ LIC_neutrality:0 "Liechtenstein"
+ LIC_neutrality_DEF:0 "the Principality of Liechtenstein"
+ LIC_democratic:0 "Liechtenstein"
+ LIC_democratic_DEF:0 "the Principality of Liechtenstein"
+ LIC_fascism:0 "National State of Liechtenstein"
+ LIC_fascism_DEF:0 "The National State of Liechtenstein"
+ LIC_gen_nazism:0 "German State of Liechtenstein"
+ LIC_gen_nazism_DEF:0 "the German State of Liechtenstein"
+ LIC_communism:0 "Worker's Republic of Liechtenstein"
+ LIC_communism_DEF:0 "the Workers' Republic of Liechtenstein"
 
  #Cosmetic Tags
  LUC_ALPINEFEDERATION:0 "the Alpine State"
@@ -49,18 +49,16 @@
  LUC_ALASKALIECHTENSTEIN_communism_DEF:0 "the German People's Republic of Alaska"
  
  # Political Parties - Start
- SUS_FBP_LONG:0 "Fortschrittliche Bürgerpartei"
- SUS_FBP:0 "FBP"
- SUS_VPU_LONG:0 "Vaterländische Union"
- SUS_VPU:0 "VU"
- SUS_NAT_LONG:0 "Liechtensteiner Heimatdienst"
- SUS_NAT:0 "LHD"
- SUS_tradeunions_Long:0 "Trade Unions"
- SUS_tradeunions:0 "Trade Unions"
- SUS_FBP_LONG_Coalition:0 "Fortschrittliche Bürgerpartei / Vaterländische Union"
- SUS_FBP_Coalition:0 "FBP-VU"
- SUS_VPU_LONG_Coalition:0 "Independents"
- SUS_VPU_Coalition:0 "Independents"
+ LIC_FBP_LONG:0 "Fortschrittliche Bürgerpartei"
+ LIC_FBP:0 "FBP"
+ LIC_VPU_LONG:0 "Vaterländische Union"
+ LIC_VPU:0 "VU"
+ LIC_NAT_LONG:0 "Liechtensteiner Heimatdienst"
+ LIC_NAT:0 "LHD"
+ LIC_tradeunions_Long:0 "Liechtensteinischer Arbeiterverband Partei"
+ LIC_tradeunions:0 "LAP"
+ LIC_Neutral_LONG:0 "His Majesty's Government"
+ LIC_Neutral:0 "His Majesty's Government"
 
  # Characters - Leaders
  LUC_JosefHoop:0 "Josef Hoop"
@@ -121,7 +119,7 @@
  LUC_Andreas_Goos:0 "Andreas Goos"
 
  # Advisor Trait
- LUC_LeaderTrait_PrinceOfLiechtenstein:0 "The Mountain Prince"
+ LUC_LeaderTrait_PrinceOfLiechtenstein:0 "Prince of Liechtenstein, Duke of Troppau and Jägerndorf, Count of Rietberg, Sovereign of the House of Liechtenstein"
  LUC_LeaderTrait_StalwartPacifist:0 "Stalwart Pacifist"
  LUC_LeaderTrait_Germanophile:0 "Germanophile"
  LUC_LeaderTrait_NationalistHawk:0 "Nationalist Hawk"
@@ -191,7 +189,7 @@
  LUC_CustomsUnion_idea_tt:0 "Off-Map Civilian Factories: §Y[?ROOT.luc_customsUnionFactories_var]§!"
  LUC_Liechtensteiner_No_Army_idea:0 "A Principality Without an Army"
  LUC_Liechtensteiner_No_Army_idea_desc:0 "Having disbanded its army in 1868, and with its last military engagements relegated to nearly a century ago, Liechtenstein is utterly defenceless in the face of an invasion - having to rely on a civilian police force, Swiss guarantees and a militia to ensure its internal security. Whilst the army can be reformed, doing so would prove to be a tedious endeavour indeed."
- LUC_Liechtensteiner_No_Army_idea_tt:0 "§RCannot train units, disband units, or edit unit templates§!"
+ LUC_Liechtensteiner_No_Army_idea_tt:0 "§RCannot recruit new generals or field marshalls§!"
 
  # Hidden ideas
  LUC_LandtagVeto:0 "Landtag Veto"
@@ -284,3 +282,7 @@
 
  # Various
  LUC_FormedAlpineFederation_tt:0 "Formed the §YAlpine Confederation§!"
+ LUC_grenadiers:0 "Mountain Patrols"
+ LUC_MountainEngineers:0 "Mountain Engineers"
+ VICTORY_POINTS_13366: "Vaduz"
+ STATE_983:0 "Alpes Maritimes"

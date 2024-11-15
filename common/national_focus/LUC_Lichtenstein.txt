@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 100
-			tag = SUS
+			tag = LIC
 		}
 	}
 	default = no
@@ -69,14 +69,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = LUC_EconomyStateOfEconomy_Focus
 		available = {
-			controls_state = 970
-			owns_state = 970
+			controls_state = 982
+			owns_state = 982
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		completion_reward = { 
-			970 = {
+			982 = {
 				increase_state_category = yes
 				add_building_construction = {
 					type = infrastructure
@@ -317,7 +317,7 @@ focus_tree = {
 		}
 		available = {
 			has_tech = basic_machine_tools
-			controls_state = 970
+			controls_state = 982
 		}
 		completion_reward = { 
 			add_offsite_building = {
@@ -495,13 +495,13 @@ focus_tree = {
 			focus = LUC_EconomyDevelopVaduz_Focus
 		}
 		available = {
-			controls_state = 970
-			owns_state = 970
+			controls_state = 982
+			owns_state = 982
 			has_tech = construction1
 		}
 		completion_reward = { 
 			custom_effect_tooltip = LUC_newline_tt
-			970 = {
+			982 = {
 				add_extra_state_shared_building_slots = 2
 				add_resource = {
 					type = steel
@@ -1098,14 +1098,17 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				LUC_isLandtagSupportive_trigger = yes
-				has_government = fascism
-				threat > 0.1
+				NOT = {
+					has_idea = LUC_Liechtenstein_Neutrality_idea
+				}
+				NOT = {
+					has_government = democratic
+				}	
+				threat > 0.05
 			}
 		}
 		completion_reward = { 
 			add_war_support = 0.05
-			remove_ideas = LUC_Liechtensteiner_No_Army_idea
 			custom_effect_tooltip = LUC_newline_tt
 			unlock_decision_tooltip = LUC_Landtag_Armement
 		}
@@ -1382,7 +1385,7 @@ focus_tree = {
 			focus = LUC_ArmyStudySwissDesigns_Focus
 		}
 		available = {
-			970 = {
+			982 = {
 				is_owned_and_controlled_by = ROOT
 			}
 			OR = {
@@ -1394,7 +1397,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {  
-			970 = {
+			982 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1445,14 +1448,14 @@ focus_tree = {
 		}
 		completion_reward = {  
 			custom_effect_tooltip = LUC_ModifyEconomy_tt
-			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_pos5_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_pos10_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_MilSpeed_pos10_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_WarSupport_pos10_tt
 			custom_effect_tooltip = LUC_newline_tt
 			upgrade_economy_law = yes
 			hidden_effect = {
 				add_to_variable = {
-					LUC_ConGoodsFac_Var = 0.05
+					LUC_ConGoodsFac_Var = 0.1
 				}
 				add_to_variable = {
 					LUC_BuildArmFac_Var = 0.1
@@ -1608,8 +1611,14 @@ focus_tree = {
 			add_tech_bonus = {
 				name = LUC_ArmyModernRifles_Focus_tech_bonus
 				category = infantry_weapons
-				bonus = 1
-				uses = 1
+				bonus = 0.5
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = LUC_ArmyModernRifles_Focus_tech_bonus
+				category = support_tech
+				bonus = 0.5
+				uses = 2
 			}
 		}
 		mutually_exclusive = {
@@ -1675,11 +1684,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {  
-			add_tech_bonus = {
-				name = LUC_ArmyEngineerDivisions_Focus_engineer
-				category = engineers_tech
-				bonus = 0.5
-				uses = 1
+			set_technology = {
+				LUC_MountainEngineers = 1
 			}
 			custom_effect_tooltip = LUC_newline_tt
 			add_ideas = LUC_EngineerCorps_idea
@@ -1825,7 +1831,7 @@ focus_tree = {
 					tooltip = LUC_ExpandConscription_Focus_tt
 					any_enemy_country = {
 						strength_ratio = {
-							tag = SUS
+							tag = LIC
 							ratio > 1
 						}
 					}
@@ -1834,7 +1840,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = {  
-			add_ideas = LUC_Army_Conscription_idea
+			add_timed_idea = {
+				idea = LUC_Army_Conscription_idea
+				days = 730
+			}
 			custom_effect_tooltip = LUC_newline_tt
 			if = {
 				limit = {
@@ -1877,7 +1886,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmyNewManuals_Focus
 		icon = GFX_LUC_ArmyNewManuals_Focus
-		cost = 5
+		cost = 10
 		x = -1
 		y = 4
 		search_filters = {
@@ -1909,7 +1918,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmySwissExercises_Focus
 		icon = GFX_LUC_ArmySwissExercises_Focus
-		cost = 5
+		cost = 10
 		x = -1
 		y = 5
 		search_filters = {
@@ -2005,7 +2014,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmySpecialMountaineerForces_Focus
 		icon = GFX_LUC_ArmySpecialMountaineerForces_Focus
-		cost = 5
+		cost = 8
 		x = 2
 		y = 4
 		search_filters = {
@@ -2025,7 +2034,7 @@ focus_tree = {
 				add_idea = LUC_Army_Offence2_idea
 			}
 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				category = cat_mountaineers_doctrine
 				name = LUC_MountaineerBonus
 			}
@@ -2033,7 +2042,7 @@ focus_tree = {
 				name = LUC_MountaineerBonus
 				category = mountaineers_tech
 				bonus = 0.5
-				uses = 2
+				uses = 1
 			}
 		}
 		mutually_exclusive = {
@@ -2042,7 +2051,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmyMountainEngineering_Focus
 		icon = GFX_LUC_ArmyMountainEngineering_Focus
-		cost = 5
+		cost = 8
 		x = 3
 		y = 5
 		search_filters = {
@@ -2065,9 +2074,15 @@ focus_tree = {
 				add_idea = LUC_Army_Offence3_idea
 			}
 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.8
+				cost_reduction = 0.5
 				category = cat_mountaineers_doctrine
 				name = LUC_MountaineerBonus
+			}
+			add_tech_bonus = {
+				name = LUC_MountaineerBonus
+				category = mountaineers_tech
+				bonus = 0.5
+				uses = 1
 			}
 			custom_effect_tooltip = LUC_newline_tt
 			every_army_leader = {
@@ -2101,7 +2116,7 @@ focus_tree = {
 			focus = LUC_ArmyRaiseMilitias_Focus
 		}
 		available = {
-			owns_state = 970
+			owns_state = 982
 			OR = {
 				any_neighbor_country = {
 					has_war = yes
@@ -2117,7 +2132,7 @@ focus_tree = {
 				type = arms_factory
 				level = 2
 			}
-			970 = {
+			982 = {
 				add_building_construction = {
 					type = anti_air_building
 					level = 2
@@ -2281,6 +2296,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 			LUC_FOCUS_INTELLIGENCE
+			FOCUS_FILTER_MANPOWER
 		}
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		prerequisite = {
@@ -2292,6 +2308,7 @@ focus_tree = {
 		completion_reward = {  
 			add_political_power = 50
 			add_stability = 0.05
+			add_manpower = 3000
 			custom_effect_tooltip = LUC_newline_tt
 			if = {
 				limit = {
@@ -2382,32 +2399,20 @@ focus_tree = {
 			focus = LUC_AirforceMountainFlights_Focus
 		}
 		available = {
-			any_country = {
-				is_major = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-				has_opinion = {
-					target = ROOT
-					value > 49
-				}
-			}
-			OR = {
-				has_completed_focus = LUC_EconomyFinal_Focus
-				num_of_factories > 6
-			}
+			
 		}
 		completion_reward = {  
-			add_timed_idea = {
-				idea = LUC_AirPurchases_idea
-				days = 720
-			}
-			custom_effect_tooltip = LUC_newline_tt
 			add_tech_bonus = {
 				name = LUC_AirforcePurchaseForeignDesigns_Focus
 				uses = 2
 				bonus = 0.5
-				category = air_equipment
+				category = light_fighter
+			}
+			add_tech_bonus = {
+				name = LUC_AirforcePurchaseForeignDesigns_Focus
+				uses = 2
+				bonus = 0.5
+				category = medium_air
 			}
 			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = available_industrial_concern
@@ -3098,6 +3103,32 @@ focus_tree = {
 				uses = 1
 				bonus = 0.5
 			}
+		}
+		mutually_exclusive = {
+		}
+	}
+
+	###################################
+	# ALPINE CONFEDERACY     #
+	###################################
+	focus = {
+		id = LUC_AlpineConfederacyMoneratyUnion_Focus
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 2
+		search_filters = {
+			
+		}
+		relative_position_id = LUC_EconomyFinal_Focus
+		prerequisite = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {  
+			
 		}
 		mutually_exclusive = {
 		}
