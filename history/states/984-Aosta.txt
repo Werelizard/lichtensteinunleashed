@@ -1,0 +1,29 @@
+state = {
+	id = 984
+	name = "STATE_984"
+	manpower = 52300
+
+	state_category = pastoral
+	resources = {
+		chromium = 2 # was: 4
+		tungsten = 1 # was: 2
+	}
+
+	history = {
+		owner = ITA
+		victory_points = {
+			611 1
+		}
+		buildings = {
+			industrial_complex = 1
+		}
+		add_core_of = ITA
+		add_core_of = SPM
+	}
+
+	provinces = {
+		611 3782 11570
+	}
+
+	local_supplies = 0.0 
+}
