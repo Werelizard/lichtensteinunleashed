@@ -59,3 +59,46 @@ luc_customs_union_update_factory = {
 		level = luc_customsUnionFactories_var
 	}
 }
+
+luc_removeStabilityIfMilitaryWhileNeutral = {
+	if = {
+		limit = {
+			has_idea = LUC_Liechtenstein_Neutrality_idea
+			NOT = {
+				has_war = yes
+			}
+		}
+		custom_effect_tooltip = luc_removeStabilityIfMilitaryWhileNeutral_tt
+		add_popularity = {
+			ideology = ROOT
+			popularity = -0.05
+		}
+		if = {
+			limit = {
+				check_variable = {
+					party_popularity@ruling_party > 0.75
+				}
+			}
+			add_stability = -0.02
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					party_popularity@ruling_party > 0.5
+				}
+			}
+			add_stability = -0.04
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					party_popularity@ruling_party > 0.25
+				}
+			}
+			add_stability = -0.05
+		}
+		else = {
+			add_stability = -0.15
+		}
+	}
+}

@@ -116,7 +116,7 @@ add_ideas = {
 	LUC_Liechtenstein_Neutrality_idea
 	LUC_Liechtensteiner_No_Army_idea
 	LUC_Liechtensteiner_Economy_idea
-	LUC_CustomsUnion_idea
+	# LUC_CustomsUnion_idea
 }
 
 # Special effects
@@ -126,7 +126,7 @@ add_manpower = 1000
 # Variables for the initial economy
 
 set_variable = {
-	LUC_ConGoodsFac_Var = 0.15
+	LUC_ConGoodsFac_Var = 0.25
 }
 set_variable = {
 	LUC_UnionPolPower_Var = -0.1

@@ -27,4 +27,8 @@ opinion_modifiers = {
 		value = 10
 		decay = 1
 	}
+	LUC_JOINTINVESTMENTS = {
+		value = 15
+		decay = 1
+	}
 }

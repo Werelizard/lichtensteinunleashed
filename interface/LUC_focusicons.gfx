@@ -22,6 +22,22 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/LIC/LUC_EconomyStateOfEconomy_Focus.dds"
 	}
 	spriteType = {
+		name = "GFX_LUC_EconomyZurichRailway_Focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyZurichRailway_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyZurichRailway_Focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyZurichRailway_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyBregenzRailway_Focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyBregenzRailway_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_EconomyBregenzRailway_Focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_EconomyBregenzRailway_Focus.dds"
+	}
+	spriteType = {
 		name = "GFX_LUC_EconomyDevelopVaduz_Focus"
 		textureFile = "gfx/interface/goals/LIC/LUC_EconomyDevelopVaduz_Focus.dds"
 	}

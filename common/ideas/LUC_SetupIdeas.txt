@@ -17,7 +17,6 @@ ideas = {
 		LUC_Liechtenstein_Neutrality_idea = {
 			modifier = {
 				enemy_justify_war_goal_time = 2.5
-				stability_weekly_factor = 0.005
 				ai_get_ally_desire_factor = -200
 				embargo_threshold_factor = 1
 				send_volunteers_tension = 2
@@ -26,6 +25,7 @@ ideas = {
 				justify_war_goal_time = 2.5
 				enemy_declare_war_tension = 1
 				generate_wargoal_tension = 1
+				trade_opinion_factor = -0.5
 			}
 			rule = {
 				can_create_factions = no
@@ -50,7 +50,7 @@ ideas = {
 		}
 		LUC_Liechtensteiner_Economy_idea = {
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.25
 			}
 		}
 	}

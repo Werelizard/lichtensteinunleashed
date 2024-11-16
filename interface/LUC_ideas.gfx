@@ -16,6 +16,18 @@ spriteTypes = {
 		name = "GFX_idea_LUC_Liechtensteiner_No_Army_idea"
 		textureFile = "gfx/interface/ideas/LIC/LUC_LichtensteinerMilitary.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_LUC_Liechtensteiner_No_Army_reformedcommand_idea"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LichtensteinerMilitary.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Liechtensteiner_No_Army_manpower_idea"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LichtensteinerMilitary.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUC_Liechtensteiner_No_Army_fieldcommand_idea"
+		textureFile = "gfx/interface/ideas/LIC/LUC_LichtensteinerMilitary.dds"
+	}
 	# Industrial Concerns
 	spriteType = {
 		name = "GFX_idea_LUC_LawenaPower_concern"

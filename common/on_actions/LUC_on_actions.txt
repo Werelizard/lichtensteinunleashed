@@ -22,10 +22,10 @@ on_actions = {
 				add_dynamic_modifier = {
 					modifier = LUC_Liechtensteiner_Economy_idea
 				}
-				remove_ideas = LUC_CustomsUnion_idea
-				add_dynamic_modifier = {
-					modifier = LUC_CustomsUnion_idea
-				}
+				# remove_ideas = LUC_CustomsUnion_idea
+				# add_dynamic_modifier = {
+				# 	modifier = LUC_CustomsUnion_idea
+				# }
 			}
 		}
 	}

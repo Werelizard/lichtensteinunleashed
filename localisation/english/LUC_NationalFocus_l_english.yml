@@ -10,6 +10,14 @@
  LUC_EconomyStateOfEconomy_Focus:0 "Budgetary Adjustments"
  LUC_EconomyStateOfEconomy_Focus_desc:0 "The Liechtensteiner Economy, has hardly evolved past artisans and farmers - with the overwhelming majority of its exports being agricultural in nature. The industrial capability of the country is near to non-existant and will need a near to complete overhaul if our country is to succesfully transition into the twentieth century."
 
+ LUC_EconomyZurichRailway_Focus:0 "Gemeinsam Respektvoll Unterwegs"
+ LUC_EconomyZurichRailway_Focus_desc:0 ""
+ LUC_EconomyZurichRailway_Focus_tt:0 "§Y[3.Owner.GetName]§!: at peace with §Y[ROOT.Getname]§!"
+
+ LUC_EconomyBregenzRailway_Focus:0 "From Vaduz to Vienna"
+ LUC_EconomyBregenzRailway_Focus_desc:0 ""	
+ LUC_EconomyBregenzRailway_Focus_tt:0 "§Y[848.Owner.GetName]§!: at peace with §Y[ROOT.Getname]§!"
+
  LUC_EconomyDevelopVaduz_Focus:0 "Develop Vaduz"
  LUC_EconomyDevelopVaduz_Focus_desc:0 "The city of Vaduz is barely industrialised as is. We should endeavour to continue developing it, so that it may be a worthy rival to other Alpine and Southern German cities - if not in terms of size then in terms of infrastructure and inudstrial scale."
 
@@ -169,6 +177,8 @@
  LUC_ArmyRaiseMilitias_Focus:0 "An Army of Volunteers"
  LUC_ArmyRaiseMilitias_Focus_desc:0 ""
  LUC_ArmyRaiseMilitias_Focus_tt:0 "Expands the §YCivilian Militia§! template with §Y4§! Militia Brigades and unlocks it."
+ LUC_ArmyRaiseMilitias_inEveryState_tt:0 "Spawns §Y1§! militia divisions in every one of our §Ycore§! states, and §Y2§! militia divisions in our §Ycapital§!."
+ LUC_CreateMilitiaUnit_tt:0 "Create §Y1 militia§! unit"
 
  LUC_IntelligenceService_Focus:0 "Landespolizei des Fürstentums"
  LUC_IntelligenceService_Focus_desc:0 ""
@@ -259,7 +269,7 @@
 	###################################
  
  # TOOLTIPS FOR THE DYNAMIC MODIFIERS
- LUC_ModifyEconomy_tt:0 "Modifiy §Y$LUC_Liechtensteiner_Economy_idea$§! by"
+ LUC_ModifyEconomy_tt:0 "Modifiy §Y$LUC_Liechtensteiner_Economy_idea$§! by:"
  LUC_ModifyEconomy_ConsumerGoods_neg5_tt:0 "Consumer Goods Factories factor: §Y-5.0%§!"
  LUC_ModifyEconomy_ConsumerGoods_neg15_tt:0 "Consumer Goods Factories factor: §Y-15.0%§!"
  LUC_ModifyEconomy_ConsumerGoods_neg10_tt:0 "Consumer Goods Factories factor: §Y-10.0%§!"
@@ -302,3 +312,6 @@
  LUC_ModifyEconomy_LicenseCost_neg25_tt:0 "License Purchase Cost: §G-25.0%§!"
  LUC_ModifyEconomy_PolPower_pos15_tt:0 "Political Power Gain: §G+15.0%§!"
  LUC_ModifyEconomy_WarSupport_pos10_tt:0 "War Support: §G+10.0%§!"
+
+ #Tooltips, other
+ luc_removeStabilityIfMilitaryWhileNeutral_tt:0 "\n§RAs we have yet to publically denounce our neutrality, any further attempts to rearm will impact our stability, though said impact can be mitigated by having high enough public support for the current ruling party (§!§Y[ROOT.GetRulingIdeology]§!§R)§!\n\n"

@@ -190,7 +190,12 @@
  LUC_Liechtensteiner_No_Army_idea:0 "A Principality Without an Army"
  LUC_Liechtensteiner_No_Army_idea_desc:0 "Having disbanded its army in 1868, and with its last military engagements relegated to nearly a century ago, Liechtenstein is utterly defenceless in the face of an invasion - having to rely on a civilian police force, Swiss guarantees and a militia to ensure its internal security. Whilst the army can be reformed, doing so would prove to be a tedious endeavour indeed."
  LUC_Liechtensteiner_No_Army_idea_tt:0 "§RCannot recruit new generals or field marshalls§!"
-
+ LUC_Liechtensteiner_No_Army_reformedcommand_idea:0 "$LUC_Liechtensteiner_No_Army_idea$"
+ LUC_Liechtensteiner_No_Army_reformedcommand_idea_desc:0 "$LUC_Liechtensteiner_No_Army_idea_desc$"
+ LUC_Liechtensteiner_No_Army_fieldcommand_idea:0 "$LUC_Liechtensteiner_No_Army_idea$"
+ LUC_Liechtensteiner_No_Army_fieldcommand_idea:0 "$LUC_Liechtensteiner_No_Army_idea_desc$"
+ LUC_Liechtensteiner_No_Army_manpower_idea:0 "$LUC_Liechtensteiner_No_Army_idea$"
+ LUC_Liechtensteiner_No_Army_manpower_idea_desc:0 "$LUC_Liechtensteiner_No_Army_idea_desc$"
  # Hidden ideas
  LUC_LandtagVeto:0 "Landtag Veto"
  LUC_LandtagOpposition:0 "Landtag Opposition"
