@@ -202,7 +202,7 @@
  LUC_ArmyExperimentalResarch_Focus:0 "Experimental Research"
  LUC_ArmyExperimentalResarch_Focus_desc:0 ""
  LUC_ArmyExperimentalResarch_Focus_tt:0 "Has at least §Y1§! experimental facility"
- LUC_ArmyExperimentalResarch_Focus_bonus_tt:0 "Gain a random §G5.0%§! breakthrough progress in one of the following: §YNuclear§!, §YLand§!, §YNaval§! or §YAvionics§!."
+ LUC_ArmyExperimentalResarch_Focus_bonus_tt:0 "Gain a random §G25.0%§! breakthrough progress in one of the following: §YNuclear§!, §YLand§!, §YNaval§! or §YAvionics§!."
 
   ###################################
 	# AIRFORCE-ORIENTED FOCUSES       #

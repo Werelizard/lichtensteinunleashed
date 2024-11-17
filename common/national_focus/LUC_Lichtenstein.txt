@@ -1312,6 +1312,10 @@ focus_tree = {
 		}
 		available = {
 			OR = {
+				has_completed_focus = LUC_EconomyUniversity_Focus
+				num_of_factories > 35
+			}
+			OR = {
 				any_country = {
 					is_in_faction_with = ROOT
 					has_opinion = {
@@ -1342,30 +1346,11 @@ focus_tree = {
 						}
 					}
 				}
-				any_owned_state = {
-					custom_trigger_tooltip = {
-						tooltip = LUC_ArmyExperimentalResarch_Focus_tt
-						OR = {
-							has_built = {
-								type = naval_facility
-								value = 1
-							}
-							has_built = {
-								type = nuclear_facility
-								value = 1
-							}
-							has_built = {
-								type = air_facility
-								value = 1
-							}
-							has_built = {
-								type = land_facility
-								value = 1
-							}
-						}
+				any_state = {
+					OR = {
+						is_fully_controlled_by = ROOT
+						is_owned_by = ROOT
 					}
-				}
-				any_controlled_state = {
 					custom_trigger_tooltip = {
 						tooltip = LUC_ArmyExperimentalResarch_Focus_tt
 						OR = {
@@ -1396,25 +1381,25 @@ focus_tree = {
 				random_list = {
 					25 = {
 						add_breakthrough_progress = {
-							value = 0.05
+							value = 0.25
 							specialization = specialization_nuclear
 						}
 					}
 					25 = {
 						add_breakthrough_progress = {
-							value = 0.05
+							value = 0.25
 							specialization = specialization_air
 						}
 					}
 					25 = {
 						add_breakthrough_progress = {
-							value = 0.05
+							value = 0.25
 							specialization = specialization_naval
 						}
 					}
 					25 = {
 						add_breakthrough_progress = {
-							value = 0.05
+							value = 0.25
 							specialization = specialization_land
 						}
 					}
@@ -1724,6 +1709,9 @@ focus_tree = {
 		available = {
 			OR = {
 				AND = {
+					NOT = {
+						has_government = democratic
+					}
 					NOT = {
 						has_idea = LUC_Liechtenstein_Neutrality_idea
 					}
@@ -2576,6 +2564,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_war_support = 0.05
 			swap_ideas = {
 				remove_idea = LUC_Army_Defence1_idea
 				add_idea = LUC_Army_Defence2_idea
