@@ -27,13 +27,14 @@
 
  LUC_EconomyRoyalAssets_Focus:0 "Repatriate Princely Assets"
  LUC_EconomyRoyalAssets_Focus_desc:0 "The Princely family of Liechtenstein owns numerous estates, assets and properties throughout Bohemia, Germany and Austria. It is time for us to re-assert our control of what is rightfully the crown's property."
- LUC_EconomyRoyalAssets_Focus_tt:0 "§LThese decisions will allow us to negotiate for the return of princely financial assets currently located in [AUS.GetName] and [CZE.GetName]§!."
+ LUC_EconomyRoyalAssets_Focus_tt:0 "§LThese decisions will allow us to negotiate for the return of princely financial assets currently located in [AUS.GetName] and [CZE.GetName], reducing how many factories will be dedicated to the production of §!§YConsumer Goods§!§L.§!"
  LUC_EconomyRoyalAssets_Focus_Austria_tt:0 "Not at war with [152.owner.GetName]"
  LUC_EconomyRoyalAssets_Focus_Bohemia_tt:0 "Not at war with [9.owner.GetName]"
 
  LUC_EconomySecureForeignInvestments_Focus:0 "Attract Foreign Investments"
  LUC_EconomySecureForeignInvestments_Focus_desc:0 "Liechtenstein is a neutral nation, like its neighbour Switzerland. By following its example, our government would strive to secure economical investments and ties with major European banks - irrespectively of their political dispositions."
  LUC_LiechtensteinBankIntegrated_idea_warning_tt:0 "§RThis focus will be automatically bypassed without any rewards if we no longer benefits from the effects of the §!§Y$LUC_LiechtensteinBankIntegrated_idea$§!§R national spirit!§!"
+ LUC_EconomySecureForeignInvestments_Focus_tt:0 "§LThese decisions will allow us to negotiate for potential investments from European nations in the form of §!§YCivilian Factories§!§L.§!"
 
  LUC_EconomyContinueIndustrialisation_Focus:0 "Industrial Expansion"
  LUC_EconomyContinueIndustrialisation_Focus_desc:0 ""
@@ -44,7 +45,7 @@
  LUC_EconomyBroadElectrification_Focus:0 "Broaden Electrification Efforts"
  LUC_EconomyBroadElectrification_Focus_desc:0 "Our cities, villages and towns darken at night when they should be lit as the night sky above. Only through the broad electrification can this goal be achieved. Only by ensuring that every house, every factory and every government building has access to electricity can we become a modern nation."
 
- LUC_EconomyOpenTractorFactories_Focus:0 "Modernised Agriculture"
+ LUC_EconomyOpenTractorFactories_Focus:0 "Tend to the Farmers"
  LUC_EconomyOpenTractorFactories_Focus_desc:0 "Tractors are important not just to our farmers, but to our economy as a whole; a burgeoning tractor industry will open further trade avenues, as well as continue developing the mechanical, automotive and industrial sectors of our economy."
 
  LUC_EconomyUrbanisation_Focus:0 "Urbanise the Villages"
@@ -195,11 +196,13 @@
  LUC_ArmyMilitaryEconomyFocus:0 "Economic Mobilisation"
  LUC_ArmyMilitaryEconomyFocus_desc:0 ""
 
- LUC_ArmyModernWarfare_Focus:0 "Army Motorisation"
+ LUC_ArmyModernWarfare_Focus:0 "Focus on Manoeuvre Warfare"
  LUC_ArmyModernWarfare_Focus_desc:0 ""
 
  LUC_ArmyExperimentalResarch_Focus:0 "Experimental Research"
  LUC_ArmyExperimentalResarch_Focus_desc:0 ""
+ LUC_ArmyExperimentalResarch_Focus_tt:0 "Has at least §Y1§! experimental facility"
+ LUC_ArmyExperimentalResarch_Focus_bonus_tt:0 "Gain a random §G5.0%§! breakthrough progress in one of the following: §YNuclear§!, §YLand§!, §YNaval§! or §YAvionics§!."
 
   ###################################
 	# AIRFORCE-ORIENTED FOCUSES       #
@@ -208,7 +211,7 @@
  LUC_AirforceMountainFlights_Focus:0 "Transalpine Flights"
  LUC_AirforceMountainFlights_Focus_desc:0 ""
 
- LUC_AirforcePurchaseForeignDesigns_Focus:0 "Purchase Foreign Designs"
+ LUC_AirforcePurchaseForeignDesigns_Focus:0 "Purchase Swiss Plane Designs"
  LUC_AirforcePurchaseForeignDesigns_Focus_desc:0 ""
 
  LUC_AirforceAirfieldsConstruction_Focus:0 "The [ROOT.GetAdjective] Air Corps"
@@ -275,6 +278,7 @@
  LUC_ModifyEconomy_ConsumerGoods_neg10_tt:0 "Consumer Goods Factories factor: §Y-10.0%§!"
  LUC_ModifyEconomy_ConsumerGoods_pos5_tt:0 "Consumer Goods Factories factor: §Y+5.0%§!"
  LUC_ModifyEconomy_ConsumerGoods_pos10_tt:0 "Consumer Goods Factories factor: §Y+10.0%§!"
+ LUC_ModifyEconomy_ConsumerGoods_pos15_tt:0 "Consumer Goods Factories factor: §Y+15.0%§!"
  LUC_ModifyEconomy_PolPower_pos5_tt:0 "Political Power Gain: §G+5.0%§!"
  LUC_ModifyEconomy_Construction_pos5_tt:0 "Construction Speed: §G+5.0%§!"
  LUC_ModifyEconomy_ConstructionSpeed_pos10_tt:0 "Construction Speed: §G+10.0%§!"

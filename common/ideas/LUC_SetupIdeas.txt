@@ -3,15 +3,13 @@ ideas = {
 		LUC_Franz_I_idea = {
 			modifier = {
 				political_power_gain = 0.1
-				stability_factor = 0.05
-				consumer_goods_factor = 0.05
+				stability_factor = 0.02
 			}
 		}
 		LUC_Franz_II_idea = {
 			modifier = {
 				political_power_gain = 0.1
-				stability_factor = 0.05
-				consumer_goods_factor = 0.05
+				stability_factor = 0.02
 			}
 		}
 		LUC_Liechtenstein_Neutrality_idea = {

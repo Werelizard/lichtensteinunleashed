@@ -14,8 +14,8 @@ ideas = {
 		LUC_EngineerCorps_idea = { 
 			modifier = {
 				dig_in_speed_factor = 0.1
-				supply_consumption_factor = -0.1
-				terrain_penalty_reduction = 0.1
+				supply_factor = 0.1
+				experience_gain_army = 0.05
 			}
 		}
 		LUC_Army_Conscription_idea = {
@@ -44,6 +44,7 @@ ideas = {
 		}
 		LUC_Army_Offence1_idea = {
 			modifier = {
+				training_time_army_factor = 0.1
 				experience_gain_army = 0.05
 				recon_factor = 0.1
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
@@ -52,6 +53,7 @@ ideas = {
 		}
 		LUC_Army_Offence2_idea = {
 			modifier = {
+				training_time_army_factor = 0.05
 				experience_gain_army = 0.05
 				recon_factor = 0.1
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
@@ -61,6 +63,7 @@ ideas = {
 		}
 		LUC_Army_Offence3_idea = {
 			modifier = {
+				training_time_army_factor = 0.05
 				experience_gain_army = 0.1
 				recon_factor = 0.1
 				special_forces_attack_factor = 0.1

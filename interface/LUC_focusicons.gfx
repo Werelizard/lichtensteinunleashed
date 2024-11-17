@@ -436,6 +436,14 @@ spriteTypes = {
 		name = "GFX_LUC_ArmyModernWarfare_Focus_shine"
 		textureFile = "gfx/interface/goals/LIC/LUC_ArmyModernWarfare_Focus.dds"
 	}
+	spriteType = {
+		name = "GFX_LUC_ArmyExperimentalResarch_Focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyExperimentalResarch_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyExperimentalResarch_Focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyExperimentalResarch_Focus.dds"
+	}
 	###################################
 	# AIRFORCE-ORIENTED FOCUSES       #
 	###################################

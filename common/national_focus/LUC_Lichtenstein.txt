@@ -381,6 +381,8 @@ focus_tree = {
 			custom_effect_tooltip = LUC_newline_tt
 			unlock_decision_tooltip = LUC_LiechtensteinEco_austrianAssets
 			unlock_decision_tooltip = LUC_LiechtensteinEco_czechAssets
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_EconomyRoyalAssets_Focus_tt
 		}
 	}
 
@@ -418,6 +420,8 @@ focus_tree = {
 			}
 			custom_effect_tooltip = LUC_newline_tt
 			unlock_decision_category_tooltip = LUC_Bank_ForeignInvestors_cat_DUMMY
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_EconomySecureForeignInvestments_Focus_tt
 			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_LiechtensteinBankIntegrated_idea_warning_tt
 		}
@@ -653,7 +657,7 @@ focus_tree = {
 
 	focus = {
 		id = LUC_EconomyIron_Focus
-		icon = GFX_LUC_EconomyIron_Focus
+		icon = GFX_focus_generic_mining_industry
 		cost = 5
 		x = 4
 		y = 2
@@ -676,7 +680,7 @@ focus_tree = {
 		completion_reward = { 
 			custom_effect_tooltip = LUC_newline_tt
 			982 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_resource = {
 					type = steel
 					amount = 8
@@ -981,6 +985,7 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_cic = 3500
+			add_political_power = 50
 			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_neg10_tt
@@ -1017,6 +1022,7 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_cic = 3500
+			add_political_power = 50
 			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_Output_pos10_tt
@@ -1065,6 +1071,7 @@ focus_tree = {
 				custom_effect_tooltip = LUC_newline_tt
 			}
 			add_cic = 3500
+			add_political_power = 50
 			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_neg10_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_Research_pos5_tt
@@ -1291,27 +1298,128 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_ArmyExperimentalResarch_Focus
-		icon = GFX_focus_research
+		icon = GFX_LUC_ArmyExperimentalResarch_Focus
 		cost = 5
 		relative_position_id = LUC_ArmyReviewMilitary_Focus
 		x = 8
 		y = 2
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
-			FOCUS_FILTER_ARMY_XP
-			FOCUS_FILTER_AIR_XP
-			FOCUS_FILTER_NAVY_XP
+			
 		}
 		prerequisite = {
 			focus = LUC_ArmyReviewMilitary_Focus
 		}
 		available = {
-			
+			OR = {
+				any_country = {
+					is_in_faction_with = ROOT
+					has_opinion = {
+						target = ROOT
+						value > 99
+					}
+					any_owned_state = {
+						custom_trigger_tooltip = {
+							tooltip = LUC_ArmyExperimentalResarch_Focus_tt
+							OR = {
+								has_built = {
+									type = naval_facility
+									value = 1
+								}
+								has_built = {
+									type = nuclear_facility
+									value = 1
+								}
+								has_built = {
+									type = air_facility
+									value = 1
+								}
+								has_built = {
+									type = land_facility
+									value = 1
+								}
+							}
+						}
+					}
+				}
+				any_owned_state = {
+					custom_trigger_tooltip = {
+						tooltip = LUC_ArmyExperimentalResarch_Focus_tt
+						OR = {
+							has_built = {
+								type = naval_facility
+								value = 1
+							}
+							has_built = {
+								type = nuclear_facility
+								value = 1
+							}
+							has_built = {
+								type = air_facility
+								value = 1
+							}
+							has_built = {
+								type = land_facility
+								value = 1
+							}
+						}
+					}
+				}
+				any_controlled_state = {
+					custom_trigger_tooltip = {
+						tooltip = LUC_ArmyExperimentalResarch_Focus_tt
+						OR = {
+							has_built = {
+								type = naval_facility
+								value = 1
+							}
+							has_built = {
+								type = nuclear_facility
+								value = 1
+							}
+							has_built = {
+								type = air_facility
+								value = 1
+							}
+							has_built = {
+								type = land_facility
+								value = 1
+							}
+						}
+					}
+				}
+			}
 		}
 		completion_reward = {  
-			army_experience = 20
-			navy_experience = 20
-			air_experience = 20
+			custom_effect_tooltip = LUC_ArmyExperimentalResarch_Focus_bonus_tt
+			hidden_effect = {
+				random_list = {
+					25 = {
+						add_breakthrough_progress = {
+							value = 0.05
+							specialization = specialization_nuclear
+						}
+					}
+					25 = {
+						add_breakthrough_progress = {
+							value = 0.05
+							specialization = specialization_air
+						}
+					}
+					25 = {
+						add_breakthrough_progress = {
+							value = 0.05
+							specialization = specialization_naval
+						}
+					}
+					25 = {
+						add_breakthrough_progress = {
+							value = 0.05
+							specialization = specialization_land
+						}
+					}
+				}
+			}
 			custom_effect_tooltip = LUC_newline_tt
 			add_research_slot = 1
 		}
@@ -1322,7 +1430,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmyWeaponContracts_Focus
 		icon = GFX_LUC_ArmyWeaponContracts_Focus
-		cost = 5
+		cost = 3
 		x = -5
 		y = 1
 		search_filters = {
@@ -1365,7 +1473,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmyWeaponKrupp_Focus
 		icon = GFX_LUC_ArmyWeaponKrupp_Focus
-		cost = 5
+		cost = 3
 		x = -4
 		y = 2
 		search_filters = {
@@ -1439,7 +1547,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {  
-			add_political_power = 50
+			add_research_slot = 1
 			custom_effect_tooltip = LUC_newline_tt
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
@@ -1615,16 +1723,28 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				NOT = {
-					has_idea = LUC_Liechtenstein_Neutrality_idea
+				AND = {
+					NOT = {
+						has_idea = LUC_Liechtenstein_Neutrality_idea
+					}
+					threat > 0.25
 				}
-				has_war = yes
+				any_country = {
+					has_war_with = ROOT
+					strength_ratio = {
+						tag = LIC
+						ratio = 1.25
+					}
+				}
 			}
 		}
 		completion_reward = {  
 			custom_effect_tooltip = LUC_ModifyEconomy_tt
-			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_pos10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_pos15_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_MilSpeed_pos10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_CivSpeed_neg10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_EficiencyCap_pos5_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_Output_pos5_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_WarSupport_pos10_tt
 			custom_effect_tooltip = LUC_newline_tt
 			if = {
@@ -1662,13 +1782,22 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					LUC_ConGoodsFac_Var = 0.1
+					LUC_ConGoodsFac_Var = 0.15
 				}
 				add_to_variable = {
 					LUC_BuildArmFac_Var = 0.1
 				}
 				add_to_variable = {
 					LUC_WarSupportFac_Var = 0.1
+				}
+				add_to_variable = {
+					LUC_OutputFac_Var = 0.05
+				}
+				add_to_variable = {
+					LUC_ProdMaxFac_Var = 0.05
+				}
+				add_to_variable = {
+					LUC_BuildCivFac_Var = -0.1
 				}
 			}
 			luc_removeStabilityIfMilitaryWhileNeutral = yes
@@ -1691,12 +1820,34 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = LUC_ArmyStudyGermanDesigns_Focus
+			focus = LUC_ArmyStudySwissDesigns_Focus
 		}
 		available = {
-			
+			OR = {
+				has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
+				has_tech = advanced_light_tank_chassis
+			}
 		}
 		completion_reward = {  
-			army_experience = 50
+			create_equipment_variant = {
+				type = light_tank_chassis_1
+				mark_older_equipment_obsolete = yes
+				name = "Zielfahrzeug 36"
+				allow_without_tech = yes # Tooltip purposes, tech is required anyways
+				modules = {
+					main_armament_slot = tank_heavy_machine_gun
+					turret_type_slot = tank_light_one_man_tank_turret
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+				}
+				upgrades = {
+						tank_nsb_engine_upgrade = 2
+						tank_nsb_armor_upgrade = 1
+				}
+				icon = "GFX_GER_basic_light_tank_medium"
+			}
 			custom_effect_tooltip = LUC_newline_tt
 			add_tech_bonus = {
 				name = LUC_ArmyStudyPanzers_Focus_bonus
@@ -1730,8 +1881,6 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			army_experience = 25
-			custom_effect_tooltip = LUC_newline_tt
 			add_tech_bonus = {
 				name = LUC_ArmySupportDivisions_Focus_support_bonus
 				category = support_tech
@@ -1750,7 +1899,7 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_ArmyModernWarfare_Focus
-		icon = GFX_LUC_ArmyModernWarfare_Focus
+		icon = GFX_focus_generic_supply_line
 		cost = 5
 		x = -2
 		y = 4
@@ -1774,10 +1923,16 @@ focus_tree = {
 				uses = 1
 			}
 			add_tech_bonus = {
+				name = LUC_ArmyModernWarfare_Focus_trucks_bonus
+				category = cat_armored_cars
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
 				name = LUC_ArmyModernWarfare_Focus_armored_bonus
 				category = cat_mechanized_equipment
 				bonus = 1
-				uses = 1
+				uses = 2
 			}
 			custom_effect_tooltip = LUC_newline_tt
 			add_equipment_to_stockpile = {
@@ -1835,7 +1990,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmyStockpiles_Focus
 		icon = GFX_LUC_ArmyStockpiles_Focus
-		cost = 5
+		cost = 3
 		x = 9
 		y = 1
 		search_filters = {
@@ -2684,7 +2839,26 @@ focus_tree = {
 			focus = LUC_AirforceMountainFlights_Focus
 		}
 		available = {
-			
+			OR = {
+				AND = {
+					SWI = {
+						exists = yes
+						NOT = {
+							has_war_with = ROOT
+						}
+						LUC_isFriendlyIdeology = yes
+					}
+				}
+				AND = {
+					SWI = {
+						exists = no
+					}
+					custom_trigger_tooltip = {
+						tooltip = LUC_FormedAlpineFederation_tt
+						has_country_flag = LUC_FormedAlpineFederation_flag
+					}
+				}
+			}
 		}
 		completion_reward = {  
 			add_tech_bonus = {
@@ -2862,7 +3036,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {  
-			air_experience = 50
+			air_experience = 25
 			army_experience = 25
 			custom_effect_tooltip = LUC_newline_tt
 			if = {

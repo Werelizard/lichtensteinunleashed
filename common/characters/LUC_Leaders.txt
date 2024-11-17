@@ -145,7 +145,7 @@ characters={
 			}
 			available = {
 				custom_trigger_tooltip = {
-					tooltip = LUC_DemocraticOrFascistGov_tt
+					tooltip = LUC_DemocraticOrNeutralGov_tt
 					OR = {
 						has_government = democratic
 						has_government = neutrality

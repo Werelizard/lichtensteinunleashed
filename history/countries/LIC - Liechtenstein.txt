@@ -15,7 +15,6 @@ set_technology = {
 	tech_mountaineers = 1
 	basic_train = 1
 	tech_military_police = 1
-	tech_trucks = 1
 	militia_tech = 1
 }
 
