@@ -5,6 +5,11 @@
  LUC_AvailableAsChiefOfNavy:0 "Available as Chief of Navy:"
  LUC_AvailableAsChiefOfAir:0 "Available as Chief of Airforce:"
  LUC_AvailableAsHighCommand:0 "Available as High Command:"
+
+ #Shortcuts
+ LUC_LiechtensteinEconomy_Target:0 "Economy Focuses"
+ LUC_LiechtensteinArmy_Target:0 "Army Focuses"
+ LUC_LiechtensteinSurrender_Target:0 "Government in Exile"
  
  # Liechtensteiner Economy
  LUC_EconomyStateOfEconomy_Focus:0 "Budgetary Adjustments"
@@ -183,6 +188,7 @@
 
  LUC_IntelligenceService_Focus:0 "Landespolizei des Fürstentums"
  LUC_IntelligenceService_Focus_desc:0 ""
+ LUC_IntelligenceService_Focus_tt:0 "If we do not have one already, §Ycreates§! an Intelligence Agency. Otherwise, gain §Y1§! random agency upgrade."
 
  LUC_IntelligenceAuxiliary_Focus:0 "Create the Security Corps"
  LUC_IntelligenceAuxiliary_Focus_desc:0 ""
@@ -266,6 +272,64 @@
 
  LUC_NavyAlaskaNukes_Focus:0 "Project Schneesturm"
  LUC_NavyAlaskaNukes_Focus_desc:0 ""
+
+  ###################################
+	# EXILE-ORIENTED FOCUSES           #
+	###################################
+
+ LUC_ExileRallyExiles_focus:0 "Rally the Exiles"
+ LUC_ExileRallyExiles_focus_desc:0 ""
+
+ LUC_ExilePrepareForInevitable_focus:0 "Prepare for the Inevitable"
+ LUC_ExilePrepareForInevitable_focus_desc:0 ""
+ LUC_ExilePrepareForInevitable_focus_tt:0 "Upon capitulating, we will gain more equipment, more legitimacy and potentially additional divisions."
+
+ LUC_ExileSeekSupport_focus:0 "Seek International Support"
+ LUC_ExileSeekSupport_focus_desc:0 ""
+
+ LUC_ExileRadioVaduz_focus:0 "Seize the Airwaves"
+ LUC_ExileRadioVaduz_focus_desc:0 ""
+ LUC_ExileRadioVaduz_focus_tt:0 "§Y[ROOT.capital.GetName]§! is not controlled by [ROOT.GetName]"
+ LUC_ExileRadioVaduz_resistanceIncrease_tt:0 "Every one of our core states not controlled by us:\nResistance: §R+10.0%§!\nCompliance: §R-10.0%§!\n"
+ LUC_ExileRadioVaduz_resistanceSabotage_tt:0 "Unlocks £decision_icon_small §Ydecisions§! to sabotage infrastructure in our states occupied by the enemy."
+
+ LUC_ExileTheSwissCorridor_focus:0 "Employ the Swiss Corridor"
+ LUC_ExileTheSwissCorridor_focus_desc:0 ""
+ LUC_ExileTheSwissCorridor_operation_tt:0 "Unlocks £GFX_inspect_texticon §Yoperations§! to arm partisans in our provinces occupied by an enemy country."
+
+ LUC_ExileEvacuateAssets_focus:0 "The Aktiengesellschaft Scheme"
+ LUC_ExileEvacuateAssets_focus_desc:0 ""
+ LUC_ExileEvacuateAssets_focus_tt:0 "Upon capitulating, we will gain §Y2§! off-map factories as well as additional legitimacy."
+
+ LUC_ExileLiechtensteinLegion_focus:0 "The [ROOT.GetAdjective] Foreign Legion"
+ LUC_ExileLiechtensteinLegion_focus_desc:0 ""
+ LUC_ExileLiechtensteinLegion_focus_tt:0 "Unlocks £decision_icon_small §Ydecisions§! to raise additional veteran divisions."
+
+ LUC_ExileClaimVoralberg_focus:0 "Secure Vorarbelrg"
+ LUC_ExileClaimVoralberg_focus_desc:0 ""
+ LUC_ExileClaimVoralberg_focus_tt:0 "§Y[848.owner.GetName]§!: at war with §Y[ROOT.GetName]§!"
+
+ LUC_ExileLiberateAustria_focus:0 "Liberate Austria"
+ LUC_ExileLiberateAustria_focus_desc:0 ""
+ LUC_ExileCoreLiberatedStates_tt:0 "Unlocks £decision_icon_small §Ydecisions§! to increase compliance in states claimed through this focus."
+
+ LUC_ExileBavarianLiberation_focus:0 "Ignite a Bavarian Uprising"
+ LUC_ExileBavarianLiberation_focus_desc:0 ""
+
+ LUC_ExileFreeSwitzerland_focus:0 "Liberate the Swiss People"
+ LUC_ExileFreeSwitzerland_focus_desc:0 ""
+
+ LUC_ExileBrothersInArms_focus:0 "Alpine Brotherhood"
+ LUC_ExileBrothersInArms_focus_desc:0 ""
+ LUC_ExileBrothersInArms_resistance_tt:0 "Every one of §Y[SWI.GetName]§!'s' core states not controlled by [SWI.GetName]:\nResistance: §R+10.0%§!\nCompliance: §R-10.0%§!\n"
+
+ LUC_ExileAntiGermanSentinment_focus:0 "Stoke Anti-German Sentiment"
+ LUC_ExileAntiGermanSentinment_focus_desc:0 ""
+ LUC_ExileBavarianLiberation_focus_1_tt:0 "§Y[52.owner.GetName]§!: at war with §Y[ROOT.GetName]§!"
+ LUC_ExileBavarianLiberation_focus_2_tt:0 "§Y[53.owner.GetName]§!: at war with §Y[ROOT.GetName]§!"
+
+ LUC_ExileOrganisedResistance_focus:0 "Fan the Flames of Resistance"
+ LUC_ExileOrganisedResistance_focus_desc:0 ""
 
   ###################################
 	# MISC                            #

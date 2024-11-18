@@ -605,4 +605,121 @@ spriteTypes = {
 		name = "GFX_LUC_NavyAlaskaNukes_Focus_shine"
 		textureFile = "gfx/interface/goals/LIC/LUC_NavyAlaskaNukes_Focus.dds"
 	}
+
+	###################################
+	# EXILE-ORIENTED FOCUSES          #
+	###################################
+	spriteType = {
+		name = "GFX_LUC_ExileLiberateAustria_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileLiberateAustria_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileLiberateAustria_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileLiberateAustria_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileAntiGermanSentinment_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileAntiGermanSentinment_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileAntiGermanSentinment_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileAntiGermanSentinment_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileBavarianLiberation_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileBavarianLiberation_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileBavarianLiberation_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileBavarianLiberation_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileFreeSwitzerland_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileFreeSwitzerland_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileFreeSwitzerland_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileFreeSwitzerland_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileOrganisedResistance_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileOrganisedResistance_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileOrganisedResistance_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileOrganisedResistance_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileRadioVaduz_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileRadioVaduz_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileRadioVaduz_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileRadioVaduz_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileSeekSupport_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileSeekSupport_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileSeekSupport_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileSeekSupport_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExilePrepareForInevitable_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExilePrepareForInevitable_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExilePrepareForInevitable_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExilePrepareForInevitable_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileRallyExiles_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileRallyExiles_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileRallyExiles_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileRallyExiles_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileLiechtensteinLegion_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileLiechtensteinLegion_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileLiechtensteinLegion_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileLiechtensteinLegion_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileEvacuateAssets_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileEvacuateAssets_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileEvacuateAssets_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileEvacuateAssets_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileClaimVoralberg_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileClaimVoralberg_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileClaimVoralberg_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileClaimVoralberg_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileBrothersInArms_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileBrothersInArms_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileBrothersInArms_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileBrothersInArms_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileTheSwissCorridor_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileTheSwissCorridor_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileTheSwissCorridor_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileTheSwissCorridor_focus.dds"
+	}
+	
 }

@@ -263,4 +263,14 @@ leader_traits = {
 		special_forces_attack_factor = 0.05
 		special_forces_training_time_factor = -0.05
 	}
+
+	#################
+	# FOCUS TRAITS #
+	#################
+	LUC_ExileFigurehead = {
+		legitimacy_gain_factor = 0.1
+		resistance_growth_on_our_occupied_states = 0.1
+		compliance_growth_on_our_occupied_states = -0.1
+		army_core_defence_factor = 0.05
+	}
 }

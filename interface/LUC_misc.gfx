@@ -98,7 +98,11 @@ spriteTypes = {
 		name = "GFX_LUC_FOCUS_ARMYREFORM"
 		texturefile = "gfx/interface/focusview/filter/LUC_FOCUS_FILTER_ARMYREFORM.dds"
 	}
-
+	spriteType = {
+		name = "GFX_LUC_FOCUS_FILTER_RESISTANCE"
+		texturefile = "gfx/interface/focusview/filter/occupation_cost_icon.dds"
+	}
+	
 	#Units
 	spriteType = { 
 		name = "GFX_unit_LUC_grenadiers_icon_medium"				

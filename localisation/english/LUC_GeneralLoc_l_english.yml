@@ -85,6 +85,7 @@
  LUC_LiberalLawyer:0 "Liberal Lawyer"
  LUC_Interim_Government:0 "Interim Government"
  LUC_Conservative_PrimeMinister:0 "Inexperienced Prime Minister"
+ LUC_ExileFigurehead:0 "Resistance Figurehead"
 
  # General Names
  LUC_Alois_Gonzaga_Maria_Adolf:0 "Alois Gonzaga Maria Adolf"
@@ -251,6 +252,8 @@
  LUC_LiechtensteinAirforce_fighter_cas_idea_desc:0 ""
  LUC_LiechtensteinOverseasTrade_idea:0 "Overseas Trade"
  LUC_LiechtensteinOverseasTrade_idea_desc:0 ""
+ LUC_AgainstTyranny_idea:0 "Anti-German Propaganda"
+ LUC_AgainstTyranny_idea_desc:0 ""
 
  # Inbdustrial Concerns
  LUC_LawenaPower_concern:0 "Lawena Energy"
@@ -284,6 +287,7 @@
  LUC_FOCUS_ECONOMY:0 "Economy"
  LUC_FOCUS_RESOURCES:0 "Resources"
  LUC_FOCUS_ARMYREFORM:0 "Army Reform"
+ LUC_FOCUS_FILTER_RESISTANCE:0 "Resistance"
 
  # Various
  LUC_FormedAlpineFederation_tt:0 "Formed the §YAlpine Confederation§!"

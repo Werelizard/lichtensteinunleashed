@@ -2,3 +2,4 @@
  VICTORY_POINTS_6680: "Bregenz"
  EFFECT_UNLOCK_DECISION:0 "Unlocks Decision: £GFX_decision_icon_small $NAME|H$$EFFECT$"
  EFFECT_UNLOCK_DECISION_CATEGORY:0 "Unlocks $NAME|H$ £GFX_decision_icon_small  decisions."
+ FOCUS_SHORTCUT_TOOLTIP: "§GLeft-click§! to pan to the $PATH|H$ branch."

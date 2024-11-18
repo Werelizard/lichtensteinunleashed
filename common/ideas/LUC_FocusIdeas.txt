@@ -84,8 +84,6 @@ ideas = {
 				weekly_bombing_war_support = 0.05
 				weekly_convoys_war_support = 0.05
 				industry_air_damage_factor = -0.1
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
 				conscription_factor = 0.1
 			}
 		}
@@ -189,6 +187,17 @@ ideas = {
 		LUC_Liechtensteiner_No_Army_fieldcommand_idea = {
 			modifier = {
 				recruitable_population_factor = -0.5
+			}
+		}
+		LUC_AgainstTyranny_idea = {
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				compliance_growth = -0.1
+			}
+			allowed = {
+				has_war_with = GER
 			}
 		}
 	}
