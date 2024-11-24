@@ -39,7 +39,8 @@ ideas = {
 				defence = 0.1
 				army_org_factor = 0.1
 				max_dig_in = 5
-				conscription = 0.015
+				conscription = 0.005
+				minimum_training_level = -0.1
 			}
 		}
 		LUC_Army_Offence1_idea = {
@@ -89,9 +90,10 @@ ideas = {
 		}
 		LUC_SecurityCorps_idea = {
 			modifier = {
-				political_power_factor = -0.1
-				army_intel_factor = 0.2
-				army_intel_to_others = -20
+				political_power_cost = 0.25
+				intel_from_combat_factor = 0.1
+				agency_upgrade_time = -0.2
+				enemy_operative_capture_chance_factor = 0.2
 				operative_slot = 1
 			}
 		}
@@ -175,7 +177,7 @@ ideas = {
 		}
 		LUC_Liechtensteiner_No_Army_reformedcommand_idea = {
 			modifier = {
-				recruitable_population_factor = -0.5
+				conscription_factor = -0.5
 				command_power_gain_mult = -0.75
 			}
 		}
@@ -186,7 +188,7 @@ ideas = {
 		}
 		LUC_Liechtensteiner_No_Army_fieldcommand_idea = {
 			modifier = {
-				recruitable_population_factor = -0.5
+				conscription_factor = -0.5
 			}
 		}
 		LUC_AgainstTyranny_idea = {
@@ -198,6 +200,13 @@ ideas = {
 			}
 			allowed = {
 				has_war_with = GER
+			}
+		}
+		LUC_ForeignLegion_idea = {
+			modifier = {
+				exiled_government_weekly_manpower = 500
+				own_exiled_divisions_attack_factor = 0.05
+				war_support_factor = 0.1
 			}
 		}
 	}

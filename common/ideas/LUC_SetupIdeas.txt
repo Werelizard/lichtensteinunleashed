@@ -31,10 +31,10 @@ ideas = {
 		}
 		LUC_Liechtensteiner_No_Army_idea = {
 			modifier = {
-				recruitable_population_factor = -0.5
+				conscription_factor = -0.5
 				experience_gain_factor = -0.75
 				command_power_gain_mult = -0.75
-				# custom_modifier_tooltip = LUC_Liechtensteiner_No_Army_idea_tt
+				custom_modifier_tooltip = LUC_Liechtensteiner_No_Army_idea_tt
 			}
 		}
 		LUC_CustomsUnion_idea = {

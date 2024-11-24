@@ -67,6 +67,7 @@ luc_removeStabilityIfMilitaryWhileNeutral = {
 			NOT = {
 				has_war = yes
 			}
+			always = no
 		}
 		custom_effect_tooltip = luc_removeStabilityIfMilitaryWhileNeutral_tt
 		add_popularity = {

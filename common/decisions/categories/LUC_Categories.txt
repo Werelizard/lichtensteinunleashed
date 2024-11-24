@@ -45,3 +45,14 @@ LUC_Bank_ForeignInvestors_cat_DUMMY = {
 		always = no
 	}
 }
+
+LUC_Resistance_Cat = {
+	icon = GFX_decision_category_NOR_fascist_deploy_prep
+
+	visible = {
+		has_completed_focus = LUC_ExileRallyExiles_focus
+	}
+	allowed = {
+		always = yes
+	}
+}

@@ -268,9 +268,8 @@ leader_traits = {
 	# FOCUS TRAITS #
 	#################
 	LUC_ExileFigurehead = {
-		legitimacy_gain_factor = 0.1
 		resistance_growth_on_our_occupied_states = 0.1
 		compliance_growth_on_our_occupied_states = -0.1
-		army_core_defence_factor = 0.05
+		war_support_factor = 0.05
 	}
 }

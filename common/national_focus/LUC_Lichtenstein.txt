@@ -512,7 +512,7 @@ focus_tree = {
 					level = 1
 				}
 				add_building_construction = {
-					type = dam
+					type = dam_mountain
 					level = 1
 					instant_build = yes
 					province = {
@@ -2091,9 +2091,8 @@ focus_tree = {
 				}
 			}
 		}
-		completion_reward = {  
-			add_command_power = 25
-			army_experience = 25
+		completion_reward = {
+			custom_effect_tooltip = LUC_SETRULECANGETGENERALS_tt
 			custom_effect_tooltip = LUC_newline_tt
 			effect_tooltip = {
 				add_advisor_role = {
@@ -2358,10 +2357,7 @@ focus_tree = {
 					SWI = {
 						exists = no
 					}
-					custom_trigger_tooltip = {
-						tooltip = LUC_FormedAlpineFederation_tt
-						has_country_flag = LUC_FormedAlpineFederation_flag
-					}
+					LUC_IsAlpineFed = yes
 				}
 			}
 		}
@@ -2430,7 +2426,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmySpecialMountaineerForces_Focus
 		icon = GFX_LUC_ArmySpecialMountaineerForces_Focus
-		cost = 8
+		cost = 10
 		x = 2
 		y = 4
 		search_filters = {
@@ -2468,7 +2464,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmyMountainEngineering_Focus
 		icon = GFX_LUC_ArmyMountainEngineering_Focus
-		cost = 8
+		cost = 5
 		x = 3
 		y = 5
 		search_filters = {
@@ -2523,7 +2519,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ArmyFortressVaduz_Focus
 		icon = GFX_LUC_ArmyFortressVaduz_Focus
-		cost = 5
+		cost = 10
 		x = -3
 		y = 4
 		search_filters = {
@@ -2552,14 +2548,12 @@ focus_tree = {
 			}
 			982 = {
 				add_building_construction = {
-					type = anti_air_building
-					level = 2
-				}
-				add_building_construction = {
-					type = bunker
-					level = 6
+					type = stronghold_network
+					level = 1
 				}
 			}
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ArmyFortressVaduz_Focus_tt
 			luc_removeStabilityIfMilitaryWhileNeutral = yes
 		}
 		mutually_exclusive = {
@@ -2583,64 +2577,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.05
+			custom_effect_tooltip = LUC_newline_tt
 			swap_ideas = {
 				remove_idea = LUC_Army_Defence1_idea
 				add_idea = LUC_Army_Defence2_idea
 			}
-			custom_effect_tooltip = LUC_ArmyRaiseMilitias_Focus_tt
-			custom_effect_tooltip = LUC_newline_tt
-			hidden_effect = {
-				set_division_template_lock = {
-					division_template = "Civilian Militia"
-					is_locked = no
-				}
-				add_units_to_division_template = {
-					template_name = "Civilian Militia"
-					regiments = {
-						militia = 3
-						militia = 2
-						militia = 3
-						militia = 2
-					}
-					support = {
-						artillery = 0
-					}
-				}
-			}
-			custom_effect_tooltip = LUC_ArmyRaiseMilitias_inEveryState_tt
-			custom_effect_tooltip = LUC_newline_tt
-			capital_scope = {
-				custom_effect_tooltip = LUC_CreateMilitiaUnit_tt
-				hidden_effect = {
-					create_unit = {
-						division = "Civilian Militia"
-						owner = ROOT
-					}
-				}
-				custom_effect_tooltip = LUC_newline_tt
-				custom_effect_tooltip = LUC_CreateMilitiaUnit_tt
-				hidden_effect = {
-					create_unit = {
-						division = "Civilian Militia"
-						owner = ROOT
-					}
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_core_of = ROOT
-					NOT = {
-						is_capital = yes
-					}
-				}
-				custom_effect_tooltip = LUC_CreateMilitiaUnit_tt
-				hidden_effect = {
-					create_unit = {
-						division = "Civilian Militia"
-						owner = ROOT
-					}
-				}
-			}  
+			custom_effect_tooltip = newline_tt
+			custom_effect_tooltip = LUC_Militias_dec_tt
 			luc_removeStabilityIfMilitaryWhileNeutral = yes
 		}
 		mutually_exclusive = {
@@ -3620,7 +3563,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExilePrepareForInevitable_focus
 		icon = GFX_LUC_ExilePrepareForInevitable_focus
-		cost = 5
+		cost = 4
 		x = -6
 		y = 0
 		search_filters = {
@@ -3630,31 +3573,92 @@ focus_tree = {
 		prerequisite = {
 
 		}
+		bypass = {
+			has_capitulated = yes
+		}
 		available = {
+			NOT = {
+				has_capitulated = yes
+			}
+			any_country = {
+				is_in_faction_with = ROOT
+				is_major = yes
+				NOT = {
+					has_capitulated = yes
+				}
+			}
 			OR = {
 				any_country = {
 					is_justifying_wargoal_against = ROOT
 					can_declare_war_on = ROOT
+					custom_trigger_tooltip = {
+						tooltip = LUC_LargerArmyThanLiC
+						strength_ratio = {
+							tag = LIC
+							ratio = 1.01
+						}
+					}
 				}
-				any_core_state = {
-					is_owned_by = ROOT
-					NOT = {
-						is_fully_controlled_by = ROOT
+				any_owned_state = {
+					controller = {
+						has_war_with = ROOT
 					}
 				}
 			}
 		}
-		completion_reward = {  
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -1500
+		completion_reward = {
+			set_temp_variable = {
+				LUC_InfantryEquipmentCurrent_var = num_equipment@infantry_equipment
 			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -100
+			multiply_temp_variable = {
+				LUC_InfantryEquipmentCurrent_var = 0.2
 			}
+			set_temp_variable = {
+				LUC_SupportEquipmentCurrent_var = num_equipment@support_equipment
+			}
+			multiply_temp_variable = {
+				LUC_SupportEquipmentCurrent_var = 0.1
+			}
+			set_temp_variable = {
+				LUC_InfantryEquipmentCurrent_neg_var = LUC_InfantryEquipmentCurrent_var
+			}
+			multiply_temp_variable = {
+				LUC_InfantryEquipmentCurrent_neg_var = -1
+			}
+			set_temp_variable = {
+				LUC_SupportEquipmentCurrent_neg_var = LUC_SupportEquipmentCurrent_var
+			}
+			multiply_temp_variable = {
+				LUC_SupportEquipmentCurrent_neg_var = -1
+			}
+			set_variable = {
+				LUC_InfantryEquipmentCurrent_addOnCap_var = LUC_InfantryEquipmentCurrent_var
+			}
+			set_variable = {
+				LUC_SupportEquipmentCurrent_addOnCap_var = LUC_SupportEquipmentCurrent_var
+			}
+			hidden_effect = {		
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = LUC_InfantryEquipmentCurrent_neg_var
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = LUC_SupportEquipmentCurrent_neg_var
+				}
+			}
+			add_war_support = -0.15
+			add_stability = -0.15
 			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_ExilePrepareForInevitable_focus_tt
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ExileUponCapitulationEffect_tt
+			effect_tooltip = {
+				custom_effect_tooltip = LUC_ExilePrepareForInevitable_InfantryEq_tt
+				custom_effect_tooltip = LUC_ExilePrepareForInevitable_SupportEq_tt
+				custom_effect_tooltip = LUC_ExilePrepareForInevitable_PolP_tt
+				custom_effect_tooltip = LUC_ExilePrepareForInevitable_Manpower_tt
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -3662,7 +3666,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileEvacuateAssets_focus
 		icon = GFX_LUC_ExileEvacuateAssets_focus
-		cost = 5
+		cost = 4
 		x = -2
 		y = 1
 		search_filters = {
@@ -3673,21 +3677,41 @@ focus_tree = {
 			focus = LUC_ExilePrepareForInevitable_focus
 		}
 		available = {
+			NOT = {
+				has_capitulated = yes
+			}
+			any_country = {
+				is_in_faction_with = ROOT
+				is_major = yes
+				NOT = {
+					has_capitulated = yes
+				}
+			}
 			OR = {
 				any_country = {
 					is_justifying_wargoal_against = ROOT
 					can_declare_war_on = ROOT
+					custom_trigger_tooltip = {
+						tooltip = LUC_LargerArmyThanLiC
+						strength_ratio = {
+							tag = LIC
+							ratio = 1.01
+						}
+					}
 				}
-				any_core_state = {
-					is_owned_by = ROOT
-					NOT = {
-						is_fully_controlled_by = ROOT
+				any_owned_state = {
+					controller = {
+						has_war_with = ROOT
 					}
 				}
 			}
 		}
 		completion_reward = {  
-			custom_effect_tooltip = LUC_ExileEvacuateAssets_focus_tt
+			custom_effect_tooltip = LUC_ExileUponCapitulationEffect_tt
+			effect_tooltip = {
+				custom_effect_tooltip = LUC_ExileEvacuateAssets_mil2_tt
+				custom_effect_tooltip = LUC_ExileEvacuateAssets_civ2_tt
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -3695,7 +3719,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileLiechtensteinLegion_focus
 		icon = GFX_LUC_ExileLiechtensteinLegion_focus
-		cost = 5
+		cost = 4
 		x = -4
 		y = 1
 		available_if_capitulated = yes
@@ -3708,62 +3732,21 @@ focus_tree = {
 			focus = LUC_ExileRallyExiles_focus
 		}
 		available = {
-			has_capitulated = yes
+			LUC_IsInDangerCap_trigger = yes
 		}
 		completion_reward = {  
-			hidden_effect = {
-				division_template = {
-					name = "Liechtensteiner Partisans"
-					division_names_group = SWI_INF_01
-				
-					regiments = {
-						militia = { x = 0 y = 0 }
-						militia = { x = 0 y = 1 }
-						militia = { x = 0 y = 2 }
-						militia = { x = 1 y = 0 }
-						militia = { x = 1 y = 1 }
-						militia = { x = 1 y = 3 }
-					}
-					support = {
-						artillery = {
-							x = 0
-							y = 0
-						}
-					}
-				
-					is_locked = yes
-				}
-			}
 			if = {
 				limit = {
-					any_owned_state = {
-						is_controlled_by = ROOT
-					}
+					has_capitulated = no
 				}
-				random_owned_controlled_state = {
-					create_unit = { 
-						division = "name = \"Liechstensteiner Partisan\" division_template = \"Liechtensteiner Partisans\" start_experience_factor = 1" 
-						owner = ROOT
-						count = 2
-					}
+				custom_effect_tooltip = LUC_ExileUponCapitulationEffect_tt
+				effect_tooltip = {
+					custom_effect_tooltip = LUC_ExileLiechtensteinLegion_idea_tt
 				}
 			}
 			else = {
-				random_country = {
-					limit = {
-						is_hosting_exile = ROOT
-					}
-					random_owned_controlled_state = {
-						create_unit = { 
-							division = "name = \"Liechstensteiner Partisan\" division_template = \"Liechtensteiner Partisans\" start_experience_factor = 1" 
-							owner = ROOT
-							count = 2
-						}
-					}
-				}
+				add_ideas = LUC_ForeignLegion_idea
 			}
-			custom_effect_tooltip = LUC_newline_tt
-			custom_effect_tooltip = LUC_ExileLiechtensteinLegion_focus_tt
 		}
 		mutually_exclusive = {
 		}
@@ -3771,7 +3754,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileRallyExiles_focus
 		icon = GFX_LUC_ExileRallyExiles_focus
-		cost = 5
+		cost = 4
 		x = 4
 		y = 0
 		available_if_capitulated = yes
@@ -3783,18 +3766,11 @@ focus_tree = {
 
 		}
 		available = {
-			OR = {
-				has_capitulated = yes
-				AND = {
-					NOT = {
-						has_government = fascism
-					}
-					surrender_progress > 0.25
-				}
-			}
+			has_capitulated = yes
 		}
 		completion_reward = {  
 			add_country_leader_trait = LUC_ExileFigurehead
+			unlock_decision_category_tooltip = LUC_Resistance_Cat
 		}
 		mutually_exclusive = {
 		}
@@ -3802,7 +3778,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileSeekSupport_focus
 		icon = GFX_LUC_ExileSeekSupport_focus
-		cost = 5
+		cost = 8
 		x = 2
 		y = 1
 		available_if_capitulated = yes
@@ -3815,12 +3791,22 @@ focus_tree = {
 			focus = LUC_ExilePrepareForInevitable_focus
 		}
 		available = {
-			has_capitulated = yes
+			LUC_IsInDangerCap_trigger = yes
 		}
 		completion_reward = {  
-			add_legitimacy = 10
-			add_political_power = 50
-			add_war_support = 0.05
+			add_political_power = 25
+			if = {
+				limit = {
+					has_capitulated = no
+				}
+				custom_effect_tooltip = LUC_ExileUponCapitulationEffect_tt
+				custom_effect_tooltip = LUC_ExileSeekSupport_legitimacy_tt
+				custom_effect_tooltip = LUC_ExileSeekSupport_warsupport_tt
+			}
+			else = {
+				add_legitimacy = 5
+				add_war_support = 0.05
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -3841,19 +3827,32 @@ focus_tree = {
 			focus = LUC_ExileSeekSupport_focus
 		}
 		available = {
-			has_capitulated = yes
+			LUC_IsInDangerCap_trigger = yes
 		}
 		completion_reward = { 
-			add_legitimacy = 5
+			add_war_support = 0.05
 			custom_effect_tooltip = LUC_newline_tt
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1000
-			} 
-			add_offsite_building = {
-				type = arms_factory
-				level = 2
+			custom_override_tooltip = {
+				tooltip = LUC_IntelOnEnemies_tt
+				every_country = {
+					limit = {
+						has_war_with = ROOT
+						any_controlled_state = {
+							is_core_of = ROOT
+						}
+					}
+					ROOT = {
+						add_intel = {
+							target = PREV
+							army_intel = 5
+							navy_intel = 5
+							airforce_intel = 5
+						}
+					}
+				}
 			}
+			custom_effect_tooltip = LUC_newline_tt
+			custom_effect_tooltip = LUC_ExileOrganisedResistance_operations
 		}
 		mutually_exclusive = {
 		}
@@ -3861,7 +3860,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileRadioVaduz_focus
 		icon = GFX_LUC_ExileRadioVaduz_focus
-		cost = 5
+		cost = 8
 		x = 4
 		y = 2
 		available_if_capitulated = yes
@@ -3873,7 +3872,7 @@ focus_tree = {
 			focus = LUC_ExileSeekSupport_focus
 		}
 		available = {
-			has_capitulated = yes
+			LUC_IsInDangerCap_trigger = yes
 			custom_trigger_tooltip = {
 				tooltip = LUC_ExileRadioVaduz_focus_tt
 				capital_scope = {
@@ -3885,6 +3884,7 @@ focus_tree = {
 		}
 		completion_reward = {  
 			add_legitimacy = 5
+			add_war_support = 0.05
 			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_ExileRadioVaduz_resistanceIncrease_tt
 			custom_effect_tooltip = LUC_newline_tt
@@ -3907,7 +3907,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileTheSwissCorridor_focus
 		icon = GFX_LUC_ExileTheSwissCorridor_focus
-		cost = 5
+		cost = 8
 		x = 5
 		y = 3
 		available_if_capitulated = yes
@@ -3921,10 +3921,10 @@ focus_tree = {
 			focus = LUC_IntelligenceService_Focus
 		}
 		available = {
-			has_capitulated = yes
+			LUC_IsInDangerCap_trigger = yes
 			has_intelligence_agency = yes
 			SWI = {
-				exists = yes
+				is_neighbor_of = ROOT
 				NOT = {
 					has_war_with = ROOT
 				}
@@ -3933,6 +3933,13 @@ focus_tree = {
 						has_war = yes
 					}
 					surrender_progress < 0.01
+				}
+			}
+			OR = {
+				has_completed_focus = LUC_IntelligenceAuxiliary_Focus
+				AND = {
+					has_completed_focus = LUC_ExileOrganisedResistance_focus
+					has_completed_focus = LUC_ExileLiechtensteinLegion_focus
 				}
 			}
 		}
@@ -3962,7 +3969,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileClaimVoralberg_focus
 		icon = GFX_LUC_ExileClaimVoralberg_focus
-		cost = 5
+		cost = 4
 		x = -1
 		y = 2
 		available_if_capitulated = yes
@@ -3975,16 +3982,16 @@ focus_tree = {
 			focus = LUC_ExileSeekSupport_focus
 		}
 		bypass = {
-			owns_state = 848
+			OR = {
+				owns_state = 848
+				any_country = {
+					is_in_faction_with = ROOT
+					owns_state = 848
+				}
+			}
 		}
 		available = {
-			OR = {
-				has_capitulated = yes
-				has_completed_focus = LUC_ExileTheSwissCorridor_focus
-			}
-			NOT = {
-				owns_state = 848
-			}
+			LUC_IsInDangerCap_trigger = yes
 			if = {
 				limit = {
 					NOT = {
@@ -4012,7 +4019,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileLiberateAustria_focus
 		icon = GFX_LUC_ExileLiberateAustria_focus
-		cost = 5
+		cost = 4
 		x = 0
 		y = 3
 		available_if_capitulated = yes
@@ -4023,12 +4030,10 @@ focus_tree = {
 		relative_position_id = LUC_ExilePrepareForInevitable_focus
 		prerequisite = {
 			focus = LUC_ExileClaimVoralberg_focus
+			focus = LUC_ExileOrganisedResistance_focus
 		}
 		available = {
-			OR = {
-				has_capitulated = yes
-				surrender_progress > 0.5
-			}
+			LUC_IsInDangerCap_trigger = yes
 			OR = {
 				has_war_with = AUS
 				AND = {
@@ -4047,9 +4052,19 @@ focus_tree = {
 		completion_reward = {  
 			every_state = {
 				limit = {
-					is_core_of = AUS
-					NOT = {
-						state = 848
+					OR = {
+						state = 153
+						state = 152
+						state = 976
+						state = 975
+						state = 4
+						AND = {
+							state = 39
+							is_core_of = AUS
+						}
+						AND = {
+							state = 850
+						}
 					}
 				}
 				add_claim_by = ROOT
@@ -4063,7 +4078,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileAntiGermanSentinment_focus
 		icon = GFX_LUC_ExileAntiGermanSentinment_focus
-		cost = 5
+		cost = 4
 		x = -1
 		y = 4
 		available_if_capitulated = yes
@@ -4077,12 +4092,9 @@ focus_tree = {
 			focus = LUC_ExileLiberateAustria_focus
 		}
 		available = {
+			LUC_IsInDangerCap_trigger = yes
 			GER = {
 				has_war_with = ROOT
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
 			}
 		}
 		completion_reward = {  
@@ -4097,7 +4109,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileBavarianLiberation_focus
 		icon = GFX_LUC_ExileBavarianLiberation_focus
-		cost = 5
+		cost = 4
 		x = -2
 		y = 3
 		available_if_capitulated = yes
@@ -4108,12 +4120,10 @@ focus_tree = {
 		relative_position_id = LUC_ExilePrepareForInevitable_focus
 		prerequisite = {
 			focus = LUC_ExileClaimVoralberg_focus
+			focus = LUC_ExileOrganisedResistance_focus
 		}
 		available = {
-			OR = {
-				has_capitulated = yes
-				surrender_progress > 0.5
-			}
+			LUC_IsInDangerCap_trigger = yes
 			OR = {
 				NOT = {
 					owns_state = 52
@@ -4146,7 +4156,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileFreeSwitzerland_focus
 		icon = GFX_LUC_ExileFreeSwitzerland_focus
-		cost = 5
+		cost = 4
 		x = 2
 		y = 4
 		available_if_capitulated = yes
@@ -4157,21 +4167,25 @@ focus_tree = {
 		relative_position_id = LUC_ExilePrepareForInevitable_focus
 		prerequisite = {
 			focus = LUC_ExileClaimVoralberg_focus
+			focus = LUC_ExileOrganisedResistance_focus
 		}
 		available = {
+			LUC_IsInDangerCap_trigger = yes
+			NOT = {
+				LUC_IsAlpineFed = yes
+			}
 			OR = {
 				has_war_with = SWI
-				SWI = {
-					has_capitulated = yes
-					exists = no
-				}
-			}
-			NOT = {
-				is_in_faction_with = SWI
-			}
-			SWI = {
-				NOT = {
-					has_government = ROOT
+				AND = {
+					SWI = {
+						exists = no
+					}
+					any_state = {
+						is_core_of = SWI
+						owner = {
+							has_war_with = ROOT
+						}
+					}
 				}
 			}
 		}
@@ -4201,7 +4215,7 @@ focus_tree = {
 	focus = {
 		id = LUC_ExileBrothersInArms_focus
 		icon = GFX_LUC_ExileBrothersInArms_focus
-		cost = 5
+		cost = 4
 		x = 4
 		y = 4
 		available_if_capitulated = yes
@@ -4214,19 +4228,16 @@ focus_tree = {
 			focus = LUC_ExileRadioVaduz_focus
 		}
 		available = {
+			LUC_IsInDangerCap_trigger = yes
+			NOT = {
+				LUC_IsAlpineFed = yes
+			}
 			NOT = {
 				has_war_with = SWI
 			}
-			OR = {
-				is_in_faction_with = SWI
-				any_country = {
-					has_war_with = ROOT
-					has_war_with = SWI
-				}
-			}
-			SWI = {
-				has_capitulated = yes
-				exists = no
+			any_country = {
+				has_war_with = ROOT
+				has_war_with = SWI
 			}
 		}
 		completion_reward = {

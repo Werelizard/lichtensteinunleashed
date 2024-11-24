@@ -126,3 +126,44 @@ LUC_isFriendlyIdeology = {
 		}
 	}
 }
+
+# Trigger to check if country is about to cap
+
+LUC_IsInDangerCap_trigger = {
+	OR = {
+		AND = {
+			surrender_progress > 0.6
+			any_other_country = {
+				custom_trigger_tooltip = {
+					tooltip = LUC_IsInDangerCap_otherCountryIsFactionLeader_tt
+					is_faction_leader = yes
+					is_in_faction_with = ROOT
+					NOT = {
+						has_capitulated = yes
+					}
+				}
+			}
+		}
+		AND = {
+			surrender_progress > 0.6
+			any_other_country = {
+				custom_trigger_tooltip = {
+					tooltip = LUC_IsInDangerCap_otherCountryNoFactionLeader_tt
+					is_faction_leader = no
+					is_major = yes
+					NOT = {
+						has_capitulated = yes
+					}
+				}
+			}
+		}
+		has_capitulated = yes
+	}
+}
+
+LUC_IsAlpineFed = {
+	custom_trigger_tooltip = {
+		tooltip = LUC_IsAlpineFed_tt
+		has_country_flag = LUC_AlpineFederationFormed_flag
+	}
+}

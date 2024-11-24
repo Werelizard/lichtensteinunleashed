@@ -188,6 +188,23 @@ political_actions = {
 
 		visible = {
 			original_tag = LIC
+			any_state = {
+				OR = {
+					state = 875
+					state = 822
+					state = 637
+					state = 386
+					state = 650
+					state = 874
+					state = 471
+					state = 473
+					state = 739
+					state = 740 
+					state = 864
+					state = 385
+				}
+				is_owned_by = ROOT
+			}
 			# has_completed_focus = LU	C_NavyAlaskaLiechtenstein_Focus
 		}
 

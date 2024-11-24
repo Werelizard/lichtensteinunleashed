@@ -1,0 +1,5 @@
+﻿l_english:
+ LUC_OperationResistance:0 "Rally the Alpine Resistance"
+ LUC_OperationResistance_desc:0 ""
+ LIC_oprtation_tt:0 "Triggers an uprising throghout or homeland, creating new units in its states."
+ LIC_UprisingWillHappen_tt:0 "Every §Y[LIC.GetAdjective] core state§! will rise up in §Rrebellion§! against §Y[FROM.GetNameWithFlag]§!."

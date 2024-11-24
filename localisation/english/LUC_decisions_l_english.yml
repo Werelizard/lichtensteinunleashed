@@ -51,3 +51,15 @@
 
  LUC_IntegrateGreaterAlaska:0 "Integrate [FROM.GetName]"
  LUC_LiechtensteinAlaskaFormable:0 "Form Alaska-Liechtenstein"
+
+ # Resistance decision
+ LUC_Resistance_Cat:0 "All is not Lost"
+ LUC_Resistance_SabotageInfrastructure_dec:0 "Destroy Critical Infrastructure in §Y[FROM.GetName]§!"
+ LUC_Resistance_SetupCellsInfrastructure_dec:0 "Direct Resistance in §Y[FROM.GetName]§!"
+ LUC_Resistance_IntegreateState_Cat_tt:0 "If §Ycompliance§! is above §Y70%§! when this decision completes, this state will become a core of §Y[ROOT.GetName]§! instead."
+ LUC_Resistance_IntegreateState_Cat:0 "Integrate §Y[FROM.GetName]§!"
+
+ # War Measures
+ LUC_Militias_dec:0 "Recruit Militia in §Y[From.GetName]§!"
+ LUC_Bunkers_dec:0 "Build Fortifications in §Y[From.GetName]§!"
+ LUC_DemobilizeWhileAtPeace_tt:0 "§RMilitia units will be disbanded once the war ends!§!\n"

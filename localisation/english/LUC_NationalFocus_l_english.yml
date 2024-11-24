@@ -146,6 +146,7 @@
 
  LUC_ArmyEstablishOfficerCorps_Focus:0 "The Question of the Commander-in-Chief"
  LUC_ArmyEstablishOfficerCorps_Focus_desc:0 ""
+ LUC_SETRULECANGETGENERALS_tt:0 "Set the rule(s): £trigger_yes Can recruit new generals or field marshalls."
 
  LUC_ArmyStockpiles_Focus:0 "The Oil Question"
  LUC_ArmyStockpiles_Focus_desc:0 ""
@@ -179,18 +180,20 @@
 
  LUC_ArmyFortressVaduz_Focus:0 "Fortress Vaduz"
  LUC_ArmyFortressVaduz_Focus_desc:0 ""
+ LUC_ArmyFortressVaduz_Focus_tt:0 "Unlocks £GFX_decision_icon_small §Ydecisions§! to construct fortifications on states bordering potentially hostile nations."
 
  LUC_ArmyRaiseMilitias_Focus:0 "An Army of Volunteers"
  LUC_ArmyRaiseMilitias_Focus_desc:0 ""
  LUC_ArmyRaiseMilitias_Focus_tt:0 "Expands the §YCivilian Militia§! template with §Y4§! Militia Brigades and unlocks it."
  LUC_ArmyRaiseMilitias_inEveryState_tt:0 "Spawns §Y1§! militia divisions in every one of our §Ycore§! states, and §Y2§! militia divisions in our §Ycapital§!."
  LUC_CreateMilitiaUnit_tt:0 "Create §Y1 militia§! unit"
+ LUC_Militias_dec_tt:0 "Unlocks £GFX_decision_icon_small §Ydecisions§! to raise militia units in core states or states with high enough compliance which we fully control while at war."
 
  LUC_IntelligenceService_Focus:0 "Landespolizei des Fürstentums"
  LUC_IntelligenceService_Focus_desc:0 ""
  LUC_IntelligenceService_Focus_tt:0 "If we do not have one already, §Ycreates§! an Intelligence Agency. Otherwise, gain §Y1§! random agency upgrade."
 
- LUC_IntelligenceAuxiliary_Focus:0 "Create the Security Corps"
+ LUC_IntelligenceAuxiliary_Focus:0 "Expand the Security Corps"
  LUC_IntelligenceAuxiliary_Focus_desc:0 ""
 
  LUC_ArmyCivilianPreparations_Focus:0 "Civilian Preparations"
@@ -276,16 +279,27 @@
   ###################################
 	# EXILE-ORIENTED FOCUSES           #
 	###################################
+ LUC_IsInDangerCap_otherCountryIsFactionLeader_tt:0 "Is faction leader, has not capitulated and is in a faction with §Y[ROOT.GetName]§!"
+ LUC_IsInDangerCap_otherCountryNoFactionLeader_tt:0 "Is a major, has not capitulated and is in a faction with §Y[ROOT.GetName]§!"
+ LUC_ExileUponCapitulationEffect_tt:0 "Upon §Ycapitulating§!, will gain the following:"
+ LUC_LargerArmyThanLiC:0 "Has a larger army than §Y[ROOT.GetName]§!"
 
  LUC_ExileRallyExiles_focus:0 "Rally the Exiles"
  LUC_ExileRallyExiles_focus_desc:0 ""
 
  LUC_ExilePrepareForInevitable_focus:0 "Prepare for the Inevitable"
  LUC_ExilePrepareForInevitable_focus_desc:0 ""
- LUC_ExilePrepareForInevitable_focus_tt:0 "Upon capitulating, we will gain more equipment, more legitimacy and potentially additional divisions."
+ LUC_ExilePrepareForInevitable_focus_tt:0 "Approximately §Y20.0%§! of our current §Yinfantry equipment§! (§Y[?LUC_InfantryEquipmentCurrent_var]§!) and §Y15.0%§! of our current §Ysupport equipment§! (§Y[?LUC_SupportEquipmentCurrent_var]§!) will be §Rremoved§! from our stockpile!"
+ LUC_ExilePrepareForInevitable_InfantryEq_tt:0 "     §Y[?LUC_InfantryEquipmentCurrent_var]§! units of §YInfantry Equipment§! is added to the national stockpile."
+ LUC_ExilePrepareForInevitable_SupportEq_tt:0 "     §Y[?LUC_SupportEquipmentCurrent_var]§! units of §YSupport Equipment§! is added to the national stockpile."
+ LUC_ExileEvacuateAssets_civ1_tt:0 "     Add §G1§! offmap §YCivilian Factory§!"
+ LUC_ExilePrepareForInevitable_PolP_tt:0 "     Political power: §G+50§!"
+ LUC_ExilePrepareForInevitable_Manpower_tt:0 "     Manpower: §G+1000§!"
 
  LUC_ExileSeekSupport_focus:0 "Seek International Support"
  LUC_ExileSeekSupport_focus_desc:0 ""
+ LUC_ExileSeekSupport_legitimacy_tt:0 "    Legitimacy: §G+5§!."
+ LUC_ExileSeekSupport_warsupport_tt:0 "    Gain Base War Support: §G+5.0%§!."
 
  LUC_ExileRadioVaduz_focus:0 "Seize the Airwaves"
  LUC_ExileRadioVaduz_focus_desc:0 ""
@@ -293,21 +307,22 @@
  LUC_ExileRadioVaduz_resistanceIncrease_tt:0 "Every one of our core states not controlled by us:\nResistance: §R+10.0%§!\nCompliance: §R-10.0%§!\n"
  LUC_ExileRadioVaduz_resistanceSabotage_tt:0 "Unlocks £decision_icon_small §Ydecisions§! to sabotage infrastructure in our states occupied by the enemy."
 
- LUC_ExileTheSwissCorridor_focus:0 "Employ the Swiss Corridor"
+ LUC_ExileTheSwissCorridor_focus:0 "The Swiss Corridor"
  LUC_ExileTheSwissCorridor_focus_desc:0 ""
  LUC_ExileTheSwissCorridor_operation_tt:0 "Unlocks £GFX_inspect_texticon §Yoperations§! to arm partisans in our provinces occupied by an enemy country."
 
  LUC_ExileEvacuateAssets_focus:0 "The Aktiengesellschaft Scheme"
  LUC_ExileEvacuateAssets_focus_desc:0 ""
- LUC_ExileEvacuateAssets_focus_tt:0 "Upon capitulating, we will gain §Y2§! off-map factories as well as additional legitimacy."
+ LUC_ExileEvacuateAssets_mil2_tt:0 "    Add §G2§! offmap §YMilitary Factory§!"
+ LUC_ExileEvacuateAssets_civ2_tt:0 "    Add §G2§! offmap §YCivilian Factory§!"
 
  LUC_ExileLiechtensteinLegion_focus:0 "The [ROOT.GetAdjective] Foreign Legion"
  LUC_ExileLiechtensteinLegion_focus_desc:0 ""
- LUC_ExileLiechtensteinLegion_focus_tt:0 "Unlocks £decision_icon_small §Ydecisions§! to raise additional veteran divisions."
+ LUC_ExileLiechtensteinLegion_idea_tt:0 "    Add §Y$LUC_ForeignLegion_idea$§!, which grants (Own Exiled Divisions Attack: §G+5.00%§!, Weekly Exiled Government Manpower: §G+500§!, War Support: §G+10.0%§!)"
 
  LUC_ExileClaimVoralberg_focus:0 "Secure Vorarbelrg"
  LUC_ExileClaimVoralberg_focus_desc:0 ""
- LUC_ExileClaimVoralberg_focus_tt:0 "§Y[848.owner.GetName]§!: at war with §Y[ROOT.GetName]§!"
+ LUC_ExileClaimVoralberg_focus_tt:0 "The owner of §Y[848.GetName]§! (§Y[848.owner.GetName]§!) is at war with §Y[ROOT.GetName]§!"
 
  LUC_ExileLiberateAustria_focus:0 "Liberate Austria"
  LUC_ExileLiberateAustria_focus_desc:0 ""
@@ -328,8 +343,10 @@
  LUC_ExileBavarianLiberation_focus_1_tt:0 "§Y[52.owner.GetName]§!: at war with §Y[ROOT.GetName]§!"
  LUC_ExileBavarianLiberation_focus_2_tt:0 "§Y[53.owner.GetName]§!: at war with §Y[ROOT.GetName]§!"
 
- LUC_ExileOrganisedResistance_focus:0 "Fan the Flames of Resistance"
+ LUC_ExileOrganisedResistance_focus:0 "Prepare Resistance Cells"
  LUC_ExileOrganisedResistance_focus_desc:0 ""
+ LUC_IntelOnEnemies_tt:0 "Gains §Yintelligence§! over every country at war with §Y[ROOT.GetName]§! occupying one of our core states."
+ LUC_ExileOrganisedResistance_operations:0 "Unlocks £GFX_decision_icon_small §Ydecisions§! to establish resistance cells in core states controlled by an enemy country."
 
   ###################################
 	# MISC                            #

@@ -1,0 +1,242 @@
+LUC_Resistance_cat = {
+	LUC_Resistance_SabotageInfrastructure_dec = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		visible = {
+			always = yes
+		}
+		available = {
+			has_completed_focus = LUC_ExileRadioVaduz_focus
+			NOT = {
+				FROM = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		custom_cost_text = decision_cost_ie_500
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_core_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -500
+				}
+			}
+		}
+
+		days_remove = 21
+
+		remove_effect = {
+			FROM = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.4
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 0.2
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 0.2
+				}
+				add_compliance = -10
+				add_resistance = 5
+			}
+		}
+	}
+	LUC_Resistance_SetupCellsInfrastructure_dec = {
+		icon = GFX_decision_SWI_consolidate_council_power
+
+		visible = {
+			always = yes
+		}
+		available = {
+			has_completed_focus = LUC_ExileOrganisedResistance_focus
+			NOT = {
+				FROM = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+
+		custom_cost_text = decision_cost_CP_25
+		custom_cost_trigger = {
+			command_power > 25
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				is_core_of = ROOT
+			}
+		}
+
+		days_remove = 21
+
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = LUC_ResistanceCells_idea
+				days = 21
+				scope = LIC
+			}
+			FROM = {
+				add_compliance = -5
+				add_resistance = 10
+			}
+		}
+
+		modifier = {
+			
+		}
+	}
+	LUC_Resistance_IntegreateState_Cat = {
+		icon = GFX_decision_generic_political_discourse
+
+		visible = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							state = 52
+							state = 53
+							state = 845
+							state = 3
+							state = 847
+							state = 151
+							state = 846
+							state = 153
+							state = 152
+							state = 976
+							state = 975
+							state = 4
+							AND = {
+								state = 39
+								is_core_of = AUS
+							}
+							AND = {
+								state = 850
+								is_core_of = AUS
+							}
+						}
+					}
+				}
+				owns_state = FROM
+			}
+		}
+		available = {
+			FROM = {
+				resistance < 25
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							state = 52
+							state = 53
+						}
+					}
+				}
+				has_completed_focus = LUC_ExileBavarianLiberation_focus
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							state = 845
+							state = 3
+							state = 847
+							state = 151
+							state = 846
+						}
+					}
+				}
+				has_completed_focus = LUC_ExileFreeSwitzerland_focus
+			}
+			else = {
+				has_completed_focus = LUC_ExileLiberateAustria_focus
+			}
+		}
+
+		cost = 25
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+				}
+				OR = {
+					state = 52
+					state = 53
+					state = 845
+					state = 3
+					state = 847
+					state = 151
+					state = 846
+					state = 153
+					state = 152
+					state = 976
+					state = 975
+					state = 4
+					AND = {
+						state = 39
+						is_core_of = AUS
+					}
+					AND = {
+						state = 850
+						is_core_of = AUS
+					}
+				}
+			}
+		}
+
+		days_remove = 21
+
+		complete_effect = {
+			if = {
+				limit = {
+					FROM = {
+						compliance < 70
+					}
+				}
+				FROM ={
+					add_compliance = 5
+					custom_effect_tooltip = LUC_Resistance_IntegreateState_Cat_tt
+					custom_effect_tooltip = LUC_newline_tt
+				}
+			}
+			else = {
+				FROM = {
+					add_core_of = ROOT
+				}
+			}
+		}
+
+		modifier = {
+			political_power_factor = -0.1
+		}
+	}
+}

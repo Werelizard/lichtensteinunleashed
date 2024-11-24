@@ -97,4 +97,97 @@ on_actions = {
 			}
 		}
 	}
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = LIC
+						has_completed_focus = LUC_ExilePrepareForInevitable_focus
+					}
+				}
+				ROOT = {
+					add_political_power = 100
+					add_manpower = 1000
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = LUC_InfantryEquipmentCurrent_addOnCap_var
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = LUC_SupportEquipmentCurrent_addOnCap_var
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = LIC
+						has_completed_focus = LUC_ExileEvacuateAssets_focus
+					}
+				}
+				ROOT = {
+					add_offsite_building = {
+						type = arms_factory
+						level = 2
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = LIC
+						has_completed_focus = LUC_ExileLiechtensteinLegion_focus
+						NOT = {
+							has_idea = LUC_ForeignLegion_idea
+						}
+					}
+				}
+				ROOT = {
+					add_ideas = LUC_ForeignLegion_idea
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = LIC
+						has_completed_focus = LUC_ExileSeekSupport_focus
+					}
+				}
+				ROOT = {
+					add_legitimacy = 5
+					add_war_support = 0.05
+				}
+			}
+		}
+	}
+
+	on_peaceconference_ended = {
+		effect = {
+			ROOT = {
+				if = {
+					limit = {
+						original_tag = LIC
+					}
+				}
+				delete_units = {
+					division_template = "Citizen Militia"
+				}
+			}
+			FROM = {
+				if = {
+					limit = {
+						original_tag = LIC
+					}
+				}
+				delete_units = {
+					division_template = "Citizen Militia"
+				}
+			}
+		}
+	}
 }

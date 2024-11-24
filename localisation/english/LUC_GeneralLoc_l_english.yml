@@ -190,7 +190,7 @@
  LUC_CustomsUnion_idea_tt:0 "Off-Map Civilian Factories: §Y[?ROOT.luc_customsUnionFactories_var]§!"
  LUC_Liechtensteiner_No_Army_idea:0 "A Principality Without an Army"
  LUC_Liechtensteiner_No_Army_idea_desc:0 "Having disbanded its army in 1868, and with its last military engagements relegated to nearly a century ago, Liechtenstein is utterly defenceless in the face of an invasion - having to rely on a civilian police force, Swiss guarantees and a militia to ensure its internal security. Whilst the army can be reformed, doing so would prove to be a tedious endeavour indeed."
- LUC_Liechtensteiner_No_Army_idea_tt:0 "§RCannot recruit new generals or field marshalls§!"
+ LUC_Liechtensteiner_No_Army_idea_tt:0 "£trigger_no Can recruit new generals or field marshalls"
  LUC_Liechtensteiner_No_Army_reformedcommand_idea:0 "$LUC_Liechtensteiner_No_Army_idea$"
  LUC_Liechtensteiner_No_Army_reformedcommand_idea_desc:0 "$LUC_Liechtensteiner_No_Army_idea_desc$"
  LUC_Liechtensteiner_No_Army_fieldcommand_idea:0 "$LUC_Liechtensteiner_No_Army_idea$"
@@ -254,6 +254,8 @@
  LUC_LiechtensteinOverseasTrade_idea_desc:0 ""
  LUC_AgainstTyranny_idea:0 "Anti-German Propaganda"
  LUC_AgainstTyranny_idea_desc:0 ""
+ LUC_ForeignLegion_idea:0 "[ROOT.GetAdjective] Volunteer Legion"
+ LUC_ForeignLegion_idea_desc:0 ""
 
  # Inbdustrial Concerns
  LUC_LawenaPower_concern:0 "Lawena Energy"
@@ -269,6 +271,8 @@
  LUC_HasLandtagMechanic_tt:0 "Has not disbanded the §YLandtag§!"
  LUC_noLandtagMechanic_tt:0 "The §YLandtag§! was disbanded"
  LUC_LandtagRearmemmentBill_tt:0 "The §YLandtag§! has voted in support of rearmement"
+ LUC_IsAlpineFed_tt:0 "The §YAlpine Federation§! was formed"
+ LUC_IsAlpineFed_tt_NOT:0 "NOT: the §YAlpine Federation§! was formed"
 
  # Scripted Effect
  LUC_increaseLandtagSupport_5_tt:0 " £GFX_LUC_PolSupport  Landtag support will §Gincrease§! by §Y5.0%§!"
