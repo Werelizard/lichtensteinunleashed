@@ -56,3 +56,29 @@ LUC_Resistance_Cat = {
 		always = yes
 	}
 }
+
+LUC_AlaskanAmbition_cat = {
+	priority = 2
+	visible = {
+		OR = {
+			is_debug = yes
+			has_completed_focus = LUC_NavyAcquireAlaska_Focus
+			owns_state = 463
+			owns_state = 875
+			owns_state = 822
+			owns_state = 637
+			owns_state = 386
+			owns_state = 650
+			owns_state = 874
+			owns_state = 471
+			owns_state = 473
+			owns_state = 739
+			owns_state = 740 
+			owns_state = 864
+			owns_state = 385
+		}
+	}
+	allowed = {
+		always = yes
+	}
+}

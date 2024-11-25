@@ -68,6 +68,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/LIC/LUC_NewArmy_idea.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_LUC_Army_Defence3_idea"
+		textureFile = "gfx/interface/ideas/LIC/LUC_NewArmy_idea.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_LUC_Army_Offence1_idea"
 		textureFile = "gfx/interface/ideas/LIC/LUC_NewArmy_idea.dds"
 	}

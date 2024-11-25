@@ -235,12 +235,36 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/LIC/LUC_ArmyBeginRearmement_Focus.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_ArmyStudyGermanDesigns_Focus"
-		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_Focus.dds"
+		name = "GFX_LUC_ArmyStudyGermanDesigns_neutrality_Focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_neutrality_Focus.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_ArmyStudyGermanDesigns_Focus_shine"
-		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_Focus.dds"
+		name = "GFX_LUC_ArmyStudyGermanDesigns_neutrality_Focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_neutrality_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudyGermanDesigns_communism_Focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_communist_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudyGermanDesigns_communism_Focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_communist_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudyGermanDesigns_democratic_Focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_democratic_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudyGermanDesigns_democratic_Focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_democratic_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudyGermanDesigns_fascism_Focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_fascist_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ArmyStudyGermanDesigns_fascism_Focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ArmyStudyGermanDesigns_fascist_Focus.dds"
 	}
 	spriteType = {
 		name = "GFX_LUC_ArmyStudySwissDesigns_Focus"
@@ -544,12 +568,20 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_LUC_NavyAlaskaLiechtenstein_Focus"
+		name = "GFX_LUC_NavyCanadaLiechtenstein_Focus"
 		textureFile = "gfx/interface/goals/LIC/LUC_NavyAlaskaLiechtenstein_Focus.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_NavyAlaskaLiechtenstein_Focus_shine"
+		name = "GFX_LUC_NavyCanadaLiechtenstein_Focus_shine"
 		textureFile = "gfx/interface/goals/LIC/LUC_NavyAlaskaLiechtenstein_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyAmericaLiechtenstein_Focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAmericaLiechtenstein_Focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_NavyAmericaLiechtenstein_Focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_NavyAmericaLiechtenstein_Focus.dds"
 	}
 
 	spriteType = {
@@ -618,11 +650,35 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/LIC/LUC_ExileLiberateAustria_focus.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_ExileAntiGermanSentinment_focus"
+		name = "GFX_LUC_ExileAntiGermanSentinment_neutrality_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileAntiGermanSentinment_neutral_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileAntiGermanSentinment_neutrality_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileAntiGermanSentinment_neutral_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileAntiGermanSentinment_democratic_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileAntiGermanSentinment_democratic_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileAntiGermanSentinment_democratic_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileAntiGermanSentinment_democratic_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileAntiGermanSentinment_communism_focus"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileAntiGermanSentinment_communist_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileAntiGermanSentinment_communism_focus_shine"
+		textureFile = "gfx/interface/goals/LIC/LUC_ExileAntiGermanSentinment_communist_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_LUC_ExileAntiGermanSentinment_fascism_focus"
 		textureFile = "gfx/interface/goals/LIC/LUC_ExileAntiGermanSentinment_focus.dds"
 	}
 	spriteType = {
-		name = "GFX_LUC_ExileAntiGermanSentinment_focus_shine"
+		name = "GFX_LUC_ExileAntiGermanSentinment_fascism_focus_shine"
 		textureFile = "gfx/interface/goals/LIC/LUC_ExileAntiGermanSentinment_focus.dds"
 	}
 	spriteType = {

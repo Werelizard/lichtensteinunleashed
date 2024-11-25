@@ -6,7 +6,12 @@ LUC_ALPINEFEDERATION = {
 }
 
 LUC_ALASKALIECHTENSTEIN = {
-    color = rgb { 23 8 135 }
+    color = rgb { 8 44 135 }
+    color_ui = rgb { 255 255 155 }
+}
+
+LUC_AMERICALIECHTENSTEIN = {
+    color = rgb { 8 44 135 }
     color_ui = rgb { 255 255 155 }
 }
 

@@ -61,5 +61,6 @@
  LUC_FocusTree.304.title:0 "A [ROOT.GetName] Colonial Empire?"
  LUC_FocusTree.304.desc:0 ""
  LUC_FocusTree.304.a:0 "We shall claim our place in the Sun!"
- LUC_FormedLiechtensteinEmpire_tt:0 "The §Y$LUC_NavyAlaskaLiechtenstein_Focus$§! focuses will become available!"
+ LUC_FormedLiechtensteinEmpire_tt:0 "The §Y[ROOT.GetAdjective] America§! focuses will become available."
+ LUC_FormedLiechtensteinAmericanClaims_tt:0 "Can core state via £GFX_decision_icon_small decision"
  LUC_FocusTree.304.b:0 "Better not antagonise our neighbours..."

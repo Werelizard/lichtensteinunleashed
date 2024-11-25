@@ -276,18 +276,40 @@ country_event = { # Liechtenstein offers to Purchase Alaska
 		name = LUC_FocusTree.301.a
 		add_political_power = 250
 		effect_tooltip = {
-			463 = {
-				set_state_owner_to = FROM
+			every_state = {
+				limit = {
+					LUC_isAlaskanState_trigger = yes
+				}
+				set_state_owner_to = ROOT
 			}
 		}
 
 		ai_chance = {
-			base = 1000
+			base = 100
 			modifier = {
 				factor = 0
 				any_country = {
 					has_war_with = ROOT
 					is_in_faction_with = FROM
+				}
+			}
+			modifier = {
+				factor = 0.01
+				is_major = yes
+				FROM ={
+					NOT = {
+						is_major = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0.01
+				is_major = yes
+				NOT = {
+					has_opinion = {
+						target = FROM
+						value > 99
+					}
 				}
 			}
 		}
@@ -333,7 +355,10 @@ country_event = { # Alaska purchase - positive response
 
 	option = { # Great!
 		name = LUC_FocusTree.302.a
-		463 = {
+		every_state = {
+			limit = {
+				LUC_isAlaskanState_trigger = yes
+			}
 			set_state_owner_to = ROOT
 		}
 	}
@@ -395,26 +420,49 @@ country_event = { # A Liechtenstein Empire?
 	option = { # Naturally
 		name = LUC_FocusTree.304.a
 		custom_effect_tooltip = LUC_FormedLiechtensteinEmpire_tt
+		unlock_decision_tooltip = LUC_FormLiechtensteinAmerica_dec
 		custom_effect_tooltip = LUC_newline_tt
-		add_stability = -0.2
+		add_stability = -0.1
 		add_political_power = -200
-		add_threat = 5
+		add_threat = 3
 		custom_effect_tooltip = LUC_newline_tt
-		
 		463 = {
 			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
-				type = industrial_complex
-				level = 3
-			}
-			add_building_construction = {
 				type = dockyard
-				level = 1
+				level = 4
+			}
+		}
+		custom_effect_tooltip = LUC_newline_tt
+		every_state = {
+			limit = {
+				LUC_isGreaterAlaskanState_trigger = yes
+				NOT = {
+					LUC_isAlaskanState_trigger = yes
+				}
+			}
+			add_claim_by = ROOT
+			custom_effect_tooltip = LUC_FormedLiechtensteinAmericanClaims_tt
+		}
+		custom_effect_tooltip = LUC_newline_tt
+		every_country = {
+			limit = {
+				OR = {
+					original_tag = USA
+					original_tag = CAN
+					original_tag = SOV
+					original_tag = JAP
+					original_tag = ENG
+				}
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = LUC_OUTRAGEDOVERIMPERIALISM
 			}
 		}
 
 		hidden_effect = {
-			set_country_flag = LUC_FormedLiechtensteinEmpire_flag
+			set_country_flag = LUC_GreaterAlaska_flag
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -422,5 +470,11 @@ country_event = { # A Liechtenstein Empire?
 	option = { # We have no need for empires!
 		name = LUC_FocusTree.304.b
 		add_stability = 0.05
+		add_political_power = 100
+		add_popularity = {
+			ideology = ROOT
+			popularity = 0.1
+		}
+		add_threat = -5
 	}
 }

@@ -1,0 +1,423 @@
+LUC_AlaskanAmbition_cat = {
+	LUC_FormLiechtensteinAmerica_dec = {
+		icon = GFX_decision_generic_monarchy
+		priority = 12
+
+		allowed = {
+			original_tag = LIC
+		}
+
+		on_map_mode = decision_view_only
+
+		fire_only_once = yes
+
+		highlight_states = {
+			highlight_states_trigger = {	
+				OR = {
+					LUC_isCanadaProperState_trigger = yes
+					LUC_isAmericanProperState_trigger = yes
+				    LUC_isAlaskanState_trigger = yes
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				AND = {
+					original_tag = LIC
+					has_country_flag = LUC_GreaterAlaska_flag
+				}
+				is_debug = yes
+			}
+		}
+
+		available = {
+			OR = {
+				has_country_leader = {
+					character = LUC_FranzI
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_I_idea
+				has_country_leader = {
+					character = LUC_FranzII
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_II_idea
+			}
+			OR = {
+				CAN = {
+					exists = no
+				}
+				CAN = {
+					is_subject_of = ROOT
+				}
+			}
+			OR = {
+				USA = {
+					exists = no
+				}
+				USA = {
+					is_subject_of = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = LUC_FormLiechtensteinAmerica_isCanadaProper_tt
+				NOT = {
+					any_state = {
+						LUC_isCanadaProperState_trigger = yes
+						NOT = {
+							is_owned_by = ROOT
+						}
+						NOT = {
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = LUC_FormLiechtensteinAmerica_isAmericaProper_tt
+				NOT = {
+					any_state = {
+						OR = {
+							LUC_isAmericanProperState_trigger = yes
+							   LUC_isAlaskanState_trigger = yes
+						}
+						NOT = {
+							is_owned_by = ROOT
+						}
+						NOT = {
+							owner = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			
+		}
+	}
+	LUC_PurchaseAlaska = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		cost = 200		
+
+		priority = 11
+		
+		on_map_mode = decision_view_only
+
+		allowed = {
+			original_tag = LIC
+		}
+
+		fire_only_once = yes
+
+		visible = {
+			OR = {
+				AND = {
+					original_tag = LIC
+					has_completed_focus = LUC_NavyAcquireAlaska_Focus
+					NOT = {
+						owns_state = 463
+					}
+				}
+				is_debug = yes
+			}
+		}
+
+		available = {
+			OR = {
+				has_country_leader = {
+					character = LUC_FranzI
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_I_idea
+				has_country_leader = {
+					character = LUC_FranzII
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_II_idea
+			}
+			custom_trigger_tooltip = {
+				tooltip = LUC_PurchaseAlaska_tt
+				any_country = {
+					owns_state = 463
+					OR = {
+						is_in_faction_with = ROOT
+						AND = {
+							NOT = {
+								has_war_with = ROOT
+							}
+							has_opinion = {
+								target = ROOT
+								value > 99
+							}
+						}
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			463 = {
+				owner = {
+					country_event = LUC_FocusTree.301
+				}
+			}
+		}
+	}
+	LUC_IntegrateAlaska = {
+		icon = GFX_decision_generic_form_nation
+
+		priority = 10
+		
+		on_map_mode = decision_view_only
+		
+		allowed = {
+			OR = {
+				has_country_leader = {
+					character = LUC_FranzI
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_I_idea
+				has_country_leader = {
+					character = LUC_FranzII
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_II_idea
+			}
+		}
+
+		visible = {
+			original_tag = LIC
+			OR = {
+				AND = {
+					is_subject_of = LIC
+					has_cosmetic_tag = LUC_AMERICALIECHTENSTEIN
+				}
+				original_tag = LIC
+			}
+			OR = {
+				AND = {
+					original_tag = LIC
+					has_completed_focus = LUC_NavyAcquireAlaska_Focus
+					NOT = {
+						463 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				is_debug = yes
+			}
+		}
+
+		available = {
+			owns_state = 463
+		}
+
+		days_remove = 60
+
+		cost = 25
+
+		modifier = {
+			political_power_factor = -0.2
+		}
+
+		remove_effect = {
+			463 = {
+				add_core_of = ROOT
+			}
+			add_victory_points = {
+				province = 13091
+				value = 10
+			}
+			set_province_name = {
+				id = 13091
+				name = "St-Joseph"
+			}
+			463 = {
+				increase_state_category = yes
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			every_state = {
+				limit = {
+					LUC_isGreaterAlaskanState_trigger = yes
+					NOT = {
+						is_claimed_by = ROOT
+					}
+				}
+				add_claim_by = ROOT
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			country_event = {
+				id = LUC_FocusTree.304
+				days = 7
+			}
+		}	
+	}
+	LUC_IntegrateGreaterAlaska_dec = {
+		# Integrate american states into the "Alaskan" territory. More territories become available as time goes by and mroe focuses are completed
+		icon = GFX_decision_generic_form_nation
+		
+		allowed = {
+			original_tag = LIC
+		}
+
+		on_map_mode = map_only
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						if = {
+							limit = {
+								ROOT = {
+									OR = {
+										has_country_flag = LUC_GreaterAlaska_flag
+										is_debug = yes
+										AND = {
+											is_subject_of = LIC
+											has_cosmetic_tag = LUC_AMERICALIECHTENSTEIN
+										}
+									}
+								}
+							}
+							LUC_isGreaterAlaskanState_trigger = yes
+						}
+						else = {
+							always = no
+						}
+					}
+					AND = {
+						if = {
+							limit = {
+								ROOT = {
+									OR = {
+										has_country_flag = LUC_ExpandAlaskaEast_flag
+										is_debug = yes
+										AND = {
+											is_subject_of = LIC
+											has_cosmetic_tag = LUC_AMERICALIECHTENSTEIN
+										}
+									}
+								}
+							}
+							LUC_isCanadaProperState_trigger = yes
+						}
+						else = {
+							always = no
+						}
+					}
+					AND = {
+						if = {
+							limit = {
+								ROOT = {
+									OR = {
+										has_country_flag = LUC_ExpandAlaskaSouth_flag
+										is_debug = yes
+										AND = {
+											is_subject_of = LIC
+											has_cosmetic_tag = LUC_AMERICALIECHTENSTEIN
+										}
+									}
+								}
+							}
+							LUC_isAmericanProperState_trigger = yes
+						}
+						else = {
+							always = no
+						}
+					}
+				}
+			}
+	    }
+
+		visible = {
+			OR = {
+				AND = {
+					is_subject_of = LIC
+					has_cosmetic_tag = LUC_AMERICALIECHTENSTEIN
+				}
+				AND = {	
+					has_country_flag = LUC_GreaterAlaska_flag
+					FROM = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				is_debug = yes
+			}
+			FROM = {
+				OR = {
+					any_neighbor_state = {
+						is_owned_by = ROOT
+					}
+					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
+					is_debug = yes
+				}
+			}
+		}
+
+		available = {
+			if = {
+				limit = {
+					original_tag = LIC
+				}
+				OR = {
+					has_country_leader = {
+						character = LUC_FranzI
+						ruling_only = yes
+					}
+					has_idea = LUC_Franz_I_idea
+					has_country_leader = {
+						character = LUC_FranzII
+						ruling_only = yes
+					}
+					has_idea = LUC_Franz_II_idea
+				}
+			}
+			else = {	
+				AND = {
+					is_subject_of = LIC
+					has_cosmetic_tag = LUC_AMERICALIECHTENSTEIN
+				}
+			}
+			FROM = {
+				is_fully_controlled_by = ROOT
+			}
+		}
+
+		days_remove = 21
+
+		cost = 25
+
+		modifier = {
+			political_power_factor = -0.2
+		}
+
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}	
+	}
+}

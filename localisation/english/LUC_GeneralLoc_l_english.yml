@@ -1,10 +1,10 @@
 ﻿l_english:
  LUC_newline_tt:0 " \n"
- LUC_ClaimedStatesCanBeCored_tt:0 "Claimed states can be §Ycored§!!"
+ LUC_ClaimedStatesCanBeCored_tt:0 "Claimed states can be §Ycored§! through £GFX_decision_icon_small §Ydecisions§!."
 
  #Splash / Load
  LUC_FE_SELECT:0 "§YLiechtenstein Unleashed§!"
- LIC_GATHERING_STORM_DESC:0 "Nestled betwixt the Austro-Fascist state of Kurt Schuschnigg and the peaceful, increasingly withdrawn Switzerland, Liechtenstein stands alone: it is an Alpine bastion of neutrality, stability and tradition. Yet, amidst the rapidly deteriorating political climate in Europe, choices will have to be made, and the peaceful principality may all too well find itself cast as an unwilling particpant in a new world war. Though perhaps - that is the sort of challenge which you seek?"
+ LIC_GATHERING_STORM_DESC:0 "Nestled betwixt the Austro-Fascist state of Kurt Schuschnigg and the peaceful, increasingly withdrawn Switzerland, Liechtenstein stands alone: it is an Alpine bastion of neutrality, stability and tradition. Yet, amidst the rapidly deteriorating political climate in Europe, choices will have to be made, and the peaceful principality may all too well find itself cast as an unwilling particpant in a new world war. Though perhaps - that is the sort of challenge which you ICseek?"
 
  # New state
  STATE_982:0 "Vaduz"
@@ -27,6 +27,22 @@
  LIC_communism:0 "Worker's Republic of Liechtenstein"
  LIC_communism_DEF:0 "the Workers' Republic of Liechtenstein"
 
+ LCC:0 "Liechtenstein"
+ LCC_DEF:0 "the Principality of Liechtenstein"
+ LCC_ADJ:0 "Liechtensteiner"
+ LCC_neutrality:0 "Liechtenstein"
+ LCC_neutrality_DEF:0 "the United Duchies of Greater Liechtenstein"
+ LCC_democratic:0 "Liechtenstein"
+ LCC_democratic_DEF:0 "the United Principalities of Greater Liechtenstein"
+ LCC_fascism:0 "Greater  State of Liechtenstein"
+ LCC_fascism_DEF:0 "The Greater  State of Liechtenstein"
+ LCC_communism:0 "German Worker's Republic of Greater Liechtenstein"
+ LCC_communism_DEF:0 "the German Workers' Republic of Greater Liechtenstein"
+ LCC_LIC_subject:0 "Vice-Royalty of Greater Liechtenstein"
+ LCC_LIC_democratic_autonomy_dominion:0 "Dominion of Greater Liechtenstein"
+ LCC_LIC_communism_subject:0 "People's Commissariat of Liechtenstein"
+ LCC_LIC_fascism_subject:0 "Volkomissariat Liechtenstein"
+
  #Cosmetic Tags
  LUC_ALPINEFEDERATION:0 "the Alpine State"
  LUC_ALPINEFEDERATION_DEF:0 "the Alpine State"
@@ -47,6 +63,16 @@
  LUC_ALASKALIECHTENSTEIN_fascism_DEF:0 "the German State of Thule"
  LUC_ALASKALIECHTENSTEIN_communism:0 "the German People's Republic of Alaska"
  LUC_ALASKALIECHTENSTEIN_communism_DEF:0 "the German People's Republic of Alaska"
+
+ LUC_AMERICALIECHTENSTEIN:0 "the United Kingdoms of Liechtenstein-America"
+ LUC_AMERICALIECHTENSTEIN_DEF:0 "the United Kingdom of Liechtenstein-America"
+ LUC_AMERICALIECHTENSTEIN_democratic:0 "the United Kingdoms of Liechtenstein-America"
+ LUC_AMERICALIECHTENSTEIN_democratic_DEF:0 "the United Kingdoms of Liechtenstein-America"
+ LUC_AMERICALIECHTENSTEIN_fascism:0 "the Germanic Empire of Thulea"
+ LUC_AMERICALIECHTENSTEIN_fascism_DEF:0 "the Germanic Empire of Thulea"
+ LUC_AMERICALIECHTENSTEIN_communism:0 "the German People's Republic of America"
+ LUC_AMERICALIECHTENSTEIN_communism_DEF:0 "the German People's Republic of America"
+ LUC_AMERICALIECHTENSTEIN_LIC_subject:0 "$OVERLORDADJ$ America"
  
  # Political Parties - Start
  LIC_FBP_LONG:0 "Fortschrittliche Bürgerpartei"
@@ -230,6 +256,8 @@
  LUC_Army_Offence3_idea_desc:0 ""
  LUC_Army_Defence2_idea:0 "A New Liechtensteiner Army"
  LUC_Army_Defence2_idea_desc:0 ""
+ LUC_Army_Defence3_idea:0 "A New Liechtensteiner Army"
+ LUC_Army_Defence3_idea_desc:0 ""
  LUC_Army_Conscription_idea:0 "Mobilising the Militias"
  LUC_Army_Conscription_idea_desc:0 ""
  LUC_CivilianPreparations_idea:0 "Civilian Drills"
@@ -301,3 +329,19 @@
  STATE_983:0 "Alpes Maritimes"
  STATE_984:0 "Aosta"
  VICTORY_POINTS_611:0 "Aosta"
+
+ #Equipment
+ LIC_infantry_equipment_0:0 "Schmidt-Rubin M1911"
+ LIC_infantry_equipment_0_short:0 "Schmidt-Rubin M1911"
+ LIC_infantry_equipment_1:0 "Karabiner K31"
+ LIC_infantry_equipment_1_short:0 "Karabiner K31"
+ LIC_infantry_equipment_2:0 "Hispano-Suiza MP43/44"
+ LIC_infantry_equipment_2_short:0 "Hispano-Suiza MP43/44"
+ LIC_infantry_equipment_3:0 "SIG MP46"
+ LIC_infantry_equipment_3_short:0 "SIG MP46"
+ LIC_train_equipment_1: "BBÖ 81"
+ LIC_train_equipment_3: "Panzerzüg II"
+ LIC_motorized_equipment_0: "1916 Saurer Type B Truck"
+ LIC_motorized_equipment_0_short: "Type B Truck"
+ LIC_motorized_equipment_1: "Austro-Daimler ADGR"
+ LIC_motorized_equipment_1_short: "ADGR"

@@ -7,6 +7,7 @@ focus_tree = {
 			tag = LIC
 		}
 	}
+
 	default = no
 	continuous_focus_position = {
 		x = 200
@@ -501,7 +502,7 @@ focus_tree = {
 			focus = LUC_EconomyContinueIndustrialisation_Focus
 		}
 		available = {
-			has_tech = basic_machine_tools
+			has_tech = construction2
 			controls_state = 982
 		}
 		completion_reward = { 
@@ -540,7 +541,7 @@ focus_tree = {
 			focus = LUC_EconomyContinueIndustrialisation_Focus
 		}
 		available = {
-			
+			has_tech = improved_machine_tools
 		}
 		completion_reward = { 
 			if = {
@@ -579,6 +580,10 @@ focus_tree = {
 			focus = LUC_EconomyContinueIndustrialisation_Focus
 		}
 		available = {
+			OR = {
+				has_tech = concentrated_industry
+				has_tech = dispersed_industry2
+			}
 		}
 		completion_reward = { 
 			if = {
@@ -693,7 +698,12 @@ focus_tree = {
 		available = {
 			controls_state = 982
 			owns_state = 982
-			has_tech = construction1
+			OR = {
+				has_tech = excavation2
+				has_tech = excavation3
+				has_tech = excavation4
+				has_tech = excavation5
+			}
 		}
 		completion_reward = { 
 			custom_effect_tooltip = LUC_newline_tt
@@ -701,7 +711,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 12
 				}
 				add_resource = {
 					type = tungsten
@@ -1469,6 +1479,16 @@ focus_tree = {
 			show_mio_tooltip = SWI_sig_organization
 			show_mio_tooltip = SWI_eidgenossische_WF_organization
 			show_mio_tooltip = SWI_oerlikon_organization
+			custom_effect_tooltip = LUC_newline_tt
+			mio:SWI_sig_organization = {
+				add_mio_size = 1
+			}
+			mio:SWI_eidgenossische_WF_organization = {
+				add_mio_size = 1
+			}
+			mio:SWI_oerlikon_organization = {
+				add_mio_size = 1
+			}
 		}
 		mutually_exclusive = {
 		}
@@ -1514,6 +1534,12 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = LUC_kruppAllowed_flag
 				set_country_flag = LUC_fabenAllowed_flag
+			}
+			add_tech_bonus = {
+				name = LUC_ArmyWeaponKrupp_Focus
+				bonus = 0.5
+				uses = 2
+				category = industry
 			}
 		}
 		mutually_exclusive = {
@@ -1568,11 +1594,28 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_ArmyStudyGermanDesigns_Focus
-		icon = GFX_LUC_ArmyStudyGermanDesigns_Focus
+		icon = {
+			trigger = { GER = { has_government = democratic } }
+			value = GFX_LUC_ArmyStudyGermanDesigns_democratic_Focus
+		}
+		icon = {
+			trigger = { GER = { has_government = neutrality } }
+			value = GFX_LUC_ArmyStudyGermanDesigns_neutrality_Focus
+		}
+		icon = {
+			trigger = { GER = { has_government = communism } }
+			value = GFX_LUC_ArmyStudyGermanDesigns_communism_Focus
+		}
+		icon = {
+			value = GFX_LUC_ArmyStudyGermanDesigns_fascism_Focus
+		}
 		cost = 5
 		relative_position_id = LUC_ArmyBeginRearmement_Focus
 		x = -1
 		y = 1
+
+		dynamic = yes
+
 		search_filters = {
 			LUC_FOCUS_FILTER_ARMYTECH
 			LUC_FOCUS_EQUIPMENT
@@ -1581,8 +1624,19 @@ focus_tree = {
 			focus = LUC_ArmyBeginRearmement_Focus
 		}
 		available = {
-			NOT = {
-				has_war_with = GER
+			GER = {
+				NOT = {
+					has_war_with = ROOT
+				}
+				has_opinion = {
+					target = ROOT
+					value > 49
+				}
+			}
+		}
+		bypass = {
+			GER = {
+				exists = no
 			}
 		}
 		completion_reward = {  
@@ -1594,17 +1648,39 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = LUC_ArmyStudyGermanDesigns_Focus_tech
-				category = artillery
-				bonus = 0.75
+				category = mio_cat_all_artillery_equipment
+				bonus = 1
 				uses = 1
 			}
 			custom_effect_tooltip = LUC_newline_tt
-			custom_effect_tooltip = LUC_ArmyStudyGermanDesigns_RiflePurchase_tt
-			custom_effect_tooltip = LUC_ArmyStudyGermanDesigns_ArtilPurchase_tt
-			hidden_effect = {
-				GER = {
-					set_country_flag = LUC_RiflePurchaseTarget_flag
-					set_country_flag = LUC_ArtilleryPurchaseTarget_flag
+			# custom_effect_tooltip = LUC_ArmyStudyGermanDesigns_RiflePurchase_tt
+			# custom_effect_tooltip = LUC_ArmyStudyGermanDesigns_ArtilPurchase_tt
+			# hidden_effect = {
+			# 	GER = {
+			# 		set_country_flag = LUC_RiflePurchaseTarget_flag
+			# 		set_country_flag = LUC_ArtilleryPurchaseTarget_flag
+			# 	}
+			# }
+			GER = {
+				give_market_access = ROOT
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = LUC_TRADE_PARTNERS
+				}
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			add_equipment_subsidy = {
+				cic = 800
+				equipment_type = infantry_equipment
+				seller_tags = { 
+					GER
+				}
+			}
+			add_equipment_subsidy = {
+				cic = 800
+				equipment_type = artillery_equipment
+				seller_tags = { 
+					GER
 				}
 			}
 		}
@@ -1627,8 +1703,19 @@ focus_tree = {
 			focus = LUC_ArmyBeginRearmement_Focus
 		}
 		available = {
-			NOT = {
-				has_war_with = SWI
+			SWI = {
+				NOT = {
+					has_war_with = ROOT
+				}
+				has_opinion = {
+					target = ROOT
+					value > 49
+				}
+			}
+		}
+		bypass = {
+			SWI = {
+				exists = no
 			}
 		}
 		completion_reward = {  
@@ -1638,15 +1725,50 @@ focus_tree = {
 				bonus = 1
 				uses = 2
 			}
+			add_tech_bonus = {
+				name = LUC_ArmyStudySwissDesigns_Focus_tech
+				category = support_tech
+				bonus = 0.5
+				uses = 2
+			}
 			custom_effect_tooltip = LUC_newline_tt
-			custom_effect_tooltip = LUC_ArmyStudySwissDesigns_RiflePurchase_tt
-			custom_effect_tooltip = LUC_ArmyStudySwissDesigns_ArtilPurchase_tt
-			custom_effect_tooltip = LUC_ArmyStudySwissDesigns_SupportPurchase_tt
-			hidden_effect = {
-				SWI = {
-					set_country_flag = LUC_RiflePurchaseTarget_flag
-					set_country_flag = LUC_ArtilleryPurchaseTarget_flag
-					set_country_flag = LUC_SupportPurchaseTarget_flag
+			# custom_effect_tooltip = LUC_ArmyStudySwissDesigns_RiflePurchase_tt
+			# custom_effect_tooltip = LUC_ArmyStudySwissDesigns_ArtilPurchase_tt
+			# custom_effect_tooltip = LUC_ArmyStudySwissDesigns_SupportPurchase_tt
+			# hidden_effect = {
+			# 	SWI = {
+			# 		set_country_flag = LUC_RiflePurchaseTarget_flag
+			# 		set_country_flag = LUC_ArtilleryPurchaseTarget_flag
+			# 		set_country_flag = LUC_SupportPurchaseTarget_flag
+			# 	}
+			# }
+			SWI = {
+				give_market_access = ROOT
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = LUC_TRADE_PARTNERS
+				}
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			add_equipment_subsidy = {
+				cic = 800
+				equipment_type = infantry_equipment
+				seller_tags = { 
+					SWI
+				}
+			}
+			add_equipment_subsidy = {
+				cic = 400
+				equipment_type = artillery_equipment
+				seller_tags = { 
+					SWI
+				}
+			}
+			add_equipment_subsidy = {
+				cic = 400
+				equipment_type = support_equipment
+				seller_tags = { 
+					SWI
 				}
 			}
 		}
@@ -1747,9 +1869,8 @@ focus_tree = {
 		completion_reward = {  
 			custom_effect_tooltip = LUC_ModifyEconomy_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_pos15_tt
-			custom_effect_tooltip = LUC_ModifyEconomy_MilSpeed_pos10_tt
+			custom_effect_tooltip = LUC_ModifyEconomy_CivToMil_neg20_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_CivSpeed_neg10_tt
-			custom_effect_tooltip = LUC_ModifyEconomy_EficiencyCap_pos5_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_Output_pos5_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_WarSupport_pos10_tt
 			custom_effect_tooltip = LUC_newline_tt
@@ -1791,16 +1912,13 @@ focus_tree = {
 					LUC_ConGoodsFac_Var = 0.15
 				}
 				add_to_variable = {
-					LUC_BuildArmFac_Var = 0.1
+					LUC_CivtoMil_Var = -0.25
 				}
 				add_to_variable = {
 					LUC_WarSupportFac_Var = 0.1
 				}
 				add_to_variable = {
 					LUC_OutputFac_Var = 0.05
-				}
-				add_to_variable = {
-					LUC_ProdMaxFac_Var = 0.05
 				}
 				add_to_variable = {
 					LUC_BuildCivFac_Var = -0.1
@@ -1826,22 +1944,26 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = LUC_ArmyStudyGermanDesigns_Focus
-			focus = LUC_ArmyStudySwissDesigns_Focus
 		}
 		available = {
-			OR = {
-				has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
-				has_tech = advanced_light_tank_chassis
+			GER = {
+				NOT = {
+					has_war_with = ROOT
+				}
+				has_opinion = {
+					target = ROOT
+					value > 149
+				}
 			}
 		}
 		completion_reward = {  
 			create_equipment_variant = {
-				type = light_tank_chassis_1
-				mark_older_equipment_obsolete = yes
 				name = "Zielfahrzeug 36"
-				allow_without_tech = yes # Tooltip purposes, tech is required anyways
+				type = light_tank_chassis_1
+				design_team = mio:GER_daimler_benz_organization
+				parent_version = 0
 				modules = {
-					main_armament_slot = tank_heavy_machine_gun
+					main_armament_slot = tank_auto_cannon
 					turret_type_slot = tank_light_one_man_tank_turret
 					suspension_type_slot = tank_christie_suspension
 					armor_type_slot = tank_welded_armor
@@ -1849,8 +1971,27 @@ focus_tree = {
 					special_type_slot_1 = tank_radio_1
 				}
 				upgrades = {
-						tank_nsb_engine_upgrade = 2
-						tank_nsb_armor_upgrade = 1
+					tank_nsb_engine_upgrade = 6
+					tank_nsb_armor_upgrade = 3
+				}
+				icon = "GFX_GER_basic_light_tank_medium"
+			}
+			create_equipment_variant = {
+				name = "Panzer 36.L"
+				type = light_tank_chassis_1
+				design_team = mio:GER_daimler_benz_organization
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_anti_air_cannon
+					turret_type_slot = tank_light_one_man_tank_turret
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 6
+					tank_nsb_armor_upgrade = 3
 				}
 				icon = "GFX_GER_basic_light_tank_medium"
 			}
@@ -1858,7 +1999,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = LUC_ArmyStudyPanzers_Focus_bonus
 				category = armor
-				bonus = 1
+				bonus = 1.5
 				uses = 2
 			}
 			custom_effect_tooltip = LUC_newline_tt
@@ -2497,20 +2638,20 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 			}
-			custom_effect_tooltip = LUC_newline_tt
-			every_army_leader = {
-				if = {
-					limit = {
-						has_trait = trait_mountaineer
-					}
-					add_logistics = 2
-				}
-				else = {
-					add_trait = {
-						trait = trait_mountaineer
-					}
-				}
-			}
+			# custom_effect_tooltip = LUC_newline_tt
+			# every_army_leader = {
+			# 	if = {
+			# 		limit = {
+			# 			has_trait = trait_mountaineer
+			# 		}
+			# 		add_logistics = 2
+			# 	}
+			# 	else = {
+			# 		add_trait = {
+			# 			trait = trait_mountaineer
+			# 		}
+			# 	}
+			# }
 			luc_removeStabilityIfMilitaryWhileNeutral = yes
 		}
 		mutually_exclusive = {
@@ -2542,9 +2683,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {  
-			add_offsite_building = {
-				type = arms_factory
-				level = 2
+			swap_ideas = {
+				remove_idea = LUC_Army_Defence2_idea
+				add_idea = LUC_Army_Defence3_idea
 			}
 			982 = {
 				add_building_construction = {
@@ -3206,8 +3347,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = LUC_NavyAlaskaLiechtenstein_Focus
-		icon = GFX_LUC_NavyAlaskaLiechtenstein_Focus
+		id = LUC_NavyCanadaLiechtenstein_Focus
+		icon = GFX_LUC_NavyCanadaLiechtenstein_Focus
 		cost = 5
 		x = 0
 		y = 3
@@ -3219,33 +3360,126 @@ focus_tree = {
 			focus = LUC_NavyAcquireAlaska_Focus
 		}
 		available = {
-			463 = {
-				is_owned_by = ROOT
-				is_fully_controlled_by = ROOT
+			OR = {
+				has_country_leader = {
+					character = LUC_FranzI
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_I_idea
+				has_country_leader = {
+					character = LUC_FranzII
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_II_idea
 			}
 		}
 		completion_reward = {  
-			unlock_decision_tooltip = LUC_LiechtensteinAlaskaFormable
-			custom_effect_tooltip = LUC_newline_tt
-			custom_effect_tooltip = LUC_NavyAlaskaLiechtenstein_Focus_tt
-			custom_effect_tooltip = LUC_newline_tt
 			every_state = {
 				limit = {
-					is_core_of = CAN
+					LUC_isCanadaProperState_trigger = yes	
+					NOT = {
+						is_owned_by = ROOT
+					}
 					NOT = {
 						is_claimed_by = ROOT
 					}
-					NOT = {
-						is_core_of = ROOT
-					}
 				}
 				add_claim_by = ROOT
+				custom_effect_tooltip = LUC_FormedLiechtensteinAmericanClaims_tt
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			every_other_country = {
+				limit = {
+					any_owned_state = {
+						LUC_isCanadaProperState_trigger = yes
+						NOT = {
+							is_owned_by = ROOT
+						}
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = take_claimed_state
+					}
+				}
+			}
+			hidden_effect = {
+				set_country_flag = LUC_ExpandAlaskaEast_flag
 			}
 		}
 		mutually_exclusive = {
 		}
 		allow_branch = {
-			has_country_flag = LUC_FormedLiechtensteinEmpire_flag
+			has_country_flag = LUC_GreaterAlaska_flag
+		}
+	}
+	focus = {
+		id = LUC_NavyAmericaLiechtenstein_Focus
+		icon = GFX_LUC_NavyAmericaLiechtenstein_Focus
+		cost = 5
+		x = 1
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		relative_position_id = LUC_NavyDockyards_Focus
+		prerequisite = {
+			focus = LUC_NavyCanadaLiechtenstein_Focus
+		}
+		available = {
+			OR = {
+				has_country_leader = {
+					character = LUC_FranzI
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_I_idea
+				has_country_leader = {
+					character = LUC_FranzII
+					ruling_only = yes
+				}
+				has_idea = LUC_Franz_II_idea
+			}
+		}
+		completion_reward = {  
+			every_state = {
+				limit = {
+					LUC_isAmericanProperState_trigger = yes	
+					NOT = {
+						is_owned_by = ROOT
+					}
+					NOT = {
+						is_claimed_by = ROOT
+					}
+				}
+				add_claim_by = ROOT
+				custom_effect_tooltip = LUC_FormedLiechtensteinAmericanClaims_tt
+			}
+			custom_effect_tooltip = LUC_newline_tt
+			every_other_country = {
+				limit = {
+					any_owned_state = {
+						LUC_isAmericanProperState_trigger = yes	
+						NOT = {
+							is_owned_by = ROOT
+						}
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = take_claimed_state
+					}
+				}
+			}
+			hidden_effect = {
+				set_country_flag = LUC_ExpandAlaskaSouth_flag
+			}
+		}
+		mutually_exclusive = {
+		}
+		allow_branch = {
+			has_country_flag = LUC_GreaterAlaska_flag
 		}
 	}
 	focus = {
@@ -3259,7 +3493,7 @@ focus_tree = {
 		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
-			focus = LUC_NavyAlaskaLiechtenstein_Focus
+			focus = LUC_NavyCanadaLiechtenstein_Focus
 		}
 		available = {
 			463 = {
@@ -3276,22 +3510,26 @@ focus_tree = {
 				}
 				add_resource = {
 					type = oil
-					amount = 24
+					amount = 48
 				}
 				add_resource = {
 					type = aluminium
-					amount = 24
+					amount = 48
 				}
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 24
+				}
+				add_resource = {
+					type = tungsten
+					amount = 20
 				}
 			}
 		}
 		mutually_exclusive = {
 		}
 		allow_branch = {
-			has_country_flag = LUC_FormedLiechtensteinEmpire_flag
+			has_country_flag = LUC_GreaterAlaska_flag
 		}
 	}
 	focus = {
@@ -3305,37 +3543,36 @@ focus_tree = {
 		}
 		relative_position_id = LUC_NavyDockyards_Focus
 		prerequisite = {
-			focus = LUC_NavyAlaskaLiechtenstein_Focus
+			focus = LUC_NavyCanadaLiechtenstein_Focus
 		}
 		available = {
+			has_tech = atomic_research
 			463 = {
 				is_fully_controlled_by = ROOT
 				is_owned_by = ROOT
 			}
 		}
 		completion_reward = {  
-			if = {
-				limit = {
-					NOT = {
-						has_tech = atomic_research
-					}
-				}
-				set_technology = {
-					atomic_research = 1
-				}
+			add_breakthrough_points = {
+				specialization = specialization_nuclear
+				value = 2
 			}
-			add_tech_bonus = {
-				name = LUC_NavyAlaskaNukes_Focus
-				category = nuclear
-				bonus = 1
-				uses = 2
-				ahead_reduction = 2
+			add_breakthrough_progress = {
+				value = 0.25
+				specialization = specialization_nuclear
+			}
+			463 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = nuclear_facility
+					level = 1
+				}
 			}
 		}
 		mutually_exclusive = {
 		}
 		allow_branch = {
-			has_country_flag = LUC_FormedLiechtensteinEmpire_flag
+			has_country_flag = LUC_GreaterAlaska_flag
 		}
 	}
 	focus = {
@@ -3567,6 +3804,7 @@ focus_tree = {
 		y = 0
 		search_filters = {
 			LUC_FOCUS_FILTER_RESISTANCE
+			LUC_FOCUS_EQUIPMENT
 		}
 		relative_position_id = LUC_IntelligenceService_Focus
 		prerequisite = {
@@ -3724,6 +3962,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {
 			LUC_FOCUS_FILTER_RESISTANCE
+			FOCUS_FILTER_WAR_SUPPORT
 		}
 		relative_position_id = LUC_ExilePrepareForInevitable_focus
 		prerequisite = {
@@ -3759,6 +3998,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {
 			LUC_FOCUS_FILTER_RESISTANCE
+			FOCUS_FILTER_WAR_SUPPORT
 		}
 		relative_position_id = LUC_ExilePrepareForInevitable_focus
 		prerequisite = {
@@ -3783,6 +4023,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {
 			LUC_FOCUS_FILTER_RESISTANCE
+			FOCUS_FILTER_WAR_SUPPORT
 		}
 		relative_position_id = LUC_ExilePrepareForInevitable_focus
 		prerequisite = {
@@ -3820,6 +4061,7 @@ focus_tree = {
 		search_filters = {
 			LUC_FOCUS_FILTER_RESISTANCE
 			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_WAR_SUPPORT
 		}
 		relative_position_id = LUC_ExilePrepareForInevitable_focus
 		prerequisite = {
@@ -3865,6 +4107,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {
 			LUC_FOCUS_FILTER_RESISTANCE
+			FOCUS_FILTER_WAR_SUPPORT
 		}
 		relative_position_id = LUC_ExilePrepareForInevitable_focus
 		prerequisite = {
@@ -4076,10 +4319,25 @@ focus_tree = {
 	}
 	focus = {
 		id = LUC_ExileAntiGermanSentinment_focus
-		icon = GFX_LUC_ExileAntiGermanSentinment_focus
+		icon = {
+			trigger = { GER = { has_government = democratic } }
+			value = GFX_LUC_ExileAntiGermanSentinment_democratic_focus
+		}
+		icon = {
+			trigger = { GER = { has_government = fascism } }
+			value = GFX_LUC_ExileAntiGermanSentinment_fascism_focus
+		}
+		icon = {
+			trigger = { GER = { has_government = communism } }
+			value = GFX_LUC_ExileAntiGermanSentinment_communism_focus
+		}
+		icon = {
+			value = GFX_LUC_ExileAntiGermanSentinment_neutrality_focus
+		}
 		cost = 4
 		x = -1
 		y = 4
+		dynamic = yes
 		available_if_capitulated = yes
 		search_filters = {
 			LUC_FOCUS_FILTER_RESISTANCE
@@ -4221,6 +4479,7 @@ focus_tree = {
 		search_filters = {
 			LUC_FOCUS_FILTER_RESISTANCE
 			FOCUS_FILTER_ANNEXATION
+			FOCUS_FILTER_WAR_SUPPORT
 		}
 		relative_position_id = LUC_ExilePrepareForInevitable_focus
 		prerequisite = {

@@ -28,62 +28,69 @@ ideas = {
 		LUC_Army_Defence1_idea = {
 			modifier = {
 				experience_gain_army = 0.03
-				defence = 0.1
+				army_core_defence_factor = 0.1
 				army_org_factor = 0.1
-				max_dig_in = 3
+				max_dig_in = 5
 			}
 		}
 		LUC_Army_Defence2_idea = {
 			modifier = {
 				experience_gain_army = 0.03
-				defence = 0.1
+				army_core_defence_factor = 0.1
 				army_org_factor = 0.1
 				max_dig_in = 5
 				conscription = 0.005
 				minimum_training_level = -0.1
 			}
 		}
+		LUC_Army_Defence3_idea = {
+			modifier = {
+				experience_gain_army = 0.03
+				army_core_defence_factor = 0.15
+				army_org_factor = 0.15
+				max_dig_in = 10
+				conscription = 0.005
+				minimum_training_level = -0.1
+			}
+		}
 		LUC_Army_Offence1_idea = {
 			modifier = {
-				training_time_army_factor = 0.1
 				experience_gain_army = 0.05
 				recon_factor = 0.1
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.05
-				mountaineers_special_forces_contribution_factor = -0.2
+				mountaineers_special_forces_contribution_factor = -0.1
 			}
 		}
 		LUC_Army_Offence2_idea = {
 			modifier = {
-				training_time_army_factor = 0.05
-				experience_gain_army = 0.05
+				experience_gain_army = 0.1
 				recon_factor = 0.1
 				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
-				mountaineers_special_forces_contribution_factor = -0.2
+				mountaineers_special_forces_contribution_factor = -0.25
 				special_forces_cap = 0.1
 			}
 		}
 		LUC_Army_Offence3_idea = {
 			modifier = {
-				training_time_army_factor = 0.05
-				experience_gain_army = 0.1
+				experience_gain_army = 0.2
 				recon_factor = 0.1
 				special_forces_attack_factor = 0.1
-				mountaineers_special_forces_contribution_factor = -0.2
+				mountaineers_special_forces_contribution_factor = -0.25
 				special_forces_cap = 0.1
 				modifier_army_sub_unit_mountaineers_max_org_factor = 0.1
 			}
 		}
 		LUC_CivilianPreparations_idea = {
 			modifier = {
-				weekly_bombing_war_support = 0.05
-				weekly_convoys_war_support = 0.05
+				weekly_bombing_war_support = 0.02
+				weekly_convoys_war_support = 0.02
 				industry_air_damage_factor = -0.1
 			}
 		}
 		LUC_WomenDivisions_idea = {
 			modifier = {
-				weekly_bombing_war_support = 0.05
-				weekly_convoys_war_support = 0.05
+				weekly_bombing_war_support = 0.02
+				weekly_convoys_war_support = 0.02
 				industry_air_damage_factor = -0.1
 				conscription_factor = 0.1
 			}
@@ -91,9 +98,8 @@ ideas = {
 		LUC_SecurityCorps_idea = {
 			modifier = {
 				political_power_cost = 0.25
-				intel_from_combat_factor = 0.1
-				agency_upgrade_time = -0.2
-				enemy_operative_capture_chance_factor = 0.2
+				agency_upgrade_time = -0.25
+				enemy_operative_capture_chance_factor = 0.25
 				operative_slot = 1
 			}
 		}

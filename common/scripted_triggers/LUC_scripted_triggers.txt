@@ -167,3 +167,101 @@ LUC_IsAlpineFed = {
 		has_country_flag = LUC_AlpineFederationFormed_flag
 	}
 }
+
+
+LUC_isAlaskanState_trigger = {
+	OR = {
+		state = 463
+		state = 650
+	}
+}
+
+LUC_isGreaterAlaskanState_trigger = {
+	OR = {
+		state = 864
+		state = 471
+		state = 473
+		state = 739
+		state = 740
+		state = 386
+	}
+}
+
+LUC_isCanadaProperState_trigger = {
+	OR = {
+		state = 864
+		state = 471
+		state = 473
+		state = 739
+		state = 740
+		state = 470
+		state = 472
+		state = 469
+		state = 865
+		state = 683
+		state = 867
+		state = 467
+		state = 866
+		state = 682
+		state = 276
+		state = 862
+		state = 466
+		state = 861
+		state = 863
+		state = 468
+		state = 465
+		state = 464
+		state = 331
+		state = 860
+		state = 332
+		state = 466
+		state = 730
+	}
+}
+
+LUC_isAmericanProperState_trigger = {
+	OR = {
+		state = 386
+		state = 385
+		state = 378
+		state = 379
+		state = 387
+		state = 388
+		state = 380
+		state = 377
+		state = 381
+		state = 382
+		state = 376
+		state = 389
+		state = 390
+		state = 384
+		state = 383
+		state = 374
+		state = 375
+		state = 391
+		state = 392
+		state = 373
+		state = 372
+		state = 371
+		state = 394
+		state = 395
+		state = 396
+		state = 393
+		state = 261
+		state = 369
+		state = 368
+		state = 370
+		state = 367
+		state = 366
+		state = 365
+		state = 364
+		state = 363
+		state = 362
+		state = 816
+		state = 361
+		state = 360
+		state = 359
+		state = 358
+		state = 357
+	}
+}

@@ -1,306 +1,5 @@
 political_actions = {
 
-	LUC_PurchaseAlaska = {
-		icon = GFX_decision_hol_attract_foreign_investors
-		cost = 200
-
-		allowed = {
-			always = yes
-		}
-
-		fire_only_once = yes
-
-		visible = {
-			original_tag = LIC
-			has_completed_focus = LUC_NavyAcquireAlaska_Focus
-			NOT = {
-				owns_state = 463
-			}
-		}
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = LUC_PurchaseAlaska_tt
-				any_country = {
-					owns_state = 463
-					OR = {
-						is_in_faction_with = ROOT
-						AND = {
-							NOT = {
-								has_war_with = ROOT
-							}
-							has_opinion = {
-								target = ROOT
-								value > 99
-							}
-						}
-					}
-				}
-			}
-		}
-
-		complete_effect = {
-			463 = {
-				owner = {
-					country_event = LUC_FocusTree.301
-				}
-			}
-		}
-	}
-	LUC_IntegrateAlaska = {
-		icon = GFX_decision_generic_form_nation
-		
-		allowed = {
-			always = yes
-		}
-
-		visible = {
-			original_tag = LIC
-			has_completed_focus = LUC_NavyAcquireAlaska_Focus
-		}
-
-		available = {
-			owns_state = 463
-		}
-
-		days_remove = 60
-
-		cost = 25
-
-		modifier = {
-			political_power_factor = -0.15
-		}
-
-		remove_effect = {
-			463 = {
-				add_core_of = ROOT
-			}
-			471 = {
-				add_claim_by = ROOT
-			}
-			473 = {
-				add_claim_by = ROOT
-			}
-			739 = {
-				add_claim_by = ROOT
-			}
-			740 = {
-				add_claim_by = ROOT
-			}
-			864 = {
-				add_claim_by = ROOT
-			}
-			# hidden_effect = {
-			# 	country_event = {
-			# 		id = LUC_FocusTree.304
-			# 		days = 28
-			# 	}
-			# }
-		}	
-	}
-	LUC_IntegrateGreaterAlaska = {
-		icon = GFX_decision_generic_form_nation
-		
-		allowed = {
-			always = yes
-		}
-
-		on_map_mode = map_and_decisions_view
-
-		state_target = yes
-
-		target_trigger = {
-	        FROM = {
-				if = {
-					limit = {
-						ROOT = {
-							has_cosmetic_tag = LUC_ALASKALIECHTENSTEIN
-						}
-					}
-					OR = {
-						state = 875
-						state = 822
-						state = 637
-						state = 386
-						state = 650
-						state = 874
-						state = 471
-						state = 473
-						state = 739
-						state = 740 
-						state = 864
-						state = 385
-					}
-				}
-				else = {
-					OR = {
-						state = 471
-						state = 473
-						state = 739
-						state = 740 
-						state = 864
-					}
-				}
-	        }
-	    }
-
-		visible = {
-			original_tag = LIC
-			has_completed_focus = LUC_NavyAlaskaLiechtenstein_Focus
-		}
-
-		available = {
-			463 = {
-				is_core_of = ROOT
-			}
-			OR = {
-				FROM = {
-					is_owned_by = ROOT
-				}
-				FROM = {
-					is_fully_controlled_by = ROOT
-				}
-			}
-		}
-
-		days_remove = 60
-
-		cost = 25
-
-		modifier = {
-			political_power_factor = -0.15
-		}
-
-		remove_effect = {
-			FROM = {
-				add_core_of = ROOT
-			}
-		}	
-	}
-	LUC_LiechtensteinAlaskaFormable = {
-		icon = GFX_decision_generic_form_nation
-		
-		allowed = {
-			always = yes
-		}
-
-		fire_only_once = yes
-
-		visible = {
-			original_tag = LIC
-			any_state = {
-				OR = {
-					state = 875
-					state = 822
-					state = 637
-					state = 386
-					state = 650
-					state = 874
-					state = 471
-					state = 473
-					state = 739
-					state = 740 
-					state = 864
-					state = 385
-				}
-				is_owned_by = ROOT
-			}
-			# has_completed_focus = LU	C_NavyAlaskaLiechtenstein_Focus
-		}
-
-		highlight_states = {
-			highlight_states_trigger = {
-				OR = {
-					state = 463
-					state = 471
-					state = 473
-					state = 739
-					state = 740
-					state = 864
-				}
-				OR = {
-					NOT = {
-						is_core_of = ROOT
-					}
-					NOT = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-			}
-		}
-
-		available = {
-			463 = {
-				is_core_of = ROOT
-				is_fully_controlled_by = ROOT
-			}
-			OR = {
-				471 = {
-					is_core_of = ROOT
-					is_fully_controlled_by = ROOT
-				}
-				473 = {
-					is_core_of = ROOT
-					is_fully_controlled_by = ROOT
-				}
-				739 = {
-					is_core_of = ROOT
-					is_fully_controlled_by = ROOT
-				}
-				740 = {
-					is_core_of = ROOT
-					is_fully_controlled_by = ROOT
-				}
-				864 = {
-					is_core_of = ROOT
-					is_fully_controlled_by = ROOT
-				}
-			}
-		}	
-
-		complete_effect = {
-			set_cosmetic_tag =  LUC_ALASKALIECHTENSTEIN
-			set_capital = {
-				state = 463
-			}
-			set_province_name = {
-				id = 13091
-				name = "St-Joseph"
-			}
-			463 = {
-				increase_state_category = yes
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 2
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 5
-				}
-			}
-			custom_effect_tooltip = LUC_newline_tt
-			every_state = {
-				limit = {
-					OR = {
-						state = 875
-						state = 822
-						state = 637
-						state = 386
-						state = 650
-						state = 874
-						state = 385
-					}
-				}
-				add_claim_by = ROOT
-			}
-			custom_effect_tooltip = LUC_newline_tt
-			custom_effect_tooltip = LUC_ClaimedStatesCanBeCored_tt
-		}
-	}
 	
 	targeted_race_for_the_bomb = {
 
@@ -498,175 +197,175 @@ economy_decisions = {
 	# 		}
 	# 	}
 	# }
-	LUC_BuyForeignRiflesRifles = {
-		icon = GFX_decision_generic_industry
-		cost = 30	
-		days_remove = 30
+	# LUC_BuyForeignRiflesRifles = {
+	# 	icon = GFX_decision_generic_industry
+	# 	cost = 30	
+	# 	days_remove = 30
 
-		# targets = { }
+	# 	# targets = { }
 
-		allowed = {
-			always = yes
-		}
+	# 	allowed = {
+	# 		always = yes
+	# 	}
 
-		visible = {
-			original_tag = LIC
-			OR = {
-				has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
-				has_completed_focus = LUC_ArmyStudySwissDesigns_Focus
-			}
-		}
+	# 	visible = {
+	# 		original_tag = LIC
+	# 		OR = {
+	# 			has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
+	# 			has_completed_focus = LUC_ArmyStudySwissDesigns_Focus
+	# 		}
+	# 	}
 
-		target_trigger = {
-			FROM = {
-				has_country_flag = LUC_RiflePurchaseTarget_flag
-			}
-		}
+	# 	target_trigger = {
+	# 		FROM = {
+	# 			has_country_flag = LUC_RiflePurchaseTarget_flag
+	# 		}
+	# 	}
 
-		available = {
-			NOT = {
-				has_war_with = FROM
-			}
-			custom_trigger_tooltip = {
-				tooltip = LUC_BoughtMaxEquipmentFromTarget_tt
-				check_variable = {
-					FROM.LUC_BoughtEquipmentFromCountry_var < 4
-				}
-			}
-		}
+	# 	available = {
+	# 		NOT = {
+	# 			has_war_with = FROM
+	# 		}
+	# 		custom_trigger_tooltip = {
+	# 			tooltip = LUC_BoughtMaxEquipmentFromTarget_tt
+	# 			check_variable = {
+	# 				FROM.LUC_BoughtEquipmentFromCountry_var < 4
+	# 			}
+	# 		}
+	# 	}
 
-		modifier = {
-			consumer_goods_factor = 0.05
-		}
+	# 	modifier = {
+	# 		consumer_goods_factor = 0.05
+	# 	}
 
-		remove_effect = {
+	# 	remove_effect = {
 			
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 450
-				producer = FROM
-			}
-			hidden_effect = {
-				FROM = {
-					add_to_variable = {
-						LUC_BoughtEquipmentFromCountry_var = 1
-					}
-				}
-			}
-		}
-	}
-	LUC_BuyForeignRiflesArtillery = {
-		icon = GFX_decision_generic_industry
-		cost = 30	
-		days_remove = 30
+	# 		add_equipment_to_stockpile = {
+	# 			type = infantry_equipment
+	# 			amount = 450
+	# 			producer = FROM
+	# 		}
+	# 		hidden_effect = {
+	# 			FROM = {
+	# 				add_to_variable = {
+	# 					LUC_BoughtEquipmentFromCountry_var = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# LUC_BuyForeignRiflesArtillery = {
+	# 	icon = GFX_decision_generic_industry
+	# 	cost = 30	
+	# 	days_remove = 30
 
-		# targets = { }
+	# 	# targets = { }
 
-		allowed = {
-			always = yes
-		}
+	# 	allowed = {
+	# 		always = yes
+	# 	}
 
-		visible = {
-			original_tag = LIC
-			OR = {
-				has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
-				has_completed_focus = LUC_ArmyStudySwissDesigns_Focus
-			}
-		}
+	# 	visible = {
+	# 		original_tag = LIC
+	# 		OR = {
+	# 			has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
+	# 			has_completed_focus = LUC_ArmyStudySwissDesigns_Focus
+	# 		}
+	# 	}
 
-		target_trigger = {
-			FROM = {
-				has_country_flag = LUC_ArtilleryPurchaseTarget_flag
-			}
-		}
+	# 	target_trigger = {
+	# 		FROM = {
+	# 			has_country_flag = LUC_ArtilleryPurchaseTarget_flag
+	# 		}
+	# 	}
 
-		available = {
-			NOT = {
-				has_war_with = FROM
-			}
-			custom_trigger_tooltip = {
-				tooltip = LUC_BoughtMaxEquipmentFromTarget_tt
-				check_variable = {
-					FROM.LUC_BoughtEquipmentFromCountry_var < 4
-				}
-			}
-		}
+	# 	available = {
+	# 		NOT = {
+	# 			has_war_with = FROM
+	# 		}
+	# 		custom_trigger_tooltip = {
+	# 			tooltip = LUC_BoughtMaxEquipmentFromTarget_tt
+	# 			check_variable = {
+	# 				FROM.LUC_BoughtEquipmentFromCountry_var < 4
+	# 			}
+	# 		}
+	# 	}
 
-		modifier = {
-			consumer_goods_factor = 0.05
-		}
+	# 	modifier = {
+	# 		consumer_goods_factor = 0.05
+	# 	}
 
-		remove_effect = {
-			add_equipment_to_stockpile = {
-				type = artillery_equipment
-				amount = 200
-				producer = FROM
-			}
-			hidden_effect = {
-				FROM = {
-					add_to_variable = {
-						LUC_BoughtEquipmentFromCountry_var = 1
-					}
-				}
-			}
-		}
-	}
-	LUC_BuyForeignSupportEquipement = {
-		icon = GFX_decision_generic_industry
-		cost = 30	
-		days_remove = 30
+	# 	remove_effect = {
+	# 		add_equipment_to_stockpile = {
+	# 			type = artillery_equipment
+	# 			amount = 200
+	# 			producer = FROM
+	# 		}
+	# 		hidden_effect = {
+	# 			FROM = {
+	# 				add_to_variable = {
+	# 					LUC_BoughtEquipmentFromCountry_var = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# LUC_BuyForeignSupportEquipement = {
+	# 	icon = GFX_decision_generic_industry
+	# 	cost = 30	
+	# 	days_remove = 30
 
-		# targets = { }
+	# 	# targets = { }
 
-		allowed = {
-			always = yes
-		}
+	# 	allowed = {
+	# 		always = yes
+	# 	}
 
-		visible = {
-			original_tag = LIC
-			OR = {
-				has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
-				has_completed_focus = LUC_ArmyStudySwissDesigns_Focus
-			}
-		}
+	# 	visible = {
+	# 		original_tag = LIC
+	# 		OR = {
+	# 			has_completed_focus = LUC_ArmyStudyGermanDesigns_Focus
+	# 			has_completed_focus = LUC_ArmyStudySwissDesigns_Focus
+	# 		}
+	# 	}
 
-		target_trigger = {
-			FROM = {
-				has_country_flag = LUC_SupportPurchaseTarget_flag
-			}
-		}
+	# 	target_trigger = {
+	# 		FROM = {
+	# 			has_country_flag = LUC_SupportPurchaseTarget_flag
+	# 		}
+	# 	}
 
-		available = {
-			NOT = {
-				has_war_with = FROM
-			}
-			custom_trigger_tooltip = {
-				tooltip = LUC_BoughtMaxEquipmentFromTarget_tt
-				check_variable = {
-					FROM.LUC_BoughtEquipmentFromCountry_var < 4
-				}
-			}
-		}
+	# 	available = {
+	# 		NOT = {
+	# 			has_war_with = FROM
+	# 		}
+	# 		custom_trigger_tooltip = {
+	# 			tooltip = LUC_BoughtMaxEquipmentFromTarget_tt
+	# 			check_variable = {
+	# 				FROM.LUC_BoughtEquipmentFromCountry_var < 4
+	# 			}
+	# 		}
+	# 	}
 
-		modifier = {
-			consumer_goods_factor = 0.05
-		}
+	# 	modifier = {
+	# 		consumer_goods_factor = 0.05
+	# 	}
 
-		remove_effect = {
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 200
-				producer = FROM
-			}
-			hidden_effect = {
-				FROM = {
-					add_to_variable = {
-						LUC_BoughtEquipmentFromCountry_var = 1
-					}
-				}
-			}
-		}
-	}
+	# 	remove_effect = {
+	# 		add_equipment_to_stockpile = {
+	# 			type = support_equipment
+	# 			amount = 200
+	# 			producer = FROM
+	# 		}
+	# 		hidden_effect = {
+	# 			FROM = {
+	# 				add_to_variable = {
+	# 					LUC_BoughtEquipmentFromCountry_var = 1
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 	###########################
 
 	dismantle_maginot = {

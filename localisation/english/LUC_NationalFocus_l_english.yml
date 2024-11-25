@@ -7,9 +7,9 @@
  LUC_AvailableAsHighCommand:0 "Available as High Command:"
 
  #Shortcuts
- LUC_LiechtensteinEconomy_Target:0 "Economy Focuses"
- LUC_LiechtensteinArmy_Target:0 "Army Focuses"
- LUC_LiechtensteinSurrender_Target:0 "Government in Exile"
+ LUC_LiechtensteinEconomy_Target:0 "Economy Branch"
+ LUC_LiechtensteinArmy_Target:0 "Army Branch"
+ LUC_LiechtensteinSurrender_Target:0 "Resistance Branch"
  
  # Liechtensteiner Economy
  LUC_EconomyStateOfEconomy_Focus:0 "Budgetary Adjustments"
@@ -117,7 +117,7 @@
  LUC_ArmyBeginRearmement_Focus:0 "Establish a Military Budget"
  LUC_ArmyBeginRearmement_Focus_desc:0 ""
 
- LUC_ArmyStudyGermanDesigns_Focus:0 "Study German Designs"
+ LUC_ArmyStudyGermanDesigns_Focus:0 "Import German Rifles"
  LUC_ArmyStudyGermanDesigns_Focus_desc:0 ""
  LUC_ArmyStudyGermanDesigns_RiflePurchase_tt:0 "Unlocks Decision: £GFX_decision_icon_small §YPurchase German Rifles§!"
  LUC_ArmyStudyGermanDesigns_ArtilPurchase_tt:0 "Unlocks Decision: £GFX_decision_icon_small §YPurchase German Field Guns§!"
@@ -266,9 +266,12 @@
  LUC_NavyHeavyShips_Focus:0 "Total Naval Supremacy"
  LUC_NavyHeavyShips_Focus_desc:0 ""
 
- LUC_NavyAlaskaLiechtenstein_Focus:0 "A [ROOT.GetAdjective] America"
- LUC_NavyAlaskaLiechtenstein_Focus_desc:0 ""
- LUC_NavyAlaskaLiechtenstein_Focus_tt:0 "Unlocks £GFX_decision_icon_small decisions to core §Y[471.GetName]§!, §Y[473.GetName]§!, §Y[739.GetName]§!, §Y[740.GetName]§! and §Y[864.GetName]§!"
+ LUC_NavyCanadaLiechtenstein_Focus:0 "A [ROOT.GetAdjective] Canada"
+ LUC_NavyCanadaLiechtenstein_Focus_desc:0 ""
+ LUC_NavyCanadaLiechtenstein_Focus_tt:0 "Unlocks £GFX_decision_icon_small decisions to core §Y[471.GetName]§!, §Y[473.GetName]§!, §Y[739.GetName]§!, §Y[740.GetName]§! and §Y[864.GetName]§!"
+
+ LUC_NavyAmericaLiechtenstein_Focus:0 "Put the Eagle to Sleep"
+ LUC_NavyAmericaLiechtenstein_Focus_desc:0 ""
 
  LUC_NavyAlaskaResources_Focus:0 "The Wealth of Alaska"
  LUC_NavyAlaskaResources_Focus_desc:0 ""
@@ -397,6 +400,7 @@
  LUC_ModifyEconomy_LicenseCost_neg25_tt:0 "License Purchase Cost: §G-25.0%§!"
  LUC_ModifyEconomy_PolPower_pos15_tt:0 "Political Power Gain: §G+15.0%§!"
  LUC_ModifyEconomy_WarSupport_pos10_tt:0 "War Support: §G+10.0%§!"
+ LUC_ModifyEconomy_CivToMil_neg20_tt:0 "Civilian to Military Factory conversion cost: §G-20.0%§!"
 
  #Tooltips, other
  luc_removeStabilityIfMilitaryWhileNeutral_tt:0 "\n§RAs we have yet to publically denounce our neutrality, any further attempts to rearm will impact our stability, though said impact can be mitigated by having high enough public support for the current ruling party (§!§Y[ROOT.GetRulingIdeology]§!§R)§!\n\n"

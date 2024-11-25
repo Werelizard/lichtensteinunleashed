@@ -172,6 +172,7 @@ on_actions = {
 				if = {
 					limit = {
 						original_tag = LIC
+						has_war = no
 					}
 				}
 				delete_units = {
@@ -182,6 +183,7 @@ on_actions = {
 				if = {
 					limit = {
 						original_tag = LIC
+						has_war = no
 					}
 				}
 				delete_units = {
