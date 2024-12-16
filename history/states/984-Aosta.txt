@@ -1,0 +1,32 @@
+
+state = {
+	id = 984
+	name = "STATE_984"
+	manpower = 690891
+	
+	state_category = town
+	resources = {
+		steel = 10
+	}
+
+	history = {
+		owner = ITA
+		add_claim_by = SWI
+		victory_points = {
+			611 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = ITA
+		add_core_of = SPM
+	}
+
+	provinces = {
+		611 3782 11570 6635
+	}
+
+	local_supplies = 0.0 
+}
