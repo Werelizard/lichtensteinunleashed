@@ -23,6 +23,7 @@ leader_traits = {
 	# Otto Schaedler
 
 	LUC_LeaderTrait_Germanophile = {
+		sprite = 13
 		fascism_acceptance = 25
 		neutrality_acceptance = 25
 	}
@@ -64,6 +65,7 @@ leader_traits = {
 	# Josef Hoop
 
 	LUC_AdvisorTrait_GreatCompromiser = {
+		sprite = 13
 		party_popularity_stability_factor = 0.25
 		stability_factor = 0.1
 	}
@@ -71,12 +73,14 @@ leader_traits = {
 	# Otto Schaedler
 
 	LUC_AdvisorTrait_PoliticalWeasel = {
+		sprite = 13
 		political_advisor_cost_factor = -0.2
 	}
 
 	# Alfons Goop
 
 	LUC_AdvisorTrait_HeadOfTheLHD = {
+		sprite = 13
 		resistance_growth = -0.1
 		required_garrison_factor = -0.1
 		weekly_manpower = 50
@@ -85,6 +89,7 @@ leader_traits = {
 	# Rudolf Shaedler
 
 	LUC_AdvisorTrait_Agitator = {
+		sprite = 13
 		stability_factor = -0.05
 		war_support_factor = 0.1
 	}
@@ -92,12 +97,14 @@ leader_traits = {
 	# Ludwig Marxer
 
 	LUC_AdvisorTrait_LiberalLawyer = {
+		sprite = 13
 		political_power_cost = -0.2
 	}
 
 	# Richard Meier
 
 	LUC_AdvisorTrait_WealthyLandowner = {
+		sprite = 13
 		consumer_goods_factor = 0.05
 		production_speed_buildings_factor = 0.1
 	}
@@ -105,6 +112,7 @@ leader_traits = {
 	# Anton Frommelt
 
 	LUC_AdvisorTrait_Pastor = {
+		sprite = 13
 		stability_factor = 0.05
 		drift_defence_factor = 0.1
 		resistance_growth = -0.1
@@ -115,6 +123,7 @@ leader_traits = {
 	# Alois Vogt
 
 	LUC_AdvisorTrait_TwoFacedDiplomat = {
+		sprite = 13
 		operative_slot = 1
 		diplomatic_pressure_mission_factor = 0.2
 		boost_ideology_mission_factor = 0.2
@@ -123,6 +132,7 @@ leader_traits = {
 	# Eugen Schafhause
 
 	LUC_AdvisorTrait_PopularAuthor = {
+		sprite = 13
 		political_power_factor = 0.1
 		custom_modifier_tooltip = LUC_AdvisorTrait_PopularAuthor_tt # Daily ruling party popularity increases by 0.03
 	}
@@ -130,6 +140,7 @@ leader_traits = {
 	# Gustav Schädler
 
 	LUC_AdvisorTrait_PoliticalBrute = {
+		sprite = 13
 		trade_laws_cost_factor = -0.15
 		economy_cost_factor = -0.15
 		mobilization_laws_cost_factor = -0.15
@@ -138,6 +149,7 @@ leader_traits = {
 	# Carl Freiherr von Vogelsang
 
 	LUC_AdvisorTrait_Yellowjournalist = {
+		sprite = 13
 		offensive_war_stability_factor = 0.1
 		party_popularity_stability_factor = 0.05
 		custom_modifier_tooltip = LUC_AdvisorTrait_Yellowjournalist_tt # Decrease popularity of opposing parties by -0.02 Daily
@@ -146,6 +158,7 @@ leader_traits = {
 	# Peter Buchel
 
 	LUC_AdvisorTrait_StateCapitalist = {
+		sprite = 13
 		consumer_goods_factor = 0.1
 		production_factory_max_efficiency_factor = 0.1
 		industrial_capacity_factory = 0.05
@@ -154,6 +167,7 @@ leader_traits = {
 	# Gustav Vogt
 
 	LUC_AdvisorTrait_Industrialist = {
+		sprite = 13
 		production_speed_industrial_complex_factor = 0.15
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
@@ -163,6 +177,7 @@ leader_traits = {
 	# Josef Lienhardt
 
 	LUC_AdvisorTrait_ConciliatoryDiplomat = {
+		sprite = 13
 		opinion_gain_monthly_factor = 0.2
 		trade_opinion_factor = 0.25
 		improve_relations_maintain_cost_factor = -0.25
@@ -171,6 +186,7 @@ leader_traits = {
 	# Peter Zund
 
 	LUC_AdvisorTrait_RearmementProponent = {
+		sprite = 13
 		production_speed_arms_factory_factor = 0.1
 		industrial_capacity_factory = 0.05
 	}
@@ -178,6 +194,7 @@ leader_traits = {
 	# Daniela Hilzinger
 
 	LUC_AdvisorTrait_SocialDemocrat = {
+		sprite = 13
 		monthly_population = 0.15
 		local_building_slots_factor = 0.15
 	}
@@ -185,6 +202,7 @@ leader_traits = {
 	# Josef Steger
 
 	LUC_AdvisorTrait_ParamilitaryOrganiser = {
+		sprite = 13
 		recruitable_population_factor = 0.1
 		dig_in_speed_factor = 0.2
 		resistance_growth_on_our_occupied_states = 0.2
@@ -193,18 +211,23 @@ leader_traits = {
 	# Johann Georg Hasler
 
 	LUC_AdvisorTrait_EducatinReformer = {
+		sprite = 13
 		research_speed_factor = 0.05
+		breakthrough_factor = 0.1
 	}
 
 	# Baron Karl Trauttmanssdorf
 
 	LUC_AdvisorTrait_Banker = {
+		sprite = 13
 		consumer_goods_factor = -0.15
+		economy_cost_factor = -0.15
 	}
 
 	# Thomas Zwinger
 
 	LUC_AdvisorTrait_UnionRepresentative = {
+		sprite = 13
 		production_factory_start_efficiency_factor = 0.05
 		production_factory_max_efficiency_factor = 0.05
 	}
@@ -212,6 +235,7 @@ leader_traits = {
 	# Markus Ledswher
 
 	LUC_AdvisorTrait_SavvyPolitician = {
+		sprite = 13
 		political_power_factor = 0.1
 		custom_modifier_tooltip = LUC_AdvisorTrait_AdminsitrativeWorkhorse_tt # Lowers the Cost of Landtag Decisions by 33%
 	}
@@ -219,6 +243,7 @@ leader_traits = {
 	# Rupert Mette
 
 	LUC_AdvisorTrait_AgrarianRepresentative = {
+		sprite = 13
 		min_export = -0.25
 		production_speed_buildings_factor = 0.05
 		local_building_slots_factor = 0.1
@@ -228,13 +253,15 @@ leader_traits = {
 	# Martin Lanter
 
 	LUC_AdvisorTrait_LiberalDoctor = {
+		sprite = 13
 		weekly_manpower = 500
-		monthly_population = 0.05
+		monthly_population = 0.25
 	}
 
 	# Yvonne Vogt
 
 	LUC_AdvisorTrait_SmallBuisnessAdvocate = {
+		sprite = 13
 		production_factory_efficiency_gain_factor = 0.05
 		production_factory_max_efficiency_factor = 0.05
 		military_industrial_organization_funds_gain = 0.2
@@ -246,6 +273,7 @@ leader_traits = {
 	#################
 
 	LUC_OfficerTrait_Paramilitary = {
+		sprite = 18
 		modifier_army_sub_unit_militia_attack_factor = 0.05
 		modifier_army_sub_unit_militia_defence_factor = 0.05
 		experience_gain_army_factor = 0.1
@@ -253,12 +281,14 @@ leader_traits = {
 	}
 
 	LUC_OfficerTrait_Veteran = {
+		sprite = 12
 		experience_gain_army = 0.3
 		max_planning_factor = 0.1
 		planning_speed = -0.1
 	}
 
 	LUC_OfficerTrait_NewGuard = {
+		sprite = 12
 		experience_gain_army = 0.3
 		special_forces_attack_factor = 0.05
 		special_forces_training_time_factor = -0.05

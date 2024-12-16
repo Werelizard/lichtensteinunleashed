@@ -1867,6 +1867,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {  
+			add_stability = -0.1
+			custom_effect_tooltip = LUC_newline_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_ConsumerGoods_pos15_tt
 			custom_effect_tooltip = LUC_ModifyEconomy_CivToMil_neg20_tt

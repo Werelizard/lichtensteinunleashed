@@ -157,7 +157,7 @@ LUC_IsInDangerCap_trigger = {
 				}
 			}
 		}
-		has_capitulated = yes
+		is_government_in_exile = yes
 	}
 }
 
